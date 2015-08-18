@@ -83,7 +83,7 @@ class LexicalFeatures(
   }
 
   //word concreteness
-  def getWordConcreteness: Vector[(String, Int)] = {
+  def getWordConcreteness: Vector[(String, String)] = {
     textDocument.getLemmas.map(lemma =>                     //uses lemmas
       (
         lemma,                                      //the lemma
@@ -116,6 +116,26 @@ class LexicalFeatures(
       "concreteness score of most used noun" -> concretenessDouble.toMap.getOrElse(this.mostFrequentWords._1._2, 0.toDouble),
       "concreteness score of most used adjective" -> concretenessDouble.toMap.getOrElse(this.mostFrequentWords._2._2, 0.toDouble),
       "concreteness score of most used verb" -> concretenessDouble.toMap.getOrElse(this.mostFrequentWords._3._2, 0.toDouble)
+    )
+  }
+
+  def makeLexicalFeatureVector: Vector[(String, Double)] = {
+    Vector(
+      (textDocument.title, 0.0),
+      (textDocument.gradeLevel, 0.0),
+      ("number of distinct conjunctions", this.countDistinctPOS("CC.*")),
+      ("% of distinct nouns in all words", this.countDistinctPOS("NN.*")),
+      ("% of distinct verbs in all words", this.countDistinctPOS("VB.*")),
+      ("% of distinct adjectives in all words", this.countDistinctPOS("JJ.*")),
+      ("% of tokens not present in concreteness", this.wordConcretenessStats("number of tokens not present in database normalized over non-proper noun word count")),
+      ("minimum concreteness score present in text", this.wordConcretenessStats("minimum concreteness score present in text")),
+      ("25th %ile concreteness score present in text", this.wordConcretenessStats("25th %ile concreteness score present in text")),
+      ("mean concreteness score present in text", this.wordConcretenessStats("mean concreteness score present in text")),
+      ("median concreteness score present in text", this.wordConcretenessStats("median concreteness score present in text")),
+      ("75th %ile concreteness score present in text", this.wordConcretenessStats("75th %ile concreteness score present in text")),
+      ("concreteness score of most used noun", this.wordConcretenessStats("concreteness score of most used noun")),
+      ("concreteness score of most used verb", this.wordConcretenessStats("concreteness score of most used verb")),
+      ("concreteness score of most used adjective", this.wordConcretenessStats("concreteness score of most used adjective"))
     )
   }
 

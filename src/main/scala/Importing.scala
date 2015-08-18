@@ -1,6 +1,5 @@
 import scala.collection.mutable
 import scala.io.Source
-import scala.util.matching.Regex
 
 /**
  * Created by mcapizzi on 8/17/15.
