@@ -50,7 +50,7 @@ class TextDocument(
   }
 
   def lexicalTupleInSentences: Vector[Vector[(String, (String, String, String))]] = {
-    for (sentence <- this.textDoc.flatMap(_.sentences) yield {
+    for (sentence <- this.textDoc.flatMap(_.sentences)) yield {
       sentence.words.toVector zip
         (
           sentence.lemmas.get.toVector,

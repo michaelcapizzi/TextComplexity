@@ -171,14 +171,14 @@ class SyntacticFeatures(
 
 
   def getClauseCounts: Vector[Double] = {
-    (for (tree <- this.getParseTrees) yield {
+    for (tree <- this.getParseTrees) yield {
       var counter = 0
       val clauseMatcher = clause.matcher(tree)
       while (clauseMatcher.find) {
         counter += 1
       }
       counter.toDouble
-    })
+    }
   }
 
   //TODO build method -- see PitchVantage code?

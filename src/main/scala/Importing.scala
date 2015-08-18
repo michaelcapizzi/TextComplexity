@@ -10,7 +10,7 @@ object Importing {
     val finalBuffer = mutable.Buffer[String]()
     val insideBuffer = mutable.Buffer[String]()
 
-    for (line <- Source.fromFile(filePath).getLines) {
+    for (line <- Source.fromFile(filePath).getLines.filter(_.startsWith("%"))) {
       if (!line.isEmpty && line != null) insideBuffer += line             //at each blank line, it starts a new "List" to indicate a new paragraph
       else if (line.isEmpty || line == null) {
         finalBuffer += insideBuffer.mkString(" ")                         //add last paragraph
