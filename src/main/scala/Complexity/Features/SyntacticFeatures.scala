@@ -1,10 +1,13 @@
-import java.util
+package Complexity.Features
 
+import java.util
+import Complexity.TextDocument
+import edu.stanford.nlp.trees.tregex.TregexPattern
+import edu.stanford.nlp.trees.{CollinsHeadFinder, Constituent, Tree}
 import org.apache.commons.math3.stat.Frequency
 import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics
-import edu.stanford.nlp.trees.{Constituent, CollinsHeadFinder, Tree}
+
 import scala.collection.JavaConverters._
-import edu.stanford.nlp.trees.tregex.TregexPattern
 
 
 

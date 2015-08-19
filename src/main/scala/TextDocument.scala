@@ -1,18 +1,14 @@
+package Complexity
+
+
+import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
+
+
 /**
  * Created by mcapizzi on 8/17/15.
  */
 
-import java.io._
-import edu.arizona.sista.learning.Datum
-import edu.arizona.sista.processors.DocumentSerializer
-import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
-import edu.arizona.sista.struct.Counter
-import edu.stanford.nlp.trees.tregex.TregexPattern
-import edu.stanford.nlp.trees.{CollinsHeadFinder, MemoryTreebank, DiskTreebank, Tree}
-import org.apache.commons.math3.stat.Frequency
-import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics
-//import Concreteness._
-import scala.collection.mutable
+
 
 class TextDocument(
                     val text: Vector[String],               //each vector contains a paragraph of original text
@@ -41,11 +37,11 @@ class TextDocument(
   ////////////////////////// for normalizing //////////////////////////
 
   def lexicalTuple: Vector[(String, (String, String, String))] = {
-    this.textDoc.map(_.sentences.map(_.words.toVector)).flatten.flatten zip             //the word
+    this.textDoc.flatMap(_.sentences.map(_.words.toVector)).flatten zip             //the word
       (
-        this.textDoc.map(_.sentences.map(_.lemmas.get.toVector)).flatten.flatten,         //the lemma
-        this.textDoc.map(_.sentences.map(_.tags.get.toVector)).flatten.flatten,           //the POS tag
-        this.textDoc.map(_.sentences.map(_.entities.get.toVector)).flatten.flatten        //the NER label
+        this.textDoc.flatMap(_.sentences.map(_.lemmas.get.toVector)).flatten,         //the lemma
+        this.textDoc.flatMap(_.sentences.map(_.tags.get.toVector)).flatten,           //the POS tag
+        this.textDoc.flatMap(_.sentences.map(_.entities.get.toVector)).flatten        //the NER label
         ).zipped.toVector
   }
 

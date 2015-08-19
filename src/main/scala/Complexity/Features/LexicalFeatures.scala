@@ -1,5 +1,8 @@
+package Complexity.Features
 
-import Concreteness._
+
+import Complexity.SupportMethods.Concreteness._
+import Complexity.TextDocument
 import org.apache.commons.math3.stat.Frequency
 import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics
 
@@ -11,7 +14,59 @@ class LexicalFeatures(
                        val textDocument: TextDocument
                      ) {
 
+  //TODO build statistics about word and ngram frequency
   //TODO how to deal with no words in that part of speech?
+
+  //number of distinct tokens
+  def distinctTokens: Double = {
+    this.textDocument.getWords.map(
+      _.toLowerCase).
+      distinct.
+      length.toDouble
+  }
+
+  //ratio of distinct words
+  def distinctTokenRatio: Double = {
+    this.distinctTokens / this.textDocument.getWords.length.toDouble
+  }
+
+  //word lengths
+  def wordLengths(proper: Boolean): Vector[Double] = {
+    if (proper == true) {
+      this.textDocument.getWords.map(
+        _.length.toDouble
+      )
+    } else {
+      this.textDocument.getWordsMinusProperNouns.map(
+        _.length.toDouble
+      )
+    }
+  }
+
+  //word length stats
+  def wordLengthStats(proper: Boolean): Map[String, Double] = {
+    val stat = new DescriptiveStatistics()
+    if (proper == true) {
+      this.wordLengths(true).foreach(stat.addValue)
+      Map(
+        "minimum word length" -> stat.getMin,
+        "25th %ile word length" -> stat.getPercentile(25),
+        "mean word length" -> stat.getMean,
+        "75th %ile word length" -> stat.getPercentile(75),
+        "maximum word length" -> stat.getMax
+      )
+    } else {
+      this.wordLengths(false).foreach(stat.addValue)
+      Map(
+        "minimum word length" -> stat.getMin,
+        "25th %ile word length" -> stat.getPercentile(25),
+        "mean word length" -> stat.getMean,
+        "75th %ile word length" -> stat.getPercentile(75),
+        "maximum word length" -> stat.getMax
+      )
+    }
+  }
+
   //most frequently used words by POS
   def mostFrequentWords: ((String, String), (String, String), (String, String)) = {
     val frequencyNouns = new Frequency()
@@ -92,7 +147,7 @@ class LexicalFeatures(
     )
   }
 
-  def wordConcretenessStats = {
+  def wordConcretenessStats: Map[String, Double] = {
     val stat = new DescriptiveStatistics()
     val removed = this.getWordConcreteness.filter(missing => missing._2 == "99").distinct.length.toDouble     //count of how many distinct words weren't in database
     val concretenessDouble = this.getWordConcreteness.map(item =>                                             //process results of .getWordConcreteness
@@ -123,10 +178,16 @@ class LexicalFeatures(
     Vector(
       (textDocument.title, 0.0),
       (textDocument.gradeLevel, 0.0),
+      ("distinct token ratio", this.distinctTokenRatio),
       ("number of distinct conjunctions", this.countDistinctPOS("CC.*")),
       ("% of distinct nouns in all words", this.countDistinctPOS("NN.*")),
       ("% of distinct verbs in all words", this.countDistinctPOS("VB.*")),
       ("% of distinct adjectives in all words", this.countDistinctPOS("JJ.*")),
+      ("minimum word length", this.wordLengthStats(false)("minimum word length")),
+      ("25th %ile word length", this.wordLengthStats(false)("25th %ile word length")),
+      ("mean word length", this.wordLengthStats(false)("mean word length")),
+      ("75th %ile word length", this.wordLengthStats(false)("75th %ile word length")),
+      ("maximum word length", this.wordLengthStats(false)("maximum word length")),
       ("% of tokens not present in concreteness", this.wordConcretenessStats("number of tokens not present in database normalized over non-proper noun word count")),
       ("minimum concreteness score present in text", this.wordConcretenessStats("minimum concreteness score present in text")),
       ("25th %ile concreteness score present in text", this.wordConcretenessStats("25th %ile concreteness score present in text")),

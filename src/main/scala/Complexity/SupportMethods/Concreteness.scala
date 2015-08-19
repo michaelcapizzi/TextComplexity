@@ -1,3 +1,5 @@
+package Complexity.SupportMethods
+
 import scala.io.Source
 
 /**
