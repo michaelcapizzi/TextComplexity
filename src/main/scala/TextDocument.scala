@@ -37,7 +37,7 @@ class TextDocument(
   ////////////////////////// for normalizing //////////////////////////
 
   def lexicalTuple: Vector[(String, (String, String, String))] = {
-    this.textDoc.flatMap(_.sentences.map(_.words.toVector)).flatten zip             //the word
+    this.textDoc.flatMap(_.sentences.map(_.words.toVector)).flatten zip               //the word
       (
         this.textDoc.flatMap(_.sentences.map(_.lemmas.get.toVector)).flatten,         //the lemma
         this.textDoc.flatMap(_.sentences.map(_.tags.get.toVector)).flatten,           //the POS tag

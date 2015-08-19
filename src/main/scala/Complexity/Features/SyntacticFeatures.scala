@@ -6,7 +6,6 @@ import edu.stanford.nlp.trees.tregex.TregexPattern
 import edu.stanford.nlp.trees.{CollinsHeadFinder, Constituent, Tree}
 import org.apache.commons.math3.stat.Frequency
 import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics
-
 import scala.collection.JavaConverters._
 
 

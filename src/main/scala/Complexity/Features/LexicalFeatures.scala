@@ -52,6 +52,7 @@ class LexicalFeatures(
         "minimum word length" -> stat.getMin,
         "25th %ile word length" -> stat.getPercentile(25),
         "mean word length" -> stat.getMean,
+        "median word length" -> stat.getPercentile(50),
         "75th %ile word length" -> stat.getPercentile(75),
         "maximum word length" -> stat.getMax
       )
@@ -61,6 +62,7 @@ class LexicalFeatures(
         "minimum word length" -> stat.getMin,
         "25th %ile word length" -> stat.getPercentile(25),
         "mean word length" -> stat.getMean,
+        "median word length" -> stat.getPercentile(50),
         "75th %ile word length" -> stat.getPercentile(75),
         "maximum word length" -> stat.getMax
       )
@@ -186,6 +188,7 @@ class LexicalFeatures(
       ("minimum word length", this.wordLengthStats(false)("minimum word length")),
       ("25th %ile word length", this.wordLengthStats(false)("25th %ile word length")),
       ("mean word length", this.wordLengthStats(false)("mean word length")),
+      ("median word length", this.wordLengthStats(false)("median word length")),
       ("75th %ile word length", this.wordLengthStats(false)("75th %ile word length")),
       ("maximum word length", this.wordLengthStats(false)("maximum word length")),
       ("% of tokens not present in concreteness", this.wordConcretenessStats("number of tokens not present in database normalized over non-proper noun word count")),
