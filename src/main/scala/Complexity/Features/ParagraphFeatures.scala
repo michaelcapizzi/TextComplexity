@@ -109,10 +109,10 @@ class ParagraphFeatures(
   //TODO - experiment with CoreNLP Semantic Graph
 
 
-  def makeParagraphFeatureVector = {
+  def makeParagraphFeatureVector: Vector[(String, Double)] = {
     Vector(
-      (textDocument.title, textDocument.title),
-      (textDocument.gradeLevel, textDocument.gradeLevel),
+      (textDocument.title, 0.0),
+      (textDocument.gradeLevel, 0.0),
       ("minimum paragraph length", this.paragraphLengthStats("minimum paragraph length")),
       ("25th %ile paragraph length", this.paragraphLengthStats("25th %ile paragraph length")),
       ("mean paragraph length", this.paragraphLengthStats("mean paragraph length")),
