@@ -1,7 +1,10 @@
 package Complexity
 
 
+import edu.arizona.sista.processors.{CorefMention, CorefChains}
 import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
+
+import scala.collection.immutable.IndexedSeq
 
 
 /**
@@ -36,6 +39,38 @@ class TextDocument(
 
   ////////////////////////// for normalizing //////////////////////////
 
+  //raw coreference chains
+    //Note: since all paragraphs are a separate document, there will be no coreference between paragraphs
+  def rawCoreference: Vector[CorefChains] = {
+    this.textDoc.flatMap(_.coreferenceChains)
+  }
+
+  //gives list of coreference chains
+    //four numbers in each mention
+      //(sentence index, head index, startOffset, endOffset)
+  def cleanCoreferenceChains: Vector[Vector[Iterable[CorefMention]]] = {
+    this.textDoc.map(_.coreferenceChains.get.getChains.toVector)
+  }
+
+  //outputs the lexical items that makeup the coreference chains
+  def showChains(collapse: Boolean): IndexedSeq[Vector[Iterable[Array[String]]]] = {
+    val output = for (i <- this.cleanCoreferenceChains.indices) yield {
+                    for (chain <- this.cleanCoreferenceChains(i)) yield {
+                      for (mention <- chain) yield {
+                        this.textDoc(i).sentences(mention.sentenceIndex).words.slice(mention.startOffset, mention.endOffset)
+                      }
+                    }
+                  }
+    if (collapse) {
+      output.map(paragraph => paragraph.map(chain => chain.map(mention => Array(mention.mkString(" ")))))
+    } else {
+      output
+    }
+  }
+
+  //incorporate a fourth item => coreference
+    //where each token has its corefered term here
+      //ex. (he, NNP, O, Michael) or (the, DET, O, the)
   def lexicalTuple: Vector[(String, (String, String, String))] = {
     this.textDoc.flatMap(_.sentences.map(_.words.toVector)).flatten zip               //the word
       (

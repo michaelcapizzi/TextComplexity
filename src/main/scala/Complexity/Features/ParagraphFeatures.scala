@@ -2,6 +2,7 @@ package Complexity.Features
 
 import Complexity.TextDocument
 import edu.arizona.sista.discourse.rstparser.DiscourseTree
+import edu.stanford.nlp.semgraph.SemanticGraph
 import org.apache.commons.math3.stat.Frequency
 import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics
 
@@ -104,6 +105,9 @@ class ParagraphFeatures(
       "percent of 'elaboration' relations in text" -> relationTypes.getOrElse("elaboration", 0.0)
     )
   }
+
+  //TODO - experiment with CoreNLP Semantic Graph
+
 
   def makeParagraphFeatureVector = {
     Vector(
