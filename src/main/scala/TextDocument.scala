@@ -68,7 +68,7 @@ class TextDocument(
     }
   }
 
-  //incorporate a fourth item => coreference
+  //TODO incorporate a fourth item => coreference
     //where each token has its corefered term here
       //ex. (he, NNP, O, Michael) or (the, DET, O, the)
   def lexicalTuple: Vector[(String, (String, String, String))] = {
