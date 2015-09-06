@@ -10,9 +10,7 @@ import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics
 /**
  * Created by mcapizzi on 8/17/15.
  */
-class LexicalFeatures(
-                       val textDocument: TextDocument
-                     ) {
+class LexicalFeatures (val textDocument: TextDocument) {
 
   //TODO build statistics about word and ngram frequency
   //TODO how to deal with no words in that part of speech?

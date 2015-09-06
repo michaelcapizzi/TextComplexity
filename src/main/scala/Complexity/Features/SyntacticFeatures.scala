@@ -13,9 +13,7 @@ import scala.collection.JavaConverters._
 /**
  * Created by mcapizzi on 8/17/15.
  */
-class SyntacticFeatures(
-                        val textDocument: TextDocument
-                       ) {
+class SyntacticFeatures(val textDocument: TextDocument) {
 
   def getSentences: Vector[Vector[String]] = {
     this.textDocument.textDoc.flatMap(_.sentences.map
