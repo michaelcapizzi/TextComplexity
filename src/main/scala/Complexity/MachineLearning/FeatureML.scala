@@ -58,6 +58,33 @@ class FeatureML(
     }
   }
 
+  def testLOO(titles: Vector[String], normalize: Boolean, range: ScaleRange[String]): Vector[(String, String, String)] = {
+    if (normalize == false) {
+      val results = Datasets.crossValidate[String, String](this.dataset, () => this.classifier, titles.length)
+
+      titles.zip(results).map(z =>
+        (
+          z._1,         //title
+          z._2._2,      //mlScore
+          z._2._1       //actualScore
+        )
+      )
+
+    } else {
+      Datasets.svmScaleRVFDataset[String, String](this.dataset, 0, 1)
+      val results = Datasets.crossValidate[String, String](this.dataset, () => this.classifier, titles.length)
+
+      titles.zip(results).map(z =>
+        (
+          z._1,         //title
+          z._2._2,      //mlScore
+          z._2._1       //actualScore
+          )
+      )
+
+    }
+  }
+
   //save classifier model to file
   def saveClassifier(modelFilepath: String): Unit = {
     this.classifier.saveTo(modelFilepath)
@@ -88,9 +115,6 @@ class FeatureML(
 
 }
 
-object FeatureML {
 
-  def leaveOneOut()
-}
 
 
