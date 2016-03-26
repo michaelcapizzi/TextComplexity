@@ -1,13 +1,14 @@
 package Complexity.MachineLearning
 
 import Complexity.Features.{ParagraphFeatures, SyntacticFeatures, LexicalFeatures}
-import Complexity.TextDocument
 import edu.arizona.sista.learning.RVFDatum
 import edu.arizona.sista.struct.Counter
 
 /**
  * Created by mcapizzi on 8/30/15.
  */
+
+/*
 class FeatureExtractor(
                         textDoc: TextDocument,
                         val lexFeatures: LexicalFeatures = null,
@@ -16,7 +17,7 @@ class FeatureExtractor(
                         //more to add here as they are built
                       ) {
 
-  //TODO text the datum creation
+  //TODO redo to match how its done in PitchVantage
 
   val metadata = Vector((this.textDoc.title, 0d), (this.textDoc.gradeLevel, 0d))
   val lexFeatureVector = if (lexFeatures != null) lexFeatures.makeLexicalFeatureVector else null
@@ -35,3 +36,4 @@ class FeatureExtractor(
     new RVFDatum[String, String](this.textDoc.gradeLevel, counter)
   }
 }
+*/
