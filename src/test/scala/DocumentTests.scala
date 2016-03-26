@@ -41,8 +41,8 @@ class DocumentTests extends GeneralTest {
   }
 
   "The proper nouns" should "be Owl and Moon" in {
-    val allEntities = procPars.flatMap(_.entities(withPunctuation = false)).flatten
-    assert(allEntities.distinct.length == 2 && allEntities.contains("Owl") && allEntities.contains("Moon"))
+    val allEntities = procPars.flatMap(_.getProperNouns).flatten
+    assert(allEntities.length == 2 && allEntities.contains("Owl") && allEntities.contains("Moon"))
   }
 
 
