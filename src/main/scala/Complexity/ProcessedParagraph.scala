@@ -13,7 +13,7 @@ class ProcessedParagraph(
                       val paragraphNumber: Option[Int] = None,
                       val chapter: Option[Int] = None,
                       val gradeLevel: Option[String] = None
-                    ){
+                    ) {
 
   //processors Document
   val doc = this.processor.mkDocument(this.text)
@@ -21,8 +21,10 @@ class ProcessedParagraph(
   //annotate document
   def annotate: Unit = {
     this.processor.annotate(this.doc)
-    this.doc.clear()
+    this.doc.clear()                      //clear from memory immediately after annotating
   }
+
+
 
   /////////////////////NLP units//////////////////////
 

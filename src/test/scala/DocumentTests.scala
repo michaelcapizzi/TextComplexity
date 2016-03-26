@@ -1,6 +1,7 @@
 import Complexity.ProcessedParagraph
 import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
 import Complexity.Utils.IO._
+import Complexity.Utils.Testing._
 
 /**
   * Created by mcapizzi on 3/25/16.
@@ -10,21 +11,11 @@ class DocumentTests extends GeneralTest {
   //file to use for test
   val file = "0001AL_OwlAndMoon.txt"
 
-  //import text
-  val text = importText(file)
-
   //create processor
   val p = new CoreNLPProcessor(withDiscourse = true)
 
   //make ProcessedParagraphs
-  val procPars = for (paragraph <- text) yield {
-                  new ProcessedParagraph(
-                                          text = paragraph,
-                                          processor = this.p,
-                                          author = Some(getAuthor(file)),
-                                          gradeLevel = Some(getGradeLevel(file))
-                  )
-  }
+  val procPars = makeProcPars(file)
 
   //annotate
   procPars.foreach(_.annotate)
@@ -41,8 +32,8 @@ class DocumentTests extends GeneralTest {
   }
 
   "The proper nouns" should "be Owl and Moon" in {
-    val allEntities = procPars.flatMap(_.getProperNouns).flatten
-    assert(allEntities.length == 2 && allEntities.contains("Owl") && allEntities.contains("Moon"))
+    val allEntities = procPars.flatMap(_.getProperNouns).distinct
+    assert(allEntities.length == 2)
   }
 
 
