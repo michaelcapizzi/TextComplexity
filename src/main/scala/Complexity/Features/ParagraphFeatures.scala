@@ -1,6 +1,5 @@
 package Complexity.Features
 
-import Complexity.TextDocument
 import edu.arizona.sista.discourse.rstparser.DiscourseTree
 import edu.stanford.nlp.semgraph.SemanticGraph
 import org.apache.commons.math3.stat.Frequency
@@ -9,6 +8,8 @@ import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics
 /**
  * Created by mcapizzi on 8/18/15.
  */
+
+/*
 class ParagraphFeatures(val textDocument: TextDocument) {
 
   //paragraph size stats
@@ -150,5 +151,6 @@ class ParagraphFeatures(val textDocument: TextDocument) {
 
 
 
-
 }
+
+*/

@@ -5,6 +5,8 @@ import edu.arizona.sista.learning._
 /**
  * Created by mcapizzi on 9/6/15.
  */
+
+/*
 class FeatureML(
             val classifier: Classifier[String, String]
            ) {
@@ -118,3 +120,4 @@ class FeatureML(
 
 
 
+*/

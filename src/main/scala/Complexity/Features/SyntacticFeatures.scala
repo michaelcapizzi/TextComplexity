@@ -1,7 +1,6 @@
 package Complexity.Features
 
 import java.util
-import Complexity.TextDocument
 import edu.stanford.nlp.trees.tregex.TregexPattern
 import edu.stanford.nlp.trees.{CollinsHeadFinder, Constituent, Tree}
 import org.apache.commons.math3.stat.Frequency
@@ -13,6 +12,8 @@ import scala.collection.JavaConverters._
 /**
  * Created by mcapizzi on 8/17/15.
  */
+
+/*
 class SyntacticFeatures(val textDocument: TextDocument) {
 
   def getSentences: Vector[Vector[String]] = {
@@ -283,3 +284,5 @@ class SyntacticFeatures(val textDocument: TextDocument) {
     )
   }
 }
+
+*/
