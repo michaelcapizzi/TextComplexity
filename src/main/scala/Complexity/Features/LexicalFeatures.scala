@@ -119,8 +119,8 @@ class LexicalFeatures (td: TextDocument) {
 
   def makeLexicalFeatureVector: Vector[(String, Double)] = {
     Vector(
-      td.title -> 0d,
-      td.gradeLevel -> 0d,
+      td.title.getOrElse("") -> 0d,
+      td.gradeLevel.getOrElse("") -> 0d,
       "distinct word ratio" -> td.countRatio("word"),
       "distinct lemma ratio" -> td.countRatio("lemma"),
       "% of distinct nouns in all lemmas" -> this.getDistinctRatios("lemma")("noun"),

@@ -11,17 +11,11 @@ import scala.collection.parallel.ParSeq
   * Created by mcapizzi on 3/25/16.
   */
 class TextDocument (
-                    val paragraphs: Vector[ProcessedParagraph]    //already annotated!
+                    val paragraphs: Vector[ProcessedParagraph],    //already annotated!
+                    val title: Option[String] = None,
+                    val author: Option[String] = None,
+                    val gradeLevel: Option[String] = None
                    ){
-
-  //take title from any paragraph
-  val title = paragraphs.map(_.title).find(z => z.nonEmpty).getOrElse("")
-
-  //take author from any paragraph
-  val author = paragraphs.map(_.author).find(z => z.nonEmpty).getOrElse("")
-
-  //take grade level from any paragraph
-  val gradeLevel = paragraphs.map(_.author).find(z => z.nonEmpty).getOrElse("")
 
   //parallelized vector of paragraphs
   val parParagraphs = this.paragraphs.par
