@@ -13,7 +13,7 @@ object Testing {
   val owlFile = "0001AL_OwlAndMoon.txt"
 
   //create processor
-  val p = new CoreNLPProcessor(withDiscourse = true)
+  val p = new CoreNLPProcessor(withDiscourse = true, maxSentenceLength = 450)
 
   def makeProcPars(file: String): Vector[ProcessedParagraph] = {
     val text = importText(file)
@@ -22,6 +22,7 @@ object Testing {
       new ProcessedParagraph(
                               text = paragraph,
                               processor = p,
+                              title = Some(getTitle(file)),
                               author = Some(getAuthor(file)),
                               gradeLevel = Some(getGradeLevel(file))
       )

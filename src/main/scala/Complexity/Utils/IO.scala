@@ -44,6 +44,16 @@ object IO {
     authorRegex.replaceFirstIn(line, """$1""")
   }
 
+  //get title from metadata
+  def getTitle(filePath: String): String = {
+    val titleRegex = """%%(.*)""".r
+    val line = scala.io.Source.fromInputStream(getClass.getResourceAsStream("/rawText/" + filePath)).
+      getLines.
+      slice(1,2).
+      next
+    titleRegex.replaceFirstIn(line, """$1""")
+  }
+
   //get grade level from filename
   def getGradeLevel(filePath: String): String = {
     val gradeLevelRegex = """.*\/([0-9]+)[A-Z]+_.*""".r

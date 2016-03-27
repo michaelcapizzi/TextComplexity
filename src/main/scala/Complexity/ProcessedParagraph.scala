@@ -2,6 +2,7 @@ package Complexity
 
 import java.util
 import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
+import edu.arizona.sista.struct.Counter
 
 /**
   * Created by mcapizzi on 3/25/16.
@@ -9,6 +10,7 @@ import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
 class ProcessedParagraph(
                       val text: String,
                       val processor: CoreNLPProcessor,
+                      val title: Option[String] = None,
                       val author: Option[String] = None,
                       val paragraphNumber: Option[Int] = None,
                       val chapter: Option[Int] = None,
@@ -130,7 +132,7 @@ class ProcessedParagraph(
     }
   }
 
-  //proper nouns
+  /*//proper nouns
   def getProperNouns: Vector[String] = {
     this.lexicalTuple(withPunctuation = false).
       flatten.
@@ -139,7 +141,7 @@ class ProcessedParagraph(
         tuple._2._3 == "LOCATION"         //or location
       ).map(_._1).                        //keep just the word
       distinct                            //eliminate duplicates
-  }
+  }*/
 
   //parse trees = SISTA
   def sistaParseTree: Vector[edu.arizona.sista.struct.Tree] = {
@@ -177,27 +179,39 @@ class ProcessedParagraph(
   ///////////////////stats////////////////////
 
   //iterate through sentences one time and build all counters for efficiency
-  def buildCounters: Map[String, edu.arizona.sista.struct.Counter[_]] = {
-    val tokenCounter = new edu.arizona.sista.struct.Counter[String]()
-    val lemmaCounter = new edu.arizona.sista.struct.Counter[String]()
-    val tagCounter = new edu.arizona.sista.struct.Counter[String]()
-    val tokenTagCounter = new edu.arizona.sista.struct.Counter[(String, String)]()
-    val lemmaTagCounter = new edu.arizona.sista.struct.Counter[(String, String)]()
+    //returns tuple of Map of counters of differnet types
+      //(Counter[String]s, Counter[(String, String)]s)
+    //TODO did them all in one iteration, but needed tuple output to handle differnet Type
+  def buildCounters: (Map[String, Counter[String]], Map[String, Counter[(String, String)]]) = {
+    val tokenCounter = new Counter[String]()
+    val lemmaCounter = new Counter[String]()
+    val tagCounter = new Counter[String]()
+    val properNounCounter = new Counter[String]()
+    val tokenTagCounter = new Counter[(String, String)]()
+    val lemmaTagCounter = new Counter[(String, String)]()
 
     for (word <- this.lexicalTuple(withPunctuation = false).flatten) {
-      tokenCounter.incrementCount(word._1)
-      lemmaCounter.incrementCount(word._2._1)
+      tokenCounter.incrementCount(word._1.toLowerCase)
+      lemmaCounter.incrementCount(word._2._1.toLowerCase)
       tagCounter.incrementCount(word._2._2)
-      tokenTagCounter.incrementCount(word._1 -> word._2._2)
-      lemmaTagCounter.incrementCount(word._2._1 -> word._2._2)
+      tokenTagCounter.incrementCount(word._1.toLowerCase -> word._2._2)
+      lemmaTagCounter.incrementCount(word._2._1.toLowerCase -> word._2._2)
+      if (word._2._3 == "PERSON" || word._2._3 == "LOCATION") {
+        properNounCounter.incrementCount(word._1)
+      }
     }
 
-    Map(
+    (
+      Map(
         "tokens" -> tokenCounter,
         "lemmas" -> lemmaCounter,
         "tags" -> tagCounter,
+        "proper nouns" -> properNounCounter
+      ),
+    Map(
         "tokens-tags" -> tokenTagCounter,
         "lemmas-tags" -> lemmaTagCounter
+      )
     )
 
   }
