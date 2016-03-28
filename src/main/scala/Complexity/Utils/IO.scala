@@ -1,7 +1,7 @@
 package Complexity.Utils
 
 import java.io.{FileReader, BufferedReader, PrintWriter, File}
-import Complexity.TextDocument
+import Complexity.{ProcessedParagraph, TextDocument}
 import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
 import edu.arizona.sista.processors.{Document, DocumentSerializer}
 
@@ -63,6 +63,7 @@ object IO {
     gradeLevelRegex.replaceFirstIn(filePath, """$1""")
   }
 
+
   //serialize annotation to file
   def serializeAnnotation(annotatedDocuments: Vector[Document], outputFileName: String): Unit = {
     val writeToFile = new PrintWriter(
@@ -79,6 +80,7 @@ object IO {
 
     writeToFile.close
   }
+
 
   //import serialized annotation into vector of annotated paragraphs
   def importSerial(annotationFileName: String): Vector[Document] = {
@@ -113,16 +115,39 @@ object IO {
   }
 
   //import directly from annotation and make text document
-  /*def makeDocumentFromSerial(annotationFileName: String, processor: CoreNLPProcessor): TextDocument = {
+  def makeDocumentFromSerial(annotationFileName: String, processor: CoreNLPProcessor): TextDocument = {
+
+    //plain text filename
+    val textFileName = annotationFileName.dropRight(10) + ".txt"
+
     //make sista Documents
     val documentVector = importSerial(annotationFileName)
 
-    val text = document.map(_.sentences.map(_.words.toVector).flatten.mkString(" "))
-    val author = getAuthor(fullOriginalFilePath)
-    val title = getTitleChapter(fullOriginalFilePath)._1
-    val chapter = getTitleChapter(fullOriginalFilePath)._2
-    val gradeLevel = getGradeLevel(fullOriginalFilePath)
-    new TextDocument(text, processor, document, author, title, chapter, gradeLevel)
-  }*/
+    //get metadata from original file
+    val author = getAuthor(textFileName)
+    val title = getTitle(textFileName)
+    val gradeLevel = getGradeLevel(textFileName)
+
+    //make ProcessedParagraphs
+    val procPars = for (doc <- documentVector) yield {
+                    new ProcessedParagraph(
+                                            text = None,
+                                            annotatedDoc = Some(doc),
+                                            processor = processor,
+                                            title = Some(title),
+                                            author = Some(author),
+                                            gradeLevel = Some(gradeLevel)
+                                          )
+                    }
+
+    //make TextDocument
+    new TextDocument(
+                      paragraphs = procPars,
+                      title = Some(title),
+                      author = Some(author),
+                      gradeLevel = Some(gradeLevel)
+                    )
+
+  }
 
 }

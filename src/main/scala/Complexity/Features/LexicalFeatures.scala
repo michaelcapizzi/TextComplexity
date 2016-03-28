@@ -12,9 +12,10 @@ import scala.collection.parallel.immutable.ParSeq
 
 
 /**
- * Created by mcapizzi on 8/17/15.
+ * Class of lexical features contributing to ultimate feature selection.
+  * Takes a TextDocument as input.
  */
-class LexicalFeatures (td: TextDocument) {
+class LexicalFeatures (val td: TextDocument) {
 
   //distinct percentages
   //gram = "word" or "lemma"
@@ -28,7 +29,7 @@ class LexicalFeatures (td: TextDocument) {
 
 
   //word lengths
-  def wordLengths(keepProper: Boolean): Vector[Double] = {
+  def getWordLengths(keepProper: Boolean): Vector[Double] = {
     if (keepProper) {
       for (word <- td.tokensCounter.keySet.toVector) yield {
         word.length.toDouble
@@ -48,7 +49,7 @@ class LexicalFeatures (td: TextDocument) {
     //call descriptive stats
     val stat = new DescriptiveStatistics()
     //add to stats
-    this.wordLengths(keepProper).foreach(stat.addValue)
+    this.getWordLengths(keepProper).foreach(stat.addValue)
     //stats
     Map(
       "minimum word length" -> stat.getMin,

@@ -1,8 +1,9 @@
 package Complexity.Features
 
 import java.util
+import Complexity.TextDocument
 import edu.stanford.nlp.trees.tregex.TregexPattern
-import edu.stanford.nlp.trees.{CollinsHeadFinder, Constituent, Tree}
+import edu.stanford.nlp.trees.CollinsHeadFinder
 import org.apache.commons.math3.stat.Frequency
 import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics
 import scala.collection.JavaConverters._
@@ -10,25 +11,31 @@ import scala.collection.JavaConverters._
 
 
 /**
- * Created by mcapizzi on 8/17/15.
+ * Class of syntactic features contributing to ultimate feature selection.
+  * Takes a TextDocument as input.
  */
 
-/*
-class SyntacticFeatures(val textDocument: TextDocument) {
 
-  def getSentences: Vector[Vector[String]] = {
+class SyntacticFeatures(val td: TextDocument) {
+
+  /*def getSentences: Vector[Vector[String]] = {
     this.textDocument.textDoc.flatMap(_.sentences.map
       (_.words.toVector))
-  }
+  }*/
 
+  //sentence lengths
+    //not including punctuation
   def getSentenceLengths: Vector[Double] = {
-    this.textDocument.textDoc.flatMap(_.sentences.map     //for each sentence in each paragraph (with paragraphs eventually removed)
-      (_.words.count
-      (_.matches("[A-Za-z]+")).toDouble))                 //get the tokens that are words and get their size
+    val allSentences = this.td.words(withPunctuation = false).flatten  //remove paragraphs
+
+    allSentences.map(_.length.toDouble)
   }
 
+  //sentence length stats
   def sentenceLengthStats: Map[String, Double] = {
+    //call descriptive stats
     val stat = new DescriptiveStatistics()
+    //add to stats
     this.getSentenceLengths.foreach(stat.addValue)
 
     Map(
@@ -41,27 +48,66 @@ class SyntacticFeatures(val textDocument: TextDocument) {
     )
   }
 
-  //average # of conjunctions used
-  def conjunctionFrequency: Double = {
-    this.textDocument.lexicalTuple.count(
-      _._2._2.matches("CC")).                       //count all uses
-      toDouble / textDocument.sentenceSize          //normalized over number of sentences
+  //get punctuation
+  def getPunctuation: Vector[Vector[String]] = {
+    val sentences = td.words(withPunctuation = true).flatten    //remove paragraphs
+
+    //filter to only keep punctuation
+    for (sent <- sentences) yield {
+      sent.filterNot(token => token.matches("[A-z0-9]+"))
+    }
+
   }
 
-  def getParseTrees: Vector[Tree] = {
-    this.textDocument.textDoc.flatMap(_.sentences.map(
-      _.syntacticTree.toString).map(                //get the trees and convert to String
-      Tree.valueOf))                                //convert back to SISTA tree type (or CoreNLP type?)
-  }
 
-  def getTreeSizes: Vector[Double] = {
-    this.getParseTrees.map(                         //get the trees
-      _.size.toDouble)                              //capture their sizes
-  }
 
-  def treeSizeStats: Map[String, Double] = {
+  //punctuation stats
+    //"surplus" punctuation = anything more than an end-of-sentence marker
+  def punctuationStats: Map[String, Double] = {
+    //call descriptive stats
     val stat = new DescriptiveStatistics()
-    this.getTreeSizes.foreach(stat.addValue)        //count
+    //surplus punctuation counts
+    val surplusCounts = for (sentence <- this.getPunctuation) yield {
+                          sentence.dropRight(1).        //drop end-of-sentence marker
+                          length.toDouble
+    }
+    //count of sentences with surplus punctuation
+    val surplusNumber = surplusCounts.count(_ != 0d).toDouble
+    //total number of sentence
+    val totalSentenceNumber = surplusCounts.length.toDouble
+
+    //add to stats
+    surplusCounts.foreach(stat.addValue)
+
+    Map(
+      "percent of sentences with surplus punctuation" -> surplusNumber / totalSentenceNumber,
+      "25th %ile surplus punctuation size" -> stat.getPercentile(25),
+      "mean surplus punctuation size" -> stat.getMean,
+      "median surplus punctuation size" -> stat.getPercentile(50),
+      "75th %ile surplus punctuation size" -> stat.getPercentile(75),
+      "maximum surplus punctuation size" -> stat.getMax
+    )
+  }
+
+
+  //TODO conjunction usage
+
+
+  //parse tree sizes
+  def getTreeSizes: Vector[Double] = {
+    td.coreNLPParseTrees.
+      flatten.              //remove paragraphs
+      map(_.size.toDouble)
+  }
+
+
+  //parse tree size stats
+  def treeSizeStats: Map[String, Double] = {
+    //call descriptive stats
+    val stat = new DescriptiveStatistics()
+    //add to stats
+    this.getTreeSizes.foreach(stat.addValue)
+
     Map(
       "minimum tree size" -> stat.getMin,
       "25th %ile tree size" -> stat.getPercentile(25),
@@ -72,14 +118,20 @@ class SyntacticFeatures(val textDocument: TextDocument) {
     )
   }
 
+
+  //parse tree depths
   def getTreeDepths: Vector[Double] = {
-    this.getParseTrees.map(                         //get the trees
-      _.depth.toDouble)                             //capture their depths
+    td.coreNLPParseTrees.
+      flatten.                //remove paragraphs
+      map(_.depth.toDouble)
   }
 
+  //parse tree depth stats
   def treeDepthStats: Map[String, Double] = {
+    //call descriptive stats
     val stat = new DescriptiveStatistics()
-    this.getTreeDepths.foreach(stat.addValue)       //count
+    //add to stats
+    this.getTreeDepths.foreach(stat.addValue)
 
     Map(
       "minimum tree depth" -> stat.getMin,
@@ -91,20 +143,30 @@ class SyntacticFeatures(val textDocument: TextDocument) {
     )
   }
 
-  //from Coh-Metrix research
-  def getDistanceToVerb: Vector[Double] = {         //assuming CollinsHeadFinder ALWAYS finds the main verb first
+
+
+  //get distances to verb
+    //uses CollinsHeadFinder to identify the root of sentence (presumably the verb) and uses its index
+  def getDistanceToVerb: Vector[Double] = {
+    //initiate head finder
     val cHF = new CollinsHeadFinder()
-    val sentences = this.getSentences
-    val trees = this.getParseTrees
-    val tuple = sentences zip trees
-    for (item <- tuple) yield {
-      item._1.indexOf(item._2.headTerminal(cHF).toString).toDouble + 1d      //the index of the main verb in the original sentence
+
+    //all trees
+    val trees = td.coreNLPParseTrees.flatten      //removes paragraphs
+    for (t <- trees) yield {
+      val head = t.headTerminal(cHF).label().toString     //returns word-index
+      val index = head.split("-").last.toDouble           //extract just index
+      index
     }
   }
 
+
+  //distance to verb stats
   def distanceToVerbStats: Map[String, Double] = {
+    //call descriptive stats
     val stat = new DescriptiveStatistics()
-    this.getDistanceToVerb.foreach(stat.addValue)       //count
+    //add to stats
+    this.getDistanceToVerb.foreach(stat.addValue)
 
     Map(
       "minimum distance to verb" -> stat.getMin,
@@ -116,13 +178,23 @@ class SyntacticFeatures(val textDocument: TextDocument) {
     )
   }
 
-  def getConstituents: Vector[util.Set[Constituent]] = {
-    this.getParseTrees.map(_.constituents)
+
+  //constituent counts
+    //number of constituents per sentence
+  def getConstituentCounts: Vector[Double] = {
+    td.rawConstituents.
+      flatten.            //remove paragraphs
+      map(con =>          //for each constituent
+      con.size.toDouble)  //get its size
   }
 
+
+  //constituent count stats
   def constituentCountStats: Map[String, Double] = {
+    //call descriptive stats
     val stat = new DescriptiveStatistics()
-    this.getConstituents.map(_.size).foreach(stat.addValue(_))                //count
+    //add to stats
+    this.getConstituentCounts.foreach(stat.addValue)
 
     Map(
       "minimum number of constituents in a sentence" -> stat.getMin,
@@ -134,16 +206,28 @@ class SyntacticFeatures(val textDocument: TextDocument) {
     )
   }
 
-  def getConstituentLengths: Vector[Double] = {
-    this.getConstituents.map(
-      _.asScala.toVector).flatMap(                          //convert consituent pairs to Scala vectors
-        constituent =>
-          for (c <- constituent) yield c.size.toDouble)     //get size (difference) of each constituent pair
+
+  //get constituent sizes
+    //number of tokens per constituent
+  def getConstituentSizes: Vector[Double] = {
+    //convert constituents to Scala vectors
+    val consScala = td.rawConstituents.
+                      flatten.                  //remove paragraphs
+                      flatMap(con =>
+                        con.asScala.toVector)   //cast as Scala
+
+    //get size of constituent
+    consScala.map(_.size.toDouble)
+
   }
 
-  def constituentLengthStats: Map[String, Double] = {
+
+  //constituent size stats
+  def constituentSizeStats: Map[String, Double] = {
+    //call descriptive stats
     val stat = new DescriptiveStatistics()
-    this.getConstituentLengths.foreach(stat.addValue(_))            //count
+    //add to stats
+    this.getConstituentSizes.foreach(stat.addValue)
 
     Map(
       "constituent length minimum" -> stat.getMin,
@@ -154,6 +238,12 @@ class SyntacticFeatures(val textDocument: TextDocument) {
       "constituent length maximum" -> stat.getMax
     )
   }
+
+
+  /*
+
+
+
 
   //Tregex patterns
   //modified from http://personal.psu.edu/xxl13/papers/Lu_inpress_ijcl.pdf
@@ -283,6 +373,7 @@ class SyntacticFeatures(val textDocument: TextDocument) {
       ("% of fragments", this.sentenceStructureTypeStats("ratio of fragments"))
     )
   }
+
+  */
 }
 
-*/

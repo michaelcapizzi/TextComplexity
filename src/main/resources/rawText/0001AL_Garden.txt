@@ -9,9 +9,7 @@ Frog was in his garden. Toad came walking by.
 
 “I wish I had a garden,” said Toad.
 
-“Here are some flower seeds. Plant them in the ground,” said 
-
-Frog, “and soon you will have a garden.”
+“Here are some flower seeds. Plant them in the ground,” said Frog, “and soon you will have a garden.”
 
 “How soon?” asked Toad.
 

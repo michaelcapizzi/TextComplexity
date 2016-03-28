@@ -8,7 +8,9 @@ import scala.collection.parallel.ParSeq
 
 
 /**
-  * Created by mcapizzi on 3/25/16.
+  * Class to house all the NLP elements for an entire document.
+  * Consists of a Vector of *annotated* ProcessedParagraphs.
+  * Will be fed to individual Feature classes.
   */
 class TextDocument (
                     val paragraphs: Vector[ProcessedParagraph],    //already annotated!
@@ -20,12 +22,7 @@ class TextDocument (
   //parallelized vector of paragraphs
   val parParagraphs = this.paragraphs.par
 
- /* //annotate all paragraphs
-    //parallelizing causes error in discourse parse - why?
-  def annotateAll: Unit = {
-    this.paragraphs.foreach(_.annotate)
-  }*/
-
+  //all counters
   val allCounters = this.parParagraphs.map(_.buildCounters)
   val stringCounters = allCounters.map(_._1)
   val stringStringCounters = allCounters.map(_._2)
@@ -201,19 +198,20 @@ class TextDocument (
 
 }
 
+/**
+  * contains general functions needed in processing TextDocument
+  */
 object TextDocument {
 
-  //wrappers for fold functions (to accumulate results across all paragraphs)
+  //wrapper for fold function (to accumulate results across all paragraphs)
   //function ([T], [T]) => [T] + [T])
-
-  //fold function generalized
   //TODO use of Typing
-  //example: foldApply(tagCounterList, new Counter[String], (a: Counter[String], b: Counter[String]) => a + b)
+    //example: foldApply(tagCounterList, new Counter[String], (a: Counter[String], b: Counter[String]) => a + b)
   def foldApply[T](list: scala.collection.parallel.ParSeq[T], startingItem: T, function: (T, T) => T): T = {
     list.foldLeft(startingItem)(function)
   }
 
-  //TODO are these needed anymore?
+  /*//TODO are these needed anymore?
   //fold function for integers
   def foldApplyInt(list: scala.collection.parallel.ParSeq[Int], startingInt: Int, function: (Int, Int) => Int): Int = {
     list.foldLeft(startingInt)(function)
@@ -227,6 +225,6 @@ object TextDocument {
   //fold function for counters
   def foldApplyCounter(list: scala.collection.parallel.ParSeq[Counter[String]], startingCounter: Counter[String], function: (Counter[String], Counter[String]) => Counter[String]): Counter[String] = {
     list.foldLeft(startingCounter)(function)
-  }
+  }*/
 
 }

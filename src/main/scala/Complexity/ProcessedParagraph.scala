@@ -6,7 +6,9 @@ import edu.arizona.sista.struct.Counter
 import java._
 
 /**
-  * Created by mcapizzi on 3/25/16.
+  * Class to house all the NLP elements needed for feature selection later.
+  * It is intended to be used for EACH paragraph of the text
+  * (because of the computational cost of the Discourse Parser).
   */
 class ProcessedParagraph(
                       val text: Option[String],

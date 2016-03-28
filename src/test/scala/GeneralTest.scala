@@ -1,3 +1,8 @@
+import Complexity.Features.{SyntacticFeatures, LexicalFeatures}
+import Complexity.TextDocument
+import Complexity.Utils.IO._
+import Complexity.Utils.Testing._
+import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
 import org.scalatest._
 
 /**
@@ -7,9 +12,34 @@ import org.scalatest._
 abstract class GeneralTest extends FlatSpec with Matchers with
   OptionValues with Inside with Inspectors{
 
-  //write specific tests with class X extends GeneralTest
+  //file to use for test
+  val file = "0001AL_OwlAndMoon.txt"
+  //  val annotation = "0000Test.annotated"
+  val annotation = "0001AL_OwlAndMoon.annotated"
+
+  //create processor
+  val p = new CoreNLPProcessor(withDiscourse = true)
+
+  //make ProcessedParagraphs
+  val procParsFromText = makeProcParsFromText(file)
+
+  //annotate
+  procParsFromText.foreach(_.annotate)
+
+  //import annotation
+  val procParsFromAnnotation = makeProcParsFromAnnotation(file, annotation)
+
+  //make TextDocuments
+  val tdFromText = new TextDocument(procParsFromText)
+  val tdFromAnnotation = makeDocumentFromSerial(annotation, p)
+
+  //features
+  val lex = new LexicalFeatures(tdFromText)
+  val syn = new SyntacticFeatures(tdFromText)
 
 }
+
+//write specific tests with class X extends GeneralTest
 
 /*  example
 class SampleTest extends GeneralTest {

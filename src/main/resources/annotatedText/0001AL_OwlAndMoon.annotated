@@ -9,13 +9,24 @@ to	24	26	TO	to	O	O	_
 the	27	30	DT	the	O	O	_
 seashore	31	39	NN	seashore	O	O	_
 .	39	40	.	.	O	O	_
-D	1
+D	1	8
 3
-2	0	num
-2	1	nn
+2	0	nummod
+2	1	compound
 3	2	nsubj
 3	4	advmod
-4	7	prep_to
+4	5	nmod
+5	7	dep
+7	6	det
+EOX
+D	0	8
+3
+2	0	nummod
+2	1	compound
+3	2	nsubj
+3	4	advmod
+4	5	nmod
+5	7	dep
 7	6	det
 EOX
 Y	1
@@ -35,16 +46,33 @@ at	79	81	IN	at	O	O	_
 the	82	85	DT	the	O	O	_
 waves	86	91	NNS	wave	O	O	_
 .	91	92	.	.	O	O	_
-D	1
+D	1	12
 1
 1	0	nsubj
-1	5	prep_on
+1	2	nmod
+1	6	cc
 1	7	conj_and
+2	5	dep
 5	3	det
 5	4	amod
 7	0	nsubj
-7	8	prt
-7	11	prep_at
+7	8	compound:prt
+7	9	nmod
+9	11	dep
+11	10	det
+EOX
+D	0	12
+1
+1	0	nsubj
+1	2	nmod
+1	6	cc
+1	7	conj
+2	5	dep
+5	3	det
+5	4	amod
+7	8	compound:prt
+7	9	nmod
+9	11	dep
 11	10	det
 EOX
 Y	1
@@ -55,7 +83,12 @@ Everything	93	103	NN	everything	O	O	_
 was	104	107	VBD	be	O	O	_
 dark	108	112	JJ	dark	O	O	_
 .	112	113	.	.	O	O	_
-D	1
+D	1	3
+2
+2	0	nsubj
+2	1	cop
+EOX
+D	0	3
 2
 2	0	nsubj
 2	1	cop
@@ -80,18 +113,38 @@ of	165	167	IN	of	O	O	_
 the	168	171	DT	the	O	O	_
 sea	172	175	NN	sea	O	O	_
 .	175	176	.	.	O	O	_
-D	1
+D	1	15
 7
 3	1	det
 3	2	amod
-3	6	prep_of
+3	4	nmod
+4	6	dep
 6	5	det
 7	0	advmod
 7	3	nsubj
 7	8	advmod
-7	11	prep_over
+7	9	nmod
+9	11	dep
 11	10	det
-11	14	prep_of
+11	12	nmod
+12	14	dep
+14	13	det
+EOX
+D	0	15
+7
+3	1	det
+3	2	amod
+3	4	nmod
+4	6	dep
+6	5	det
+7	0	advmod
+7	3	nsubj
+7	8	advmod
+7	9	nmod
+9	11	dep
+11	10	det
+11	12	nmod
+12	14	dep
 14	13	det
 EOX
 Y	1
@@ -126,7 +179,13 @@ watched	4	11	VBD	watch	O	O	_
 the	12	15	DT	the	O	O	_
 moon	16	20	NN	moon	O	O	_
 .	20	21	.	.	O	O	_
-D	1
+D	1	4
+1
+1	0	nsubj
+1	3	dobj
+3	2	det
+EOX
+D	0	4
 1
 1	0	nsubj
 1	3	dobj
@@ -145,13 +204,25 @@ into	51	55	IN	into	O	O	_
 the	56	59	DT	the	O	O	_
 sky	60	63	NN	sky	O	O	_
 .	63	64	.	.	O	O	_
-D	1
+D	1	8
 1
 1	0	nsubj
-1	2	advmod
-1	4	advmod
-1	7	prep_into
+1	5	nmod
+2	3	cc
 2	4	conj_and
+5	2	advmod
+5	4	advmod
+5	7	dep
+7	6	det
+EOX
+D	0	8
+1
+1	0	nsubj
+1	5	nmod
+2	3	cc
+2	4	conj
+5	2	advmod
+5	7	dep
 7	6	det
 EOX
 Y	1
@@ -167,7 +238,16 @@ moon	87	91	NN	moon	O	O	_
 was	92	95	VBD	be	O	O	_
 shining	96	103	VBG	shine	O	O	_
 .	103	104	.	.	O	O	_
-D	1
+D	1	8
+7
+5	1	det
+5	2	amod
+5	4	amod
+7	0	advmod
+7	5	nsubj
+7	6	aux
+EOX
+D	0	8
 7
 5	1	det
 5	2	amod
@@ -196,17 +276,38 @@ a	155	156	DT	a	O	O	_
 long	157	161	JJ	long	O	O	_
 time	162	166	NN	time	O	O	_
 .	166	167	.	.	O	O	_
-D	1
+D	1	15
 1
 1	0	nsubj
-1	4	prep_on
+1	2	nmod
+1	5	cc
 1	6	conj_and
+2	4	dep
 4	3	det
 6	0	nsubj
-6	7	prt
-6	10	prep_at
+6	7	compound:prt
+6	8	nmod
+8	10	dep
 10	9	det
-10	14	prep_for
+10	11	nmod
+11	14	dep
+14	12	det
+14	13	amod
+EOX
+D	0	15
+1
+1	0	nsubj
+1	2	nmod
+1	5	cc
+1	6	conj
+2	4	dep
+4	3	det
+6	7	compound:prt
+6	8	nmod
+8	10	dep
+10	9	det
+10	11	nmod
+11	14	dep
 14	12	det
 14	13	amod
 EOX
@@ -233,12 +334,13 @@ back	224	228	RB	back	O	O	_
 at	229	231	IN	at	O	O	_
 me	232	234	PRP	I	O	O	_
 .	234	235	.	.	O	O	_
-D	1
+D	1	18
 14
 4	1	mark
 4	2	nsubj
 4	3	aux
-4	6	prep_at
+4	5	nmod
+5	6	dep
 11	10	advmod
 14	4	advcl
 14	8	nsubj
@@ -246,7 +348,25 @@ D	1
 14	12	aux
 14	13	aux
 14	15	advmod
-14	17	prep_at
+14	16	nmod
+16	17	dep
+EOX
+D	0	18
+14
+4	1	mark
+4	2	nsubj
+4	3	aux
+4	5	nmod
+5	6	dep
+11	10	advmod
+14	4	advcl
+14	8	nsubj
+14	11	nsubj
+14	12	aux
+14	13	aux
+14	15	advmod
+14	16	nmod
+16	17	dep
 EOX
 Y	1
 ROOT	0	0	19	1	S	7	0	19	9	``	0	0	1	1	``	0	0	1	0	SBAR	1	1	7	2	IN	0	1	2	1	If	1	1	2	0	S	1	2	7	2	NP	0	2	3	1	PRP	0	2	3	1	I	2	2	3	0	VP	1	3	7	2	VBP	0	3	4	1	am	3	3	4	0	VP	0	4	7	2	VBG	0	4	5	1	looking	4	4	5	0	PP	0	5	7	2	IN	0	5	6	1	at	5	5	6	0	NP	0	6	7	1	PRP	0	6	7	1	you	6	6	7	0	,	0	7	8	1	,	7	7	8	0	NP	0	8	9	1	NN	0	8	9	1	moon	8	8	9	0	,	0	9	10	1	,	9	9	10	0	RB	0	10	11	1	then	10	10	11	0	NP	0	11	12	1	PRP	0	11	12	1	you	11	11	12	0	VP	1	12	18	2	MD	0	12	13	1	must	12	12	13	0	VP	1	13	18	2	VB	0	13	14	1	be	13	13	14	0	VP	0	14	18	3	VBG	0	14	15	1	looking	14	14	15	0	ADVP	0	15	16	1	RB	0	15	16	1	back	15	15	16	0	PP	0	16	18	2	IN	0	16	17	1	at	16	16	17	0	NP	0	17	18	1	PRP	0	17	18	1	me	17	17	18	0	.	0	18	19	1	.	18	18	19	0
@@ -260,7 +380,15 @@ good	252	256	JJ	good	O	O	_
 friends	257	264	NNS	friend	O	O	_
 .	264	265	.	.	O	O	_
 ''	265	266	''	''	O	O	_
-D	1
+D	1	6
+5
+4	3	advmod
+5	0	nsubj
+5	1	aux
+5	2	cop
+5	4	amod
+EOX
+D	0	6
 5
 4	3	advmod
 5	0	nsubj
@@ -286,11 +414,11 @@ C	13
 3	14	12	15	7
 1	0	0	1	2
 R
-joint	None	-1	-1	0	0	5	7	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	5	7	0	0	2	nil
+background	LeftToRight	-1	-1	0	0	2	8	0	0	2	nil
 elaboration	LeftToRight	-1	-1	0	0	1	8	0	0	2	nil
 nil	None	-1	-1	0	0	0	4	0	0	0	Owl watched the moon .
 nil	None	-1	-1	1	0	1	8	0	0	0	It climbed higher and higher into the sky .
-joint	None	-1	-1	2	0	5	7	0	0	2	nil
 nil	None	-1	-1	2	0	2	8	0	0	0	Soon the whole , round moon was shining .
 elaboration	LeftToRight	-1	-1	3	0	5	7	0	0	2	nil
 joint	None	-1	-1	3	0	3	15	0	1	2	nil
@@ -324,22 +452,43 @@ again	69	74	RB	again	O	O	_
 ,	74	75	,	,	O	O	_
 moon	76	80	NN	moon	O	O	_
 .	80	81	.	.	O	O	_
-D	1
+D	1	21
 4
 1	0	det
 4	1	nsubj
 4	2	aux
 4	3	neg
+4	6	cc
 4	8	conj_but
 4	16	conj_but
 8	7	nsubj
 8	13	ccomp
+8	15	cc
 8	16	conj_and
 8	20	dobj
 13	11	nsubj
 13	12	aux
 13	14	advmod
 16	7	nsubj
+16	17	dobj
+16	18	advmod
+EOX
+D	0	21
+4
+1	0	det
+4	1	nsubj
+4	2	aux
+4	3	neg
+4	6	cc
+4	8	conj
+8	7	nsubj
+8	13	ccomp
+8	15	cc
+8	16	conj
+8	20	dobj
+13	11	nsubj
+13	12	aux
+13	14	advmod
 16	17	dobj
 16	18	advmod
 EOX
@@ -355,7 +504,15 @@ go	97	99	VB	go	O	O	_
 home	100	104	NN	home	O	O	_
 .	104	105	.	.	O	O	_
 ''	105	106	''	''	O	O	_
-D	1
+D	1	6
+4
+4	0	cc
+4	1	advmod
+4	2	nsubj
+4	3	aux
+4	5	dobj
+EOX
+D	0	6
 4
 4	0	cc
 4	1	advmod
@@ -373,10 +530,17 @@ down	118	122	RP	down	O	O	_
 the	123	126	DT	the	O	O	_
 path	127	131	NN	path	O	O	_
 .	131	132	.	.	O	O	_
-D	1
+D	1	5
 1
 1	0	nsubj
-1	2	prt
+1	2	compound:prt
+1	4	dobj
+4	3	det
+EOX
+D	0	5
+1
+1	0	nsubj
+1	2	compound:prt
 1	4	dobj
 4	3	det
 EOX
@@ -391,11 +555,20 @@ at	146	148	IN	at	O	O	_
 the	149	152	DT	the	O	O	_
 sky	153	156	NN	sky	O	O	_
 .	156	157	.	.	O	O	_
-D	1
+D	1	6
 1
 1	0	nsubj
-1	2	prt
-1	5	prep_at
+1	2	compound:prt
+1	3	nmod
+3	5	dep
+5	4	det
+EOX
+D	0	6
+1
+1	0	nsubj
+1	2	compound:prt
+1	3	nmod
+3	5	dep
 5	4	det
 EOX
 Y	1
@@ -408,7 +581,14 @@ was	167	170	VBD	be	O	O	_
 still	171	176	RB	still	O	O	_
 there	177	182	RB	there	O	O	_
 .	182	183	.	.	O	O	_
-D	1
+D	1	5
+2
+1	0	det
+2	1	nsubj
+2	3	advmod
+2	4	advmod
+EOX
+D	0	5
 2
 1	0	det
 2	1	nsubj
@@ -424,7 +604,13 @@ was	187	190	VBD	be	O	O	_
 following	191	200	VBG	follow	O	O	_
 him	201	204	PRP	he	O	O	_
 .	204	205	.	.	O	O	_
-D	1
+D	1	4
+2
+2	0	nsubj
+2	1	aux
+2	3	dobj
+EOX
+D	0	4
 2
 2	0	nsubj
 2	1	aux
@@ -477,7 +663,14 @@ moon	9	13	NN	moon	O	O	_
 said	16	20	VBD	say	O	O	_
 Owl	21	24	NNP	Owl	O	O	_
 .	24	25	.	.	O	O	_
-D	1
+D	1	10
+8
+3	1	discourse
+8	3	dep
+8	5	nsubj
+8	9	dep
+EOX
+D	0	10
 8
 3	1	discourse
 8	3	dep
@@ -499,14 +692,27 @@ light	48	53	JJ	light	O	O	_
 my	54	56	PRP$	my	O	O	_
 way	57	60	NN	way	O	O	_
 .	60	61	.	.	O	O	_
-D	1
+D	1	10
 9
-3	5	prep_of
-3	7	prep_to
+3	4	nmod
+4	5	dep
+4	6	nmod
+6	7	dep
 9	1	nsubj
 9	2	cop
 9	3	advmod
-9	8	poss
+9	8	nmod:poss
+EOX
+D	0	10
+9
+3	4	nmod
+4	5	dep
+4	6	nmod
+6	7	dep
+9	1	nsubj
+9	2	cop
+9	3	advmod
+9	8	nmod:poss
 EOX
 Y	1
 ROOT	0	0	11	1	S	2	0	11	4	``	0	0	1	1	``	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	It	1	1	2	0	VP	2	2	10	3	VBZ	0	2	3	1	is	2	2	3	0	ADVP	0	3	8	2	NN	0	3	4	1	kind	3	3	4	0	PP	0	4	8	3	IN	0	4	5	1	of	4	4	5	0	NP	0	5	6	1	PRP	0	5	6	1	you	5	5	6	0	PP	0	6	8	2	TO	0	6	7	1	to	6	6	7	0	NP	0	7	8	1	JJ	0	7	8	1	light	7	7	8	0	NP	1	8	10	2	PRP$	0	8	9	1	my	8	8	9	0	NN	0	9	10	1	way	9	9	10	0	.	0	10	11	1	.	10	10	11	0
@@ -527,18 +733,34 @@ so	111	113	RB	so	O	O	_
 fine	114	118	JJ	fine	O	O	_
 .	118	119	.	.	O	O	_
 ''	119	120	''	''	O	O	_
-D	1
+D	1	13
 3
 3	0	cc
 3	1	nsubj
 3	2	aux
 3	4	advmod
 3	10	advcl
-4	7	prep_over
+4	5	nmod
+5	7	dep
 7	6	det
 10	8	advmod
 10	9	nsubj
-10	12	acomp
+10	12	xcomp
+12	11	advmod
+EOX
+D	0	13
+3
+3	0	cc
+3	1	nsubj
+3	2	aux
+3	4	advmod
+3	10	advcl
+4	5	nmod
+5	7	dep
+7	6	det
+10	8	advmod
+10	9	nsubj
+10	12	xcomp
 12	11	advmod
 EOX
 Y	1
@@ -552,12 +774,21 @@ a	135	136	DT	a	O	O	_
 little	137	143	JJ	little	O	O	_
 farther	144	151	RBR	farther	O	O	_
 .	151	152	.	.	O	O	_
-D	1
+D	1	6
 1
 1	0	nsubj
-1	5	prepc_on
+1	2	advcl
+2	5	dep
 4	3	det
-5	4	npadvmod
+5	4	nmod:npmod
+EOX
+D	0	6
+1
+1	0	nsubj
+1	2	advcl
+2	5	dep
+4	3	det
+5	4	nmod:npmod
 EOX
 Y	1
 ROOT	0	0	7	1	S	1	0	7	3	NP	0	0	1	1	NN	0	0	1	1	Owl	0	0	1	0	VP	0	1	6	2	VBD	0	1	2	1	walked	1	1	2	0	PP	0	2	6	2	IN	0	2	3	1	on	2	2	3	0	ADVP	1	3	6	2	NP	1	3	5	2	DT	0	3	4	1	a	3	3	4	0	JJ	0	4	5	1	little	4	4	5	0	RBR	0	5	6	1	farther	5	5	6	0	.	0	6	7	1	.	6	6	7	0
@@ -570,11 +801,20 @@ the	166	169	DT	the	O	O	_
 sky	170	173	NN	sky	O	O	_
 again	174	179	RB	again	O	O	_
 .	179	180	.	.	O	O	_
-D	1
+D	1	6
 1
 1	0	nsubj
-1	4	prep_at
+1	2	nmod
 1	5	advmod
+2	4	dep
+4	3	det
+EOX
+D	0	6
+1
+1	0	nsubj
+1	2	nmod
+1	5	advmod
+2	4	dep
 4	3	det
 EOX
 Y	1
@@ -591,14 +831,27 @@ along	213	218	IN	along	O	O	_
 with	219	223	IN	with	O	O	_
 him	224	227	PRP	he	O	O	_
 .	227	228	.	.	O	O	_
-D	1
+D	1	9
 1
 1	0	expl
 1	3	nsubj
 3	2	det
-3	4	vmod
-4	5	advmod
-4	8	prep_along_with
+3	4	acl
+4	6	advmod
+4	7	nmod
+6	5	advmod
+7	8	dep
+EOX
+D	0	9
+1
+1	0	expl
+1	3	nsubj
+3	2	det
+3	4	acl
+4	6	advmod
+4	7	nmod
+6	5	advmod
+7	8	dep
 EOX
 Y	1
 ROOT	0	0	10	1	S	1	0	10	3	NP	0	0	1	1	EX	0	0	1	1	There	0	0	1	0	VP	1	1	9	2	VBD	0	1	2	1	was	1	1	2	0	NP	0	2	9	2	NP	1	2	4	2	DT	0	2	3	1	the	2	2	3	0	NN	0	3	4	1	moon	3	3	4	0	VP	0	4	9	3	VBG	0	4	5	1	coming	4	4	5	0	ADVP	1	5	7	2	RB	0	5	6	1	right	5	5	6	0	IN	0	6	7	1	along	6	6	7	0	PP	0	7	9	2	IN	0	7	8	1	with	7	7	8	0	NP	0	8	9	1	PRP	0	8	9	1	him	8	8	9	0	.	0	9	10	1	.	9	9	10	0
@@ -622,9 +875,9 @@ home	278	282	NN	home	O	O	_
 with	283	287	IN	with	O	O	_
 me	288	290	PRP	I	O	O	_
 .	290	291	.	.	O	O	_
-D	1
+D	1	17
 13
-2	1	nn
+2	1	compound
 5	6	nsubj
 13	2	nsubj
 13	5	parataxis
@@ -633,7 +886,22 @@ D	1
 13	11	aux
 13	12	neg
 13	14	dobj
-13	16	prep_with
+13	15	nmod
+15	16	dep
+EOX
+D	0	17
+13
+2	1	compound
+5	6	nsubj
+13	2	nsubj
+13	5	parataxis
+13	9	nsubj
+13	10	advmod
+13	11	aux
+13	12	neg
+13	14	dobj
+13	15	nmod
+15	16	dep
 EOX
 Y	1
 ROOT	0	0	18	1	S	6	0	18	8	``	0	0	1	1	``	0	0	1	0	NP	1	1	3	2	NNP	0	1	2	1	Dear	1	1	2	0	NN	0	2	3	1	moon	2	2	3	0	PRN	2	3	8	4	,	0	3	4	1	,	3	3	4	0	''	0	4	5	1	''	4	4	5	0	SINV	0	5	7	2	VP	0	5	6	1	VBD	0	5	6	1	said	5	5	6	0	NP	0	6	7	1	NNP	0	6	7	1	Owl	6	6	7	0	,	0	7	8	1	,	7	7	8	0	``	0	8	9	1	``	8	8	9	0	NP	0	9	10	1	PRP	0	9	10	1	you	9	9	10	0	ADVP	0	10	11	1	RB	0	10	11	1	really	10	10	11	0	VP	2	11	17	3	MD	0	11	12	1	must	11	11	12	0	RB	0	12	13	1	not	12	12	13	0	VP	0	13	17	3	VB	0	13	14	1	come	13	13	14	0	NP	0	14	15	1	NN	0	14	15	1	home	14	14	15	0	PP	0	15	17	2	IN	0	15	16	1	with	15	15	16	0	NP	0	16	17	1	PRP	0	16	17	1	me	16	16	17	0	.	0	17	18	1	.	17	17	18	0
@@ -644,9 +912,15 @@ house	295	300	NN	house	O	O	_
 is	301	303	VBZ	be	O	O	_
 small	304	309	JJ	small	O	O	_
 .	309	310	.	.	O	O	_
-D	1
+D	1	4
 3
-1	0	poss
+1	0	nmod:poss
+3	1	nsubj
+3	2	cop
+EOX
+D	0	4
+3
+1	0	nmod:poss
 3	1	nsubj
 3	2	cop
 EOX
@@ -662,12 +936,22 @@ through	329	336	IN	through	O	O	_
 the	337	340	DT	the	O	O	_
 door	341	345	NN	door	O	O	_
 .	345	346	.	.	O	O	_
-D	1
+D	1	7
 3
 3	0	nsubj
 3	1	aux
 3	2	neg
-3	6	prep_through
+3	4	nmod
+4	6	dep
+6	5	det
+EOX
+D	0	7
+3
+3	0	nsubj
+3	1	aux
+3	2	neg
+3	4	nmod
+4	6	dep
 6	5	det
 EOX
 Y	1
@@ -685,15 +969,27 @@ for	378	381	IN	for	O	O	_
 supper	382	388	NN	supper	O	O	_
 .	388	389	.	.	O	O	_
 ''	389	390	''	''	O	O	_
-D	1
+D	1	9
 2
 2	0	cc
 2	1	nsubj
 2	3	advmod
 2	5	xcomp
-5	4	aux
+5	4	mark
 5	6	dobj
-5	8	prep_for
+5	7	nmod
+7	8	dep
+EOX
+D	0	9
+2
+2	0	cc
+2	1	nsubj
+2	3	advmod
+2	5	xcomp
+5	4	mark
+5	6	dobj
+5	7	nmod
+7	8	dep
 EOX
 Y	1
 ROOT	0	0	11	1	S	2	0	11	5	CC	0	0	1	1	And	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	I	1	1	2	0	VP	0	2	9	3	VBP	0	2	3	1	have	2	2	3	0	ADVP	0	3	4	1	NN	0	3	4	1	nothing	3	3	4	0	S	0	4	9	1	VP	1	4	9	2	TO	0	4	5	1	to	4	4	5	0	VP	0	5	9	3	VB	0	5	6	1	give	5	5	6	0	NP	0	6	7	1	PRP	0	6	7	1	you	6	6	7	0	PP	0	7	9	2	IN	0	7	8	1	for	7	7	8	0	NP	0	8	9	1	NN	0	8	9	1	supper	8	8	9	0	.	0	9	10	1	.	9	9	10	0	''	0	10	11	1	''	10	10	11	0
@@ -725,7 +1021,7 @@ C	25
 8	6	5	7	23
 7	0	0	1	2
 R
-elaboration	LeftToRight	-1	-1	0	0	9	10	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	9	10	0	1	2	nil
 contrast	None	-1	-1	0	0	2	14	0	1	2	nil
 elaboration	LeftToRight	-1	-1	0	0	1	10	0	0	2	nil
 attribution	LeftToRight	-1	-1	0	0	0	10	0	1	2	nil
@@ -735,25 +1031,25 @@ nil	None	-1	-1	1	0	1	10	0	0	0	`` It is kind of you to light my way .
 elaboration	LeftToRight	-1	-1	2	0	2	14	0	1	2	nil
 nil	None	-1	-1	2	0	2	7	0	0	0	But you must stay up over the sea
 nil	None	-1	-1	2	8	2	14	1	1	0	where you look so fine . ''
-elaboration	LeftToRight	-1	-1	3	0	9	10	0	0	2	nil
-elaboration	LeftToRight	-1	-1	3	0	5	9	0	1	2	nil
+elaboration	LeftToRight	-1	-1	3	0	9	10	0	1	2	nil
+elaboration	LeftToRight	-1	-1	3	0	5	9	0	0	2	nil
 elaboration	LeftToRight	-1	-1	3	0	4	6	0	0	2	nil
 nil	None	-1	-1	3	0	3	6	0	0	0	Owl walked on a little farther .
 nil	None	-1	-1	4	0	4	6	0	0	0	He looked at the sky again .
-elaboration	LeftToRight	-1	-1	5	0	5	9	0	1	2	nil
-nil	None	-1	-1	5	0	5	3	0	0	0	There was the moon
-nil	None	-1	-1	5	4	5	9	1	1	0	coming right along with him .
-elaboration	LeftToRight	-1	-1	6	0	9	10	0	0	2	nil
+nil	None	-1	-1	5	0	5	9	0	0	0	There was the moon coming right along with him .
+elaboration	LeftToRight	-1	-1	6	0	9	10	0	1	2	nil
 attribution	LeftToRight	-1	-1	6	0	6	17	0	2	2	nil
 nil	None	-1	-1	6	0	6	4	0	0	0	`` Dear moon , ''
 attribution	RightToLeft	-1	-1	6	5	6	17	1	2	2	nil
 nil	None	-1	-1	6	5	6	7	1	1	0	said Owl ,
 nil	None	-1	-1	6	8	6	17	2	2	0	`` you really must not come home with me .
-joint	None	-1	-1	7	0	9	10	0	0	2	nil
+elaboration	LeftToRight	-1	-1	7	0	9	10	0	1	2	nil
 nil	None	-1	-1	7	0	7	4	0	0	0	My house is small .
-joint	None	-1	-1	8	0	9	10	0	0	2	nil
+elaboration	LeftToRight	-1	-1	8	0	9	10	0	1	2	nil
 nil	None	-1	-1	8	0	8	7	0	0	0	You would not fit through the door .
-nil	None	-1	-1	9	0	9	10	0	0	0	And I have nothing to give you for supper . ''
+enablement	LeftToRight	-1	-1	9	0	9	10	0	1	2	nil
+nil	None	-1	-1	9	0	9	3	0	0	0	And I have nothing
+nil	None	-1	-1	9	4	9	10	1	1	0	to give you for supper . ''
 EOD
 S	5
 T	5
@@ -762,10 +1058,17 @@ kept	4	8	VBD	keep	O	O	_
 on	9	11	IN	on	O	O	_
 walking	12	19	VBG	walk	O	O	_
 .	19	20	.	.	O	O	_
-D	1
+D	1	4
 1
 1	0	nsubj
-1	3	prepc_on
+1	2	advcl
+2	3	dep
+EOX
+D	0	4
+1
+1	0	nsubj
+1	2	advcl
+2	3	dep
 EOX
 Y	1
 ROOT	0	0	5	1	S	1	0	5	3	NP	0	0	1	1	NN	0	0	1	1	Owl	0	0	1	0	VP	0	1	4	2	VBD	0	1	2	1	kept	1	1	2	0	PP	0	2	4	2	IN	0	2	3	1	on	2	2	3	0	S	0	3	4	1	VP	0	3	4	1	VBG	0	3	4	1	walking	3	3	4	0	.	0	4	5	1	.	4	4	5	0
@@ -783,14 +1086,30 @@ of	61	63	IN	of	O	O	_
 the	64	67	DT	the	O	O	_
 trees	68	73	NNS	tree	O	O	_
 .	73	74	.	.	O	O	_
-D	1
+D	1	11
 2
 1	0	det
 2	1	nsubj
-2	4	prep_after
-2	7	prep_over
+2	3	nmod
+2	5	nmod
+3	4	dep
+5	7	dep
 7	6	det
-7	10	prep_of
+7	8	nmod
+8	10	dep
+10	9	det
+EOX
+D	0	11
+2
+1	0	det
+2	1	nsubj
+2	3	nmod
+2	5	nmod
+3	4	dep
+5	7	dep
+7	6	det
+7	8	nmod
+8	10	dep
 10	9	det
 EOX
 Y	1
@@ -815,7 +1134,20 @@ hear	118	122	VB	hear	O	O	_
 me	123	125	PRP	I	O	O	_
 .	125	126	.	.	O	O	_
 ''	126	127	''	''	O	O	_
-D	1
+D	1	16
+9
+4	5	nsubj
+9	1	nsubj
+9	4	parataxis
+9	8	nsubj
+9	14	ccomp
+14	10	mark
+14	11	nsubj
+14	12	aux
+14	13	neg
+14	15	dobj
+EOX
+D	0	16
 9
 4	5	nsubj
 9	1	nsubj
@@ -841,12 +1173,24 @@ of	151	153	IN	of	O	O	_
 a	154	155	DT	a	O	O	_
 hill	156	160	NN	hill	O	O	_
 .	160	161	.	.	O	O	_
-D	1
+D	1	8
 1
 1	0	nsubj
-1	4	prep_to
+1	2	nmod
+2	4	dep
 4	3	det
-4	7	prep_of
+4	5	nmod
+5	7	dep
+7	6	det
+EOX
+D	0	8
+1
+1	0	nsubj
+1	2	nmod
+2	4	dep
+4	3	det
+4	5	nmod
+5	7	dep
 7	6	det
 EOX
 Y	1
@@ -867,7 +1211,18 @@ Good-bye	197	205	NN	good-bye	O	O	_
 moon	207	211	NN	moon	O	O	_
 !	211	212	.	!	O	O	_
 ''	212	213	''	''	O	O	_
-D	1
+D	1	12
+1
+1	0	nsubj
+1	2	advmod
+1	6	advcl
+2	3	advmod
+6	4	mark
+6	5	nsubj
+6	9	dobj
+9	11	appos
+EOX
+D	0	12
 1
 1	0	nsubj
 1	2	advmod
@@ -926,11 +1281,20 @@ behind	14	20	IN	behind	O	O	_
 some	21	25	DT	some	O	O	_
 clouds	26	32	NNS	cloud	O	O	_
 .	32	33	.	.	O	O	_
-D	1
+D	1	6
 2
 1	0	det
 2	1	nsubj
-2	5	prep_behind
+2	3	nmod
+3	5	dep
+5	4	det
+EOX
+D	0	6
+2
+1	0	det
+2	1	nsubj
+2	3	nmod
+3	5	dep
 5	4	det
 EOX
 Y	1
@@ -942,11 +1306,18 @@ looked	38	44	VBD	look	O	O	_
 and	45	48	CC	and	O	O	_
 looked	49	55	VBD	look	O	O	_
 .	55	56	.	.	O	O	_
-D	1
+D	1	4
 1
 1	0	nsubj
+1	2	cc
 1	3	conj_and
 3	0	nsubj
+EOX
+D	0	4
+1
+1	0	nsubj
+1	2	cc
+1	3	conj
 EOX
 Y	1
 ROOT	0	0	5	1	S	1	0	5	3	NP	0	0	1	1	NN	0	0	1	1	Owl	0	0	1	0	VP	0	1	4	3	VP	0	1	2	1	VBD	0	1	2	1	looked	1	1	2	0	CC	0	2	3	1	and	2	2	3	0	VP	0	3	4	1	VBD	0	3	4	1	looked	3	3	4	0	.	0	4	5	1	.	4	4	5	0
@@ -957,7 +1328,13 @@ moon	61	65	NN	moon	O	O	_
 was	66	69	VBD	be	O	O	_
 gone	70	74	VBN	go	O	O	_
 .	74	75	.	.	O	O	_
-D	1
+D	1	4
+3
+1	0	det
+3	1	nsubjpass
+3	2	auxpass
+EOX
+D	0	4
 3
 1	0	det
 3	1	nsubjpass
@@ -985,17 +1362,34 @@ friend	124	130	NN	friend	O	O	_
 said	133	137	VBD	say	O	O	_
 Owl	138	141	NNP	Owl	O	O	_
 .	141	142	.	.	O	O	_
-D	1
+D	1	17
 15
 5	4	det
 6	1	nsubj
 6	2	cop
 6	3	advmod
-6	5	npadvmod
+6	5	nmod:npmod
 6	8	xcomp
-8	7	aux
+8	7	mark
 8	9	dobj
-8	12	prep_to
+8	10	nmod
+10	12	dep
+12	11	det
+15	6	ccomp
+15	16	nsubj
+EOX
+D	0	17
+15
+5	4	det
+6	1	nsubj
+6	2	cop
+6	3	advmod
+6	5	nmod:npmod
+6	8	xcomp
+8	7	mark
+8	9	dobj
+8	10	nmod
+10	12	dep
 12	11	det
 15	6	ccomp
 15	16	nsubj
@@ -1027,7 +1421,12 @@ Owl	0	3	NN	owl	O	O	_
 came	4	8	VBD	come	O	O	_
 home	9	13	NN	home	O	O	_
 .	13	14	.	.	O	O	_
-D	1
+D	1	3
+1
+1	0	nsubj
+1	2	dobj
+EOX
+D	0	3
 1
 1	0	nsubj
 1	2	dobj
@@ -1046,15 +1445,28 @@ went	41	45	VBD	go	O	O	_
 to	46	48	TO	to	O	O	_
 bed	49	52	NN	bed	O	O	_
 .	52	53	.	.	O	O	_
-D	1
+D	1	9
 1
 1	0	nsubj
-1	2	prt
+1	2	compound:prt
 1	4	dobj
+1	5	cc
 1	6	conj_and
-4	3	poss
+4	3	nmod:poss
 6	0	nsubj
-6	8	prep_to
+6	7	nmod
+7	8	dep
+EOX
+D	0	9
+1
+1	0	nsubj
+1	2	compound:prt
+1	4	dobj
+1	5	cc
+1	6	conj
+4	3	nmod:poss
+6	7	nmod
+7	8	dep
 EOX
 Y	1
 ROOT	0	0	10	1	S	1	0	10	3	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	0	1	9	3	VP	0	1	5	3	VBD	0	1	2	1	put	1	1	2	0	PRT	0	2	3	1	RP	0	2	3	1	on	2	2	3	0	NP	1	3	5	2	PRP$	0	3	4	1	his	3	3	4	0	NNS	0	4	5	1	pajamas	4	4	5	0	CC	0	5	6	1	and	5	5	6	0	VP	0	6	9	2	VBD	0	6	7	1	went	6	6	7	0	PP	0	7	9	2	TO	0	7	8	1	to	7	7	8	0	NP	0	8	9	1	NN	0	8	9	1	bed	8	8	9	0	.	0	9	10	1	.	9	9	10	0
@@ -1066,7 +1478,14 @@ was	63	66	VBD	be	O	O	_
 very	67	71	RB	very	O	O	_
 dark	72	76	JJ	dark	O	O	_
 .	76	77	.	.	O	O	_
-D	1
+D	1	5
+4
+1	0	det
+4	1	nsubj
+4	2	cop
+4	3	advmod
+EOX
+D	0	5
 4
 1	0	det
 4	1	nsubj
@@ -1083,12 +1502,19 @@ still	86	91	RB	still	O	O	_
 feeling	92	99	VBG	feel	O	O	_
 sad	100	103	JJ	sad	O	O	_
 .	103	104	.	.	O	O	_
-D	1
+D	1	5
 3
 3	0	nsubj
 3	1	aux
 3	2	advmod
-3	4	acomp
+3	4	xcomp
+EOX
+D	0	5
+3
+3	0	nsubj
+3	1	aux
+3	2	advmod
+3	4	xcomp
 EOX
 Y	1
 ROOT	0	0	6	1	S	1	0	6	3	NP	0	0	1	1	NN	0	0	1	1	Owl	0	0	1	0	VP	2	1	5	3	VBD	0	1	2	1	was	1	1	2	0	ADVP	0	2	3	1	RB	0	2	3	1	still	2	2	3	0	VP	0	3	5	2	VBG	0	3	4	1	feeling	3	3	4	0	ADJP	0	4	5	1	JJ	0	4	5	1	sad	4	4	5	0	.	0	5	6	1	.	5	5	6	0
@@ -1107,16 +1533,31 @@ with	143	147	IN	with	O	O	_
 silver	148	154	NN	silver	O	O	_
 light	155	160	NN	light	O	O	_
 .	160	161	.	.	O	O	_
-D	1
+D	1	12
 8
-0	1	prep
-1	2	pcomp
-6	4	poss
+0	1	advcl
+1	2	dep
+4	5	case
+6	4	nmod:poss
 8	0	advmod
 8	6	nsubjpass
 8	7	auxpass
-8	11	prep_with
-11	10	nn
+8	9	nmod
+9	11	dep
+11	10	compound
+EOX
+D	0	12
+8
+0	1	advcl
+1	2	dep
+4	5	case
+6	4	nmod:poss
+8	0	advmod
+8	6	nsubjpass
+8	7	auxpass
+8	9	nmod
+9	11	dep
+11	10	compound
 EOX
 Y	1
 ROOT	0	0	13	1	S	3	0	13	5	ADVP	0	0	3	2	DT	0	0	1	1	All	0	0	1	0	PP	0	1	3	2	IN	0	1	2	1	at	1	1	2	0	ADVP	0	2	3	1	RB	0	2	3	1	once	2	2	3	0	,	0	3	4	1	,	3	3	4	0	NP	1	4	7	2	NP	0	4	6	2	NN	0	4	5	1	Owl	4	4	5	0	POS	0	5	6	1	's	5	5	6	0	NN	0	6	7	1	bedroom	6	6	7	0	VP	1	7	12	2	VBD	0	7	8	1	was	7	7	8	0	VP	0	8	12	2	VBN	0	8	9	1	filled	8	8	9	0	PP	0	9	12	2	IN	0	9	10	1	with	9	9	10	0	NP	1	10	12	2	NN	0	10	11	1	silver	10	10	11	0	NN	0	11	12	1	light	11	11	12	0	.	0	12	13	1	.	12	12	13	0
@@ -1129,10 +1570,20 @@ of	177	179	IN	of	O	O	_
 the	180	183	DT	the	O	O	_
 window	184	190	NN	window	O	O	_
 .	190	191	.	.	O	O	_
-D	1
+D	1	6
 1
 1	0	nsubj
-1	5	prep_out_of
+1	2	compound:prt
+1	3	nmod
+3	5	dep
+5	4	det
+EOX
+D	0	6
+1
+1	0	nsubj
+1	2	compound:prt
+1	3	nmod
+3	5	dep
 5	4	det
 EOX
 Y	1
@@ -1148,14 +1599,24 @@ behind	217	223	IN	behind	O	O	_
 the	224	227	DT	the	O	O	_
 clouds	228	234	NNS	cloud	O	O	_
 .	234	235	.	.	O	O	_
-D	1
+D	1	8
 3
 1	0	det
 3	1	nsubj
 3	2	aux
-3	4	prep
-4	5	pcomp
-5	7	pobj
+3	4	nmod
+4	5	dep
+5	7	dep
+7	6	det
+EOX
+D	0	8
+3
+1	0	det
+3	1	nsubj
+3	2	aux
+3	4	nmod
+4	5	dep
+5	7	dep
 7	6	det
 EOX
 Y	1
@@ -1174,16 +1635,27 @@ the	268	271	DT	the	O	O	_
 way	272	275	NN	way	O	O	_
 home	276	280	NN	home	O	O	_
 .	280	281	.	.	O	O	_
-D	1
+D	1	11
 5
 5	1	nsubj
 5	3	nsubj
 5	4	aux
 5	10	xcomp
 10	6	nsubj
-10	7	predet
+10	7	det:predet
 10	8	det
-10	9	nn
+10	9	compound
+EOX
+D	0	11
+5
+5	1	nsubj
+5	3	nsubj
+5	4	aux
+5	10	xcomp
+10	6	nsubj
+10	7	det:predet
+10	8	det
+10	9	compound
 EOX
 Y	1
 ROOT	0	0	12	1	S	4	0	12	6	``	0	0	1	1	``	0	0	1	0	NP	0	1	2	1	NNP	0	1	2	1	Moon	1	1	2	0	,	0	2	3	1	,	2	2	3	0	NP	0	3	4	1	PRP	0	3	4	1	you	3	3	4	0	VP	1	4	11	2	VBP	0	4	5	1	have	4	4	5	0	VP	0	5	11	2	VBN	0	5	6	1	followed	5	5	6	0	S	1	6	11	2	NP	0	6	7	1	PRP	0	6	7	1	me	6	6	7	0	NP	3	7	11	4	PDT	0	7	8	1	all	7	7	8	0	DT	0	8	9	1	the	8	8	9	0	NN	0	9	10	1	way	9	9	10	0	NN	0	10	11	1	home	10	10	11	0	.	0	11	12	1	.	11	11	12	0
@@ -1199,13 +1671,22 @@ you	308	311	PRP	you	O	O	_
 are	312	315	VBP	be	O	O	_
 !	315	316	.	!	O	O	_
 ''	316	317	''	''	O	O	_
-D	1
+D	1	8
 5
 5	0	dep
 5	1	det
 5	2	amod
 5	4	amod
-5	7	rcmod
+5	7	acl:relcl
+7	6	nsubj
+EOX
+D	0	8
+5
+5	0	dep
+5	1	det
+5	2	amod
+5	4	amod
+5	7	acl:relcl
 7	6	nsubj
 EOX
 Y	1
@@ -1215,7 +1696,11 @@ T	3
 said	318	322	VBD	say	O	O	_
 Owl	323	326	NN	owl	O	O	_
 .	326	327	.	.	O	O	_
-D	1
+D	1	2
+0
+0	1	dobj
+EOX
+D	0	2
 0
 0	1	dobj
 EOX
@@ -1256,11 +1741,9 @@ nil	None	-1	-1	5	0	5	6	0	0	0	Owl looked out of the window .
 elaboration	LeftToRight	-1	-1	6	0	9	2	0	0	2	nil
 nil	None	-1	-1	6	0	6	8	0	0	0	The moon was coming from behind the clouds .
 elaboration	LeftToRight	-1	-1	7	0	9	2	0	0	2	nil
-elaboration	LeftToRight	-1	-1	7	0	8	9	0	1	2	nil
+elaboration	LeftToRight	-1	-1	7	0	8	9	0	0	2	nil
 nil	None	-1	-1	7	0	7	11	0	0	0	`` Moon , you have followed me all the way home .
-elaboration	LeftToRight	-1	-1	8	0	8	9	0	1	2	nil
-nil	None	-1	-1	8	0	8	5	0	0	0	What a good , round friend
-nil	None	-1	-1	8	6	8	9	1	1	0	you are ! ''
+nil	None	-1	-1	8	0	8	9	0	0	0	What a good , round friend you are ! ''
 nil	None	-1	-1	9	0	9	2	0	0	0	said Owl .
 EOD
 S	3
@@ -1278,18 +1761,34 @@ closed	40	46	VBD	close	O	O	_
 his	47	50	PRP$	he	O	O	_
 eyes	51	55	NNS	eye	O	O	_
 .	55	56	.	.	O	O	_
-D	1
+D	1	12
 2
 2	0	advmod
 2	1	nsubj
 2	4	dobj
-2	7	prep_on
+2	5	nmod
+2	8	cc
 2	9	conj_and
-4	3	poss
+4	3	nmod:poss
+5	7	dep
 7	6	det
 9	1	nsubj
 9	11	dobj
-11	10	poss
+11	10	nmod:poss
+EOX
+D	0	12
+2
+2	0	advmod
+2	1	nsubj
+2	4	dobj
+2	5	nmod
+2	8	cc
+2	9	conj
+4	3	nmod:poss
+5	7	dep
+7	6	det
+9	11	dobj
+11	10	nmod:poss
 EOX
 Y	1
 ROOT	0	0	13	1	S	2	0	13	4	RB	0	0	1	1	Then	0	0	1	0	NP	0	1	2	1	NN	0	1	2	1	Owl	1	1	2	0	VP	0	2	12	3	VP	0	2	8	3	VBD	0	2	3	1	put	2	2	3	0	NP	1	3	5	2	PRP$	0	3	4	1	his	3	3	4	0	NN	0	4	5	1	head	4	4	5	0	PP	0	5	8	2	IN	0	5	6	1	on	5	5	6	0	NP	1	6	8	2	DT	0	6	7	1	the	6	6	7	0	NN	0	7	8	1	pillow	7	7	8	0	CC	0	8	9	1	and	8	8	9	0	VP	0	9	12	2	VBD	0	9	10	1	closed	9	9	10	0	NP	1	10	12	2	PRP$	0	10	11	1	his	10	10	11	0	NNS	0	11	12	1	eyes	11	11	12	0	.	0	12	13	1	.	12	12	13	0
@@ -1304,13 +1803,24 @@ through	83	90	IN	through	O	O	_
 the	91	94	DT	the	O	O	_
 window	95	101	NN	window	O	O	_
 .	101	102	.	.	O	O	_
-D	1
+D	1	8
 3
 1	0	det
 3	1	nsubj
 3	2	aux
-3	4	prt
-3	7	prep_through
+3	4	compound:prt
+3	5	nmod
+5	7	dep
+7	6	det
+EOX
+D	0	8
+3
+1	0	det
+3	1	nsubj
+3	2	aux
+3	4	compound:prt
+3	5	nmod
+5	7	dep
 7	6	det
 EOX
 Y	1
@@ -1325,14 +1835,23 @@ sad	120	123	JJ	sad	O	O	_
 at	124	126	IN	at	O	O	_
 all	127	130	DT	all	O	O	_
 .	130	131	.	.	O	O	_
-D	1
+D	1	7
 3
 3	0	nsubj
 3	1	aux
 3	2	neg
-3	4	acomp
-3	5	advmod
-5	6	pobj
+3	4	xcomp
+3	5	nmod
+5	6	dep
+EOX
+D	0	7
+3
+3	0	nsubj
+3	1	aux
+3	2	neg
+3	4	xcomp
+3	5	nmod
+5	6	dep
 EOX
 Y	1
 ROOT	0	0	8	1	S	1	0	8	3	NP	0	0	1	1	NN	0	0	1	1	Owl	0	0	1	0	VP	2	1	7	3	VBD	0	1	2	1	did	1	1	2	0	RB	0	2	3	1	not	2	2	3	0	VP	0	3	7	3	VB	0	3	4	1	feel	3	3	4	0	ADJP	0	4	5	1	JJ	0	4	5	1	sad	4	4	5	0	ADVP	0	5	7	2	IN	0	5	6	1	at	5	5	6	0	DT	0	6	7	1	all	6	6	7	0	.	0	7	8	1	.	7	7	8	0
@@ -1348,7 +1867,9 @@ C	7
 R
 elaboration	LeftToRight	-1	-1	0	0	2	7	0	0	2	nil
 elaboration	LeftToRight	-1	-1	0	0	1	8	0	0	2	nil
-nil	None	-1	-1	0	0	0	12	0	0	0	Then Owl put his head on the pillow and closed his eyes .
+joint	None	-1	-1	0	0	0	12	0	1	2	nil
+nil	None	-1	-1	0	0	0	7	0	0	0	Then Owl put his head on the pillow
+nil	None	-1	-1	0	8	0	12	1	1	0	and closed his eyes .
 nil	None	-1	-1	1	0	1	8	0	0	0	The moon was shining down through the window .
 nil	None	-1	-1	2	0	2	7	0	0	0	Owl did not feel sad at all .
 EOD
