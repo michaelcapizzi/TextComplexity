@@ -9,6 +9,15 @@ import java._
   * Class to house all the NLP elements needed for feature selection later.
   * It is intended to be used for EACH paragraph of the text
   * (because of the computational cost of the Discourse Parser).
+  * Will be fed to TextDocument class in a list (Vector)
+  * @param text if not loading from annotation, the plain text
+  * @param annotatedDoc if loading from annotation, the annotated doc
+  * @param processor a CoreNLPProcessor(withDiscourse=true, maxSentenceLength = 450)
+  * @param title optional title of document of which this paragraph is a part
+  * @param author optional author of document of which this paragraph is a part
+  * @param paragraphNumber optional paragraph index in larger document
+  * @param chapter optional chapter of document of which this paragraph is a part
+  * @param gradeLevel optional grade level of the document of which this paragraph is a part
   */
 class ProcessedParagraph(
                       val text: Option[String],

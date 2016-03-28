@@ -9,8 +9,11 @@ import scala.collection.parallel.ParSeq
 
 /**
   * Class to house all the NLP elements for an entire document.
-  * Consists of a Vector of *annotated* ProcessedParagraphs.
   * Will be fed to individual Feature classes.
+  * @param paragraphs vector of *annotated* ProcessedParagraphs
+  * @param title optional title of document
+  * @param author optional author of document
+  * @param gradeLevel optional grade level of document
   */
 class TextDocument (
                     val paragraphs: Vector[ProcessedParagraph],    //already annotated!

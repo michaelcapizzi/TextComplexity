@@ -13,7 +13,7 @@ import scala.collection.parallel.immutable.ParSeq
 
 /**
  * Class of lexical features contributing to ultimate feature selection.
-  * Takes a TextDocument as input.
+  * @param td a TextDocument
  */
 class LexicalFeatures (val td: TextDocument) {
 

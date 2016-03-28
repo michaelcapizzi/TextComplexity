@@ -18,15 +18,16 @@ object AnnotateTexts {
   def main(args: Array[String]) = {
 
     //get list of files to annotate
-    val allFiles = new File(args(0)).listFiles
+    val allFiles = new File(args(0)).listFiles.par
 
-    //iterate through files
+    //iterate through files in parallel
     for (f <- allFiles) {
 
+      //variables for naming
       val fullName = f.getName
       val annotatedName = fullName.dropRight(4) + ".annotated"
 
-      //make procesed paragraphs
+      //make processed paragraphs
       val procPars = makeProcParsFromText(fullName)
 
       //annotate all paragraphs

@@ -11,6 +11,8 @@ class FeatureML(
             val classifier: Classifier[String, String]
            ) {
 
+//TODO scale!!!!
+
   //the empty dataset
   val dataset = new RVFDataset[String, String]()
 

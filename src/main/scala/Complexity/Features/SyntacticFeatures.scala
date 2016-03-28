@@ -12,16 +12,9 @@ import scala.collection.JavaConverters._
 
 /**
  * Class of syntactic features contributing to ultimate feature selection.
-  * Takes a TextDocument as input.
+  * @param td a TextDocument
  */
-
-
 class SyntacticFeatures(val td: TextDocument) {
-
-  /*def getSentences: Vector[Vector[String]] = {
-    this.textDocument.textDoc.flatMap(_.sentences.map
-      (_.words.toVector))
-  }*/
 
   //sentence lengths
     //not including punctuation
@@ -30,6 +23,7 @@ class SyntacticFeatures(val td: TextDocument) {
 
     allSentences.map(_.length.toDouble)
   }
+
 
   //sentence length stats
   def sentenceLengthStats: Map[String, Double] = {
@@ -48,6 +42,7 @@ class SyntacticFeatures(val td: TextDocument) {
     )
   }
 
+
   //get punctuation
   def getPunctuation: Vector[Vector[String]] = {
     val sentences = td.words(withPunctuation = true).flatten    //remove paragraphs
@@ -58,7 +53,6 @@ class SyntacticFeatures(val td: TextDocument) {
     }
 
   }
-
 
 
   //punctuation stats

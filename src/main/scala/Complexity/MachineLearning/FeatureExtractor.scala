@@ -19,6 +19,8 @@ class FeatureExtractor(
 
   //TODO redo to match how its done in PitchVantage
 
+  //TODO scale!!!!!
+
   val metadata = Vector((this.textDoc.title, 0d), (this.textDoc.gradeLevel, 0d))
   val lexFeatureVector = if (lexFeatures != null) lexFeatures.makeLexicalFeatureVector else null
   val synFeatureVector = if (synFeatures != null) synFeatures.makeSyntacticFeatureVector else null
