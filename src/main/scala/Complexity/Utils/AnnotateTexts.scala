@@ -27,6 +27,8 @@ object AnnotateTexts {
       val fullName = f.getName
       val annotatedName = fullName.dropRight(4) + ".annotated"
 
+      println("annotating " + fullName)
+
       //make processed paragraphs
       val procPars = makeProcParsFromText(fullName)
 
