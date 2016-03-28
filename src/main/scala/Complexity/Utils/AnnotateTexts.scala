@@ -18,9 +18,9 @@ object AnnotateTexts {
   def main(args: Array[String]) = {
 
     //get list of files to annotate
-    val allFiles = new File(args(0)).listFiles.par
+    val allFiles = new File(args(0)).listFiles
 
-    //iterate through files in parallel
+    //iterate through files
     for (f <- allFiles) {
 
       //variables for naming
