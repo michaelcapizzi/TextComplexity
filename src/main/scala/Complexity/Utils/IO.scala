@@ -67,7 +67,8 @@ object IO {
   def serializeAnnotation(annotatedDocuments: Vector[Document], outputFileName: String): Unit = {
     val writeToFile = new PrintWriter(
                         new File(
-                          "/home/mcapizzi/Github/Unbound/src/main/resources/annotatedText/" + outputFileName
+                          "/media/mcapizzi/data/Github/TextComplexity/src/main/resources/annotatedText/" + outputFileName
+//                          getClass.getResource("/annotatedText/" + outputFileName).getPath  //TODO how to write to resources without absolute path?
                         )
                       )
 
@@ -81,15 +82,12 @@ object IO {
 
   //import serialized annotation into vector of annotated paragraphs
   def importSerial(annotationFileName: String): Vector[Document] = {
+    //serializer
     val serial = new DocumentSerializer
+    //file
+    val f = new File(getClass.getResource("/annotatedText/" + annotationFileName).getPath)
     //open buffer
-    val buffer = new BufferedReader(
-                  new FileReader(
-                    new File(
-                      getClass.getResource(annotationFileName).getPath
-                    )
-                  )
-    )
+    val buffer = new BufferedReader(new FileReader(f))
 
     //read in first line
     var line = buffer.readLine
@@ -115,7 +113,7 @@ object IO {
   }
 
   //import directly from annotation and make text document
-  def makeDocumentFromSerial(annotationFileName: String, processor: CoreNLPProcessor): TextDocument = {
+  /*def makeDocumentFromSerial(annotationFileName: String, processor: CoreNLPProcessor): TextDocument = {
     //make sista Documents
     val documentVector = importSerial(annotationFileName)
 
@@ -125,6 +123,6 @@ object IO {
     val chapter = getTitleChapter(fullOriginalFilePath)._2
     val gradeLevel = getGradeLevel(fullOriginalFilePath)
     new TextDocument(text, processor, document, author, title, chapter, gradeLevel)
-  }
+  }*/
 
 }

@@ -14,26 +14,34 @@ class DocumentTests extends GeneralTest {
 
   //file to use for test
   val file = "0001AL_OwlAndMoon.txt"
+  val annotation = "0001AL_OwlAndMoon.annotated"
 
   //create processor
   val p = new CoreNLPProcessor(withDiscourse = true)
 
   //make ProcessedParagraphs
-  val procPars = makeProcPars(file)
+  val procParsFromText = makeProcParsFromText(file)
 
   //annotate
-  procPars.foreach(_.annotate)
+  procParsFromText.foreach(_.annotate)
+
+  //import annotation
+  val procParsFromAnnotation = makeProcParsFromAnnotation(file, annotation)
 
   //make TextDocument
-  val td = new TextDocument(procPars)
+  val td = new TextDocument(procParsFromText)
 
   //features
   val lex = new LexicalFeatures(td)
 
   ///////tests///////
 
+  "Imported annotation and annotated imported text" should "be the same" in {
+    assert(procParsFromAnnotation == procParsFromText)
+  }
+
   "Words without punctuation" should "be shorter than words with punctuation" in {
-    for (paragraph <- procPars) {
+    for (paragraph <- procParsFromText) {
       val withPunct = paragraph.words(withPunctuation = true).flatten
       val withoutPunct = paragraph.words(withPunctuation = false).flatten
       assert(withPunct.length > withoutPunct.length)

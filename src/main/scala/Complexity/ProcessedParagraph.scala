@@ -1,14 +1,16 @@
 package Complexity
 
-import java.util
+import edu.arizona.sista.processors.Document
 import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
 import edu.arizona.sista.struct.Counter
+import java._
 
 /**
   * Created by mcapizzi on 3/25/16.
   */
 class ProcessedParagraph(
-                      val text: String,
+                      val text: Option[String],
+                      val annotatedDoc: Option[Document],
                       val processor: CoreNLPProcessor,
                       val title: Option[String] = None,
                       val author: Option[String] = None,
@@ -18,7 +20,11 @@ class ProcessedParagraph(
                     ) {
 
   //processors Document
-  val doc = this.processor.mkDocument(this.text)
+  val doc = if (text.nonEmpty) {
+              this.processor.mkDocument(this.text.get)
+            } else {
+              this.annotatedDoc.get
+            }
 
   //annotate document
   def annotate: Unit = {
@@ -158,15 +164,13 @@ class ProcessedParagraph(
   }
 
   //constituents
-  def rawConstituents: Vector[util.Set[edu.stanford.nlp.trees.Constituent
-  ]] = {
+  def rawConstituents: Vector[util.Set[edu.stanford.nlp.trees.Constituent]] = {
     this.coreNLPParseTree.map(_.
       constituents)
   }
 
   //dependencies
-  def rawDependencies: Vector[edu.arizona.sista.struct.DirectedGraph
-    [String]] = {
+  def rawDependencies: Vector[edu.arizona.sista.struct.DirectedGraph[String]] = {
     this.rawSentences.map(_.
       dependencies.get)
   }
