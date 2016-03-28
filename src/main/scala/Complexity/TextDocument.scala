@@ -186,9 +186,11 @@ class TextDocument (
   //distinct tokens
     //gram = "word" or "lemma"
   def distinctCount(gram: String): Double = {
-    case "word" => this.tokensCounter.size.toDouble
-    case "lemma" => this.lemmasCounter.size.toDouble
-    case _ => this.tokensCounter.size.toDouble
+    gram match {
+      case "word" => this.tokensCounter.size.toDouble
+      case "lemma" => this.lemmasCounter.size.toDouble
+      case _ => this.tokensCounter.size.toDouble
+    }
   }
 
   //ratio of distinct to total tokens

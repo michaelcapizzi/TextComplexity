@@ -49,17 +49,22 @@ class DocumentTests extends GeneralTest {
     val generalFold = foldApply(tagCounterList, new Counter[String], (a: Counter[String],b: Counter[String]) => a + b)
     val counterFold = foldApplyCounter(tagCounterList, new Counter[String], (a,b) => a + b)
 
-    assert(generalFold == counterFold)
 
   }
 
-  "Filtered stop word counter " should "not contain determiners or conjunctions" in {
+  "Filtered stop-word counter " should "not contain determiners or conjunctions" in {
     assert(
       !td.filterStopWords("words").keySet.map(_._2).contains("DT") &&
       !td.filterStopWords("lemmas").keySet.map(_._2).contains("DT") &&
-      !td.filterStopWords("words").keySet.map(_._2).contains("CC"))
-      !td.filterStopWords("lemmas").keySet.map(_._2).contains("CC"))
+      !td.filterStopWords("words").keySet.map(_._2).contains("CC") &&
+      !td.filterStopWords("lemmas").keySet.map(_._2).contains("CC")
     )
+  }
+
+  "Lexical feature vector" should "have normalized values less than one" in {
+    val features = lex.makeLexicalFeatureVector
+
+    assert(features.slice(2,9).filter(z => z._2 > 1) == Vector())
   }
 
 

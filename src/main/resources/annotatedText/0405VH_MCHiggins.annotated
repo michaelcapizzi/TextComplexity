@@ -1,0 +1,818 @@
+S	6
+T	15
+Mayo	0	4	NNP	Mayo	PERSON	O	_
+Cornelius	5	14	NNP	Cornelius	PERSON	O	_
+Higgins	15	22	NNP	Higgins	PERSON	O	_
+raised	23	29	VBD	raise	O	O	_
+his	30	33	PRP$	he	O	O	_
+arms	34	38	NNS	arm	O	O	_
+high	39	43	JJ	high	O	O	_
+to	44	46	TO	to	O	O	_
+the	47	50	DT	the	O	O	_
+sky	51	54	NN	sky	O	O	_
+and	55	58	CC	and	O	O	_
+spread	59	65	VBD	spread	O	O	_
+them	66	70	PRP	they	O	O	_
+wide	71	75	JJ	wide	O	O	_
+.	75	76	.	.	O	O	_
+D	1
+3
+2	0	nn
+2	1	nn
+3	2	nsubj
+3	6	xcomp
+3	11	conj_and
+5	4	poss
+6	5	nsubj
+6	9	prep_to
+9	8	det
+11	2	nsubj
+11	13	xcomp
+13	12	nsubj
+EOX
+Y	1
+ROOT	0	0	15	1	S	1	0	15	3	NP	2	0	3	3	NNP	0	0	1	1	Mayo	0	0	1	0	NNP	0	1	2	1	Cornelius	1	1	2	0	NNP	0	2	3	1	Higgins	2	2	3	0	VP	0	3	14	3	VP	0	3	10	2	VBD	0	3	4	1	raised	3	3	4	0	S	1	4	10	2	NP	1	4	6	2	PRP$	0	4	5	1	his	4	4	5	0	NNS	0	5	6	1	arms	5	5	6	0	ADJP	0	6	10	2	JJ	0	6	7	1	high	6	6	7	0	PP	0	7	10	2	TO	0	7	8	1	to	7	7	8	0	NP	1	8	10	2	DT	0	8	9	1	the	8	8	9	0	NN	0	9	10	1	sky	9	9	10	0	CC	0	10	11	1	and	10	10	11	0	VP	0	11	14	2	VBD	0	11	12	1	spread	11	11	12	0	S	1	12	14	2	NP	0	12	13	1	PRP	0	12	13	1	them	12	12	13	0	ADJP	0	13	14	1	JJ	0	13	14	1	wide	13	13	14	0	.	0	14	15	1	.	14	14	15	0
+EOS
+T	5
+He	77	79	PRP	he	O	O	_
+glanced	80	87	VBD	glance	O	O	_
+furtively	88	97	RB	furtively	O	O	_
+around	98	104	RB	around	O	O	_
+.	104	105	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	2	advmod
+1	3	advmod
+EOX
+Y	1
+ROOT	0	0	5	1	S	1	0	5	3	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	0	1	4	3	VBD	0	1	2	1	glanced	1	1	2	0	ADVP	0	2	3	1	RB	0	2	3	1	furtively	2	2	3	0	ADVP	0	3	4	1	RB	0	3	4	1	around	3	3	4	0	.	0	4	5	1	.	4	4	5	0
+EOS
+T	5
+It	106	108	PRP	it	O	O	_
+was	109	112	VBD	be	O	O	_
+all	113	116	RB	all	O	O	_
+right	117	122	RB	right	O	O	_
+.	122	123	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	3	advmod
+3	2	advmod
+EOX
+Y	1
+ROOT	0	0	5	1	S	1	0	5	3	NP	0	0	1	1	PRP	0	0	1	1	It	0	0	1	0	VP	0	1	4	2	VBD	0	1	2	1	was	1	1	2	0	ADVP	1	2	4	2	RB	0	2	3	1	all	2	2	3	0	RB	0	3	4	1	right	3	3	4	0	.	0	4	5	1	.	4	4	5	0
+EOS
+T	12
+There	124	129	EX	there	O	O	_
+was	130	133	VBD	be	O	O	_
+no	134	136	DT	no	O	O	_
+one	137	140	NN	one	NUMBER	1.0	_
+to	141	143	TO	to	O	O	_
+see	144	147	VB	see	O	O	_
+him	148	151	PRP	he	O	O	_
+greeting	152	160	VBG	greet	O	O	_
+the	161	164	DT	the	DATE	NEXT_IMMEDIATE MO	_
+coming	165	171	VBG	come	DATE	NEXT_IMMEDIATE MO	_
+sunrise	172	179	NN	sunrise	DATE	NEXT_IMMEDIATE MO	_
+.	179	180	.	.	O	O	_
+D	1
+1
+1	0	expl
+1	3	nsubj
+3	2	neg
+3	5	vmod
+5	4	aux
+5	7	dep
+7	6	nsubj
+7	10	dobj
+10	8	det
+10	9	amod
+EOX
+Y	1
+ROOT	0	0	12	1	S	1	0	12	3	NP	0	0	1	1	EX	0	0	1	1	There	0	0	1	0	VP	1	1	11	2	VBD	0	1	2	1	was	1	1	2	0	NP	1	2	11	3	DT	0	2	3	1	no	2	2	3	0	NN	0	3	4	1	one	3	3	4	0	S	0	4	11	1	VP	1	4	11	2	TO	0	4	5	1	to	4	4	5	0	VP	0	5	11	2	VB	0	5	6	1	see	5	5	6	0	S	1	6	11	2	NP	0	6	7	1	PRP	0	6	7	1	him	6	6	7	0	VP	0	7	11	2	VBG	0	7	8	1	greeting	7	7	8	0	NP	2	8	11	3	DT	0	8	9	1	the	8	8	9	0	VBG	0	9	10	1	coming	9	9	10	0	NN	0	10	11	1	sunrise	10	10	11	0	.	0	11	12	1	.	11	11	12	0
+EOS
+T	22
+But	181	184	CC	but	O	O	_
+the	185	188	DT	the	O	O	_
+motion	189	195	NN	motion	O	O	_
+of	196	198	IN	of	O	O	_
+his	199	202	PRP$	he	O	O	_
+arms	203	207	NNS	arm	O	O	_
+caused	208	214	VBD	cause	O	O	_
+a	215	216	DT	a	O	O	_
+flutter	217	224	NN	flutter	O	O	_
+of	225	227	IN	of	O	O	_
+lettuce	228	235	NN	lettuce	O	O	_
+leaves	236	242	VBZ	leave	O	O	_
+he	243	245	PRP	he	O	O	_
+had	246	249	VBD	have	O	O	_
+bound	250	255	VBN	bind	O	O	_
+to	256	258	TO	to	O	O	_
+his	259	262	PRP$	he	O	O	_
+wrists	263	269	NNS	wrist	O	O	_
+with	270	274	IN	with	O	O	_
+rubber	275	281	NN	rubber	O	O	_
+bands	282	287	NNS	band	O	O	_
+.	287	288	.	.	O	O	_
+D	1
+6
+2	1	det
+2	5	prep_of
+5	4	poss
+6	0	cc
+6	2	nsubj
+6	11	ccomp
+8	7	det
+8	10	prep_of
+11	8	nsubj
+11	14	ccomp
+14	12	nsubj
+14	13	aux
+14	17	prep_to
+14	20	prep_with
+17	16	poss
+20	19	nn
+EOX
+Y	1
+ROOT	0	0	22	1	S	2	0	22	4	CC	0	0	1	1	But	0	0	1	0	NP	0	1	6	2	NP	1	1	3	2	DT	0	1	2	1	the	1	1	2	0	NN	0	2	3	1	motion	2	2	3	0	PP	0	3	6	2	IN	0	3	4	1	of	3	3	4	0	NP	1	4	6	2	PRP$	0	4	5	1	his	4	4	5	0	NNS	0	5	6	1	arms	5	5	6	0	VP	0	6	21	2	VBD	0	6	7	1	caused	6	6	7	0	SBAR	0	7	21	1	S	1	7	21	2	NP	0	7	11	2	NP	1	7	9	2	DT	0	7	8	1	a	7	7	8	0	NN	0	8	9	1	flutter	8	8	9	0	PP	0	9	11	2	IN	0	9	10	1	of	9	9	10	0	NP	0	10	11	1	NN	0	10	11	1	lettuce	10	10	11	0	VP	0	11	21	2	VBZ	0	11	12	1	leaves	11	11	12	0	SBAR	0	12	21	1	S	1	12	21	2	NP	0	12	13	1	PRP	0	12	13	1	he	12	12	13	0	VP	1	13	21	2	VBD	0	13	14	1	had	13	13	14	0	VP	0	14	21	3	VBN	0	14	15	1	bound	14	14	15	0	PP	0	15	18	2	TO	0	15	16	1	to	15	15	16	0	NP	1	16	18	2	PRP$	0	16	17	1	his	16	16	17	0	NNS	0	17	18	1	wrists	17	17	18	0	PP	0	18	21	2	IN	0	18	19	1	with	18	18	19	0	NP	1	19	21	2	NN	0	19	20	1	rubber	19	19	20	0	NNS	0	20	21	1	bands	20	20	21	0	.	0	21	22	1	.	21	21	22	0
+EOS
+T	12
+Like	289	293	IN	like	O	O	_
+bracelets	294	303	NNS	bracelet	O	O	_
+of	304	306	IN	of	O	O	_
+green	307	312	JJ	green	O	O	_
+feathers	313	321	NNS	feather	O	O	_
+,	321	322	,	,	O	O	_
+the	323	326	DT	the	O	O	_
+leaves	327	333	NNS	leaf	O	O	_
+commenced	334	343	VBD	commence	O	O	_
+to	344	346	TO	to	O	O	_
+wave	347	351	VB	wave	O	O	_
+.	351	352	.	.	O	O	_
+D	1
+8
+1	4	prep_of
+4	3	amod
+7	6	det
+8	1	prep_like
+8	7	nsubj
+8	10	xcomp
+10	9	aux
+EOX
+Y	1
+ROOT	0	0	12	1	S	3	0	12	5	PP	0	0	5	2	IN	0	0	1	1	Like	0	0	1	0	NP	0	1	5	2	NP	0	1	2	1	NNS	0	1	2	1	bracelets	1	1	2	0	PP	0	2	5	2	IN	0	2	3	1	of	2	2	3	0	NP	1	3	5	2	JJ	0	3	4	1	green	3	3	4	0	NNS	0	4	5	1	feathers	4	4	5	0	,	0	5	6	1	,	5	5	6	0	NP	1	6	8	2	DT	0	6	7	1	the	6	6	7	0	NNS	0	7	8	1	leaves	7	7	8	0	VP	0	8	11	2	VBD	0	8	9	1	commenced	8	8	9	0	S	0	9	11	1	VP	1	9	11	2	TO	0	9	10	1	to	9	9	10	0	VP	0	10	11	1	VB	0	10	11	1	wave	10	10	11	0	.	0	11	12	1	.	11	11	12	0
+EOS
+C	21
+4	12	12	13	1
+0	2	0	3	1
+3	10	8	11	10
+5	1	1	5	19
+4	17	16	18	16
+0	9	8	10	4
+2	0	0	1	4
+4	4	4	5	1
+0	5	4	6	2
+3	6	6	7	1
+4	20	19	21	18
+4	5	4	6	2
+0	4	4	5	1
+5	7	6	8	21
+5	4	3	5	20
+0	12	12	13	5
+4	8	7	11	14
+4	2	1	6	11
+3	3	2	11	8
+1	0	0	1	1
+4	16	16	17	1
+R
+contrast	None	-1	-1	0	0	5	11	0	1	2	nil
+evaluation	LeftToRight	-1	-1	0	0	3	11	0	1	2	nil
+elaboration	LeftToRight	-1	-1	0	0	2	4	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	1	4	0	0	2	nil
+joint	None	-1	-1	0	0	0	14	0	1	2	nil
+nil	None	-1	-1	0	0	0	9	0	0	0	Mayo Cornelius Higgins raised his arms high to the sky
+nil	None	-1	-1	0	10	0	14	1	1	0	and spread them wide .
+nil	None	-1	-1	1	0	1	4	0	0	0	He glanced furtively around .
+nil	None	-1	-1	2	0	2	4	0	0	0	It was all right .
+elaboration	LeftToRight	-1	-1	3	0	3	11	0	1	2	nil
+nil	None	-1	-1	3	0	3	3	0	0	0	There was no one
+nil	None	-1	-1	3	4	3	11	1	1	0	to see him greeting the coming sunrise .
+elaboration	LeftToRight	-1	-1	4	0	5	11	0	1	2	nil
+attribution	RightToLeft	-1	-1	4	0	4	21	0	1	2	nil
+nil	None	-1	-1	4	0	4	11	0	0	0	But the motion of his arms caused a flutter of lettuce leaves
+nil	None	-1	-1	4	12	4	21	1	1	0	he had bound to his wrists with rubber bands .
+background	RightToLeft	-1	-1	5	0	5	11	0	1	2	nil
+nil	None	-1	-1	5	0	5	5	0	0	0	Like bracelets of green feathers ,
+nil	None	-1	-1	5	6	5	11	1	1	0	the leaves commenced to wave .
+EOD
+S	6
+T	16
+M.	0	2	NNP	M.	O	O	_
+C.	3	5	NNP	C.	O	O	_
+,	5	6	,	,	O	O	_
+as	7	9	IN	as	O	O	_
+he	10	12	PRP	he	O	O	_
+was	13	16	VBD	be	O	O	_
+called	17	23	VBN	call	O	O	_
+,	23	24	,	,	O	O	_
+felt	25	29	VBD	feel	O	O	_
+warm	30	34	JJ	warm	O	O	_
+,	34	35	,	,	O	O	_
+moist	36	41	JJ	moist	O	O	_
+air	42	45	NN	air	O	O	_
+surround	46	54	VB	surround	O	O	_
+him	55	58	PRP	he	O	O	_
+.	58	59	.	.	O	O	_
+D	1
+8
+1	0	nn
+1	6	dep
+6	3	mark
+6	4	nsubjpass
+6	5	auxpass
+8	1	nsubj
+8	13	ccomp
+12	9	amod
+12	11	amod
+13	12	nsubj
+13	14	dobj
+EOX
+Y	1
+ROOT	0	0	16	1	S	1	0	16	3	NP	0	0	8	4	NP	1	0	2	2	NNP	0	0	1	1	M.	0	0	1	0	NNP	0	1	2	1	C.	1	1	2	0	,	0	2	3	1	,	2	2	3	0	SBAR	1	3	7	2	IN	0	3	4	1	as	3	3	4	0	S	1	4	7	2	NP	0	4	5	1	PRP	0	4	5	1	he	4	4	5	0	VP	1	5	7	2	VBD	0	5	6	1	was	5	5	6	0	VP	0	6	7	1	VBN	0	6	7	1	called	6	6	7	0	,	0	7	8	1	,	7	7	8	0	VP	0	8	15	2	VBD	0	8	9	1	felt	8	8	9	0	S	1	9	15	2	NP	3	9	13	4	JJ	0	9	10	1	warm	9	9	10	0	,	0	10	11	1	,	10	10	11	0	JJ	0	11	12	1	moist	11	11	12	0	NN	0	12	13	1	air	12	12	13	0	VP	0	13	15	2	VB	0	13	14	1	surround	13	13	14	0	NP	0	14	15	1	PRP	0	14	15	1	him	14	14	15	0	.	0	15	16	1	.	15	15	16	0
+EOS
+T	15
+Humidity	60	68	NN	humidity	O	O	_
+trapped	69	76	VBN	trap	O	O	_
+in	77	79	IN	in	O	O	_
+the	80	83	DT	the	O	O	_
+hills	84	89	NNS	hill	O	O	_
+clung	90	95	VBP	cling	O	O	_
+to	96	98	TO	to	O	O	_
+the	99	102	DT	the	O	O	_
+mountainside	103	115	NN	mountainside	O	O	_
+as	116	118	IN	as	O	O	_
+the	119	122	DT	the	O	O	_
+night	123	128	NN	night	TIME	TNI	_
+passed	129	135	VBN	pass	O	O	_
+on	136	138	RP	on	O	O	_
+.	138	139	.	.	O	O	_
+D	1
+5
+0	1	vmod
+1	4	prep_in
+4	3	det
+5	0	nsubj
+5	8	prep_to
+8	7	det
+8	11	prep_as
+11	10	det
+11	12	vmod
+12	13	prt
+EOX
+Y	1
+ROOT	0	0	15	1	S	1	0	15	3	NP	0	0	5	2	NP	0	0	1	1	NN	0	0	1	1	Humidity	0	0	1	0	VP	0	1	5	2	VBN	0	1	2	1	trapped	1	1	2	0	PP	0	2	5	2	IN	0	2	3	1	in	2	2	3	0	NP	1	3	5	2	DT	0	3	4	1	the	3	3	4	0	NNS	0	4	5	1	hills	4	4	5	0	VP	0	5	14	2	VBP	0	5	6	1	clung	5	5	6	0	PP	0	6	14	2	TO	0	6	7	1	to	6	6	7	0	NP	0	7	14	2	NP	1	7	9	2	DT	0	7	8	1	the	7	7	8	0	NN	0	8	9	1	mountainside	8	8	9	0	PP	0	9	14	2	IN	0	9	10	1	as	9	9	10	0	NP	0	10	14	2	NP	1	10	12	2	DT	0	10	11	1	the	10	10	11	0	NN	0	11	12	1	night	11	11	12	0	VP	0	12	14	2	VBN	0	12	13	1	passed	12	12	13	0	PRT	0	13	14	1	RP	0	13	14	1	on	13	13	14	0	.	0	14	15	1	.	14	14	15	0
+EOS
+T	8
+In	140	142	IN	in	O	O	_
+seconds	143	150	NNS	seconds	DURATION	PTXS	_
+,	150	151	,	,	O	O	_
+his	152	155	PRP$	he	O	O	_
+skin	156	160	NN	skin	O	O	_
+grew	161	165	VBD	grow	O	O	_
+clammy	166	172	JJ	clammy	O	O	_
+.	172	173	.	.	O	O	_
+D	1
+5
+4	3	poss
+5	1	prep_in
+5	4	nsubj
+5	6	dobj
+EOX
+Y	1
+ROOT	0	0	8	1	S	3	0	8	5	PP	0	0	2	2	IN	0	0	1	1	In	0	0	1	0	NP	0	1	2	1	NNS	0	1	2	1	seconds	1	1	2	0	,	0	2	3	1	,	2	2	3	0	NP	1	3	5	2	PRP$	0	3	4	1	his	3	3	4	0	NN	0	4	5	1	skin	4	4	5	0	VP	0	5	7	2	VBD	0	5	6	1	grew	5	5	6	0	NP	0	6	7	1	JJ	0	6	7	1	clammy	6	6	7	0	.	0	7	8	1	.	7	7	8	0
+EOS
+T	18
+But	174	177	CC	but	O	O	_
+he	178	180	PRP	he	O	O	_
+paid	181	185	VBD	pay	O	O	_
+no	186	188	DT	no	O	O	_
+attention	189	198	NN	attention	O	O	_
+to	199	201	TO	to	O	O	_
+the	202	205	DT	the	O	O	_
+oppressive	206	216	JJ	oppressive	O	O	_
+heat	217	221	NN	heat	O	O	_
+with	222	226	IN	with	O	O	_
+its	227	230	PRP$	its	O	O	_
+odors	231	236	NNS	odor	O	O	_
+of	237	239	IN	of	O	O	_
+summer	240	246	NN	summer	DATE	XXXX-SU	_
+growth	247	253	NN	growth	O	O	_
+and	254	257	CC	and	O	O	_
+decay	258	263	NN	decay	O	O	_
+.	263	264	.	.	O	O	_
+D	1
+2
+2	0	cc
+2	1	nsubj
+2	4	dobj
+2	8	prep_to
+2	11	prep_with
+4	3	neg
+8	6	det
+8	7	amod
+11	10	poss
+11	14	prep_of
+11	16	prep_of
+14	13	nn
+14	16	conj_and
+EOX
+Y	1
+ROOT	0	0	18	1	S	2	0	18	4	CC	0	0	1	1	But	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	he	1	1	2	0	VP	0	2	17	4	VBD	0	2	3	1	paid	2	2	3	0	NP	1	3	5	2	DT	0	3	4	1	no	3	3	4	0	NN	0	4	5	1	attention	4	4	5	0	PP	0	5	9	2	TO	0	5	6	1	to	5	5	6	0	NP	2	6	9	3	DT	0	6	7	1	the	6	6	7	0	JJ	0	7	8	1	oppressive	7	7	8	0	NN	0	8	9	1	heat	8	8	9	0	PP	0	9	17	2	IN	0	9	10	1	with	9	9	10	0	NP	0	10	17	2	NP	1	10	12	2	PRP$	0	10	11	1	its	10	10	11	0	NNS	0	11	12	1	odors	11	11	12	0	PP	0	12	17	2	IN	0	12	13	1	of	12	12	13	0	NP	1	13	17	4	NN	0	13	14	1	summer	13	13	14	0	NN	0	14	15	1	growth	14	14	15	0	CC	0	15	16	1	and	15	15	16	0	NN	0	16	17	1	decay	16	16	17	0	.	0	17	18	1	.	17	17	18	0
+EOS
+T	21
+For	265	268	IN	for	O	O	_
+he	269	271	PRP	he	O	O	_
+was	272	275	VBD	be	O	O	_
+staring	276	283	VBG	stare	O	O	_
+out	284	287	RP	out	O	O	_
+over	288	292	IN	over	O	O	_
+a	293	294	DT	a	O	O	_
+grand	295	300	JJ	grand	O	O	_
+sweep	301	306	NN	sweep	O	O	_
+of	307	309	IN	of	O	O	_
+hill	310	314	NN	hill	O	O	_
+,	314	315	,	,	O	O	_
+whose	316	321	WP$	whose	O	O	_
+rolling	322	329	JJ	rolling	O	O	_
+outlines	330	338	VBZ	outline	O	O	_
+grew	339	343	VBD	grow	O	O	_
+clearer	344	351	JJR	clearer	O	O	_
+by	352	354	IN	by	O	O	_
+the	355	358	DT	the	DATE	THIS PT1M	_
+minute	359	365	NN	minute	DATE	THIS PT1M	_
+.	365	366	.	.	O	O	_
+D	1
+15
+3	0	mark
+3	1	nsubj
+3	2	aux
+3	4	prt
+3	8	prep_over
+8	6	det
+8	7	amod
+8	10	prep_of
+10	14	rcmod
+13	12	poss
+14	13	nsubj
+15	3	csubj
+15	16	acomp
+15	19	prep_by
+19	18	det
+EOX
+Y	1
+ROOT	0	0	21	1	S	1	0	21	3	SBAR	1	0	15	2	IN	0	0	1	1	For	0	0	1	0	S	1	1	15	2	NP	0	1	2	1	PRP	0	1	2	1	he	1	1	2	0	VP	1	2	15	2	VBD	0	2	3	1	was	2	2	3	0	VP	0	3	15	3	VBG	0	3	4	1	staring	3	3	4	0	PRT	0	4	5	1	RP	0	4	5	1	out	4	4	5	0	PP	0	5	15	2	IN	0	5	6	1	over	5	5	6	0	NP	0	6	15	2	NP	2	6	9	3	DT	0	6	7	1	a	6	6	7	0	JJ	0	7	8	1	grand	7	7	8	0	NN	0	8	9	1	sweep	8	8	9	0	PP	0	9	15	2	IN	0	9	10	1	of	9	9	10	0	NP	0	10	15	3	NP	0	10	11	1	NN	0	10	11	1	hill	10	10	11	0	,	0	11	12	1	,	11	11	12	0	SBAR	1	12	15	2	WHNP	1	12	14	2	WP$	0	12	13	1	whose	12	12	13	0	NP	0	13	14	1	JJ	0	13	14	1	rolling	13	13	14	0	S	0	14	15	1	VP	0	14	15	1	VBZ	0	14	15	1	outlines	14	14	15	0	VP	0	15	20	3	VBD	0	15	16	1	grew	15	15	16	0	ADJP	0	16	17	1	JJR	0	16	17	1	clearer	16	16	17	0	PP	0	17	20	2	IN	0	17	18	1	by	17	17	18	0	NP	1	18	20	2	DT	0	18	19	1	the	18	18	19	0	NN	0	19	20	1	minute	19	19	20	0	.	0	20	21	1	.	20	20	21	0
+EOS
+T	27
+As	367	369	IN	as	O	O	_
+he	370	372	PRP	he	O	O	_
+stood	373	378	VBD	stand	O	O	_
+on	379	381	IN	on	O	O	_
+the	382	385	DT	the	O	O	_
+gallery	386	393	NN	gallery	O	O	_
+of	394	396	IN	of	O	O	_
+his	397	400	PRP$	he	O	O	_
+home	401	405	NN	home	O	O	_
+,	405	406	,	,	O	O	_
+the	407	410	DT	the	O	O	_
+outcropping	411	422	NN	outcropping	O	O	_
+on	423	425	IN	on	O	O	_
+which	426	431	WDT	which	O	O	_
+he	432	434	PRP	he	O	O	_
+lived	435	440	VBD	live	O	O	_
+on	441	443	IN	on	O	O	_
+the	444	447	DT	the	O	O	_
+mountainside	448	460	NN	mountainside	O	O	_
+seemed	461	467	VBD	seem	O	O	_
+to	468	470	TO	to	O	O	_
+fade	471	475	VB	fade	O	O	_
+out	476	479	RP	out	O	O	_
+from	480	484	IN	from	O	O	_
+under	485	490	IN	under	O	O	_
+him	491	494	PRP	he	O	O	_
+.	494	495	.	.	O	O	_
+D	1
+19
+2	0	mark
+2	1	nsubj
+2	5	prep_on
+5	4	det
+5	8	prep_of
+8	7	poss
+11	10	det
+11	15	rcmod
+15	13	prep_on
+15	14	nsubj
+15	18	prep_on
+18	17	det
+19	2	advcl
+19	11	nsubj
+19	21	xcomp
+21	20	aux
+21	22	prt
+21	23	prep
+23	24	pcomp
+24	25	pobj
+EOX
+Y	1
+ROOT	0	0	27	1	S	3	0	27	5	SBAR	1	0	9	2	IN	0	0	1	1	As	0	0	1	0	S	1	1	9	2	NP	0	1	2	1	PRP	0	1	2	1	he	1	1	2	0	VP	0	2	9	2	VBD	0	2	3	1	stood	2	2	3	0	PP	0	3	9	2	IN	0	3	4	1	on	3	3	4	0	NP	0	4	9	2	NP	1	4	6	2	DT	0	4	5	1	the	4	4	5	0	NN	0	5	6	1	gallery	5	5	6	0	PP	0	6	9	2	IN	0	6	7	1	of	6	6	7	0	NP	1	7	9	2	PRP$	0	7	8	1	his	7	7	8	0	NN	0	8	9	1	home	8	8	9	0	,	0	9	10	1	,	9	9	10	0	NP	0	10	19	2	NP	1	10	12	2	DT	0	10	11	1	the	10	10	11	0	NN	0	11	12	1	outcropping	11	11	12	0	SBAR	1	12	19	2	WHPP	0	12	14	2	IN	0	12	13	1	on	12	12	13	0	WHNP	0	13	14	1	WDT	0	13	14	1	which	13	13	14	0	S	1	14	19	2	NP	0	14	15	1	PRP	0	14	15	1	he	14	14	15	0	VP	0	15	19	2	VBD	0	15	16	1	lived	15	15	16	0	PP	0	16	19	2	IN	0	16	17	1	on	16	16	17	0	NP	1	17	19	2	DT	0	17	18	1	the	17	17	18	0	NN	0	18	19	1	mountainside	18	18	19	0	VP	0	19	26	2	VBD	0	19	20	1	seemed	19	19	20	0	S	0	20	26	1	VP	1	20	26	2	TO	0	20	21	1	to	20	20	21	0	VP	0	21	26	3	VB	0	21	22	1	fade	21	21	22	0	PRT	0	22	23	1	RP	0	22	23	1	out	22	22	23	0	PP	0	23	26	2	IN	0	23	24	1	from	23	23	24	0	PP	0	24	26	2	IN	0	24	25	1	under	24	24	25	0	NP	0	25	26	1	PRP	0	25	26	1	him	25	25	26	0	.	0	26	27	1	.	26	26	27	0
+EOS
+C	30
+1	8	7	14	7
+3	11	10	17	16
+3	10	10	11	14
+5	1	1	2	3
+4	10	10	15	21
+3	4	3	5	14
+5	11	10	19	28
+3	1	1	2	3
+4	1	1	2	3
+0	14	14	15	3
+1	11	10	14	8
+4	13	13	14	22
+1	4	3	5	6
+2	6	6	7	12
+0	4	4	5	3
+5	7	7	8	3
+5	5	4	9	25
+4	8	6	15	20
+2	4	3	5	10
+0	1	0	7	1
+5	25	25	26	3
+5	8	7	9	26
+2	3	3	4	3
+5	18	17	19	7
+3	14	13	17	18
+2	1	1	2	9
+5	14	14	15	3
+1	0	0	5	5
+3	8	6	9	15
+4	19	18	20	23
+R
+elaboration	LeftToRight	-1	-1	0	0	5	26	0	1	2	nil
+elaboration	LeftToRight	-1	-1	0	0	3	17	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	2	7	0	0	2	nil
+same-unit	None	-1	-1	0	0	0	15	0	2	2	nil
+elaboration	LeftToRight	-1	-1	0	0	0	7	0	1	2	nil
+nil	None	-1	-1	0	0	0	2	0	0	0	M. C. ,
+nil	None	-1	-1	0	3	0	7	1	1	0	as he was called ,
+nil	None	-1	-1	0	8	0	15	2	2	0	felt warm , moist air surround him .
+elaboration	LeftToRight	-1	-1	1	0	2	7	0	0	2	nil
+elaboration	LeftToRight	-1	-1	1	0	1	14	0	1	2	nil
+nil	None	-1	-1	1	0	1	11	0	0	0	Humidity trapped in the hills clung to the mountainside as the night
+nil	None	-1	-1	1	12	1	14	1	1	0	passed on .
+nil	None	-1	-1	2	0	2	7	0	0	0	In seconds , his skin grew clammy .
+nil	None	-1	-1	3	0	3	17	0	0	0	But he paid no attention to the oppressive heat with its odors of summer growth and decay .
+elaboration	LeftToRight	-1	-1	4	0	5	26	0	1	2	nil
+elaboration	LeftToRight	-1	-1	4	0	4	20	0	1	2	nil
+nil	None	-1	-1	4	0	4	11	0	0	0	For he was staring out over a grand sweep of hill ,
+nil	None	-1	-1	4	12	4	20	1	1	0	whose rolling outlines grew clearer by the minute .
+elaboration	LeftToRight	-1	-1	5	0	5	26	0	1	2	nil
+nil	None	-1	-1	5	0	5	11	0	0	0	As he stood on the gallery of his home , the outcropping
+nil	None	-1	-1	5	12	5	26	1	1	0	on which he lived on the mountainside seemed to fade out from under him .
+EOD
+S	1
+T	9
+I	0	1	PRP	I	O	O	_
+'m	1	3	VBP	be	O	O	_
+standing	4	12	VBG	stand	O	O	_
+in	13	15	IN	in	O	O	_
+midair	16	22	NN	midair	O	O	_
+,	22	23	,	,	O	O	_
+he	24	26	PRP	he	O	O	_
+thought	27	34	VBD	think	O	O	_
+.	34	35	.	.	O	O	_
+D	1
+7
+2	0	nsubj
+2	1	aux
+2	4	prep_in
+7	2	ccomp
+7	6	nsubj
+EOX
+Y	1
+ROOT	0	0	9	1	S	3	0	9	5	S	1	0	5	2	NP	0	0	1	1	PRP	0	0	1	1	I	0	0	1	0	VP	1	1	5	2	VBP	0	1	2	1	'm	1	1	2	0	VP	0	2	5	2	VBG	0	2	3	1	standing	2	2	3	0	PP	0	3	5	2	IN	0	3	4	1	in	3	3	4	0	NP	0	4	5	1	NN	0	4	5	1	midair	4	4	5	0	,	0	5	6	1	,	5	5	6	0	NP	0	6	7	1	PRP	0	6	7	1	he	6	6	7	0	VP	0	7	8	1	VBD	0	7	8	1	thought	7	7	8	0	.	0	8	9	1	.	8	8	9	0
+EOS
+C	2
+0	6	6	7	2
+0	0	0	1	1
+R
+attribution	LeftToRight	-1	-1	0	0	0	8	0	1	2	nil
+nil	None	-1	-1	0	0	0	5	0	0	0	I 'm standing in midair ,
+nil	None	-1	-1	0	6	0	8	1	1	0	he thought .
+EOD
+S	1
+T	12
+He	0	2	PRP	he	O	O	_
+saw	3	6	VBD	see	O	O	_
+dim	7	10	JJ	dim	O	O	_
+light	11	16	JJ	light	O	O	_
+touch	17	22	NN	touch	O	O	_
+clouds	23	29	NNS	cloud	O	O	_
+clustered	30	39	VBN	cluster	O	O	_
+behind	40	46	IN	behind	O	O	_
+the	47	50	DT	the	O	O	_
+eastern	51	58	JJ	eastern	O	O	_
+hills	59	64	NNS	hill	O	O	_
+.	64	65	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	5	dobj
+5	2	amod
+5	3	amod
+5	4	nn
+5	6	vmod
+6	10	prep_behind
+10	8	det
+10	9	amod
+EOX
+Y	1
+ROOT	0	0	12	1	S	1	0	12	3	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	0	1	11	2	VBD	0	1	2	1	saw	1	1	2	0	NP	0	2	11	2	NP	3	2	6	4	JJ	0	2	3	1	dim	2	2	3	0	JJ	0	3	4	1	light	3	3	4	0	NN	0	4	5	1	touch	4	4	5	0	NNS	0	5	6	1	clouds	5	5	6	0	VP	0	6	11	2	VBN	0	6	7	1	clustered	6	6	7	0	PP	0	7	11	2	IN	0	7	8	1	behind	7	7	8	0	NP	2	8	11	3	DT	0	8	9	1	the	8	8	9	0	JJ	0	9	10	1	eastern	9	9	10	0	NNS	0	10	11	1	hills	10	10	11	0	.	0	11	12	1	.	11	11	12	0
+EOS
+C	3
+0	10	8	11	3
+0	5	2	11	2
+0	0	0	1	1
+R
+elaboration	LeftToRight	-1	-1	0	0	0	11	0	1	2	nil
+nil	None	-1	-1	0	0	0	5	0	0	0	He saw dim light touch clouds
+nil	None	-1	-1	0	6	0	11	1	1	0	clustered behind the eastern hills .
+EOD
+S	1
+T	9
+Bounce	0	6	VB	bounce	O	O	_
+the	7	10	DT	the	O	O	_
+sun	11	14	NN	sun	O	O	_
+beside	15	21	IN	beside	O	O	_
+me	22	24	PRP	I	O	O	_
+if	25	27	IN	if	O	O	_
+I	28	29	PRP	I	O	O	_
+want	30	34	VBP	want	O	O	_
+.	34	35	.	.	O	O	_
+D	1
+0
+0	2	dobj
+0	4	prep_beside
+0	7	advcl
+2	1	det
+7	5	mark
+7	6	nsubj
+EOX
+Y	1
+ROOT	0	0	9	1	S	0	0	9	2	VP	0	0	8	4	VB	0	0	1	1	Bounce	0	0	1	0	NP	1	1	3	2	DT	0	1	2	1	the	1	1	2	0	NN	0	2	3	1	sun	2	2	3	0	PP	0	3	5	2	IN	0	3	4	1	beside	3	3	4	0	NP	0	4	5	1	PRP	0	4	5	1	me	4	4	5	0	SBAR	1	5	8	2	IN	0	5	6	1	if	5	5	6	0	S	1	6	8	2	NP	0	6	7	1	PRP	0	6	7	1	I	6	6	7	0	VP	0	7	8	1	VBP	0	7	8	1	want	7	7	8	0	.	0	8	9	1	.	8	8	9	0
+EOS
+C	3
+0	6	6	7	2
+0	2	1	3	1
+0	4	4	5	2
+R
+attribution	RightToLeft	-1	-1	0	0	0	8	0	1	2	nil
+nil	None	-1	-1	0	0	0	4	0	0	0	Bounce the sun beside me
+nil	None	-1	-1	0	5	0	8	1	1	0	if I want .
+EOD
+S	5
+T	12
+All	0	3	DT	all	O	O	_
+others	4	10	NNS	other	O	O	_
+of	11	13	IN	of	O	O	_
+his	14	17	PRP$	he	O	O	_
+family	18	24	NN	family	O	O	_
+were	25	29	VBD	be	O	O	_
+still	30	35	RB	still	O	O	_
+asleep	36	42	RB	asleep	O	O	_
+in	43	45	IN	in	O	O	_
+the	46	49	DT	the	O	O	_
+house	50	55	NN	house	O	O	_
+.	55	56	.	.	O	O	_
+D	1
+7
+1	0	det
+1	4	prep_of
+4	3	poss
+7	1	nsubj
+7	5	cop
+7	6	advmod
+7	10	prep_in
+10	9	det
+EOX
+Y	1
+ROOT	0	0	12	1	S	1	0	12	3	NP	0	0	5	2	NP	1	0	2	2	DT	0	0	1	1	All	0	0	1	0	NNS	0	1	2	1	others	1	1	2	0	PP	0	2	5	2	IN	0	2	3	1	of	2	2	3	0	NP	1	3	5	2	PRP$	0	3	4	1	his	3	3	4	0	NN	0	4	5	1	family	4	4	5	0	VP	2	5	11	4	VBD	0	5	6	1	were	5	5	6	0	ADVP	0	6	7	1	RB	0	6	7	1	still	6	6	7	0	ADJP	0	7	8	1	RB	0	7	8	1	asleep	7	7	8	0	PP	0	8	11	2	IN	0	8	9	1	in	8	8	9	0	NP	1	9	11	2	DT	0	9	10	1	the	9	9	10	0	NN	0	10	11	1	house	10	10	11	0	.	0	11	12	1	.	11	11	12	0
+EOS
+T	19
+To	57	59	TO	to	O	O	_
+be	60	62	VB	be	O	O	_
+by	63	65	IN	by	O	O	_
+himself	66	73	PRP	himself	O	O	_
+in	74	76	IN	in	O	O	_
+the	77	80	DT	the	O	O	_
+perfect	81	88	JJ	perfect	O	O	_
+quiet	89	94	NN	quiet	O	O	_
+was	95	98	VBD	be	O	O	_
+reason	99	105	NN	reason	O	O	_
+enough	106	112	RB	enough	O	O	_
+for	113	116	IN	for	O	O	_
+him	117	120	PRP	he	O	O	_
+to	121	123	TO	to	O	O	_
+wake	124	128	VB	wake	O	O	_
+up	129	131	RP	up	O	O	_
+way	132	135	RB	way	O	O	_
+early	136	141	RB	early	O	O	_
+.	141	142	.	.	O	O	_
+D	1
+9
+1	0	aux
+1	3	prep_by
+1	7	prep_in
+7	5	det
+7	6	amod
+9	1	csubj
+9	8	cop
+9	10	advmod
+9	12	prep_for
+9	14	vmod
+14	13	aux
+14	15	prt
+14	17	advmod
+17	16	advmod
+EOX
+Y	1
+ROOT	0	0	19	1	S	1	0	19	3	S	0	0	8	1	VP	1	0	8	2	TO	0	0	1	1	To	0	0	1	0	VP	0	1	8	3	VB	0	1	2	1	be	1	1	2	0	PP	0	2	4	2	IN	0	2	3	1	by	2	2	3	0	NP	0	3	4	1	PRP	0	3	4	1	himself	3	3	4	0	PP	0	4	8	2	IN	0	4	5	1	in	4	4	5	0	NP	2	5	8	3	DT	0	5	6	1	the	5	5	6	0	JJ	0	6	7	1	perfect	6	6	7	0	NN	0	7	8	1	quiet	7	7	8	0	VP	1	8	18	2	VBD	0	8	9	1	was	8	8	9	0	NP	0	9	18	3	NP	0	9	11	2	NN	0	9	10	1	reason	9	9	10	0	RB	0	10	11	1	enough	10	10	11	0	PP	0	11	13	2	IN	0	11	12	1	for	11	11	12	0	NP	0	12	13	1	PRP	0	12	13	1	him	12	12	13	0	S	0	13	18	1	VP	1	13	18	2	TO	0	13	14	1	to	13	13	14	0	VP	0	14	18	3	VB	0	14	15	1	wake	14	14	15	0	PRT	0	15	16	1	RP	0	15	16	1	up	15	15	16	0	ADVP	1	16	18	2	RB	0	16	17	1	way	16	16	17	0	RB	0	17	18	1	early	17	17	18	0	.	0	18	19	1	.	18	18	19	0
+EOS
+T	22
+Alone	143	148	RB	alone	O	O	_
+for	149	152	IN	for	O	O	_
+half	153	157	PDT	half	O	O	_
+an	158	160	DT	a	DURATION	PT1H	_
+hour	161	165	NN	hour	DURATION	PT1H	_
+,	165	166	,	,	O	O	_
+he	167	169	PRP	he	O	O	_
+could	170	175	MD	could	O	O	_
+believe	176	183	VB	believe	O	O	_
+he	184	186	PRP	he	O	O	_
+had	187	190	VBD	have	O	O	_
+been	191	195	VBN	be	O	O	_
+chosen	196	202	VBN	choose	O	O	_
+to	203	205	TO	to	O	O	_
+remain	206	212	VB	remain	O	O	_
+forever	213	220	RB	forever	O	O	_
+suspended	221	230	VBN	suspend	O	O	_
+,	230	231	,	,	O	O	_
+facing	232	238	VBG	face	O	O	_
+the	239	242	DT	the	O	O	_
+hills	243	248	NNS	hill	O	O	_
+.	248	249	.	.	O	O	_
+D	1
+8
+4	2	predet
+4	3	det
+8	0	advmod
+8	4	prep_for
+8	6	nsubj
+8	7	aux
+8	12	ccomp
+12	9	nsubjpass
+12	10	aux
+12	11	auxpass
+12	14	xcomp
+14	13	aux
+14	16	acomp
+16	15	advmod
+16	18	xcomp
+18	20	dobj
+20	19	det
+EOX
+Y	1
+ROOT	0	0	22	1	S	3	0	22	5	PP	1	0	5	3	ADVP	0	0	1	1	RB	0	0	1	1	Alone	0	0	1	0	IN	0	1	2	1	for	1	1	2	0	NP	2	2	5	3	PDT	0	2	3	1	half	2	2	3	0	DT	0	3	4	1	an	3	3	4	0	NN	0	4	5	1	hour	4	4	5	0	,	0	5	6	1	,	5	5	6	0	NP	0	6	7	1	PRP	0	6	7	1	he	6	6	7	0	VP	1	7	21	2	MD	0	7	8	1	could	7	7	8	0	VP	0	8	21	2	VB	0	8	9	1	believe	8	8	9	0	SBAR	0	9	21	1	S	1	9	21	2	NP	0	9	10	1	PRP	0	9	10	1	he	9	9	10	0	VP	1	10	21	2	VBD	0	10	11	1	had	10	10	11	0	VP	1	11	21	2	VBN	0	11	12	1	been	11	11	12	0	VP	0	12	21	2	VBN	0	12	13	1	chosen	12	12	13	0	S	0	13	21	1	VP	1	13	21	2	TO	0	13	14	1	to	13	13	14	0	VP	0	14	21	2	VB	0	14	15	1	remain	14	14	15	0	VP	1	15	21	4	ADVP	0	15	16	1	RB	0	15	16	1	forever	15	15	16	0	VBN	0	16	17	1	suspended	16	16	17	0	,	0	17	18	1	,	17	17	18	0	S	0	18	21	1	VP	0	18	21	2	VBG	0	18	19	1	facing	18	18	19	0	NP	1	19	21	2	DT	0	19	20	1	the	19	19	20	0	NNS	0	20	21	1	hills	20	20	21	0	.	0	21	22	1	.	21	21	22	0
+EOS
+T	14
+He	250	252	PRP	he	O	O	_
+could	253	258	MD	could	O	O	_
+pretend	259	266	VB	pretend	O	O	_
+there	267	272	EX	there	O	O	_
+was	273	276	VBD	be	O	O	_
+nothing	277	284	NN	nothing	O	O	_
+terrible	285	293	JJ	terrible	O	O	_
+behind	294	300	IN	behind	O	O	_
+him	301	304	PRP	he	O	O	_
+,	304	305	,	,	O	O	_
+above	306	311	IN	above	O	O	_
+his	312	315	PRP$	he	O	O	_
+head	316	320	NN	head	O	O	_
+.	320	321	.	.	O	O	_
+D	1
+2
+2	0	nsubj
+2	1	aux
+2	4	ccomp
+4	3	expl
+4	6	acomp
+4	12	prep_above
+6	5	npadvmod
+6	8	prep_behind
+12	11	poss
+EOX
+Y	1
+ROOT	0	0	14	1	S	1	0	14	3	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	1	1	13	2	MD	0	1	2	1	could	1	1	2	0	VP	0	2	13	2	VB	0	2	3	1	pretend	2	2	3	0	SBAR	0	3	13	1	S	1	3	13	2	NP	0	3	4	1	EX	0	3	4	1	there	3	3	4	0	VP	1	4	13	4	VBD	0	4	5	1	was	4	4	5	0	ADJP	1	5	9	3	NN	0	5	6	1	nothing	5	5	6	0	JJ	0	6	7	1	terrible	6	6	7	0	PP	0	7	9	2	IN	0	7	8	1	behind	7	7	8	0	NP	0	8	9	1	PRP	0	8	9	1	him	8	8	9	0	,	0	9	10	1	,	9	9	10	0	PP	0	10	13	2	IN	0	10	11	1	above	10	10	11	0	NP	1	11	13	2	PRP$	0	11	12	1	his	11	11	12	0	NN	0	12	13	1	head	12	12	13	0	.	0	13	14	1	.	13	13	14	0
+EOS
+T	21
+Arms	322	326	NNS	arm	O	O	_
+outstretched	327	339	VBD	outstretch	O	O	_
+,	339	340	,	,	O	O	_
+pictureframed	341	354	VBN	pictureframe	O	O	_
+by	355	357	IN	by	O	O	_
+pine	358	362	VBP	pine	O	O	_
+uprights	363	371	NNS	upright	O	O	_
+supporting	372	382	VBG	support	O	O	_
+the	383	386	DT	the	O	O	_
+gallery	387	394	NN	gallery	O	O	_
+roof	395	399	NN	roof	O	O	_
+,	399	400	,	,	O	O	_
+he	401	403	PRP	he	O	O	_
+was	404	407	VBD	be	O	O	_
+M.C.	408	412	NNP	M.C.	PERSON	O	_
+Higgins	413	420	NNP	Higgins	PERSON	O	_
+,	420	421	,	,	O	O	_
+higher	422	428	JJR	higher	O	O	_
+than	429	433	IN	than	O	O	_
+everything	434	444	NN	everything	O	O	_
+.	444	445	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	5	parataxis
+1	15	parataxis
+3	4	prep
+5	3	csubj
+5	7	dep
+7	6	nsubj
+7	10	dobj
+10	8	det
+10	9	nn
+15	12	nsubj
+15	13	cop
+15	14	nn
+15	17	advmod
+17	19	prep_than
+EOX
+Y	1
+ROOT	0	0	21	1	S	0	0	21	6	S	1	0	2	2	NP	0	0	1	1	NNS	0	0	1	1	Arms	0	0	1	0	VP	0	1	2	1	VBD	0	1	2	1	outstretched	1	1	2	0	,	0	2	3	1	,	2	2	3	0	S	1	3	11	2	S	0	3	5	1	VP	0	3	5	2	VBN	0	3	4	1	pictureframed	3	3	4	0	PP	0	4	5	1	IN	0	4	5	1	by	4	4	5	0	VP	0	5	11	2	VBP	0	5	6	1	pine	5	5	6	0	S	1	6	11	2	NP	0	6	7	1	NNS	0	6	7	1	uprights	6	6	7	0	VP	0	7	11	2	VBG	0	7	8	1	supporting	7	7	8	0	NP	2	8	11	3	DT	0	8	9	1	the	8	8	9	0	NN	0	9	10	1	gallery	9	9	10	0	NN	0	10	11	1	roof	10	10	11	0	,	0	11	12	1	,	11	11	12	0	S	1	12	20	2	NP	0	12	13	1	PRP	0	12	13	1	he	12	12	13	0	VP	1	13	20	4	VBD	0	13	14	1	was	13	13	14	0	NP	1	14	16	2	NNP	0	14	15	1	M.C.	14	14	15	0	NNP	0	15	16	1	Higgins	15	15	16	0	,	0	16	17	1	,	16	16	17	0	ADVP	0	17	20	2	JJR	0	17	18	1	higher	17	17	18	0	PP	0	18	20	2	IN	0	18	19	1	than	18	18	19	0	NP	0	19	20	1	NN	0	19	20	1	everything	19	19	20	0	.	0	20	21	1	.	20	20	21	0
+EOS
+C	20
+3	11	11	12	1
+4	12	12	13	1
+4	0	0	1	17
+4	10	8	11	19
+0	10	9	11	3
+0	3	3	4	2
+3	0	0	1	1
+1	12	12	13	1
+4	6	6	7	18
+1	9	9	18	6
+3	12	11	13	14
+2	6	6	7	1
+0	4	3	5	1
+2	9	9	10	1
+1	3	3	4	1
+2	4	2	5	8
+4	15	14	16	1
+1	7	5	8	5
+2	20	19	21	11
+3	8	8	9	1
+R
+elaboration	LeftToRight	-1	-1	0	0	4	20	0	3	2	nil
+elaboration	LeftToRight	-1	-1	0	0	3	13	0	1	2	nil
+nil	None	-1	-1	0	0	0	11	0	0	0	All others of his family were still asleep in the house .
+elaboration	LeftToRight	-1	-1	1	0	3	13	0	1	2	nil
+enablement	LeftToRight	-1	-1	1	0	1	18	0	1	2	nil
+nil	None	-1	-1	1	0	1	12	0	0	0	To be by himself in the perfect quiet was reason enough for him
+nil	None	-1	-1	1	13	1	18	1	1	0	to wake up way early .
+elaboration	LeftToRight	-1	-1	2	0	3	13	0	1	2	nil
+background	RightToLeft	-1	-1	2	0	2	21	0	3	2	nil
+nil	None	-1	-1	2	0	2	5	0	0	0	Alone for half an hour ,
+attribution	RightToLeft	-1	-1	2	6	2	21	1	3	2	nil
+nil	None	-1	-1	2	6	2	8	1	1	0	he could believe
+elaboration	LeftToRight	-1	-1	2	9	2	21	2	3	2	nil
+nil	None	-1	-1	2	9	2	17	2	2	0	he had been chosen to remain forever suspended ,
+nil	None	-1	-1	2	18	2	21	3	3	0	facing the hills .
+attribution	RightToLeft	-1	-1	3	0	3	13	0	1	2	nil
+nil	None	-1	-1	3	0	3	2	0	0	0	He could pretend
+nil	None	-1	-1	3	3	3	13	1	1	0	there was nothing terrible behind him , above his head .
+elaboration	LeftToRight	-1	-1	4	0	4	20	0	3	2	nil
+nil	None	-1	-1	4	0	4	2	0	0	0	Arms outstretched ,
+elaboration	LeftToRight	-1	-1	4	3	4	20	1	3	2	nil
+nil	None	-1	-1	4	3	4	6	1	1	0	pictureframed by pine uprights
+attribution	LeftToRight	-1	-1	4	7	4	20	2	3	2	nil
+nil	None	-1	-1	4	7	4	11	2	2	0	supporting the gallery roof ,
+nil	None	-1	-1	4	12	4	20	3	3	0	he was M.C. Higgins , higher than everything .
+EOD

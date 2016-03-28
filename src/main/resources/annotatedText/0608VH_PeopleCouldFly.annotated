@@ -1,0 +1,973 @@
+S	5
+T	7
+They	0	4	PRP	they	O	O	_
+say	5	8	VBP	say	O	O	_
+the	9	12	DT	the	O	O	_
+people	13	19	NNS	people	O	O	_
+could	20	25	MD	could	O	O	_
+fly	26	29	VB	fly	O	O	_
+.	29	30	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	5	ccomp
+3	2	det
+5	3	nsubj
+5	4	aux
+EOX
+Y	1
+ROOT	0	0	7	1	S	1	0	7	3	NP	0	0	1	1	PRP	0	0	1	1	They	0	0	1	0	VP	0	1	6	2	VBP	0	1	2	1	say	1	1	2	0	SBAR	0	2	6	1	S	1	2	6	2	NP	1	2	4	2	DT	0	2	3	1	the	2	2	3	0	NNS	0	3	4	1	people	3	3	4	0	VP	1	4	6	2	MD	0	4	5	1	could	4	4	5	0	VP	0	5	6	1	VB	0	5	6	1	fly	5	5	6	0	.	0	6	7	1	.	6	6	7	0
+EOS
+T	14
+Say	31	34	VB	say	O	O	_
+that	35	39	DT	that	O	O	_
+long	40	44	JJ	long	O	O	_
+ago	45	48	RB	ago	O	O	_
+in	49	51	IN	in	O	O	_
+Africa	52	58	NNP	Africa	LOCATION	O	_
+,	58	59	,	,	O	O	_
+some	60	64	DT	some	O	O	_
+of	65	67	IN	of	O	O	_
+the	68	71	DT	the	O	O	_
+people	72	78	NNS	people	O	O	_
+knew	79	83	VBD	know	O	O	_
+magic	84	89	NN	magic	O	O	_
+.	89	90	.	.	O	O	_
+D	1
+11
+0	1	dobj
+0	3	advmod
+0	5	prep_in
+3	2	advmod
+7	10	prep_of
+10	9	det
+11	0	ccomp
+11	7	nsubj
+11	12	dobj
+EOX
+Y	1
+ROOT	0	0	14	1	S	3	0	14	5	S	0	0	6	1	VP	0	0	6	4	VB	0	0	1	1	Say	0	0	1	0	NP	0	1	2	1	DT	0	1	2	1	that	1	1	2	0	ADVP	1	2	4	2	JJ	0	2	3	1	long	2	2	3	0	RB	0	3	4	1	ago	3	3	4	0	PP	0	4	6	2	IN	0	4	5	1	in	4	4	5	0	NP	0	5	6	1	NNP	0	5	6	1	Africa	5	5	6	0	,	0	6	7	1	,	6	6	7	0	NP	0	7	11	2	NP	0	7	8	1	DT	0	7	8	1	some	7	7	8	0	PP	0	8	11	2	IN	0	8	9	1	of	8	8	9	0	NP	1	9	11	2	DT	0	9	10	1	the	9	9	10	0	NNS	0	10	11	1	people	10	10	11	0	VP	0	11	13	2	VBD	0	11	12	1	knew	11	11	12	0	NP	0	12	13	1	NN	0	12	13	1	magic	12	12	13	0	.	0	13	14	1	.	13	13	14	0
+EOS
+T	15
+And	91	94	CC	and	O	O	_
+they	95	99	PRP	they	O	O	_
+would	100	105	MD	would	O	O	_
+walk	106	110	VB	walk	O	O	_
+up	111	113	RP	up	O	O	_
+on	114	116	IN	on	O	O	_
+the	117	120	DT	the	O	O	_
+air	121	124	NN	air	O	O	_
+like	125	129	IN	like	O	O	_
+climbin	130	137	NN	climbin	O	O	_
+up	138	140	RP	up	O	O	_
+on	141	143	IN	on	O	O	_
+a	144	145	DT	a	O	O	_
+gate	146	150	NN	gate	O	O	_
+.	150	151	.	.	O	O	_
+D	1
+3
+3	0	cc
+3	1	nsubj
+3	2	aux
+3	4	prt
+3	7	prep_on
+3	10	prep
+7	6	det
+7	9	prep_like
+10	13	prep_on
+13	12	det
+EOX
+Y	1
+ROOT	0	0	15	1	S	2	0	15	4	CC	0	0	1	1	And	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	they	1	1	2	0	VP	1	2	14	2	MD	0	2	3	1	would	2	2	3	0	VP	0	3	14	4	VB	0	3	4	1	walk	3	3	4	0	PRT	0	4	5	1	RP	0	4	5	1	up	4	4	5	0	PP	0	5	10	2	IN	0	5	6	1	on	5	5	6	0	NP	0	6	10	2	NP	1	6	8	2	DT	0	6	7	1	the	6	6	7	0	NN	0	7	8	1	air	7	7	8	0	PP	0	8	10	2	IN	0	8	9	1	like	8	8	9	0	NP	0	9	10	1	NN	0	9	10	1	climbin	9	9	10	0	PP	0	10	14	2	RP	0	10	11	1	up	10	10	11	0	PP	0	11	14	2	IN	0	11	12	1	on	11	11	12	0	NP	1	12	14	2	DT	0	12	13	1	a	12	12	13	0	NN	0	13	14	1	gate	13	13	14	0	.	0	14	15	1	.	14	14	15	0
+EOS
+T	9
+And	152	155	CC	and	O	O	_
+they	156	160	PRP	they	O	O	_
+flew	161	165	VBD	fly	O	O	_
+like	166	170	IN	like	O	O	_
+blackbirds	171	181	NNS	blackbird	O	O	_
+over	182	186	IN	over	O	O	_
+the	187	190	DT	the	O	O	_
+fields	191	197	NNS	field	O	O	_
+.	197	198	.	.	O	O	_
+D	1
+2
+2	0	cc
+2	1	nsubj
+2	4	prep_like
+2	7	prep_over
+7	6	det
+EOX
+Y	1
+ROOT	0	0	9	1	S	2	0	9	4	CC	0	0	1	1	And	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	they	1	1	2	0	VP	0	2	8	3	VBD	0	2	3	1	flew	2	2	3	0	PP	0	3	5	2	IN	0	3	4	1	like	3	3	4	0	NP	0	4	5	1	NNS	0	4	5	1	blackbirds	4	4	5	0	PP	0	5	8	2	IN	0	5	6	1	over	5	5	6	0	NP	1	6	8	2	DT	0	6	7	1	the	6	6	7	0	NNS	0	7	8	1	fields	7	7	8	0	.	0	8	9	1	.	8	8	9	0
+EOS
+T	11
+Black	199	204	NNP	Black	O	O	_
+,	204	205	,	,	O	O	_
+shiny	206	211	JJ	shiny	O	O	_
+wings	212	217	NNS	wing	O	O	_
+flappin	218	225	NN	flappin	O	O	_
+against	226	233	IN	against	O	O	_
+the	234	237	DT	the	O	O	_
+blue	238	242	JJ	blue	O	O	_
+up	243	245	IN	up	O	O	_
+there	246	251	RB	there	O	O	_
+.	251	252	.	.	O	O	_
+D	1
+0
+0	4	appos
+4	2	amod
+4	3	nn
+4	7	prep_against
+7	6	det
+7	8	advmod
+8	9	advmod
+EOX
+Y	1
+ROOT	0	0	11	1	NP	0	0	11	4	NP	0	0	1	1	NNP	0	0	1	1	Black	0	0	1	0	,	0	1	2	1	,	1	1	2	0	NP	0	2	10	2	NP	2	2	5	3	JJ	0	2	3	1	shiny	2	2	3	0	NNS	0	3	4	1	wings	3	3	4	0	NN	0	4	5	1	flappin	4	4	5	0	PP	0	5	10	2	IN	0	5	6	1	against	5	5	6	0	NP	0	6	10	2	NP	1	6	8	2	DT	0	6	7	1	the	6	6	7	0	JJ	0	7	8	1	blue	7	7	8	0	ADVP	0	8	10	2	IN	0	8	9	1	up	8	8	9	0	RB	0	9	10	1	there	9	9	10	0	.	0	10	11	1	.	10	10	11	0
+EOS
+C	14
+1	5	5	6	3
+0	0	0	1	1
+4	0	0	11	13
+3	4	4	5	11
+4	7	6	10	15
+3	1	1	2	1
+2	13	12	14	9
+0	3	2	4	2
+1	1	1	2	1
+1	10	9	11	2
+2	7	6	10	8
+3	7	6	8	12
+1	7	7	11	5
+2	1	1	2	1
+R
+elaboration	LeftToRight	-1	-1	0	0	4	10	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	3	8	0	0	2	nil
+attribution	RightToLeft	-1	-1	0	0	0	6	0	1	2	nil
+nil	None	-1	-1	0	0	0	1	0	0	0	They say
+nil	None	-1	-1	0	2	0	6	1	1	0	the people could fly .
+elaboration	LeftToRight	-1	-1	1	0	3	8	0	0	2	nil
+nil	None	-1	-1	1	0	1	13	0	0	0	Say that long ago in Africa , some of the people knew magic .
+elaboration	LeftToRight	-1	-1	2	0	3	8	0	0	2	nil
+nil	None	-1	-1	2	0	2	14	0	0	0	And they would walk up on the air like climbin up on a gate .
+nil	None	-1	-1	3	0	3	8	0	0	0	And they flew like blackbirds over the fields .
+nil	None	-1	-1	4	0	4	10	0	0	0	Black , shiny wings flappin against the blue up there .
+EOD
+S	4
+T	11
+Then	0	4	RB	then	O	O	_
+,	4	5	,	,	O	O	_
+many	6	10	JJ	many	O	O	_
+of	11	13	IN	of	O	O	_
+the	14	17	DT	the	O	O	_
+people	18	24	NNS	people	O	O	_
+were	25	29	VBD	be	O	O	_
+captured	30	38	VBN	capture	O	O	_
+for	39	42	IN	for	O	O	_
+Slavery	43	50	NNP	Slavery	O	O	_
+.	50	51	.	.	O	O	_
+D	1
+7
+2	5	prep_of
+5	4	det
+7	0	advmod
+7	2	nsubjpass
+7	6	auxpass
+7	9	prep_for
+EOX
+Y	1
+ROOT	0	0	11	1	S	3	0	11	5	ADVP	0	0	1	1	RB	0	0	1	1	Then	0	0	1	0	,	0	1	2	1	,	1	1	2	0	NP	0	2	6	2	NP	0	2	3	1	JJ	0	2	3	1	many	2	2	3	0	PP	0	3	6	2	IN	0	3	4	1	of	3	3	4	0	NP	1	4	6	2	DT	0	4	5	1	the	4	4	5	0	NNS	0	5	6	1	people	5	5	6	0	VP	1	6	10	2	VBD	0	6	7	1	were	6	6	7	0	VP	0	7	10	2	VBN	0	7	8	1	captured	7	7	8	0	PP	0	8	10	2	IN	0	8	9	1	for	8	8	9	0	NP	0	9	10	1	NNP	0	9	10	1	Slavery	9	9	10	0	.	0	10	11	1	.	10	10	11	0
+EOS
+T	9
+The	52	55	DT	the	O	O	_
+ones	56	60	NNS	one	O	O	_
+that	61	65	WDT	that	O	O	_
+could	66	71	MD	could	O	O	_
+fly	72	75	VB	fly	O	O	_
+shed	76	80	VB	shed	O	O	_
+their	81	86	PRP$	they	O	O	_
+wings	87	92	NNS	wing	O	O	_
+.	92	93	.	.	O	O	_
+D	1
+5
+1	0	det
+1	4	rcmod
+4	2	nsubj
+4	3	aux
+5	1	nsubj
+5	7	dobj
+7	6	poss
+EOX
+Y	1
+ROOT	0	0	9	1	S	1	0	9	3	NP	0	0	5	2	NP	1	0	2	2	DT	0	0	1	1	The	0	0	1	0	NNS	0	1	2	1	ones	1	1	2	0	SBAR	1	2	5	2	WHNP	0	2	3	1	WDT	0	2	3	1	that	2	2	3	0	S	0	3	5	1	VP	1	3	5	2	MD	0	3	4	1	could	3	3	4	0	VP	0	4	5	1	VB	0	4	5	1	fly	4	4	5	0	VP	0	5	8	2	VB	0	5	6	1	shed	5	5	6	0	NP	1	6	8	2	PRP$	0	6	7	1	their	6	6	7	0	NNS	0	7	8	1	wings	7	7	8	0	.	0	8	9	1	.	8	8	9	0
+EOS
+T	13
+They	94	98	PRP	they	O	O	_
+could	99	104	MD	could	O	O	_
+n't	104	107	RB	not	O	O	_
+take	108	112	VB	take	O	O	_
+their	113	118	PRP$	they	O	O	_
+wings	119	124	NNS	wing	O	O	_
+across	125	131	IN	across	O	O	_
+the	132	135	DT	the	O	O	_
+water	136	141	NN	water	O	O	_
+on	142	144	IN	on	O	O	_
+slave	145	150	NN	slave	O	O	_
+ships	151	156	NNS	ship	O	O	_
+.	156	157	.	.	O	O	_
+D	1
+3
+3	0	nsubj
+3	1	aux
+3	2	neg
+3	5	dobj
+3	8	prep_across
+5	4	poss
+8	7	det
+8	11	prep_on
+11	10	nn
+EOX
+Y	1
+ROOT	0	0	13	1	S	1	0	13	3	NP	0	0	1	1	PRP	0	0	1	1	They	0	0	1	0	VP	2	1	12	3	MD	0	1	2	1	could	1	1	2	0	RB	0	2	3	1	n't	2	2	3	0	VP	0	3	12	3	VB	0	3	4	1	take	3	3	4	0	NP	1	4	6	2	PRP$	0	4	5	1	their	4	4	5	0	NNS	0	5	6	1	wings	5	5	6	0	PP	0	6	12	2	IN	0	6	7	1	across	6	6	7	0	NP	0	7	12	2	NP	1	7	9	2	DT	0	7	8	1	the	7	7	8	0	NN	0	8	9	1	water	8	8	9	0	PP	0	9	12	2	IN	0	9	10	1	on	9	9	10	0	NP	1	10	12	2	NN	0	10	11	1	slave	10	10	11	0	NNS	0	11	12	1	ships	11	11	12	0	.	0	12	13	1	.	12	12	13	0
+EOS
+T	8
+Too	158	161	RB	too	O	O	_
+crowded	162	169	VBN	crowd	O	O	_
+,	169	170	,	,	O	O	_
+do	171	173	VBP	do	O	O	_
+n't	173	176	RB	not	O	O	_
+you	177	180	PRP	you	O	O	_
+know	181	185	VBP	know	O	O	_
+.	185	186	.	.	O	O	_
+D	1
+6
+1	0	advmod
+1	3	parataxis
+3	4	neg
+6	1	dep
+6	5	nsubj
+EOX
+Y	1
+ROOT	0	0	8	1	S	2	0	8	4	S	0	0	5	3	S	0	0	2	1	ADJP	1	0	2	2	RB	0	0	1	1	Too	0	0	1	0	VBN	0	1	2	1	crowded	1	1	2	0	,	0	2	3	1	,	2	2	3	0	S	0	3	5	1	VP	0	3	5	2	VBP	0	3	4	1	do	3	3	4	0	RB	0	4	5	1	n't	4	4	5	0	NP	0	5	6	1	PRP	0	5	6	1	you	5	5	6	0	VP	0	6	7	1	VBP	0	6	7	1	know	6	6	7	0	.	0	7	8	1	.	7	7	8	0
+EOS
+C	12
+2	5	4	6	5
+0	2	2	6	1
+0	9	9	10	3
+2	0	0	1	4
+1	6	6	7	4
+0	5	4	6	2
+2	8	7	12	10
+1	1	0	5	4
+3	5	5	6	12
+2	4	4	5	4
+2	11	10	12	11
+1	7	6	8	5
+R
+elaboration	LeftToRight	-1	-1	0	0	3	7	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	1	8	0	1	2	nil
+nil	None	-1	-1	0	0	0	10	0	0	0	Then , many of the people were captured for Slavery .
+elaboration	LeftToRight	-1	-1	1	0	1	8	0	1	2	nil
+nil	None	-1	-1	1	0	1	1	0	0	0	The ones
+nil	None	-1	-1	1	2	1	8	1	1	0	that could fly shed their wings .
+elaboration	LeftToRight	-1	-1	2	0	3	7	0	0	2	nil
+nil	None	-1	-1	2	0	2	12	0	0	0	They could n't take their wings across the water on slave ships .
+nil	None	-1	-1	3	0	3	7	0	0	0	Too crowded , do n't you know .
+EOD
+S	3
+T	9
+The	0	3	DT	the	O	O	_
+folks	4	9	NNS	folk	O	O	_
+were	10	14	VBD	be	O	O	_
+full	15	19	JJ	full	O	O	_
+of	20	22	IN	of	O	O	_
+misery	23	29	NN	misery	O	O	_
+,	29	30	,	,	O	O	_
+then	31	35	RB	then	O	O	_
+.	35	36	.	.	O	O	_
+D	1
+3
+1	0	det
+3	1	nsubj
+3	2	cop
+3	5	prep_of
+3	7	advmod
+EOX
+Y	1
+ROOT	0	0	9	1	S	1	0	9	3	NP	1	0	2	2	DT	0	0	1	1	The	0	0	1	0	NNS	0	1	2	1	folks	1	1	2	0	VP	1	2	8	5	VBD	0	2	3	1	were	2	2	3	0	ADJP	0	3	4	1	JJ	0	3	4	1	full	3	3	4	0	PP	0	4	6	2	IN	0	4	5	1	of	4	4	5	0	NP	0	5	6	1	NN	0	5	6	1	misery	5	5	6	0	,	0	6	7	1	,	6	6	7	0	ADVP	0	7	8	1	RB	0	7	8	1	then	7	7	8	0	.	0	8	9	1	.	8	8	9	0
+EOS
+T	11
+Got	37	40	NNP	Got	O	O	_
+sick	41	45	JJ	sick	O	O	_
+with	46	50	IN	with	O	O	_
+the	51	54	DT	the	O	O	_
+up	55	57	RB	up	O	O	_
+and	58	61	CC	and	O	O	_
+down	62	66	RB	down	O	O	_
+of	67	69	IN	of	O	O	_
+the	70	73	DT	the	O	O	_
+sea	74	77	NN	sea	O	O	_
+.	77	78	.	.	O	O	_
+D	1
+0
+0	1	amod
+0	9	prep_of
+1	2	prep
+2	4	dep
+2	6	dep
+4	3	dep
+4	6	conj_and
+9	8	det
+EOX
+Y	1
+ROOT	0	0	11	1	FRAG	0	0	11	2	NP	0	0	10	3	NP	0	0	1	1	NNP	0	0	1	1	Got	0	0	1	0	ADJP	0	1	7	2	JJ	0	1	2	1	sick	1	1	2	0	PP	0	2	7	2	IN	0	2	3	1	with	2	2	3	0	FRAG	0	3	7	1	ADVP	1	3	7	4	DT	0	3	4	1	the	3	3	4	0	RB	0	4	5	1	up	4	4	5	0	CC	0	5	6	1	and	5	5	6	0	RB	0	6	7	1	down	6	6	7	0	PP	0	7	10	2	IN	0	7	8	1	of	7	7	8	0	NP	1	8	10	2	DT	0	8	9	1	the	8	8	9	0	NN	0	9	10	1	sea	9	9	10	0	.	0	10	11	1	.	10	10	11	0
+EOS
+T	17
+So	79	81	IN	so	O	O	_
+they	82	86	PRP	they	O	O	_
+forgot	87	93	VBD	forget	O	O	_
+about	94	99	IN	about	O	O	_
+flyin	100	105	NN	flyin	O	O	_
+when	106	110	WRB	when	O	O	_
+they	111	115	PRP	they	O	O	_
+could	116	121	MD	could	O	O	_
+no	122	124	RB	no	O	O	_
+longer	125	131	RB	longer	O	O	_
+breathe	132	139	VB	breathe	O	O	_
+the	140	143	DT	the	O	O	_
+sweet	144	149	JJ	sweet	O	O	_
+scent	150	155	NN	scent	O	O	_
+of	156	158	IN	of	O	O	_
+Africa	159	165	NNP	Africa	LOCATION	O	_
+.	165	166	.	.	O	O	_
+D	1
+2
+2	0	dep
+2	1	nsubj
+2	4	prep_about
+2	10	advcl
+9	8	neg
+10	5	advmod
+10	6	nsubj
+10	7	aux
+10	9	advmod
+10	13	dobj
+13	11	det
+13	12	amod
+13	15	prep_of
+EOX
+Y	1
+ROOT	0	0	17	1	S	2	0	17	4	IN	0	0	1	1	So	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	they	1	1	2	0	VP	0	2	16	3	VBD	0	2	3	1	forgot	2	2	3	0	PP	0	3	5	2	IN	0	3	4	1	about	3	3	4	0	NP	0	4	5	1	NN	0	4	5	1	flyin	4	4	5	0	SBAR	1	5	16	2	WHADVP	0	5	6	1	WRB	0	5	6	1	when	5	5	6	0	S	1	6	16	2	NP	0	6	7	1	PRP	0	6	7	1	they	6	6	7	0	VP	2	7	16	3	MD	0	7	8	1	could	7	7	8	0	ADVP	1	8	10	2	RB	0	8	9	1	no	8	8	9	0	RB	0	9	10	1	longer	9	9	10	0	VP	0	10	16	2	VB	0	10	11	1	breathe	10	10	11	0	NP	0	11	16	2	NP	2	11	14	3	DT	0	11	12	1	the	11	11	12	0	JJ	0	12	13	1	sweet	12	12	13	0	NN	0	13	14	1	scent	13	13	14	0	PP	0	14	16	2	IN	0	14	15	1	of	14	14	15	0	NP	0	15	16	1	NNP	0	15	16	1	Africa	15	15	16	0	.	0	16	17	1	.	16	16	17	0
+EOS
+C	7
+2	13	11	16	7
+1	9	8	10	3
+2	15	15	16	4
+2	6	6	7	1
+0	1	0	2	1
+2	1	1	2	1
+1	0	0	10	2
+R
+elaboration	LeftToRight	-1	-1	0	0	2	16	0	1	2	nil
+nil	None	-1	-1	0	0	0	8	0	0	0	The folks were full of misery , then .
+elaboration	LeftToRight	-1	-1	1	0	2	16	0	1	2	nil
+nil	None	-1	-1	1	0	1	10	0	0	0	Got sick with the up and down of the sea .
+background	LeftToRight	-1	-1	2	0	2	16	0	1	2	nil
+nil	None	-1	-1	2	0	2	4	0	0	0	So they forgot about flyin
+nil	None	-1	-1	2	5	2	16	1	1	0	when they could no longer breathe the sweet scent of Africa .
+EOD
+S	3
+T	16
+Say	0	3	VB	say	O	O	_
+the	4	7	DT	the	O	O	_
+people	8	14	NNS	people	O	O	_
+who	15	18	WP	who	O	O	_
+could	19	24	MD	could	O	O	_
+fly	25	28	VB	fly	O	O	_
+kept	29	33	VBD	keep	O	O	_
+their	34	39	PRP$	they	O	O	_
+power	40	45	NN	power	O	O	_
+,	45	46	,	,	O	O	_
+although	47	55	IN	although	O	O	_
+they	56	60	PRP	they	O	O	_
+shed	61	65	VBD	shed	O	O	_
+their	66	71	PRP$	they	O	O	_
+wings	72	77	NNS	wing	O	O	_
+.	77	78	.	.	O	O	_
+D	1
+6
+0	2	dobj
+2	1	det
+2	5	rcmod
+5	3	nsubj
+5	4	aux
+6	0	csubj
+6	8	dobj
+6	12	advcl
+8	7	poss
+12	10	mark
+12	11	nsubj
+12	14	dobj
+14	13	poss
+EOX
+Y	1
+ROOT	0	0	16	1	S	1	0	16	3	S	0	0	6	1	VP	0	0	6	2	VB	0	0	1	1	Say	0	0	1	0	NP	0	1	6	2	NP	1	1	3	2	DT	0	1	2	1	the	1	1	2	0	NNS	0	2	3	1	people	2	2	3	0	SBAR	1	3	6	2	WHNP	0	3	4	1	WP	0	3	4	1	who	3	3	4	0	S	0	4	6	1	VP	1	4	6	2	MD	0	4	5	1	could	4	4	5	0	VP	0	5	6	1	VB	0	5	6	1	fly	5	5	6	0	VP	0	6	15	4	VBD	0	6	7	1	kept	6	6	7	0	NP	1	7	9	2	PRP$	0	7	8	1	their	7	7	8	0	NN	0	8	9	1	power	8	8	9	0	,	0	9	10	1	,	9	9	10	0	SBAR	1	10	15	2	IN	0	10	11	1	although	10	10	11	0	S	1	11	15	2	NP	0	11	12	1	PRP	0	11	12	1	they	11	11	12	0	VP	0	12	15	2	VBD	0	12	13	1	shed	12	12	13	0	NP	1	13	15	2	PRP$	0	13	14	1	their	13	13	14	0	NNS	0	14	15	1	wings	14	14	15	0	.	0	15	16	1	.	15	15	16	0
+EOS
+T	21
+They	79	83	PRP	they	O	O	_
+looked	84	90	VBD	look	O	O	_
+the	91	94	DT	the	O	O	_
+same	95	99	JJ	same	O	O	_
+as	100	102	IN	as	O	O	_
+the	103	106	DT	the	O	O	_
+other	107	112	JJ	other	O	O	_
+people	113	119	NNS	people	O	O	_
+from	120	124	IN	from	O	O	_
+Africa	125	131	NNP	Africa	LOCATION	O	_
+who	132	135	WP	who	O	O	_
+had	136	139	VBD	have	O	O	_
+been	140	144	VBN	be	O	O	_
+coming	145	151	VBG	come	O	O	_
+over	152	156	RB	over	O	O	_
+,	156	157	,	,	O	O	_
+who	158	161	WP	who	O	O	_
+had	162	165	VBD	have	O	O	_
+dark	166	170	JJ	dark	O	O	_
+skin	171	175	NN	skin	O	O	_
+.	175	176	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	3	dobj
+1	7	prep_as
+1	9	prep_from
+3	2	det
+7	5	det
+7	6	amod
+9	13	rcmod
+9	17	rcmod
+13	10	nsubj
+13	11	aux
+13	12	aux
+13	14	advmod
+17	16	nsubj
+17	19	dobj
+19	18	amod
+EOX
+Y	1
+ROOT	0	0	21	1	S	1	0	21	3	NP	0	0	1	1	PRP	0	0	1	1	They	0	0	1	0	VP	0	1	20	4	VBD	0	1	2	1	looked	1	1	2	0	NP	1	2	4	2	DT	0	2	3	1	the	2	2	3	0	JJ	0	3	4	1	same	3	3	4	0	PP	0	4	8	2	IN	0	4	5	1	as	4	4	5	0	NP	2	5	8	3	DT	0	5	6	1	the	5	5	6	0	JJ	0	6	7	1	other	6	6	7	0	NNS	0	7	8	1	people	7	7	8	0	PP	0	8	20	2	IN	0	8	9	1	from	8	8	9	0	NP	0	9	20	4	NP	0	9	10	1	NNP	0	9	10	1	Africa	9	9	10	0	SBAR	1	10	15	2	WHNP	0	10	11	1	WP	0	10	11	1	who	10	10	11	0	S	0	11	15	1	VP	1	11	15	2	VBD	0	11	12	1	had	11	11	12	0	VP	1	12	15	2	VBN	0	12	13	1	been	12	12	13	0	VP	0	13	15	2	VBG	0	13	14	1	coming	13	13	14	0	ADVP	0	14	15	1	RB	0	14	15	1	over	14	14	15	0	,	0	15	16	1	,	15	15	16	0	SBAR	1	16	20	2	WHNP	0	16	17	1	WP	0	16	17	1	who	16	16	17	0	S	0	17	20	1	VP	0	17	20	2	VBD	0	17	18	1	had	17	17	18	0	NP	1	18	20	2	JJ	0	18	19	1	dark	18	18	19	0	NN	0	19	20	1	skin	19	19	20	0	.	0	20	21	1	.	20	20	21	0
+EOS
+T	16
+Say	177	180	VB	say	O	O	_
+you	181	184	PRP	you	O	O	_
+could	185	190	MD	could	O	O	_
+n't	190	193	RB	not	O	O	_
+tell	194	198	VB	tell	O	O	_
+anymore	199	206	RB	anymore	O	O	_
+one	207	210	CD	one	NUMBER	1.0	_
+who	211	214	WP	who	O	O	_
+could	215	220	MD	could	O	O	_
+fly	221	224	VB	fly	O	O	_
+from	225	229	IN	from	O	O	_
+one	230	233	CD	one	NUMBER	1.0	_
+who	234	237	WP	who	O	O	_
+could	238	243	MD	could	O	O	_
+n't	243	246	RB	not	O	O	_
+.	246	247	.	.	O	O	_
+D	1
+0
+0	4	ccomp
+4	1	nsubj
+4	2	aux
+4	3	neg
+4	5	advmod
+4	6	dobj
+6	9	rcmod
+9	7	nsubj
+9	8	aux
+9	11	prep_from
+11	13	rcmod
+13	12	nsubj
+13	14	neg
+EOX
+Y	1
+ROOT	0	0	16	1	S	0	0	16	2	VP	0	0	15	2	VB	0	0	1	1	Say	0	0	1	0	SBAR	0	1	15	1	S	1	1	15	2	NP	0	1	2	1	PRP	0	1	2	1	you	1	1	2	0	VP	2	2	15	3	MD	0	2	3	1	could	2	2	3	0	RB	0	3	4	1	n't	3	3	4	0	VP	0	4	15	3	VB	0	4	5	1	tell	4	4	5	0	ADVP	0	5	6	1	RB	0	5	6	1	anymore	5	5	6	0	NP	0	6	15	2	NP	0	6	7	1	CD	0	6	7	1	one	6	6	7	0	SBAR	1	7	15	2	WHNP	0	7	8	1	WP	0	7	8	1	who	7	7	8	0	S	0	8	15	1	VP	1	8	15	2	MD	0	8	9	1	could	8	8	9	0	VP	0	9	15	2	VB	0	9	10	1	fly	9	9	10	0	PP	0	10	15	2	IN	0	10	11	1	from	10	10	11	0	NP	0	11	15	2	NP	0	11	12	1	CD	0	11	12	1	one	11	11	12	0	SBAR	1	12	15	2	WHNP	0	12	13	1	WP	0	12	13	1	who	12	12	13	0	S	0	13	15	1	VP	0	13	15	2	MD	0	13	14	1	could	13	13	14	0	RB	0	14	15	1	n't	14	14	15	0	.	0	15	16	1	.	15	15	16	0
+EOS
+C	13
+0	2	1	6	1
+0	7	7	8	1
+0	14	13	15	5
+1	9	9	20	10
+2	6	6	15	12
+0	8	7	9	2
+0	13	13	14	1
+1	3	2	4	8
+0	11	11	12	1
+2	11	11	15	13
+1	7	5	8	9
+2	1	1	2	11
+1	0	0	1	1
+R
+elaboration	LeftToRight	-1	-1	0	0	2	15	0	2	2	nil
+elaboration	LeftToRight	-1	-1	0	0	1	20	0	2	2	nil
+contrast	LeftToRight	-1	-1	0	0	0	15	0	2	2	nil
+elaboration	LeftToRight	-1	-1	0	0	0	9	0	1	2	nil
+nil	None	-1	-1	0	0	0	2	0	0	0	Say the people
+nil	None	-1	-1	0	3	0	9	1	1	0	who could fly kept their power ,
+nil	None	-1	-1	0	10	0	15	2	2	0	although they shed their wings .
+elaboration	LeftToRight	-1	-1	1	0	1	20	0	2	2	nil
+elaboration	LeftToRight	-1	-1	1	0	1	15	0	1	2	nil
+nil	None	-1	-1	1	0	1	9	0	0	0	They looked the same as the other people from Africa
+nil	None	-1	-1	1	10	1	15	1	1	0	who had been coming over ,
+nil	None	-1	-1	1	16	1	20	2	2	0	who had dark skin .
+elaboration	LeftToRight	-1	-1	2	0	2	15	0	2	2	nil
+nil	None	-1	-1	2	0	2	6	0	0	0	Say you could n't tell anymore one
+elaboration	LeftToRight	-1	-1	2	7	2	15	1	2	2	nil
+nil	None	-1	-1	2	7	2	11	1	1	0	who could fly from one
+nil	None	-1	-1	2	12	2	15	2	2	0	who could n't .
+EOD
+S	5
+T	13
+One	0	3	CD	one	NUMBER	1.0	_
+such	4	8	JJ	such	O	O	_
+who	9	12	WP	who	O	O	_
+could	13	18	MD	could	O	O	_
+was	19	22	VBD	be	O	O	_
+an	23	25	DT	a	O	O	_
+old	26	29	JJ	old	O	O	_
+man	30	33	NN	man	O	O	_
+,	33	34	,	,	O	O	_
+call	35	39	VB	call	O	O	_
+him	40	43	PRP	he	O	O	_
+Toby	44	48	NNP	Toby	PERSON	O	_
+.	48	49	.	.	O	O	_
+D	1
+9
+0	7	rcmod
+1	3	rcmod
+3	2	nsubj
+7	1	nsubj
+7	4	cop
+7	5	det
+7	6	amod
+9	0	nsubj
+9	11	xcomp
+11	10	nsubj
+EOX
+Y	1
+ROOT	0	0	13	1	S	2	0	13	4	NP	0	0	8	2	NP	0	0	1	1	CD	0	0	1	1	One	0	0	1	0	SBAR	0	1	8	1	S	1	1	8	2	NP	0	1	4	2	NP	0	1	2	1	JJ	0	1	2	1	such	1	1	2	0	SBAR	1	2	4	2	WHNP	0	2	3	1	WP	0	2	3	1	who	2	2	3	0	S	0	3	4	1	VP	0	3	4	1	MD	0	3	4	1	could	3	3	4	0	VP	1	4	8	2	VBD	0	4	5	1	was	4	4	5	0	NP	2	5	8	3	DT	0	5	6	1	an	5	5	6	0	JJ	0	6	7	1	old	6	6	7	0	NN	0	7	8	1	man	7	7	8	0	,	0	8	9	1	,	8	8	9	0	VP	0	9	12	2	VB	0	9	10	1	call	9	9	10	0	S	1	10	12	2	NP	0	10	11	1	PRP	0	10	11	1	him	10	10	11	0	NP	0	11	12	1	NNP	0	11	12	1	Toby	11	11	12	0	.	0	12	13	1	.	12	12	13	0
+EOS
+T	16
+And	50	53	CC	and	O	O	_
+standin	54	61	NN	standin	O	O	_
+tall	62	66	JJ	tall	O	O	_
+,	66	67	,	,	O	O	_
+yet	68	71	RB	yet	O	O	_
+afraid	72	78	JJ	afraid	O	O	_
+,	78	79	,	,	O	O	_
+was	80	83	VBD	be	O	O	_
+a	84	85	DT	a	O	O	_
+young	86	91	JJ	young	O	O	_
+woman	92	97	NN	woman	O	O	_
+who	98	101	WP	who	O	O	_
+once	102	106	RB	once	DATE	PAST_REF	_
+had	107	110	VBD	have	O	O	_
+wings	111	116	NNS	wing	O	O	_
+.	116	117	.	.	O	O	_
+D	1
+10
+1	5	amod
+5	2	amod
+5	4	advmod
+10	0	cc
+10	1	nsubj
+10	7	cop
+10	8	det
+10	9	amod
+10	13	rcmod
+13	11	nsubj
+13	12	advmod
+13	14	dobj
+EOX
+Y	1
+ROOT	0	0	16	1	S	2	0	16	4	CC	0	0	1	1	And	0	0	1	0	NP	0	1	7	2	NP	0	1	2	1	NN	0	1	2	1	standin	1	1	2	0	ADJP	3	2	7	5	JJ	0	2	3	1	tall	2	2	3	0	,	0	3	4	1	,	3	3	4	0	RB	0	4	5	1	yet	4	4	5	0	JJ	0	5	6	1	afraid	5	5	6	0	,	0	6	7	1	,	6	6	7	0	VP	1	7	15	2	VBD	0	7	8	1	was	7	7	8	0	NP	0	8	15	2	NP	2	8	11	3	DT	0	8	9	1	a	8	8	9	0	JJ	0	9	10	1	young	9	9	10	0	NN	0	10	11	1	woman	10	10	11	0	SBAR	1	11	15	2	WHNP	0	11	12	1	WP	0	11	12	1	who	11	11	12	0	S	1	12	15	2	ADVP	0	12	13	1	RB	0	12	13	1	once	12	12	13	0	VP	0	13	15	2	VBD	0	13	14	1	had	13	13	14	0	NP	0	14	15	1	NNS	0	14	15	1	wings	14	14	15	0	.	0	15	16	1	.	15	15	16	0
+EOS
+T	4
+Call	118	122	VB	call	O	O	_
+her	123	126	PRP	she	O	O	_
+Sarah	127	132	NNP	Sarah	PERSON	O	_
+.	132	133	.	.	O	O	_
+D	1
+0
+0	2	xcomp
+2	1	nsubj
+EOX
+Y	1
+ROOT	0	0	4	1	S	0	0	4	2	VP	0	0	3	2	VB	0	0	1	1	Call	0	0	1	0	S	1	1	3	2	NP	0	1	2	1	PRP	0	1	2	1	her	1	1	2	0	NP	0	2	3	1	NNP	0	2	3	1	Sarah	2	2	3	0	.	0	3	4	1	.	3	3	4	0
+EOS
+T	10
+Now	134	137	RB	now	DATE	PRESENT_REF	_
+Sarah	138	143	NNP	Sarah	PERSON	O	_
+carried	144	151	VBD	carry	O	O	_
+a	152	153	DT	a	O	O	_
+babe	154	158	NN	babe	O	O	_
+tied	159	163	VBN	tie	O	O	_
+to	164	166	TO	to	O	O	_
+her	167	170	PRP$	she	O	O	_
+back	171	175	NN	back	O	O	_
+.	175	176	.	.	O	O	_
+D	1
+2
+2	0	advmod
+2	1	nsubj
+2	4	dobj
+4	3	det
+4	5	vmod
+5	8	prep_to
+8	7	poss
+EOX
+Y	1
+ROOT	0	0	10	1	S	2	0	10	4	ADVP	0	0	1	1	RB	0	0	1	1	Now	0	0	1	0	NP	0	1	2	1	NNP	0	1	2	1	Sarah	1	1	2	0	VP	0	2	9	2	VBD	0	2	3	1	carried	2	2	3	0	NP	0	3	9	2	NP	1	3	5	2	DT	0	3	4	1	a	3	3	4	0	NN	0	4	5	1	babe	4	4	5	0	VP	0	5	9	2	VBN	0	5	6	1	tied	5	5	6	0	PP	0	6	9	2	TO	0	6	7	1	to	6	6	7	0	NP	1	7	9	2	PRP$	0	7	8	1	her	7	7	8	0	NN	0	8	9	1	back	8	8	9	0	.	0	9	10	1	.	9	9	10	0
+EOS
+T	10
+She	177	180	PRP	she	O	O	_
+trembled	181	189	VBD	tremble	O	O	_
+to	190	192	TO	to	O	O	_
+be	193	195	VB	be	O	O	_
+so	196	198	RB	so	O	O	_
+hard	199	203	JJ	hard	O	O	_
+worked	204	210	VBD	work	O	O	_
+and	211	214	CC	and	O	O	_
+scorned	215	222	VBD	scorn	O	O	_
+.	222	223	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	5	xcomp
+5	2	aux
+5	3	cop
+5	4	advmod
+5	6	ccomp
+5	8	ccomp
+6	8	conj_and
+EOX
+Y	1
+ROOT	0	0	10	1	S	1	0	10	3	NP	0	0	1	1	PRP	0	0	1	1	She	0	0	1	0	VP	0	1	9	2	VBD	0	1	2	1	trembled	1	1	2	0	S	0	2	9	1	VP	1	2	9	2	TO	0	2	3	1	to	2	2	3	0	VP	1	3	9	2	VB	0	3	4	1	be	3	3	4	0	ADJP	1	4	9	3	RB	0	4	5	1	so	4	4	5	0	JJ	0	5	6	1	hard	5	5	6	0	SBAR	0	6	9	1	S	0	6	9	1	VP	0	6	9	3	VP	0	6	7	1	VBD	0	6	7	1	worked	6	6	7	0	CC	0	7	8	1	and	7	7	8	0	VP	0	8	9	1	VBD	0	8	9	1	scorned	8	8	9	0	.	0	9	10	1	.	9	9	10	0
+EOS
+C	15
+0	0	0	8	2
+4	0	0	1	9
+3	4	3	9	12
+0	10	10	11	4
+3	1	1	2	9
+0	7	5	8	4
+1	1	1	6	6
+1	10	8	15	6
+2	2	2	3	9
+3	7	7	8	9
+1	14	14	15	8
+0	11	11	12	1
+0	1	1	4	3
+2	1	1	2	6
+3	8	7	9	13
+R
+elaboration	LeftToRight	-1	-1	0	0	4	9	0	0	2	nil
+joint	None	-1	-1	0	0	1	15	0	1	2	nil
+same-unit	None	-1	-1	0	0	0	12	0	2	2	nil
+elaboration	LeftToRight	-1	-1	0	0	0	8	0	1	2	nil
+nil	None	-1	-1	0	0	0	1	0	0	0	One such
+nil	None	-1	-1	0	2	0	8	1	1	0	who could was an old man ,
+nil	None	-1	-1	0	9	0	12	2	2	0	call him Toby .
+elaboration	LeftToRight	-1	-1	1	0	1	15	0	1	2	nil
+nil	None	-1	-1	1	0	1	10	0	0	0	And standin tall , yet afraid , was a young woman
+nil	None	-1	-1	1	11	1	15	1	1	0	who once had wings .
+elaboration	LeftToRight	-1	-1	2	0	4	9	0	0	2	nil
+elaboration	LeftToRight	-1	-1	2	0	3	9	0	0	2	nil
+nil	None	-1	-1	2	0	2	3	0	0	0	Call her Sarah .
+nil	None	-1	-1	3	0	3	9	0	0	0	Now Sarah carried a babe tied to her back .
+nil	None	-1	-1	4	0	4	9	0	0	0	She trembled to be so hard worked and scorned .
+EOD
+S	10
+T	11
+The	0	3	DT	the	O	O	_
+slaves	4	10	NNS	slave	O	O	_
+labored	11	18	VBD	labor	O	O	_
+in	19	21	IN	in	O	O	_
+the	22	25	DT	the	O	O	_
+fields	26	32	NNS	field	O	O	_
+from	33	37	IN	from	O	O	_
+sunup	38	43	NN	sunup	O	O	_
+to	44	46	TO	to	O	O	_
+sundown	47	54	NN	sundown	O	O	_
+.	54	55	.	.	O	O	_
+D	1
+2
+1	0	det
+2	1	nsubj
+2	5	prep_in
+2	9	prep_to
+5	4	det
+5	7	prep_from
+EOX
+Y	1
+ROOT	0	0	11	1	S	1	0	11	3	NP	1	0	2	2	DT	0	0	1	1	The	0	0	1	0	NNS	0	1	2	1	slaves	1	1	2	0	VP	0	2	10	3	VBD	0	2	3	1	labored	2	2	3	0	PP	0	3	8	2	IN	0	3	4	1	in	3	3	4	0	NP	0	4	8	2	NP	1	4	6	2	DT	0	4	5	1	the	4	4	5	0	NNS	0	5	6	1	fields	5	5	6	0	PP	0	6	8	2	IN	0	6	7	1	from	6	6	7	0	NP	0	7	8	1	NN	0	7	8	1	sunup	7	7	8	0	PP	0	8	10	2	TO	0	8	9	1	to	8	8	9	0	NP	0	9	10	1	NN	0	9	10	1	sundown	9	9	10	0	.	0	10	11	1	.	10	10	11	0
+EOS
+T	10
+The	56	59	DT	the	O	O	_
+owner	60	65	NN	owner	O	O	_
+of	66	68	IN	of	O	O	_
+the	69	72	DT	the	O	O	_
+slaves	73	79	NNS	slave	O	O	_
+callin	80	86	VBP	callin	O	O	_
+himself	87	94	PRP	himself	O	O	_
+their	95	100	PRP$	they	O	O	_
+Master	101	107	NN	master	O	O	_
+.	107	108	.	.	O	O	_
+D	1
+5
+1	0	det
+1	4	prep_of
+4	3	det
+5	1	nsubj
+5	8	xcomp
+8	6	nsubj
+8	7	poss
+EOX
+Y	1
+ROOT	0	0	10	1	S	1	0	10	3	NP	0	0	5	2	NP	1	0	2	2	DT	0	0	1	1	The	0	0	1	0	NN	0	1	2	1	owner	1	1	2	0	PP	0	2	5	2	IN	0	2	3	1	of	2	2	3	0	NP	1	3	5	2	DT	0	3	4	1	the	3	3	4	0	NNS	0	4	5	1	slaves	4	4	5	0	VP	0	5	9	2	VBP	0	5	6	1	callin	5	5	6	0	S	1	6	9	2	NP	0	6	7	1	PRP	0	6	7	1	himself	6	6	7	0	NP	1	7	9	2	PRP$	0	7	8	1	their	7	7	8	0	NN	0	8	9	1	Master	8	8	9	0	.	0	9	10	1	.	9	9	10	0
+EOS
+T	9
+Say	109	112	VB	say	O	O	_
+he	113	115	PRP	he	O	O	_
+was	116	119	VBD	be	O	O	_
+a	120	121	DT	a	O	O	_
+hard	122	126	JJ	hard	O	O	_
+lump	127	131	NN	lump	O	O	_
+of	132	134	IN	of	O	O	_
+clay	135	139	NN	clay	O	O	_
+.	139	140	.	.	O	O	_
+D	1
+0
+0	5	ccomp
+5	1	nsubj
+5	2	cop
+5	3	det
+5	4	amod
+5	7	prep_of
+EOX
+Y	1
+ROOT	0	0	9	1	S	0	0	9	2	VP	0	0	8	2	VB	0	0	1	1	Say	0	0	1	0	SBAR	0	1	8	1	S	1	1	8	2	NP	0	1	2	1	PRP	0	1	2	1	he	1	1	2	0	VP	1	2	8	2	VBD	0	2	3	1	was	2	2	3	0	NP	0	3	8	2	NP	2	3	6	3	DT	0	3	4	1	a	3	3	4	0	JJ	0	4	5	1	hard	4	4	5	0	NN	0	5	6	1	lump	5	5	6	0	PP	0	6	8	2	IN	0	6	7	1	of	6	6	7	0	NP	0	7	8	1	NN	0	7	8	1	clay	7	7	8	0	.	0	8	9	1	.	8	8	9	0
+EOS
+T	6
+A	141	142	DT	a	O	O	_
+hard	143	147	JJ	hard	O	O	_
+,	147	148	,	,	O	O	_
+glinty	149	155	JJ	glinty	O	O	_
+coal	156	160	NN	coal	O	O	_
+.	160	161	.	.	O	O	_
+D	1
+4
+3	1	amod
+4	0	det
+4	3	amod
+EOX
+Y	1
+ROOT	0	0	6	1	FRAG	0	0	6	2	NP	2	0	5	3	DT	0	0	1	1	A	0	0	1	0	ADJP	2	1	4	3	JJ	0	1	2	1	hard	1	1	2	0	,	0	2	3	1	,	2	2	3	0	JJ	0	3	4	1	glinty	3	3	4	0	NN	0	4	5	1	coal	4	4	5	0	.	0	5	6	1	.	5	5	6	0
+EOS
+T	10
+A	162	163	DT	a	O	O	_
+hard	164	168	JJ	hard	O	O	_
+rock	169	173	NN	rock	O	O	_
+pile	174	178	NN	pile	O	O	_
+,	178	179	,	,	O	O	_
+would	180	185	MD	would	O	O	_
+n't	185	188	RB	not	O	O	_
+be	189	191	VB	be	O	O	_
+moved	192	197	VBN	move	O	O	_
+.	197	198	.	.	O	O	_
+D	1
+8
+2	1	dep
+3	0	det
+3	2	amod
+8	3	nsubjpass
+8	5	aux
+8	6	neg
+8	7	auxpass
+EOX
+Y	1
+ROOT	0	0	10	1	S	2	0	10	4	NP	2	0	4	3	DT	0	0	1	1	A	0	0	1	0	ADJP	1	1	3	2	JJ	0	1	2	1	hard	1	1	2	0	NN	0	2	3	1	rock	2	2	3	0	NN	0	3	4	1	pile	3	3	4	0	,	0	4	5	1	,	4	4	5	0	VP	2	5	9	3	MD	0	5	6	1	would	5	5	6	0	RB	0	6	7	1	n't	6	6	7	0	VP	1	7	9	2	VB	0	7	8	1	be	7	7	8	0	VP	0	8	9	1	VBN	0	8	9	1	moved	8	8	9	0	.	0	9	10	1	.	9	9	10	0
+EOS
+T	13
+His	199	202	PRP$	he	O	O	_
+Overseer	203	211	NN	overseer	O	O	_
+on	212	214	IN	on	O	O	_
+horseback	215	224	NN	horseback	O	O	_
+pointed	225	232	VBD	point	O	O	_
+out	233	236	RP	out	O	O	_
+the	237	240	DT	the	O	O	_
+slaves	241	247	NNS	slave	O	O	_
+who	248	251	WP	who	O	O	_
+were	252	256	VBD	be	O	O	_
+slowin	257	263	VBN	slowin	O	O	_
+down	264	268	RB	down	O	O	_
+.	268	269	.	.	O	O	_
+D	1
+4
+1	0	poss
+1	3	prep_on
+4	1	nsubj
+4	5	prt
+4	7	dobj
+7	6	det
+7	10	rcmod
+10	8	nsubjpass
+10	9	auxpass
+10	11	advmod
+EOX
+Y	1
+ROOT	0	0	13	1	S	1	0	13	3	NP	0	0	4	2	NP	1	0	2	2	PRP$	0	0	1	1	His	0	0	1	0	NN	0	1	2	1	Overseer	1	1	2	0	PP	0	2	4	2	IN	0	2	3	1	on	2	2	3	0	NP	0	3	4	1	NN	0	3	4	1	horseback	3	3	4	0	VP	0	4	12	3	VBD	0	4	5	1	pointed	4	4	5	0	PRT	0	5	6	1	RP	0	5	6	1	out	5	5	6	0	NP	0	6	12	2	NP	1	6	8	2	DT	0	6	7	1	the	6	6	7	0	NNS	0	7	8	1	slaves	7	7	8	0	SBAR	1	8	12	2	WHNP	0	8	9	1	WP	0	8	9	1	who	8	8	9	0	S	0	9	12	1	VP	1	9	12	2	VBD	0	9	10	1	were	9	9	10	0	VP	0	10	12	2	VBN	0	10	11	1	slowin	10	10	11	0	ADVP	0	11	12	1	RB	0	11	12	1	down	11	11	12	0	.	0	12	13	1	.	12	12	13	0
+EOS
+T	18
+So	270	272	IN	so	O	O	_
+the	273	276	DT	the	O	O	_
+one	277	280	CD	one	NUMBER	1.0	_
+called	281	287	VBN	call	O	O	_
+Driver	288	294	NN	driver	O	O	_
+cracked	295	302	VBD	crack	O	O	_
+his	303	306	PRP$	he	O	O	_
+whip	307	311	NN	whip	O	O	_
+over	312	316	IN	over	O	O	_
+the	317	320	DT	the	O	O	_
+slow	321	325	JJ	slow	O	O	_
+ones	326	330	NNS	one	O	O	_
+to	331	333	TO	to	O	O	_
+make	334	338	VB	make	O	O	_
+them	339	343	PRP	they	O	O	_
+move	344	348	VB	move	O	O	_
+faster	349	355	RBR	faster	O	O	_
+.	355	356	.	.	O	O	_
+D	1
+5
+2	1	det
+2	3	vmod
+3	4	dobj
+5	0	dep
+5	2	nsubj
+5	7	dobj
+5	11	prep_over
+5	13	vmod
+7	6	poss
+11	9	det
+11	10	amod
+13	12	aux
+13	15	ccomp
+15	14	nsubj
+15	16	advmod
+EOX
+Y	1
+ROOT	0	0	18	1	S	2	0	18	4	IN	0	0	1	1	So	0	0	1	0	NP	0	1	5	2	NP	1	1	3	2	DT	0	1	2	1	the	1	1	2	0	CD	0	2	3	1	one	2	2	3	0	VP	0	3	5	2	VBN	0	3	4	1	called	3	3	4	0	NP	0	4	5	1	NN	0	4	5	1	Driver	4	4	5	0	VP	0	5	17	4	VBD	0	5	6	1	cracked	5	5	6	0	NP	1	6	8	2	PRP$	0	6	7	1	his	6	6	7	0	NN	0	7	8	1	whip	7	7	8	0	PP	0	8	12	2	IN	0	8	9	1	over	8	8	9	0	NP	2	9	12	3	DT	0	9	10	1	the	9	9	10	0	JJ	0	10	11	1	slow	10	10	11	0	NNS	0	11	12	1	ones	11	11	12	0	S	0	12	17	1	VP	1	12	17	2	TO	0	12	13	1	to	12	12	13	0	VP	0	13	17	2	VB	0	13	14	1	make	13	13	14	0	S	1	14	17	2	NP	0	14	15	1	PRP	0	14	15	1	them	14	14	15	0	VP	0	15	17	2	VB	0	15	16	1	move	15	15	16	0	ADVP	0	16	17	1	RBR	0	16	17	1	faster	16	16	17	0	.	0	17	18	1	.	17	17	18	0
+EOS
+T	9
+That	357	361	DT	that	O	O	_
+whip	362	366	NN	whip	O	O	_
+was	367	370	VBD	be	O	O	_
+a	371	372	DT	a	O	O	_
+slice-open	373	383	JJ	slice-open	O	O	_
+cut	384	387	NN	cut	O	O	_
+of	388	390	IN	of	O	O	_
+pain	391	395	NN	pain	O	O	_
+.	395	396	.	.	O	O	_
+D	1
+5
+1	0	det
+5	1	nsubj
+5	2	cop
+5	3	det
+5	4	amod
+5	7	prep_of
+EOX
+Y	1
+ROOT	0	0	9	1	S	1	0	9	3	NP	1	0	2	2	DT	0	0	1	1	That	0	0	1	0	NN	0	1	2	1	whip	1	1	2	0	VP	1	2	8	2	VBD	0	2	3	1	was	2	2	3	0	NP	0	3	8	2	NP	2	3	6	3	DT	0	3	4	1	a	3	3	4	0	JJ	0	4	5	1	slice-open	4	4	5	0	NN	0	5	6	1	cut	5	5	6	0	PP	0	6	8	2	IN	0	6	7	1	of	6	6	7	0	NP	0	7	8	1	NN	0	7	8	1	pain	7	7	8	0	.	0	8	9	1	.	8	8	9	0
+EOS
+T	6
+So	397	399	IN	so	O	O	_
+they	400	404	PRP	they	O	O	_
+did	405	408	VBD	do	O	O	_
+move	409	413	VB	move	O	O	_
+faster	414	420	RBR	faster	O	O	_
+.	420	421	.	.	O	O	_
+D	1
+2
+2	0	dep
+2	1	nsubj
+2	3	ccomp
+3	4	advmod
+EOX
+Y	1
+ROOT	0	0	6	1	S	2	0	6	4	IN	0	0	1	1	So	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	they	1	1	2	0	VP	0	2	5	2	VBD	0	2	3	1	did	2	2	3	0	S	0	3	5	1	VP	0	3	5	2	VB	0	3	4	1	move	3	3	4	0	ADVP	0	4	5	1	RBR	0	4	5	1	faster	4	4	5	0	.	0	5	6	1	.	5	5	6	0
+EOS
+T	3
+Had	422	425	VBD	have	O	O	_
+to	426	428	TO	to	O	O	_
+.	428	429	.	.	O	O	_
+D	1
+0
+0	1	prep
+EOX
+Y	1
+ROOT	0	0	3	1	S	0	0	3	2	VP	0	0	2	2	VBD	0	0	1	1	Had	0	0	1	0	PP	0	1	2	1	TO	0	1	2	1	to	1	1	2	0	.	0	2	3	1	.	2	2	3	0
+EOS
+C	22
+7	1	0	2	20
+7	5	3	8	20
+1	8	7	9	6
+2	5	3	8	9
+5	0	0	1	3
+6	7	6	8	16
+6	14	14	15	18
+5	1	0	4	12
+3	4	0	5	10
+6	6	6	7	12
+6	2	1	5	15
+8	1	1	2	18
+1	6	6	7	3
+0	5	4	8	2
+1	1	0	5	3
+6	11	9	12	18
+1	4	3	5	1
+5	7	6	12	1
+0	1	0	2	1
+1	7	7	8	1
+2	1	1	2	3
+4	3	0	4	11
+R
+elaboration	LeftToRight	-1	-1	0	0	9	2	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	2	8	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	1	9	0	0	2	nil
+nil	None	-1	-1	0	0	0	10	0	0	0	The slaves labored in the fields from sunup to sundown .
+nil	None	-1	-1	1	0	1	9	0	0	0	The owner of the slaves callin himself their Master .
+nil	None	-1	-1	2	0	2	8	0	0	0	Say he was a hard lump of clay .
+elaboration	LeftToRight	-1	-1	3	0	9	2	0	0	2	nil
+elaboration	LeftToRight	-1	-1	3	0	4	9	0	0	2	nil
+nil	None	-1	-1	3	0	3	5	0	0	0	A hard , glinty coal .
+nil	None	-1	-1	4	0	4	9	0	0	0	A hard rock pile , would n't be moved .
+elaboration	LeftToRight	-1	-1	5	0	9	2	0	0	2	nil
+elaboration	LeftToRight	-1	-1	5	0	8	5	0	0	2	nil
+elaboration	LeftToRight	-1	-1	5	0	7	8	0	0	2	nil
+elaboration	LeftToRight	-1	-1	5	0	5	12	0	1	2	nil
+nil	None	-1	-1	5	0	5	7	0	0	0	His Overseer on horseback pointed out the slaves
+nil	None	-1	-1	5	8	5	12	1	1	0	who were slowin down .
+elaboration	LeftToRight	-1	-1	6	0	7	8	0	0	2	nil
+same-unit	None	-1	-1	6	0	6	17	0	3	2	nil
+elaboration	LeftToRight	-1	-1	6	0	6	4	0	1	2	nil
+nil	None	-1	-1	6	0	6	2	0	0	0	So the one
+nil	None	-1	-1	6	3	6	4	1	1	0	called Driver
+enablement	LeftToRight	-1	-1	6	5	6	17	2	3	2	nil
+nil	None	-1	-1	6	5	6	11	2	2	0	cracked his whip over the slow ones
+nil	None	-1	-1	6	12	6	17	3	3	0	to make them move faster .
+nil	None	-1	-1	7	0	7	8	0	0	0	That whip was a slice-open cut of pain .
+nil	None	-1	-1	8	0	8	5	0	0	0	So they did move faster .
+nil	None	-1	-1	9	0	9	2	0	0	0	Had to .
+EOD

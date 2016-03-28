@@ -1,0 +1,833 @@
+S	2
+T	39
+In	0	2	IN	in	O	O	_
+the	3	6	DT	the	O	O	_
+high	7	11	JJ	high	O	O	_
+and	12	15	CC	and	O	O	_
+far-off	16	23	JJ	far-off	O	O	_
+days	24	28	NNS	day	DURATION	PXD	_
+when	29	33	WRB	when	O	O	_
+men	34	37	NNS	man	O	O	_
+were	38	42	VBD	be	O	O	_
+heroes	43	49	NNS	hero	O	O	_
+and	50	53	CC	and	O	O	_
+walked	54	60	VBD	walk	O	O	_
+with	61	65	IN	with	O	O	_
+the	66	69	DT	the	O	O	_
+gods	70	74	NNS	god	O	O	_
+,	74	75	,	,	O	O	_
+Peleus	76	82	NNP	Peleus	PERSON	O	_
+,	82	83	,	,	O	O	_
+king	84	88	NN	king	O	O	_
+of	89	91	IN	of	O	O	_
+the	92	95	DT	the	O	O	_
+Myrmidons	96	105	NNPS	Myrmidons	MISC	O	_
+,	105	106	,	,	O	O	_
+took	107	111	VBD	take	O	O	_
+for	112	115	IN	for	O	O	_
+his	116	119	PRP$	he	O	O	_
+wife	120	124	NN	wife	O	O	_
+a	125	126	DT	a	O	O	_
+sea	127	130	NN	sea	O	O	_
+nymph	131	136	NN	nymph	O	O	_
+called	137	143	VBN	call	O	O	_
+Thetis	144	150	NNP	Thetis	O	O	_
+,	150	151	,	,	O	O	_
+Thetis	152	158	NNP	Thetis	O	O	_
+of	159	161	IN	of	O	O	_
+the	162	165	DT	the	O	O	_
+Silver	166	172	NN	silver	ORGANIZATION	O	_
+Feet	173	177	NN	foot	ORGANIZATION	O	_
+.	177	178	.	.	O	O	_
+D	1
+23
+2	4	conj_and
+5	1	det
+5	2	amod
+5	4	amod
+5	9	rcmod
+5	11	rcmod
+9	6	advmod
+9	7	nsubj
+9	8	cop
+9	11	conj_and
+11	7	nsubj
+11	14	prep_with
+14	13	det
+16	18	appos
+18	21	prep_of
+21	20	det
+23	5	prep_in
+23	16	nsubj
+23	26	prep_for
+23	29	dobj
+26	25	poss
+29	27	det
+29	28	nn
+29	30	vmod
+30	33	dobj
+33	31	nn
+33	37	prep_of
+37	35	det
+37	36	nn
+EOX
+Y	1
+ROOT	0	0	39	1	S	3	0	39	5	PP	0	0	15	2	IN	0	0	1	1	In	0	0	1	0	NP	0	1	15	2	NP	2	1	6	3	DT	0	1	2	1	the	1	1	2	0	ADJP	0	2	5	3	JJ	0	2	3	1	high	2	2	3	0	CC	0	3	4	1	and	3	3	4	0	JJ	0	4	5	1	far-off	4	4	5	0	NNS	0	5	6	1	days	5	5	6	0	SBAR	1	6	15	2	WHADVP	0	6	7	1	WRB	0	6	7	1	when	6	6	7	0	S	1	7	15	2	NP	0	7	8	1	NNS	0	7	8	1	men	7	7	8	0	VP	0	8	15	3	VP	1	8	10	2	VBD	0	8	9	1	were	8	8	9	0	NP	0	9	10	1	NNS	0	9	10	1	heroes	9	9	10	0	CC	0	10	11	1	and	10	10	11	0	VP	0	11	15	2	VBD	0	11	12	1	walked	11	11	12	0	PP	0	12	15	2	IN	0	12	13	1	with	12	12	13	0	NP	1	13	15	2	DT	0	13	14	1	the	13	13	14	0	NNS	0	14	15	1	gods	14	14	15	0	,	0	15	16	1	,	15	15	16	0	NP	0	16	23	4	NP	0	16	17	1	NNP	0	16	17	1	Peleus	16	16	17	0	,	0	17	18	1	,	17	17	18	0	NP	0	18	22	2	NP	0	18	19	1	NN	0	18	19	1	king	18	18	19	0	PP	0	19	22	2	IN	0	19	20	1	of	19	19	20	0	NP	1	20	22	2	DT	0	20	21	1	the	20	20	21	0	NNPS	0	21	22	1	Myrmidons	21	21	22	0	,	0	22	23	1	,	22	22	23	0	VP	0	23	38	3	VBD	0	23	24	1	took	23	23	24	0	PP	0	24	27	2	IN	0	24	25	1	for	24	24	25	0	NP	1	25	27	2	PRP$	0	25	26	1	his	25	25	26	0	NN	0	26	27	1	wife	26	26	27	0	NP	0	27	38	2	NP	2	27	30	3	DT	0	27	28	1	a	27	27	28	0	NN	0	28	29	1	sea	28	28	29	0	NN	0	29	30	1	nymph	29	29	30	0	VP	0	30	38	2	VBN	0	30	31	1	called	30	30	31	0	NP	0	31	38	2	NP	0	31	34	3	NNP	0	31	32	1	Thetis	31	31	32	0	,	0	32	33	1	,	32	32	33	0	NNP	0	33	34	1	Thetis	33	33	34	0	PP	0	34	38	2	IN	0	34	35	1	of	34	34	35	0	NP	2	35	38	3	DT	0	35	36	1	the	35	35	36	0	NN	0	36	37	1	Silver	36	36	37	0	NN	0	37	38	1	Feet	37	37	38	0	.	0	38	39	1	.	38	38	39	0
+EOS
+T	21
+Many	179	183	JJ	many	O	O	_
+guests	184	190	NNS	guest	O	O	_
+came	191	195	VBD	come	O	O	_
+to	196	198	TO	to	O	O	_
+their	199	204	PRP$	they	O	O	_
+wedding	205	212	NN	wedding	O	O	_
+feast	213	218	NN	feast	O	O	_
+,	218	219	,	,	O	O	_
+and	220	223	CC	and	O	O	_
+among	224	229	IN	among	O	O	_
+the	230	233	DT	the	O	O	_
+mortal	234	240	JJ	mortal	O	O	_
+guests	241	247	NNS	guest	O	O	_
+came	248	252	VBD	come	O	O	_
+all	253	256	PDT	all	O	O	_
+the	257	260	DT	the	O	O	_
+gods	261	265	NNS	god	O	O	_
+of	266	268	IN	of	O	O	_
+high	269	273	JJ	high	O	O	_
+Olympus	274	281	NNP	Olympus	O	O	_
+.	281	282	.	.	O	O	_
+D	1
+2
+1	0	amod
+2	1	nsubj
+2	1	nsubj
+2	2	conj_and
+2	6	prep_to
+2	12	prep_among
+6	4	poss
+6	5	nn
+12	10	det
+12	11	amod
+12	13	vmod
+13	16	dobj
+16	14	predet
+16	15	det
+16	19	prep_of
+19	18	amod
+EOX
+Y	1
+ROOT	0	0	21	1	S	1	0	21	3	NP	1	0	2	2	JJ	0	0	1	1	Many	0	0	1	0	NNS	0	1	2	1	guests	1	1	2	0	VP	0	2	20	2	VBD	0	2	3	1	came	2	2	3	0	PP	0	3	20	4	PP	0	3	7	2	TO	0	3	4	1	to	3	3	4	0	NP	2	4	7	3	PRP$	0	4	5	1	their	4	4	5	0	NN	0	5	6	1	wedding	5	5	6	0	NN	0	6	7	1	feast	6	6	7	0	,	0	7	8	1	,	7	7	8	0	CC	0	8	9	1	and	8	8	9	0	PP	0	9	20	2	IN	0	9	10	1	among	9	9	10	0	NP	0	10	20	2	NP	2	10	13	3	DT	0	10	11	1	the	10	10	11	0	JJ	0	11	12	1	mortal	11	11	12	0	NNS	0	12	13	1	guests	12	12	13	0	VP	0	13	20	2	VBD	0	13	14	1	came	13	13	14	0	NP	0	14	20	2	NP	2	14	17	3	PDT	0	14	15	1	all	14	14	15	0	DT	0	15	16	1	the	15	15	16	0	NNS	0	16	17	1	gods	16	16	17	0	PP	0	17	20	2	IN	0	17	18	1	of	17	17	18	0	NP	1	18	20	2	JJ	0	18	19	1	high	18	18	19	0	NNP	0	19	20	1	Olympus	19	19	20	0	.	0	20	21	1	.	20	20	21	0
+EOS
+C	18
+0	29	27	38	12
+0	25	25	26	1
+0	18	18	22	1
+0	9	9	10	5
+0	37	35	38	14
+0	7	7	8	4
+0	14	13	15	6
+1	6	4	7	17
+0	5	1	15	3
+1	19	18	20	20
+1	12	10	20	19
+1	1	0	2	16
+1	4	4	5	16
+0	33	31	38	13
+0	16	16	22	7
+0	21	20	22	9
+0	26	25	27	10
+0	31	31	32	15
+R
+elaboration	LeftToRight	-1	-1	0	0	1	20	0	1	2	nil
+same-unit	None	-1	-1	0	0	0	38	0	3	2	nil
+elaboration	LeftToRight	-1	-1	0	0	0	9	0	1	2	nil
+nil	None	-1	-1	0	0	0	5	0	0	0	In the high and far-off days
+nil	None	-1	-1	0	6	0	9	1	1	0	when men were heroes
+elaboration	LeftToRight	-1	-1	0	10	0	38	2	3	2	nil
+nil	None	-1	-1	0	10	0	29	2	2	0	and walked with the gods , Peleus , king of the Myrmidons , took for his wife a sea nymph
+nil	None	-1	-1	0	30	0	38	3	3	0	called Thetis , Thetis of the Silver Feet .
+elaboration	LeftToRight	-1	-1	1	0	1	20	0	1	2	nil
+nil	None	-1	-1	1	0	1	12	0	0	0	Many guests came to their wedding feast , and among the mortal guests
+nil	None	-1	-1	1	13	1	20	1	1	0	came all the gods of high Olympus .
+EOD
+S	1
+T	59
+But	0	3	CC	but	O	O	_
+as	4	6	IN	as	O	O	_
+they	7	11	PRP	they	O	O	_
+sat	12	15	VBD	sit	O	O	_
+feasting	16	24	VBG	feast	O	O	_
+,	24	25	,	,	O	O	_
+one	26	29	CD	one	NUMBER	1.0	_
+who	30	33	WP	who	O	O	_
+had	34	37	VBD	have	O	O	_
+not	38	41	RB	not	O	O	_
+been	42	46	VBN	be	O	O	_
+invited	47	54	VBN	invite	O	O	_
+was	55	58	VBD	be	O	O	_
+suddenly	59	67	RB	suddenly	O	O	_
+in	68	70	IN	in	O	O	_
+their	71	76	PRP$	they	O	O	_
+midst	77	82	NN	midst	O	O	_
+:	82	83	:	:	O	O	_
+Eris	84	88	NNP	Eris	PERSON	O	_
+,	88	89	,	,	O	O	_
+the	90	93	DT	the	O	O	_
+goddess	94	101	NN	goddess	O	O	_
+of	102	104	IN	of	O	O	_
+discord	105	112	NN	discord	O	O	_
+,	112	113	,	,	O	O	_
+had	114	117	VBD	have	O	O	_
+been	118	122	VBN	be	O	O	_
+left	123	127	VBN	leave	O	O	_
+out	128	131	RP	out	O	O	_
+because	132	139	IN	because	O	O	_
+wherever	140	148	WRB	wherever	O	O	_
+she	149	152	PRP	she	O	O	_
+went	153	157	VBD	go	O	O	_
+she	158	161	PRP	she	O	O	_
+took	162	166	VBD	take	O	O	_
+trouble	167	174	NN	trouble	O	O	_
+with	175	179	IN	with	O	O	_
+her	180	183	PRP$	she	O	O	_
+;	183	184	:	;	O	O	_
+yet	185	188	RB	yet	O	O	_
+here	189	193	RB	here	O	O	_
+she	194	197	PRP	she	O	O	_
+was	198	201	VBD	be	O	O	_
+,	201	202	,	,	O	O	_
+all	203	206	PDT	all	O	O	_
+the	207	210	DT	the	O	O	_
+same	211	215	JJ	same	O	O	_
+,	215	216	,	,	O	O	_
+and	217	220	CC	and	O	O	_
+in	221	223	IN	in	O	O	_
+her	224	227	PRP$	she	O	O	_
+blackest	228	236	JJS	blackest	O	O	_
+mood	237	241	NN	mood	O	O	_
+,	241	242	,	,	O	O	_
+to	243	245	TO	to	O	O	_
+avenge	246	252	VB	avenge	O	O	_
+the	253	256	DT	the	O	O	_
+insult	257	263	NN	insult	O	O	_
+.	263	264	.	.	O	O	_
+D	1
+12
+3	1	mark
+3	2	nsubj
+3	4	xcomp
+6	11	rcmod
+11	7	nsubjpass
+11	8	aux
+11	9	neg
+11	10	auxpass
+12	0	cc
+12	3	advcl
+12	6	nsubj
+12	13	advmod
+12	16	prep_in
+12	27	parataxis
+12	27	parataxis
+16	15	poss
+18	21	appos
+21	20	det
+21	23	prep_of
+27	18	nsubjpass
+27	18	nsubjpass
+27	25	aux
+27	26	auxpass
+27	27	conj_and
+27	28	prt
+27	32	prepc_because
+27	52	prep_in
+27	55	xcomp
+32	30	advmod
+32	31	nsubj
+32	34	dep
+34	33	nsubj
+34	35	dobj
+34	37	prep_with
+34	42	parataxis
+42	39	advmod
+42	40	advmod
+42	41	nsubj
+42	46	advmod
+46	44	dep
+46	45	det
+52	50	poss
+52	51	amod
+55	54	aux
+55	57	dobj
+57	56	det
+EOX
+Y	1
+ROOT	0	0	59	1	S	3	0	59	7	CC	0	0	1	1	But	0	0	1	0	SBAR	1	1	5	2	IN	0	1	2	1	as	1	1	2	0	S	1	2	5	2	NP	0	2	3	1	PRP	0	2	3	1	they	2	2	3	0	VP	0	3	5	2	VBD	0	3	4	1	sat	3	3	4	0	S	0	4	5	1	VP	0	4	5	1	VBG	0	4	5	1	feasting	4	4	5	0	,	0	5	6	1	,	5	5	6	0	S	1	6	17	2	NP	0	6	12	2	NP	0	6	7	1	CD	0	6	7	1	one	6	6	7	0	SBAR	1	7	12	2	WHNP	0	7	8	1	WP	0	7	8	1	who	7	7	8	0	S	0	8	12	1	VP	2	8	12	3	VBD	0	8	9	1	had	8	8	9	0	RB	0	9	10	1	not	9	9	10	0	VP	1	10	12	2	VBN	0	10	11	1	been	10	10	11	0	VP	0	11	12	1	VBN	0	11	12	1	invited	11	11	12	0	VP	0	12	17	3	VBD	0	12	13	1	was	12	12	13	0	ADVP	0	13	14	1	RB	0	13	14	1	suddenly	13	13	14	0	PP	0	14	17	2	IN	0	14	15	1	in	14	14	15	0	NP	1	15	17	2	PRP$	0	15	16	1	their	15	15	16	0	NN	0	16	17	1	midst	16	16	17	0	:	0	17	18	1	:	17	17	18	0	S	1	18	58	2	NP	0	18	25	4	NP	0	18	19	1	NNP	0	18	19	1	Eris	18	18	19	0	,	0	19	20	1	,	19	19	20	0	NP	0	20	24	2	NP	1	20	22	2	DT	0	20	21	1	the	20	20	21	0	NN	0	21	22	1	goddess	21	21	22	0	PP	0	22	24	2	IN	0	22	23	1	of	22	22	23	0	NP	0	23	24	1	NN	0	23	24	1	discord	23	23	24	0	,	0	24	25	1	,	24	24	25	0	VP	1	25	58	2	VBD	0	25	26	1	had	25	25	26	0	VP	1	26	58	2	VBN	0	26	27	1	been	26	26	27	0	VP	0	27	58	5	VBN	0	27	28	1	left	27	27	28	0	PRT	0	28	29	1	RP	0	28	29	1	out	28	28	29	0	PP	0	29	53	3	PP	0	29	48	2	IN	0	29	30	1	because	29	29	30	0	SBAR	1	30	48	2	WHADVP	0	30	31	1	WRB	0	30	31	1	wherever	30	30	31	0	S	1	31	48	2	NP	0	31	32	1	PRP	0	31	32	1	she	31	31	32	0	VP	0	32	48	2	VBD	0	32	33	1	went	32	32	33	0	SBAR	0	33	48	1	S	0	33	48	3	S	1	33	38	2	NP	0	33	34	1	PRP	0	33	34	1	she	33	33	34	0	VP	0	34	38	3	VBD	0	34	35	1	took	34	34	35	0	NP	0	35	36	1	NN	0	35	36	1	trouble	35	35	36	0	PP	0	36	38	2	IN	0	36	37	1	with	36	36	37	0	NP	0	37	38	1	PRP$	0	37	38	1	her	37	37	38	0	:	0	38	39	1	;	38	38	39	0	S	3	39	48	4	ADVP	0	39	40	1	RB	0	39	40	1	yet	39	39	40	0	ADVP	0	40	41	1	RB	0	40	41	1	here	40	40	41	0	NP	0	41	42	1	PRP	0	41	42	1	she	41	41	42	0	VP	0	42	48	4	VBD	0	42	43	1	was	42	42	43	0	,	0	43	44	1	,	43	43	44	0	ADVP	2	44	47	3	PDT	0	44	45	1	all	44	44	45	0	DT	0	45	46	1	the	45	45	46	0	JJ	0	46	47	1	same	46	46	47	0	,	0	47	48	1	,	47	47	48	0	CC	0	48	49	1	and	48	48	49	0	PP	0	49	53	2	IN	0	49	50	1	in	49	49	50	0	NP	2	50	53	3	PRP$	0	50	51	1	her	50	50	51	0	JJS	0	51	52	1	blackest	51	51	52	0	NN	0	52	53	1	mood	52	52	53	0	,	0	53	54	1	,	53	53	54	0	S	0	54	58	1	VP	1	54	58	2	TO	0	54	55	1	to	54	54	55	0	VP	0	55	58	2	VB	0	55	56	1	avenge	55	55	56	0	NP	1	56	58	2	DT	0	56	57	1	the	56	56	57	0	NN	0	57	58	1	insult	57	57	58	0	.	0	58	59	1	.	58	58	59	0
+EOS
+C	13
+0	2	2	3	2
+0	18	18	24	6
+0	37	37	38	1
+0	50	50	51	1
+0	15	15	16	2
+0	33	33	34	1
+0	16	15	17	4
+0	21	20	24	1
+0	57	56	58	14
+0	41	41	42	1
+0	52	50	53	12
+0	31	31	32	1
+0	6	6	12	3
+R
+elaboration	LeftToRight	-1	-1	0	0	0	58	0	7	2	nil
+same-unit	None	-1	-1	0	0	0	17	0	3	2	nil
+background	LeftToRight	-1	-1	0	0	0	5	0	1	2	nil
+nil	None	-1	-1	0	0	0	0	0	0	0	But
+nil	None	-1	-1	0	1	0	5	1	1	0	as they sat feasting ,
+elaboration	LeftToRight	-1	-1	0	6	0	17	2	3	2	nil
+nil	None	-1	-1	0	6	0	6	2	2	0	one
+nil	None	-1	-1	0	7	0	17	3	3	0	who had not been invited was suddenly in their midst :
+explanation	LeftToRight	-1	-1	0	18	0	58	4	7	2	nil
+nil	None	-1	-1	0	18	0	38	4	4	0	Eris , the goddess of discord , had been left out because wherever she went she took trouble with her ;
+attribution	RightToLeft	-1	-1	0	39	0	58	5	7	2	nil
+nil	None	-1	-1	0	39	0	43	5	5	0	yet here she was ,
+elaboration	LeftToRight	-1	-1	0	44	0	58	6	7	2	nil
+nil	None	-1	-1	0	44	0	53	6	6	0	all the same , and in her blackest mood ,
+nil	None	-1	-1	0	54	0	58	7	7	0	to avenge the insult .
+EOD
+S	2
+T	21
+All	0	3	DT	all	O	O	_
+she	4	7	PRP	she	O	O	_
+did	8	11	VBD	do	O	O	_
+--	11	12	:	--	O	O	_
+it	12	14	PRP	it	O	O	_
+seemed	15	21	VBD	seem	O	O	_
+a	22	23	DT	a	O	O	_
+small	24	29	JJ	small	O	O	_
+thing	30	35	NN	thing	O	O	_
+--	35	36	:	--	O	O	_
+was	36	39	VBD	be	O	O	_
+to	40	42	TO	to	O	O	_
+toss	43	47	VB	toss	O	O	_
+down	48	52	RP	down	O	O	_
+on	53	55	IN	on	O	O	_
+the	56	59	DT	the	O	O	_
+table	60	65	NN	table	O	O	_
+a	66	67	DT	a	O	O	_
+golden	68	74	JJ	golden	O	O	_
+apple	75	80	NN	apple	O	O	_
+.	80	81	.	.	O	O	_
+D	1
+10
+0	2	rcmod
+2	1	nsubj
+5	4	nsubj
+5	8	xcomp
+8	6	det
+8	7	amod
+10	0	nsubj
+10	5	parataxis
+10	12	xcomp
+12	11	aux
+12	13	prt
+12	16	prep_on
+16	15	det
+16	19	dep
+19	17	det
+19	18	amod
+EOX
+Y	1
+ROOT	0	0	21	1	S	2	0	21	4	NP	0	0	3	2	NP	0	0	1	1	DT	0	0	1	1	All	0	0	1	0	SBAR	0	1	3	1	S	1	1	3	2	NP	0	1	2	1	PRP	0	1	2	1	she	1	1	2	0	VP	0	2	3	1	VBD	0	2	3	1	did	2	2	3	0	PRN	1	3	10	3	:	0	3	4	1	--	3	3	4	0	S	1	4	9	2	NP	0	4	5	1	PRP	0	4	5	1	it	4	4	5	0	VP	0	5	9	2	VBD	0	5	6	1	seemed	5	5	6	0	NP	2	6	9	3	DT	0	6	7	1	a	6	6	7	0	JJ	0	7	8	1	small	7	7	8	0	NN	0	8	9	1	thing	8	8	9	0	:	0	9	10	1	--	9	9	10	0	VP	0	10	20	2	VBD	0	10	11	1	was	10	10	11	0	S	0	11	20	1	VP	1	11	20	2	TO	0	11	12	1	to	11	11	12	0	VP	0	12	20	3	VB	0	12	13	1	toss	12	12	13	0	PRT	0	13	14	1	RP	0	13	14	1	down	13	13	14	0	PP	0	14	20	2	IN	0	14	15	1	on	14	14	15	0	NP	0	15	20	2	NP	1	15	17	2	DT	0	15	16	1	the	15	15	16	0	NN	0	16	17	1	table	16	16	17	0	NP	2	17	20	3	DT	0	17	18	1	a	17	17	18	0	JJ	0	18	19	1	golden	18	18	19	0	NN	0	19	20	1	apple	19	19	20	0	.	0	20	21	1	.	20	20	21	0
+EOS
+T	11
+Then	82	86	RB	then	O	O	_
+she	87	90	PRP	she	O	O	_
+breathed	91	99	VBD	breathe	O	O	_
+upon	100	104	IN	upon	O	O	_
+the	105	108	DT	the	O	O	_
+guests	109	115	NNS	guest	O	O	_
+once	116	120	RB	once	DATE	PAST_REF	_
+,	120	121	,	,	O	O	_
+and	122	125	CC	and	O	O	_
+vanished	126	134	VBD	vanish	O	O	_
+.	134	135	.	.	O	O	_
+D	1
+2
+2	0	advmod
+2	1	nsubj
+2	5	prep_upon
+2	6	advmod
+2	9	conj_and
+5	4	det
+9	1	nsubj
+EOX
+Y	1
+ROOT	0	0	11	1	S	2	0	11	4	RB	0	0	1	1	Then	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	she	1	1	2	0	VP	0	2	10	4	VP	0	2	7	3	VBD	0	2	3	1	breathed	2	2	3	0	PP	0	3	6	2	IN	0	3	4	1	upon	3	3	4	0	NP	1	4	6	2	DT	0	4	5	1	the	4	4	5	0	NNS	0	5	6	1	guests	5	5	6	0	ADVP	0	6	7	1	RB	0	6	7	1	once	6	6	7	0	,	0	7	8	1	,	7	7	8	0	CC	0	8	9	1	and	8	8	9	0	VP	0	9	10	1	VBD	0	9	10	1	vanished	9	9	10	0	.	0	10	11	1	.	10	10	11	0
+EOS
+C	7
+1	5	4	6	7
+0	19	17	20	5
+1	1	1	2	1
+0	8	6	9	3
+0	4	4	5	2
+0	16	15	20	4
+0	1	1	2	1
+R
+elaboration	LeftToRight	-1	-1	0	0	1	10	0	1	2	nil
+same-unit	None	-1	-1	0	0	0	20	0	2	2	nil
+attribution	RightToLeft	-1	-1	0	0	0	9	0	1	2	nil
+nil	None	-1	-1	0	0	0	2	0	0	0	All she did
+nil	None	-1	-1	0	3	0	9	1	1	0	-- it seemed a small thing --
+nil	None	-1	-1	0	10	0	20	2	2	0	was to toss down on the table a golden apple .
+joint	None	-1	-1	1	0	1	10	0	1	2	nil
+nil	None	-1	-1	1	0	1	7	0	0	0	Then she breathed upon the guests once ,
+nil	None	-1	-1	1	8	1	10	1	1	0	and vanished .
+EOD
+S	1
+T	37
+The	0	3	DT	the	O	O	_
+apple	4	9	NN	apple	O	O	_
+lay	10	13	VBD	lay	O	O	_
+gleaming	14	22	VBG	gleam	O	O	_
+among	23	28	IN	among	O	O	_
+the	29	32	DT	the	O	O	_
+piled	33	38	VBN	pile	O	O	_
+fruits	39	45	NNS	fruit	O	O	_
+and	46	49	CC	and	O	O	_
+the	50	53	DT	the	O	O	_
+brimming	54	62	JJ	brimming	O	O	_
+wine	63	67	NN	wine	O	O	_
+cups	68	72	NNS	cup	O	O	_
+;	72	73	:	;	O	O	_
+and	74	77	CC	and	O	O	_
+bending	78	85	VBG	bend	O	O	_
+close	86	91	JJ	close	O	O	_
+to	92	94	TO	to	O	O	_
+look	95	99	VB	look	O	O	_
+at	100	102	IN	at	O	O	_
+it	103	105	PRP	it	O	O	_
+,	105	106	,	,	O	O	_
+everyone	107	115	NN	everyone	O	O	_
+could	116	121	MD	could	O	O	_
+see	122	125	VB	see	O	O	_
+the	126	129	DT	the	O	O	_
+words	130	135	NNS	word	O	O	_
+``	136	137	``	``	O	O	_
+To	137	139	TO	to	O	O	_
+the	140	143	DT	the	O	O	_
+fairest	144	151	JJS	fairest	O	O	_
+''	151	152	''	''	O	O	_
+traced	153	159	VBN	trace	O	O	_
+on	160	162	IN	on	O	O	_
+its	163	166	PRP$	its	O	O	_
+side	167	171	NN	side	O	O	_
+.	171	172	.	.	O	O	_
+D	1
+2
+1	0	det
+2	1	nsubj
+2	3	dobj
+2	24	conj_and
+3	7	prep_among
+3	12	prep_among
+7	5	det
+7	6	amod
+7	12	conj_and
+12	9	det
+12	10	amod
+12	11	nn
+15	16	acomp
+16	18	xcomp
+18	17	aux
+18	20	prep_at
+24	15	vmod
+24	22	nsubj
+24	23	aux
+24	26	dobj
+26	25	det
+26	30	prep_to
+30	29	det
+30	32	vmod
+32	35	prep_on
+35	34	poss
+EOX
+Y	1
+ROOT	0	0	37	1	S	0	0	37	5	S	1	0	13	2	NP	1	0	2	2	DT	0	0	1	1	The	0	0	1	0	NN	0	1	2	1	apple	1	1	2	0	VP	0	2	13	2	VBD	0	2	3	1	lay	2	2	3	0	NP	0	3	13	2	NP	0	3	4	1	VBG	0	3	4	1	gleaming	3	3	4	0	PP	0	4	13	2	IN	0	4	5	1	among	4	4	5	0	NP	0	5	13	3	NP	2	5	8	3	DT	0	5	6	1	the	5	5	6	0	VBN	0	6	7	1	piled	6	6	7	0	NNS	0	7	8	1	fruits	7	7	8	0	CC	0	8	9	1	and	8	8	9	0	NP	3	9	13	4	DT	0	9	10	1	the	9	9	10	0	JJ	0	10	11	1	brimming	10	10	11	0	NN	0	11	12	1	wine	11	11	12	0	NNS	0	12	13	1	cups	12	12	13	0	:	0	13	14	1	;	13	13	14	0	CC	0	14	15	1	and	14	14	15	0	S	3	15	36	4	S	0	15	21	1	VP	0	15	21	2	VBG	0	15	16	1	bending	15	15	16	0	ADJP	0	16	21	2	JJ	0	16	17	1	close	16	16	17	0	S	0	17	21	1	VP	1	17	21	2	TO	0	17	18	1	to	17	17	18	0	VP	0	18	21	2	VB	0	18	19	1	look	18	18	19	0	PP	0	19	21	2	IN	0	19	20	1	at	19	19	20	0	NP	0	20	21	1	PRP	0	20	21	1	it	20	20	21	0	,	0	21	22	1	,	21	21	22	0	NP	0	22	23	1	NN	0	22	23	1	everyone	22	22	23	0	VP	1	23	36	2	MD	0	23	24	1	could	23	23	24	0	VP	0	24	36	2	VB	0	24	25	1	see	24	24	25	0	NP	0	25	36	3	NP	1	25	27	2	DT	0	25	26	1	the	25	25	26	0	NNS	0	26	27	1	words	26	26	27	0	``	0	27	28	1	``	27	27	28	0	PP	0	28	36	2	TO	0	28	29	1	To	28	28	29	0	NP	0	29	36	3	NP	1	29	31	2	DT	0	29	30	1	the	29	29	30	0	JJS	0	30	31	1	fairest	30	30	31	0	''	0	31	32	1	''	31	31	32	0	VP	0	32	36	2	VBN	0	32	33	1	traced	32	32	33	0	PP	0	33	36	2	IN	0	33	34	1	on	33	33	34	0	NP	1	34	36	2	PRP$	0	34	35	1	its	34	34	35	0	NN	0	35	36	1	side	35	35	36	0	.	0	36	37	1	.	36	36	37	0
+EOS
+C	9
+0	30	29	36	8
+0	20	20	21	1
+0	7	5	13	3
+0	3	3	13	2
+0	12	9	13	5
+0	35	34	36	9
+0	1	0	2	1
+0	34	34	35	1
+0	26	25	36	7
+R
+joint	None	-1	-1	0	0	0	36	0	2	2	nil
+nil	None	-1	-1	0	0	0	13	0	0	0	The apple lay gleaming among the piled fruits and the brimming wine cups ;
+attribution	RightToLeft	-1	-1	0	14	0	36	1	2	2	nil
+nil	None	-1	-1	0	14	0	21	1	1	0	and bending close to look at it ,
+nil	None	-1	-1	0	22	0	36	2	2	0	everyone could see the words `` To the fairest '' traced on its side .
+EOD
+S	4
+T	14
+Then	0	4	RB	then	O	O	_
+the	5	8	DT	the	O	O	_
+three	9	14	CD	three	NUMBER	3.0	_
+greatest	15	23	JJS	greatest	O	O	_
+of	24	26	IN	of	O	O	_
+the	27	30	DT	the	O	O	_
+goddesses	31	40	NNS	goddess	O	O	_
+each	41	45	DT	each	O	O	_
+claimed	46	53	VBD	claim	O	O	_
+that	54	58	IN	that	O	O	_
+it	59	61	PRP	it	O	O	_
+was	62	65	VBD	be	O	O	_
+hers	66	70	NNS	hers	O	O	_
+.	70	71	.	.	O	O	_
+D	1
+8
+2	1	det
+2	3	amod
+2	6	prep_of
+6	5	det
+8	0	advmod
+8	2	nsubj
+8	7	dep
+8	12	ccomp
+12	9	mark
+12	10	nsubj
+12	11	cop
+EOX
+Y	1
+ROOT	0	0	14	1	S	3	0	14	5	ADVP	0	0	1	1	RB	0	0	1	1	Then	0	0	1	0	NP	0	1	7	2	NP	1	1	4	3	DT	0	1	2	1	the	1	1	2	0	CD	0	2	3	1	three	2	2	3	0	JJS	0	3	4	1	greatest	3	3	4	0	PP	0	4	7	2	IN	0	4	5	1	of	4	4	5	0	NP	1	5	7	2	DT	0	5	6	1	the	5	5	6	0	NNS	0	6	7	1	goddesses	6	6	7	0	DT	0	7	8	1	each	7	7	8	0	VP	0	8	13	2	VBD	0	8	9	1	claimed	8	8	9	0	SBAR	1	9	13	2	IN	0	9	10	1	that	9	9	10	0	S	1	10	13	2	NP	0	10	11	1	PRP	0	10	11	1	it	10	10	11	0	VP	1	11	13	2	VBD	0	11	12	1	was	11	11	12	0	NP	0	12	13	1	NNS	0	12	13	1	hers	12	12	13	0	.	0	13	14	1	.	13	13	14	0
+EOS
+T	18
+Hera	72	76	NNP	Hera	LOCATION	O	_
+claimed	77	84	VBD	claim	O	O	_
+it	85	87	PRP	it	O	O	_
+as	88	90	IN	as	O	O	_
+wife	91	95	NN	wife	O	O	_
+to	96	98	TO	to	O	O	_
+Zeus	99	103	NNP	Zeus	O	O	_
+,	103	104	,	,	O	O	_
+the	105	108	DT	the	O	O	_
+All-father	109	119	NN	all-father	MISC	O	_
+,	119	120	,	,	O	O	_
+and	121	124	CC	and	O	O	_
+queen	125	130	NN	queen	O	O	_
+of	131	133	IN	of	O	O	_
+all	134	137	PDT	all	O	O	_
+the	138	141	DT	the	O	O	_
+gods	142	146	NNS	god	O	O	_
+.	146	147	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	2	dobj
+1	4	prep_as
+1	6	prep_to
+1	9	prep_to
+1	12	prep_to
+6	9	conj_and
+6	12	conj_and
+9	8	det
+12	16	prep_of
+16	14	predet
+16	15	det
+EOX
+Y	1
+ROOT	0	0	18	1	S	1	0	18	3	NP	0	0	1	1	NNP	0	0	1	1	Hera	0	0	1	0	VP	0	1	17	4	VBD	0	1	2	1	claimed	1	1	2	0	NP	0	2	3	1	PRP	0	2	3	1	it	2	2	3	0	PP	0	3	5	2	IN	0	3	4	1	as	3	3	4	0	NP	0	4	5	1	NN	0	4	5	1	wife	4	4	5	0	PP	0	5	17	2	TO	0	5	6	1	to	5	5	6	0	NP	0	6	17	6	NP	0	6	7	1	NNP	0	6	7	1	Zeus	6	6	7	0	,	0	7	8	1	,	7	7	8	0	NP	1	8	10	2	DT	0	8	9	1	the	8	8	9	0	NN	0	9	10	1	All-father	9	9	10	0	,	0	10	11	1	,	10	10	11	0	CC	0	11	12	1	and	11	11	12	0	NP	0	12	17	2	NP	0	12	13	1	NN	0	12	13	1	queen	12	12	13	0	PP	0	13	17	2	IN	0	13	14	1	of	13	13	14	0	NP	2	14	17	3	PDT	0	14	15	1	all	14	14	15	0	DT	0	15	16	1	the	15	15	16	0	NNS	0	16	17	1	gods	16	16	17	0	.	0	17	18	1	.	17	17	18	0
+EOS
+T	21
+Athene	148	154	NNP	Athene	PERSON	O	_
+claimed	155	162	VBD	claim	O	O	_
+that	163	167	IN	that	O	O	_
+she	168	171	PRP	she	O	O	_
+had	172	175	VBD	have	O	O	_
+the	176	179	DT	the	O	O	_
+better	180	186	JJR	better	O	O	_
+right	187	192	NN	right	O	O	_
+,	192	193	,	,	O	O	_
+for	194	197	IN	for	O	O	_
+the	198	201	DT	the	O	O	_
+beauty	202	208	NN	beauty	O	O	_
+of	209	211	IN	of	O	O	_
+wisdom	212	218	NN	wisdom	O	O	_
+such	219	223	JJ	such	O	O	_
+as	224	226	IN	as	O	O	_
+hers	227	231	NNS	hers	O	O	_
+surpassed	232	241	VBD	surpass	O	O	_
+all	242	245	DT	all	O	O	_
+else	246	250	RB	else	O	O	_
+.	250	251	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	4	ccomp
+4	2	mark
+4	3	nsubj
+4	7	dobj
+4	11	prep_for
+7	5	det
+7	6	amod
+11	10	det
+11	13	prep_of
+13	16	prep_such_as
+16	17	vmod
+17	19	xcomp
+19	18	nsubj
+EOX
+Y	1
+ROOT	0	0	21	1	S	1	0	21	3	NP	0	0	1	1	NNP	0	0	1	1	Athene	0	0	1	0	VP	0	1	20	2	VBD	0	1	2	1	claimed	1	1	2	0	SBAR	1	2	20	2	IN	0	2	3	1	that	2	2	3	0	S	1	3	20	2	NP	0	3	4	1	PRP	0	3	4	1	she	3	3	4	0	VP	0	4	20	4	VBD	0	4	5	1	had	4	4	5	0	NP	2	5	8	3	DT	0	5	6	1	the	5	5	6	0	JJR	0	6	7	1	better	6	6	7	0	NN	0	7	8	1	right	7	7	8	0	,	0	8	9	1	,	8	8	9	0	PP	0	9	20	2	IN	0	9	10	1	for	9	9	10	0	NP	0	10	20	2	NP	1	10	12	2	DT	0	10	11	1	the	10	10	11	0	NN	0	11	12	1	beauty	11	11	12	0	PP	0	12	20	2	IN	0	12	13	1	of	12	12	13	0	NP	0	13	20	2	NP	0	13	14	1	NN	0	13	14	1	wisdom	13	13	14	0	PP	1	14	20	3	JJ	0	14	15	1	such	14	14	15	0	IN	0	15	16	1	as	15	15	16	0	NP	0	16	20	2	NP	0	16	17	1	NNS	0	16	17	1	hers	16	16	17	0	VP	0	17	20	2	VBD	0	17	18	1	surpassed	17	17	18	0	S	1	18	20	2	NP	0	18	19	1	DT	0	18	19	1	all	18	18	19	0	ADJP	0	19	20	1	RB	0	19	20	1	else	19	19	20	0	.	0	20	21	1	.	20	20	21	0
+EOS
+T	22
+Aphrodite	252	261	NNP	Aphrodite	O	O	_
+only	262	266	RB	only	O	O	_
+smiled	267	273	VBD	smile	O	O	_
+,	273	274	,	,	O	O	_
+and	275	278	CC	and	O	O	_
+asked	279	284	VBD	ask	O	O	_
+who	285	288	WP	who	O	O	_
+had	289	292	VBD	have	O	O	_
+a	293	294	DT	a	O	O	_
+better	295	301	JJR	better	O	O	_
+claim	302	307	NN	claim	O	O	_
+to	308	310	TO	to	O	O	_
+beauty	311	317	NN	beauty	O	O	_
+'s	317	319	POS	's	O	O	_
+prize	320	325	NN	prize	O	O	_
+than	326	330	IN	than	O	O	_
+the	331	334	DT	the	O	O	_
+goddess	335	342	NN	goddess	O	O	_
+of	343	345	IN	of	O	O	_
+beauty	346	352	NN	beauty	O	O	_
+herself	353	360	PRP	herself	O	O	_
+.	360	361	.	.	O	O	_
+D	1
+7
+2	0	nsubj
+2	1	advmod
+2	5	conj_and
+5	0	nsubj
+5	6	dobj
+7	2	dep
+7	5	dep
+7	10	dobj
+7	14	prep_to
+7	17	prep_than
+7	20	nsubj
+10	8	det
+10	9	amod
+14	12	poss
+17	16	det
+17	19	prep_of
+EOX
+Y	1
+ROOT	0	0	22	1	SINV	1	0	22	4	S	2	0	7	3	NP	0	0	1	1	NNP	0	0	1	1	Aphrodite	0	0	1	0	ADVP	0	1	2	1	RB	0	1	2	1	only	1	1	2	0	VP	0	2	7	4	VP	0	2	3	1	VBD	0	2	3	1	smiled	2	2	3	0	,	0	3	4	1	,	3	3	4	0	CC	0	4	5	1	and	4	4	5	0	VP	0	5	7	2	VBD	0	5	6	1	asked	5	5	6	0	WHNP	0	6	7	1	WP	0	6	7	1	who	6	6	7	0	VP	0	7	20	4	VBD	0	7	8	1	had	7	7	8	0	NP	2	8	11	3	DT	0	8	9	1	a	8	8	9	0	JJR	0	9	10	1	better	9	9	10	0	NN	0	10	11	1	claim	10	10	11	0	PP	0	11	15	2	TO	0	11	12	1	to	11	11	12	0	NP	1	12	15	2	NP	0	12	14	2	NN	0	12	13	1	beauty	12	12	13	0	POS	0	13	14	1	's	13	13	14	0	NN	0	14	15	1	prize	14	14	15	0	PP	0	15	20	2	IN	0	15	16	1	than	15	15	16	0	NP	0	16	20	2	NP	1	16	18	2	DT	0	16	17	1	the	16	16	17	0	NN	0	17	18	1	goddess	17	17	18	0	PP	0	18	20	2	IN	0	18	19	1	of	18	18	19	0	NP	0	19	20	1	NN	0	19	20	1	beauty	19	19	20	0	NP	0	20	21	1	PRP	0	20	21	1	herself	20	20	21	0	.	0	21	22	1	.	21	21	22	0
+EOS
+C	20
+0	2	1	7	1
+3	10	8	11	17
+2	0	0	1	10
+2	13	13	20	14
+3	0	0	1	16
+1	6	6	17	6
+1	12	12	17	9
+1	9	8	10	8
+3	12	12	14	13
+0	12	12	13	3
+2	7	5	8	12
+2	11	10	20	13
+2	16	16	20	15
+2	3	3	4	10
+1	2	2	3	4
+3	14	12	15	18
+3	17	16	20	20
+1	0	0	1	4
+0	6	5	7	2
+3	20	20	21	20
+R
+elaboration	LeftToRight	-1	-1	0	0	3	21	0	1	2	nil
+elaboration	LeftToRight	-1	-1	0	0	1	17	0	0	2	nil
+attribution	RightToLeft	-1	-1	0	0	0	13	0	1	2	nil
+nil	None	-1	-1	0	0	0	8	0	0	0	Then the three greatest of the goddesses each claimed
+nil	None	-1	-1	0	9	0	13	1	1	0	that it was hers .
+nil	None	-1	-1	1	0	1	17	0	0	0	Hera claimed it as wife to Zeus , the All-father , and queen of all the gods .
+elaboration	LeftToRight	-1	-1	2	0	3	21	0	1	2	nil
+attribution	RightToLeft	-1	-1	2	0	2	20	0	1	2	nil
+nil	None	-1	-1	2	0	2	1	0	0	0	Athene claimed
+nil	None	-1	-1	2	2	2	20	1	1	0	that she had the better right , for the beauty of wisdom such as hers surpassed all else .
+joint	None	-1	-1	3	0	3	21	0	1	2	nil
+nil	None	-1	-1	3	0	3	3	0	0	0	Aphrodite only smiled ,
+nil	None	-1	-1	3	4	3	21	1	1	0	and asked who had a better claim to beauty 's prize than the goddess of beauty herself .
+EOD
+S	2
+T	34
+They	0	4	PRP	they	O	O	_
+fell	5	9	VBD	fall	O	O	_
+to	10	12	TO	to	O	O	_
+arguing	13	20	VBG	argue	O	O	_
+among	21	26	IN	among	O	O	_
+themselves	27	37	PRP	themselves	O	O	_
+;	37	38	:	;	O	O	_
+the	39	42	DT	the	O	O	_
+argument	43	51	NN	argument	O	O	_
+became	52	58	VBD	become	O	O	_
+a	59	60	DT	a	O	O	_
+quarrel	61	68	VBP	quarrel	O	O	_
+,	68	69	,	,	O	O	_
+and	70	73	CC	and	O	O	_
+the	74	77	DT	the	O	O	_
+quarrel	78	85	VBP	quarrel	O	O	_
+grew	86	90	VBD	grow	O	O	_
+more	91	95	JJR	more	O	O	_
+and	96	99	CC	and	O	O	_
+more	100	104	RBR	more	O	O	_
+bitter	105	111	JJ	bitter	O	O	_
+,	111	112	,	,	O	O	_
+and	113	116	CC	and	O	O	_
+each	117	121	DT	each	O	O	_
+called	122	128	VBN	call	O	O	_
+upon	129	133	IN	upon	O	O	_
+the	134	137	DT	the	O	O	_
+assembled	138	147	VBN	assemble	O	O	_
+guests	148	154	NNS	guest	O	O	_
+to	155	157	TO	to	O	O	_
+judge	158	163	VB	judge	O	O	_
+between	164	171	IN	between	O	O	_
+them	172	176	PRP	they	O	O	_
+.	176	177	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	3	prepc_to
+1	9	parataxis
+1	15	parataxis
+3	5	prep_among
+8	7	det
+9	8	nsubj
+9	11	ccomp
+9	15	conj_and
+9	24	conj_and
+11	10	nsubj
+15	14	nsubj
+15	16	ccomp
+15	24	conj_and
+16	17	acomp
+16	20	acomp
+17	20	conj_and
+20	19	advmod
+24	23	nsubj
+24	28	prep_upon
+28	26	det
+28	27	amod
+28	30	vmod
+30	29	aux
+30	32	prep_between
+EOX
+Y	1
+ROOT	0	0	34	1	S	0	0	34	4	S	1	0	6	2	NP	0	0	1	1	PRP	0	0	1	1	They	0	0	1	0	VP	0	1	6	2	VBD	0	1	2	1	fell	1	1	2	0	PP	0	2	6	2	TO	0	2	3	1	to	2	2	3	0	S	0	3	6	1	VP	0	3	6	2	VBG	0	3	4	1	arguing	3	3	4	0	PP	0	4	6	2	IN	0	4	5	1	among	4	4	5	0	NP	0	5	6	1	PRP	0	5	6	1	themselves	5	5	6	0	:	0	6	7	1	;	6	6	7	0	S	0	7	33	4	S	1	7	12	2	NP	1	7	9	2	DT	0	7	8	1	the	7	7	8	0	NN	0	8	9	1	argument	8	8	9	0	VP	0	9	12	2	VBD	0	9	10	1	became	9	9	10	0	SBAR	0	10	12	1	S	1	10	12	2	NP	0	10	11	1	DT	0	10	11	1	a	10	10	11	0	VP	0	11	12	1	VBP	0	11	12	1	quarrel	11	11	12	0	,	0	12	13	1	,	12	12	13	0	CC	0	13	14	1	and	13	13	14	0	S	0	14	33	4	S	1	14	21	2	NP	0	14	15	1	DT	0	14	15	1	the	14	14	15	0	VP	0	15	21	2	VBP	0	15	16	1	quarrel	15	15	16	0	SBAR	0	16	21	1	S	0	16	21	1	VP	0	16	21	2	VBD	0	16	17	1	grew	16	16	17	0	ADJP	0	17	21	3	ADJP	0	17	18	1	JJR	0	17	18	1	more	17	17	18	0	CC	0	18	19	1	and	18	18	19	0	ADJP	1	19	21	2	RBR	0	19	20	1	more	19	19	20	0	JJ	0	20	21	1	bitter	20	20	21	0	,	0	21	22	1	,	21	21	22	0	CC	0	22	23	1	and	22	22	23	0	S	1	23	33	2	NP	0	23	24	1	DT	0	23	24	1	each	23	23	24	0	VP	0	24	33	2	VBN	0	24	25	1	called	24	24	25	0	PP	0	25	33	2	IN	0	25	26	1	upon	25	25	26	0	NP	2	26	33	4	DT	0	26	27	1	the	26	26	27	0	VBN	0	27	28	1	assembled	27	27	28	0	NNS	0	28	29	1	guests	28	28	29	0	S	0	29	33	1	VP	1	29	33	2	TO	0	29	30	1	to	29	29	30	0	VP	0	30	33	2	VB	0	30	31	1	judge	30	30	31	0	PP	0	31	33	2	IN	0	31	32	1	between	31	31	32	0	NP	0	32	33	1	PRP	0	32	33	1	them	32	32	33	0	.	0	33	34	1	.	33	33	34	0
+EOS
+T	32
+But	178	181	CC	but	O	O	_
+the	182	185	DT	the	O	O	_
+other	186	191	JJ	other	O	O	_
+guests	192	198	NNS	guest	O	O	_
+refused	199	206	VBD	refuse	O	O	_
+,	206	207	,	,	O	O	_
+for	208	211	IN	for	O	O	_
+they	212	216	PRP	they	O	O	_
+knew	217	221	VBD	know	O	O	_
+well	222	226	RB	well	O	O	_
+enough	227	233	JJ	enough	O	O	_
+that	234	238	IN	that	O	O	_
+,	238	239	,	,	O	O	_
+whichever	240	249	WDT	whichever	O	O	_
+goddess	250	257	NN	goddess	O	O	_
+they	258	262	PRP	they	O	O	_
+chose	263	268	VBD	choose	O	O	_
+to	269	271	TO	to	O	O	_
+receive	272	279	VB	receive	O	O	_
+the	280	283	DT	the	O	O	_
+golden	284	290	JJ	golden	O	O	_
+apple	291	296	NN	apple	O	O	_
+,	296	297	,	,	O	O	_
+they	298	302	PRP	they	O	O	_
+would	303	308	MD	would	O	O	_
+make	309	313	VB	make	O	O	_
+enemies	314	321	NNS	enemy	O	O	_
+of	322	324	IN	of	O	O	_
+the	325	328	DT	the	O	O	_
+other	329	334	JJ	other	O	O	_
+two	335	338	CD	two	NUMBER	2.0	_
+.	338	339	.	.	O	O	_
+D	1
+4
+3	1	det
+3	2	amod
+4	0	cc
+4	3	nsubj
+4	8	advcl
+8	6	mark
+8	7	nsubj
+8	10	acomp
+8	25	ccomp
+10	9	advmod
+14	13	det
+16	14	dobj
+16	15	nsubj
+16	18	xcomp
+18	17	aux
+18	21	dobj
+21	19	det
+21	20	amod
+25	11	mark
+25	16	advcl
+25	23	nsubj
+25	24	aux
+25	26	dobj
+26	30	prep_of
+30	28	det
+30	29	amod
+EOX
+Y	1
+ROOT	0	0	32	1	S	2	0	32	4	CC	0	0	1	1	But	0	0	1	0	NP	2	1	4	3	DT	0	1	2	1	the	1	1	2	0	JJ	0	2	3	1	other	2	2	3	0	NNS	0	3	4	1	guests	3	3	4	0	VP	0	4	31	3	VBD	0	4	5	1	refused	4	4	5	0	,	0	5	6	1	,	5	5	6	0	SBAR	1	6	31	2	IN	0	6	7	1	for	6	6	7	0	S	1	7	31	2	NP	0	7	8	1	PRP	0	7	8	1	they	7	7	8	0	VP	0	8	31	3	VBD	0	8	9	1	knew	8	8	9	0	ADJP	1	9	11	2	RB	0	9	10	1	well	9	9	10	0	JJ	0	10	11	1	enough	10	10	11	0	SBAR	2	11	31	3	IN	0	11	12	1	that	11	11	12	0	,	0	12	13	1	,	12	12	13	0	S	3	13	31	4	SBAR	1	13	22	2	WHNP	1	13	15	2	WDT	0	13	14	1	whichever	13	13	14	0	NN	0	14	15	1	goddess	14	14	15	0	S	1	15	22	2	NP	0	15	16	1	PRP	0	15	16	1	they	15	15	16	0	VP	0	16	22	2	VBD	0	16	17	1	chose	16	16	17	0	S	0	17	22	1	VP	1	17	22	2	TO	0	17	18	1	to	17	17	18	0	VP	0	18	22	2	VB	0	18	19	1	receive	18	18	19	0	NP	2	19	22	3	DT	0	19	20	1	the	19	19	20	0	JJ	0	20	21	1	golden	20	20	21	0	NN	0	21	22	1	apple	21	21	22	0	,	0	22	23	1	,	22	22	23	0	NP	0	23	24	1	PRP	0	23	24	1	they	23	23	24	0	VP	1	24	31	2	MD	0	24	25	1	would	24	24	25	0	VP	0	25	31	2	VB	0	25	26	1	make	25	25	26	0	NP	0	26	31	2	NP	0	26	27	1	NNS	0	26	27	1	enemies	26	26	27	0	PP	0	27	31	2	IN	0	27	28	1	of	27	27	28	0	NP	2	28	31	3	DT	0	28	29	1	the	28	28	29	0	JJ	0	29	30	1	other	29	29	30	0	CD	0	30	31	1	two	30	30	31	0	.	0	31	32	1	.	31	31	32	0
+EOS
+C	15
+0	28	26	33	7
+1	21	19	22	12
+0	0	0	1	1
+0	10	10	11	4
+0	32	32	33	6
+0	14	14	15	5
+0	5	5	6	1
+1	30	28	31	15
+0	8	7	9	3
+0	23	23	24	6
+1	3	1	4	9
+1	15	15	16	9
+1	26	26	31	14
+1	23	23	24	9
+1	7	7	8	9
+R
+contrast	None	-1	-1	0	0	1	31	0	3	2	nil
+joint	None	-1	-1	0	0	0	33	0	4	2	nil
+nil	None	-1	-1	0	0	0	6	0	0	0	They fell to arguing among themselves ;
+joint	None	-1	-1	0	7	0	33	1	4	2	nil
+nil	None	-1	-1	0	7	0	12	1	1	0	the argument became a quarrel ,
+joint	None	-1	-1	0	13	0	33	2	4	2	nil
+nil	None	-1	-1	0	13	0	21	2	2	0	and the quarrel grew more and more bitter ,
+enablement	LeftToRight	-1	-1	0	22	0	33	3	4	2	nil
+nil	None	-1	-1	0	22	0	28	3	3	0	and each called upon the assembled guests
+nil	None	-1	-1	0	29	0	33	4	4	0	to judge between them .
+explanation	LeftToRight	-1	-1	1	0	1	31	0	3	2	nil
+nil	None	-1	-1	1	0	1	5	0	0	0	But the other guests refused ,
+attribution	RightToLeft	-1	-1	1	6	1	31	1	3	2	nil
+nil	None	-1	-1	1	6	1	10	1	1	0	for they knew well enough
+background	RightToLeft	-1	-1	1	11	1	31	2	3	2	nil
+nil	None	-1	-1	1	11	1	22	2	2	0	that , whichever goddess they chose to receive the golden apple ,
+nil	None	-1	-1	1	23	1	31	3	3	0	they would make enemies of the other two .
+EOD

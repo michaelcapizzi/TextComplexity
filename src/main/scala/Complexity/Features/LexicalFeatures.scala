@@ -16,6 +16,16 @@ import scala.collection.parallel.immutable.ParSeq
  */
 class LexicalFeatures (td: TextDocument) {
 
+  //distinct percentages
+  //gram = "word" or "lemma"
+  def getDistinctRatios(gram: String): Map[String, Double] = {
+    Map(
+      "nouns" -> td.filterCounterByPOS("noun", gram).size.toDouble,
+      "adjectives" -> td.filterCounterByPOS("adjective", gram).size.toDouble,
+      "verbs" -> td.filterCounterByPOS("verbs", gram).size.toDouble
+    )
+  }
+
   //word lengths
   def wordLengths(keepProper: Boolean): Vector[Double] = {
     if (keepProper) {
@@ -64,27 +74,20 @@ class LexicalFeatures (td: TextDocument) {
   }
 
 
-  //word concreteness
+  //word concreteness for all nouns, adjectives and verbs
+
   def getWordConcreteness: Vector[(String, Double)] = {
-    val allLemmas = td.lemmas(withPunctuation = false).
-                      flatten.        //remove paragraphs
-                      flatten         //remove sentences
-    for (l <- allLemmas) yield {
+    val allTokens = td.filterStopWords("lemma").
+                      keySet.
+                      map(_._1).                  //keep just the lemma
+                      toVector
+
+    for (l <- allTokens) yield {
       (
         l,                                      //the lemma
         concretenessMap.getOrElse(l, 99d)       //its concreteness score (0 - 5; 5 very concrete; 99 not in database)
       )
     }
-  }
-
-  //distinct percentages
-    //gram = "word" or "lemma"
-  def getDistinctRatios(gram: String): Map[String, Double] = {
-    Map(
-        "nouns" -> td.filterCounterByPOS("noun", gram).size.toDouble,
-        "adjectives" -> td.filterCounterByPOS("adjective", gram).size.toDouble,
-        "verbs" -> td.filterCounterByPOS("verbs", gram).size.toDouble
-    )
   }
 
   def wordConcretenessStats: Map[String, Double] = {
@@ -123,9 +126,12 @@ class LexicalFeatures (td: TextDocument) {
       td.gradeLevel.getOrElse("") -> 0d,
       "distinct word ratio" -> td.countRatio("word"),
       "distinct lemma ratio" -> td.countRatio("lemma"),
-      "% of distinct nouns in all lemmas" -> this.getDistinctRatios("lemma")("noun"),
-      "% of distinct verbs in all lemmas" -> this.getDistinctRatios("lemma")("verbs"),
-      "% of distinct adjectives in all lemmas" -> this.getDistinctRatios("lemma")("adjectives"),
+      "% of distinct nouns in all words" -> this.getDistinctRatios("word")("nouns") / td.totalCount("word"),
+      "% of distinct verbs in all words" -> this.getDistinctRatios("word")("verbs") / td.totalCount("word"),
+      "% of distinct adjectives in all words" -> this.getDistinctRatios("word")("adjectives") / td.totalCount("word"),
+      "% of distinct nouns in all lemmas" -> this.getDistinctRatios("lemma")("nouns") / td.totalCount("lemma"),
+      "% of distinct verbs in all lemmas" -> this.getDistinctRatios("lemma")("verbs") / td.totalCount("lemma"),
+      "% of distinct adjectives in all lemmas" -> this.getDistinctRatios("lemma")("adjectives") / td.totalCount("lemma"),
       "minimum word length" -> this.wordLengthStats(false)("minimum word length"),
       "25th %ile word length" -> this.wordLengthStats(false)("25th %ile word length"),
       "mean word length" -> this.wordLengthStats(false)("mean word length"),

@@ -1,0 +1,807 @@
+S	4
+T	14
+``	0	1	``	``	O	O	_
+You	1	4	PRP	you	O	O	_
+were	5	9	VBD	be	O	O	_
+born	10	14	VBN	bear	O	O	_
+blessed	15	22	VBN	bless	O	O	_
+,	22	23	,	,	O	O	_
+boy	24	27	NN	boy	O	O	_
+,	27	28	,	,	O	O	_
+with	29	33	IN	with	O	O	_
+land	34	38	NN	land	O	O	_
+of	39	41	IN	of	O	O	_
+your	42	46	PRP$	you	O	O	_
+own	47	50	JJ	own	O	O	_
+.	50	51	.	.	O	O	_
+D	1
+3
+3	1	nsubjpass
+3	2	auxpass
+3	4	dep
+4	6	dep
+4	9	prep_with
+9	12	prep_of
+12	11	poss
+EOX
+Y	1
+ROOT	0	0	14	1	S	2	0	14	4	``	0	0	1	1	``	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	You	1	1	2	0	VP	1	2	13	2	VBD	0	2	3	1	were	2	2	3	0	VP	0	3	13	2	VBN	0	3	4	1	born	3	3	4	0	S	0	4	13	1	VP	0	4	13	3	VBN	0	4	5	1	blessed	4	4	5	0	PRN	1	5	8	3	,	0	5	6	1	,	5	5	6	0	NP	0	6	7	1	NN	0	6	7	1	boy	6	6	7	0	,	0	7	8	1	,	7	7	8	0	PP	0	8	13	2	IN	0	8	9	1	with	8	8	9	0	NP	0	9	13	2	NP	0	9	10	1	NN	0	9	10	1	land	9	9	10	0	PP	0	10	13	2	IN	0	10	11	1	of	10	10	11	0	NP	1	11	13	2	PRP$	0	11	12	1	your	11	11	12	0	JJ	0	12	13	1	own	12	12	13	0	.	0	13	14	1	.	13	13	14	0
+EOS
+T	25
+If	52	54	IN	if	O	O	_
+you	55	58	PRP	you	O	O	_
+had	59	62	VBD	have	O	O	_
+n't	62	65	RB	not	O	O	_
+been	66	70	VBN	be	O	O	_
+,	70	71	,	,	O	O	_
+you	72	75	PRP	you	O	O	_
+'d	75	77	MD	would	O	O	_
+cry	78	81	VB	cry	O	O	_
+out	82	85	RP	out	O	O	_
+for	86	89	IN	for	O	O	_
+it	90	92	PRP	it	O	O	_
+while	93	98	IN	while	O	O	_
+you	99	102	PRP	you	O	O	_
+try	103	106	VBP	try	O	O	_
+to	107	109	TO	to	O	O	_
+survive	110	117	VB	survive	O	O	_
+...	117	118	:	...	O	O	_
+like	119	123	IN	like	O	O	_
+Mr.	124	127	NNP	Mr.	O	O	_
+Lanier	128	134	NNP	Lanier	PERSON	O	_
+and	135	138	CC	and	O	O	_
+Mr.	139	142	NNP	Mr.	O	O	_
+Avery	143	148	NNP	Avery	PERSON	O	_
+.	148	149	.	.	O	O	_
+D	1
+8
+4	0	mark
+4	1	nsubj
+4	2	aux
+4	3	neg
+8	4	advcl
+8	6	nsubj
+8	7	aux
+8	9	prt
+8	11	prep_for
+8	14	advcl
+14	12	mark
+14	13	nsubj
+14	16	xcomp
+14	20	prep_like
+14	23	prep_like
+16	15	aux
+20	19	nn
+20	23	conj_and
+23	22	nn
+EOX
+Y	1
+ROOT	0	0	25	1	S	3	0	25	5	SBAR	1	0	5	2	IN	0	0	1	1	If	0	0	1	0	S	1	1	5	2	NP	0	1	2	1	PRP	0	1	2	1	you	1	1	2	0	VP	2	2	5	3	VBD	0	2	3	1	had	2	2	3	0	RB	0	3	4	1	n't	3	3	4	0	VP	0	4	5	1	VBN	0	4	5	1	been	4	4	5	0	,	0	5	6	1	,	5	5	6	0	NP	0	6	7	1	PRP	0	6	7	1	you	6	6	7	0	VP	1	7	24	2	MD	0	7	8	1	'd	7	7	8	0	VP	0	8	24	4	VB	0	8	9	1	cry	8	8	9	0	PRT	0	9	10	1	RP	0	9	10	1	out	9	9	10	0	PP	0	10	12	2	IN	0	10	11	1	for	10	10	11	0	NP	0	11	12	1	PRP	0	11	12	1	it	11	11	12	0	SBAR	1	12	24	2	IN	0	12	13	1	while	12	12	13	0	S	1	13	24	2	NP	0	13	14	1	PRP	0	13	14	1	you	13	13	14	0	VP	0	14	24	4	VBP	0	14	15	1	try	14	14	15	0	S	0	15	17	1	VP	1	15	17	2	TO	0	15	16	1	to	15	15	16	0	VP	0	16	17	1	VB	0	16	17	1	survive	16	16	17	0	:	0	17	18	1	...	17	17	18	0	PP	0	18	24	2	IN	0	18	19	1	like	18	18	19	0	NP	0	19	24	3	NP	1	19	21	2	NNP	0	19	20	1	Mr.	19	19	20	0	NNP	0	20	21	1	Lanier	20	20	21	0	CC	0	21	22	1	and	21	21	22	0	NP	1	22	24	2	NNP	0	22	23	1	Mr.	22	22	23	0	NNP	0	23	24	1	Avery	23	23	24	0	.	0	24	25	1	.	24	24	25	0
+EOS
+T	8
+Maybe	150	155	RB	maybe	O	O	_
+even	156	160	RB	even	O	O	_
+do	161	163	VB	do	O	O	_
+what	164	168	WP	what	O	O	_
+they	169	173	PRP	they	O	O	_
+doing	174	179	VBG	do	O	O	_
+now	180	183	RB	now	DATE	PRESENT_REF	_
+.	183	184	.	.	O	O	_
+D	1
+2
+1	0	advmod
+2	1	advmod
+2	5	ccomp
+5	3	dobj
+5	4	nsubj
+5	6	advmod
+EOX
+Y	1
+ROOT	0	0	8	1	S	1	0	8	3	ADVP	1	0	2	2	RB	0	0	1	1	Maybe	0	0	1	0	RB	0	1	2	1	even	1	1	2	0	VP	0	2	7	2	VB	0	2	3	1	do	2	2	3	0	SBAR	1	3	7	2	WHNP	0	3	4	1	WP	0	3	4	1	what	3	3	4	0	S	1	4	7	2	NP	0	4	5	1	PRP	0	4	5	1	they	4	4	5	0	VP	0	5	7	2	VBG	0	5	6	1	doing	5	5	6	0	ADVP	0	6	7	1	RB	0	6	7	1	now	6	6	7	0	.	0	7	8	1	.	7	7	8	0
+EOS
+T	25
+It	185	187	PRP	it	O	O	_
+'s	187	189	VBZ	be	O	O	_
+hard	190	194	JJ	hard	O	O	_
+on	195	197	IN	on	O	O	_
+a	198	199	DT	a	O	O	_
+man	200	203	NN	man	O	O	_
+to	204	206	TO	to	O	O	_
+give	207	211	VB	give	O	O	_
+up	212	214	RP	up	O	O	_
+,	214	215	,	,	O	O	_
+but	216	219	CC	but	O	O	_
+sometimes	220	229	RB	sometimes	O	O	_
+it	230	232	PRP	it	O	O	_
+seems	233	238	VBZ	seem	O	O	_
+there	239	244	RB	there	O	O	_
+just	245	249	RB	just	O	O	_
+ai	250	252	VBP	be	O	O	_
+n't	252	255	RB	not	O	O	_
+nothing	256	263	NN	nothing	O	O	_
+else	264	268	RB	else	O	O	_
+he	269	271	PRP	he	O	O	_
+can	272	275	MD	can	O	O	_
+do	276	278	VB	do	O	O	_
+.	278	279	.	.	O	O	_
+''	279	280	''	''	O	O	_
+D	1
+2
+2	0	nsubj
+2	1	cop
+2	5	prep_on
+2	7	xcomp
+2	13	conj_but
+5	4	det
+7	6	aux
+7	8	prt
+13	11	advmod
+13	12	nsubj
+13	18	ccomp
+18	14	nsubj
+18	15	advmod
+18	16	cop
+18	17	neg
+18	19	advmod
+18	22	rcmod
+22	20	nsubj
+22	21	aux
+EOX
+Y	1
+ROOT	0	0	25	1	S	0	0	25	6	S	1	0	9	2	NP	0	0	1	1	PRP	0	0	1	1	It	0	0	1	0	VP	1	1	9	3	VBZ	0	1	2	1	's	1	1	2	0	ADJP	0	2	6	2	JJ	0	2	3	1	hard	2	2	3	0	PP	0	3	6	2	IN	0	3	4	1	on	3	3	4	0	NP	1	4	6	2	DT	0	4	5	1	a	4	4	5	0	NN	0	5	6	1	man	5	5	6	0	S	0	6	9	1	VP	1	6	9	2	TO	0	6	7	1	to	6	6	7	0	VP	0	7	9	2	VB	0	7	8	1	give	7	7	8	0	PRT	0	8	9	1	RP	0	8	9	1	up	8	8	9	0	,	0	9	10	1	,	9	9	10	0	CC	0	10	11	1	but	10	10	11	0	S	2	11	23	3	ADVP	0	11	12	1	RB	0	11	12	1	sometimes	11	11	12	0	NP	0	12	13	1	PRP	0	12	13	1	it	12	12	13	0	VP	0	13	23	2	VBZ	0	13	14	1	seems	13	13	14	0	SBAR	0	14	23	1	S	2	14	23	3	NP	0	14	15	1	RB	0	14	15	1	there	14	14	15	0	ADVP	0	15	16	1	RB	0	15	16	1	just	15	15	16	0	VP	2	16	23	3	VBP	0	16	17	1	ai	16	16	17	0	RB	0	17	18	1	n't	17	17	18	0	NP	0	18	23	2	NP	0	18	20	2	NN	0	18	19	1	nothing	18	18	19	0	RB	0	19	20	1	else	19	19	20	0	SBAR	0	20	23	1	S	1	20	23	2	NP	0	20	21	1	PRP	0	20	21	1	he	20	20	21	0	VP	1	21	23	2	MD	0	21	22	1	can	21	21	22	0	VP	0	22	23	1	VB	0	22	23	1	do	22	22	23	0	.	0	23	24	1	.	23	23	24	0	''	0	24	25	1	''	24	24	25	0
+EOS
+C	14
+1	20	19	24	10
+0	9	9	13	2
+3	0	0	1	2
+1	6	6	7	1
+1	11	11	12	2
+1	1	1	2	1
+3	5	4	6	15
+0	12	11	13	3
+2	4	4	5	10
+0	11	11	12	1
+0	1	1	2	1
+1	23	22	24	12
+1	13	13	14	1
+3	20	20	21	15
+R
+elaboration	LeftToRight	-1	-1	0	0	3	24	0	3	2	nil
+elaboration	LeftToRight	-1	-1	0	0	1	24	0	2	2	nil
+nil	None	-1	-1	0	0	0	13	0	0	0	`` You were born blessed , boy , with land of your own .
+condition	RightToLeft	-1	-1	1	0	1	24	0	2	2	nil
+nil	None	-1	-1	1	0	1	5	0	0	0	If you had n't been ,
+temporal	None	-1	-1	1	6	1	24	1	2	2	nil
+nil	None	-1	-1	1	6	1	11	1	1	0	you 'd cry out for it
+nil	None	-1	-1	1	12	1	24	2	2	0	while you try to survive ... like Mr. Lanier and Mr. Avery .
+elaboration	LeftToRight	-1	-1	2	0	3	24	0	3	2	nil
+nil	None	-1	-1	2	0	2	7	0	0	0	Maybe even do what they doing now .
+contrast	RightToLeft	-1	-1	3	0	3	24	0	3	2	nil
+enablement	LeftToRight	-1	-1	3	0	3	9	0	1	2	nil
+nil	None	-1	-1	3	0	3	5	0	0	0	It 's hard on a man
+nil	None	-1	-1	3	6	3	9	1	1	0	to give up ,
+elaboration	LeftToRight	-1	-1	3	10	3	24	2	3	2	nil
+nil	None	-1	-1	3	10	3	18	2	2	0	but sometimes it seems there just ai n't nothing
+nil	None	-1	-1	3	19	3	24	3	3	0	else he can do . ''
+EOD
+S	1
+T	13
+``	0	1	``	``	O	O	_
+I	1	2	PRP	I	O	O	_
+...	2	3	:	...	O	O	_
+I	4	5	PRP	I	O	O	_
+'m	5	7	VBP	be	O	O	_
+sorry	8	13	JJ	sorry	O	O	_
+,	13	14	,	,	O	O	_
+Papa	15	19	NN	papa	O	O	_
+,	19	20	,	,	O	O	_
+''	20	21	''	''	O	O	_
+Stacey	22	28	NNP	Stacey	PERSON	O	_
+muttered	29	37	VBD	mutter	O	O	_
+.	37	38	.	.	O	O	_
+D	1
+11
+1	5	dep
+5	3	nsubj
+5	4	cop
+5	7	dep
+11	1	dep
+11	10	nsubj
+EOX
+Y	1
+ROOT	0	0	13	1	S	5	0	13	7	``	0	0	1	1	``	0	0	1	0	FRAG	0	1	8	3	NP	0	1	2	1	PRP	0	1	2	1	I	1	1	2	0	:	0	2	3	1	...	2	2	3	0	S	1	3	8	2	NP	0	3	4	1	PRP	0	3	4	1	I	3	3	4	0	VP	1	4	8	4	VBP	0	4	5	1	'm	4	4	5	0	ADJP	0	5	6	1	JJ	0	5	6	1	sorry	5	5	6	0	,	0	6	7	1	,	6	6	7	0	NP	0	7	8	1	NN	0	7	8	1	Papa	7	7	8	0	,	0	8	9	1	,	8	8	9	0	''	0	9	10	1	''	9	9	10	0	NP	0	10	11	1	NNP	0	10	11	1	Stacey	10	10	11	0	VP	0	11	12	1	VBD	0	11	12	1	muttered	11	11	12	0	.	0	12	13	1	.	12	12	13	0
+EOS
+C	3
+0	10	10	11	1
+0	3	3	4	2
+0	1	1	2	2
+R
+attribution	LeftToRight	-1	-1	0	0	0	12	0	1	2	nil
+nil	None	-1	-1	0	0	0	9	0	0	0	`` I ... I 'm sorry , Papa , ''
+nil	None	-1	-1	0	10	0	12	1	1	0	Stacey muttered .
+EOD
+S	1
+T	16
+After	0	5	IN	after	O	O	_
+a	6	7	DT	a	O	O	_
+moment	8	14	NN	moment	O	O	_
+,	14	15	,	,	O	O	_
+Papa	16	20	NN	papa	PERSON	O	_
+reached	21	28	VBD	reach	O	O	_
+out	29	32	RP	out	O	O	_
+and	33	36	CC	and	O	O	_
+draped	37	43	VBD	drape	O	O	_
+his	44	47	PRP$	he	O	O	_
+arm	48	51	NN	arm	O	O	_
+over	52	56	IN	over	O	O	_
+Stacey	57	63	NNP	Stacey	PERSON	O	_
+'s	63	65	POS	's	O	O	_
+shoulder	66	74	NN	shoulder	O	O	_
+.	74	75	.	.	O	O	_
+D	1
+5
+2	1	det
+5	2	prep_after
+5	4	nsubj
+5	6	prt
+5	8	conj_and
+8	4	nsubj
+8	10	dobj
+8	14	prep_over
+10	9	poss
+14	12	poss
+EOX
+Y	1
+ROOT	0	0	16	1	S	3	0	16	5	PP	0	0	3	2	IN	0	0	1	1	After	0	0	1	0	NP	1	1	3	2	DT	0	1	2	1	a	1	1	2	0	NN	0	2	3	1	moment	2	2	3	0	,	0	3	4	1	,	3	3	4	0	NP	0	4	5	1	NN	0	4	5	1	Papa	4	4	5	0	VP	0	5	15	3	VP	0	5	7	2	VBD	0	5	6	1	reached	5	5	6	0	PRT	0	6	7	1	RP	0	6	7	1	out	6	6	7	0	CC	0	7	8	1	and	7	7	8	0	VP	0	8	15	3	VBD	0	8	9	1	draped	8	8	9	0	NP	1	9	11	2	PRP$	0	9	10	1	his	9	9	10	0	NN	0	10	11	1	arm	10	10	11	0	PP	0	11	15	2	IN	0	11	12	1	over	11	11	12	0	NP	1	12	15	2	NP	0	12	14	2	NNP	0	12	13	1	Stacey	12	12	13	0	POS	0	13	14	1	's	13	13	14	0	NN	0	14	15	1	shoulder	14	14	15	0	.	0	15	16	1	.	15	15	16	0
+EOS
+C	5
+0	2	1	3	2
+0	10	9	11	3
+0	9	9	10	4
+0	14	12	15	5
+0	12	12	14	1
+R
+background	RightToLeft	-1	-1	0	0	0	15	0	2	2	nil
+nil	None	-1	-1	0	0	0	3	0	0	0	After a moment ,
+joint	None	-1	-1	0	4	0	15	1	2	2	nil
+nil	None	-1	-1	0	4	0	6	1	1	0	Papa reached out
+nil	None	-1	-1	0	7	0	15	2	2	0	and draped his arm over Stacey 's shoulder .
+EOD
+S	1
+T	19
+``	0	1	``	``	O	O	_
+Papa	1	5	NN	papa	O	O	_
+,	5	6	,	,	O	O	_
+''	6	7	''	''	O	O	_
+I	8	9	PRP	I	O	O	_
+said	10	14	VBD	say	O	O	_
+,	14	15	,	,	O	O	_
+standing	16	24	VBG	stand	O	O	_
+to	25	27	TO	to	O	O	_
+join	28	32	VB	join	O	O	_
+them	33	37	PRP	they	O	O	_
+,	37	38	,	,	O	O	_
+``	39	40	``	``	O	O	_
+we	40	42	PRP	we	O	O	_
+giving	43	49	VBG	give	O	O	_
+up	50	52	RP	up	O	O	_
+too	53	56	RB	too	O	O	_
+?	56	57	.	?	O	O	_
+''	57	58	''	''	O	O	_
+D	1
+5
+5	1	dep
+5	4	nsubj
+5	7	xcomp
+7	9	xcomp
+9	8	aux
+9	10	dobj
+9	14	dep
+14	13	nsubj
+14	15	prt
+14	16	advmod
+EOX
+Y	1
+ROOT	0	0	19	1	S	5	0	19	8	``	0	0	1	1	``	0	0	1	0	FRAG	0	1	2	1	NP	0	1	2	1	NN	0	1	2	1	Papa	1	1	2	0	,	0	2	3	1	,	2	2	3	0	''	0	3	4	1	''	3	3	4	0	NP	0	4	5	1	PRP	0	4	5	1	I	4	4	5	0	VP	0	5	17	3	VBD	0	5	6	1	said	5	5	6	0	,	0	6	7	1	,	6	6	7	0	S	0	7	17	1	VP	0	7	17	2	VBG	0	7	8	1	standing	7	7	8	0	S	0	8	17	1	VP	1	8	17	2	TO	0	8	9	1	to	8	8	9	0	VP	0	9	17	5	VB	0	9	10	1	join	9	9	10	0	NP	0	10	11	1	PRP	0	10	11	1	them	10	10	11	0	,	0	11	12	1	,	11	11	12	0	``	0	12	13	1	``	12	12	13	0	S	1	13	17	2	NP	0	13	14	1	PRP	0	13	14	1	we	13	13	14	0	VP	0	14	17	3	VBG	0	14	15	1	giving	14	14	15	0	PRT	0	15	16	1	RP	0	15	16	1	up	15	15	16	0	ADVP	0	16	17	1	RB	0	16	17	1	too	16	16	17	0	.	0	17	18	1	?	17	17	18	0	''	0	18	19	1	''	18	18	19	0
+EOS
+C	3
+0	10	10	11	2
+0	13	13	14	2
+0	4	4	5	1
+R
+elaboration	LeftToRight	-1	-1	0	0	0	18	0	3	2	nil
+attribution	LeftToRight	-1	-1	0	0	0	6	0	1	2	nil
+nil	None	-1	-1	0	0	0	3	0	0	0	`` Papa , ''
+nil	None	-1	-1	0	4	0	6	1	1	0	I said ,
+attribution	RightToLeft	-1	-1	0	7	0	18	2	3	2	nil
+nil	None	-1	-1	0	7	0	11	2	2	0	standing to join them ,
+nil	None	-1	-1	0	12	0	18	3	3	0	`` we giving up too ? ''
+EOD
+S	11
+T	18
+Papa	0	4	NN	papa	O	O	_
+looked	5	11	VBD	look	O	O	_
+down	12	16	RP	down	O	O	_
+at	17	19	IN	at	O	O	_
+me	20	22	PRP	I	O	O	_
+and	23	26	CC	and	O	O	_
+brought	27	34	VBD	bring	O	O	_
+me	35	37	PRP	I	O	O	_
+closer	38	44	RBR	closer	O	O	_
+,	44	45	,	,	O	O	_
+then	46	50	RB	then	O	O	_
+waved	51	56	VBD	wave	O	O	_
+his	57	60	PRP$	he	O	O	_
+hand	61	65	NN	hand	O	O	_
+toward	66	72	IN	toward	O	O	_
+the	73	76	DT	the	O	O	_
+drive	77	82	NN	drive	O	O	_
+.	82	83	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	2	prt
+1	4	prep_at
+1	6	conj_and
+1	11	dep
+6	0	nsubj
+6	7	dobj
+6	8	advmod
+11	10	advmod
+11	13	dobj
+11	16	prep_toward
+13	12	poss
+16	15	det
+EOX
+Y	1
+ROOT	0	0	18	1	S	1	0	18	3	NP	0	0	1	1	NN	0	0	1	1	Papa	0	0	1	0	VP	0	1	17	6	VP	0	1	5	3	VBD	0	1	2	1	looked	1	1	2	0	PRT	0	2	3	1	RP	0	2	3	1	down	2	2	3	0	PP	0	3	5	2	IN	0	3	4	1	at	3	3	4	0	NP	0	4	5	1	PRP	0	4	5	1	me	4	4	5	0	CC	0	5	6	1	and	5	5	6	0	VP	0	6	9	3	VBD	0	6	7	1	brought	6	6	7	0	NP	0	7	8	1	PRP	0	7	8	1	me	7	7	8	0	ADVP	0	8	9	1	RBR	0	8	9	1	closer	8	8	9	0	,	0	9	10	1	,	9	9	10	0	ADVP	0	10	11	1	RB	0	10	11	1	then	10	10	11	0	VP	0	11	17	3	VBD	0	11	12	1	waved	11	11	12	0	NP	1	12	14	2	PRP$	0	12	13	1	his	12	12	13	0	NN	0	13	14	1	hand	13	13	14	0	PP	0	14	17	2	IN	0	14	15	1	toward	14	14	15	0	NP	1	15	17	2	DT	0	15	16	1	the	15	15	16	0	NN	0	16	17	1	drive	16	16	17	0	.	0	17	18	1	.	17	17	18	0
+EOS
+T	11
+``	84	85	``	``	O	O	_
+You	85	88	PRP	you	O	O	_
+see	89	92	VBP	see	O	O	_
+that	93	97	IN	that	O	O	_
+fig	98	101	NN	fig	O	O	_
+tree	102	106	NN	tree	O	O	_
+over	107	111	IN	over	O	O	_
+yonder	112	118	NN	yonder	O	O	_
+,	118	119	,	,	O	O	_
+Cassie	120	126	NNP	Cassie	PERSON	O	_
+?	126	127	.	?	O	O	_
+D	1
+2
+2	1	nsubj
+2	5	prep_that
+2	7	prep_over
+5	4	nn
+7	9	appos
+EOX
+Y	1
+ROOT	0	0	11	1	S	2	0	11	4	``	0	0	1	1	``	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	You	1	1	2	0	VP	0	2	10	3	VBP	0	2	3	1	see	2	2	3	0	PP	0	3	6	2	IN	0	3	4	1	that	3	3	4	0	NP	1	4	6	2	NN	0	4	5	1	fig	4	4	5	0	NN	0	5	6	1	tree	5	5	6	0	PP	0	6	10	2	IN	0	6	7	1	over	6	6	7	0	NP	0	7	10	3	NP	0	7	8	1	NN	0	7	8	1	yonder	7	7	8	0	,	0	8	9	1	,	8	8	9	0	NP	0	9	10	1	NNP	0	9	10	1	Cassie	9	9	10	0	.	0	10	11	1	?	10	10	11	0
+EOS
+T	35
+Them	128	132	NNP	Them	O	O	_
+other	133	138	JJ	other	O	O	_
+trees	139	144	NNS	tree	O	O	_
+all	145	148	DT	all	O	O	_
+around	149	155	IN	around	O	O	_
+...	155	156	:	...	O	O	_
+that	157	161	IN	that	O	O	_
+oak	162	165	NN	oak	O	O	_
+and	166	169	CC	and	O	O	_
+walnut	170	176	NN	walnut	O	O	_
+,	176	177	,	,	O	O	_
+they	178	182	PRP	they	O	O	_
+'re	182	185	VBP	be	O	O	_
+a	186	187	DT	a	O	O	_
+lot	188	191	NN	lot	O	O	_
+bigger	192	198	JJR	bigger	O	O	_
+and	199	202	CC	and	O	O	_
+they	203	207	PRP	they	O	O	_
+take	208	212	VBP	take	O	O	_
+up	213	215	RP	up	O	O	_
+more	216	220	JJR	more	O	O	_
+room	221	225	NN	room	O	O	_
+and	226	229	CC	and	O	O	_
+give	230	234	VB	give	O	O	_
+so	235	237	RB	so	O	O	_
+much	238	242	JJ	much	O	O	_
+shade	243	248	NN	shade	O	O	_
+they	249	253	PRP	they	O	O	_
+almost	254	260	RB	almost	O	O	_
+overshadow	261	271	VBP	overshadow	O	O	_
+that	272	276	DT	that	O	O	_
+little	277	283	JJ	little	O	O	_
+ole	284	287	NN	ole	O	O	_
+fig	288	291	NN	fig	O	O	_
+.	291	292	.	.	O	O	_
+D	1
+2
+2	0	nn
+2	1	amod
+2	4	advmod
+2	15	dep
+2	18	dep
+4	3	dep
+7	9	conj_and
+14	13	det
+15	7	prep_that
+15	9	prep_that
+15	11	nsubj
+15	12	cop
+15	14	npadvmod
+15	18	conj_and
+15	23	conj_and
+18	17	nsubj
+18	19	prt
+18	21	dobj
+18	23	conj_and
+21	20	amod
+23	17	nsubj
+23	26	dobj
+23	29	dep
+25	24	advmod
+26	25	amod
+29	27	nsubj
+29	28	advmod
+29	33	dobj
+33	30	det
+33	31	amod
+33	32	nn
+EOX
+Y	1
+ROOT	0	0	35	1	NP	0	0	35	4	NP	0	0	5	2	NP	2	0	3	3	NNP	0	0	1	1	Them	0	0	1	0	JJ	0	1	2	1	other	1	1	2	0	NNS	0	2	3	1	trees	2	2	3	0	ADVP	1	3	5	2	DT	0	3	4	1	all	3	3	4	0	IN	0	4	5	1	around	4	4	5	0	:	0	5	6	1	...	5	5	6	0	S	0	6	34	3	S	3	6	16	4	PP	0	6	10	2	IN	0	6	7	1	that	6	6	7	0	NP	0	7	10	3	NN	0	7	8	1	oak	7	7	8	0	CC	0	8	9	1	and	8	8	9	0	NN	0	9	10	1	walnut	9	9	10	0	,	0	10	11	1	,	10	10	11	0	NP	0	11	12	1	PRP	0	11	12	1	they	11	11	12	0	VP	1	12	16	2	VBP	0	12	13	1	're	12	12	13	0	ADJP	1	13	16	2	NP	1	13	15	2	DT	0	13	14	1	a	13	13	14	0	NN	0	14	15	1	lot	14	14	15	0	JJR	0	15	16	1	bigger	15	15	16	0	CC	0	16	17	1	and	16	16	17	0	S	1	17	34	2	NP	0	17	18	1	PRP	0	17	18	1	they	17	17	18	0	VP	0	18	34	3	VP	0	18	22	3	VBP	0	18	19	1	take	18	18	19	0	PRT	0	19	20	1	RP	0	19	20	1	up	19	19	20	0	NP	1	20	22	2	JJR	0	20	21	1	more	20	20	21	0	NN	0	21	22	1	room	21	21	22	0	CC	0	22	23	1	and	22	22	23	0	VP	0	23	34	3	VB	0	23	24	1	give	23	23	24	0	NP	1	24	27	2	ADJP	1	24	26	2	RB	0	24	25	1	so	24	24	25	0	JJ	0	25	26	1	much	25	25	26	0	NN	0	26	27	1	shade	26	26	27	0	SBAR	0	27	34	1	S	2	27	34	3	NP	0	27	28	1	PRP	0	27	28	1	they	27	27	28	0	ADVP	0	28	29	1	RB	0	28	29	1	almost	28	28	29	0	VP	0	29	34	2	VBP	0	29	30	1	overshadow	29	29	30	0	NP	3	30	34	4	DT	0	30	31	1	that	30	30	31	0	JJ	0	31	32	1	little	31	31	32	0	NN	0	32	33	1	ole	32	32	33	0	NN	0	33	34	1	fig	33	33	34	0	.	0	34	35	1	.	34	34	35	0
+EOS
+T	25
+But	293	296	CC	but	O	O	_
+that	297	301	DT	that	O	O	_
+fig	302	305	NN	fig	O	O	_
+tree	306	310	NN	tree	O	O	_
+'s	310	312	POS	's	O	O	_
+got	313	316	VBD	get	O	O	_
+roots	317	322	NNS	root	O	O	_
+that	323	327	WDT	that	O	O	_
+run	328	331	VBP	run	O	O	_
+deep	332	336	RB	deep	O	O	_
+,	336	337	,	,	O	O	_
+and	338	341	CC	and	O	O	_
+it	342	344	PRP	it	O	O	_
+belongs	345	352	VBZ	belong	O	O	_
+in	353	355	IN	in	O	O	_
+that	356	360	DT	that	O	O	_
+yard	361	365	NN	yard	O	O	_
+as	366	368	RB	as	O	O	_
+much	369	373	RB	much	O	O	_
+as	374	376	IN	as	O	O	_
+that	377	381	DT	that	O	O	_
+oak	382	385	NN	oak	O	O	_
+and	386	389	CC	and	O	O	_
+walnut	390	396	NN	walnut	O	O	_
+.	396	397	.	.	O	O	_
+D	1
+5
+2	1	det
+2	3	poss
+5	2	nsubj
+5	6	dobj
+5	13	conj_and
+6	8	rcmod
+8	7	nsubj
+8	9	advmod
+13	12	nsubj
+13	16	prep_in
+16	15	det
+16	17	advmod
+16	18	advmod
+16	19	amod
+16	21	dep
+16	23	dep
+21	20	det
+21	23	conj_and
+EOX
+Y	1
+ROOT	0	0	25	1	S	1	0	25	6	CC	0	0	1	1	But	0	0	1	0	S	1	1	10	2	NP	1	1	5	2	DT	0	1	2	1	that	1	1	2	0	NP	0	2	5	2	NP	0	2	3	1	NN	0	2	3	1	fig	2	2	3	0	NP	0	3	5	2	NN	0	3	4	1	tree	3	3	4	0	POS	0	4	5	1	's	4	4	5	0	VP	0	5	10	2	VBD	0	5	6	1	got	5	5	6	0	NP	0	6	10	2	NP	0	6	7	1	NNS	0	6	7	1	roots	6	6	7	0	SBAR	1	7	10	2	WHNP	0	7	8	1	WDT	0	7	8	1	that	7	7	8	0	S	0	8	10	1	VP	0	8	10	2	VBP	0	8	9	1	run	8	8	9	0	ADVP	0	9	10	1	RB	0	9	10	1	deep	9	9	10	0	,	0	10	11	1	,	10	10	11	0	CC	0	11	12	1	and	11	11	12	0	S	1	12	24	2	NP	0	12	13	1	PRP	0	12	13	1	it	12	12	13	0	VP	0	13	24	2	VBZ	0	13	14	1	belongs	13	13	14	0	PP	0	14	24	2	IN	0	14	15	1	in	14	14	15	0	NP	0	15	24	5	NP	1	15	17	2	DT	0	15	16	1	that	15	15	16	0	NN	0	16	17	1	yard	16	16	17	0	RB	0	17	18	1	as	17	17	18	0	RB	0	18	19	1	much	18	18	19	0	IN	0	19	20	1	as	19	19	20	0	NP	1	20	24	4	DT	0	20	21	1	that	20	20	21	0	NN	0	21	22	1	oak	21	21	22	0	CC	0	22	23	1	and	22	22	23	0	NN	0	23	24	1	walnut	23	23	24	0	.	0	24	25	1	.	24	24	25	0
+EOS
+T	25
+It	398	400	PRP	it	O	O	_
+keeps	401	406	VBZ	keep	O	O	_
+blooming	407	415	VBG	bloom	O	O	_
+,	415	416	,	,	O	O	_
+bearing	417	424	VBG	bear	O	O	_
+fruit	425	430	NN	fruit	O	O	_
+year	431	435	NN	year	DURATION	P1Y	_
+after	436	441	IN	after	O	O	_
+year	442	446	NN	year	DURATION	P1Y	_
+,	446	447	,	,	O	O	_
+knowing	448	455	VBG	know	O	O	_
+all	456	459	PDT	all	O	O	_
+the	460	463	DT	the	O	O	_
+time	464	468	NN	time	O	O	_
+it	469	471	PRP	it	O	O	_
+'ll	471	474	MD	'll	O	O	_
+never	475	480	RB	never	O	O	_
+get	481	484	VB	get	O	O	_
+as	485	487	RB	as	O	O	_
+big	488	491	JJ	big	O	O	_
+as	492	494	IN	as	O	O	_
+them	495	499	PRP	they	O	O	_
+other	500	505	JJ	other	O	O	_
+trees	506	511	NNS	tree	O	O	_
+.	511	512	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	2	dobj
+1	4	parataxis
+1	10	xcomp
+4	6	tmod
+4	8	prep_after
+6	5	nn
+10	13	dobj
+13	11	predet
+13	12	det
+13	17	rcmod
+17	14	nsubj
+17	15	aux
+17	16	neg
+17	23	dobj
+19	18	advmod
+19	21	prep_as
+23	19	amod
+23	22	amod
+EOX
+Y	1
+ROOT	0	0	25	1	S	1	0	25	3	NP	0	0	1	1	PRP	0	0	1	1	It	0	0	1	0	VP	0	1	24	4	VBZ	0	1	2	1	keeps	1	1	2	0	NP	0	2	3	1	VBG	0	2	3	1	blooming	2	2	3	0	PRN	1	3	10	3	,	0	3	4	1	,	3	3	4	0	S	0	4	9	1	VP	0	4	9	3	VBG	0	4	5	1	bearing	4	4	5	0	NP	1	5	7	2	NN	0	5	6	1	fruit	5	5	6	0	NN	0	6	7	1	year	6	6	7	0	PP	0	7	9	2	IN	0	7	8	1	after	7	7	8	0	NP	0	8	9	1	NN	0	8	9	1	year	8	8	9	0	,	0	9	10	1	,	9	9	10	0	S	0	10	24	1	VP	0	10	24	2	VBG	0	10	11	1	knowing	10	10	11	0	NP	0	11	24	2	NP	2	11	14	3	PDT	0	11	12	1	all	11	11	12	0	DT	0	12	13	1	the	12	12	13	0	NN	0	13	14	1	time	13	13	14	0	SBAR	0	14	24	1	S	1	14	24	2	NP	0	14	15	1	PRP	0	14	15	1	it	14	14	15	0	VP	2	15	24	3	MD	0	15	16	1	'll	15	15	16	0	ADVP	0	16	17	1	RB	0	16	17	1	never	16	16	17	0	VP	0	17	24	2	VB	0	17	18	1	get	17	17	18	0	NP	2	18	24	3	ADJP	1	18	22	3	RB	0	18	19	1	as	18	18	19	0	JJ	0	19	20	1	big	19	19	20	0	PP	0	20	22	2	IN	0	20	21	1	as	20	20	21	0	NP	0	21	22	1	PRP	0	21	22	1	them	21	21	22	0	JJ	0	22	23	1	other	22	22	23	0	NNS	0	23	24	1	trees	23	23	24	0	.	0	24	25	1	.	24	24	25	0
+EOS
+T	12
+Just	513	517	RB	just	O	O	_
+keeps	518	523	VBZ	keep	O	O	_
+on	524	526	IN	on	O	O	_
+growing	527	534	VBG	grow	O	O	_
+and	535	538	CC	and	O	O	_
+doing	539	544	VBG	do	O	O	_
+what	545	549	WP	what	O	O	_
+it	550	552	PRP	it	O	O	_
+got	553	556	VBD	get	O	O	_
+ta	556	558	NN	ta	O	O	_
+do	559	561	VBP	do	O	O	_
+.	561	562	.	.	O	O	_
+D	1
+10
+1	0	advmod
+1	3	prepc_on
+1	5	prepc_on
+3	5	conj_and
+3	8	ccomp
+8	6	dobj
+8	7	nsubj
+8	9	dobj
+10	1	csubj
+EOX
+Y	1
+ROOT	0	0	12	1	S	1	0	12	3	SBAR	1	0	10	2	RB	0	0	1	1	Just	0	0	1	0	S	0	1	10	1	VP	0	1	10	2	VBZ	0	1	2	1	keeps	1	1	2	0	PP	0	2	10	2	IN	0	2	3	1	on	2	2	3	0	S	0	3	10	1	VP	0	3	10	4	VBG	0	3	4	1	growing	3	3	4	0	CC	0	4	5	1	and	4	4	5	0	VBG	0	5	6	1	doing	5	5	6	0	SBAR	1	6	10	2	WHNP	0	6	7	1	WP	0	6	7	1	what	6	6	7	0	S	1	7	10	2	NP	0	7	8	1	PRP	0	7	8	1	it	7	7	8	0	VP	0	8	10	2	VBD	0	8	9	1	got	8	8	9	0	NP	0	9	10	1	NN	0	9	10	1	ta	9	9	10	0	VP	0	10	11	1	VBP	0	10	11	1	do	10	10	11	0	.	0	11	12	1	.	11	11	12	0
+EOS
+T	6
+It	563	565	PRP	it	O	O	_
+do	566	568	VBP	do	O	O	_
+n't	568	571	RB	not	O	O	_
+give	572	576	VB	give	O	O	_
+up	577	579	RP	up	O	O	_
+.	579	580	.	.	O	O	_
+D	1
+3
+3	0	nsubj
+3	1	aux
+3	2	neg
+3	4	prt
+EOX
+Y	1
+ROOT	0	0	6	1	S	1	0	6	3	NP	0	0	1	1	PRP	0	0	1	1	It	0	0	1	0	VP	2	1	5	3	VBP	0	1	2	1	do	1	1	2	0	RB	0	2	3	1	n't	2	2	3	0	VP	0	3	5	2	VB	0	3	4	1	give	3	3	4	0	PRT	0	4	5	1	RP	0	4	5	1	up	4	4	5	0	.	0	5	6	1	.	5	5	6	0
+EOS
+T	8
+It	581	583	PRP	it	O	O	_
+give	584	588	VBP	give	O	O	_
+up	589	591	RP	up	O	O	_
+,	591	592	,	,	O	O	_
+it	593	595	PRP	it	O	O	_
+'ll	595	598	MD	'll	O	O	_
+die	599	602	VB	die	O	O	_
+.	602	603	.	.	O	O	_
+D	1
+6
+1	0	nsubj
+1	2	prt
+6	1	ccomp
+6	4	nsubj
+6	5	aux
+EOX
+Y	1
+ROOT	0	0	8	1	S	3	0	8	5	S	1	0	3	2	NP	0	0	1	1	PRP	0	0	1	1	It	0	0	1	0	VP	0	1	3	2	VBP	0	1	2	1	give	1	1	2	0	PRT	0	2	3	1	RP	0	2	3	1	up	2	2	3	0	,	0	3	4	1	,	3	3	4	0	NP	0	4	5	1	PRP	0	4	5	1	it	4	4	5	0	VP	1	5	7	2	MD	0	5	6	1	'll	5	5	6	0	VP	0	6	7	1	VB	0	6	7	1	die	6	6	7	0	.	0	7	8	1	.	7	7	8	0
+EOS
+T	22
+There	604	609	EX	there	O	O	_
+'s	609	611	VBZ	be	O	O	_
+a	612	613	DT	a	O	O	_
+lesson	614	620	NN	lesson	O	O	_
+to	621	623	TO	to	O	O	_
+be	624	626	VB	be	O	O	_
+learned	627	634	VBN	learn	O	O	_
+from	635	639	IN	from	O	O	_
+that	640	644	DT	that	O	O	_
+little	645	651	JJ	little	O	O	_
+tree	652	656	NN	tree	O	O	_
+,	656	657	,	,	O	O	_
+Cassie	658	664	NNP	Cassie	PERSON	O	_
+girl	665	669	NN	girl	O	O	_
+,	669	670	,	,	O	O	_
+`	671	672	``	`	O	O	_
+cause	672	677	VB	cause	O	O	_
+we	678	680	PRP	we	O	O	_
+'re	680	683	VBP	be	O	O	_
+like	684	688	IN	like	O	O	_
+it	689	691	PRP	it	O	O	_
+.	691	692	.	.	O	O	_
+D	1
+1
+1	0	expl
+1	3	nsubj
+3	2	det
+3	6	vmod
+6	4	aux
+6	5	auxpass
+6	10	prep_from
+6	16	dep
+10	8	det
+10	9	amod
+10	13	appos
+13	12	nn
+16	18	ccomp
+18	17	nsubj
+18	20	prep_like
+EOX
+Y	1
+ROOT	0	0	22	1	S	1	0	22	3	NP	0	0	1	1	EX	0	0	1	1	There	0	0	1	0	VP	1	1	21	2	VBZ	0	1	2	1	's	1	1	2	0	NP	1	2	21	3	DT	0	2	3	1	a	2	2	3	0	NN	0	3	4	1	lesson	3	3	4	0	S	0	4	21	1	VP	1	4	21	2	TO	0	4	5	1	to	4	4	5	0	VP	0	5	21	4	VP	1	5	14	2	VB	0	5	6	1	be	5	5	6	0	VP	0	6	14	2	VBN	0	6	7	1	learned	6	6	7	0	PP	0	7	14	2	IN	0	7	8	1	from	7	7	8	0	NP	0	8	14	3	NP	2	8	11	3	DT	0	8	9	1	that	8	8	9	0	JJ	0	9	10	1	little	9	9	10	0	NN	0	10	11	1	tree	10	10	11	0	,	0	11	12	1	,	11	11	12	0	NP	1	12	14	2	NNP	0	12	13	1	Cassie	12	12	13	0	NN	0	13	14	1	girl	13	13	14	0	,	0	14	15	1	,	14	14	15	0	``	0	15	16	1	`	15	15	16	0	VP	0	16	21	2	VB	0	16	17	1	cause	16	16	17	0	SBAR	0	17	21	1	S	1	17	21	2	NP	0	17	18	1	PRP	0	17	18	1	we	17	17	18	0	VP	0	18	21	2	VBP	0	18	19	1	're	18	18	19	0	PP	0	19	21	2	IN	0	19	20	1	like	19	19	20	0	NP	0	20	21	1	PRP	0	20	21	1	it	20	20	21	0	.	0	21	22	1	.	21	21	22	0
+EOS
+T	16
+We	693	695	PRP	we	O	O	_
+keep	696	700	VBP	keep	O	O	_
+doing	701	706	VBG	do	O	O	_
+what	707	711	WP	what	O	O	_
+we	712	714	PRP	we	O	O	_
+got	715	718	VBD	get	O	O	_
+ta	718	720	NN	ta	O	O	_
+do	721	723	VBP	do	O	O	_
+,	723	724	,	,	O	O	_
+and	725	728	CC	and	O	O	_
+we	729	731	PRP	we	O	O	_
+do	732	734	VBP	do	O	O	_
+n't	734	737	RB	not	O	O	_
+give	738	742	VB	give	O	O	_
+up	743	745	RP	up	O	O	_
+.	745	746	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	2	xcomp
+1	13	conj_and
+2	5	ccomp
+5	3	dobj
+5	4	nsubj
+5	7	ccomp
+7	6	nsubj
+13	10	nsubj
+13	11	aux
+13	12	neg
+13	14	prt
+EOX
+Y	1
+ROOT	0	0	16	1	S	0	0	16	5	S	1	0	8	2	NP	0	0	1	1	PRP	0	0	1	1	We	0	0	1	0	VP	0	1	8	2	VBP	0	1	2	1	keep	1	1	2	0	S	0	2	8	1	VP	0	2	8	2	VBG	0	2	3	1	doing	2	2	3	0	SBAR	1	3	8	2	WHNP	0	3	4	1	WP	0	3	4	1	what	3	3	4	0	S	1	4	8	2	NP	0	4	5	1	PRP	0	4	5	1	we	4	4	5	0	VP	0	5	8	2	VBD	0	5	6	1	got	5	5	6	0	SBAR	0	6	8	1	S	1	6	8	2	NP	0	6	7	1	NN	0	6	7	1	ta	6	6	7	0	VP	0	7	8	1	VBP	0	7	8	1	do	7	7	8	0	,	0	8	9	1	,	8	8	9	0	CC	0	9	10	1	and	9	9	10	0	S	1	10	15	2	NP	0	10	11	1	PRP	0	10	11	1	we	10	10	11	0	VP	2	11	15	3	VBP	0	11	12	1	do	11	11	12	0	RB	0	12	13	1	n't	12	12	13	0	VP	0	13	15	2	VB	0	13	14	1	give	13	13	14	0	PRT	0	14	15	1	RP	0	14	15	1	up	14	14	15	0	.	0	15	16	1	.	15	15	16	0
+EOS
+T	5
+We	747	749	PRP	we	O	O	_
+ca	750	752	MD	can	O	O	_
+n't	752	755	RB	not	O	O	_
+.	755	756	.	.	O	O	_
+''	756	757	''	''	O	O	_
+D	1
+1
+1	0	nsubj
+1	2	neg
+EOX
+Y	1
+ROOT	0	0	5	1	S	1	0	5	4	NP	0	0	1	1	PRP	0	0	1	1	We	0	0	1	0	VP	0	1	3	2	MD	0	1	2	1	ca	1	1	2	0	RB	0	2	3	1	n't	2	2	3	0	.	0	3	4	1	.	3	3	4	0	''	0	4	5	1	''	4	4	5	0
+EOS
+C	44
+1	5	4	6	8
+9	10	10	11	40
+8	10	8	14	37
+2	17	17	18	12
+9	0	0	1	40
+2	27	27	28	12
+7	4	4	5	8
+4	0	0	1	8
+0	7	7	8	1
+8	17	17	18	40
+3	6	6	10	20
+8	13	12	14	39
+1	1	1	2	7
+4	6	5	7	26
+8	3	2	21	36
+2	33	30	34	18
+1	9	9	10	6
+3	12	12	13	8
+8	20	20	21	38
+0	4	4	5	1
+5	7	7	8	8
+3	21	20	24	11
+0	12	12	13	4
+0	16	15	17	5
+2	21	20	22	15
+0	13	12	14	3
+2	2	0	35	10
+4	8	8	9	26
+4	23	18	24	29
+2	14	13	15	13
+2	7	7	10	11
+4	2	2	3	25
+4	14	14	15	8
+2	11	11	12	12
+3	3	1	5	8
+1	7	7	10	9
+10	0	0	1	40
+3	16	15	24	22
+8	12	12	13	6
+6	0	0	1	8
+2	26	24	27	16
+9	4	4	5	40
+7	0	0	1	8
+4	21	21	22	25
+R
+elaboration	LeftToRight	-1	-1	0	0	10	4	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	3	24	0	2	2	nil
+temporal	None	-1	-1	0	0	0	17	0	1	2	nil
+nil	None	-1	-1	0	0	0	9	0	0	0	Papa looked down at me and brought me closer ,
+nil	None	-1	-1	0	10	0	17	1	1	0	then waved his hand toward the drive .
+contrast	RightToLeft	-1	-1	1	0	3	24	0	2	2	nil
+elaboration	LeftToRight	-1	-1	1	0	2	34	0	3	2	nil
+nil	None	-1	-1	1	0	1	10	0	0	0	`` You see that fig tree over yonder , Cassie ?
+elaboration	LeftToRight	-1	-1	2	0	2	34	0	3	2	nil
+nil	None	-1	-1	2	0	2	10	0	0	0	Them other trees all around ... that oak and walnut ,
+joint	None	-1	-1	2	11	2	34	1	3	2	nil
+nil	None	-1	-1	2	11	2	21	1	1	0	they 're a lot bigger and they take up more room
+elaboration	LeftToRight	-1	-1	2	22	2	34	2	3	2	nil
+nil	None	-1	-1	2	22	2	26	2	2	0	and give so much shade
+nil	None	-1	-1	2	27	2	34	3	3	0	they almost overshadow that little ole fig .
+joint	None	-1	-1	3	0	3	24	0	2	2	nil
+elaboration	LeftToRight	-1	-1	3	0	3	10	0	1	2	nil
+nil	None	-1	-1	3	0	3	6	0	0	0	But that fig tree 's got roots
+nil	None	-1	-1	3	7	3	10	1	1	0	that run deep ,
+nil	None	-1	-1	3	11	3	24	2	2	0	and it belongs in that yard as much as that oak and walnut .
+elaboration	LeftToRight	-1	-1	4	0	10	4	0	0	2	nil
+elaboration	LeftToRight	-1	-1	4	0	4	24	0	3	2	nil
+elaboration	LeftToRight	-1	-1	4	0	4	9	0	1	2	nil
+nil	None	-1	-1	4	0	4	3	0	0	0	It keeps blooming ,
+nil	None	-1	-1	4	4	4	9	1	1	0	bearing fruit year after year ,
+elaboration	LeftToRight	-1	-1	4	10	4	24	2	3	2	nil
+nil	None	-1	-1	4	10	4	13	2	2	0	knowing all the time
+nil	None	-1	-1	4	14	4	24	3	3	0	it 'll never get as big as them other trees .
+elaboration	LeftToRight	-1	-1	5	0	10	4	0	0	2	nil
+nil	None	-1	-1	5	0	5	11	0	0	0	Just keeps on growing and doing what it got ta do .
+elaboration	LeftToRight	-1	-1	6	0	10	4	0	0	2	nil
+nil	None	-1	-1	6	0	6	5	0	0	0	It do n't give up .
+elaboration	LeftToRight	-1	-1	7	0	10	4	0	0	2	nil
+condition	RightToLeft	-1	-1	7	0	7	7	0	1	2	nil
+nil	None	-1	-1	7	0	7	3	0	0	0	It give up ,
+nil	None	-1	-1	7	4	7	7	1	1	0	it 'll die .
+elaboration	LeftToRight	-1	-1	8	0	10	4	0	0	2	nil
+same-unit	None	-1	-1	8	0	8	21	0	2	2	nil
+elaboration	LeftToRight	-1	-1	8	0	8	14	0	1	2	nil
+nil	None	-1	-1	8	0	8	3	0	0	0	There 's a lesson
+nil	None	-1	-1	8	4	8	14	1	1	0	to be learned from that little tree , Cassie girl ,
+nil	None	-1	-1	8	15	8	21	2	2	0	` cause we 're like it .
+elaboration	LeftToRight	-1	-1	9	0	10	4	0	0	2	nil
+joint	None	-1	-1	9	0	9	15	0	1	2	nil
+nil	None	-1	-1	9	0	9	8	0	0	0	We keep doing what we got ta do ,
+nil	None	-1	-1	9	9	9	15	1	1	0	and we do n't give up .
+nil	None	-1	-1	10	0	10	4	0	0	0	We ca n't . ''
+EOD

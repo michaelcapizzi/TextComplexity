@@ -1,0 +1,1778 @@
+S	3
+T	13
+``	0	1	``	``	O	O	_
+I	1	2	PRP	I	O	O	_
+have	3	7	VBP	have	O	O	_
+n't	7	10	RB	not	O	O	_
+been	11	15	VBN	be	O	O	_
+wasting	16	23	VBG	waste	O	O	_
+my	24	26	PRP$	my	O	O	_
+time	27	31	NN	time	O	O	_
+,	31	32	,	,	O	O	_
+''	32	33	''	''	O	O	_
+he	34	36	PRP	he	O	O	_
+said	37	41	VBD	say	O	O	_
+.	41	42	.	.	O	O	_
+D	1
+11
+5	1	nsubj
+5	2	aux
+5	3	neg
+5	4	aux
+5	7	dobj
+7	6	poss
+11	5	ccomp
+11	10	nsubj
+EOX
+Y	1
+ROOT	0	0	13	1	S	5	0	13	7	``	0	0	1	1	``	0	0	1	0	S	1	1	8	2	NP	0	1	2	1	PRP	0	1	2	1	I	1	1	2	0	VP	2	2	8	3	VBP	0	2	3	1	have	2	2	3	0	RB	0	3	4	1	n't	3	3	4	0	VP	1	4	8	2	VBN	0	4	5	1	been	4	4	5	0	VP	0	5	8	2	VBG	0	5	6	1	wasting	5	5	6	0	NP	1	6	8	2	PRP$	0	6	7	1	my	6	6	7	0	NN	0	7	8	1	time	7	7	8	0	,	0	8	9	1	,	8	8	9	0	''	0	9	10	1	''	9	9	10	0	NP	0	10	11	1	PRP	0	10	11	1	he	10	10	11	0	VP	0	11	12	1	VBD	0	11	12	1	said	11	11	12	0	.	0	12	13	1	.	12	12	13	0
+EOS
+T	8
+``	43	44	``	``	O	O	_
+I	44	45	PRP	I	O	O	_
+'ve	45	48	VBP	have	O	O	_
+been	49	53	VBN	be	O	O	_
+working	54	61	VBG	work	O	O	_
+on	62	64	IN	on	O	O	_
+something	65	74	NN	something	O	O	_
+.	74	75	.	.	O	O	_
+D	1
+4
+4	1	nsubj
+4	2	aux
+4	3	aux
+4	6	prep_on
+EOX
+Y	1
+ROOT	0	0	8	1	S	2	0	8	4	``	0	0	1	1	``	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	I	1	1	2	0	VP	1	2	7	2	VBP	0	2	3	1	've	2	2	3	0	VP	1	3	7	2	VBN	0	3	4	1	been	3	3	4	0	VP	0	4	7	2	VBG	0	4	5	1	working	4	4	5	0	PP	0	5	7	2	IN	0	5	6	1	on	5	5	6	0	NP	0	6	7	1	NN	0	6	7	1	something	6	6	7	0	.	0	7	8	1	.	7	7	8	0
+EOS
+T	30
+I	76	77	PRP	I	O	O	_
+think	78	83	VBP	think	O	O	_
+I	84	85	PRP	I	O	O	_
+'m	85	87	VBP	be	O	O	_
+getting	88	95	VBG	get	O	O	_
+married	96	103	VBN	marry	O	O	_
+soon	104	108	RB	soon	O	O	_
+,	108	109	,	,	O	O	_
+''	109	110	''	''	O	O	_
+he	111	113	PRP	he	O	O	_
+said	114	118	VBD	say	O	O	_
+,	118	119	,	,	O	O	_
+and	120	123	CC	and	O	O	_
+did	124	127	VBD	do	O	O	_
+n't	127	130	RB	not	O	O	_
+allow	131	136	VB	allow	O	O	_
+himself	137	144	PRP	himself	O	O	_
+to	145	147	TO	to	O	O	_
+smile	148	153	VB	smile	O	O	_
+with	154	158	IN	with	O	O	_
+the	159	162	DT	the	O	O	_
+announcement	163	175	NN	announcement	O	O	_
+or	176	178	CC	or	O	O	_
+temper	179	185	VB	temper	O	O	_
+it	186	188	PRP	it	O	O	_
+in	189	191	IN	in	O	O	_
+some	192	196	DT	some	O	O	_
+pleasant	197	205	JJ	pleasant	O	O	_
+way	206	209	NN	way	O	O	_
+.	209	210	.	.	O	O	_
+D	1
+10
+1	0	nsubj
+1	4	ccomp
+4	2	nsubj
+4	3	aux
+4	5	dep
+5	6	advmod
+10	1	ccomp
+10	9	nsubj
+10	15	conj_and
+15	9	nsubj
+15	13	aux
+15	14	neg
+15	16	dobj
+15	18	xcomp
+15	23	xcomp
+18	17	aux
+18	21	prep_with
+18	23	conj_or
+21	20	det
+23	24	dobj
+23	28	prep_in
+28	26	det
+28	27	amod
+EOX
+Y	1
+ROOT	0	0	30	1	S	4	0	30	6	S	1	0	7	2	NP	0	0	1	1	PRP	0	0	1	1	I	0	0	1	0	VP	0	1	7	2	VBP	0	1	2	1	think	1	1	2	0	SBAR	0	2	7	1	S	1	2	7	2	NP	0	2	3	1	PRP	0	2	3	1	I	2	2	3	0	VP	1	3	7	2	VBP	0	3	4	1	'm	3	3	4	0	VP	0	4	7	2	VBG	0	4	5	1	getting	4	4	5	0	S	0	5	7	1	VP	0	5	7	2	VBN	0	5	6	1	married	5	5	6	0	ADVP	0	6	7	1	RB	0	6	7	1	soon	6	6	7	0	,	0	7	8	1	,	7	7	8	0	''	0	8	9	1	''	8	8	9	0	NP	0	9	10	1	PRP	0	9	10	1	he	9	9	10	0	VP	0	10	29	4	VP	0	10	11	1	VBD	0	10	11	1	said	10	10	11	0	,	0	11	12	1	,	11	11	12	0	CC	0	12	13	1	and	12	12	13	0	VP	2	13	29	3	VBD	0	13	14	1	did	13	13	14	0	RB	0	14	15	1	n't	14	14	15	0	VP	0	15	29	2	VB	0	15	16	1	allow	15	15	16	0	S	1	16	29	2	NP	0	16	17	1	PRP	0	16	17	1	himself	16	16	17	0	VP	1	17	29	2	TO	0	17	18	1	to	17	17	18	0	VP	0	18	29	3	VP	0	18	22	2	VB	0	18	19	1	smile	18	18	19	0	PP	0	19	22	2	IN	0	19	20	1	with	19	19	20	0	NP	1	20	22	2	DT	0	20	21	1	the	20	20	21	0	NN	0	21	22	1	announcement	21	21	22	0	CC	0	22	23	1	or	22	22	23	0	VP	0	23	29	3	VB	0	23	24	1	temper	23	23	24	0	NP	0	24	25	1	PRP	0	24	25	1	it	24	24	25	0	PP	0	25	29	2	IN	0	25	26	1	in	25	25	26	0	NP	2	26	29	3	DT	0	26	27	1	some	26	26	27	0	JJ	0	27	28	1	pleasant	27	27	28	0	NN	0	28	29	1	way	28	28	29	0	.	0	29	30	1	.	29	29	30	0
+EOS
+C	12
+2	28	26	29	12
+0	10	10	11	1
+2	24	24	25	10
+0	7	6	8	2
+2	0	0	1	1
+1	1	1	2	1
+2	9	9	10	1
+2	21	20	22	10
+2	2	2	3	1
+0	1	1	2	1
+2	16	16	17	1
+0	6	6	7	1
+R
+joint	None	-1	-1	0	0	2	29	0	3	2	nil
+elaboration	LeftToRight	-1	-1	0	0	1	7	0	0	2	nil
+attribution	LeftToRight	-1	-1	0	0	0	12	0	1	2	nil
+nil	None	-1	-1	0	0	0	9	0	0	0	`` I have n't been wasting my time , ''
+nil	None	-1	-1	0	10	0	12	1	1	0	he said .
+nil	None	-1	-1	1	0	1	7	0	0	0	`` I 've been working on something .
+joint	None	-1	-1	2	0	2	29	0	3	2	nil
+attribution	LeftToRight	-1	-1	2	0	2	11	0	2	2	nil
+attribution	RightToLeft	-1	-1	2	0	2	8	0	1	2	nil
+nil	None	-1	-1	2	0	2	1	0	0	0	I think
+nil	None	-1	-1	2	2	2	8	1	1	0	I 'm getting married soon , ''
+nil	None	-1	-1	2	9	2	11	2	2	0	he said ,
+nil	None	-1	-1	2	12	2	29	3	3	0	and did n't allow himself to smile with the announcement or temper it in some pleasant way .
+EOD
+S	2
+T	3
+``	0	1	``	``	O	O	_
+When	1	5	WRB	when	O	O	_
+?	5	6	.	?	O	O	_
+D	1
+1
+EOX
+Y	1
+ROOT	0	0	3	1	FRAG	1	0	3	3	``	0	0	1	1	``	0	0	1	0	INTJ	0	1	2	1	WRB	0	1	2	1	When	1	1	2	0	.	0	2	3	1	?	2	2	3	0
+EOS
+T	4
+To	7	9	TO	to	O	O	_
+whom	10	14	WP	whom	O	O	_
+?	14	15	.	?	O	O	_
+''	15	16	''	''	O	O	_
+D	1
+1
+1	0	aux
+EOX
+Y	1
+ROOT	0	0	4	1	FRAG	0	0	4	3	S	0	0	2	1	VP	1	0	2	2	TO	0	0	1	1	To	0	0	1	0	VP	0	1	2	1	WP	0	1	2	1	whom	1	1	2	0	.	0	2	3	1	?	2	2	3	0	''	0	3	4	1	''	3	3	4	0
+EOS
+C	0
+R
+elaboration	LeftToRight	-1	-1	0	0	1	3	0	0	2	nil
+nil	None	-1	-1	0	0	0	2	0	0	0	`` When ?
+nil	None	-1	-1	1	0	1	3	0	0	0	To whom ? ''
+EOD
+S	1
+T	8
+``	0	1	``	``	O	O	_
+To	1	3	TO	to	O	O	_
+a	4	5	DT	a	O	O	_
+woman	6	11	NN	woman	O	O	_
+with	12	16	IN	with	O	O	_
+money	17	22	NN	money	O	O	_
+.	22	23	.	.	O	O	_
+''	23	24	''	''	O	O	_
+D	1
+1
+1	3	dobj
+1	5	prep_with
+3	2	det
+EOX
+Y	1
+ROOT	0	0	8	1	S	1	0	8	4	``	0	0	1	1	``	0	0	1	0	VP	0	1	6	3	TO	0	1	2	1	To	1	1	2	0	NP	1	2	4	2	DT	0	2	3	1	a	2	2	3	0	NN	0	3	4	1	woman	3	3	4	0	PP	0	4	6	2	IN	0	4	5	1	with	4	4	5	0	NP	0	5	6	1	NN	0	5	6	1	money	5	5	6	0	.	0	6	7	1	.	6	6	7	0	''	0	7	8	1	''	7	7	8	0
+EOS
+C	1
+0	3	2	4	1
+R
+nil	None	-1	-1	0	0	0	7	0	0	0	`` To a woman with money . ''
+EOD
+S	3
+T	4
+``	0	1	``	``	O	O	_
+A	1	2	DT	a	O	O	_
+woman	3	8	NN	woman	O	O	_
+?	8	9	.	?	O	O	_
+D	1
+2
+2	1	det
+EOX
+Y	1
+ROOT	0	0	4	1	NP	2	0	4	4	``	0	0	1	1	``	0	0	1	0	DT	0	1	2	1	A	1	1	2	0	NN	0	2	3	1	woman	2	2	3	0	.	0	3	4	1	?	3	3	4	0
+EOS
+T	5
+An	10	12	DT	a	O	O	_
+older	13	18	JJR	older	O	O	_
+woman	19	24	NN	woman	O	O	_
+?	24	25	.	?	O	O	_
+''	25	26	''	''	O	O	_
+D	1
+1
+1	0	det
+1	2	dep
+EOX
+Y	1
+ROOT	0	0	5	1	FRAG	0	0	5	3	NP	0	0	3	2	NP	1	0	2	2	DT	0	0	1	1	An	0	0	1	0	JJR	0	1	2	1	older	1	1	2	0	NP	0	2	3	1	NN	0	2	3	1	woman	2	2	3	0	.	0	3	4	1	?	3	3	4	0	''	0	4	5	1	''	4	4	5	0
+EOS
+T	7
+That	27	31	DT	that	O	O	_
+was	32	35	VBD	be	O	O	_
+how	36	39	WRB	how	O	O	_
+I	40	41	PRP	I	O	O	_
+interpreted	42	53	VBD	interpret	O	O	_
+it	54	56	PRP	it	O	O	_
+.	56	57	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	4	ccomp
+4	2	advmod
+4	3	nsubj
+4	5	dobj
+EOX
+Y	1
+ROOT	0	0	7	1	S	1	0	7	3	NP	0	0	1	1	DT	0	0	1	1	That	0	0	1	0	VP	0	1	6	2	VBD	0	1	2	1	was	1	1	2	0	SBAR	1	2	6	2	WHADVP	0	2	3	1	WRB	0	2	3	1	how	2	2	3	0	S	1	3	6	2	NP	0	3	4	1	PRP	0	3	4	1	I	3	3	4	0	VP	0	4	6	2	VBD	0	4	5	1	interpreted	4	4	5	0	NP	0	5	6	1	PRP	0	5	6	1	it	5	5	6	0	.	0	6	7	1	.	6	6	7	0
+EOS
+C	5
+2	5	5	6	5
+0	2	0	4	1
+2	0	0	1	2
+1	1	0	3	2
+2	3	3	4	2
+R
+elaboration	LeftToRight	-1	-1	0	0	2	6	0	0	2	nil
+joint	None	-1	-1	0	0	1	4	0	0	2	nil
+nil	None	-1	-1	0	0	0	3	0	0	0	`` A woman ?
+nil	None	-1	-1	1	0	1	4	0	0	0	An older woman ? ''
+nil	None	-1	-1	2	0	2	6	0	0	0	That was how I interpreted it .
+EOD
+S	3
+T	10
+``	0	1	``	``	O	O	_
+Well	1	5	UH	well	O	O	_
+,	5	6	,	,	O	O	_
+what	7	11	WP	what	O	O	_
+'s	11	13	VBZ	be	O	O	_
+the	14	17	DT	the	O	O	_
+matter	18	24	NN	matter	O	O	_
+with	25	29	IN	with	O	O	_
+you	30	33	PRP	you	O	O	_
+?	33	34	.	?	O	O	_
+D	1
+6
+6	1	discourse
+6	3	nsubj
+6	4	cop
+6	5	det
+6	8	prep_with
+EOX
+Y	1
+ROOT	0	0	10	1	S	4	0	10	6	``	0	0	1	1	``	0	0	1	0	INTJ	0	1	2	1	UH	0	1	2	1	Well	1	1	2	0	,	0	2	3	1	,	2	2	3	0	NP	0	3	4	1	WP	0	3	4	1	what	3	3	4	0	VP	1	4	9	2	VBZ	0	4	5	1	's	4	4	5	0	NP	0	5	9	2	NP	1	5	7	2	DT	0	5	6	1	the	5	5	6	0	NN	0	6	7	1	matter	6	6	7	0	PP	0	7	9	2	IN	0	7	8	1	with	7	7	8	0	NP	0	8	9	1	PRP	0	8	9	1	you	8	8	9	0	.	0	9	10	1	?	9	9	10	0
+EOS
+T	9
+Yes	35	38	UH	yes	O	O	_
+,	38	39	,	,	O	O	_
+I	40	41	PRP	I	O	O	_
+'d	41	43	MD	would	O	O	_
+marry	44	49	VB	marry	O	O	_
+an	50	52	DT	a	O	O	_
+older	53	58	JJR	older	O	O	_
+woman	59	64	NN	woman	O	O	_
+.	64	65	.	.	O	O	_
+D	1
+4
+4	0	discourse
+4	2	nsubj
+4	3	aux
+4	7	dobj
+7	5	det
+7	6	amod
+EOX
+Y	1
+ROOT	0	0	9	1	S	3	0	9	5	INTJ	0	0	1	1	UH	0	0	1	1	Yes	0	0	1	0	,	0	1	2	1	,	1	1	2	0	NP	0	2	3	1	PRP	0	2	3	1	I	2	2	3	0	VP	1	3	8	2	MD	0	3	4	1	'd	3	3	4	0	VP	0	4	8	2	VB	0	4	5	1	marry	4	4	5	0	NP	2	5	8	3	DT	0	5	6	1	an	5	5	6	0	JJR	0	6	7	1	older	6	6	7	0	NN	0	7	8	1	woman	7	7	8	0	.	0	8	9	1	.	8	8	9	0
+EOS
+T	4
+Why	66	69	WRB	why	O	O	_
+not	70	73	RB	not	O	O	_
+?	73	74	.	?	O	O	_
+''	74	75	''	''	O	O	_
+D	1
+0
+0	1	dep
+EOX
+Y	1
+ROOT	0	0	4	1	SQ	0	0	4	4	WRB	0	0	1	1	Why	0	0	1	0	NP	0	1	2	1	RB	0	1	2	1	not	1	1	2	0	.	0	2	3	1	?	2	2	3	0	''	0	3	4	1	''	3	3	4	0
+EOS
+C	5
+0	3	3	4	1
+0	8	8	9	3
+1	7	5	8	5
+1	2	2	3	4
+0	6	5	9	1
+R
+elaboration	LeftToRight	-1	-1	0	0	2	3	0	0	2	nil
+joint	None	-1	-1	0	0	1	8	0	0	2	nil
+nil	None	-1	-1	0	0	0	9	0	0	0	`` Well , what 's the matter with you ?
+nil	None	-1	-1	1	0	1	8	0	0	0	Yes , I 'd marry an older woman .
+nil	None	-1	-1	2	0	2	3	0	0	0	Why not ? ''
+EOD
+S	2
+T	8
+``	0	1	``	``	O	O	_
+I	1	2	PRP	I	O	O	_
+bet	3	6	VBP	bet	O	O	_
+you	7	10	PRP	you	O	O	_
+would	11	16	MD	would	O	O	_
+n't	16	19	RB	not	O	O	_
+.	19	20	.	.	O	O	_
+''	20	21	''	''	O	O	_
+D	1
+2
+2	1	nsubj
+2	4	ccomp
+4	3	nsubj
+4	5	neg
+EOX
+Y	1
+ROOT	0	0	8	1	S	2	0	8	5	``	0	0	1	1	``	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	I	1	1	2	0	VP	0	2	6	2	VBP	0	2	3	1	bet	2	2	3	0	SBAR	0	3	6	1	S	1	3	6	2	NP	0	3	4	1	PRP	0	3	4	1	you	3	3	4	0	VP	0	4	6	2	MD	0	4	5	1	would	4	4	5	0	RB	0	5	6	1	n't	5	5	6	0	.	0	6	7	1	.	6	6	7	0	''	0	7	8	1	''	7	7	8	0
+EOS
+T	15
+He	22	24	PRP	he	O	O	_
+was	25	28	VBD	be	O	O	_
+still	29	34	RB	still	O	O	_
+able	35	39	JJ	able	O	O	_
+to	40	42	TO	to	O	O	_
+amaze	43	48	VB	amaze	O	O	_
+me	49	51	PRP	I	O	O	_
+,	51	52	,	,	O	O	_
+as	53	55	IN	as	O	O	_
+though	56	62	IN	though	O	O	_
+we	63	65	PRP	we	O	O	_
+had	66	69	VBD	have	O	O	_
+remained	70	78	VBN	remain	O	O	_
+kids	79	83	NNS	kid	O	O	_
+.	83	84	.	.	O	O	_
+D	1
+3
+3	0	nsubj
+3	1	cop
+3	2	advmod
+3	5	xcomp
+3	12	advcl
+5	4	aux
+5	6	dobj
+12	8	mark
+12	9	mark
+12	10	nsubj
+12	11	aux
+12	13	xcomp
+EOX
+Y	1
+ROOT	0	0	15	1	S	1	0	15	3	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	2	1	14	5	VBD	0	1	2	1	was	1	1	2	0	ADVP	0	2	3	1	RB	0	2	3	1	still	2	2	3	0	ADJP	0	3	7	2	JJ	0	3	4	1	able	3	3	4	0	S	0	4	7	1	VP	1	4	7	2	TO	0	4	5	1	to	4	4	5	0	VP	0	5	7	2	VB	0	5	6	1	amaze	5	5	6	0	NP	0	6	7	1	PRP	0	6	7	1	me	6	6	7	0	,	0	7	8	1	,	7	7	8	0	SBAR	2	8	14	3	IN	0	8	9	1	as	8	8	9	0	IN	0	9	10	1	though	9	9	10	0	S	1	10	14	2	NP	0	10	11	1	PRP	0	10	11	1	we	10	10	11	0	VP	1	11	14	2	VBD	0	11	12	1	had	11	11	12	0	VP	0	12	14	2	VBN	0	12	13	1	remained	12	12	13	0	NP	0	13	14	1	NNS	0	13	14	1	kids	13	13	14	0	.	0	14	15	1	.	14	14	15	0
+EOS
+C	6
+0	3	3	4	2
+1	6	6	7	2
+1	10	10	11	5
+0	1	1	2	1
+1	13	13	14	6
+1	0	0	1	1
+R
+elaboration	LeftToRight	-1	-1	0	0	1	14	0	1	2	nil
+attribution	RightToLeft	-1	-1	0	0	0	7	0	1	2	nil
+nil	None	-1	-1	0	0	0	2	0	0	0	`` I bet
+nil	None	-1	-1	0	3	0	7	1	1	0	you would n't . ''
+comparison	LeftToRight	-1	-1	1	0	1	14	0	1	2	nil
+nil	None	-1	-1	1	0	1	7	0	0	0	He was still able to amaze me ,
+nil	None	-1	-1	1	8	1	14	1	1	0	as though we had remained kids .
+EOD
+S	2
+T	15
+``	0	1	``	``	O	O	_
+We	1	3	PRP	we	O	O	_
+do	4	6	VBP	do	O	O	_
+n't	6	9	RB	not	O	O	_
+have	10	14	VB	have	O	O	_
+to	15	17	TO	to	O	O	_
+argue	18	23	VB	argue	O	O	_
+about	24	29	IN	about	O	O	_
+it	30	32	PRP	it	O	O	_
+because	33	40	IN	because	O	O	_
+she	41	44	PRP	she	O	O	_
+'s	44	46	VBZ	be	O	O	_
+not	47	50	RB	not	O	O	_
+old	51	54	JJ	old	O	O	_
+.	54	55	.	.	O	O	_
+D	1
+4
+4	1	nsubj
+4	2	aux
+4	3	neg
+4	6	xcomp
+6	5	aux
+6	8	prep_about
+6	13	advcl
+13	9	mark
+13	10	nsubj
+13	11	cop
+13	12	neg
+EOX
+Y	1
+ROOT	0	0	15	1	S	2	0	15	4	``	0	0	1	1	``	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	We	1	1	2	0	VP	2	2	14	3	VBP	0	2	3	1	do	2	2	3	0	RB	0	3	4	1	n't	3	3	4	0	VP	0	4	14	2	VB	0	4	5	1	have	4	4	5	0	S	0	5	14	1	VP	1	5	14	2	TO	0	5	6	1	to	5	5	6	0	VP	0	6	14	3	VB	0	6	7	1	argue	6	6	7	0	PP	0	7	9	2	IN	0	7	8	1	about	7	7	8	0	NP	0	8	9	1	PRP	0	8	9	1	it	8	8	9	0	SBAR	1	9	14	2	IN	0	9	10	1	because	9	9	10	0	S	1	10	14	2	NP	0	10	11	1	PRP	0	10	11	1	she	10	10	11	0	VP	2	11	14	3	VBZ	0	11	12	1	's	11	11	12	0	RB	0	12	13	1	not	12	12	13	0	ADJP	0	13	14	1	JJ	0	13	14	1	old	13	13	14	0	.	0	14	15	1	.	14	14	15	0
+EOS
+T	10
+She	56	59	PRP	she	O	O	_
+'s	59	61	VBZ	be	O	O	_
+about	62	67	IN	about	O	O	_
+twenty-two	68	78	CD	twenty-two	NUMBER	~22.0	_
+,	78	79	,	,	O	O	_
+I	80	81	PRP	I	O	O	_
+'m	81	83	VBP	be	O	O	_
+told	84	88	VBN	tell	O	O	_
+.	88	89	.	.	O	O	_
+''	89	90	''	''	O	O	_
+D	1
+7
+1	0	nsubj
+1	3	prep_about
+7	1	ccomp
+7	5	nsubjpass
+7	6	auxpass
+EOX
+Y	1
+ROOT	0	0	10	1	S	3	0	10	6	S	1	0	4	2	NP	0	0	1	1	PRP	0	0	1	1	She	0	0	1	0	VP	0	1	4	2	VBZ	0	1	2	1	's	1	1	2	0	PP	0	2	4	2	IN	0	2	3	1	about	2	2	3	0	NP	0	3	4	1	CD	0	3	4	1	twenty-two	3	3	4	0	,	0	4	5	1	,	4	4	5	0	NP	0	5	6	1	PRP	0	5	6	1	I	5	5	6	0	VP	1	6	8	2	VBP	0	6	7	1	'm	6	6	7	0	VP	0	7	8	1	VBN	0	7	8	1	told	7	7	8	0	.	0	8	9	1	.	8	8	9	0	''	0	9	10	1	''	9	9	10	0
+EOS
+C	6
+1	5	5	6	6
+0	10	10	11	3
+0	8	8	9	2
+1	3	3	4	4
+0	1	1	2	1
+1	0	0	1	3
+R
+elaboration	LeftToRight	-1	-1	0	0	1	9	0	1	2	nil
+explanation	LeftToRight	-1	-1	0	0	0	14	0	1	2	nil
+nil	None	-1	-1	0	0	0	8	0	0	0	`` We do n't have to argue about it
+nil	None	-1	-1	0	9	0	14	1	1	0	because she 's not old .
+attribution	LeftToRight	-1	-1	1	0	1	9	0	1	2	nil
+nil	None	-1	-1	1	0	1	4	0	0	0	She 's about twenty-two ,
+nil	None	-1	-1	1	5	1	9	1	1	0	I 'm told . ''
+EOD
+S	2
+T	4
+``	0	1	``	``	O	O	_
+By	1	3	IN	by	O	O	_
+whom	4	8	WP	whom	O	O	_
+?	8	9	.	?	O	O	_
+D	1
+1
+1	2	pobj
+EOX
+Y	1
+ROOT	0	0	4	1	PP	1	0	4	4	``	0	0	1	1	``	0	0	1	0	IN	0	1	2	1	By	1	1	2	0	NP	0	2	3	1	WP	0	2	3	1	whom	2	2	3	0	.	0	3	4	1	?	3	3	4	0
+EOS
+T	9
+And	10	13	CC	and	O	O	_
+you	14	17	PRP	you	O	O	_
+have	18	22	VBP	have	O	O	_
+n't	22	25	RB	not	O	O	_
+even	26	30	RB	even	O	O	_
+seen	31	35	VBN	see	O	O	_
+her	36	39	PRP$	she	O	O	_
+?	39	40	.	?	O	O	_
+''	40	41	''	''	O	O	_
+D	1
+5
+5	0	cc
+5	1	nsubj
+5	2	aux
+5	3	neg
+5	4	advmod
+5	6	dobj
+EOX
+Y	1
+ROOT	0	0	9	1	S	2	0	9	5	CC	0	0	1	1	And	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	you	1	1	2	0	VP	3	2	7	4	VBP	0	2	3	1	have	2	2	3	0	RB	0	3	4	1	n't	3	3	4	0	ADVP	0	4	5	1	RB	0	4	5	1	even	4	4	5	0	VP	0	5	7	2	VBN	0	5	6	1	seen	5	5	6	0	NP	0	6	7	1	PRP$	0	6	7	1	her	6	6	7	0	.	0	7	8	1	?	7	7	8	0	''	0	8	9	1	''	8	8	9	0
+EOS
+C	3
+1	1	1	2	2
+0	2	2	3	1
+1	6	6	7	1
+R
+joint	None	-1	-1	0	0	1	8	0	0	2	nil
+nil	None	-1	-1	0	0	0	3	0	0	0	`` By whom ?
+nil	None	-1	-1	1	0	1	8	0	0	0	And you have n't even seen her ? ''
+EOD
+S	8
+T	7
+``	0	1	``	``	O	O	_
+No	1	3	UH	no	O	O	_
+,	3	4	,	,	O	O	_
+I	5	6	PRP	I	O	O	_
+have	7	11	VBP	have	O	O	_
+n't	11	14	RB	not	O	O	_
+.	14	15	.	.	O	O	_
+D	1
+4
+4	1	discourse
+4	3	nsubj
+4	5	neg
+EOX
+Y	1
+ROOT	0	0	7	1	S	4	0	7	6	``	0	0	1	1	``	0	0	1	0	INTJ	0	1	2	1	UH	0	1	2	1	No	1	1	2	0	,	0	2	3	1	,	2	2	3	0	NP	0	3	4	1	PRP	0	3	4	1	I	3	3	4	0	VP	0	4	6	2	VBP	0	4	5	1	have	4	4	5	0	RB	0	5	6	1	n't	5	5	6	0	.	0	6	7	1	.	6	6	7	0
+EOS
+T	9
+You	16	19	PRP	you	O	O	_
+remember	20	28	VBP	remember	O	O	_
+the	29	32	DT	the	O	O	_
+buyer	33	38	NN	buyer	O	O	_
+,	38	39	,	,	O	O	_
+my	40	42	PRP$	my	O	O	_
+old	43	46	JJ	old	O	O	_
+boss	47	51	NN	boss	O	O	_
+?	51	52	.	?	O	O	_
+D	1
+1
+1	0	nsubj
+1	3	dobj
+3	2	det
+3	7	appos
+7	5	poss
+7	6	amod
+EOX
+Y	1
+ROOT	0	0	9	1	S	1	0	9	3	NP	0	0	1	1	PRP	0	0	1	1	You	0	0	1	0	VP	0	1	8	2	VBP	0	1	2	1	remember	1	1	2	0	NP	0	2	8	3	NP	1	2	4	2	DT	0	2	3	1	the	2	2	3	0	NN	0	3	4	1	buyer	3	3	4	0	,	0	4	5	1	,	4	4	5	0	NP	2	5	8	3	PRP$	0	5	6	1	my	5	5	6	0	JJ	0	6	7	1	old	6	6	7	0	NN	0	7	8	1	boss	7	7	8	0	.	0	8	9	1	?	8	8	9	0
+EOS
+T	6
+He	53	55	PRP	he	O	O	_
+'s	55	57	VBZ	be	O	O	_
+fixing	58	64	VBG	fix	O	O	_
+me	65	67	PRP	I	O	O	_
+up	68	70	RP	up	O	O	_
+.	70	71	.	.	O	O	_
+D	1
+2
+2	0	nsubj
+2	1	aux
+2	3	dobj
+2	4	prt
+EOX
+Y	1
+ROOT	0	0	6	1	S	1	0	6	3	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	1	1	5	2	VBZ	0	1	2	1	's	1	1	2	0	VP	0	2	5	3	VBG	0	2	3	1	fixing	2	2	3	0	NP	0	3	4	1	PRP	0	3	4	1	me	3	3	4	0	PRT	0	4	5	1	RP	0	4	5	1	up	4	4	5	0	.	0	5	6	1	.	5	5	6	0
+EOS
+T	5
+I	72	73	PRP	I	O	O	_
+have	74	78	VBP	have	O	O	_
+her	79	82	PRP$	she	O	O	_
+picture	83	90	NN	picture	O	O	_
+.	90	91	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	3	dobj
+3	2	poss
+EOX
+Y	1
+ROOT	0	0	5	1	S	1	0	5	3	NP	0	0	1	1	PRP	0	0	1	1	I	0	0	1	0	VP	0	1	4	2	VBP	0	1	2	1	have	1	1	2	0	NP	1	2	4	2	PRP$	0	2	3	1	her	2	2	3	0	NN	0	3	4	1	picture	3	3	4	0	.	0	4	5	1	.	4	4	5	0
+EOS
+T	5
+She	92	95	PRP	she	O	O	_
+'s	95	97	VBZ	be	O	O	_
+not	98	101	RB	not	O	O	_
+bad	102	105	JJ	bad	O	O	_
+.	105	106	.	.	O	O	_
+D	1
+3
+3	0	nsubj
+3	1	cop
+3	2	neg
+EOX
+Y	1
+ROOT	0	0	5	1	S	1	0	5	3	NP	0	0	1	1	PRP	0	0	1	1	She	0	0	1	0	VP	2	1	4	3	VBZ	0	1	2	1	's	1	1	2	0	RB	0	2	3	1	not	2	2	3	0	ADJP	0	3	4	1	JJ	0	3	4	1	bad	3	3	4	0	.	0	4	5	1	.	4	4	5	0
+EOS
+T	9
+Heavy	107	112	NNP	Heavy	O	O	_
+--	112	113	:	--	O	O	_
+but	113	116	CC	but	O	O	_
+I	117	118	PRP	I	O	O	_
+'m	118	120	VBP	be	O	O	_
+getting	121	128	VBG	get	O	O	_
+heavy	129	134	JJ	heavy	O	O	_
+too	135	138	RB	too	O	O	_
+.	138	139	.	.	O	O	_
+D	1
+0
+0	6	dep
+6	2	cc
+6	3	nsubj
+6	4	aux
+6	5	dep
+6	7	advmod
+EOX
+Y	1
+ROOT	0	0	9	1	FRAG	0	0	9	4	NP	0	0	1	1	NNP	0	0	1	1	Heavy	0	0	1	0	:	0	1	2	1	--	1	1	2	0	S	2	2	8	3	CC	0	2	3	1	but	2	2	3	0	NP	0	3	4	1	PRP	0	3	4	1	I	3	3	4	0	VP	1	4	8	2	VBP	0	4	5	1	'm	4	4	5	0	VP	1	5	8	2	VBG	0	5	6	1	getting	5	5	6	0	ADJP	0	6	8	2	JJ	0	6	7	1	heavy	6	6	7	0	RB	0	7	8	1	too	7	7	8	0	.	0	8	9	1	.	8	8	9	0
+EOS
+T	6
+She	140	143	PRP	she	O	O	_
+'s	143	145	VBZ	be	O	O	_
+sort	146	150	NN	sort	O	O	_
+of	151	153	IN	of	O	O	_
+pretty	154	160	RB	pretty	O	O	_
+.	160	161	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	2	advmod
+1	3	advmod
+3	4	advmod
+EOX
+Y	1
+ROOT	0	0	6	1	S	1	0	6	3	NP	0	0	1	1	PRP	0	0	1	1	She	0	0	1	0	VP	0	1	5	3	VBZ	0	1	2	1	's	1	1	2	0	ADVP	0	2	3	1	NN	0	2	3	1	sort	2	2	3	0	ADVP	0	3	5	2	IN	0	3	4	1	of	3	3	4	0	RB	0	4	5	1	pretty	4	4	5	0	.	0	5	6	1	.	5	5	6	0
+EOS
+T	37
+Anyhow	162	168	RB	anyhow	O	O	_
+,	168	169	,	,	O	O	_
+even	170	174	RB	even	O	O	_
+if	175	177	IN	if	O	O	_
+she	178	181	PRP	she	O	O	_
+were	182	186	VBD	be	O	O	_
+n't	186	189	RB	not	O	O	_
+pretty	190	196	RB	pretty	O	O	_
+,	196	197	,	,	O	O	_
+and	198	201	CC	and	O	O	_
+if	202	204	IN	if	O	O	_
+the	205	208	DT	the	O	O	_
+buyer	209	214	NN	buyer	O	O	_
+is	215	217	VBZ	be	O	O	_
+n't	217	220	RB	not	O	O	_
+lying	221	226	VBG	lie	O	O	_
+about	227	232	IN	about	O	O	_
+the	233	236	DT	the	O	O	_
+dough	237	242	NN	dough	O	O	_
+--	242	243	:	--	O	O	_
+her	243	246	PRP$	she	O	O	_
+family	247	253	NN	family	O	O	_
+is	254	256	VBZ	be	O	O	_
+supposed	257	265	VBN	suppose	O	O	_
+to	266	268	TO	to	O	O	_
+have	269	273	VB	have	O	O	_
+a	274	275	DT	a	O	O	_
+mountain	276	284	NN	mountain	O	O	_
+of	285	287	IN	of	O	O	_
+dough	288	293	NN	dough	O	O	_
+--	293	294	:	--	O	O	_
+I	294	295	PRP	I	O	O	_
+'d	295	297	MD	would	O	O	_
+marry	298	303	VB	marry	O	O	_
+her	304	307	PRP	she	O	O	_
+.	307	308	.	.	O	O	_
+''	308	309	''	''	O	O	_
+D	1
+33
+7	2	advmod
+7	3	mark
+7	4	nsubj
+7	5	cop
+7	6	neg
+7	15	conj_and
+12	11	det
+15	10	mark
+15	12	nsubj
+15	13	aux
+15	14	neg
+15	18	prep_about
+18	17	det
+21	20	poss
+23	21	nsubjpass
+23	22	auxpass
+23	25	xcomp
+25	24	aux
+25	27	dobj
+27	26	det
+27	29	prep_of
+33	0	advmod
+33	7	advcl
+33	15	advcl
+33	23	parataxis
+33	31	nsubj
+33	32	aux
+33	34	dobj
+EOX
+Y	1
+ROOT	0	0	37	1	S	5	0	37	8	ADVP	0	0	1	1	RB	0	0	1	1	Anyhow	0	0	1	0	,	0	1	2	1	,	1	1	2	0	SBAR	0	2	19	4	SBAR	2	2	8	3	RB	0	2	3	1	even	2	2	3	0	IN	0	3	4	1	if	3	3	4	0	S	1	4	8	2	NP	0	4	5	1	PRP	0	4	5	1	she	4	4	5	0	VP	1	5	8	2	VBD	0	5	6	1	were	5	5	6	0	ADJP	1	6	8	2	RB	0	6	7	1	n't	6	6	7	0	RB	0	7	8	1	pretty	7	7	8	0	,	0	8	9	1	,	8	8	9	0	CC	0	9	10	1	and	9	9	10	0	SBAR	1	10	19	2	IN	0	10	11	1	if	10	10	11	0	S	1	11	19	2	NP	1	11	13	2	DT	0	11	12	1	the	11	11	12	0	NN	0	12	13	1	buyer	12	12	13	0	VP	2	13	19	3	VBZ	0	13	14	1	is	13	13	14	0	RB	0	14	15	1	n't	14	14	15	0	VP	0	15	19	2	VBG	0	15	16	1	lying	15	15	16	0	PP	0	16	19	2	IN	0	16	17	1	about	16	16	17	0	NP	1	17	19	2	DT	0	17	18	1	the	17	17	18	0	NN	0	18	19	1	dough	18	18	19	0	PRN	1	19	31	3	:	0	19	20	1	--	19	19	20	0	S	1	20	30	2	NP	1	20	22	2	PRP$	0	20	21	1	her	20	20	21	0	NN	0	21	22	1	family	21	21	22	0	VP	1	22	30	2	VBZ	0	22	23	1	is	22	22	23	0	VP	0	23	30	2	VBN	0	23	24	1	supposed	23	23	24	0	S	0	24	30	1	VP	1	24	30	2	TO	0	24	25	1	to	24	24	25	0	VP	0	25	30	2	VB	0	25	26	1	have	25	25	26	0	NP	0	26	30	2	NP	1	26	28	2	DT	0	26	27	1	a	26	26	27	0	NN	0	27	28	1	mountain	27	27	28	0	PP	0	28	30	2	IN	0	28	29	1	of	28	28	29	0	NP	0	29	30	1	NN	0	29	30	1	dough	29	29	30	0	:	0	30	31	1	--	30	30	31	0	NP	0	31	32	1	PRP	0	31	32	1	I	31	31	32	0	VP	1	32	35	2	MD	0	32	33	1	'd	32	32	33	0	VP	0	33	35	2	VB	0	33	34	1	marry	33	33	34	0	NP	0	34	35	1	PRP	0	34	35	1	her	34	34	35	0	.	0	35	36	1	.	35	35	36	0	''	0	36	37	1	''	36	36	37	0
+EOS
+C	22
+7	21	20	22	19
+7	12	11	13	3
+1	5	5	6	1
+5	0	0	1	13
+7	31	31	32	1
+7	20	20	21	11
+7	4	4	5	11
+4	0	0	1	11
+2	0	0	1	3
+0	3	3	4	1
+3	0	0	1	1
+3	2	2	3	11
+1	3	2	8	3
+7	27	26	30	21
+5	3	3	4	1
+3	3	2	4	10
+1	7	5	8	3
+2	3	3	4	1
+6	0	0	1	11
+1	0	0	1	2
+7	34	34	35	11
+7	18	17	19	18
+R
+elaboration	LeftToRight	-1	-1	0	0	7	36	0	5	2	nil
+elaboration	LeftToRight	-1	-1	0	0	6	5	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	4	4	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	3	4	0	0	2	nil
+nil	None	-1	-1	0	0	0	6	0	0	0	`` No , I have n't .
+elaboration	LeftToRight	-1	-1	1	0	3	4	0	0	2	nil
+elaboration	LeftToRight	-1	-1	1	0	2	5	0	0	2	nil
+nil	None	-1	-1	1	0	1	8	0	0	0	You remember the buyer , my old boss ?
+nil	None	-1	-1	2	0	2	5	0	0	0	He 's fixing me up .
+nil	None	-1	-1	3	0	3	4	0	0	0	I have her picture .
+nil	None	-1	-1	4	0	4	4	0	0	0	She 's not bad .
+elaboration	LeftToRight	-1	-1	5	0	6	5	0	0	2	nil
+joint	None	-1	-1	5	0	5	8	0	1	2	nil
+nil	None	-1	-1	5	0	5	0	0	0	0	Heavy
+nil	None	-1	-1	5	1	5	8	1	1	0	-- but I 'm getting heavy too .
+nil	None	-1	-1	6	0	6	5	0	0	0	She 's sort of pretty .
+same-unit	None	-1	-1	7	0	7	36	0	5	2	nil
+nil	None	-1	-1	7	0	7	1	0	0	0	Anyhow ,
+contrast	RightToLeft	-1	-1	7	2	7	36	1	5	2	nil
+nil	None	-1	-1	7	2	7	8	1	1	0	even if she were n't pretty ,
+same-unit	None	-1	-1	7	9	7	36	2	5	2	nil
+nil	None	-1	-1	7	9	7	9	2	2	0	and
+condition	RightToLeft	-1	-1	7	10	7	36	3	5	2	nil
+elaboration	LeftToRight	-1	-1	7	10	7	30	3	4	2	nil
+nil	None	-1	-1	7	10	7	18	3	3	0	if the buyer is n't lying about the dough
+nil	None	-1	-1	7	19	7	30	4	4	0	-- her family is supposed to have a mountain of dough --
+nil	None	-1	-1	7	31	7	36	5	5	0	I 'd marry her . ''
+EOD
+S	1
+T	10
+``	0	1	``	``	O	O	_
+You	1	4	PRP	you	O	O	_
+'ve	4	7	VBP	have	O	O	_
+already	8	15	RB	already	O	O	_
+made	16	20	VBN	make	O	O	_
+up	21	23	RP	up	O	O	_
+your	24	28	PRP$	you	O	O	_
+mind	29	33	NN	mind	O	O	_
+?	33	34	.	?	O	O	_
+''	34	35	''	''	O	O	_
+D	1
+4
+4	1	nsubj
+4	2	aux
+4	3	advmod
+4	5	prt
+4	7	dobj
+7	6	poss
+EOX
+Y	1
+ROOT	0	0	10	1	S	2	0	10	5	``	0	0	1	1	``	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	You	1	1	2	0	VP	2	2	8	3	VBP	0	2	3	1	've	2	2	3	0	ADVP	0	3	4	1	RB	0	3	4	1	already	3	3	4	0	VP	0	4	8	3	VBN	0	4	5	1	made	4	4	5	0	PRT	0	5	6	1	RP	0	5	6	1	up	5	5	6	0	NP	1	6	8	2	PRP$	0	6	7	1	your	6	6	7	0	NN	0	7	8	1	mind	7	7	8	0	.	0	8	9	1	?	8	8	9	0	''	0	9	10	1	''	9	9	10	0
+EOS
+C	3
+0	6	6	7	1
+0	1	1	2	1
+0	7	6	8	2
+R
+nil	None	-1	-1	0	0	0	9	0	0	0	`` You 've already made up your mind ? ''
+EOD
+S	1
+T	8
+``	0	1	``	``	O	O	_
+I	1	2	PRP	I	O	O	_
+'ll	2	5	MD	'll	O	O	_
+say	6	9	VB	say	O	O	_
+I	10	11	PRP	I	O	O	_
+have	12	16	VBP	have	O	O	_
+!	16	17	.	!	O	O	_
+''	17	18	''	''	O	O	_
+D	1
+3
+3	1	nsubj
+3	2	aux
+3	5	ccomp
+5	4	nsubj
+EOX
+Y	1
+ROOT	0	0	8	1	S	2	0	8	5	``	0	0	1	1	``	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	I	1	1	2	0	VP	1	2	6	2	MD	0	2	3	1	'll	2	2	3	0	VP	0	3	6	2	VB	0	3	4	1	say	3	3	4	0	SBAR	0	4	6	1	S	1	4	6	2	NP	0	4	5	1	PRP	0	4	5	1	I	4	4	5	0	VP	0	5	6	1	VBP	0	5	6	1	have	5	5	6	0	.	0	6	7	1	!	6	6	7	0	''	0	7	8	1	''	7	7	8	0
+EOS
+C	2
+0	1	1	2	1
+0	4	4	5	1
+R
+attribution	RightToLeft	-1	-1	0	0	0	7	0	1	2	nil
+nil	None	-1	-1	0	0	0	3	0	0	0	`` I 'll say
+nil	None	-1	-1	0	4	0	7	1	1	0	I have ! ''
+EOD
+S	1
+T	12
+``	0	1	``	``	O	O	_
+And	1	4	CC	and	O	O	_
+suppose	5	12	VB	suppose	O	O	_
+she	13	16	PRP	she	O	O	_
+does	17	21	VBZ	do	O	O	_
+n't	21	24	RB	not	O	O	_
+want	25	29	VB	want	O	O	_
+to	30	32	TO	to	O	O	_
+marry	33	38	VB	marry	O	O	_
+you	39	42	PRP	you	O	O	_
+?	42	43	.	?	O	O	_
+''	43	44	''	''	O	O	_
+D	1
+6
+2	1	cc
+2	3	dobj
+6	2	csubj
+6	4	aux
+6	5	neg
+6	8	xcomp
+8	7	aux
+8	9	dobj
+EOX
+Y	1
+ROOT	0	0	12	1	S	2	0	12	5	``	0	0	1	1	``	0	0	1	0	S	1	1	4	2	CC	0	1	2	1	And	1	1	2	0	VP	0	2	4	2	VB	0	2	3	1	suppose	2	2	3	0	NP	0	3	4	1	PRP	0	3	4	1	she	3	3	4	0	VP	2	4	10	3	VBZ	0	4	5	1	does	4	4	5	0	RB	0	5	6	1	n't	5	5	6	0	VP	0	6	10	2	VB	0	6	7	1	want	6	6	7	0	S	0	7	10	1	VP	1	7	10	2	TO	0	7	8	1	to	7	7	8	0	VP	0	8	10	2	VB	0	8	9	1	marry	8	8	9	0	NP	0	9	10	1	PRP	0	9	10	1	you	9	9	10	0	.	0	10	11	1	?	10	10	11	0	''	0	11	12	1	''	11	11	12	0
+EOS
+C	2
+0	9	9	10	2
+0	3	3	4	1
+R
+nil	None	-1	-1	0	0	0	11	0	0	0	`` And suppose she does n't want to marry you ? ''
+EOD
+S	2
+T	8
+``	0	1	``	``	O	O	_
+I	1	2	PRP	I	O	O	_
+'ll	2	5	MD	'll	O	O	_
+see	6	9	VB	see	O	O	_
+that	10	14	IN	that	O	O	_
+she	15	18	PRP	she	O	O	_
+does	19	23	VBZ	do	O	O	_
+.	23	24	.	.	O	O	_
+D	1
+3
+3	1	nsubj
+3	2	aux
+3	6	ccomp
+6	4	mark
+6	5	nsubj
+EOX
+Y	1
+ROOT	0	0	8	1	S	2	0	8	4	``	0	0	1	1	``	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	I	1	1	2	0	VP	1	2	7	2	MD	0	2	3	1	'll	2	2	3	0	VP	0	3	7	2	VB	0	3	4	1	see	3	3	4	0	SBAR	1	4	7	2	IN	0	4	5	1	that	4	4	5	0	S	1	5	7	2	NP	0	5	6	1	PRP	0	5	6	1	she	5	5	6	0	VP	0	6	7	1	VBZ	0	6	7	1	does	6	6	7	0	.	0	7	8	1	.	7	7	8	0
+EOS
+T	8
+Do	25	27	VBP	do	O	O	_
+n't	27	30	RB	not	O	O	_
+you	31	34	PRP	you	O	O	_
+think	35	40	VBP	think	O	O	_
+I	41	42	PRP	I	O	O	_
+can	43	46	MD	can	O	O	_
+?	46	47	.	?	O	O	_
+''	47	48	''	''	O	O	_
+D	1
+0
+0	1	neg
+0	2	dobj
+2	3	rcmod
+3	5	ccomp
+5	4	nsubj
+EOX
+Y	1
+ROOT	0	0	8	1	FRAG	0	0	8	3	S	0	0	6	1	VP	0	0	6	3	VBP	0	0	1	1	Do	0	0	1	0	RB	0	1	2	1	n't	1	1	2	0	NP	0	2	6	2	NP	0	2	3	1	PRP	0	2	3	1	you	2	2	3	0	SBAR	0	3	6	1	S	0	3	6	1	VP	0	3	6	2	VBP	0	3	4	1	think	3	3	4	0	SBAR	0	4	6	1	S	1	4	6	2	NP	0	4	5	1	PRP	0	4	5	1	I	4	4	5	0	VP	0	5	6	1	MD	0	5	6	1	can	5	5	6	0	.	0	6	7	1	?	6	6	7	0	''	0	7	8	1	''	7	7	8	0
+EOS
+C	4
+0	1	1	2	1
+1	4	4	5	1
+0	5	5	6	2
+1	2	2	6	1
+R
+elaboration	LeftToRight	-1	-1	0	0	1	7	0	1	2	nil
+attribution	RightToLeft	-1	-1	0	0	0	7	0	1	2	nil
+nil	None	-1	-1	0	0	0	3	0	0	0	`` I 'll see
+nil	None	-1	-1	0	4	0	7	1	1	0	that she does .
+attribution	RightToLeft	-1	-1	1	0	1	7	0	1	2	nil
+nil	None	-1	-1	1	0	1	3	0	0	0	Do n't you think
+nil	None	-1	-1	1	4	1	7	1	1	0	I can ? ''
+EOD
+S	2
+T	12
+``	0	1	``	``	O	O	_
+Maybe	1	6	RB	maybe	O	O	_
+you	7	10	PRP	you	O	O	_
+can	11	14	MD	can	O	O	_
+,	14	15	,	,	O	O	_
+but	16	19	CC	but	O	O	_
+I	20	21	PRP	I	O	O	_
+do	22	24	VBP	do	O	O	_
+n't	24	27	RB	not	O	O	_
+like	28	32	VB	like	O	O	_
+it	33	35	PRP	it	O	O	_
+.	35	36	.	.	O	O	_
+D	1
+3
+3	1	advmod
+3	2	nsubj
+3	9	conj_but
+9	6	nsubj
+9	7	aux
+9	8	neg
+9	10	dobj
+EOX
+Y	1
+ROOT	0	0	12	1	S	1	0	12	6	``	0	0	1	1	``	0	0	1	0	S	2	1	4	3	ADVP	0	1	2	1	RB	0	1	2	1	Maybe	1	1	2	0	NP	0	2	3	1	PRP	0	2	3	1	you	2	2	3	0	VP	0	3	4	1	MD	0	3	4	1	can	3	3	4	0	,	0	4	5	1	,	4	4	5	0	CC	0	5	6	1	but	5	5	6	0	S	1	6	11	2	NP	0	6	7	1	PRP	0	6	7	1	I	6	6	7	0	VP	2	7	11	3	VBP	0	7	8	1	do	7	7	8	0	RB	0	8	9	1	n't	8	8	9	0	VP	0	9	11	2	VB	0	9	10	1	like	9	9	10	0	NP	0	10	11	1	PRP	0	10	11	1	it	10	10	11	0	.	0	11	12	1	.	11	11	12	0
+EOS
+T	5
+It	37	39	PRP	it	O	O	_
+'s	39	41	VBZ	be	O	O	_
+cold-blooded	42	54	JJ	cold-blooded	O	O	_
+.	54	55	.	.	O	O	_
+''	55	56	''	''	O	O	_
+D	1
+2
+2	0	nsubj
+2	1	cop
+EOX
+Y	1
+ROOT	0	0	5	1	S	1	0	5	4	NP	0	0	1	1	PRP	0	0	1	1	It	0	0	1	0	VP	1	1	3	2	VBZ	0	1	2	1	's	1	1	2	0	ADJP	0	2	3	1	JJ	0	2	3	1	cold-blooded	2	2	3	0	.	0	3	4	1	.	3	3	4	0	''	0	4	5	1	''	4	4	5	0
+EOS
+C	4
+0	10	10	11	3
+1	0	0	1	3
+0	6	6	7	2
+0	2	2	3	1
+R
+elaboration	LeftToRight	-1	-1	0	0	1	4	0	0	2	nil
+contrast	RightToLeft	-1	-1	0	0	0	11	0	1	2	nil
+nil	None	-1	-1	0	0	0	4	0	0	0	`` Maybe you can ,
+nil	None	-1	-1	0	5	0	11	1	1	0	but I do n't like it .
+nil	None	-1	-1	1	0	1	4	0	0	0	It 's cold-blooded . ''
+EOD
+S	17
+T	4
+``	0	1	``	``	O	O	_
+Cold-blooded	1	13	JJ	cold-blooded	O	O	_
+!	13	14	.	!	O	O	_
+''	14	15	''	''	O	O	_
+D	1
+1
+EOX
+Y	1
+ROOT	0	0	4	1	INTJ	1	0	4	4	``	0	0	1	1	``	0	0	1	0	JJ	0	1	2	1	Cold-blooded	1	1	2	0	.	0	2	3	1	!	2	2	3	0	''	0	3	4	1	''	3	3	4	0
+EOS
+T	6
+he	16	18	PRP	he	O	O	_
+said	19	23	VBD	say	O	O	_
+with	24	28	IN	with	O	O	_
+sudden	29	35	JJ	sudden	O	O	_
+emotion	36	43	NN	emotion	O	O	_
+.	43	44	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	4	prep_with
+4	3	amod
+EOX
+Y	1
+ROOT	0	0	6	1	S	1	0	6	3	NP	0	0	1	1	PRP	0	0	1	1	he	0	0	1	0	VP	0	1	5	2	VBD	0	1	2	1	said	1	1	2	0	PP	0	2	5	2	IN	0	2	3	1	with	2	2	3	0	NP	1	3	5	2	JJ	0	3	4	1	sudden	3	3	4	0	NN	0	4	5	1	emotion	4	4	5	0	.	0	5	6	1	.	5	5	6	0
+EOS
+T	7
+``	45	46	``	``	O	O	_
+What	46	50	WP	what	O	O	_
+'s	50	52	VBZ	be	O	O	_
+cold-blooded	53	65	JJ	cold-blooded	O	O	_
+about	66	71	IN	about	O	O	_
+it	72	74	PRP	it	O	O	_
+?	74	75	.	?	O	O	_
+D	1
+1
+1	2	cop
+1	3	nsubj
+3	5	prep_about
+EOX
+Y	1
+ROOT	0	0	7	1	SBARQ	2	0	7	4	``	0	0	1	1	``	0	0	1	0	WHNP	0	1	2	1	WP	0	1	2	1	What	1	1	2	0	SQ	0	2	6	2	VBZ	0	2	3	1	's	2	2	3	0	NP	0	3	6	2	NP	0	3	4	1	JJ	0	3	4	1	cold-blooded	3	3	4	0	PP	0	4	6	2	IN	0	4	5	1	about	4	4	5	0	NP	0	5	6	1	PRP	0	5	6	1	it	5	5	6	0	.	0	6	7	1	?	6	6	7	0
+EOS
+T	11
+I	76	77	PRP	I	O	O	_
+'d	77	79	MD	would	O	O	_
+be	80	82	VB	be	O	O	_
+cold-blooded	83	95	JJ	cold-blooded	O	O	_
+if	96	98	IN	if	O	O	_
+I	99	100	PRP	I	O	O	_
+stayed	101	107	VBD	stay	O	O	_
+as	108	110	IN	as	O	O	_
+I	111	112	PRP	I	O	O	_
+am	113	115	VBP	be	O	O	_
+.	115	116	.	.	O	O	_
+D	1
+3
+3	0	nsubj
+3	1	aux
+3	2	cop
+3	6	advcl
+6	4	mark
+6	5	nsubj
+6	9	advcl
+9	7	mark
+9	8	nsubj
+EOX
+Y	1
+ROOT	0	0	11	1	S	1	0	11	3	NP	0	0	1	1	PRP	0	0	1	1	I	0	0	1	0	VP	1	1	10	2	MD	0	1	2	1	'd	1	1	2	0	VP	1	2	10	3	VB	0	2	3	1	be	2	2	3	0	ADJP	0	3	4	1	JJ	0	3	4	1	cold-blooded	3	3	4	0	SBAR	1	4	10	2	IN	0	4	5	1	if	4	4	5	0	S	1	5	10	2	NP	0	5	6	1	PRP	0	5	6	1	I	5	5	6	0	VP	0	6	10	2	VBD	0	6	7	1	stayed	6	6	7	0	SBAR	1	7	10	2	IN	0	7	8	1	as	7	7	8	0	S	1	8	10	2	NP	0	8	9	1	PRP	0	8	9	1	I	8	8	9	0	VP	0	9	10	1	VBP	0	9	10	1	am	9	9	10	0	.	0	10	11	1	.	10	10	11	0
+EOS
+T	9
+I	117	118	PRP	I	O	O	_
+see	119	122	VBP	see	O	O	_
+around	123	129	IN	around	O	O	_
+this	130	134	DT	this	O	O	_
+marriage	135	143	NN	marriage	O	O	_
+and	144	147	CC	and	O	O	_
+beyond	148	154	IN	beyond	O	O	_
+it	155	157	PRP	it	O	O	_
+.	157	158	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	0	nsubj
+1	1	conj_and
+1	4	prep_around
+1	7	prep_beyond
+4	3	det
+EOX
+Y	1
+ROOT	0	0	9	1	S	1	0	9	3	NP	0	0	1	1	PRP	0	0	1	1	I	0	0	1	0	VP	0	1	8	2	VBP	0	1	2	1	see	1	1	2	0	PP	0	2	8	3	PP	0	2	5	2	IN	0	2	3	1	around	2	2	3	0	NP	1	3	5	2	DT	0	3	4	1	this	3	3	4	0	NN	0	4	5	1	marriage	4	4	5	0	CC	0	5	6	1	and	5	5	6	0	PP	0	6	8	2	IN	0	6	7	1	beyond	6	6	7	0	NP	0	7	8	1	PRP	0	7	8	1	it	7	7	8	0	.	0	8	9	1	.	8	8	9	0
+EOS
+T	12
+I	159	160	PRP	I	O	O	_
+'ll	160	163	MD	'll	O	O	_
+never	164	169	RB	never	O	O	_
+again	170	175	RB	again	O	O	_
+go	176	178	VB	go	O	O	_
+for	179	182	IN	for	O	O	_
+all	183	186	PDT	all	O	O	_
+the	187	190	DT	the	O	O	_
+nonsense	191	199	NN	nonsense	O	O	_
+about	200	205	IN	about	O	O	_
+marriage	206	214	NN	marriage	O	O	_
+.	214	215	.	.	O	O	_
+D	1
+4
+4	0	nsubj
+4	1	aux
+4	2	neg
+4	3	advmod
+4	8	prep_for
+8	6	predet
+8	7	det
+8	10	prep_about
+EOX
+Y	1
+ROOT	0	0	12	1	S	1	0	12	3	NP	0	0	1	1	PRP	0	0	1	1	I	0	0	1	0	VP	3	1	11	4	MD	0	1	2	1	'll	1	1	2	0	ADVP	0	2	3	1	RB	0	2	3	1	never	2	2	3	0	ADVP	0	3	4	1	RB	0	3	4	1	again	3	3	4	0	VP	0	4	11	2	VB	0	4	5	1	go	4	4	5	0	PP	0	5	11	2	IN	0	5	6	1	for	5	5	6	0	NP	0	6	11	2	NP	2	6	9	3	PDT	0	6	7	1	all	6	6	7	0	DT	0	7	8	1	the	7	7	8	0	NN	0	8	9	1	nonsense	8	8	9	0	PP	0	9	11	2	IN	0	9	10	1	about	9	9	10	0	NP	0	10	11	1	NN	0	10	11	1	marriage	10	10	11	0	.	0	11	12	1	.	11	11	12	0
+EOS
+T	20
+Everybody	216	225	NN	everybody	O	O	_
+you	226	229	PRP	you	O	O	_
+lay	230	233	VBD	lay	O	O	_
+eyes	234	238	NNS	eye	O	O	_
+on	239	241	IN	on	O	O	_
+,	241	242	,	,	O	O	_
+except	243	249	IN	except	O	O	_
+perhaps	250	257	RB	perhaps	O	O	_
+a	258	259	DT	a	O	O	_
+few	260	263	JJ	few	O	O	_
+like	264	268	IN	like	O	O	_
+you	269	272	PRP	you	O	O	_
+and	273	276	CC	and	O	O	_
+me	277	279	PRP	I	O	O	_
+,	279	280	,	,	O	O	_
+is	281	283	VBZ	be	O	O	_
+born	284	288	VBN	bear	O	O	_
+of	289	291	IN	of	O	O	_
+marriage	292	300	NN	marriage	O	O	_
+.	300	301	.	.	O	O	_
+D	1
+16
+0	2	rcmod
+2	1	nsubj
+2	3	dobj
+2	4	prep
+9	7	quantmod
+9	8	quantmod
+9	11	prep_like
+9	13	prep_like
+11	13	conj_and
+16	0	nsubjpass
+16	9	prep_except
+16	15	auxpass
+16	18	prep_of
+EOX
+Y	1
+ROOT	0	0	20	1	S	4	0	20	6	NP	0	0	5	2	NP	0	0	1	1	NN	0	0	1	1	Everybody	0	0	1	0	SBAR	0	1	5	1	S	1	1	5	2	NP	0	1	2	1	PRP	0	1	2	1	you	1	1	2	0	VP	0	2	5	3	VBD	0	2	3	1	lay	2	2	3	0	NP	0	3	4	1	NNS	0	3	4	1	eyes	3	3	4	0	PP	0	4	5	1	IN	0	4	5	1	on	4	4	5	0	,	0	5	6	1	,	5	5	6	0	PP	0	6	14	2	IN	0	6	7	1	except	6	6	7	0	NP	0	7	14	2	NP	0	7	10	1	QP	2	7	10	3	RB	0	7	8	1	perhaps	7	7	8	0	DT	0	8	9	1	a	8	8	9	0	JJ	0	9	10	1	few	9	9	10	0	PP	0	10	14	2	IN	0	10	11	1	like	10	10	11	0	NP	0	11	14	3	NP	0	11	12	1	PRP	0	11	12	1	you	11	11	12	0	CC	0	12	13	1	and	12	12	13	0	NP	0	13	14	1	PRP	0	13	14	1	me	13	13	14	0	,	0	14	15	1	,	14	14	15	0	VP	1	15	19	2	VBZ	0	15	16	1	is	15	15	16	0	VP	0	16	19	2	VBN	0	16	17	1	born	16	16	17	0	PP	0	17	19	2	IN	0	17	18	1	of	17	17	18	0	NP	0	18	19	1	NN	0	18	19	1	marriage	18	18	19	0	.	0	19	20	1	.	19	19	20	0
+EOS
+T	19
+Do	302	304	VB	do	O	O	_
+you	305	308	PRP	you	O	O	_
+see	309	312	VB	see	O	O	_
+anything	313	321	NN	anything	O	O	_
+so	322	324	RB	so	O	O	_
+exceptional	325	336	JJ	exceptional	O	O	_
+or	337	339	CC	or	O	O	_
+wonderful	340	349	JJ	wonderful	O	O	_
+about	350	355	IN	about	O	O	_
+it	356	358	PRP	it	O	O	_
+that	359	363	IN	that	O	O	_
+it	364	366	PRP	it	O	O	_
+makes	367	372	VBZ	make	O	O	_
+it	373	375	PRP	it	O	O	_
+such	376	380	JJ	such	O	O	_
+a	381	382	DT	a	O	O	_
+big	383	386	JJ	big	O	O	_
+deal	387	391	NN	deal	O	O	_
+?	391	392	.	?	O	O	_
+D	1
+0
+0	2	ccomp
+2	1	nsubj
+2	5	xcomp
+2	7	xcomp
+2	12	ccomp
+5	3	nsubj
+5	4	advmod
+5	7	conj_or
+5	9	prep_about
+7	3	nsubj
+12	10	mark
+12	11	nsubj
+12	13	dobj
+12	14	prep
+14	17	dep
+17	15	det
+17	16	amod
+EOX
+Y	1
+ROOT	0	0	19	1	SQ	0	0	19	2	VP	0	0	18	2	VB	0	0	1	1	Do	0	0	1	0	S	1	1	18	2	NP	0	1	2	1	PRP	0	1	2	1	you	1	1	2	0	VP	0	2	18	3	VB	0	2	3	1	see	2	2	3	0	S	1	3	10	2	NP	0	3	4	1	NN	0	3	4	1	anything	3	3	4	0	ADJP	0	4	10	2	ADJP	1	4	8	4	RB	0	4	5	1	so	4	4	5	0	JJ	0	5	6	1	exceptional	5	5	6	0	CC	0	6	7	1	or	6	6	7	0	JJ	0	7	8	1	wonderful	7	7	8	0	PP	0	8	10	2	IN	0	8	9	1	about	8	8	9	0	NP	0	9	10	1	PRP	0	9	10	1	it	9	9	10	0	SBAR	1	10	18	2	IN	0	10	11	1	that	10	10	11	0	S	1	11	18	2	NP	0	11	12	1	PRP	0	11	12	1	it	11	11	12	0	VP	0	12	18	3	VBZ	0	12	13	1	makes	12	12	13	0	NP	0	13	14	1	PRP	0	13	14	1	it	13	13	14	0	PP	0	14	18	2	JJ	0	14	15	1	such	14	14	15	0	NP	2	15	18	3	DT	0	15	16	1	a	15	15	16	0	JJ	0	16	17	1	big	16	16	17	0	NN	0	17	18	1	deal	17	17	18	0	.	0	18	19	1	?	18	18	19	0
+EOS
+T	11
+Why	393	396	WRB	why	O	O	_
+be	397	399	VB	be	O	O	_
+fooling	400	407	VBG	fool	O	O	_
+around	408	414	IN	around	O	O	_
+to	415	417	TO	to	O	O	_
+make	418	422	VB	make	O	O	_
+this	423	427	DT	this	O	O	_
+perfect	428	435	JJ	perfect	O	O	_
+great	436	441	JJ	great	O	O	_
+marriage	442	450	NN	marriage	O	O	_
+?	450	451	.	?	O	O	_
+D	1
+2
+2	0	advmod
+2	1	aux
+2	3	advmod
+2	5	xcomp
+5	4	aux
+5	9	dobj
+9	6	det
+9	7	amod
+9	8	amod
+EOX
+Y	1
+ROOT	0	0	11	1	SBARQ	1	0	11	2	WHADVP	0	0	1	1	WRB	0	0	1	1	Why	0	0	1	0	SQ	0	1	11	2	VP	1	1	10	2	VB	0	1	2	1	be	1	1	2	0	VP	0	2	10	3	VBG	0	2	3	1	fooling	2	2	3	0	ADVP	0	3	4	1	IN	0	3	4	1	around	3	3	4	0	S	0	4	10	1	VP	1	4	10	2	TO	0	4	5	1	to	4	4	5	0	VP	0	5	10	2	VB	0	5	6	1	make	5	5	6	0	NP	3	6	10	4	DT	0	6	7	1	this	6	6	7	0	JJ	0	7	8	1	perfect	7	7	8	0	JJ	0	8	9	1	great	8	8	9	0	NN	0	9	10	1	marriage	9	9	10	0	.	0	10	11	1	?	10	10	11	0
+EOS
+T	9
+What	452	456	WP	what	O	O	_
+'s	456	458	VBZ	be	O	O	_
+it	459	461	PRP	it	O	O	_
+going	462	467	VBG	go	O	O	_
+to	468	470	TO	to	O	O	_
+save	471	475	VB	save	O	O	_
+you	476	479	PRP	you	O	O	_
+from	480	484	IN	from	O	O	_
+?	484	485	.	?	O	O	_
+D	1
+3
+3	0	dep
+3	1	aux
+3	2	nsubj
+3	5	xcomp
+5	4	aux
+5	6	dobj
+5	7	prep
+EOX
+Y	1
+ROOT	0	0	9	1	SBARQ	1	0	9	3	WHNP	0	0	1	1	WP	0	0	1	1	What	0	0	1	0	SQ	2	1	8	3	VBZ	0	1	2	1	's	1	1	2	0	NP	0	2	3	1	PRP	0	2	3	1	it	2	2	3	0	VP	0	3	8	2	VBG	0	3	4	1	going	3	3	4	0	S	0	4	8	1	VP	1	4	8	2	TO	0	4	5	1	to	4	4	5	0	VP	0	5	8	3	VB	0	5	6	1	save	5	5	6	0	NP	0	6	7	1	PRP	0	6	7	1	you	6	6	7	0	PP	0	7	8	1	IN	0	7	8	1	from	7	7	8	0	.	0	8	9	1	?	8	8	9	0
+EOS
+T	39
+Has	486	489	VBZ	have	O	O	_
+it	490	492	PRP	it	O	O	_
+saved	493	498	VBD	save	O	O	_
+anybody	499	506	NN	anybody	O	O	_
+--	506	507	:	--	O	O	_
+the	507	510	DT	the	O	O	_
+jerks	511	516	NNS	jerk	O	O	_
+,	516	517	,	,	O	O	_
+the	518	521	DT	the	O	O	_
+fools	522	527	NNS	fool	O	O	_
+,	527	528	,	,	O	O	_
+the	529	532	DT	the	O	O	_
+morons	533	539	NNS	moron	O	O	_
+,	539	540	,	,	O	O	_
+the	541	544	DT	the	O	O	_
+schleppers	545	555	NNS	schlepper	O	O	_
+,	555	556	,	,	O	O	_
+the	557	560	DT	the	O	O	_
+jag-offs	561	569	NNS	jag-off	O	O	_
+,	569	570	,	,	O	O	_
+the	571	574	DT	the	O	O	_
+monkeys	575	582	NNS	monkey	O	O	_
+,	582	583	,	,	O	O	_
+rats	584	588	NNS	rat	O	O	_
+,	588	589	,	,	O	O	_
+rabbits	590	597	NNS	rabbit	O	O	_
+,	597	598	,	,	O	O	_
+or	599	601	CC	or	O	O	_
+the	602	605	DT	the	O	O	_
+decent	606	612	JJ	decent	O	O	_
+unhappy	613	620	JJ	unhappy	O	O	_
+people	621	627	NNS	people	O	O	_
+or	628	630	CC	or	O	O	_
+what	631	635	WP	what	O	O	_
+you	636	639	PRP	you	O	O	_
+call	640	644	VBP	call	O	O	_
+nice	645	649	JJ	nice	O	O	_
+people	650	656	NNS	people	O	O	_
+?	656	657	.	?	O	O	_
+D	1
+0
+0	2	dep
+0	35	dep
+2	1	nsubj
+2	3	dobj
+2	35	conj_or
+3	6	dep
+3	9	dep
+3	12	dep
+3	15	dep
+3	18	dep
+3	21	dep
+3	23	dep
+3	25	dep
+3	31	dep
+6	5	det
+6	9	conj_or
+6	12	conj_or
+6	15	conj_or
+6	18	conj_or
+6	21	conj_or
+6	23	conj_or
+6	25	conj_or
+6	31	conj_or
+9	8	det
+12	11	det
+15	14	det
+18	17	det
+21	20	det
+30	29	amod
+31	28	det
+31	30	amod
+35	33	dobj
+35	34	nsubj
+35	37	dobj
+37	36	amod
+EOX
+Y	1
+ROOT	0	0	39	1	S	0	0	39	2	VP	0	0	38	2	VBZ	0	0	1	1	Has	0	0	1	0	SBAR	0	1	38	3	SBAR	0	1	32	1	S	1	1	32	2	NP	0	1	2	1	PRP	0	1	2	1	it	1	1	2	0	VP	0	2	32	2	VBD	0	2	3	1	saved	2	2	3	0	NP	0	3	32	3	NP	0	3	4	1	NN	0	3	4	1	anybody	3	3	4	0	:	0	4	5	1	--	4	4	5	0	NP	0	5	32	18	NP	1	5	7	2	DT	0	5	6	1	the	5	5	6	0	NNS	0	6	7	1	jerks	6	6	7	0	,	0	7	8	1	,	7	7	8	0	NP	1	8	10	2	DT	0	8	9	1	the	8	8	9	0	NNS	0	9	10	1	fools	9	9	10	0	,	0	10	11	1	,	10	10	11	0	NP	1	11	13	2	DT	0	11	12	1	the	11	11	12	0	NNS	0	12	13	1	morons	12	12	13	0	,	0	13	14	1	,	13	13	14	0	NP	1	14	16	2	DT	0	14	15	1	the	14	14	15	0	NNS	0	15	16	1	schleppers	15	15	16	0	,	0	16	17	1	,	16	16	17	0	NP	1	17	19	2	DT	0	17	18	1	the	17	17	18	0	NNS	0	18	19	1	jag-offs	18	18	19	0	,	0	19	20	1	,	19	19	20	0	NP	1	20	22	2	DT	0	20	21	1	the	20	20	21	0	NNS	0	21	22	1	monkeys	21	21	22	0	,	0	22	23	1	,	22	22	23	0	NP	0	23	24	1	NNS	0	23	24	1	rats	23	23	24	0	,	0	24	25	1	,	24	24	25	0	NP	0	25	26	1	NNS	0	25	26	1	rabbits	25	25	26	0	,	0	26	27	1	,	26	26	27	0	CC	0	27	28	1	or	27	27	28	0	NP	2	28	32	3	DT	0	28	29	1	the	28	28	29	0	ADJP	1	29	31	2	JJ	0	29	30	1	decent	29	29	30	0	JJ	0	30	31	1	unhappy	30	30	31	0	NNS	0	31	32	1	people	31	31	32	0	CC	0	32	33	1	or	32	32	33	0	SBAR	1	33	38	2	WHNP	0	33	34	1	WP	0	33	34	1	what	33	33	34	0	S	1	34	38	2	NP	0	34	35	1	PRP	0	34	35	1	you	34	34	35	0	VP	0	35	38	2	VBP	0	35	36	1	call	35	35	36	0	NP	1	36	38	2	JJ	0	36	37	1	nice	36	36	37	0	NNS	0	37	38	1	people	37	37	38	0	.	0	38	39	1	?	38	38	39	0
+EOS
+T	30
+They	658	662	PRP	they	O	O	_
+'re	662	665	VBP	be	O	O	_
+all	666	669	DT	all	O	O	_
+married	670	677	VBN	marry	O	O	_
+or	678	680	CC	or	O	O	_
+are	681	684	VBP	be	O	O	_
+born	685	689	VBN	bear	O	O	_
+of	690	692	IN	of	O	O	_
+marriages	693	702	NNS	marriage	O	O	_
+,	702	703	,	,	O	O	_
+so	704	706	RB	so	O	O	_
+how	707	710	WRB	how	O	O	_
+can	711	714	MD	can	O	O	_
+you	715	718	PRP	you	O	O	_
+pretend	719	726	VB	pretend	O	O	_
+to	727	729	TO	to	O	O	_
+me	730	732	PRP	I	O	O	_
+that	733	737	IN	that	O	O	_
+it	738	740	PRP	it	O	O	_
+makes	741	746	VBZ	make	O	O	_
+a	747	748	DT	a	O	O	_
+difference	749	759	NN	difference	O	O	_
+that	760	764	WDT	that	O	O	_
+Bob	765	768	NNP	Bob	PERSON	O	_
+loves	769	774	VBZ	love	O	O	_
+Mary	775	779	NNP	Mary	PERSON	O	_
+who	780	783	WP	who	O	O	_
+loves	784	789	VBZ	love	O	O	_
+Jerry	790	795	NNP	Jerry	PERSON	O	_
+?	795	796	.	?	O	O	_
+D	1
+1
+1	0	nsubj
+1	3	dep
+1	6	dep
+3	2	advmod
+3	6	conj_or
+3	14	parataxis
+6	5	auxpass
+6	8	prep_of
+6	10	advmod
+14	11	advmod
+14	12	aux
+14	13	nsubj
+14	16	prep_to
+14	19	ccomp
+19	17	mark
+19	18	nsubj
+19	21	dobj
+21	20	det
+21	24	rcmod
+24	22	dobj
+24	23	nsubj
+24	25	dobj
+25	27	rcmod
+27	26	nsubj
+27	28	dobj
+EOX
+Y	1
+ROOT	0	0	30	1	S	1	0	30	2	NP	0	0	1	1	PRP	0	0	1	1	They	0	0	1	0	VP	0	1	30	2	VBP	0	1	2	1	're	1	1	2	0	S	0	2	30	2	S	0	2	11	1	VP	0	2	11	3	VP	1	2	4	2	ADVP	0	2	3	1	DT	0	2	3	1	all	2	2	3	0	VBN	0	3	4	1	married	3	3	4	0	CC	0	4	5	1	or	4	4	5	0	VP	1	5	11	2	VBP	0	5	6	1	are	5	5	6	0	VP	0	6	11	4	VBN	0	6	7	1	born	6	6	7	0	PP	0	7	9	2	IN	0	7	8	1	of	7	7	8	0	NP	0	8	9	1	NNS	0	8	9	1	marriages	8	8	9	0	,	0	9	10	1	,	9	9	10	0	ADVP	0	10	11	1	RB	0	10	11	1	so	10	10	11	0	SBARQ	1	11	30	3	WHADVP	0	11	12	1	WRB	0	11	12	1	how	11	11	12	0	SQ	2	12	29	3	MD	0	12	13	1	can	12	12	13	0	NP	0	13	14	1	PRP	0	13	14	1	you	13	13	14	0	VP	0	14	29	3	VB	0	14	15	1	pretend	14	14	15	0	PP	0	15	17	2	TO	0	15	16	1	to	15	15	16	0	NP	0	16	17	1	PRP	0	16	17	1	me	16	16	17	0	SBAR	1	17	29	2	IN	0	17	18	1	that	17	17	18	0	S	1	18	29	2	NP	0	18	19	1	PRP	0	18	19	1	it	18	18	19	0	VP	0	19	29	2	VBZ	0	19	20	1	makes	19	19	20	0	NP	0	20	29	2	NP	1	20	22	2	DT	0	20	21	1	a	20	20	21	0	NN	0	21	22	1	difference	21	21	22	0	SBAR	1	22	29	2	WHNP	0	22	23	1	WDT	0	22	23	1	that	22	22	23	0	S	1	23	29	2	NP	0	23	24	1	NNP	0	23	24	1	Bob	23	23	24	0	VP	0	24	29	2	VBZ	0	24	25	1	loves	24	24	25	0	NP	0	25	29	2	NP	0	25	26	1	NNP	0	25	26	1	Mary	25	25	26	0	SBAR	1	26	29	2	WHNP	0	26	27	1	WP	0	26	27	1	who	26	26	27	0	S	0	27	29	1	VP	0	27	29	2	VBZ	0	27	28	1	loves	27	27	28	0	NP	0	28	29	1	NNP	0	28	29	1	Jerry	28	28	29	0	.	0	29	30	1	?	29	29	30	0
+EOS
+T	6
+That	797	801	DT	that	O	O	_
+'s	801	803	VBZ	be	O	O	_
+for	804	807	IN	for	O	O	_
+the	808	811	DT	the	O	O	_
+movies	812	818	NNS	movie	O	O	_
+.	818	819	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	4	prep_for
+4	3	det
+EOX
+Y	1
+ROOT	0	0	6	1	S	1	0	6	3	NP	0	0	1	1	DT	0	0	1	1	That	0	0	1	0	VP	0	1	5	2	VBZ	0	1	2	1	's	1	1	2	0	PP	0	2	5	2	IN	0	2	3	1	for	2	2	3	0	NP	1	3	5	2	DT	0	3	4	1	the	3	3	4	0	NNS	0	4	5	1	movies	4	4	5	0	.	0	5	6	1	.	5	5	6	0
+EOS
+T	20
+Do	820	822	VBP	do	O	O	_
+n't	822	825	RB	not	O	O	_
+you	826	829	PRP	you	O	O	_
+see	830	833	VBP	see	O	O	_
+people	834	840	NNS	people	O	O	_
+pondering	841	850	VBG	ponder	O	O	_
+how	851	854	WRB	how	O	O	_
+to	855	857	TO	to	O	O	_
+marry	858	863	VB	marry	O	O	_
+for	864	867	IN	for	O	O	_
+love	868	872	NN	love	O	O	_
+and	873	876	CC	and	O	O	_
+getting	877	884	VBG	get	O	O	_
+the	885	888	DT	the	O	O	_
+blood	889	894	NN	blood	O	O	_
+gypped	895	901	VBN	gyp	O	O	_
+out	902	905	IN	out	O	O	_
+of	906	908	IN	of	O	O	_
+them	909	913	PRP	they	O	O	_
+?	913	914	.	?	O	O	_
+D	1
+3
+0	1	neg
+3	0	dep
+3	2	nsubj
+3	5	ccomp
+3	12	ccomp
+5	4	nsubj
+5	8	ccomp
+5	12	conj_and
+8	6	advmod
+8	7	aux
+8	10	prep_for
+12	4	nsubj
+12	14	dobj
+14	13	det
+14	15	vmod
+15	18	prep_out_of
+EOX
+Y	1
+ROOT	0	0	20	1	S	2	0	20	4	S	0	0	2	1	VP	0	0	2	2	VBP	0	0	1	1	Do	0	0	1	0	RB	0	1	2	1	n't	1	1	2	0	NP	0	2	3	1	PRP	0	2	3	1	you	2	2	3	0	VP	0	3	19	2	VBP	0	3	4	1	see	3	3	4	0	S	1	4	19	2	NP	0	4	5	1	NNS	0	4	5	1	people	4	4	5	0	VP	0	5	19	3	VP	0	5	11	2	VBG	0	5	6	1	pondering	5	5	6	0	SBAR	1	6	11	2	WHADVP	0	6	7	1	WRB	0	6	7	1	how	6	6	7	0	S	0	7	11	1	VP	1	7	11	2	TO	0	7	8	1	to	7	7	8	0	VP	0	8	11	2	VB	0	8	9	1	marry	8	8	9	0	PP	0	9	11	2	IN	0	9	10	1	for	9	9	10	0	NP	0	10	11	1	NN	0	10	11	1	love	10	10	11	0	CC	0	11	12	1	and	11	11	12	0	VP	0	12	19	2	VBG	0	12	13	1	getting	12	12	13	0	NP	0	13	19	2	NP	1	13	15	2	DT	0	13	14	1	the	13	13	14	0	NN	0	14	15	1	blood	14	14	15	0	VP	0	15	19	3	VBN	0	15	16	1	gypped	15	15	16	0	PRT	0	16	17	1	IN	0	16	17	1	out	16	16	17	0	PP	0	17	19	2	IN	0	17	18	1	of	17	17	18	0	NP	0	18	19	1	PRP	0	18	19	1	them	18	18	19	0	.	0	19	20	1	?	19	19	20	0
+EOS
+T	27
+Because	915	922	IN	because	O	O	_
+while	923	928	IN	while	O	O	_
+they	930	934	PRP	they	O	O	_
+'re	934	937	VBP	be	O	O	_
+looking	938	945	VBG	look	O	O	_
+for	946	949	IN	for	O	O	_
+the	950	953	DT	the	O	O	_
+best	954	958	JJS	best	O	O	_
+there	959	964	EX	there	O	O	_
+is	965	967	VBZ	be	O	O	_
+--	967	968	:	--	O	O	_
+and	968	971	CC	and	O	O	_
+I	972	973	PRP	I	O	O	_
+figure	974	980	VBP	figure	O	O	_
+that	981	985	DT	that	O	O	_
+'s	985	987	VBZ	be	O	O	_
+what	988	992	WP	what	O	O	_
+'s	992	994	VBZ	be	O	O	_
+wrong	995	1000	JJ	wrong	O	O	_
+with	1001	1005	IN	with	O	O	_
+you	1006	1009	PRP	you	O	O	_
+--	1009	1010	:	--	O	O	_
+everything	1010	1020	NN	everything	O	O	_
+else	1021	1025	RB	else	O	O	_
+gets	1026	1030	VBZ	get	O	O	_
+lost	1031	1035	VBN	lose	O	O	_
+.	1035	1036	.	.	O	O	_
+D	1
+25
+4	1	mark
+4	2	nsubj
+4	3	aux
+4	7	prep_for
+7	6	det
+9	0	mark
+9	4	advcl
+9	8	expl
+13	11	cc
+13	12	nsubj
+13	15	ccomp
+15	14	nsubj
+15	18	ccomp
+18	16	nsubj
+18	17	cop
+18	20	prep_with
+22	23	advmod
+25	9	advcl
+25	13	parataxis
+25	22	nsubjpass
+25	24	auxpass
+EOX
+Y	1
+ROOT	0	0	27	1	S	3	0	27	5	SBAR	1	0	10	2	IN	0	0	1	1	Because	0	0	1	0	S	2	1	10	3	SBAR	1	1	8	2	IN	0	1	2	1	while	1	1	2	0	S	1	2	8	2	NP	0	2	3	1	PRP	0	2	3	1	they	2	2	3	0	VP	1	3	8	2	VBP	0	3	4	1	're	3	3	4	0	VP	0	4	8	2	VBG	0	4	5	1	looking	4	4	5	0	PP	0	5	8	2	IN	0	5	6	1	for	5	5	6	0	NP	1	6	8	2	DT	0	6	7	1	the	6	6	7	0	JJS	0	7	8	1	best	7	7	8	0	NP	0	8	9	1	EX	0	8	9	1	there	8	8	9	0	VP	0	9	10	1	VBZ	0	9	10	1	is	9	9	10	0	PRN	2	10	22	4	:	0	10	11	1	--	10	10	11	0	CC	0	11	12	1	and	11	11	12	0	S	1	12	21	2	NP	0	12	13	1	PRP	0	12	13	1	I	12	12	13	0	VP	0	13	21	2	VBP	0	13	14	1	figure	13	13	14	0	SBAR	0	14	21	1	S	1	14	21	2	NP	0	14	15	1	DT	0	14	15	1	that	14	14	15	0	VP	0	15	21	2	VBZ	0	15	16	1	's	15	15	16	0	SBAR	1	16	21	2	WHNP	0	16	17	1	WP	0	16	17	1	what	16	16	17	0	S	0	17	21	1	VP	1	17	21	2	VBZ	0	17	18	1	's	17	17	18	0	ADJP	0	18	21	2	JJ	0	18	19	1	wrong	18	18	19	0	PP	0	19	21	2	IN	0	19	20	1	with	19	19	20	0	NP	0	20	21	1	PRP	0	20	21	1	you	20	20	21	0	:	0	21	22	1	--	21	21	22	0	NP	0	22	24	2	NN	0	22	23	1	everything	22	22	23	0	RB	0	23	24	1	else	23	23	24	0	VP	1	24	26	2	VBZ	0	24	25	1	gets	24	24	25	0	ADJP	0	25	26	1	VBN	0	25	26	1	lost	25	25	26	0	.	0	26	27	1	.	26	26	27	0
+EOS
+T	4
+It	1037	1039	PRP	it	O	O	_
+'s	1039	1041	VBZ	be	O	O	_
+sad	1042	1045	JJ	sad	O	O	_
+.	1045	1046	.	.	O	O	_
+D	1
+2
+2	0	nsubj
+2	1	cop
+EOX
+Y	1
+ROOT	0	0	4	1	S	1	0	4	3	NP	0	0	1	1	PRP	0	0	1	1	It	0	0	1	0	VP	1	1	3	2	VBZ	0	1	2	1	's	1	1	2	0	ADJP	0	2	3	1	JJ	0	2	3	1	sad	2	2	3	0	.	0	3	4	1	.	3	3	4	0
+EOS
+T	12
+It	1047	1049	PRP	it	O	O	_
+'s	1049	1051	VBZ	be	O	O	_
+a	1052	1053	DT	a	O	O	_
+pity	1054	1058	NN	pity	O	O	_
+,	1058	1059	,	,	O	O	_
+but	1060	1063	CC	but	O	O	_
+it	1064	1066	PRP	it	O	O	_
+'s	1066	1068	VBZ	be	O	O	_
+that	1069	1073	DT	that	O	O	_
+way	1074	1077	NN	way	O	O	_
+.	1077	1078	.	.	O	O	_
+''	1078	1079	''	''	O	O	_
+D	1
+3
+3	0	nsubj
+3	1	cop
+3	2	det
+3	9	conj_but
+9	6	nsubj
+9	7	cop
+9	8	det
+EOX
+Y	1
+ROOT	0	0	12	1	S	0	0	12	6	S	1	0	4	2	NP	0	0	1	1	PRP	0	0	1	1	It	0	0	1	0	VP	1	1	4	2	VBZ	0	1	2	1	's	1	1	2	0	NP	1	2	4	2	DT	0	2	3	1	a	2	2	3	0	NN	0	3	4	1	pity	3	3	4	0	,	0	4	5	1	,	4	4	5	0	CC	0	5	6	1	but	5	5	6	0	S	1	6	10	2	NP	0	6	7	1	PRP	0	6	7	1	it	6	6	7	0	VP	1	7	10	2	VBZ	0	7	8	1	's	7	7	8	0	NP	1	8	10	2	DT	0	8	9	1	that	8	8	9	0	NN	0	9	10	1	way	9	9	10	0	.	0	10	11	1	.	10	10	11	0	''	0	11	12	1	''	11	11	12	0
+EOS
+C	62
+7	1	1	2	12
+2	5	5	6	3
+10	3	3	32	27
+7	9	9	10	8
+10	15	14	16	32
+5	0	0	1	1
+8	9	6	10	23
+10	12	11	13	31
+10	37	36	38	39
+10	25	25	26	36
+14	14	14	15	56
+4	0	0	1	1
+4	7	7	8	8
+16	6	6	7	56
+15	0	0	1	56
+10	21	20	22	34
+6	1	1	2	12
+13	2	2	3	12
+16	0	0	1	56
+6	9	7	14	14
+4	4	3	5	8
+3	0	0	1	1
+10	34	34	35	12
+10	1	1	2	23
+10	18	17	19	33
+16	9	8	10	56
+11	16	16	17	1
+14	2	2	3	37
+6	3	3	4	13
+6	11	11	14	15
+3	5	5	6	1
+10	23	23	24	35
+6	13	13	14	1
+7	13	13	14	8
+11	8	8	9	43
+13	18	18	19	37
+11	21	20	29	47
+14	12	12	13	1
+13	4	4	5	37
+14	7	6	8	56
+11	25	25	29	48
+7	11	11	12	8
+10	6	5	32	28
+7	17	15	18	22
+11	23	23	24	40
+11	13	13	14	12
+10	31	28	32	37
+11	18	18	19	23
+10	9	8	10	30
+12	4	3	5	50
+9	6	6	7	12
+11	28	28	29	41
+2	3	3	6	2
+6	0	0	5	11
+13	14	13	19	53
+11	0	0	1	27
+1	0	0	1	1
+3	8	8	9	1
+12	0	0	1	27
+14	20	20	21	12
+9	2	2	3	23
+16	3	2	4	56
+R
+elaboration	LeftToRight	-1	-1	0	0	16	11	0	1	2	nil
+elaboration	LeftToRight	-1	-1	0	0	5	11	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	1	5	0	0	2	nil
+nil	None	-1	-1	0	0	0	3	0	0	0	`` Cold-blooded ! ''
+nil	None	-1	-1	1	0	1	5	0	0	0	he said with sudden emotion .
+elaboration	LeftToRight	-1	-1	2	0	5	11	0	0	2	nil
+elaboration	LeftToRight	-1	-1	2	0	4	8	0	0	2	nil
+elaboration	LeftToRight	-1	-1	2	0	3	10	0	2	2	nil
+nil	None	-1	-1	2	0	2	6	0	0	0	`` What 's cold-blooded about it ?
+condition	LeftToRight	-1	-1	3	0	3	10	0	2	2	nil
+nil	None	-1	-1	3	0	3	3	0	0	0	I 'd be cold-blooded
+background	LeftToRight	-1	-1	3	4	3	10	1	2	2	nil
+nil	None	-1	-1	3	4	3	6	1	1	0	if I stayed
+nil	None	-1	-1	3	7	3	10	2	2	0	as I am .
+nil	None	-1	-1	4	0	4	8	0	0	0	I see around this marriage and beyond it .
+nil	None	-1	-1	5	0	5	11	0	0	0	I 'll never again go for all the nonsense about marriage .
+elaboration	LeftToRight	-1	-1	6	0	16	11	0	1	2	nil
+topic-comment	None	-1	-1	6	0	12	5	0	0	2	nil
+elaboration	LeftToRight	-1	-1	6	0	9	8	0	0	2	nil
+same-unit	None	-1	-1	6	0	6	19	0	1	2	nil
+nil	None	-1	-1	6	0	6	14	0	0	0	Everybody you lay eyes on , except perhaps a few like you and me ,
+nil	None	-1	-1	6	15	6	19	1	1	0	is born of marriage .
+topic-comment	None	-1	-1	7	0	9	8	0	0	2	nil
+topic-comment	None	-1	-1	7	0	8	10	0	0	2	nil
+attribution	RightToLeft	-1	-1	7	0	7	18	0	1	2	nil
+nil	None	-1	-1	7	0	7	9	0	0	0	Do you see anything so exceptional or wonderful about it
+nil	None	-1	-1	7	10	7	18	1	1	0	that it makes it such a big deal ?
+nil	None	-1	-1	8	0	8	10	0	0	0	Why be fooling around to make this perfect great marriage ?
+nil	None	-1	-1	9	0	9	8	0	0	0	What 's it going to save you from ?
+elaboration	LeftToRight	-1	-1	10	0	12	5	0	0	2	nil
+elaboration	LeftToRight	-1	-1	10	0	10	38	0	1	2	nil
+nil	None	-1	-1	10	0	10	3	0	0	0	Has it saved anybody
+nil	None	-1	-1	10	4	10	38	1	1	0	-- the jerks , the fools , the morons , the schleppers , the jag-offs , the monkeys , rats , rabbits , or the decent unhappy people or what you call nice people ?
+topic-comment	None	-1	-1	11	0	12	5	0	0	2	nil
+enablement	LeftToRight	-1	-1	11	0	11	29	0	4	2	nil
+nil	None	-1	-1	11	0	11	9	0	0	0	They 're all married or are born of marriages ,
+attribution	RightToLeft	-1	-1	11	10	11	29	1	4	2	nil
+nil	None	-1	-1	11	10	11	16	1	1	0	so how can you pretend to me
+elaboration	LeftToRight	-1	-1	11	17	11	29	2	4	2	nil
+nil	None	-1	-1	11	17	11	21	2	2	0	that it makes a difference
+elaboration	LeftToRight	-1	-1	11	22	11	29	3	4	2	nil
+nil	None	-1	-1	11	22	11	25	3	3	0	that Bob loves Mary
+nil	None	-1	-1	11	26	11	29	4	4	0	who loves Jerry ?
+nil	None	-1	-1	12	0	12	5	0	0	0	That 's for the movies .
+attribution	RightToLeft	-1	-1	13	0	16	11	0	1	2	nil
+nil	None	-1	-1	13	0	13	3	0	0	0	Do n't you see
+elaboration	LeftToRight	-1	-1	13	4	16	11	1	1	2	nil
+nil	None	-1	-1	13	4	13	4	1	1	0	people
+topic-comment	None	-1	-1	13	5	16	11	2	1	2	nil
+elaboration	LeftToRight	-1	-1	13	5	13	19	2	3	2	nil
+nil	None	-1	-1	13	5	13	14	2	2	0	pondering how to marry for love and getting the blood
+nil	None	-1	-1	13	15	13	19	3	3	0	gypped out of them ?
+elaboration	LeftToRight	-1	-1	14	0	16	11	0	1	2	nil
+elaboration	LeftToRight	-1	-1	14	0	15	3	0	0	2	nil
+same-unit	None	-1	-1	14	0	14	26	0	3	2	nil
+elaboration	LeftToRight	-1	-1	14	0	14	21	0	2	2	nil
+nil	None	-1	-1	14	0	14	9	0	0	0	Because while they 're looking for the best there is
+attribution	RightToLeft	-1	-1	14	10	14	21	1	2	2	nil
+nil	None	-1	-1	14	10	14	13	1	1	0	-- and I figure
+nil	None	-1	-1	14	14	14	21	2	2	0	that 's what 's wrong with you --
+nil	None	-1	-1	14	22	14	26	3	3	0	everything else gets lost .
+nil	None	-1	-1	15	0	15	3	0	0	0	It 's sad .
+contrast	None	-1	-1	16	0	16	11	0	1	2	nil
+nil	None	-1	-1	16	0	16	4	0	0	0	It 's a pity ,
+nil	None	-1	-1	16	5	16	11	1	1	0	but it 's that way . ''
+EOD
+S	3
+T	13
+I	0	1	PRP	I	O	O	_
+was	2	5	VBD	be	O	O	_
+all	6	9	PDT	all	O	O	_
+the	10	13	DT	the	O	O	_
+same	14	18	JJ	same	O	O	_
+strongly	19	27	RB	strongly	O	O	_
+against	28	35	IN	against	O	O	_
+him	36	39	PRP	he	O	O	_
+;	39	40	:	;	O	O	_
+that	41	45	IN	that	O	O	_
+he	46	48	PRP	he	O	O	_
+saw	49	52	VBD	see	O	O	_
+.	52	53	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	4	advmod
+1	5	advmod
+1	7	prep_against
+4	2	dep
+4	3	det
+7	11	dep
+11	9	mark
+11	10	nsubj
+EOX
+Y	1
+ROOT	0	0	13	1	S	1	0	13	3	NP	0	0	1	1	PRP	0	0	1	1	I	0	0	1	0	VP	0	1	12	4	VBD	0	1	2	1	was	1	1	2	0	ADVP	2	2	5	3	PDT	0	2	3	1	all	2	2	3	0	DT	0	3	4	1	the	3	3	4	0	JJ	0	4	5	1	same	4	4	5	0	ADVP	0	5	6	1	RB	0	5	6	1	strongly	5	5	6	0	PP	0	6	12	2	IN	0	6	7	1	against	6	6	7	0	NP	0	7	12	3	NP	0	7	8	1	PRP	0	7	8	1	him	7	7	8	0	:	0	8	9	1	;	8	8	9	0	SBAR	1	9	12	2	IN	0	9	10	1	that	9	9	10	0	S	1	10	12	2	NP	0	10	11	1	PRP	0	10	11	1	he	10	10	11	0	VP	0	11	12	1	VBD	0	11	12	1	saw	11	11	12	0	.	0	12	13	1	.	12	12	13	0
+EOS
+T	28
+Even	54	58	RB	even	O	O	_
+if	59	61	IN	if	O	O	_
+I	62	63	PRP	I	O	O	_
+could	64	69	MD	could	O	O	_
+n't	69	72	RB	not	O	O	_
+just	73	77	RB	just	O	O	_
+then	78	82	RB	then	O	O	_
+consider	83	91	VB	consider	O	O	_
+myself	92	98	PRP	myself	O	O	_
+on	99	101	IN	on	O	O	_
+the	102	105	DT	the	O	O	_
+active	106	112	JJ	active	O	O	_
+list	113	117	NN	list	O	O	_
+of	118	120	IN	of	O	O	_
+lovers	121	127	NNS	lover	O	O	_
+and	128	131	CC	and	O	O	_
+was	132	135	VBD	be	O	O	_
+n't	135	138	RB	not	O	O	_
+carrying	139	147	VBG	carry	O	O	_
+a	148	149	DT	a	O	O	_
+live	150	154	JJ	live	O	O	_
+torch	155	160	NN	torch	O	O	_
+any	161	164	DT	any	O	O	_
+more	165	169	JJR	more	O	O	_
+for	170	173	IN	for	O	O	_
+Esther	174	180	NNP	Esther	PERSON	O	_
+Fenchel	181	188	NNP	Fenchel	PERSON	O	_
+.	188	189	.	.	O	O	_
+D	1
+7
+7	0	advmod
+7	1	mark
+7	2	nsubj
+7	3	aux
+7	4	neg
+7	5	advmod
+7	6	advmod
+7	8	dobj
+7	12	prep_on
+7	18	conj_and
+12	10	det
+12	11	amod
+12	14	prep_of
+18	2	nsubj
+18	16	aux
+18	17	neg
+18	21	dobj
+18	23	advmod
+18	26	prep_for
+21	19	det
+21	20	amod
+23	22	det
+26	25	nn
+EOX
+Y	1
+ROOT	0	0	28	1	SBAR	2	0	28	4	RB	0	0	1	1	Even	0	0	1	0	IN	0	1	2	1	if	1	1	2	0	S	1	2	27	2	NP	0	2	3	1	PRP	0	2	3	1	I	2	2	3	0	VP	0	3	27	3	VP	3	3	15	4	MD	0	3	4	1	could	3	3	4	0	RB	0	4	5	1	n't	4	4	5	0	ADVP	0	5	6	1	RB	0	5	6	1	just	5	5	6	0	VP	1	6	15	4	ADVP	0	6	7	1	RB	0	6	7	1	then	6	6	7	0	VB	0	7	8	1	consider	7	7	8	0	NP	0	8	9	1	PRP	0	8	9	1	myself	8	8	9	0	PP	0	9	15	2	IN	0	9	10	1	on	9	9	10	0	NP	0	10	15	2	NP	2	10	13	3	DT	0	10	11	1	the	10	10	11	0	JJ	0	11	12	1	active	11	11	12	0	NN	0	12	13	1	list	12	12	13	0	PP	0	13	15	2	IN	0	13	14	1	of	13	13	14	0	NP	0	14	15	1	NNS	0	14	15	1	lovers	14	14	15	0	CC	0	15	16	1	and	15	15	16	0	VP	2	16	27	3	VBD	0	16	17	1	was	16	16	17	0	RB	0	17	18	1	n't	17	17	18	0	VP	0	18	27	4	VBG	0	18	19	1	carrying	18	18	19	0	NP	2	19	22	3	DT	0	19	20	1	a	19	19	20	0	JJ	0	20	21	1	live	20	20	21	0	NN	0	21	22	1	torch	21	21	22	0	ADVP	1	22	24	2	DT	0	22	23	1	any	22	22	23	0	JJR	0	23	24	1	more	23	23	24	0	PP	0	24	27	2	IN	0	24	25	1	for	24	24	25	0	NP	1	25	27	2	NNP	0	25	26	1	Esther	25	25	26	0	NNP	0	26	27	1	Fenchel	26	26	27	0	.	0	27	28	1	.	27	27	28	0
+EOS
+T	14
+I	190	191	PRP	I	O	O	_
+recognized	192	202	VBD	recognize	O	O	_
+his	203	206	PRP$	he	O	O	_
+face	207	211	NN	face	O	O	_
+as	212	214	IN	as	O	O	_
+the	215	218	DT	the	O	O	_
+face	219	223	NN	face	O	O	_
+of	224	226	IN	of	O	O	_
+a	227	228	DT	a	O	O	_
+man	229	232	NN	man	O	O	_
+in	233	235	IN	in	O	O	_
+the	236	239	DT	the	O	O	_
+wrong	240	245	JJ	wrong	O	O	_
+.	245	246	.	.	O	O	_
+D	1
+1
+1	0	nsubj
+1	3	dobj
+1	6	prep_as
+1	12	prep_in
+3	2	poss
+6	5	det
+6	9	prep_of
+9	8	det
+12	11	det
+EOX
+Y	1
+ROOT	0	0	14	1	S	1	0	14	3	NP	0	0	1	1	PRP	0	0	1	1	I	0	0	1	0	VP	0	1	13	4	VBD	0	1	2	1	recognized	1	1	2	0	NP	1	2	4	2	PRP$	0	2	3	1	his	2	2	3	0	NN	0	3	4	1	face	3	3	4	0	PP	0	4	10	2	IN	0	4	5	1	as	4	4	5	0	NP	0	5	10	2	NP	1	5	7	2	DT	0	5	6	1	the	5	5	6	0	NN	0	6	7	1	face	6	6	7	0	PP	0	7	10	2	IN	0	7	8	1	of	7	7	8	0	NP	1	8	10	2	DT	0	8	9	1	a	8	8	9	0	NN	0	9	10	1	man	9	9	10	0	PP	0	10	13	2	IN	0	10	11	1	in	10	10	11	0	NP	1	11	13	2	DT	0	11	12	1	the	11	11	12	0	JJ	0	12	13	1	wrong	12	12	13	0	.	0	13	14	1	.	13	13	14	0
+EOS
+C	15
+1	8	8	9	1
+1	21	19	22	9
+0	0	0	1	1
+0	10	10	11	3
+0	7	7	12	1
+2	0	0	1	1
+1	12	10	15	7
+2	6	5	10	13
+2	9	8	10	14
+2	2	2	3	3
+1	14	14	15	8
+1	26	25	27	4
+2	3	2	4	11
+1	2	2	3	1
+2	12	11	13	15
+R
+elaboration	LeftToRight	-1	-1	0	0	2	13	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	0	12	0	1	2	nil
+nil	None	-1	-1	0	0	0	8	0	0	0	I was all the same strongly against him ;
+nil	None	-1	-1	0	9	0	12	1	1	0	that he saw .
+elaboration	LeftToRight	-1	-1	1	0	2	13	0	0	2	nil
+nil	None	-1	-1	1	0	1	27	0	0	0	Even if I could n't just then consider myself on the active list of lovers and was n't carrying a live torch any more for Esther Fenchel .
+nil	None	-1	-1	2	0	2	13	0	0	0	I recognized his face as the face of a man in the wrong .
+EOD
