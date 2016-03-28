@@ -1,6 +1,9 @@
 package Complexity.Utils
 
-import edu.arizona.sista.processors.fastnlp.FastNLPProcessor
+import java.io.{FileReader, BufferedReader, PrintWriter, File}
+import Complexity.TextDocument
+import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
+import edu.arizona.sista.processors.{Document, DocumentSerializer}
 
 /**
   * Created by mcapizzi on 3/25/16.
@@ -60,5 +63,68 @@ object IO {
     gradeLevelRegex.replaceFirstIn(filePath, """$1""")
   }
 
+  //serialize annotation to file
+  def serializeAnnotation(annotatedDocuments: Vector[Document], outputFileName: String): Unit = {
+    val writeToFile = new PrintWriter(
+                        new File(
+                          "/home/mcapizzi/Github/Unbound/src/main/resources/annotatedText/" + outputFileName
+                        )
+                      )
+
+    val serializer = new DocumentSerializer
+
+    //serialize each paragraph's annotations
+    annotatedDocuments.foreach(serializer.save(_, writeToFile))
+
+    writeToFile.close
+  }
+
+  //import serialized annotation into vector of annotated paragraphs
+  def importSerial(annotationFileName: String): Vector[Document] = {
+    val serial = new DocumentSerializer
+    //open buffer
+    val buffer = new BufferedReader(
+                  new FileReader(
+                    new File(
+                      getClass.getResource(annotationFileName).getPath
+                    )
+                  )
+    )
+
+    //read in first line
+    var line = buffer.readLine
+    //initialize other variables to be used
+    val stringBuffer = new StringBuilder
+    val docBuffer = collection.mutable.Buffer[String]()
+
+    while (line != null) {
+      if (line == "EOD") {                    //if end of annotation of paragraph
+        stringBuffer.append(line)
+        docBuffer += stringBuffer.toString
+        stringBuffer.clear
+        line = buffer.readLine
+      } else {
+        stringBuffer.append(line + "\n")
+        line = buffer.readLine
+      }
+    }
+    //for each paragraph in docBuffer
+    docBuffer.map(paragraph =>
+                                serial.load(paragraph)
+    ).toVector
+  }
+
+  //import directly from annotation and make text document
+  def makeDocumentFromSerial(annotationFileName: String, processor: CoreNLPProcessor): TextDocument = {
+    //make sista Documents
+    val documentVector = importSerial(annotationFileName)
+
+    val text = document.map(_.sentences.map(_.words.toVector).flatten.mkString(" "))
+    val author = getAuthor(fullOriginalFilePath)
+    val title = getTitleChapter(fullOriginalFilePath)._1
+    val chapter = getTitleChapter(fullOriginalFilePath)._2
+    val gradeLevel = getGradeLevel(fullOriginalFilePath)
+    new TextDocument(text, processor, document, author, title, chapter, gradeLevel)
+  }
 
 }

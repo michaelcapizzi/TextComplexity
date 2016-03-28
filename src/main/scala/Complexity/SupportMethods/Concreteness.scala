@@ -6,12 +6,13 @@ package Complexity.SupportMethods
  */
 object Concreteness {
 
-  val concretenessRaw = scala.io.Source.fromInputStream(getClass.getResourceAsStream("concretenessData.csv")).getLines.toVector.map(_.split(","))
+  val concretenessRaw = scala.io.Source.fromInputStream(getClass.getResourceAsStream("/concretenessData.csv")).getLines.toVector.map(_.split(","))
 
-  val concretenessMap = concretenessRaw.map(item =>
-    item(0) ->                                        //the word
-    item(2).toDouble                                  //it's concreteness score
-  ).drop(1).                                          //drops the headers
-    toMap.par                                         //make a parallel collection hashMap
+  val concretenessMap = concretenessRaw.
+                            drop(1).                    //drops the headers
+                            map(item =>
+                                item(0) ->              //the word
+                                item(2).toDouble        //it's concreteness score
+                        ).toMap.par                     //convert to parallel map
 
 }

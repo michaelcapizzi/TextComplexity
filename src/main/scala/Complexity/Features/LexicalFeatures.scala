@@ -26,6 +26,7 @@ class LexicalFeatures (td: TextDocument) {
     )
   }
 
+
   //word lengths
   def wordLengths(keepProper: Boolean): Vector[Double] = {
     if (keepProper) {
@@ -40,6 +41,7 @@ class LexicalFeatures (td: TextDocument) {
       }
     }
   }
+
 
   //word length stats
   def wordLengthStats(keepProper: Boolean): Map[String, Double] = {
@@ -75,7 +77,6 @@ class LexicalFeatures (td: TextDocument) {
 
 
   //word concreteness for all nouns, adjectives and verbs
-
   def getWordConcreteness: Vector[(String, Double)] = {
     val allTokens = td.filterStopWords("lemma").
                       keySet.
@@ -89,6 +90,7 @@ class LexicalFeatures (td: TextDocument) {
       )
     }
   }
+
 
   def wordConcretenessStats: Map[String, Double] = {
     //concreteness list
