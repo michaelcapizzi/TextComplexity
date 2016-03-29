@@ -6,12 +6,15 @@ import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
 import edu.arizona.sista.processors.{Document, DocumentSerializer}
 
 /**
-  * Created by mcapizzi on 3/25/16.
+  * Contains functions needed to import files and serialize (both `save` and `load`) annotations
   */
 object IO {
 
-  //imports text into Vector of paragraphs
-    //text has a blank line between paragraphs
+  /**
+    * Imports text from a `.txt` file where '''paragraphs are separated by `\n`'''
+    * @param fileName Filename of `.txt` located in [[https://github.com/michaelcapizzi/TextComplexity/tree/master/src/main/resources/rawText]]
+    * @return `Vector` of paragraphs in `plain text`
+    */
   //TODO fromInputStream to allow from inside .jar
   def importText(fileName: String): Vector[String] = {
     //import file
@@ -37,34 +40,52 @@ object IO {
       filterNot(_.isEmpty)                //filter out empty
   }
 
-  //get author from metadata
-  def getAuthor(filePath: String): String = {
+  /**
+    * Captures author information from metadata of `.txt` file
+     * @param fileName Filename of `.txt` located in [[https://github.com/michaelcapizzi/TextComplexity/tree/master/src/main/resources/rawText]]
+    * @return Author's name
+    */
+  def getAuthor(fileName: String): String = {
     val authorRegex = """%(.*)""".r
-    val line = scala.io.Source.fromInputStream(getClass.getResourceAsStream("/rawText/" + filePath)).
+    val line = scala.io.Source.fromInputStream(getClass.getResourceAsStream("/rawText/" + fileName)).
                 getLines.
                 take(1).
                 next
     authorRegex.replaceFirstIn(line, """$1""")
   }
 
-  //get title from metadata
-  def getTitle(filePath: String): String = {
+  /**
+    * Captures title information from metadata of `.txt` file
+     * @param fileName Filename of `.txt` located in [[https://github.com/michaelcapizzi/TextComplexity/tree/master/src/main/resources/rawText]]
+    * @return Document title
+    */
+  def getTitle(fileName: String): String = {
     val titleRegex = """%%(.*)""".r
-    val line = scala.io.Source.fromInputStream(getClass.getResourceAsStream("/rawText/" + filePath)).
+    val line = scala.io.Source.fromInputStream(getClass.getResourceAsStream("/rawText/" + fileName)).
       getLines.
       slice(1,2).
       next
     titleRegex.replaceFirstIn(line, """$1""")
   }
 
-  //get grade level from filename
-  def getGradeLevel(filePath: String): String = {
+  /**
+    * Captures grade level information from metadata of `.txt` file
+     * @param fileName Filename of `.txt` located in [[https://github.com/michaelcapizzi/TextComplexity/tree/master/src/main/resources/rawText]]
+    * @return Grade level information in `String` format <br>
+    *           Because bands of grade levels ('e.g.' K-1 represented as `0001`) will not be properly ordered as `Int`s
+    *
+    */
+  def getGradeLevel(fileName: String): String = {
     val gradeLevelRegex = """.*\/([0-9]+)[A-Z]+_.*""".r
-    gradeLevelRegex.replaceFirstIn(filePath, """$1""")
+    gradeLevelRegex.replaceFirstIn(fileName, """$1""")
   }
 
 
-  //serialize annotation to file
+  /**
+    * Use built-in serialize function in `edu.arizona.sista.processors` to save annotations
+     * @param annotatedDocuments Vector of '''annotated''' `edu.arizona.sista.processors.Document`s to be saved
+    * @param outputFileName Filename to be used in saving annotation to [[https://github.com/michaelcapizzi/TextComplexity/tree/master/src/main/resources/annotatedText]]
+    */
   def serializeAnnotation(annotatedDocuments: Vector[Document], outputFileName: String): Unit = {
     val writeToFile = new PrintWriter(
                         new File(
@@ -82,7 +103,11 @@ object IO {
   }
 
 
-  //import serialized annotation into vector of annotated paragraphs
+  /**
+    * Use built-in serialize function in `edu.arizona.sista.processors` to load annotations
+     * @param annotationFileName Filename of `.annotated` located in [[https://github.com/michaelcapizzi/TextComplexity/tree/master/src/main/resources/annotatedText]]
+    * @return `Vector` of `edu.arizona.sista.processors.Document`s to be fed into [[ProcessedParagraph]]s
+    */
   def importSerial(annotationFileName: String): Vector[Document] = {
     //serializer
     val serial = new DocumentSerializer
@@ -114,7 +139,12 @@ object IO {
     ).toVector
   }
 
-  //import directly from annotation and make text document
+  /**
+    * Loads annotations from file and generates a resulting [[TextDocument]]
+     * @param annotationFileName Filename of `.annotated` located in [[https://github.com/michaelcapizzi/TextComplexity/tree/master/src/main/resources/annotatedText]]
+    * @param processor `edu.arizona.sista.processors.corenlp.CoreNLPProcessor`
+    * @return [[TextDocument]] representing the original document.
+    */
   def makeDocumentFromSerial(annotationFileName: String, processor: CoreNLPProcessor): TextDocument = {
 
     //plain text filename
