@@ -27,10 +27,13 @@ object AnnotateTexts {
 
     //iterate through files
     for (f <- allFiles.filterNot(z =>
-      z.getName.endsWith("0608MT_TomSawyer.txt") &&
-      z.getName.endsWith("1112CB_JaneEyre.txt")
+      z.getName.endsWith("0608MT_TomSawyer.txt") ||
+      z.getName.endsWith("1112CB_JaneEyre.txt") ||
+      z.getName.endsWith("1112JA_PridePrejudice.txt") ||
+      z.getName.endsWith("1112MC_DonQuixote.txt") ||
+      z.getName.endsWith("1112NH_ScarletLetter.txt")
       )
-    ) {             //TODO fix Tom_Sawyer and Jane_Eyre bug
+    ) {                                                   //TODO fix bug of too many files open for large texts
 
       //variables for naming
       val fullName = f.getName
@@ -38,7 +41,7 @@ object AnnotateTexts {
 
       if (finishedNames.contains(annotatedName)) {
 
-        println("already annotated" + fullName)
+        println("already annotated " + fullName)
 
       } else {
 

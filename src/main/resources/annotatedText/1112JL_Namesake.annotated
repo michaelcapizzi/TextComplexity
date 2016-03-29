@@ -1,0 +1,2043 @@
+S	14
+T	14
+One	0	3	CD	one	DURATION	P1D	_
+day	4	7	NN	day	DURATION	P1D	_
+he	8	10	PRP	he	O	O	_
+attends	11	18	VBZ	attend	O	O	_
+a	19	20	DT	a	O	O	_
+panel	21	26	NN	panel	O	O	_
+discussion	27	37	NN	discussion	O	O	_
+about	38	43	IN	about	O	O	_
+Indian	44	50	JJ	indian	MISC	O	_
+novels	51	57	NNS	novel	O	O	_
+written	58	65	VBN	write	O	O	_
+in	66	68	IN	in	O	O	_
+English	69	76	NNP	English	MISC	O	_
+.	76	77	.	.	O	O	_
+D	1	13
+3
+1	0	num
+3	1	tmod
+3	2	nsubj
+3	6	dobj
+3	9	prep_about
+6	4	det
+6	5	nn
+9	8	amod
+9	10	vmod
+10	12	prep_in
+EOX
+D	0	13
+3
+1	0	num
+3	1	tmod
+3	2	nsubj
+3	6	dobj
+3	7	prep
+6	4	det
+6	5	nn
+7	9	pobj
+9	8	amod
+9	10	vmod
+10	11	prep
+11	12	pobj
+EOX
+Y	1
+ROOT	0	0	14	1	S	2	0	14	4	NP	1	0	2	2	CD	0	0	1	1	One	0	0	1	0	NN	0	1	2	1	day	1	1	2	0	NP	0	2	3	1	PRP	0	2	3	1	he	2	2	3	0	VP	0	3	13	3	VBZ	0	3	4	1	attends	3	3	4	0	NP	2	4	7	3	DT	0	4	5	1	a	4	4	5	0	NN	0	5	6	1	panel	5	5	6	0	NN	0	6	7	1	discussion	6	6	7	0	PP	0	7	13	2	IN	0	7	8	1	about	7	7	8	0	NP	0	8	13	2	NP	1	8	10	2	JJ	0	8	9	1	Indian	8	8	9	0	NNS	0	9	10	1	novels	9	9	10	0	VP	0	10	13	2	VBN	0	10	11	1	written	10	10	11	0	PP	0	11	13	2	IN	0	11	12	1	in	11	11	12	0	NP	0	12	13	1	NNP	0	12	13	1	English	12	12	13	0	.	0	13	14	1	.	13	13	14	0
+EOS
+T	31
+He	78	80	PRP	he	O	O	_
+feels	81	86	VBZ	feel	O	O	_
+obligated	87	96	VBN	obligate	O	O	_
+to	97	99	TO	to	O	O	_
+attend	100	106	VB	attend	O	O	_
+;	106	107	:	;	O	O	_
+one	108	111	CD	one	NUMBER	1.0	_
+of	112	114	IN	of	O	O	_
+the	115	118	DT	the	O	O	_
+presenters	119	129	NNS	presenter	O	O	_
+on	130	132	IN	on	O	O	_
+the	133	136	DT	the	O	O	_
+panel	137	142	NN	panel	O	O	_
+,	142	143	,	,	O	O	_
+Amit	144	148	NNP	Amit	PERSON	O	_
+,	148	149	,	,	O	O	_
+is	150	152	VBZ	be	O	O	_
+a	153	154	DT	a	O	O	_
+distant	155	162	JJ	distant	O	O	_
+cousin	163	169	NN	cousin	O	O	_
+who	170	173	WP	who	O	O	_
+lives	174	179	VBZ	live	O	O	_
+in	180	182	IN	in	O	O	_
+Bombay	183	189	NNP	Bombay	LOCATION	O	_
+,	189	190	,	,	O	O	_
+whom	191	195	WP	whom	O	O	_
+Gogol	196	201	NNP	Gogol	PERSON	O	_
+has	202	205	VBZ	have	O	O	_
+never	206	211	RB	never	O	O	_
+met	212	215	VBN	meet	O	O	_
+.	215	216	.	.	O	O	_
+D	1	30
+1
+1	0	nsubj
+1	2	dep
+1	19	parataxis
+2	4	xcomp
+4	3	aux
+6	9	prep_of
+9	8	det
+9	12	prep_on
+12	11	det
+12	14	appos
+19	6	nsubj
+19	16	cop
+19	17	det
+19	18	amod
+19	21	rcmod
+21	20	nsubj
+21	23	prep_in
+23	29	rcmod
+29	25	dobj
+29	26	nsubj
+29	27	aux
+29	28	neg
+EOX
+D	0	30
+1
+1	0	nsubj
+1	2	dep
+1	19	parataxis
+2	4	xcomp
+4	3	aux
+6	7	prep
+7	9	pobj
+9	8	det
+9	10	prep
+10	12	pobj
+12	11	det
+12	14	appos
+19	6	nsubj
+19	16	cop
+19	17	det
+19	18	amod
+19	21	rcmod
+21	20	nsubj
+21	22	prep
+22	23	pobj
+23	29	rcmod
+29	25	dobj
+29	26	nsubj
+29	27	aux
+29	28	neg
+EOX
+Y	1
+ROOT	0	0	31	1	S	0	0	31	4	S	1	0	5	2	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	0	1	5	2	VBZ	0	1	2	1	feels	1	1	2	0	VP	0	2	5	2	VBN	0	2	3	1	obligated	2	2	3	0	S	0	3	5	1	VP	1	3	5	2	TO	0	3	4	1	to	3	3	4	0	VP	0	4	5	1	VB	0	4	5	1	attend	4	4	5	0	:	0	5	6	1	;	5	5	6	0	S	1	6	30	2	NP	0	6	16	2	NP	0	6	7	1	CD	0	6	7	1	one	6	6	7	0	PP	0	7	16	2	IN	0	7	8	1	of	7	7	8	0	NP	0	8	16	2	NP	1	8	10	2	DT	0	8	9	1	the	8	8	9	0	NNS	0	9	10	1	presenters	9	9	10	0	PP	0	10	16	2	IN	0	10	11	1	on	10	10	11	0	NP	0	11	16	4	NP	1	11	13	2	DT	0	11	12	1	the	11	11	12	0	NN	0	12	13	1	panel	12	12	13	0	,	0	13	14	1	,	13	13	14	0	NP	0	14	15	1	NNP	0	14	15	1	Amit	14	14	15	0	,	0	15	16	1	,	15	15	16	0	VP	1	16	30	2	VBZ	0	16	17	1	is	16	16	17	0	NP	0	17	30	2	NP	2	17	20	3	DT	0	17	18	1	a	17	17	18	0	JJ	0	18	19	1	distant	18	18	19	0	NN	0	19	20	1	cousin	19	19	20	0	SBAR	1	20	30	2	WHNP	0	20	21	1	WP	0	20	21	1	who	20	20	21	0	S	0	21	30	1	VP	0	21	30	2	VBZ	0	21	22	1	lives	21	21	22	0	PP	0	22	30	2	IN	0	22	23	1	in	22	22	23	0	NP	0	23	30	3	NP	0	23	24	1	NNP	0	23	24	1	Bombay	23	23	24	0	,	0	24	25	1	,	24	24	25	0	SBAR	1	25	30	2	WHNP	0	25	26	1	WP	0	25	26	1	whom	25	25	26	0	S	1	26	30	2	NP	0	26	27	1	NNP	0	26	27	1	Gogol	26	26	27	0	VP	2	27	30	3	VBZ	0	27	28	1	has	27	27	28	0	ADVP	0	28	29	1	RB	0	28	29	1	never	28	28	29	0	VP	0	29	30	1	VBN	0	29	30	1	met	29	29	30	0	.	0	30	31	1	.	30	30	31	0
+EOS
+T	12
+His	217	220	PRP$	he	O	O	_
+mother	221	227	NN	mother	O	O	_
+has	228	231	VBZ	have	O	O	_
+asked	232	237	VBN	ask	O	O	_
+him	238	241	PRP	he	O	O	_
+to	242	244	TO	to	O	O	_
+greet	245	250	VB	greet	O	O	_
+Amit	251	255	NNP	Amit	PERSON	O	_
+on	256	258	IN	on	O	O	_
+her	259	262	PRP$	she	O	O	_
+behalf	263	269	NN	behalf	O	O	_
+.	269	270	.	.	O	O	_
+D	1	11
+3
+1	0	poss
+3	1	nsubj
+3	2	aux
+3	4	dobj
+3	6	xcomp
+6	5	aux
+6	7	dobj
+7	10	prep_on
+10	9	poss
+EOX
+D	0	11
+3
+1	0	poss
+3	1	nsubj
+3	2	aux
+3	4	dobj
+3	6	xcomp
+6	5	aux
+6	7	dobj
+7	8	prep
+8	10	pobj
+10	9	poss
+EOX
+Y	1
+ROOT	0	0	12	1	S	1	0	12	3	NP	1	0	2	2	PRP$	0	0	1	1	His	0	0	1	0	NN	0	1	2	1	mother	1	1	2	0	VP	1	2	11	2	VBZ	0	2	3	1	has	2	2	3	0	VP	0	3	11	2	VBN	0	3	4	1	asked	3	3	4	0	S	1	4	11	2	NP	0	4	5	1	PRP	0	4	5	1	him	4	4	5	0	VP	1	5	11	2	TO	0	5	6	1	to	5	5	6	0	VP	0	6	11	2	VB	0	6	7	1	greet	6	6	7	0	NP	0	7	11	2	NP	0	7	8	1	NNP	0	7	8	1	Amit	7	7	8	0	PP	0	8	11	2	IN	0	8	9	1	on	8	8	9	0	NP	1	9	11	2	PRP$	0	9	10	1	her	9	9	10	0	NN	0	10	11	1	behalf	10	10	11	0	.	0	11	12	1	.	11	11	12	0
+EOS
+T	27
+Gogol	271	276	NNP	Gogol	PERSON	O	_
+is	277	279	VBZ	be	O	O	_
+bored	280	285	VBN	bore	O	O	_
+by	286	288	IN	by	O	O	_
+the	289	292	DT	the	O	O	_
+panelists	293	302	NNS	panelist	O	O	_
+,	302	303	,	,	O	O	_
+who	304	307	WP	who	O	O	_
+keep	308	312	VBP	keep	O	O	_
+referring	313	322	VBG	refer	O	O	_
+to	323	325	TO	to	O	O	_
+something	326	335	NN	something	O	O	_
+called	336	342	VBN	call	O	O	_
+``	343	344	``	``	O	O	_
+marginality	344	355	NN	marginality	O	O	_
+,	355	356	,	,	O	O	_
+''	356	357	''	''	O	O	_
+as	358	360	IN	as	O	O	_
+if	361	363	IN	if	O	O	_
+it	364	366	PRP	it	O	O	_
+were	367	371	VBD	be	O	O	_
+some	372	376	DT	some	O	O	_
+sort	377	381	NN	sort	O	O	_
+of	382	384	IN	of	O	O	_
+medical	385	392	JJ	medical	O	O	_
+condition	393	402	NN	condition	O	O	_
+.	402	403	.	.	O	O	_
+D	1	26
+2
+2	0	nsubjpass
+2	1	auxpass
+2	5	agent
+5	4	det
+5	8	rcmod
+8	7	nsubj
+8	9	xcomp
+9	11	prep_to
+11	12	vmod
+12	14	dobj
+14	22	prepc_as
+22	18	mark
+22	19	nsubj
+22	20	cop
+22	21	det
+22	25	prep_of
+25	24	amod
+EOX
+D	0	26
+2
+2	0	nsubjpass
+2	1	auxpass
+2	3	prep
+3	5	pobj
+5	4	det
+5	8	rcmod
+8	7	nsubj
+8	9	xcomp
+9	10	prep
+10	11	pobj
+11	12	vmod
+12	14	dobj
+14	17	prep
+17	22	pcomp
+22	18	mark
+22	19	nsubj
+22	20	cop
+22	21	det
+22	23	prep
+23	25	pobj
+25	24	amod
+EOX
+Y	1
+ROOT	0	0	27	1	S	1	0	27	3	NP	0	0	1	1	NNP	0	0	1	1	Gogol	0	0	1	0	VP	1	1	26	2	VBZ	0	1	2	1	is	1	1	2	0	ADJP	0	2	26	2	VBN	0	2	3	1	bored	2	2	3	0	PP	0	3	26	2	IN	0	3	4	1	by	3	3	4	0	NP	0	4	26	3	NP	1	4	6	2	DT	0	4	5	1	the	4	4	5	0	NNS	0	5	6	1	panelists	5	5	6	0	,	0	6	7	1	,	6	6	7	0	SBAR	1	7	26	2	WHNP	0	7	8	1	WP	0	7	8	1	who	7	7	8	0	S	0	8	26	1	VP	0	8	26	2	VBP	0	8	9	1	keep	8	8	9	0	S	0	9	26	1	VP	0	9	26	2	VBG	0	9	10	1	referring	9	9	10	0	PP	0	10	26	2	TO	0	10	11	1	to	10	10	11	0	NP	0	11	26	2	NP	0	11	12	1	NN	0	11	12	1	something	11	11	12	0	VP	0	12	26	2	VBN	0	12	13	1	called	12	12	13	0	NP	1	13	26	5	``	0	13	14	1	``	13	13	14	0	NP	0	14	15	1	NN	0	14	15	1	marginality	14	14	15	0	,	0	15	16	1	,	15	15	16	0	''	0	16	17	1	''	16	16	17	0	PP	0	17	26	2	IN	0	17	18	1	as	17	17	18	0	SBAR	1	18	26	2	IN	0	18	19	1	if	18	18	19	0	S	1	19	26	2	NP	0	19	20	1	PRP	0	19	20	1	it	19	19	20	0	VP	1	20	26	2	VBD	0	20	21	1	were	20	20	21	0	NP	0	21	26	2	NP	1	21	23	2	DT	0	21	22	1	some	21	21	22	0	NN	0	22	23	1	sort	22	22	23	0	PP	0	23	26	2	IN	0	23	24	1	of	23	23	24	0	NP	1	24	26	2	JJ	0	24	25	1	medical	24	24	25	0	NN	0	25	26	1	condition	25	25	26	0	.	0	26	27	1	.	26	26	27	0
+EOS
+T	24
+For	404	407	IN	for	O	O	_
+most	408	412	JJS	most	O	O	_
+of	413	415	IN	of	O	O	_
+the	416	419	DT	the	DATE	THIS PT1H	_
+hour	420	424	NN	hour	DATE	THIS PT1H	_
+,	424	425	,	,	O	O	_
+he	426	428	PRP	he	O	O	_
+sketches	429	437	VBZ	sketch	O	O	_
+portraits	438	447	NNS	portrait	O	O	_
+of	448	450	IN	of	O	O	_
+the	451	454	DT	the	O	O	_
+panelists	455	464	NNS	panelist	O	O	_
+,	464	465	,	,	O	O	_
+who	466	469	WP	who	O	O	_
+sit	470	473	VBP	sit	O	O	_
+hunched	474	481	VBN	hunch	O	O	_
+over	482	486	IN	over	O	O	_
+their	487	492	PRP$	they	O	O	_
+papers	493	499	NNS	papers	O	O	_
+along	500	505	IN	along	O	O	_
+a	506	507	DT	a	O	O	_
+rectangular	508	519	JJ	rectangular	O	O	_
+table	520	525	NN	table	O	O	_
+.	525	526	.	.	O	O	_
+D	1	23
+7
+1	4	prep_of
+4	3	det
+7	1	prep_for
+7	6	nsubj
+7	8	dobj
+8	11	prep_of
+11	10	det
+11	14	rcmod
+14	13	nsubj
+14	15	dep
+15	18	prep_over
+15	22	prep_along
+18	17	poss
+22	20	det
+22	21	amod
+EOX
+D	0	23
+7
+0	1	pobj
+1	2	prep
+2	4	pobj
+4	3	det
+7	0	prep
+7	6	nsubj
+7	8	dobj
+8	9	prep
+9	11	pobj
+11	10	det
+11	14	rcmod
+14	13	nsubj
+14	15	dep
+15	16	prep
+15	19	prep
+16	18	pobj
+18	17	poss
+19	22	pobj
+22	20	det
+22	21	amod
+EOX
+Y	1
+ROOT	0	0	24	1	S	3	0	24	5	PP	0	0	5	2	IN	0	0	1	1	For	0	0	1	0	NP	0	1	5	2	NP	0	1	2	1	JJS	0	1	2	1	most	1	1	2	0	PP	0	2	5	2	IN	0	2	3	1	of	2	2	3	0	NP	1	3	5	2	DT	0	3	4	1	the	3	3	4	0	NN	0	4	5	1	hour	4	4	5	0	,	0	5	6	1	,	5	5	6	0	NP	0	6	7	1	PRP	0	6	7	1	he	6	6	7	0	VP	0	7	23	2	VBZ	0	7	8	1	sketches	7	7	8	0	NP	0	8	23	2	NP	0	8	9	1	NNS	0	8	9	1	portraits	8	8	9	0	PP	0	9	23	2	IN	0	9	10	1	of	9	9	10	0	NP	0	10	23	3	NP	1	10	12	2	DT	0	10	11	1	the	10	10	11	0	NNS	0	11	12	1	panelists	11	11	12	0	,	0	12	13	1	,	12	12	13	0	SBAR	1	13	23	2	WHNP	0	13	14	1	WP	0	13	14	1	who	13	13	14	0	S	0	14	23	1	VP	0	14	23	2	VBP	0	14	15	1	sit	14	14	15	0	VP	0	15	23	3	VBN	0	15	16	1	hunched	15	15	16	0	PP	0	16	19	2	IN	0	16	17	1	over	16	16	17	0	NP	1	17	19	2	PRP$	0	17	18	1	their	17	17	18	0	NNS	0	18	19	1	papers	18	18	19	0	PP	0	19	23	2	IN	0	19	20	1	along	19	19	20	0	NP	2	20	23	3	DT	0	20	21	1	a	20	20	21	0	JJ	0	21	22	1	rectangular	21	21	22	0	NN	0	22	23	1	table	22	22	23	0	.	0	23	24	1	.	23	23	24	0
+EOS
+T	17
+``	527	528	``	``	O	O	_
+Teleologically	528	542	RB	teleologically	O	O	_
+speaking	543	551	VBG	speak	O	O	_
+,	551	552	,	,	O	O	_
+ABCDs	553	558	NNS	abcd	O	O	_
+are	559	562	VBP	be	O	O	_
+unable	563	569	JJ	unable	O	O	_
+to	570	572	TO	to	O	O	_
+answer	573	579	VB	answer	O	O	_
+the	580	583	DT	the	O	O	_
+question	584	592	NN	question	O	O	_
+`	593	594	``	`	O	O	_
+Where	594	599	WRB	where	O	O	_
+are	600	603	VBP	be	O	O	_
+you	604	607	PRP	you	O	O	_
+from	608	612	IN	from	O	O	_
+?	612	613	.	?	O	O	_
+D	1	16
+6
+2	1	advmod
+6	2	vmod
+6	4	nsubj
+6	5	cop
+6	8	xcomp
+8	7	aux
+8	10	dobj
+8	14	advcl
+10	9	det
+14	12	advmod
+14	13	cop
+14	15	prep
+EOX
+D	0	16
+6
+2	1	advmod
+6	2	vmod
+6	4	nsubj
+6	5	cop
+6	8	xcomp
+8	7	aux
+8	10	dobj
+8	14	advcl
+10	9	det
+14	12	advmod
+14	13	cop
+14	15	prep
+EOX
+Y	1
+ROOT	0	0	17	1	S	4	0	17	6	``	0	0	1	1	``	0	0	1	0	S	1	1	3	2	ADVP	0	1	2	1	RB	0	1	2	1	Teleologically	1	1	2	0	VP	0	2	3	1	VBG	0	2	3	1	speaking	2	2	3	0	,	0	3	4	1	,	3	3	4	0	NP	0	4	5	1	NNS	0	4	5	1	ABCDs	4	4	5	0	VP	1	5	16	2	VBP	0	5	6	1	are	5	5	6	0	ADJP	0	6	16	2	JJ	0	6	7	1	unable	6	6	7	0	S	0	7	16	1	VP	1	7	16	2	TO	0	7	8	1	to	7	7	8	0	VP	0	8	16	4	VB	0	8	9	1	answer	8	8	9	0	NP	1	9	11	2	DT	0	9	10	1	the	9	9	10	0	NN	0	10	11	1	question	10	10	11	0	``	0	11	12	1	`	11	11	12	0	SBAR	1	12	16	2	WHADVP	0	12	13	1	WRB	0	12	13	1	Where	12	12	13	0	S	0	13	16	1	VP	1	13	16	3	VBP	0	13	14	1	are	13	13	14	0	NP	0	14	15	1	PRP	0	14	15	1	you	14	14	15	0	PP	0	15	16	1	IN	0	15	16	1	from	15	15	16	0	.	0	16	17	1	?	16	16	17	0
+EOS
+T	8
+'''	613	615	IN	'''	O	O	_
+the	616	619	DT	the	O	O	_
+sociologist	620	631	NN	sociologist	O	O	_
+on	632	634	IN	on	O	O	_
+the	635	638	DT	the	O	O	_
+panel	639	644	NN	panel	O	O	_
+declares	645	653	VBZ	declare	O	O	_
+.	653	654	.	.	O	O	_
+D	1	7
+6
+0	3	pcomp
+2	1	det
+3	2	npadvmod
+5	4	det
+6	0	prep
+6	5	nsubj
+EOX
+D	0	7
+6
+0	3	pcomp
+2	1	det
+3	2	npadvmod
+5	4	det
+6	0	prep
+6	5	nsubj
+EOX
+Y	1
+ROOT	0	0	8	1	S	2	0	8	4	PP	0	0	4	2	IN	0	0	1	1	'''	0	0	1	0	ADVP	1	1	4	2	NP	1	1	3	2	DT	0	1	2	1	the	1	1	2	0	NN	0	2	3	1	sociologist	2	2	3	0	IN	0	3	4	1	on	3	3	4	0	NP	1	4	6	2	DT	0	4	5	1	the	4	4	5	0	NN	0	5	6	1	panel	5	5	6	0	VP	0	6	7	1	VBZ	0	6	7	1	declares	6	6	7	0	.	0	7	8	1	.	7	7	8	0
+EOS
+T	8
+Gogol	655	660	NNP	Gogol	PERSON	O	_
+has	661	664	VBZ	have	O	O	_
+never	665	670	RB	never	O	O	_
+heard	671	676	VBN	hear	O	O	_
+the	677	680	DT	the	O	O	_
+term	681	685	NN	term	O	O	_
+ABCD	686	690	NN	abcd	ORGANIZATION	O	_
+.	690	691	.	.	O	O	_
+D	1	7
+3
+3	0	nsubj
+3	1	aux
+3	2	neg
+3	6	dobj
+6	4	det
+6	5	nn
+EOX
+D	0	7
+3
+3	0	nsubj
+3	1	aux
+3	2	neg
+3	6	dobj
+6	4	det
+6	5	nn
+EOX
+Y	1
+ROOT	0	0	8	1	S	1	0	8	3	NP	0	0	1	1	NNP	0	0	1	1	Gogol	0	0	1	0	VP	2	1	7	3	VBZ	0	1	2	1	has	1	1	2	0	ADVP	0	2	3	1	RB	0	2	3	1	never	2	2	3	0	VP	0	3	7	2	VBN	0	3	4	1	heard	3	3	4	0	NP	2	4	7	3	DT	0	4	5	1	the	4	4	5	0	NN	0	5	6	1	term	5	5	6	0	NN	0	6	7	1	ABCD	6	6	7	0	.	0	7	8	1	.	7	7	8	0
+EOS
+T	13
+He	692	694	PRP	he	O	O	_
+eventually	695	705	RB	eventually	O	O	_
+gathers	706	713	VBZ	gather	O	O	_
+that	714	718	IN	that	O	O	_
+it	719	721	PRP	it	O	O	_
+stands	722	728	VBZ	stand	O	O	_
+for	729	732	IN	for	O	O	_
+``	733	734	``	``	O	O	_
+American-born	734	747	JJ	american-born	MISC	O	_
+confused	748	756	JJ	confused	O	O	_
+deshi	757	762	NNS	deshus	O	O	_
+.	762	763	.	.	O	O	_
+''	763	764	''	''	O	O	_
+D	1	11
+2
+2	0	nsubj
+2	1	advmod
+2	5	ccomp
+5	3	mark
+5	4	nsubj
+5	10	prep_for
+9	8	amod
+10	9	amod
+EOX
+D	0	11
+2
+2	0	nsubj
+2	1	advmod
+2	5	ccomp
+5	3	mark
+5	4	nsubj
+5	6	prep
+6	10	pobj
+9	8	amod
+10	9	amod
+EOX
+Y	1
+ROOT	0	0	13	1	S	2	0	13	5	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	ADVP	0	1	2	1	RB	0	1	2	1	eventually	1	1	2	0	VP	0	2	11	2	VBZ	0	2	3	1	gathers	2	2	3	0	SBAR	1	3	11	2	IN	0	3	4	1	that	3	3	4	0	S	1	4	11	2	NP	0	4	5	1	PRP	0	4	5	1	it	4	4	5	0	VP	0	5	11	2	VBZ	0	5	6	1	stands	5	5	6	0	PP	0	6	11	3	IN	0	6	7	1	for	6	6	7	0	``	0	7	8	1	``	7	7	8	0	NP	1	8	11	2	ADJP	1	8	10	2	JJ	0	8	9	1	American-born	8	8	9	0	JJ	0	9	10	1	confused	9	9	10	0	NNS	0	10	11	1	deshi	10	10	11	0	.	0	11	12	1	.	11	11	12	0	''	0	12	13	1	''	12	12	13	0
+EOS
+T	6
+In	765	767	IN	in	O	O	_
+other	768	773	JJ	other	O	O	_
+words	774	779	NNS	word	O	O	_
+,	779	780	,	,	O	O	_
+him	781	784	PRP	he	O	O	_
+.	784	785	.	.	O	O	_
+D	1	5
+4
+2	1	amod
+4	2	prep_in
+EOX
+D	0	5
+4
+0	2	pobj
+2	1	amod
+4	0	prep
+EOX
+Y	1
+ROOT	0	0	6	1	FRAG	2	0	6	4	PP	0	0	3	2	IN	0	0	1	1	In	0	0	1	0	NP	1	1	3	2	JJ	0	1	2	1	other	1	1	2	0	NNS	0	2	3	1	words	2	2	3	0	,	0	3	4	1	,	3	3	4	0	NP	0	4	5	1	PRP	0	4	5	1	him	4	4	5	0	.	0	5	6	1	.	5	5	6	0
+EOS
+T	13
+He	786	788	PRP	he	O	O	_
+learns	789	795	VBZ	learn	O	O	_
+that	796	800	IN	that	O	O	_
+the	801	804	DT	the	O	O	_
+C	805	806	NN	c	O	O	_
+could	807	812	MD	could	O	O	_
+also	813	817	RB	also	O	O	_
+stand	818	823	VB	stand	O	O	_
+for	824	827	IN	for	O	O	_
+``	828	829	``	``	O	O	_
+conflicted	829	839	JJ	conflicted	O	O	_
+.	839	840	.	.	O	O	_
+''	840	841	''	''	O	O	_
+D	1	11
+1
+1	0	nsubj
+1	7	ccomp
+4	3	det
+7	2	mark
+7	4	nsubj
+7	5	aux
+7	6	advmod
+7	10	prep_for
+EOX
+D	0	11
+1
+1	0	nsubj
+1	7	ccomp
+4	3	det
+7	2	mark
+7	4	nsubj
+7	5	aux
+7	6	advmod
+7	8	prep
+8	10	pobj
+EOX
+Y	1
+ROOT	0	0	13	1	S	1	0	13	4	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	0	1	11	2	VBZ	0	1	2	1	learns	1	1	2	0	SBAR	1	2	11	2	IN	0	2	3	1	that	2	2	3	0	S	1	3	11	2	NP	1	3	5	2	DT	0	3	4	1	the	3	3	4	0	NN	0	4	5	1	C	4	4	5	0	VP	2	5	11	3	MD	0	5	6	1	could	5	5	6	0	ADVP	0	6	7	1	RB	0	6	7	1	also	6	6	7	0	VP	0	7	11	2	VB	0	7	8	1	stand	7	7	8	0	PP	0	8	11	3	IN	0	8	9	1	for	8	8	9	0	``	0	9	10	1	``	9	9	10	0	ADJP	0	10	11	1	JJ	0	10	11	1	conflicted	10	10	11	0	.	0	11	12	1	.	11	11	12	0	''	0	12	13	1	''	12	12	13	0
+EOS
+T	34
+He	842	844	PRP	he	O	O	_
+knows	845	850	VBZ	know	O	O	_
+that	851	855	IN	that	O	O	_
+deshi	856	861	NN	deshus	O	O	_
+,	861	862	,	,	O	O	_
+a	863	864	DT	a	O	O	_
+generic	865	872	JJ	generic	O	O	_
+word	873	877	NN	word	O	O	_
+for	878	881	IN	for	O	O	_
+``	882	883	``	``	O	O	_
+countryman	883	893	NN	countryman	O	O	_
+,	893	894	,	,	O	O	_
+''	894	895	''	''	O	O	_
+means	896	901	VBZ	mean	O	O	_
+``	902	903	``	``	O	O	_
+Indian	903	909	JJ	indian	MISC	O	_
+,	909	910	,	,	O	O	_
+''	910	911	''	''	O	O	_
+knows	912	917	VBZ	know	O	O	_
+that	918	922	IN	that	O	O	_
+his	923	926	PRP$	he	O	O	_
+parents	927	934	NNS	parent	O	O	_
+and	935	938	CC	and	O	O	_
+all	939	942	PDT	all	O	O	_
+their	943	948	PRP$	they	O	O	_
+friends	949	956	NNS	friend	O	O	_
+always	957	963	RB	always	O	O	_
+refer	964	969	VBP	refer	O	O	_
+to	970	972	TO	to	O	O	_
+India	973	978	NNP	India	LOCATION	O	_
+simply	979	985	RB	simply	O	O	_
+as	986	988	IN	as	O	O	_
+desh	989	993	NN	desh	O	O	_
+.	993	994	.	.	O	O	_
+D	1	33
+1
+1	0	nsubj
+1	13	ccomp
+1	27	ccomp
+3	7	appos
+7	5	det
+7	6	amod
+7	10	prep_for
+13	2	mark
+13	3	nsubj
+13	18	ccomp
+13	27	conj_and
+18	15	nsubj
+18	21	prep_that
+21	20	poss
+25	23	predet
+25	24	poss
+27	25	nsubj
+27	26	advmod
+27	29	prep_to
+27	30	advmod
+27	32	prep_as
+EOX
+D	0	33
+1
+1	0	nsubj
+1	13	ccomp
+3	7	appos
+7	5	det
+7	6	amod
+7	8	prep
+8	10	pobj
+13	2	mark
+13	3	nsubj
+13	18	ccomp
+13	22	cc
+13	27	conj
+18	15	nsubj
+18	19	prep
+19	21	pobj
+21	20	poss
+25	23	predet
+25	24	poss
+27	25	nsubj
+27	26	advmod
+27	28	prep
+27	30	advmod
+27	31	prep
+28	29	pobj
+31	32	pobj
+EOX
+Y	1
+ROOT	0	0	34	1	S	1	0	34	3	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	0	1	33	2	VBZ	0	1	2	1	knows	1	1	2	0	SBAR	1	2	33	2	IN	0	2	3	1	that	2	2	3	0	S	0	3	33	3	S	1	3	22	2	NP	0	3	13	5	NP	0	3	4	1	NN	0	3	4	1	deshi	3	3	4	0	,	0	4	5	1	,	4	4	5	0	NP	0	5	11	2	NP	2	5	8	3	DT	0	5	6	1	a	5	5	6	0	JJ	0	6	7	1	generic	6	6	7	0	NN	0	7	8	1	word	7	7	8	0	PP	0	8	11	3	IN	0	8	9	1	for	8	8	9	0	``	0	9	10	1	``	9	9	10	0	NP	0	10	11	1	NN	0	10	11	1	countryman	10	10	11	0	,	0	11	12	1	,	11	11	12	0	''	0	12	13	1	''	12	12	13	0	VP	0	13	22	2	VBZ	0	13	14	1	means	13	13	14	0	SBAR	0	14	22	1	S	1	14	22	2	NP	1	14	18	4	``	0	14	15	1	``	14	14	15	0	NP	0	15	16	1	JJ	0	15	16	1	Indian	15	15	16	0	,	0	16	17	1	,	16	16	17	0	''	0	17	18	1	''	17	17	18	0	VP	0	18	22	2	VBZ	0	18	19	1	knows	18	18	19	0	PP	0	19	22	2	IN	0	19	20	1	that	19	19	20	0	NP	1	20	22	2	PRP$	0	20	21	1	his	20	20	21	0	NNS	0	21	22	1	parents	21	21	22	0	CC	0	22	23	1	and	22	22	23	0	S	2	23	33	3	NP	2	23	26	3	PDT	0	23	24	1	all	23	23	24	0	PRP$	0	24	25	1	their	24	24	25	0	NNS	0	25	26	1	friends	25	25	26	0	ADVP	0	26	27	1	RB	0	26	27	1	always	26	26	27	0	VP	0	27	33	4	VBP	0	27	28	1	refer	27	27	28	0	PP	0	28	30	2	TO	0	28	29	1	to	28	28	29	0	NP	0	29	30	1	NNP	0	29	30	1	India	29	29	30	0	ADVP	0	30	31	1	RB	0	30	31	1	simply	30	30	31	0	PP	0	31	33	2	IN	0	31	32	1	as	31	31	32	0	NP	0	32	33	1	NN	0	32	33	1	desh	32	32	33	0	.	0	33	34	1	.	33	33	34	0
+EOS
+T	9
+But	995	998	CC	but	O	O	_
+Gogol	999	1004	NNP	Gogol	PERSON	O	_
+never	1005	1010	RB	never	O	O	_
+thinks	1011	1017	VBZ	think	O	O	_
+of	1018	1020	IN	of	O	O	_
+India	1021	1026	NNP	India	LOCATION	O	_
+as	1027	1029	IN	as	O	O	_
+desh	1030	1034	NN	desh	O	O	_
+.	1034	1035	.	.	O	O	_
+D	1	8
+3
+3	0	cc
+3	1	nsubj
+3	2	neg
+3	5	prep_of
+3	7	prep_as
+EOX
+D	0	8
+3
+3	0	cc
+3	1	nsubj
+3	2	neg
+3	4	prep
+3	6	prep
+4	5	pobj
+6	7	pobj
+EOX
+Y	1
+ROOT	0	0	9	1	S	3	0	9	5	CC	0	0	1	1	But	0	0	1	0	NP	0	1	2	1	NNP	0	1	2	1	Gogol	1	1	2	0	ADVP	0	2	3	1	RB	0	2	3	1	never	2	2	3	0	VP	0	3	8	3	VBZ	0	3	4	1	thinks	3	3	4	0	PP	0	4	6	2	IN	0	4	5	1	of	4	4	5	0	NP	0	5	6	1	NNP	0	5	6	1	India	5	5	6	0	PP	0	6	8	2	IN	0	6	7	1	as	6	6	7	0	NP	0	7	8	1	NN	0	7	8	1	desh	7	7	8	0	.	0	8	9	1	.	8	8	9	0
+EOS
+T	11
+He	1036	1038	PRP	he	O	O	_
+thinks	1039	1045	VBZ	think	O	O	_
+of	1046	1048	IN	of	O	O	_
+it	1049	1051	PRP	it	O	O	_
+as	1052	1054	IN	as	O	O	_
+Americans	1055	1064	NNS	american	MISC	O	_
+do	1065	1067	VBP	do	O	O	_
+,	1067	1068	,	,	O	O	_
+as	1069	1071	IN	as	O	O	_
+India	1072	1077	NNP	India	LOCATION	O	_
+.	1077	1078	.	.	O	O	_
+D	1	10
+1
+1	0	nsubj
+1	3	prep_of
+1	6	advcl
+1	9	prep_as
+6	4	mark
+6	5	nsubj
+EOX
+D	0	10
+1
+1	0	nsubj
+1	2	prep
+1	6	advcl
+1	8	prep
+2	3	pobj
+6	4	mark
+6	5	nsubj
+8	9	pobj
+EOX
+Y	1
+ROOT	0	0	11	1	S	1	0	11	3	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	0	1	10	5	VBZ	0	1	2	1	thinks	1	1	2	0	PP	0	2	4	2	IN	0	2	3	1	of	2	2	3	0	NP	0	3	4	1	PRP	0	3	4	1	it	3	3	4	0	SBAR	1	4	7	2	IN	0	4	5	1	as	4	4	5	0	S	1	5	7	2	NP	0	5	6	1	NNS	0	5	6	1	Americans	5	5	6	0	VP	0	6	7	1	VBP	0	6	7	1	do	6	6	7	0	,	0	7	8	1	,	7	7	8	0	PP	0	8	10	2	IN	0	8	9	1	as	8	8	9	0	NP	0	9	10	1	NNP	0	9	10	1	India	9	9	10	0	.	0	10	11	1	.	10	10	11	0
+EOS
+C	59
+7	6	4	7	42
+3	11	11	26	23
+8	10	8	11	46
+11	7	5	11	54
+0	2	2	3	2
+12	1	1	2	7
+4	17	17	18	21
+2	10	9	11	18
+13	0	0	1	7
+12	5	5	6	51
+11	24	24	25	56
+0	9	8	13	4
+4	1	1	5	27
+6	2	1	3	39
+2	0	0	1	2
+3	22	21	26	26
+4	4	3	5	28
+3	0	0	1	7
+8	0	0	1	7
+5	10	9	11	37
+1	6	6	15	9
+13	9	9	10	51
+6	5	4	6	10
+1	19	17	30	12
+1	12	11	15	10
+11	3	3	13	53
+3	5	4	26	21
+4	6	6	7	7
+4	11	10	23	21
+11	29	29	30	51
+4	18	17	19	33
+11	21	20	22	56
+8	8	8	9	43
+2	9	9	10	14
+5	4	4	5	36
+4	8	8	23	30
+2	7	7	11	17
+2	4	4	5	2
+1	14	14	15	5
+1	26	26	27	7
+0	1	0	2	1
+10	4	3	5	50
+8	4	4	5	42
+1	23	23	30	13
+3	19	19	20	18
+13	3	3	4	51
+10	0	0	1	7
+4	22	20	23	35
+11	15	14	18	55
+3	14	13	26	24
+2	1	0	2	14
+11	20	20	21	55
+9	4	4	5	7
+5	14	14	15	38
+11	0	0	1	7
+1	0	0	1	2
+0	6	4	7	3
+9	2	1	3	47
+7	0	0	1	7
+R
+elaboration	LeftToRight	-1	-1	0	0	13	10	0	2	2	nil
+elaboration	LeftToRight	-1	-1	0	0	6	7	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	2	11	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	0	13	0	1	2	nil
+nil	None	-1	-1	0	0	0	9	0	0	0	One day he attends a panel discussion about Indian novels
+nil	None	-1	-1	0	10	0	13	1	1	0	written in English .
+elaboration	LeftToRight	-1	-1	1	0	2	11	0	0	2	nil
+elaboration	LeftToRight	-1	-1	1	0	1	30	0	4	2	nil
+attribution	RightToLeft	-1	-1	1	0	1	5	0	1	2	nil
+nil	None	-1	-1	1	0	1	1	0	0	0	He feels
+nil	None	-1	-1	1	2	1	5	1	1	0	obligated to attend ;
+elaboration	LeftToRight	-1	-1	1	6	1	30	2	4	2	nil
+elaboration	LeftToRight	-1	-1	1	6	1	24	2	3	2	nil
+nil	None	-1	-1	1	6	1	19	2	2	0	one of the presenters on the panel , Amit , is a distant cousin
+nil	None	-1	-1	1	20	1	24	3	3	0	who lives in Bombay ,
+nil	None	-1	-1	1	25	1	30	4	4	0	whom Gogol has never met .
+nil	None	-1	-1	2	0	2	11	0	0	0	His mother has asked him to greet Amit on her behalf .
+elaboration	LeftToRight	-1	-1	3	0	6	7	0	0	2	nil
+same-unit	None	-1	-1	3	0	3	26	0	3	2	nil
+elaboration	LeftToRight	-1	-1	3	0	3	16	0	2	2	nil
+nil	None	-1	-1	3	0	3	6	0	0	0	Gogol is bored by the panelists ,
+elaboration	LeftToRight	-1	-1	3	7	3	16	1	2	2	nil
+nil	None	-1	-1	3	7	3	11	1	1	0	who keep referring to something
+nil	None	-1	-1	3	12	3	16	2	2	0	called `` marginality , ''
+nil	None	-1	-1	3	17	3	26	3	3	0	as if it were some sort of medical condition .
+elaboration	LeftToRight	-1	-1	4	0	6	7	0	0	2	nil
+elaboration	LeftToRight	-1	-1	4	0	4	23	0	1	2	nil
+nil	None	-1	-1	4	0	4	12	0	0	0	For most of the hour , he sketches portraits of the panelists ,
+nil	None	-1	-1	4	13	4	23	1	1	0	who sit hunched over their papers along a rectangular table .
+elaboration	LeftToRight	-1	-1	5	0	6	7	0	0	2	nil
+attribution	RightToLeft	-1	-1	5	0	5	16	0	1	2	nil
+nil	None	-1	-1	5	0	5	11	0	0	0	`` Teleologically speaking , ABCDs are unable to answer the question `
+nil	None	-1	-1	5	12	5	16	1	1	0	Where are you from ?
+nil	None	-1	-1	6	0	6	7	0	0	0	''' the sociologist on the panel declares .
+elaboration	LeftToRight	-1	-1	7	0	13	10	0	2	2	nil
+elaboration	LeftToRight	-1	-1	7	0	8	12	0	1	2	nil
+nil	None	-1	-1	7	0	7	7	0	0	0	Gogol has never heard the term ABCD .
+attribution	RightToLeft	-1	-1	8	0	8	12	0	1	2	nil
+nil	None	-1	-1	8	0	8	2	0	0	0	He eventually gathers
+nil	None	-1	-1	8	3	8	12	1	1	0	that it stands for `` American-born confused deshi . ''
+elaboration	LeftToRight	-1	-1	9	0	13	10	0	2	2	nil
+contrast	None	-1	-1	9	0	12	8	0	0	2	nil
+elaboration	LeftToRight	-1	-1	9	0	11	33	0	3	2	nil
+nil	None	-1	-1	9	0	9	5	0	0	0	In other words , him .
+elaboration	LeftToRight	-1	-1	10	0	11	33	0	3	2	nil
+attribution	RightToLeft	-1	-1	10	0	10	12	0	1	2	nil
+nil	None	-1	-1	10	0	10	1	0	0	0	He learns
+nil	None	-1	-1	10	2	10	12	1	1	0	that the C could also stand for `` conflicted . ''
+attribution	LeftToRight	-1	-1	11	0	11	33	0	3	2	nil
+attribution	RightToLeft	-1	-1	11	0	11	17	0	1	2	nil
+nil	None	-1	-1	11	0	11	1	0	0	0	He knows
+nil	None	-1	-1	11	2	11	17	1	1	0	that deshi , a generic word for `` countryman , '' means `` Indian , ''
+joint	None	-1	-1	11	18	11	33	2	3	2	nil
+nil	None	-1	-1	11	18	11	21	2	2	0	knows that his parents
+nil	None	-1	-1	11	22	11	33	3	3	0	and all their friends always refer to India simply as desh .
+nil	None	-1	-1	12	0	12	8	0	0	0	But Gogol never thinks of India as desh .
+background	LeftToRight	-1	-1	13	0	13	10	0	2	2	nil
+nil	None	-1	-1	13	0	13	3	0	0	0	He thinks of it
+attribution	LeftToRight	-1	-1	13	4	13	10	1	2	2	nil
+nil	None	-1	-1	13	4	13	7	1	1	0	as Americans do ,
+nil	None	-1	-1	13	8	13	10	2	2	0	as India .
+EOD
+S	13
+T	11
+Gogol	0	5	NNP	Gogol	PERSON	O	_
+slouches	6	14	VBZ	slouch	O	O	_
+in	15	17	IN	in	O	O	_
+his	18	21	PRP$	he	O	O	_
+seat	22	26	NN	seat	O	O	_
+and	27	30	CC	and	O	O	_
+ponders	31	38	VBZ	ponder	O	O	_
+certain	39	46	JJ	certain	O	O	_
+awkward	47	54	JJ	awkward	O	O	_
+truths	55	61	NNS	truth	O	O	_
+.	61	62	.	.	O	O	_
+D	1	10
+1
+1	0	nsubj
+1	4	prep_in
+1	6	conj_and
+4	3	poss
+6	0	nsubj
+6	9	dobj
+9	7	amod
+9	8	amod
+EOX
+D	0	10
+1
+1	0	nsubj
+1	2	prep
+1	5	cc
+1	6	conj
+2	4	pobj
+4	3	poss
+6	9	dobj
+9	7	amod
+9	8	amod
+EOX
+Y	1
+ROOT	0	0	11	1	S	1	0	11	3	NP	0	0	1	1	NNP	0	0	1	1	Gogol	0	0	1	0	VP	0	1	10	3	VP	0	1	5	2	VBZ	0	1	2	1	slouches	1	1	2	0	PP	0	2	5	2	IN	0	2	3	1	in	2	2	3	0	NP	1	3	5	2	PRP$	0	3	4	1	his	3	3	4	0	NN	0	4	5	1	seat	4	4	5	0	CC	0	5	6	1	and	5	5	6	0	VP	0	6	10	2	VBZ	0	6	7	1	ponders	6	6	7	0	NP	2	7	10	3	JJ	0	7	8	1	certain	7	7	8	0	JJ	0	8	9	1	awkward	8	8	9	0	NNS	0	9	10	1	truths	9	9	10	0	.	0	10	11	1	.	10	10	11	0
+EOS
+T	28
+For	63	66	IN	for	O	O	_
+instance	67	75	NN	instance	O	O	_
+,	75	76	,	,	O	O	_
+although	77	85	IN	although	O	O	_
+he	86	88	PRP	he	O	O	_
+can	89	92	MD	can	O	O	_
+understand	93	103	VB	understand	O	O	_
+his	104	107	PRP$	he	O	O	_
+mother	108	114	NN	mother	O	O	_
+tongue	116	122	NN	tongue	O	O	_
+,	122	123	,	,	O	O	_
+and	124	127	CC	and	O	O	_
+speak	128	133	VB	speak	O	O	_
+it	134	136	PRP	it	O	O	_
+fluently	137	145	RB	fluently	O	O	_
+,	145	146	,	,	O	O	_
+he	147	149	PRP	he	O	O	_
+can	150	153	MD	can	O	O	_
+not	153	156	RB	not	O	O	_
+read	157	161	VB	read	O	O	_
+or	162	164	CC	or	O	O	_
+write	165	170	VB	write	O	O	_
+it	171	173	PRP	it	O	O	_
+with	174	178	IN	with	O	O	_
+even	179	183	RB	even	O	O	_
+modest	184	190	JJ	modest	O	O	_
+proficiency	191	202	NN	proficiency	O	O	_
+.	202	203	.	.	O	O	_
+D	1	27
+19
+6	3	mark
+6	4	nsubj
+6	5	aux
+6	9	dobj
+6	12	conj_and
+9	7	poss
+9	8	nn
+12	4	nsubj
+12	13	dobj
+12	14	advmod
+19	1	prep_for
+19	6	advcl
+19	12	advcl
+19	16	nsubj
+19	17	aux
+19	18	neg
+19	21	conj_or
+19	22	dobj
+19	26	prep_with
+21	16	nsubj
+26	24	advmod
+26	25	amod
+EOX
+D	0	27
+19
+0	1	pobj
+6	3	mark
+6	4	nsubj
+6	5	aux
+6	9	dobj
+6	11	cc
+6	12	conj
+9	7	poss
+9	8	nn
+12	13	dobj
+12	14	advmod
+19	0	prep
+19	6	advcl
+19	16	nsubj
+19	17	aux
+19	18	neg
+19	20	cc
+19	21	conj
+19	22	dobj
+19	23	prep
+23	26	pobj
+26	24	advmod
+26	25	amod
+EOX
+Y	1
+ROOT	0	0	28	1	S	5	0	28	7	PP	0	0	2	2	IN	0	0	1	1	For	0	0	1	0	NP	0	1	2	1	NN	0	1	2	1	instance	1	1	2	0	,	0	2	3	1	,	2	2	3	0	SBAR	1	3	15	2	IN	0	3	4	1	although	3	3	4	0	S	1	4	15	2	NP	0	4	5	1	PRP	0	4	5	1	he	4	4	5	0	VP	1	5	15	2	MD	0	5	6	1	can	5	5	6	0	VP	0	6	15	4	VP	0	6	10	2	VB	0	6	7	1	understand	6	6	7	0	NP	2	7	10	3	PRP$	0	7	8	1	his	7	7	8	0	NN	0	8	9	1	mother	8	8	9	0	NN	0	9	10	1	tongue	9	9	10	0	,	0	10	11	1	,	10	10	11	0	CC	0	11	12	1	and	11	11	12	0	VP	0	12	15	3	VB	0	12	13	1	speak	12	12	13	0	NP	0	13	14	1	PRP	0	13	14	1	it	13	13	14	0	ADVP	0	14	15	1	RB	0	14	15	1	fluently	14	14	15	0	,	0	15	16	1	,	15	15	16	0	NP	0	16	17	1	PRP	0	16	17	1	he	16	16	17	0	VP	2	17	27	3	MD	0	17	18	1	can	17	17	18	0	RB	0	18	19	1	not	18	18	19	0	VP	0	19	27	5	VB	0	19	20	1	read	19	19	20	0	CC	0	20	21	1	or	20	20	21	0	VB	0	21	22	1	write	21	21	22	0	NP	0	22	23	1	PRP	0	22	23	1	it	22	22	23	0	PP	0	23	27	2	IN	0	23	24	1	with	23	23	24	0	NP	2	24	27	3	RB	0	24	25	1	even	24	24	25	0	JJ	0	25	26	1	modest	25	25	26	0	NN	0	26	27	1	proficiency	26	26	27	0	.	0	27	28	1	.	27	27	28	0
+EOS
+T	51
+On	204	206	IN	on	O	O	_
+trips	207	212	NNS	trip	O	O	_
+to	213	215	TO	to	O	O	_
+India	216	221	NNP	India	LOCATION	O	_
+his	222	225	PRP$	he	O	O	_
+American	226	234	JJ	american	MISC	O	_
+accented	235	243	JJ	accented	O	O	_
+English	244	251	NNP	English	MISC	O	_
+is	252	254	VBZ	be	O	O	_
+a	255	256	DT	a	O	O	_
+source	257	263	NN	source	O	O	_
+of	264	266	IN	of	O	O	_
+endless	267	274	JJ	endless	O	O	_
+amusement	275	284	NN	amusement	O	O	_
+to	285	287	TO	to	O	O	_
+his	288	291	PRP$	he	O	O	_
+relatives	292	301	NNS	relative	O	O	_
+,	301	302	,	,	O	O	_
+and	303	306	CC	and	O	O	_
+when	307	311	WRB	when	O	O	_
+he	312	314	PRP	he	O	O	_
+and	315	318	CC	and	O	O	_
+Sonia	319	324	NNP	Sonia	PERSON	O	_
+speak	325	330	VBP	speak	O	O	_
+to	331	333	TO	to	O	O	_
+each	334	338	DT	each	O	O	_
+other	339	344	JJ	other	O	O	_
+,	344	345	,	,	O	O	_
+aunts	346	351	NNS	aunt	O	O	_
+and	352	355	CC	and	O	O	_
+uncles	356	362	NNS	uncle	O	O	_
+and	363	366	CC	and	O	O	_
+cousins	367	374	NNS	cousin	O	O	_
+always	375	381	RB	always	O	O	_
+shake	382	387	VBP	shake	O	O	_
+their	388	393	PRP$	they	O	O	_
+heads	394	399	NNS	head	O	O	_
+in	400	402	IN	in	O	O	_
+disbelief	403	412	NN	disbelief	O	O	_
+and	413	416	CC	and	O	O	_
+say	417	420	VB	say	O	O	_
+,	420	421	,	,	O	O	_
+``	422	423	``	``	O	O	_
+I	423	424	PRP	I	O	O	_
+did	425	428	VBD	do	O	O	_
+n't	428	431	RB	not	O	O	_
+understand	432	442	VB	understand	O	O	_
+a	443	444	DT	a	O	O	_
+word	445	449	NN	word	O	O	_
+!	449	450	.	!	O	O	_
+''	450	451	''	''	O	O	_
+D	1	49
+10
+1	3	prep_to
+3	6	dep
+6	4	poss
+6	5	amod
+10	1	prep_on
+10	7	nsubj
+10	8	cop
+10	9	det
+10	13	prep_of
+10	46	conj_and
+13	12	amod
+13	16	prep_to
+16	15	poss
+20	22	conj_and
+23	19	advmod
+23	20	nsubj
+23	22	nsubj
+23	26	prep_to
+23	28	prep_to
+23	30	prep_to
+23	34	conj_and
+23	40	conj_and
+26	25	det
+26	28	conj_and
+26	30	conj_and
+34	32	nsubj
+34	33	advmod
+34	36	dobj
+34	38	prep_in
+34	40	conj_and
+36	35	poss
+40	32	nsubj
+46	23	advcl
+46	34	advcl
+46	43	nsubj
+46	44	aux
+46	45	neg
+46	48	dobj
+48	47	det
+EOX
+D	0	49
+10
+0	1	pobj
+1	2	prep
+2	3	pobj
+3	6	dep
+6	4	poss
+6	5	amod
+10	0	prep
+10	7	nsubj
+10	8	cop
+10	9	det
+10	11	prep
+10	18	cc
+10	46	conj
+11	13	pobj
+13	12	amod
+13	14	prep
+14	16	pobj
+16	15	poss
+20	21	cc
+20	22	conj
+23	19	advmod
+23	20	nsubj
+23	24	prep
+23	31	cc
+23	34	conj
+24	26	pobj
+26	25	det
+26	28	conj
+26	29	cc
+26	30	conj
+34	32	nsubj
+34	33	advmod
+34	36	dobj
+34	37	prep
+34	39	cc
+34	40	conj
+36	35	poss
+37	38	pobj
+46	23	advcl
+46	43	nsubj
+46	44	aux
+46	45	neg
+46	48	dobj
+48	47	det
+EOX
+Y	1
+ROOT	0	0	51	1	S	0	0	51	6	S	2	0	17	3	PP	0	0	7	2	IN	0	0	1	1	On	0	0	1	0	NP	0	1	7	2	NP	0	1	2	1	NNS	0	1	2	1	trips	1	1	2	0	PP	0	2	7	2	TO	0	2	3	1	to	2	2	3	0	NP	0	3	7	2	NP	0	3	4	1	NNP	0	3	4	1	India	3	3	4	0	NP	2	4	7	3	PRP$	0	4	5	1	his	4	4	5	0	JJ	0	5	6	1	American	5	5	6	0	JJ	0	6	7	1	accented	6	6	7	0	NP	0	7	8	1	NNP	0	7	8	1	English	7	7	8	0	VP	1	8	17	2	VBZ	0	8	9	1	is	8	8	9	0	NP	0	9	17	2	NP	1	9	11	2	DT	0	9	10	1	a	9	9	10	0	NN	0	10	11	1	source	10	10	11	0	PP	0	11	17	2	IN	0	11	12	1	of	11	11	12	0	NP	0	12	17	2	NP	1	12	14	2	JJ	0	12	13	1	endless	12	12	13	0	NN	0	13	14	1	amusement	13	13	14	0	PP	0	14	17	2	TO	0	14	15	1	to	14	14	15	0	NP	1	15	17	2	PRP$	0	15	16	1	his	15	15	16	0	NNS	0	16	17	1	relatives	16	16	17	0	,	0	17	18	1	,	17	17	18	0	CC	0	18	19	1	and	18	18	19	0	S	4	19	49	5	SBAR	1	19	41	2	WHADVP	0	19	20	1	WRB	0	19	20	1	when	19	19	20	0	S	0	20	41	3	S	1	20	31	2	NP	0	20	23	3	PRP	0	20	21	1	he	20	20	21	0	CC	0	21	22	1	and	21	21	22	0	NNP	0	22	23	1	Sonia	22	22	23	0	VP	0	23	31	2	VBP	0	23	24	1	speak	23	23	24	0	PP	0	24	31	2	TO	0	24	25	1	to	24	24	25	0	NP	1	25	31	6	DT	0	25	26	1	each	25	25	26	0	JJ	0	26	27	1	other	26	26	27	0	,	0	27	28	1	,	27	27	28	0	NNS	0	28	29	1	aunts	28	28	29	0	CC	0	29	30	1	and	29	29	30	0	NNS	0	30	31	1	uncles	30	30	31	0	CC	0	31	32	1	and	31	31	32	0	S	2	32	41	3	NP	0	32	33	1	NNS	0	32	33	1	cousins	32	32	33	0	ADVP	0	33	34	1	RB	0	33	34	1	always	33	33	34	0	VP	0	34	41	3	VP	0	34	39	3	VBP	0	34	35	1	shake	34	34	35	0	NP	1	35	37	2	PRP$	0	35	36	1	their	35	35	36	0	NNS	0	36	37	1	heads	36	36	37	0	PP	0	37	39	2	IN	0	37	38	1	in	37	37	38	0	NP	0	38	39	1	NN	0	38	39	1	disbelief	38	38	39	0	CC	0	39	40	1	and	39	39	40	0	VP	0	40	41	1	VB	0	40	41	1	say	40	40	41	0	,	0	41	42	1	,	41	41	42	0	``	0	42	43	1	``	42	42	43	0	NP	0	43	44	1	PRP	0	43	44	1	I	43	43	44	0	VP	2	44	49	3	VBD	0	44	45	1	did	44	44	45	0	RB	0	45	46	1	n't	45	45	46	0	VP	0	46	49	2	VB	0	46	47	1	understand	46	46	47	0	NP	1	47	49	2	DT	0	47	48	1	a	47	47	48	0	NN	0	48	49	1	word	48	48	49	0	.	0	49	50	1	!	49	49	50	0	''	0	50	51	1	''	50	50	51	0
+EOS
+T	31
+Living	452	458	VBG	live	O	O	_
+with	459	463	IN	with	O	O	_
+a	464	465	DT	a	O	O	_
+pet	466	469	NN	pet	O	O	_
+name	470	474	NN	name	O	O	_
+and	475	478	CC	and	O	O	_
+a	479	480	DT	a	O	O	_
+good	481	485	JJ	good	O	O	_
+name	486	490	NN	name	O	O	_
+,	490	491	,	,	O	O	_
+in	492	494	IN	in	O	O	_
+a	495	496	DT	a	O	O	_
+place	497	502	NN	place	O	O	_
+where	503	508	WRB	where	O	O	_
+such	509	513	JJ	such	O	O	_
+distinctions	514	526	NNS	distinction	O	O	_
+do	527	529	VBP	do	O	O	_
+not	530	533	RB	not	O	O	_
+exist	534	539	VB	exist	O	O	_
+--	539	540	:	--	O	O	_
+surely	540	546	RB	surely	O	O	_
+that	547	551	DT	that	O	O	_
+was	552	555	VBD	be	O	O	_
+emblematic	556	566	JJ	emblematic	O	O	_
+of	567	569	IN	of	O	O	_
+the	570	573	DT	the	O	O	_
+greatest	574	582	JJS	greatest	O	O	_
+confusion	583	592	NN	confusion	O	O	_
+of	593	595	IN	of	O	O	_
+all	596	599	DT	all	O	O	_
+.	599	600	.	.	O	O	_
+D	1	30
+0
+0	4	prep_with
+0	8	prep_with
+0	12	prep_in
+0	23	parataxis
+4	2	det
+4	3	nn
+4	8	conj_and
+8	6	det
+8	7	amod
+12	11	det
+12	18	rcmod
+15	14	amod
+18	13	advmod
+18	15	nsubj
+18	16	aux
+18	17	neg
+23	20	advmod
+23	21	nsubj
+23	22	cop
+23	27	prep_of
+27	25	det
+27	26	amod
+27	29	prep_of
+EOX
+D	0	30
+0
+0	1	prep
+0	10	prep
+0	23	parataxis
+1	4	pobj
+4	2	det
+4	3	nn
+4	5	cc
+4	8	conj
+8	6	det
+8	7	amod
+10	12	pobj
+12	11	det
+12	18	rcmod
+15	14	amod
+18	13	advmod
+18	15	nsubj
+18	16	aux
+18	17	neg
+23	20	advmod
+23	21	nsubj
+23	22	cop
+23	24	prep
+24	27	pobj
+27	25	det
+27	26	amod
+27	28	prep
+28	29	pobj
+EOX
+Y	1
+ROOT	0	0	31	1	S	0	0	31	4	S	0	0	19	1	VP	0	0	19	4	VBG	0	0	1	1	Living	0	0	1	0	PP	0	1	9	2	IN	0	1	2	1	with	1	1	2	0	NP	0	2	9	3	NP	2	2	5	3	DT	0	2	3	1	a	2	2	3	0	NN	0	3	4	1	pet	3	3	4	0	NN	0	4	5	1	name	4	4	5	0	CC	0	5	6	1	and	5	5	6	0	NP	2	6	9	3	DT	0	6	7	1	a	6	6	7	0	JJ	0	7	8	1	good	7	7	8	0	NN	0	8	9	1	name	8	8	9	0	,	0	9	10	1	,	9	9	10	0	PP	0	10	19	2	IN	0	10	11	1	in	10	10	11	0	NP	0	11	19	2	NP	1	11	13	2	DT	0	11	12	1	a	11	11	12	0	NN	0	12	13	1	place	12	12	13	0	SBAR	1	13	19	2	WHADVP	0	13	14	1	WRB	0	13	14	1	where	13	13	14	0	S	1	14	19	2	NP	1	14	16	2	JJ	0	14	15	1	such	14	14	15	0	NNS	0	15	16	1	distinctions	15	15	16	0	VP	2	16	19	3	VBP	0	16	17	1	do	16	16	17	0	RB	0	17	18	1	not	17	17	18	0	VP	0	18	19	1	VB	0	18	19	1	exist	18	18	19	0	:	0	19	20	1	--	19	19	20	0	S	2	20	30	3	ADVP	0	20	21	1	RB	0	20	21	1	surely	20	20	21	0	NP	0	21	22	1	DT	0	21	22	1	that	21	21	22	0	VP	1	22	30	2	VBD	0	22	23	1	was	22	22	23	0	ADJP	0	23	30	2	JJ	0	23	24	1	emblematic	23	23	24	0	PP	0	24	30	2	IN	0	24	25	1	of	24	24	25	0	NP	0	25	30	2	NP	2	25	28	3	DT	0	25	26	1	the	25	25	26	0	JJS	0	26	27	1	greatest	26	26	27	0	NN	0	27	28	1	confusion	27	27	28	0	PP	0	28	30	2	IN	0	28	29	1	of	28	28	29	0	NP	0	29	30	1	DT	0	29	30	1	all	29	29	30	0	.	0	30	31	1	.	30	30	31	0
+EOS
+T	39
+He	601	603	PRP	he	O	O	_
+searches	604	612	VBZ	search	O	O	_
+the	613	616	DT	the	O	O	_
+audience	617	625	NN	audience	O	O	_
+for	626	629	IN	for	O	O	_
+someone	630	637	NN	someone	O	O	_
+he	638	640	PRP	he	O	O	_
+knows	641	646	VBZ	know	O	O	_
+,	646	647	,	,	O	O	_
+but	648	651	CC	but	O	O	_
+it	652	654	PRP	it	O	O	_
+is	655	657	VBZ	be	O	O	_
+n't	657	660	RB	not	O	O	_
+his	661	664	PRP$	he	O	O	_
+crowd	665	670	NN	crowd	O	O	_
+--	670	671	:	--	O	O	_
+lots	671	675	NNS	lot	O	O	_
+of	676	678	IN	of	O	O	_
+lit	679	682	VBN	light	O	O	_
+majors	683	689	NNS	major	O	O	_
+with	690	694	IN	with	O	O	_
+leather	695	702	NN	leather	O	O	_
+satchels	703	711	NNS	satchel	O	O	_
+and	712	715	CC	and	O	O	_
+gold-rimmed	716	727	JJ	gold-rimmed	O	O	_
+glasses	728	735	NNS	glass	O	O	_
+and	736	739	CC	and	O	O	_
+fountain	740	748	NN	fountain	O	O	_
+pens	749	753	NNS	pen	O	O	_
+,	753	754	,	,	O	O	_
+lots	755	759	NNS	lot	O	O	_
+of	760	762	IN	of	O	O	_
+people	763	769	NNS	people	O	O	_
+Ruth	770	774	NNP	Ruth	PERSON	O	_
+would	775	780	MD	would	O	O	_
+have	781	785	VB	have	O	O	_
+waved	786	791	VBN	wave	O	O	_
+to	792	794	TO	to	O	O	_
+.	794	795	.	.	O	O	_
+D	1	38
+1
+1	0	nsubj
+1	3	dobj
+3	2	det
+3	5	prep_for
+3	16	prep_for
+3	25	prep_for
+5	7	rcmod
+5	14	rcmod
+5	16	conj_and
+5	25	conj_and
+5	28	conj_and
+7	6	nsubj
+7	14	conj_but
+14	10	nsubj
+14	11	cop
+14	12	neg
+14	13	poss
+16	19	prep_of
+19	18	amod
+19	22	prep_with
+22	21	nn
+25	24	amod
+25	28	conj_and
+25	30	appos
+28	27	nn
+30	32	prep_of
+32	36	rcmod
+36	33	nsubj
+36	34	aux
+36	35	aux
+36	37	xcomp
+EOX
+D	0	38
+1
+1	0	nsubj
+1	3	dobj
+3	2	det
+3	4	prep
+4	5	pobj
+5	7	rcmod
+5	16	conj
+5	23	cc
+5	25	conj
+7	6	nsubj
+7	9	cc
+7	14	conj
+14	10	nsubj
+14	11	cop
+14	12	neg
+14	13	poss
+16	17	prep
+17	19	pobj
+19	18	amod
+19	20	prep
+20	22	pobj
+22	21	nn
+25	24	amod
+25	26	cc
+25	28	conj
+25	30	appos
+28	27	nn
+30	31	prep
+31	32	pobj
+32	36	rcmod
+36	33	nsubj
+36	34	aux
+36	35	aux
+36	37	xcomp
+EOX
+Y	1
+ROOT	0	0	39	1	S	1	0	39	3	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	0	1	38	2	VBZ	0	1	2	1	searches	1	1	2	0	NP	0	2	38	2	NP	1	2	4	2	DT	0	2	3	1	the	2	2	3	0	NN	0	3	4	1	audience	3	3	4	0	PP	0	4	38	2	IN	0	4	5	1	for	4	4	5	0	NP	0	5	38	6	NP	0	5	6	1	NN	0	5	6	1	someone	5	5	6	0	SBAR	0	6	15	1	S	0	6	15	4	S	1	6	8	2	NP	0	6	7	1	PRP	0	6	7	1	he	6	6	7	0	VP	0	7	8	1	VBZ	0	7	8	1	knows	7	7	8	0	,	0	8	9	1	,	8	8	9	0	CC	0	9	10	1	but	9	9	10	0	S	1	10	15	2	NP	0	10	11	1	PRP	0	10	11	1	it	10	10	11	0	VP	2	11	15	3	VBZ	0	11	12	1	is	11	11	12	0	RB	0	12	13	1	n't	12	12	13	0	NP	1	13	15	2	PRP$	0	13	14	1	his	13	13	14	0	NN	0	14	15	1	crowd	14	14	15	0	:	0	15	16	1	--	15	15	16	0	NP	0	16	23	2	NP	0	16	17	1	NNS	0	16	17	1	lots	16	16	17	0	PP	0	17	23	2	IN	0	17	18	1	of	17	17	18	0	NP	0	18	23	2	NP	1	18	20	2	VBN	0	18	19	1	lit	18	18	19	0	NNS	0	19	20	1	majors	19	19	20	0	PP	0	20	23	2	IN	0	20	21	1	with	20	20	21	0	NP	1	21	23	2	NN	0	21	22	1	leather	21	21	22	0	NNS	0	22	23	1	satchels	22	22	23	0	CC	0	23	24	1	and	23	23	24	0	NP	0	24	38	3	NP	4	24	29	5	JJ	0	24	25	1	gold-rimmed	24	24	25	0	NNS	0	25	26	1	glasses	25	25	26	0	CC	0	26	27	1	and	26	26	27	0	NN	0	27	28	1	fountain	27	27	28	0	NNS	0	28	29	1	pens	28	28	29	0	,	0	29	30	1	,	29	29	30	0	NP	0	30	38	2	NP	0	30	31	1	NNS	0	30	31	1	lots	30	30	31	0	PP	0	31	38	2	IN	0	31	32	1	of	31	31	32	0	NP	0	32	38	2	NP	0	32	33	1	NNS	0	32	33	1	people	32	32	33	0	SBAR	0	33	38	1	S	1	33	38	2	NP	0	33	34	1	NNP	0	33	34	1	Ruth	33	33	34	0	VP	1	34	38	2	MD	0	34	35	1	would	34	34	35	0	VP	1	35	38	2	VB	0	35	36	1	have	35	35	36	0	VP	0	36	38	2	VBN	0	36	37	1	waved	36	36	37	0	S	0	37	38	1	VP	0	37	38	1	TO	0	37	38	1	to	37	37	38	0	.	0	38	39	1	.	38	38	39	0
+EOS
+T	7
+There	796	801	EX	there	O	O	_
+are	802	805	VBP	be	O	O	_
+also	806	810	RB	also	O	O	_
+lots	811	815	NNS	lot	O	O	_
+of	816	818	IN	of	O	O	_
+ABCDs	819	824	NNS	abcd	O	O	_
+.	824	825	.	.	O	O	_
+D	1	6
+1
+1	0	expl
+1	2	advmod
+1	3	nsubj
+3	5	prep_of
+EOX
+D	0	6
+1
+1	0	expl
+1	2	advmod
+1	3	nsubj
+3	4	prep
+4	5	pobj
+EOX
+Y	1
+ROOT	0	0	7	1	S	1	0	7	3	NP	0	0	1	1	EX	0	0	1	1	There	0	0	1	0	VP	2	1	6	3	VBP	0	1	2	1	are	1	1	2	0	ADVP	0	2	3	1	RB	0	2	3	1	also	2	2	3	0	NP	0	3	6	2	NP	0	3	4	1	NNS	0	3	4	1	lots	3	3	4	0	PP	0	4	6	2	IN	0	4	5	1	of	4	4	5	0	NP	0	5	6	1	NNS	0	5	6	1	ABCDs	5	5	6	0	.	0	6	7	1	.	6	6	7	0
+EOS
+T	11
+He	826	828	PRP	he	O	O	_
+has	829	832	VBZ	have	O	O	_
+no	833	835	DT	no	O	O	_
+idea	836	840	NN	idea	O	O	_
+there	841	846	EX	there	O	O	_
+are	847	850	VBP	be	O	O	_
+this	851	855	DT	this	O	O	_
+many	856	860	JJ	many	O	O	_
+on	861	863	IN	on	O	O	_
+campus	864	870	NN	campus	O	O	_
+.	870	871	.	.	O	O	_
+D	1	10
+1
+1	0	nsubj
+1	3	dobj
+3	2	neg
+3	5	rcmod
+5	4	expl
+5	7	nsubj
+7	6	det
+7	9	prep_on
+EOX
+D	0	10
+1
+1	0	nsubj
+1	3	dobj
+3	2	neg
+3	5	rcmod
+5	4	expl
+5	7	nsubj
+7	6	det
+7	8	prep
+8	9	pobj
+EOX
+Y	1
+ROOT	0	0	11	1	S	1	0	11	3	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	0	1	10	2	VBZ	0	1	2	1	has	1	1	2	0	NP	0	2	10	2	NP	1	2	4	2	DT	0	2	3	1	no	2	2	3	0	NN	0	3	4	1	idea	3	3	4	0	SBAR	0	4	10	1	S	1	4	10	2	NP	0	4	5	1	EX	0	4	5	1	there	4	4	5	0	VP	1	5	10	2	VBP	0	5	6	1	are	5	5	6	0	NP	0	6	10	2	NP	1	6	8	2	DT	0	6	7	1	this	6	6	7	0	JJ	0	7	8	1	many	7	7	8	0	PP	0	8	10	2	IN	0	8	9	1	on	8	8	9	0	NP	0	9	10	1	NN	0	9	10	1	campus	9	9	10	0	.	0	10	11	1	.	10	10	11	0
+EOS
+T	8
+He	872	874	PRP	he	O	O	_
+has	875	878	VBZ	have	O	O	_
+no	879	881	DT	no	O	O	_
+ABCD	882	886	NN	abcd	ORGANIZATION	O	_
+friends	887	894	NNS	friend	O	O	_
+at	895	897	IN	at	O	O	_
+college	898	905	NN	college	O	O	_
+.	905	906	.	.	O	O	_
+D	1	7
+1
+1	0	nsubj
+1	4	dobj
+4	2	neg
+4	3	nn
+4	6	prep_at
+EOX
+D	0	7
+1
+1	0	nsubj
+1	4	dobj
+4	2	neg
+4	3	nn
+4	5	prep
+5	6	pobj
+EOX
+Y	1
+ROOT	0	0	8	1	S	1	0	8	3	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	0	1	7	2	VBZ	0	1	2	1	has	1	1	2	0	NP	0	2	7	2	NP	2	2	5	3	DT	0	2	3	1	no	2	2	3	0	NN	0	3	4	1	ABCD	3	3	4	0	NNS	0	4	5	1	friends	4	4	5	0	PP	0	5	7	2	IN	0	5	6	1	at	5	5	6	0	NP	0	6	7	1	NN	0	6	7	1	college	6	6	7	0	.	0	7	8	1	.	7	7	8	0
+EOS
+T	39
+He	907	909	PRP	he	O	O	_
+avoids	910	916	VBZ	avoid	O	O	_
+them	917	921	PRP	they	O	O	_
+,	921	922	,	,	O	O	_
+for	923	926	IN	for	O	O	_
+they	927	931	PRP	they	O	O	_
+remind	932	938	VBP	remind	O	O	_
+him	939	942	PRP	he	O	O	_
+too	943	946	RB	too	O	O	_
+much	947	951	RB	much	O	O	_
+of	952	954	IN	of	O	O	_
+the	955	958	DT	the	O	O	_
+way	959	962	NN	way	O	O	_
+his	963	966	PRP$	he	O	O	_
+parents	967	974	NNS	parent	O	O	_
+choose	975	981	VB	choose	O	O	_
+to	982	984	TO	to	O	O	_
+live	985	989	VB	live	O	O	_
+,	989	990	,	,	O	O	_
+befriending	991	1002	VBG	befriend	O	O	_
+people	1003	1009	NNS	people	O	O	_
+not	1010	1013	RB	not	O	O	_
+so	1014	1016	RB	so	O	O	_
+much	1017	1021	JJ	much	O	O	_
+because	1022	1029	IN	because	O	O	_
+they	1030	1034	PRP	they	O	O	_
+like	1035	1039	VBP	like	O	O	_
+them	1040	1044	PRP	they	O	O	_
+,	1044	1045	,	,	O	O	_
+but	1046	1049	CC	but	O	O	_
+because	1050	1057	IN	because	O	O	_
+of	1058	1060	IN	of	O	O	_
+a	1061	1062	DT	a	O	O	_
+past	1063	1067	NN	past	DATE	PAST_REF	_
+they	1068	1072	PRP	they	O	O	_
+happen	1073	1079	VBP	happen	O	O	_
+to	1080	1082	TO	to	O	O	_
+share	1083	1088	VB	share	O	O	_
+.	1088	1089	.	.	O	O	_
+D	1	38
+1
+1	0	nsubj
+1	2	dobj
+1	6	advcl
+1	19	xcomp
+6	4	mark
+6	5	nsubj
+6	7	dobj
+6	9	advmod
+6	15	dep
+9	8	advmod
+9	12	prep_of
+12	11	det
+14	13	poss
+15	14	nsubj
+15	17	xcomp
+17	16	aux
+19	20	dobj
+19	23	advmod
+19	26	advcl
+19	35	advcl
+23	21	dep
+23	22	advmod
+26	24	mark
+26	25	nsubj
+26	27	dobj
+26	35	conj_but
+33	32	det
+35	30	mark
+35	33	prep_of
+35	34	nsubj
+35	37	xcomp
+37	36	aux
+EOX
+D	0	38
+1
+1	0	nsubj
+1	2	dobj
+1	6	advcl
+1	19	xcomp
+6	4	mark
+6	5	nsubj
+6	7	dobj
+6	9	advmod
+6	15	dep
+9	8	advmod
+9	10	prep
+10	12	pobj
+12	11	det
+14	13	poss
+15	14	nsubj
+15	17	xcomp
+17	16	aux
+19	20	dobj
+19	23	advmod
+19	26	advcl
+23	21	dep
+23	22	advmod
+26	24	mark
+26	25	nsubj
+26	27	dobj
+26	29	cc
+26	35	conj
+31	33	pobj
+33	32	det
+35	30	mark
+35	31	prep
+35	34	nsubj
+35	37	xcomp
+37	36	aux
+EOX
+Y	1
+ROOT	0	0	39	1	S	1	0	39	3	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	0	1	38	6	VBZ	0	1	2	1	avoids	1	1	2	0	NP	0	2	3	1	PRP	0	2	3	1	them	2	2	3	0	,	0	3	4	1	,	3	3	4	0	SBAR	1	4	18	2	IN	0	4	5	1	for	4	4	5	0	S	1	5	18	2	NP	0	5	6	1	PRP	0	5	6	1	they	5	5	6	0	VP	0	6	18	4	VBP	0	6	7	1	remind	6	6	7	0	NP	0	7	8	1	PRP	0	7	8	1	him	7	7	8	0	ADVP	0	8	13	2	ADVP	1	8	10	2	RB	0	8	9	1	too	8	8	9	0	RB	0	9	10	1	much	9	9	10	0	PP	0	10	13	2	IN	0	10	11	1	of	10	10	11	0	NP	1	11	13	2	DT	0	11	12	1	the	11	11	12	0	NN	0	12	13	1	way	12	12	13	0	SBAR	0	13	18	1	S	1	13	18	2	NP	1	13	15	2	PRP$	0	13	14	1	his	13	13	14	0	NNS	0	14	15	1	parents	14	14	15	0	VP	0	15	18	2	VB	0	15	16	1	choose	15	15	16	0	S	0	16	18	1	VP	1	16	18	2	TO	0	16	17	1	to	16	16	17	0	VP	0	17	18	1	VB	0	17	18	1	live	17	17	18	0	,	0	18	19	1	,	18	18	19	0	S	0	19	38	1	VP	0	19	38	4	VBG	0	19	20	1	befriending	19	19	20	0	NP	0	20	21	1	NNS	0	20	21	1	people	20	20	21	0	ADVP	2	21	24	3	RB	0	21	22	1	not	21	21	22	0	RB	0	22	23	1	so	22	22	23	0	JJ	0	23	24	1	much	23	23	24	0	SBAR	0	24	38	4	SBAR	1	24	28	2	IN	0	24	25	1	because	24	24	25	0	S	1	25	28	2	NP	0	25	26	1	PRP	0	25	26	1	they	25	25	26	0	VP	0	26	28	2	VBP	0	26	27	1	like	26	26	27	0	NP	0	27	28	1	PRP	0	27	28	1	them	27	27	28	0	,	0	28	29	1	,	28	28	29	0	CC	0	29	30	1	but	29	29	30	0	SBAR	1	30	38	2	IN	0	30	31	1	because	30	30	31	0	S	2	31	38	3	PP	0	31	34	2	IN	0	31	32	1	of	31	31	32	0	NP	1	32	34	2	DT	0	32	33	1	a	32	32	33	0	NN	0	33	34	1	past	33	33	34	0	NP	0	34	35	1	PRP	0	34	35	1	they	34	34	35	0	VP	0	35	38	2	VBP	0	35	36	1	happen	35	35	36	0	S	0	36	38	1	VP	1	36	38	2	TO	0	36	37	1	to	36	36	37	0	VP	0	37	38	1	VB	0	37	38	1	share	37	37	38	0	.	0	38	39	1	.	38	38	39	0
+EOS
+T	16
+``	1090	1091	``	``	O	O	_
+Gogol	1091	1096	NNP	Gogol	PERSON	O	_
+,	1096	1097	,	,	O	O	_
+why	1098	1101	WRB	why	O	O	_
+are	1102	1105	VBP	be	O	O	_
+n't	1105	1108	RB	not	O	O	_
+you	1109	1112	PRP	you	O	O	_
+a	1113	1114	DT	a	O	O	_
+member	1115	1121	NN	member	O	O	_
+of	1122	1124	IN	of	O	O	_
+the	1125	1128	DT	the	O	O	_
+Indian	1129	1135	JJ	indian	MISC	O	_
+association	1136	1147	NN	association	O	O	_
+here	1148	1152	RB	here	O	O	_
+?	1152	1153	.	?	O	O	_
+''	1153	1154	''	''	O	O	_
+D	1	14
+1
+1	8	rcmod
+8	3	advmod
+8	4	cop
+8	5	neg
+8	6	dep
+8	7	det
+8	12	prep_of
+12	10	det
+12	11	amod
+12	13	advmod
+EOX
+D	0	14
+1
+1	8	rcmod
+8	3	advmod
+8	4	cop
+8	5	neg
+8	6	dep
+8	7	det
+8	9	prep
+9	12	pobj
+12	10	det
+12	11	amod
+12	13	advmod
+EOX
+Y	1
+ROOT	0	0	16	1	FRAG	1	0	16	4	``	0	0	1	1	``	0	0	1	0	NP	0	1	14	3	NP	0	1	2	1	NNP	0	1	2	1	Gogol	1	1	2	0	,	0	2	3	1	,	2	2	3	0	SBAR	1	3	14	2	WHADVP	0	3	4	1	WRB	0	3	4	1	why	3	3	4	0	S	0	4	14	1	VP	2	4	14	3	VBP	0	4	5	1	are	4	4	5	0	RB	0	5	6	1	n't	5	5	6	0	NP	1	6	14	2	PRP	0	6	7	1	you	6	6	7	0	NP	0	7	14	2	NP	1	7	9	2	DT	0	7	8	1	a	7	7	8	0	NN	0	8	9	1	member	8	8	9	0	PP	0	9	14	2	IN	0	9	10	1	of	9	9	10	0	NP	0	10	14	2	NP	2	10	13	3	DT	0	10	11	1	the	10	10	11	0	JJ	0	11	12	1	Indian	11	11	12	0	NN	0	12	13	1	association	12	12	13	0	ADVP	0	13	14	1	RB	0	13	14	1	here	13	13	14	0	.	0	14	15	1	?	14	14	15	0	''	0	15	16	1	''	15	15	16	0
+EOS
+T	13
+Amit	1155	1159	NNP	Amit	PERSON	O	_
+asks	1160	1164	VBZ	ask	O	O	_
+later	1165	1170	RB	later	O	O	_
+when	1171	1175	WRB	when	O	O	_
+they	1176	1180	PRP	they	O	O	_
+go	1181	1183	VBP	go	O	O	_
+for	1184	1187	IN	for	O	O	_
+a	1188	1189	DT	a	O	O	_
+drink	1190	1195	NN	drink	O	O	_
+at	1196	1198	IN	at	O	O	_
+the	1199	1202	DT	the	O	O	_
+Anchor	1203	1209	NNP	Anchor	O	O	_
+.	1209	1210	.	.	O	O	_
+D	1	12
+1
+1	0	nsubj
+1	2	advmod
+1	5	ccomp
+5	3	advmod
+5	4	nsubj
+5	8	prep_for
+8	7	det
+8	11	prep_at
+11	10	det
+EOX
+D	0	12
+1
+1	0	nsubj
+1	2	advmod
+1	5	ccomp
+5	3	advmod
+5	4	nsubj
+5	6	prep
+6	8	pobj
+8	7	det
+8	9	prep
+9	11	pobj
+11	10	det
+EOX
+Y	1
+ROOT	0	0	13	1	S	1	0	13	3	NP	0	0	1	1	NNP	0	0	1	1	Amit	0	0	1	0	VP	0	1	12	3	VBZ	0	1	2	1	asks	1	1	2	0	ADVP	0	2	3	1	RB	0	2	3	1	later	2	2	3	0	SBAR	1	3	12	2	WHADVP	0	3	4	1	WRB	0	3	4	1	when	3	3	4	0	S	1	4	12	2	NP	0	4	5	1	PRP	0	4	5	1	they	4	4	5	0	VP	0	5	12	2	VBP	0	5	6	1	go	5	5	6	0	PP	0	6	12	2	IN	0	6	7	1	for	6	6	7	0	NP	0	7	12	2	NP	1	7	9	2	DT	0	7	8	1	a	7	7	8	0	NN	0	8	9	1	drink	8	8	9	0	PP	0	9	12	2	IN	0	9	10	1	at	9	9	10	0	NP	1	10	12	2	DT	0	10	11	1	the	10	10	11	0	NNP	0	11	12	1	Anchor	11	11	12	0	.	0	12	13	1	.	12	12	13	0
+EOS
+T	48
+``	1211	1212	``	``	O	O	_
+I	1212	1213	PRP	I	O	O	_
+just	1214	1218	RB	just	O	O	_
+do	1219	1221	VBP	do	O	O	_
+n't	1221	1224	RB	not	O	O	_
+have	1225	1229	VB	have	O	O	_
+the	1230	1233	DT	the	O	O	_
+time	1234	1238	NN	time	O	O	_
+,	1238	1239	,	,	O	O	_
+''	1239	1240	''	''	O	O	_
+Gogol	1241	1246	NNP	Gogol	PERSON	O	_
+says	1247	1251	VBZ	say	O	O	_
+,	1251	1252	,	,	O	O	_
+not	1253	1256	RB	not	O	O	_
+telling	1257	1264	VBG	tell	O	O	_
+his	1265	1268	PRP$	he	O	O	_
+well-meaning	1269	1281	JJ	well-meaning	O	O	_
+cousin	1282	1288	NN	cousin	O	O	_
+that	1289	1293	IN	that	O	O	_
+he	1294	1296	PRP	he	O	O	_
+can	1297	1300	MD	can	O	O	_
+think	1301	1306	VB	think	O	O	_
+of	1307	1309	IN	of	O	O	_
+no	1310	1312	DT	no	O	O	_
+greater	1313	1320	JJR	greater	O	O	_
+hypocrisy	1321	1330	NN	hypocrisy	O	O	_
+than	1331	1335	IN	than	O	O	_
+joining	1336	1343	VBG	join	O	O	_
+an	1344	1346	DT	a	O	O	_
+organization	1347	1359	NN	organization	O	O	_
+that	1360	1364	WDT	that	O	O	_
+willingly	1365	1374	RB	willingly	O	O	_
+celebrates	1375	1385	VBZ	celebrate	O	O	_
+occasions	1386	1395	NNS	occasion	O	O	_
+his	1396	1399	PRP$	he	O	O	_
+parents	1400	1407	NNS	parent	O	O	_
+forced	1408	1414	VBD	force	O	O	_
+him	1415	1418	PRP	he	O	O	_
+,	1418	1419	,	,	O	O	_
+throughout	1420	1430	IN	throughout	O	O	_
+his	1431	1434	PRP$	he	O	O	_
+childhood	1435	1444	NN	childhood	O	O	_
+and	1445	1448	CC	and	O	O	_
+adolescence	1449	1460	NN	adolescence	O	O	_
+,	1460	1461	,	,	O	O	_
+to	1462	1464	TO	to	O	O	_
+attend	1465	1471	VB	attend	O	O	_
+.	1471	1472	.	.	O	O	_
+D	1	47
+11
+5	1	nsubj
+5	2	advmod
+5	3	aux
+5	4	neg
+5	7	dobj
+7	6	det
+11	5	ccomp
+11	10	nsubj
+11	14	vmod
+14	13	neg
+14	17	dobj
+14	21	ccomp
+17	15	poss
+17	16	amod
+21	18	mark
+21	19	nsubj
+21	20	aux
+21	25	prep_of
+21	27	prepc_than
+25	23	neg
+25	24	amod
+27	29	dobj
+29	28	det
+29	32	rcmod
+32	30	nsubj
+32	31	advmod
+32	33	dobj
+33	36	rcmod
+35	34	poss
+36	35	nsubj
+36	37	dobj
+36	41	prep_throughout
+36	43	prep_throughout
+36	46	xcomp
+41	40	poss
+41	43	conj_and
+46	45	aux
+EOX
+D	0	47
+11
+5	1	nsubj
+5	2	advmod
+5	3	aux
+5	4	neg
+5	7	dobj
+7	6	det
+11	5	ccomp
+11	10	nsubj
+11	14	vmod
+14	13	neg
+14	17	dobj
+14	21	ccomp
+17	15	poss
+17	16	amod
+21	18	mark
+21	19	nsubj
+21	20	aux
+21	22	prep
+21	26	prep
+22	25	pobj
+25	23	neg
+25	24	amod
+26	27	pcomp
+27	29	dobj
+29	28	det
+29	32	rcmod
+32	30	nsubj
+32	31	advmod
+32	33	dobj
+33	36	rcmod
+35	34	poss
+36	35	nsubj
+36	37	dobj
+36	39	prep
+36	46	xcomp
+39	41	pobj
+41	40	poss
+41	42	cc
+41	43	conj
+46	45	aux
+EOX
+Y	1
+ROOT	0	0	48	1	S	5	0	48	7	``	0	0	1	1	``	0	0	1	0	S	2	1	8	3	NP	0	1	2	1	PRP	0	1	2	1	I	1	1	2	0	ADVP	0	2	3	1	RB	0	2	3	1	just	2	2	3	0	VP	2	3	8	3	VBP	0	3	4	1	do	3	3	4	0	RB	0	4	5	1	n't	4	4	5	0	VP	0	5	8	2	VB	0	5	6	1	have	5	5	6	0	NP	1	6	8	2	DT	0	6	7	1	the	6	6	7	0	NN	0	7	8	1	time	7	7	8	0	,	0	8	9	1	,	8	8	9	0	''	0	9	10	1	''	9	9	10	0	NP	0	10	11	1	NNP	0	10	11	1	Gogol	10	10	11	0	VP	0	11	47	3	VP	0	11	12	1	VBZ	0	11	12	1	says	11	11	12	0	,	0	12	13	1	,	12	12	13	0	S	1	13	47	2	RB	0	13	14	1	not	13	13	14	0	VP	0	14	47	3	VBG	0	14	15	1	telling	14	14	15	0	NP	2	15	18	3	PRP$	0	15	16	1	his	15	15	16	0	JJ	0	16	17	1	well-meaning	16	16	17	0	NN	0	17	18	1	cousin	17	17	18	0	SBAR	1	18	47	2	IN	0	18	19	1	that	18	18	19	0	S	1	19	47	2	NP	0	19	20	1	PRP	0	19	20	1	he	19	19	20	0	VP	1	20	47	2	MD	0	20	21	1	can	20	20	21	0	VP	0	21	47	3	VB	0	21	22	1	think	21	21	22	0	PP	0	22	26	2	IN	0	22	23	1	of	22	22	23	0	NP	2	23	26	3	DT	0	23	24	1	no	23	23	24	0	JJR	0	24	25	1	greater	24	24	25	0	NN	0	25	26	1	hypocrisy	25	25	26	0	PP	0	26	47	2	IN	0	26	27	1	than	26	26	27	0	S	0	27	47	1	VP	0	27	47	2	VBG	0	27	28	1	joining	27	27	28	0	NP	0	28	47	2	NP	1	28	30	2	DT	0	28	29	1	an	28	28	29	0	NN	0	29	30	1	organization	29	29	30	0	SBAR	1	30	47	2	WHNP	0	30	31	1	WDT	0	30	31	1	that	30	30	31	0	S	1	31	47	2	ADVP	0	31	32	1	RB	0	31	32	1	willingly	31	31	32	0	VP	0	32	47	2	VBZ	0	32	33	1	celebrates	32	32	33	0	NP	0	33	47	2	NP	0	33	34	1	NNS	0	33	34	1	occasions	33	33	34	0	SBAR	0	34	47	1	S	1	34	47	2	NP	1	34	36	2	PRP$	0	34	35	1	his	34	34	35	0	NNS	0	35	36	1	parents	35	35	36	0	VP	0	36	47	6	VBD	0	36	37	1	forced	36	36	37	0	NP	0	37	38	1	PRP	0	37	38	1	him	37	37	38	0	,	0	38	39	1	,	38	38	39	0	PP	0	39	44	2	IN	0	39	40	1	throughout	39	39	40	0	NP	1	40	44	4	PRP$	0	40	41	1	his	40	40	41	0	NN	0	41	42	1	childhood	41	41	42	0	CC	0	42	43	1	and	42	42	43	0	NN	0	43	44	1	adolescence	43	43	44	0	,	0	44	45	1	,	44	44	45	0	S	0	45	47	1	VP	1	45	47	2	TO	0	45	46	1	to	45	45	46	0	VP	0	46	47	1	VB	0	46	47	1	attend	46	46	47	0	.	0	47	48	1	.	47	47	48	0
+EOS
+T	47
+``	1473	1474	``	``	O	O	_
+I	1474	1475	PRP	I	O	O	_
+'m	1475	1477	VBP	be	O	O	_
+Nikhil	1478	1484	NNP	Nikhil	PERSON	O	_
+now	1485	1488	RB	now	DATE	PRESENT_REF	_
+,	1488	1489	,	,	O	O	_
+''	1489	1490	''	''	O	O	_
+Gogol	1491	1496	NNP	Gogol	PERSON	O	_
+says	1497	1501	VBZ	say	O	O	_
+,	1501	1502	,	,	O	O	_
+suddenly	1503	1511	RB	suddenly	O	O	_
+depressed	1512	1521	VBN	depress	O	O	_
+by	1522	1524	IN	by	O	O	_
+how	1525	1528	WRB	how	O	O	_
+many	1529	1533	JJ	many	O	O	_
+more	1534	1538	JJR	more	O	O	_
+times	1539	1544	NNS	time	O	O	_
+he	1545	1547	PRP	he	O	O	_
+will	1548	1552	MD	will	O	O	_
+have	1553	1557	VB	have	O	O	_
+to	1558	1560	TO	to	O	O	_
+say	1561	1564	VB	say	O	O	_
+this	1565	1569	DT	this	O	O	_
+,	1569	1570	,	,	O	O	_
+asking	1571	1577	VBG	ask	O	O	_
+people	1578	1584	NNS	people	O	O	_
+to	1585	1587	TO	to	O	O	_
+remember	1588	1596	VB	remember	O	O	_
+,	1596	1597	,	,	O	O	_
+reminding	1598	1607	VBG	remind	O	O	_
+them	1608	1612	PRP	they	O	O	_
+to	1613	1615	TO	to	O	O	_
+forget	1616	1622	VB	forget	O	O	_
+,	1622	1623	,	,	O	O	_
+feeling	1624	1631	VBG	feel	O	O	_
+as	1632	1634	IN	as	O	O	_
+if	1635	1637	IN	if	O	O	_
+an	1638	1640	DT	a	O	O	_
+errata	1641	1647	NNS	erratum	O	O	_
+slip	1648	1652	VBP	slip	O	O	_
+were	1653	1657	VBD	be	O	O	_
+perpetually	1658	1669	RB	perpetually	O	O	_
+pinned	1670	1676	VBN	pin	O	O	_
+to	1677	1679	TO	to	O	O	_
+his	1680	1683	PRP$	he	O	O	_
+chest	1684	1689	NN	chest	O	O	_
+.	1689	1690	.	.	O	O	_
+D	1	46
+8
+3	1	nsubj
+3	2	cop
+3	4	advmod
+8	3	ccomp
+8	7	nsubj
+8	11	dep
+11	10	advmod
+11	19	prepc_by
+14	13	advmod
+16	14	amod
+16	15	amod
+19	16	dobj
+19	17	nsubj
+19	18	aux
+19	21	xcomp
+21	20	aux
+21	22	dobj
+21	24	dep
+24	25	dobj
+24	27	xcomp
+24	29	dep
+24	34	dep
+24	42	advcl
+27	26	aux
+29	30	dobj
+29	32	xcomp
+32	31	aux
+38	37	det
+39	36	mark
+39	38	nsubj
+42	35	mark
+42	39	csubjpass
+42	40	auxpass
+42	41	advmod
+42	45	prep_to
+45	44	poss
+EOX
+D	0	46
+8
+3	1	nsubj
+3	2	cop
+3	4	advmod
+8	3	ccomp
+8	7	nsubj
+8	11	dep
+11	10	advmod
+11	12	prep
+12	19	pcomp
+14	13	advmod
+16	14	amod
+16	15	amod
+19	16	dobj
+19	17	nsubj
+19	18	aux
+19	21	xcomp
+21	20	aux
+21	22	dobj
+21	24	dep
+24	25	dobj
+24	27	xcomp
+24	29	dep
+24	34	dep
+24	42	advcl
+27	26	aux
+29	30	dobj
+29	32	xcomp
+32	31	aux
+38	37	det
+39	36	mark
+39	38	nsubj
+42	35	mark
+42	39	csubjpass
+42	40	auxpass
+42	41	advmod
+42	43	prep
+43	45	pobj
+45	44	poss
+EOX
+Y	1
+ROOT	0	0	47	1	S	5	0	47	7	``	0	0	1	1	``	0	0	1	0	S	1	1	5	2	NP	0	1	2	1	PRP	0	1	2	1	I	1	1	2	0	VP	1	2	5	3	VBP	0	2	3	1	'm	2	2	3	0	NP	0	3	4	1	NNP	0	3	4	1	Nikhil	3	3	4	0	ADVP	0	4	5	1	RB	0	4	5	1	now	4	4	5	0	,	0	5	6	1	,	5	5	6	0	''	0	6	7	1	''	6	6	7	0	NP	0	7	8	1	NNP	0	7	8	1	Gogol	7	7	8	0	VP	0	8	46	4	VP	0	8	9	1	VBZ	0	8	9	1	says	8	8	9	0	,	0	9	10	1	,	9	9	10	0	ADVP	0	10	11	1	RB	0	10	11	1	suddenly	10	10	11	0	VP	0	11	46	2	VBN	0	11	12	1	depressed	11	11	12	0	PP	0	12	46	2	IN	0	12	13	1	by	12	12	13	0	SBAR	1	13	46	2	WHNP	2	13	17	3	WHADJP	1	13	15	2	WRB	0	13	14	1	how	13	13	14	0	JJ	0	14	15	1	many	14	14	15	0	JJR	0	15	16	1	more	15	15	16	0	NNS	0	16	17	1	times	16	16	17	0	S	1	17	46	2	NP	0	17	18	1	PRP	0	17	18	1	he	17	17	18	0	VP	1	18	46	2	MD	0	18	19	1	will	18	18	19	0	VP	0	19	46	2	VB	0	19	20	1	have	19	19	20	0	S	0	20	46	1	VP	1	20	46	2	TO	0	20	21	1	to	20	20	21	0	VP	0	21	46	4	VB	0	21	22	1	say	21	21	22	0	NP	0	22	23	1	DT	0	22	23	1	this	22	22	23	0	,	0	23	24	1	,	23	23	24	0	S	0	24	46	1	VP	0	24	46	6	VP	0	24	28	3	VBG	0	24	25	1	asking	24	24	25	0	NP	0	25	26	1	NNS	0	25	26	1	people	25	25	26	0	S	0	26	28	1	VP	1	26	28	2	TO	0	26	27	1	to	26	26	27	0	VP	0	27	28	1	VB	0	27	28	1	remember	27	27	28	0	,	0	28	29	1	,	28	28	29	0	VP	0	29	33	2	VBG	0	29	30	1	reminding	29	29	30	0	S	1	30	33	2	NP	0	30	31	1	PRP	0	30	31	1	them	30	30	31	0	VP	1	31	33	2	TO	0	31	32	1	to	31	31	32	0	VP	0	32	33	1	VB	0	32	33	1	forget	32	32	33	0	,	0	33	34	1	,	33	33	34	0	VP	0	34	35	1	VBG	0	34	35	1	feeling	34	34	35	0	SBAR	1	35	46	2	IN	0	35	36	1	as	35	35	36	0	S	1	36	46	2	SBAR	1	36	40	2	IN	0	36	37	1	if	36	36	37	0	S	1	37	40	2	NP	1	37	39	2	DT	0	37	38	1	an	37	37	38	0	NNS	0	38	39	1	errata	38	38	39	0	VP	0	39	40	1	VBP	0	39	40	1	slip	39	39	40	0	VP	2	40	46	3	VBD	0	40	41	1	were	40	40	41	0	ADVP	0	41	42	1	RB	0	41	42	1	perpetually	41	41	42	0	VP	0	42	46	2	VBN	0	42	43	1	pinned	42	42	43	0	PP	0	43	46	2	TO	0	43	44	1	to	43	43	44	0	NP	1	44	46	2	PRP$	0	44	45	1	his	44	44	45	0	NN	0	45	46	1	chest	45	45	46	0	.	0	46	47	1	.	46	46	47	0
+EOS
+C	97
+12	44	44	45	1
+8	27	27	28	49
+11	7	6	8	80
+6	7	6	10	54
+12	25	25	26	49
+0	0	0	1	1
+11	1	1	2	1
+7	4	2	7	56
+2	35	35	36	23
+4	0	0	1	15
+4	10	10	11	29
+12	1	1	2	1
+3	4	2	9	28
+11	19	19	20	81
+12	17	17	18	1
+4	33	33	34	35
+2	10	9	17	17
+11	37	37	38	81
+0	9	7	10	4
+2	43	43	44	15
+9	1	1	14	1
+0	3	3	4	1
+8	34	34	35	49
+4	28	24	38	46
+11	33	33	47	86
+8	0	0	1	15
+8	13	13	14	15
+11	10	10	11	1
+6	3	2	10	53
+3	27	25	30	34
+8	25	25	26	49
+4	6	6	7	15
+12	45	44	46	100
+9	8	6	14	71
+1	9	7	10	6
+3	12	11	19	31
+4	13	13	14	15
+2	15	15	16	15
+11	29	28	47	85
+4	5	5	38	38
+1	4	4	5	1
+2	6	4	7	15
+8	2	2	3	56
+8	20	20	21	49
+12	7	7	8	1
+0	4	3	5	2
+11	41	40	44	90
+12	3	3	4	1
+12	22	22	23	96
+11	17	15	18	81
+2	32	32	33	23
+11	25	23	26	84
+3	21	21	22	32
+1	16	16	17	1
+5	5	5	6	51
+10	11	10	12	77
+11	35	34	36	62
+2	4	4	5	1
+4	30	30	38	47
+1	22	22	23	6
+8	33	32	34	67
+1	26	24	27	11
+3	15	14	16	32
+2	36	35	37	24
+4	32	32	38	49
+2	48	47	49	27
+10	4	4	5	72
+9	6	6	7	72
+4	14	13	15	41
+2	22	22	23	12
+5	3	3	6	50
+1	13	13	14	6
+11	40	40	41	81
+2	16	15	17	18
+1	7	7	8	1
+2	3	3	7	14
+10	0	0	1	74
+4	22	21	23	45
+2	20	20	23	20
+11	15	15	16	1
+2	1	1	7	13
+8	12	11	13	61
+4	3	2	38	37
+8	7	7	8	15
+6	0	0	1	15
+11	34	34	35	81
+2	26	25	31	22
+8	5	5	6	56
+12	30	30	31	49
+10	8	7	12	76
+9	12	10	14	73
+3	8	6	9	30
+4	19	18	23	44
+4	16	16	23	43
+12	38	37	39	99
+7	0	0	1	15
+8	14	13	15	62
+R
+elaboration	LeftToRight	-1	-1	0	0	12	46	0	6	2	nil
+elaboration	LeftToRight	-1	-1	0	0	10	12	0	1	2	nil
+elaboration	LeftToRight	-1	-1	0	0	3	30	0	2	2	nil
+elaboration	LeftToRight	-1	-1	0	0	2	50	0	5	2	nil
+joint	None	-1	-1	0	0	0	10	0	1	2	nil
+nil	None	-1	-1	0	0	0	4	0	0	0	Gogol slouches in his seat
+nil	None	-1	-1	0	5	0	10	1	1	0	and ponders certain awkward truths .
+elaboration	LeftToRight	-1	-1	1	0	2	50	0	5	2	nil
+same-unit	None	-1	-1	1	0	1	27	0	3	2	nil
+contrast	LeftToRight	-1	-1	1	0	1	15	0	2	2	nil
+nil	None	-1	-1	1	0	1	2	0	0	0	For instance ,
+joint	None	-1	-1	1	3	1	15	1	2	2	nil
+nil	None	-1	-1	1	3	1	10	1	1	0	although he can understand his mother tongue ,
+nil	None	-1	-1	1	11	1	15	2	2	0	and speak it fluently ,
+nil	None	-1	-1	1	16	1	27	3	3	0	he can not read or write it with even modest proficiency .
+joint	None	-1	-1	2	0	2	50	0	5	2	nil
+nil	None	-1	-1	2	0	2	17	0	0	0	On trips to India his American accented English is a source of endless amusement to his relatives ,
+attribution	RightToLeft	-1	-1	2	18	2	50	1	5	2	nil
+same-unit	None	-1	-1	2	18	2	41	1	4	2	nil
+nil	None	-1	-1	2	18	2	18	1	1	0	and
+joint	None	-1	-1	2	19	2	41	2	4	2	nil
+nil	None	-1	-1	2	19	2	30	2	2	0	when he and Sonia speak to each other , aunts and uncles
+joint	None	-1	-1	2	31	2	41	3	4	2	nil
+nil	None	-1	-1	2	31	2	38	3	3	0	and cousins always shake their heads in disbelief
+nil	None	-1	-1	2	39	2	41	4	4	0	and say ,
+nil	None	-1	-1	2	42	2	50	5	5	0	`` I did n't understand a word ! ''
+elaboration	LeftToRight	-1	-1	3	0	3	30	0	2	2	nil
+nil	None	-1	-1	3	0	3	12	0	0	0	Living with a pet name and a good name , in a place
+attribution	RightToLeft	-1	-1	3	13	3	30	1	2	2	nil
+nil	None	-1	-1	3	13	3	18	1	1	0	where such distinctions do not exist
+nil	None	-1	-1	3	19	3	30	2	2	0	-- surely that was emblematic of the greatest confusion of all .
+elaboration	LeftToRight	-1	-1	4	0	10	12	0	1	2	nil
+joint	None	-1	-1	4	0	6	10	0	1	2	nil
+contrast	None	-1	-1	4	0	4	38	0	4	2	nil
+elaboration	LeftToRight	-1	-1	4	0	4	8	0	1	2	nil
+nil	None	-1	-1	4	0	4	5	0	0	0	He searches the audience for someone
+nil	None	-1	-1	4	6	4	8	1	1	0	he knows ,
+elaboration	LeftToRight	-1	-1	4	9	4	38	2	4	2	nil
+nil	None	-1	-1	4	9	4	14	2	2	0	but it is n't his crowd
+elaboration	LeftToRight	-1	-1	4	15	4	38	3	4	2	nil
+nil	None	-1	-1	4	15	4	32	3	3	0	-- lots of lit majors with leather satchels and gold-rimmed glasses and fountain pens , lots of people
+nil	None	-1	-1	4	33	4	38	4	4	0	Ruth would have waved to .
+elaboration	LeftToRight	-1	-1	5	0	6	10	0	1	2	nil
+nil	None	-1	-1	5	0	5	6	0	0	0	There are also lots of ABCDs .
+elaboration	LeftToRight	-1	-1	6	0	6	10	0	1	2	nil
+nil	None	-1	-1	6	0	6	3	0	0	0	He has no idea
+nil	None	-1	-1	6	4	6	10	1	1	0	there are this many on campus .
+elaboration	LeftToRight	-1	-1	7	0	10	12	0	1	2	nil
+nil	None	-1	-1	7	0	7	7	0	0	0	He has no ABCD friends at college .
+explanation	LeftToRight	-1	-1	8	0	10	12	0	1	2	nil
+cause	LeftToRight	-1	-1	8	0	8	38	0	5	2	nil
+explanation	LeftToRight	-1	-1	8	0	8	18	0	2	2	nil
+nil	None	-1	-1	8	0	8	3	0	0	0	He avoids them ,
+elaboration	LeftToRight	-1	-1	8	4	8	18	1	2	2	nil
+nil	None	-1	-1	8	4	8	12	1	1	0	for they remind him too much of the way
+nil	None	-1	-1	8	13	8	18	2	2	0	his parents choose to live ,
+explanation	LeftToRight	-1	-1	8	19	8	38	3	5	2	nil
+nil	None	-1	-1	8	19	8	23	3	3	0	befriending people not so much
+contrast	RightToLeft	-1	-1	8	24	8	38	4	5	2	nil
+nil	None	-1	-1	8	24	8	28	4	4	0	because they like them ,
+nil	None	-1	-1	8	29	8	38	5	5	0	but because of a past they happen to share .
+joint	None	-1	-1	9	0	10	12	0	1	2	nil
+elaboration	LeftToRight	-1	-1	9	0	9	15	0	1	2	nil
+nil	None	-1	-1	9	0	9	2	0	0	0	`` Gogol ,
+nil	None	-1	-1	9	3	9	15	1	1	0	why are n't you a member of the Indian association here ? ''
+background	LeftToRight	-1	-1	10	0	10	12	0	1	2	nil
+nil	None	-1	-1	10	0	10	2	0	0	0	Amit asks later
+nil	None	-1	-1	10	3	10	12	1	1	0	when they go for a drink at the Anchor .
+explanation	LeftToRight	-1	-1	11	0	12	46	0	6	2	nil
+cause	LeftToRight	-1	-1	11	0	11	47	0	7	2	nil
+attribution	LeftToRight	-1	-1	11	0	11	12	0	1	2	nil
+nil	None	-1	-1	11	0	11	9	0	0	0	`` I just do n't have the time , ''
+nil	None	-1	-1	11	10	11	12	1	1	0	Gogol says ,
+elaboration	LeftToRight	-1	-1	11	13	11	47	2	7	2	nil
+nil	None	-1	-1	11	13	11	17	2	2	0	not telling his well-meaning cousin
+comparison	LeftToRight	-1	-1	11	18	11	47	3	7	2	nil
+nil	None	-1	-1	11	18	11	25	3	3	0	that he can think of no greater hypocrisy
+elaboration	LeftToRight	-1	-1	11	26	11	47	4	7	2	nil
+nil	None	-1	-1	11	26	11	29	4	4	0	than joining an organization
+elaboration	LeftToRight	-1	-1	11	30	11	47	5	7	2	nil
+nil	None	-1	-1	11	30	11	33	5	5	0	that willingly celebrates occasions
+enablement	LeftToRight	-1	-1	11	34	11	47	6	7	2	nil
+nil	None	-1	-1	11	34	11	44	6	6	0	his parents forced him , throughout his childhood and adolescence ,
+nil	None	-1	-1	11	45	11	47	7	7	0	to attend .
+elaboration	LeftToRight	-1	-1	12	0	12	46	0	6	2	nil
+elaboration	LeftToRight	-1	-1	12	0	12	33	0	4	2	nil
+enablement	LeftToRight	-1	-1	12	0	12	28	0	3	2	nil
+same-unit	None	-1	-1	12	0	12	23	0	2	2	nil
+attribution	LeftToRight	-1	-1	12	0	12	9	0	1	2	nil
+nil	None	-1	-1	12	0	12	6	0	0	0	`` I 'm Nikhil now , ''
+nil	None	-1	-1	12	7	12	9	1	1	0	Gogol says ,
+nil	None	-1	-1	12	10	12	23	2	2	0	suddenly depressed by how many more times he will have to say this ,
+nil	None	-1	-1	12	24	12	28	3	3	0	asking people to remember ,
+nil	None	-1	-1	12	29	12	33	4	4	0	reminding them to forget ,
+background	LeftToRight	-1	-1	12	34	12	46	5	6	2	nil
+nil	None	-1	-1	12	34	12	34	5	5	0	feeling
+nil	None	-1	-1	12	35	12	46	6	6	0	as if an errata slip were perpetually pinned to his chest .
+EOD

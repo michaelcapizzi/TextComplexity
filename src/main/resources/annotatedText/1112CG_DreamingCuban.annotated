@@ -1,0 +1,1138 @@
+S	6
+T	20
+Abuela	0	6	NNP	Abuela	PERSON	O	_
+gives	7	12	VBZ	give	O	O	_
+me	13	15	PRP	I	O	O	_
+a	16	17	DT	a	O	O	_
+box	18	21	NN	box	O	O	_
+of	22	24	IN	of	O	O	_
+letters	25	32	NNS	letter	O	O	_
+she	33	36	PRP	she	O	O	_
+wrote	37	42	VBD	write	O	O	_
+to	43	45	TO	to	O	O	_
+her	46	49	PRP$	she	O	O	_
+onetime	50	57	JJ	onetime	O	O	_
+lover	58	63	NN	lover	O	O	_
+in	64	66	IN	in	O	O	_
+Spain	67	72	NNP	Spain	LOCATION	O	_
+,	72	73	,	,	O	O	_
+but	74	77	CC	but	O	O	_
+never	78	83	RB	never	O	O	_
+sent	84	88	VBN	send	O	O	_
+.	88	89	.	.	O	O	_
+D	1	19
+1
+1	0	nsubj
+1	2	iobj
+1	4	dobj
+1	18	conj_but
+4	3	det
+4	6	prep_of
+6	8	rcmod
+8	7	nsubj
+8	12	prep_to
+8	14	prep_in
+12	10	poss
+12	11	amod
+18	0	nsubj
+18	17	neg
+EOX
+D	0	19
+1
+1	0	nsubj
+1	2	iobj
+1	4	dobj
+1	16	cc
+1	18	conj
+4	3	det
+4	5	prep
+5	6	pobj
+6	8	rcmod
+8	7	nsubj
+8	9	prep
+8	13	prep
+9	12	pobj
+12	10	poss
+12	11	amod
+13	14	pobj
+18	17	neg
+EOX
+Y	1
+ROOT	0	0	20	1	S	0	0	20	5	S	1	0	15	2	NP	0	0	1	1	NNP	0	0	1	1	Abuela	0	0	1	0	VP	0	1	15	3	VBZ	0	1	2	1	gives	1	1	2	0	NP	0	2	3	1	PRP	0	2	3	1	me	2	2	3	0	NP	0	3	15	2	NP	1	3	5	2	DT	0	3	4	1	a	3	3	4	0	NN	0	4	5	1	box	4	4	5	0	PP	0	5	15	2	IN	0	5	6	1	of	5	5	6	0	NP	0	6	15	2	NP	0	6	7	1	NNS	0	6	7	1	letters	6	6	7	0	SBAR	0	7	15	1	S	1	7	15	2	NP	0	7	8	1	PRP	0	7	8	1	she	7	7	8	0	VP	0	8	15	3	VBD	0	8	9	1	wrote	8	8	9	0	PP	0	9	13	2	TO	0	9	10	1	to	9	9	10	0	NP	2	10	13	3	PRP$	0	10	11	1	her	10	10	11	0	JJ	0	11	12	1	onetime	11	11	12	0	NN	0	12	13	1	lover	12	12	13	0	PP	0	13	15	2	IN	0	13	14	1	in	13	13	14	0	NP	0	14	15	1	NNP	0	14	15	1	Spain	14	14	15	0	,	0	15	16	1	,	15	15	16	0	CC	0	16	17	1	but	16	16	17	0	S	1	17	19	2	ADVP	0	17	18	1	RB	0	17	18	1	never	17	17	18	0	VP	0	18	19	1	VBN	0	18	19	1	sent	18	18	19	0	.	0	19	20	1	.	19	19	20	0
+EOS
+T	8
+She	90	93	PRP	she	O	O	_
+shows	94	99	VBZ	show	O	O	_
+me	100	102	PRP	I	O	O	_
+his	103	106	PRP$	he	O	O	_
+photograph	107	117	NN	photograph	O	O	_
+,	117	118	,	,	O	O	_
+too	119	122	RB	too	O	O	_
+.	122	123	.	.	O	O	_
+D	1	7
+1
+1	0	nsubj
+1	4	xcomp
+1	6	advmod
+4	2	nsubj
+4	3	poss
+EOX
+D	0	7
+1
+1	0	nsubj
+1	4	xcomp
+1	6	advmod
+4	2	nsubj
+4	3	poss
+EOX
+Y	1
+ROOT	0	0	8	1	S	1	0	8	3	NP	0	0	1	1	PRP	0	0	1	1	She	0	0	1	0	VP	0	1	7	4	VBZ	0	1	2	1	shows	1	1	2	0	S	1	2	5	2	NP	0	2	3	1	PRP	0	2	3	1	me	2	2	3	0	NP	1	3	5	2	PRP$	0	3	4	1	his	3	3	4	0	NN	0	4	5	1	photograph	4	4	5	0	,	0	5	6	1	,	5	5	6	0	ADVP	0	6	7	1	RB	0	6	7	1	too	6	6	7	0	.	0	7	8	1	.	7	7	8	0
+EOS
+T	6
+It	124	126	PRP	it	O	O	_
+'s	126	128	VBZ	be	O	O	_
+very	129	133	RB	very	O	O	_
+well	134	138	RB	well	O	O	_
+preserved	139	148	VBN	preserve	O	O	_
+.	148	149	.	.	O	O	_
+D	1	5
+4
+3	2	advmod
+4	0	nsubjpass
+4	1	auxpass
+4	3	advmod
+EOX
+D	0	5
+4
+3	2	advmod
+4	0	nsubjpass
+4	1	auxpass
+4	3	advmod
+EOX
+Y	1
+ROOT	0	0	6	1	S	1	0	6	3	NP	0	0	1	1	PRP	0	0	1	1	It	0	0	1	0	VP	2	1	5	3	VBZ	0	1	2	1	's	1	1	2	0	ADVP	1	2	4	2	RB	0	2	3	1	very	2	2	3	0	RB	0	3	4	1	well	3	3	4	0	VP	0	4	5	1	VBN	0	4	5	1	preserved	4	4	5	0	.	0	5	6	1	.	5	5	6	0
+EOS
+T	22
+He	150	152	PRP	he	O	O	_
+'d	152	154	MD	would	O	O	_
+be	155	157	VB	be	O	O	_
+good-looking	158	170	JJ	good-looking	O	O	_
+by	171	173	IN	by	O	O	_
+today	174	179	NN	today	DATE	THIS P1D	_
+'s	179	181	POS	's	O	O	_
+standards	182	191	NNS	standard	O	O	_
+,	191	192	,	,	O	O	_
+well	193	197	RB	well	O	O	_
+built	198	203	VBN	build	O	O	_
+with	204	208	IN	with	O	O	_
+a	209	210	DT	a	O	O	_
+full	211	215	JJ	full	O	O	_
+beard	216	221	NN	beard	O	O	_
+and	222	225	CC	and	O	O	_
+kind	226	230	NN	kind	O	O	_
+eyes	231	235	NNS	eye	O	O	_
+,	235	236	,	,	O	O	_
+almost	237	243	RB	almost	O	O	_
+professorial	244	256	JJ	professorial	O	O	_
+.	256	257	.	.	O	O	_
+D	1	21
+3
+3	0	nsubj
+3	1	aux
+3	2	cop
+3	7	prep_by
+3	10	dep
+7	5	poss
+10	9	advmod
+10	14	prep_with
+10	17	prep_with
+10	20	dep
+14	12	det
+14	13	amod
+14	17	conj_and
+17	16	nn
+20	19	advmod
+EOX
+D	0	21
+3
+3	0	nsubj
+3	1	aux
+3	2	cop
+3	4	prep
+3	10	dep
+4	7	pobj
+5	6	possessive
+7	5	poss
+10	9	advmod
+10	11	prep
+10	20	dep
+11	14	pobj
+14	12	det
+14	13	amod
+14	15	cc
+14	17	conj
+17	16	nn
+20	19	advmod
+EOX
+Y	1
+ROOT	0	0	22	1	S	1	0	22	3	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	1	1	21	2	MD	0	1	2	1	'd	1	1	2	0	VP	1	2	21	5	VB	0	2	3	1	be	2	2	3	0	ADJP	0	3	4	1	JJ	0	3	4	1	good-looking	3	3	4	0	PP	0	4	8	2	IN	0	4	5	1	by	4	4	5	0	NP	1	5	8	2	NP	0	5	7	2	NN	0	5	6	1	today	5	5	6	0	POS	0	6	7	1	's	6	6	7	0	NNS	0	7	8	1	standards	7	7	8	0	,	0	8	9	1	,	8	8	9	0	S	1	9	21	2	ADVP	0	9	10	1	RB	0	9	10	1	well	9	9	10	0	VP	0	10	21	4	VBN	0	10	11	1	built	10	10	11	0	PP	0	11	18	2	IN	0	11	12	1	with	11	11	12	0	NP	0	12	18	3	NP	2	12	15	3	DT	0	12	13	1	a	12	12	13	0	JJ	0	13	14	1	full	13	13	14	0	NN	0	14	15	1	beard	14	14	15	0	CC	0	15	16	1	and	15	15	16	0	NP	1	16	18	2	NN	0	16	17	1	kind	16	16	17	0	NNS	0	17	18	1	eyes	17	17	18	0	,	0	18	19	1	,	18	18	19	0	S	0	19	21	1	ADJP	1	19	21	2	RB	0	19	20	1	almost	19	19	20	0	JJ	0	20	21	1	professorial	20	20	21	0	.	0	21	22	1	.	21	21	22	0
+EOS
+T	15
+He	258	260	PRP	he	O	O	_
+wore	261	265	VBD	wear	O	O	_
+a	266	267	DT	a	O	O	_
+crisp	268	273	JJ	crisp	O	O	_
+linen	274	279	NN	linen	O	O	_
+suit	280	284	NN	suit	O	O	_
+and	285	288	CC	and	O	O	_
+a	289	290	DT	a	O	O	_
+boater	291	297	NN	boater	O	O	_
+tilted	298	304	JJ	tilted	O	O	_
+slightly	305	313	RB	slightly	O	O	_
+to	314	316	TO	to	O	O	_
+the	317	320	DT	the	O	O	_
+left	321	325	NN	left	O	O	_
+.	325	326	.	.	O	O	_
+D	1	14
+1
+1	0	nsubj
+1	5	dobj
+1	8	dobj
+1	10	advmod
+1	13	prep_to
+5	2	det
+5	3	amod
+5	4	nn
+5	8	conj_and
+8	7	det
+8	9	amod
+13	12	det
+EOX
+D	0	14
+1
+1	0	nsubj
+1	5	dobj
+1	10	advmod
+1	11	prep
+5	2	det
+5	3	amod
+5	4	nn
+5	6	cc
+5	8	conj
+8	7	det
+8	9	amod
+11	13	pobj
+13	12	det
+EOX
+Y	1
+ROOT	0	0	15	1	S	1	0	15	3	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	0	1	14	4	VBD	0	1	2	1	wore	1	1	2	0	NP	0	2	10	3	NP	3	2	6	4	DT	0	2	3	1	a	2	2	3	0	JJ	0	3	4	1	crisp	3	3	4	0	NN	0	4	5	1	linen	4	4	5	0	NN	0	5	6	1	suit	5	5	6	0	CC	0	6	7	1	and	6	6	7	0	NP	1	7	10	3	DT	0	7	8	1	a	7	7	8	0	NN	0	8	9	1	boater	8	8	9	0	JJ	0	9	10	1	tilted	9	9	10	0	ADVP	0	10	11	1	RB	0	10	11	1	slightly	10	10	11	0	PP	0	11	14	2	TO	0	11	12	1	to	11	11	12	0	NP	1	12	14	2	DT	0	12	13	1	the	12	12	13	0	NN	0	13	14	1	left	13	13	14	0	.	0	14	15	1	.	14	14	15	0
+EOS
+T	14
+Abuela	327	333	NNP	Abuela	PERSON	O	_
+tells	334	339	VBZ	tell	O	O	_
+me	340	342	PRP	I	O	O	_
+she	343	346	PRP	she	O	O	_
+took	347	351	VBD	take	O	O	_
+the	352	355	DT	the	O	O	_
+picture	356	363	NN	picture	O	O	_
+herself	364	371	PRP	herself	O	O	_
+one	372	375	CD	one	NUMBER	1.0	_
+Sunday	376	382	NNP	Sunday	DATE	XXXX-WXX-7	_
+on	383	385	IN	on	O	O	_
+the	386	389	DT	the	O	O	_
+Malecón	390	397	NNP	Malecón	LOCATION	O	_
+,	397	398	,	,	O	O	_
+D	1	13
+1
+1	0	nsubj
+1	2	dobj
+1	4	ccomp
+4	3	nsubj
+4	6	iobj
+4	8	dobj
+4	12	prep_on
+6	5	det
+8	7	dep
+8	9	appos
+12	11	det
+EOX
+D	0	13
+1
+1	0	nsubj
+1	2	dobj
+1	4	ccomp
+4	3	nsubj
+4	6	iobj
+4	8	dobj
+4	10	prep
+6	5	det
+8	7	dep
+8	9	appos
+10	12	pobj
+12	11	det
+EOX
+Y	1
+ROOT	0	0	14	1	S	1	0	14	3	NP	0	0	1	1	NNP	0	0	1	1	Abuela	0	0	1	0	VP	0	1	13	3	VBZ	0	1	2	1	tells	1	1	2	0	NP	0	2	3	1	PRP	0	2	3	1	me	2	2	3	0	SBAR	0	3	13	1	S	1	3	13	2	NP	0	3	4	1	PRP	0	3	4	1	she	3	3	4	0	VP	0	4	13	4	VBD	0	4	5	1	took	4	4	5	0	NP	1	5	7	2	DT	0	5	6	1	the	5	5	6	0	NN	0	6	7	1	picture	6	6	7	0	NP	1	7	10	2	PRP	0	7	8	1	herself	7	7	8	0	NP	0	8	10	2	NP	0	8	9	1	CD	0	8	9	1	one	8	8	9	0	NP	0	9	10	1	NNP	0	9	10	1	Sunday	9	9	10	0	PP	0	10	13	2	IN	0	10	11	1	on	10	10	11	0	NP	1	11	13	2	DT	0	11	12	1	the	11	11	12	0	NNP	0	12	13	1	Malecón	12	12	13	0	,	0	13	14	1	,	13	13	14	0
+EOS
+C	30
+5	0	0	1	1
+0	2	2	3	3
+0	0	0	1	1
+5	2	2	3	3
+4	0	0	1	7
+0	10	10	11	1
+5	9	9	10	32
+0	7	7	8	1
+2	0	0	1	11
+3	0	0	1	7
+0	14	14	15	2
+3	5	5	7	16
+4	13	12	14	24
+4	5	2	10	21
+1	4	3	5	11
+0	4	3	15	4
+5	7	7	8	1
+5	12	11	13	33
+0	12	10	13	7
+1	3	3	4	7
+4	8	7	10	23
+3	7	5	8	15
+5	3	3	4	1
+5	8	7	10	30
+1	2	2	3	3
+3	14	12	18	17
+3	17	16	18	19
+1	0	0	1	1
+5	6	5	7	29
+0	6	6	15	5
+R
+elaboration	LeftToRight	-1	-1	0	0	5	13	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	2	5	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	1	7	0	0	2	nil
+contrast	RightToLeft	-1	-1	0	0	0	19	0	2	2	nil
+elaboration	LeftToRight	-1	-1	0	0	0	15	0	1	2	nil
+nil	None	-1	-1	0	0	0	6	0	0	0	Abuela gives me a box of letters
+nil	None	-1	-1	0	7	0	15	1	1	0	she wrote to her onetime lover in Spain ,
+nil	None	-1	-1	0	16	0	19	2	2	0	but never sent .
+nil	None	-1	-1	1	0	1	7	0	0	0	She shows me his photograph , too .
+nil	None	-1	-1	2	0	2	5	0	0	0	It 's very well preserved .
+elaboration	LeftToRight	-1	-1	3	0	5	13	0	0	2	nil
+elaboration	LeftToRight	-1	-1	3	0	4	14	0	0	2	nil
+elaboration	LeftToRight	-1	-1	3	0	3	21	0	2	2	nil
+nil	None	-1	-1	3	0	3	8	0	0	0	He 'd be good-looking by today 's standards ,
+cause	LeftToRight	-1	-1	3	9	3	21	1	2	2	nil
+nil	None	-1	-1	3	9	3	18	1	1	0	well built with a full beard and kind eyes ,
+nil	None	-1	-1	3	19	3	21	2	2	0	almost professorial .
+nil	None	-1	-1	4	0	4	14	0	0	0	He wore a crisp linen suit and a boater tilted slightly to the left .
+nil	None	-1	-1	5	0	5	13	0	0	0	Abuela tells me she took the picture herself one Sunday on the Malecón ,
+EOD
+S	2
+T	28
+She	0	3	PRP	she	O	O	_
+also	4	8	RB	also	O	O	_
+gives	9	14	VBZ	give	O	O	_
+me	15	17	PRP	I	O	O	_
+a	18	19	DT	a	O	O	_
+book	20	24	NN	book	O	O	_
+of	25	27	IN	of	O	O	_
+poems	28	33	NNS	poem	O	O	_
+she	34	37	PRP	she	O	O	_
+'s	37	39	VBZ	be	O	O	_
+had	40	43	VBN	have	O	O	_
+since	44	49	IN	since	O	O	_
+1930	50	54	CD	1930	DATE	1930	_
+,	54	55	,	,	O	O	_
+we	56	58	PRP	we	O	O	_
+she	59	62	PRP	she	O	O	_
+heard	63	68	VBD	hear	O	O	_
+García	69	75	NNP	García	PERSON	O	_
+Lorca	76	81	NNP	Lorca	PERSON	O	_
+read	82	86	VBD	read	O	O	_
+at	87	89	IN	at	O	O	_
+the	90	93	DT	the	O	O	_
+Principal	94	103	NN	principal	ORGANIZATION	O	_
+de	104	106	FW	de	ORGANIZATION	O	_
+la	107	109	FW	la	ORGANIZATION	O	_
+Comedia	110	117	NNP	Comedia	ORGANIZATION	O	_
+Theater	118	125	NNP	Theater	ORGANIZATION	O	_
+.	125	126	.	.	O	O	_
+D	1	27
+16
+2	0	nsubj
+2	1	advmod
+2	3	iobj
+2	5	dobj
+5	4	det
+5	7	prep_of
+7	10	rcmod
+10	8	nsubjpass
+10	9	auxpass
+10	12	prep_since
+16	2	ccomp
+16	14	nsubj
+16	15	nsubj
+16	19	ccomp
+18	17	nn
+19	18	nsubj
+19	26	prep_at
+26	21	det
+26	22	nn
+26	23	nn
+26	24	nn
+26	25	nn
+EOX
+D	0	27
+16
+2	0	nsubj
+2	1	advmod
+2	3	iobj
+2	5	dobj
+5	4	det
+5	6	prep
+6	7	pobj
+7	10	rcmod
+10	8	nsubjpass
+10	9	auxpass
+10	11	prep
+11	12	pobj
+16	2	ccomp
+16	14	nsubj
+16	15	nsubj
+16	19	ccomp
+18	17	nn
+19	18	nsubj
+19	20	prep
+20	26	pobj
+26	21	det
+26	22	nn
+26	23	nn
+26	24	nn
+26	25	nn
+EOX
+Y	1
+ROOT	0	0	28	1	S	4	0	28	6	S	2	0	13	3	NP	0	0	1	1	PRP	0	0	1	1	She	0	0	1	0	ADVP	0	1	2	1	RB	0	1	2	1	also	1	1	2	0	VP	0	2	13	3	VBZ	0	2	3	1	gives	2	2	3	0	NP	0	3	4	1	PRP	0	3	4	1	me	3	3	4	0	NP	0	4	13	2	NP	1	4	6	2	DT	0	4	5	1	a	4	4	5	0	NN	0	5	6	1	book	5	5	6	0	PP	0	6	13	2	IN	0	6	7	1	of	6	6	7	0	NP	0	7	13	2	NP	0	7	8	1	NNS	0	7	8	1	poems	7	7	8	0	SBAR	0	8	13	1	S	1	8	13	2	NP	0	8	9	1	PRP	0	8	9	1	she	8	8	9	0	VP	1	9	13	2	VBZ	0	9	10	1	's	9	9	10	0	VP	0	10	13	2	VBN	0	10	11	1	had	10	10	11	0	PP	0	11	13	2	IN	0	11	12	1	since	11	11	12	0	NP	0	12	13	1	CD	0	12	13	1	1930	12	12	13	0	,	0	13	14	1	,	13	13	14	0	NP	0	14	15	1	PRP	0	14	15	1	we	14	14	15	0	NP	0	15	16	1	PRP	0	15	16	1	she	15	15	16	0	VP	0	16	27	2	VBD	0	16	17	1	heard	16	16	17	0	SBAR	0	17	27	1	S	1	17	27	2	NP	1	17	19	2	NNP	0	17	18	1	García	17	17	18	0	NNP	0	18	19	1	Lorca	18	18	19	0	VP	0	19	27	2	VBD	0	19	20	1	read	19	19	20	0	PP	0	20	27	2	IN	0	20	21	1	at	20	20	21	0	NP	5	21	27	6	DT	0	21	22	1	the	21	21	22	0	NN	0	22	23	1	Principal	22	22	23	0	FW	0	23	24	1	de	23	23	24	0	FW	0	24	25	1	la	24	24	25	0	NNP	0	25	26	1	Comedia	25	25	26	0	NNP	0	26	27	1	Theater	26	26	27	0	.	0	27	28	1	.	27	27	28	0
+EOS
+T	13
+Abuela	127	133	NNP	Abuela	PERSON	O	_
+knows	134	139	VBZ	know	O	O	_
+each	140	144	DT	each	O	O	_
+poem	145	149	NN	poem	O	O	_
+by	150	152	IN	by	O	O	_
+heart	153	158	NN	heart	O	O	_
+,	158	159	,	,	O	O	_
+and	160	163	CC	and	O	O	_
+recites	164	171	VBZ	recite	O	O	_
+them	172	176	PRP	they	O	O	_
+quite	177	182	RB	quite	O	O	_
+dramatically	183	195	RB	dramatically	O	O	_
+.	195	196	.	.	O	O	_
+D	1	12
+1
+1	0	nsubj
+1	3	dobj
+1	5	prep_by
+1	8	conj_and
+3	2	det
+8	0	nsubj
+8	9	dobj
+8	11	advmod
+11	10	advmod
+EOX
+D	0	12
+1
+1	0	nsubj
+1	3	dobj
+1	4	prep
+1	7	cc
+1	8	conj
+3	2	det
+4	5	pobj
+8	9	dobj
+8	11	advmod
+11	10	advmod
+EOX
+Y	1
+ROOT	0	0	13	1	S	1	0	13	3	NP	0	0	1	1	NNP	0	0	1	1	Abuela	0	0	1	0	VP	0	1	12	4	VP	0	1	6	3	VBZ	0	1	2	1	knows	1	1	2	0	NP	1	2	4	2	DT	0	2	3	1	each	2	2	3	0	NN	0	3	4	1	poem	3	3	4	0	PP	0	4	6	2	IN	0	4	5	1	by	4	4	5	0	NP	0	5	6	1	NN	0	5	6	1	heart	5	5	6	0	,	0	6	7	1	,	6	6	7	0	CC	0	7	8	1	and	7	7	8	0	VP	0	8	12	3	VBZ	0	8	9	1	recites	8	8	9	0	NP	0	9	10	1	PRP	0	9	10	1	them	9	9	10	0	ADVP	1	10	12	2	RB	0	10	11	1	quite	10	10	11	0	RB	0	11	12	1	dramatically	11	11	12	0	.	0	12	13	1	.	12	12	13	0
+EOS
+C	13
+0	0	0	1	2
+0	18	17	19	1
+0	7	7	13	5
+0	3	3	4	3
+0	14	14	15	8
+0	5	4	13	4
+0	15	15	16	2
+1	9	9	10	13
+0	8	8	9	2
+0	12	12	13	7
+1	3	2	4	12
+0	26	21	27	10
+1	0	0	1	11
+R
+elaboration	LeftToRight	-1	-1	0	0	1	12	0	1	2	nil
+attribution	LeftToRight	-1	-1	0	0	0	27	0	2	2	nil
+elaboration	LeftToRight	-1	-1	0	0	0	13	0	1	2	nil
+nil	None	-1	-1	0	0	0	7	0	0	0	She also gives me a book of poems
+nil	None	-1	-1	0	8	0	13	1	1	0	she 's had since 1930 ,
+nil	None	-1	-1	0	14	0	27	2	2	0	we she heard García Lorca read at the Principal de la Comedia Theater .
+joint	None	-1	-1	1	0	1	12	0	1	2	nil
+nil	None	-1	-1	1	0	1	6	0	0	0	Abuela knows each poem by heart ,
+nil	None	-1	-1	1	7	1	12	1	1	0	and recites them quite dramatically .
+EOD
+S	11
+T	13
+I	0	1	PRP	I	O	O	_
+'ve	1	4	VBP	have	O	O	_
+started	5	12	VBN	start	O	O	_
+dreaming	13	21	VBG	dream	O	O	_
+in	22	24	IN	in	O	O	_
+Spanish	25	32	NNP	Spanish	MISC	O	_
+,	32	33	,	,	O	O	_
+which	34	39	WDT	which	O	O	_
+has	40	43	VBZ	have	O	O	_
+never	44	49	RB	never	O	O	_
+happened	50	58	VBN	happen	O	O	_
+before	59	65	IN	before	O	O	_
+.	65	66	.	.	O	O	_
+D	1	12
+2
+2	0	nsubj
+2	1	aux
+2	3	xcomp
+3	5	prep_in
+5	10	rcmod
+10	7	nsubj
+10	8	aux
+10	9	neg
+10	11	prep
+EOX
+D	0	12
+2
+2	0	nsubj
+2	1	aux
+2	3	xcomp
+3	4	prep
+4	5	pobj
+5	10	rcmod
+10	7	nsubj
+10	8	aux
+10	9	neg
+10	11	prep
+EOX
+Y	1
+ROOT	0	0	13	1	S	1	0	13	3	NP	0	0	1	1	PRP	0	0	1	1	I	0	0	1	0	VP	1	1	12	2	VBP	0	1	2	1	've	1	1	2	0	VP	0	2	12	2	VBN	0	2	3	1	started	2	2	3	0	S	0	3	12	1	VP	0	3	12	2	VBG	0	3	4	1	dreaming	3	3	4	0	PP	0	4	12	2	IN	0	4	5	1	in	4	4	5	0	NP	0	5	12	3	NP	0	5	6	1	NNP	0	5	6	1	Spanish	5	5	6	0	,	0	6	7	1	,	6	6	7	0	SBAR	1	7	12	2	WHNP	0	7	8	1	WDT	0	7	8	1	which	7	7	8	0	S	0	8	12	1	VP	2	8	12	3	VBZ	0	8	9	1	has	8	8	9	0	ADVP	0	9	10	1	RB	0	9	10	1	never	9	9	10	0	VP	0	10	12	2	VBN	0	10	11	1	happened	10	10	11	0	PP	0	11	12	1	IN	0	11	12	1	before	11	11	12	0	.	0	12	13	1	.	12	12	13	0
+EOS
+T	18
+I	67	68	PRP	I	O	O	_
+wake	69	73	VBP	wake	O	O	_
+up	74	76	RP	up	O	O	_
+feeling	77	84	VBG	feel	O	O	_
+different	85	94	JJ	different	O	O	_
+,	94	95	,	,	O	O	_
+like	96	100	IN	like	O	O	_
+something	101	110	NN	something	O	O	_
+inside	111	117	IN	inside	O	O	_
+me	118	120	PRP	I	O	O	_
+is	121	123	VBZ	be	O	O	_
+changing	124	132	VBG	change	O	O	_
+,	132	133	,	,	O	O	_
+something	134	143	NN	something	O	O	_
+chemical	144	152	NN	chemical	O	O	_
+and	153	156	CC	and	O	O	_
+irreversible	157	169	JJ	irreversible	O	O	_
+.	169	170	.	.	O	O	_
+D	1	17
+1
+1	0	nsubj
+1	2	prt
+1	3	dep
+1	16	dep
+3	14	dobj
+3	16	conj_and
+4	11	dep
+7	9	prep_inside
+11	6	mark
+11	7	nsubj
+11	10	aux
+14	4	amod
+14	13	nn
+EOX
+D	0	17
+1
+1	0	nsubj
+1	2	prt
+1	3	dep
+3	14	dobj
+3	15	cc
+3	16	conj
+4	11	dep
+7	8	prep
+8	9	pobj
+11	6	mark
+11	7	nsubj
+11	10	aux
+14	4	amod
+14	13	nn
+EOX
+Y	1
+ROOT	0	0	18	1	S	1	0	18	3	NP	0	0	1	1	PRP	0	0	1	1	I	0	0	1	0	VP	0	1	17	3	VBP	0	1	2	1	wake	1	1	2	0	PRT	0	2	3	1	RP	0	2	3	1	up	2	2	3	0	UCP	0	3	17	3	VP	0	3	15	2	VBG	0	3	4	1	feeling	3	3	4	0	NP	2	4	15	3	ADJP	0	4	13	2	ADJP	0	4	5	1	JJ	0	4	5	1	different	4	4	5	0	PRN	1	5	13	3	,	0	5	6	1	,	5	5	6	0	SBAR	1	6	12	2	IN	0	6	7	1	like	6	6	7	0	S	1	7	12	2	NP	0	7	10	2	NP	0	7	8	1	NN	0	7	8	1	something	7	7	8	0	PP	0	8	10	2	IN	0	8	9	1	inside	8	8	9	0	NP	0	9	10	1	PRP	0	9	10	1	me	9	9	10	0	VP	1	10	12	2	VBZ	0	10	11	1	is	10	10	11	0	VP	0	11	12	1	VBG	0	11	12	1	changing	11	11	12	0	,	0	12	13	1	,	12	12	13	0	NN	0	13	14	1	something	13	13	14	0	NN	0	14	15	1	chemical	14	14	15	0	CC	0	15	16	1	and	15	15	16	0	ADJP	0	16	17	1	JJ	0	16	17	1	irreversible	16	16	17	0	.	0	17	18	1	.	17	17	18	0
+EOS
+T	12
+There	171	176	EX	there	O	O	_
+'s	176	178	VBZ	be	O	O	_
+a	179	180	DT	a	O	O	_
+magic	181	186	NN	magic	O	O	_
+here	187	191	RB	here	O	O	_
+working	192	199	VBG	work	O	O	_
+its	200	203	PRP$	its	O	O	_
+way	204	207	NN	way	O	O	_
+through	208	215	IN	through	O	O	_
+my	216	218	PRP$	my	O	O	_
+veins	219	224	NNS	vein	O	O	_
+.	224	225	.	.	O	O	_
+D	1	11
+5
+3	2	det
+4	3	npadvmod
+5	0	expl
+5	1	aux
+5	4	advmod
+5	7	dobj
+5	10	prep_through
+7	6	poss
+10	9	poss
+EOX
+D	0	11
+5
+3	2	det
+4	3	npadvmod
+5	0	expl
+5	1	aux
+5	4	advmod
+5	7	dobj
+5	8	prep
+7	6	poss
+8	10	pobj
+10	9	poss
+EOX
+Y	1
+ROOT	0	0	12	1	S	1	0	12	3	NP	0	0	1	1	EX	0	0	1	1	There	0	0	1	0	VP	2	1	11	3	VBZ	0	1	2	1	's	1	1	2	0	ADVP	1	2	5	2	NP	1	2	4	2	DT	0	2	3	1	a	2	2	3	0	NN	0	3	4	1	magic	3	3	4	0	RB	0	4	5	1	here	4	4	5	0	VP	0	5	11	3	VBG	0	5	6	1	working	5	5	6	0	NP	1	6	8	2	PRP$	0	6	7	1	its	6	6	7	0	NN	0	7	8	1	way	7	7	8	0	PP	0	8	11	2	IN	0	8	9	1	through	8	8	9	0	NP	1	9	11	2	PRP$	0	9	10	1	my	9	9	10	0	NNS	0	10	11	1	veins	10	10	11	0	.	0	11	12	1	.	11	11	12	0
+EOS
+T	36
+There	226	231	EX	there	O	O	_
+'s	231	233	VBZ	be	O	O	_
+something	234	243	NN	something	O	O	_
+about	244	249	IN	about	O	O	_
+the	250	253	DT	the	O	O	_
+vegetation	254	264	NN	vegetation	O	O	_
+,	264	265	,	,	O	O	_
+too	266	269	RB	too	O	O	_
+,	269	270	,	,	O	O	_
+that	271	275	IN	that	O	O	_
+I	276	277	PRP	I	O	O	_
+respond	278	285	VBP	respond	O	O	_
+to	286	288	TO	to	O	O	_
+instinctively	289	302	RB	instinctively	O	O	_
+--	302	303	:	--	O	O	_
+the	303	306	DT	the	O	O	_
+stunning	307	315	JJ	stunning	O	O	_
+bougainvillea	316	329	NN	bougainvillea	O	O	_
+,	329	330	,	,	O	O	_
+the	331	334	DT	the	O	O	_
+flamboyants	335	346	NNS	flamboyant	O	O	_
+and	347	350	CC	and	O	O	_
+jacarandas	351	361	NNS	jacaranda	O	O	_
+,	361	362	,	,	O	O	_
+the	363	366	DT	the	O	O	_
+orchids	367	374	NNS	orchid	O	O	_
+growing	375	382	VBG	grow	O	O	_
+from	383	387	IN	from	O	O	_
+the	388	391	DT	the	O	O	_
+trunks	392	398	NNS	trunk	O	O	_
+of	399	401	IN	of	O	O	_
+the	402	405	DT	the	O	O	_
+mysterious	406	416	JJ	mysterious	O	O	_
+ceiba	417	422	NN	ceiba	O	O	_
+trees	423	428	NNS	tree	O	O	_
+.	428	429	.	.	O	O	_
+D	1	35
+1
+1	0	expl
+1	2	nsubj
+2	5	prep_about
+5	4	det
+5	7	advmod
+5	11	dep
+5	17	dep
+11	9	mark
+11	10	nsubj
+11	12	prep
+12	13	pcomp
+17	15	det
+17	16	amod
+17	20	appos
+17	22	appos
+17	25	appos
+20	19	det
+20	22	conj_and
+25	24	det
+25	26	vmod
+26	29	prep_from
+29	28	det
+29	34	prep_of
+34	31	det
+34	32	amod
+34	33	nn
+EOX
+D	0	35
+1
+1	0	expl
+1	2	nsubj
+2	3	prep
+3	5	pobj
+5	4	det
+5	7	advmod
+5	11	dep
+5	17	dep
+11	9	mark
+11	10	nsubj
+11	12	prep
+12	13	pcomp
+17	15	det
+17	16	amod
+17	20	appos
+17	25	appos
+20	19	det
+20	21	cc
+20	22	conj
+25	24	det
+25	26	vmod
+26	27	prep
+27	29	pobj
+29	28	det
+29	30	prep
+30	34	pobj
+34	31	det
+34	32	amod
+34	33	nn
+EOX
+Y	1
+ROOT	0	0	36	1	S	1	0	36	3	NP	0	0	1	1	EX	0	0	1	1	There	0	0	1	0	VP	1	1	35	2	VBZ	0	1	2	1	's	1	1	2	0	NP	0	2	35	2	NP	0	2	3	1	NN	0	2	3	1	something	2	2	3	0	PP	0	3	35	2	IN	0	3	4	1	about	3	3	4	0	NP	0	4	35	3	NP	0	4	14	5	NP	1	4	6	2	DT	0	4	5	1	the	4	4	5	0	NN	0	5	6	1	vegetation	5	5	6	0	,	0	6	7	1	,	6	6	7	0	RB	0	7	8	1	too	7	7	8	0	,	0	8	9	1	,	8	8	9	0	SBAR	1	9	14	2	IN	0	9	10	1	that	9	9	10	0	S	1	10	14	2	NP	0	10	11	1	PRP	0	10	11	1	I	10	10	11	0	VP	0	11	14	2	VBP	0	11	12	1	respond	11	11	12	0	PP	0	12	14	2	TO	0	12	13	1	to	12	12	13	0	ADVP	0	13	14	1	RB	0	13	14	1	instinctively	13	13	14	0	:	0	14	15	1	--	14	14	15	0	NP	0	15	35	5	NP	2	15	18	3	DT	0	15	16	1	the	15	15	16	0	JJ	0	16	17	1	stunning	16	16	17	0	NN	0	17	18	1	bougainvillea	17	17	18	0	,	0	18	19	1	,	18	18	19	0	NP	1	19	23	4	DT	0	19	20	1	the	19	19	20	0	NNS	0	20	21	1	flamboyants	20	20	21	0	CC	0	21	22	1	and	21	21	22	0	NNS	0	22	23	1	jacarandas	22	22	23	0	,	0	23	24	1	,	23	23	24	0	NP	0	24	35	2	NP	1	24	26	2	DT	0	24	25	1	the	24	24	25	0	NNS	0	25	26	1	orchids	25	25	26	0	VP	0	26	35	2	VBG	0	26	27	1	growing	26	26	27	0	PP	0	27	35	2	IN	0	27	28	1	from	27	27	28	0	NP	0	28	35	2	NP	1	28	30	2	DT	0	28	29	1	the	28	28	29	0	NNS	0	29	30	1	trunks	29	29	30	0	PP	0	30	35	2	IN	0	30	31	1	of	30	30	31	0	NP	3	31	35	4	DT	0	31	32	1	the	31	31	32	0	JJ	0	32	33	1	mysterious	32	32	33	0	NN	0	33	34	1	ceiba	33	33	34	0	NNS	0	34	35	1	trees	34	34	35	0	.	0	35	36	1	.	35	35	36	0
+EOS
+T	13
+And	430	433	CC	and	O	O	_
+I	434	435	PRP	I	O	O	_
+love	436	440	VBP	love	O	O	_
+Havana	441	447	NNP	Havana	LOCATION	O	_
+,	447	448	,	,	O	O	_
+its	449	452	PRP$	its	O	O	_
+noise	453	458	NN	noise	O	O	_
+and	459	462	CC	and	O	O	_
+decay	463	468	NN	decay	O	O	_
+and	469	472	CC	and	O	O	_
+painted	473	480	VBD	paint	O	O	_
+ladyness	481	489	NN	ladyness	O	O	_
+.	489	490	.	.	O	O	_
+D	1	12
+2
+2	1	nsubj
+2	3	dobj
+2	6	dobj
+2	8	dobj
+2	10	conj_and
+3	6	conj_and
+3	8	conj_and
+6	5	poss
+10	1	nsubj
+10	11	dobj
+EOX
+D	0	12
+2
+2	0	cc
+2	1	nsubj
+2	3	dobj
+2	9	cc
+2	10	conj
+3	6	conj
+3	7	cc
+3	8	conj
+6	5	poss
+10	11	dobj
+EOX
+Y	1
+ROOT	0	0	13	1	S	2	0	13	4	CC	0	0	1	1	And	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	I	1	1	2	0	VP	0	2	12	3	VP	0	2	9	2	VBP	0	2	3	1	love	2	2	3	0	NP	0	3	9	5	NP	0	3	4	1	NNP	0	3	4	1	Havana	3	3	4	0	,	0	4	5	1	,	4	4	5	0	NP	1	5	7	2	PRP$	0	5	6	1	its	5	5	6	0	NN	0	6	7	1	noise	6	6	7	0	CC	0	7	8	1	and	7	7	8	0	NP	0	8	9	1	NN	0	8	9	1	decay	8	8	9	0	CC	0	9	10	1	and	9	9	10	0	VP	0	10	12	2	VBD	0	10	11	1	painted	10	10	11	0	NP	0	11	12	1	NN	0	11	12	1	ladyness	11	11	12	0	.	0	12	13	1	.	12	12	13	0
+EOS
+T	30
+I	491	492	PRP	I	O	O	_
+could	493	498	MD	could	O	O	_
+happily	499	506	RB	happily	O	O	_
+sit	507	510	VB	sit	O	O	_
+on	511	513	IN	on	O	O	_
+one	514	517	CD	one	NUMBER	1.0	_
+of	518	520	IN	of	O	O	_
+those	521	526	DT	those	O	O	_
+wrought-iron	527	539	JJ	wrought-iron	O	O	_
+balconies	540	549	NNS	balcony	O	O	_
+for	550	553	IN	for	O	O	_
+days	554	558	NNS	day	DURATION	PXD	_
+,	558	559	,	,	O	O	_
+or	560	562	CC	or	O	O	_
+keep	563	567	VB	keep	O	O	_
+my	568	570	PRP$	my	O	O	_
+grandmother	571	582	NN	grandmother	O	O	_
+company	583	590	NN	company	O	O	_
+on	591	593	IN	on	O	O	_
+her	594	597	PRP$	she	O	O	_
+porch	598	603	NN	porch	O	O	_
+,	603	604	,	,	O	O	_
+with	605	609	IN	with	O	O	_
+its	610	613	PRP$	its	O	O	_
+ringside	614	622	NN	ringside	O	O	_
+view	623	627	NN	view	O	O	_
+of	628	630	IN	of	O	O	_
+the	631	634	DT	the	O	O	_
+sea	635	638	NN	sea	O	O	_
+.	638	639	.	.	O	O	_
+D	1	29
+3
+3	0	nsubj
+3	1	aux
+3	2	advmod
+3	5	prep_on
+3	14	conj_or
+5	9	prep_of
+9	7	det
+9	8	amod
+9	11	prep_for
+14	0	nsubj
+14	17	dobj
+14	20	prep_on
+14	25	prep_with
+17	15	poss
+17	16	nn
+20	19	poss
+25	23	poss
+25	24	nn
+25	28	prep_of
+28	27	det
+EOX
+D	0	29
+3
+3	0	nsubj
+3	1	aux
+3	2	advmod
+3	4	prep
+3	13	cc
+3	14	conj
+4	5	pobj
+5	6	prep
+6	9	pobj
+9	7	det
+9	8	amod
+9	10	prep
+10	11	pobj
+14	17	dobj
+14	18	prep
+14	22	prep
+17	15	poss
+17	16	nn
+18	20	pobj
+20	19	poss
+22	25	pobj
+25	23	poss
+25	24	nn
+25	26	prep
+26	28	pobj
+28	27	det
+EOX
+Y	1
+ROOT	0	0	30	1	S	1	0	30	3	NP	0	0	1	1	PRP	0	0	1	1	I	0	0	1	0	VP	2	1	29	3	MD	0	1	2	1	could	1	1	2	0	ADVP	0	2	3	1	RB	0	2	3	1	happily	2	2	3	0	VP	0	3	29	4	VP	0	3	12	2	VB	0	3	4	1	sit	3	3	4	0	PP	0	4	12	2	IN	0	4	5	1	on	4	4	5	0	NP	0	5	12	2	NP	0	5	6	1	CD	0	5	6	1	one	5	5	6	0	PP	0	6	12	2	IN	0	6	7	1	of	6	6	7	0	NP	0	7	12	2	NP	2	7	10	3	DT	0	7	8	1	those	7	7	8	0	JJ	0	8	9	1	wrought-iron	8	8	9	0	NNS	0	9	10	1	balconies	9	9	10	0	PP	0	10	12	2	IN	0	10	11	1	for	10	10	11	0	NP	0	11	12	1	NNS	0	11	12	1	days	11	11	12	0	,	0	12	13	1	,	12	12	13	0	CC	0	13	14	1	or	13	13	14	0	VP	0	14	29	5	VB	0	14	15	1	keep	14	14	15	0	NP	2	15	18	3	PRP$	0	15	16	1	my	15	15	16	0	NN	0	16	17	1	grandmother	16	16	17	0	NN	0	17	18	1	company	17	17	18	0	PP	0	18	21	2	IN	0	18	19	1	on	18	18	19	0	NP	1	19	21	2	PRP$	0	19	20	1	her	19	19	20	0	NN	0	20	21	1	porch	20	20	21	0	,	0	21	22	1	,	21	21	22	0	PP	0	22	29	2	IN	0	22	23	1	with	22	22	23	0	NP	0	23	29	2	NP	2	23	26	3	PRP$	0	23	24	1	its	23	23	24	0	NN	0	24	25	1	ringside	24	24	25	0	NN	0	25	26	1	view	25	25	26	0	PP	0	26	29	2	IN	0	26	27	1	of	26	26	27	0	NP	1	27	29	2	DT	0	27	28	1	the	27	27	28	0	NN	0	28	29	1	sea	28	28	29	0	.	0	29	30	1	.	29	29	30	0
+EOS
+T	8
+I	640	641	PRP	I	O	O	_
+'m	641	643	VBP	be	O	O	_
+afraid	644	650	JJ	afraid	O	O	_
+to	651	653	TO	to	O	O	_
+lose	654	658	VB	lose	O	O	_
+all	659	662	PDT	all	O	O	_
+this	663	667	DT	this	O	O	_
+.	667	668	.	.	O	O	_
+D	1	7
+2
+2	0	nsubj
+2	1	cop
+2	4	xcomp
+4	3	aux
+4	6	dobj
+6	5	predet
+EOX
+D	0	7
+2
+2	0	nsubj
+2	1	cop
+2	4	xcomp
+4	3	aux
+4	6	dobj
+6	5	predet
+EOX
+Y	1
+ROOT	0	0	8	1	S	1	0	8	3	NP	0	0	1	1	PRP	0	0	1	1	I	0	0	1	0	VP	1	1	7	2	VBP	0	1	2	1	'm	1	1	2	0	ADJP	0	2	7	2	JJ	0	2	3	1	afraid	2	2	3	0	S	0	3	7	1	VP	1	3	7	2	TO	0	3	4	1	to	3	3	4	0	VP	0	4	7	2	VB	0	4	5	1	lose	4	4	5	0	NP	1	5	7	2	PDT	0	5	6	1	all	5	5	6	0	DT	0	6	7	1	this	6	6	7	0	.	0	7	8	1	.	7	7	8	0
+EOS
+T	6
+To	669	671	TO	to	O	O	_
+lose	672	676	VB	lose	O	O	_
+Abuela	677	683	NNP	Abuela	PERSON	O	_
+Celia	684	689	NNP	Celia	PERSON	O	_
+again	690	695	RB	again	O	O	_
+.	695	696	.	.	O	O	_
+D	1	5
+1
+1	0	aux
+1	3	dobj
+1	4	advmod
+3	2	nn
+EOX
+D	0	5
+1
+1	0	aux
+1	3	dobj
+1	4	advmod
+3	2	nn
+EOX
+Y	1
+ROOT	0	0	6	1	S	0	0	6	2	VP	1	0	5	2	TO	0	0	1	1	To	0	0	1	0	VP	0	1	5	3	VB	0	1	2	1	lose	1	1	2	0	NP	1	2	4	2	NNP	0	2	3	1	Abuela	2	2	3	0	NNP	0	3	4	1	Celia	3	3	4	0	ADVP	0	4	5	1	RB	0	4	5	1	again	4	4	5	0	.	0	5	6	1	.	5	5	6	0
+EOS
+T	16
+But	697	700	CC	but	O	O	_
+I	701	702	PRP	I	O	O	_
+know	703	707	VBP	know	O	O	_
+that	708	712	IN	that	O	O	_
+sooner	713	719	RBR	sooner	O	O	_
+or	720	722	CC	or	O	O	_
+later	723	728	RBR	later	O	O	_
+I	729	730	PRP	I	O	O	_
+'d	730	732	MD	would	O	O	_
+have	733	737	VB	have	O	O	_
+to	738	740	TO	to	O	O	_
+return	741	747	VB	return	O	O	_
+to	748	750	TO	to	O	O	_
+New	751	754	NNP	New	LOCATION	O	_
+York	755	759	NNP	York	LOCATION	O	_
+.	759	760	.	.	O	O	_
+D	1	15
+2
+2	0	cc
+2	1	nsubj
+2	9	ccomp
+4	6	conj_or
+9	3	mark
+9	4	advmod
+9	6	advmod
+9	7	nsubj
+9	8	aux
+9	11	xcomp
+11	10	aux
+11	14	prep_to
+14	13	nn
+EOX
+D	0	15
+2
+2	0	cc
+2	1	nsubj
+2	9	ccomp
+4	5	cc
+4	6	conj
+9	3	mark
+9	4	advmod
+9	7	nsubj
+9	8	aux
+9	11	xcomp
+11	10	aux
+11	12	prep
+12	14	pobj
+14	13	nn
+EOX
+Y	1
+ROOT	0	0	16	1	S	2	0	16	4	CC	0	0	1	1	But	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	I	1	1	2	0	VP	0	2	15	2	VBP	0	2	3	1	know	2	2	3	0	SBAR	1	3	15	2	IN	0	3	4	1	that	3	3	4	0	S	2	4	15	3	ADVP	0	4	7	3	RBR	0	4	5	1	sooner	4	4	5	0	CC	0	5	6	1	or	5	5	6	0	RBR	0	6	7	1	later	6	6	7	0	NP	0	7	8	1	PRP	0	7	8	1	I	7	7	8	0	VP	1	8	15	2	MD	0	8	9	1	'd	8	8	9	0	VP	0	9	15	2	VB	0	9	10	1	have	9	9	10	0	S	0	10	15	1	VP	1	10	15	2	TO	0	10	11	1	to	10	10	11	0	VP	0	11	15	2	VB	0	11	12	1	return	11	11	12	0	PP	0	12	15	2	TO	0	12	13	1	to	12	12	13	0	NP	1	13	15	2	NNP	0	13	14	1	New	13	13	14	0	NNP	0	14	15	1	York	14	14	15	0	.	0	15	16	1	.	15	15	16	0
+EOS
+T	19
+I	761	762	PRP	I	O	O	_
+know	763	767	VBP	know	O	O	_
+now	768	771	RB	now	DATE	PRESENT_REF	_
+it	772	774	PRP	it	O	O	_
+'s	774	776	VBZ	be	O	O	_
+where	777	782	WRB	where	O	O	_
+I	783	784	PRP	I	O	O	_
+belong	785	791	VBP	belong	O	O	_
+--	791	792	:	--	O	O	_
+not	792	795	RB	not	O	O	_
+instead	796	803	RB	instead	O	O	_
+of	804	806	IN	of	O	O	_
+here	807	811	RB	here	O	O	_
+,	811	812	,	,	O	O	_
+but	813	816	CC	but	O	O	_
+more	817	821	JJR	more	O	O	_
+than	822	826	IN	than	O	O	_
+here	827	831	RB	here	O	O	_
+.	831	832	.	.	O	O	_
+D	1	18
+1
+1	0	nsubj
+1	4	ccomp
+4	2	advmod
+4	3	nsubj
+4	7	advcl
+7	5	advmod
+7	6	nsubj
+7	12	dobj
+7	15	dobj
+12	15	conj_but
+15	16	prep
+16	17	pobj
+EOX
+D	0	18
+1
+1	0	nsubj
+1	4	ccomp
+4	2	advmod
+4	3	nsubj
+4	7	advcl
+7	5	advmod
+7	6	nsubj
+7	12	dobj
+10	9	neg
+10	11	mwe
+12	10	cc
+12	14	cc
+12	15	conj
+15	16	prep
+16	17	pobj
+EOX
+Y	1
+ROOT	0	0	19	1	S	1	0	19	3	NP	0	0	1	1	PRP	0	0	1	1	I	0	0	1	0	VP	0	1	18	2	VBP	0	1	2	1	know	1	1	2	0	SBAR	1	2	18	2	RB	0	2	3	1	now	2	2	3	0	S	1	3	18	2	NP	0	3	4	1	PRP	0	3	4	1	it	3	3	4	0	VP	0	4	18	2	VBZ	0	4	5	1	's	4	4	5	0	SBAR	1	5	18	2	WHADVP	0	5	6	1	WRB	0	5	6	1	where	5	5	6	0	S	1	6	18	2	NP	0	6	7	1	PRP	0	6	7	1	I	6	6	7	0	VP	0	7	18	3	VP	0	7	8	1	VBP	0	7	8	1	belong	7	7	8	0	:	0	8	9	1	--	8	8	9	0	NP	1	9	18	5	CONJP	1	9	12	3	RB	0	9	10	1	not	9	9	10	0	RB	0	10	11	1	instead	10	10	11	0	IN	0	11	12	1	of	11	11	12	0	NP	0	12	13	1	RB	0	12	13	1	here	12	12	13	0	,	0	13	14	1	,	13	13	14	0	CC	0	14	15	1	but	14	14	15	0	NP	0	15	18	2	NP	0	15	16	1	JJR	0	15	16	1	more	15	15	16	0	PP	0	16	18	2	IN	0	16	17	1	than	16	16	17	0	NP	0	17	18	1	RB	0	17	18	1	here	17	17	18	0	.	0	18	19	1	.	18	18	19	0
+EOS
+T	8
+How	833	836	WRB	how	O	O	_
+can	837	840	MD	can	O	O	_
+I	841	842	PRP	I	O	O	_
+tell	843	847	VB	tell	O	O	_
+my	848	850	PRP$	my	O	O	_
+grandmother	851	862	NN	grandmother	O	O	_
+this	863	867	DT	this	O	O	_
+?	867	868	.	?	O	O	_
+D	1	7
+3
+3	0	advmod
+3	1	aux
+3	2	nsubj
+3	5	dep
+3	6	dobj
+5	4	poss
+EOX
+D	0	7
+3
+3	0	advmod
+3	1	aux
+3	2	nsubj
+3	5	dep
+3	6	dobj
+5	4	poss
+EOX
+Y	1
+ROOT	0	0	8	1	SBARQ	1	0	8	3	WHADVP	0	0	1	1	WRB	0	0	1	1	How	0	0	1	0	SQ	2	1	7	3	MD	0	1	2	1	can	1	1	2	0	NP	0	2	3	1	PRP	0	2	3	1	I	2	2	3	0	VP	0	3	7	3	VB	0	3	4	1	tell	3	3	4	0	NP	1	4	6	2	PRP$	0	4	5	1	my	4	4	5	0	NN	0	5	6	1	grandmother	5	5	6	0	NP	0	6	7	1	DT	0	6	7	1	this	6	6	7	0	.	0	7	8	1	?	7	7	8	0
+EOS
+C	47
+5	0	0	1	1
+10	5	4	6	48
+3	29	28	35	19
+9	0	0	1	1
+5	15	15	16	1
+0	0	0	1	1
+3	10	10	11	1
+3	25	24	35	17
+5	19	19	20	32
+2	10	9	11	9
+5	11	11	12	28
+4	1	1	2	1
+8	1	1	2	1
+5	20	19	21	31
+5	17	15	18	29
+0	5	5	12	2
+3	5	4	35	12
+3	34	31	35	20
+7	3	2	4	37
+4	6	5	7	24
+1	9	9	10	1
+4	5	5	6	21
+2	6	6	7	6
+10	2	2	3	1
+9	15	15	18	45
+2	9	9	10	1
+3	2	2	35	11
+10	6	6	7	50
+5	5	5	12	27
+5	28	27	29	35
+2	7	6	8	7
+9	17	17	18	44
+10	4	4	5	1
+9	6	6	7	1
+5	25	23	29	33
+1	7	7	10	4
+2	3	2	4	6
+5	23	23	24	27
+3	17	15	35	15
+4	3	3	9	23
+8	7	7	8	1
+6	0	0	1	1
+9	3	3	4	42
+9	12	12	13	44
+1	0	0	1	1
+3	20	19	23	17
+8	14	13	15	38
+R
+elaboration	LeftToRight	-1	-1	0	0	10	7	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	4	12	0	1	2	nil
+elaboration	LeftToRight	-1	-1	0	0	1	17	0	2	2	nil
+elaboration	LeftToRight	-1	-1	0	0	0	12	0	1	2	nil
+nil	None	-1	-1	0	0	0	6	0	0	0	I 've started dreaming in Spanish ,
+nil	None	-1	-1	0	7	0	12	1	1	0	which has never happened before .
+same-unit	None	-1	-1	1	0	1	17	0	2	2	nil
+elaboration	LeftToRight	-1	-1	1	0	1	12	0	1	2	nil
+nil	None	-1	-1	1	0	1	5	0	0	0	I wake up feeling different ,
+nil	None	-1	-1	1	6	1	12	1	1	0	like something inside me is changing ,
+nil	None	-1	-1	1	13	1	17	2	2	0	something chemical and irreversible .
+elaboration	LeftToRight	-1	-1	2	0	4	12	0	1	2	nil
+nil	None	-1	-1	2	0	2	11	0	0	0	There 's a magic here working its way through my veins .
+joint	None	-1	-1	3	0	4	12	0	1	2	nil
+elaboration	LeftToRight	-1	-1	3	0	3	35	0	3	2	nil
+nil	None	-1	-1	3	0	3	8	0	0	0	There 's something about the vegetation , too ,
+elaboration	LeftToRight	-1	-1	3	9	3	35	1	3	2	nil
+nil	None	-1	-1	3	9	3	13	1	1	0	that I respond to instinctively
+elaboration	LeftToRight	-1	-1	3	14	3	35	2	3	2	nil
+nil	None	-1	-1	3	14	3	25	2	2	0	-- the stunning bougainvillea , the flamboyants and jacarandas , the orchids
+nil	None	-1	-1	3	26	3	35	3	3	0	growing from the trunks of the mysterious ceiba trees .
+joint	None	-1	-1	4	0	4	12	0	1	2	nil
+nil	None	-1	-1	4	0	4	8	0	0	0	And I love Havana , its noise and decay
+nil	None	-1	-1	4	9	4	12	1	1	0	and painted ladyness .
+elaboration	LeftToRight	-1	-1	5	0	10	7	0	0	2	nil
+elaboration	LeftToRight	-1	-1	5	0	7	5	0	0	2	nil
+elaboration	LeftToRight	-1	-1	5	0	6	7	0	0	2	nil
+joint	None	-1	-1	5	0	5	29	0	1	2	nil
+nil	None	-1	-1	5	0	5	12	0	0	0	I could happily sit on one of those wrought-iron balconies for days ,
+nil	None	-1	-1	5	13	5	29	1	1	0	or keep my grandmother company on her porch , with its ringside view of the sea .
+nil	None	-1	-1	6	0	6	7	0	0	0	I 'm afraid to lose all this .
+nil	None	-1	-1	7	0	7	5	0	0	0	To lose Abuela Celia again .
+elaboration	LeftToRight	-1	-1	8	0	10	7	0	0	2	nil
+attribution	RightToLeft	-1	-1	8	0	8	15	0	1	2	nil
+nil	None	-1	-1	8	0	8	2	0	0	0	But I know
+nil	None	-1	-1	8	3	8	15	1	1	0	that sooner or later I 'd have to return to New York .
+elaboration	LeftToRight	-1	-1	9	0	10	7	0	0	2	nil
+attribution	RightToLeft	-1	-1	9	0	9	18	0	3	2	nil
+nil	None	-1	-1	9	0	9	1	0	0	0	I know
+elaboration	LeftToRight	-1	-1	9	2	9	18	1	3	2	nil
+nil	None	-1	-1	9	2	9	4	1	1	0	now it 's
+contrast	LeftToRight	-1	-1	9	5	9	18	2	3	2	nil
+nil	None	-1	-1	9	5	9	7	2	2	0	where I belong
+nil	None	-1	-1	9	8	9	18	3	3	0	-- not instead of here , but more than here .
+nil	None	-1	-1	10	0	10	7	0	0	0	How can I tell my grandmother this ?
+EOD
