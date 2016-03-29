@@ -327,6 +327,12 @@ class SyntacticFeatures(val td: TextDocument) {
     *
     *         {{{
     *           Map(
+    *             "constituent length minimum" -> ?,
+    *             "25th %ile constituent length" -> ?,
+    *             "constituent length mean" -> ?,
+    *             "constituent length median" -> ?,
+    *             "75th %ile constituent length" -> ?,
+    *             "constituent length maximum" -> ?
     *           )
     *         }}}
     */
@@ -351,21 +357,43 @@ class SyntacticFeatures(val td: TextDocument) {
   //Tregex patterns for clauses
   //modified from http://personal.psu.edu/xxl13/papers/Lu_inpress_ijcl.pdf
 
+  /**
+    * pattern generated for detecting clauses using `edu.stanford.nlp.trees.tregex`
+    * @see [[http://nlp.stanford.edu/manning/courses/ling289/Tregex.html]]
+    * @see [[http://personal.psu.edu/xxl13/papers/Lu_inpress_ijcl.pdf]]
+    */
   val clause = TregexPattern.compile("S [< (VP < (VP . CC <# MD|VBD|VBP|VBZ)) | < (VP <# MD|VBD|VBP|VBZ)]")
   //matches any S node that either (1) dominates a VP whose head is a finite verb or (2) dominates a VP consisting of conjoined VPs whose head is a finite verb
 
+  /**
+    * pattern generated for detecting fragments using `edu.stanford.nlp.trees.tregex`
+    * @see [[http://nlp.stanford.edu/manning/courses/ling289/Tregex.html]]
+    * @see [[http://personal.psu.edu/xxl13/papers/Lu_inpress_ijcl.pdf]]
+    */
   val fragment = TregexPattern.compile("ROOT !<< VP")
   //matches any tree without a VP
 
+  /**
+    * pattern generated for detecting independent clauses using `edu.stanford.nlp.trees.tregex`
+    * @see [[http://nlp.stanford.edu/manning/courses/ling289/Tregex.html]]
+    * @see [[http://personal.psu.edu/xxl13/papers/Lu_inpress_ijcl.pdf]]
+    */
   val independentClause = TregexPattern.compile("S !> SBAR [< (VP < (VP . CC <# MD|VBD|VBP|VBZ)) | < (VP <# MD|VBD|VBP|VBZ)]")
   //matches any S node that is a clause but is NOT dominated by an SBAR
 
+  /**
+    * pattern generated for detecting dependent clauses using `edu.stanford.nlp.trees.tregex`
+    * @see [[http://nlp.stanford.edu/manning/courses/ling289/Tregex.html]]
+    * @see [[http://personal.psu.edu/xxl13/papers/Lu_inpress_ijcl.pdf]]
+    */
   val dependentClause = TregexPattern.compile("S > SBAR [< (VP < (VP . CC <# MD|VBD|VBP|VBZ)) | < (VP <# MD|VBD|VBP|VBZ)]")
   //matches any S node that is a clause that IS dominated by an SBAR
 
 
-
-  //total number of clauses
+  /**
+    * Finds total number of clauses per sentence
+     * @return `Vector` of number of clauses
+    */
   def getClauseCounts: Vector[Double] = {
     val allTrees = td.coreNLPParseTrees.flatten
     for (tree <- allTrees) yield {
@@ -380,12 +408,23 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
+  /**
+    * Generates feature representing sentence complexity <br>
+    *   sentence complexity = total number of clauses / total number of sentences <br>
+    * @example A document with all simple sentences would have a `sentence complexity` of 1.
+    * @return Value representing sentence complexity
+    */
   //# of clauses / # of sentences
   def getSentenceComplexityScore: Double = {
     this.getClauseCounts.sum / td.totalSentences
   }
 
 
+  /**
+    * Finds size of each clause's parse tree
+    * @ see [[getTreeSizes]]
+    * @return `Vector` of clause parse tree sizes
+    */
   //the (size, depth) of all clauses
   def getClauseSizesDepths: Vector[Map[String, Double]] = {
     val allTrees = td.coreNLPParseTrees.flatten
@@ -407,7 +446,21 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  //clause size stats
+  /**
+    * Generates basic distribution of clause parse tree sizes
+     * @return Values representing distribution of clause parse tree sizes
+    *
+    *         {{{
+    *           Map(
+    *             "minimum clause size" -> ?,
+    *             "25th %ile clause size" -> ?,
+    *             "mean clause size" -> ?,
+    *             "median clause size" -> ?,
+    *             "75th %ile clause size" -> ?,
+    *             "maximum clause size" -> ?
+    *           )
+    *         }}}
+    */
   def clauseSizeStats: Map[String, Double] = {
     //call descriptive stats
     val stat = new DescriptiveStatistics()
