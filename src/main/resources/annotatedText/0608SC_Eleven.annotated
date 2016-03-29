@@ -1,0 +1,1206 @@
+S	6
+T	52
+What	0	4	WP	what	O	O	_
+they	5	9	PRP	they	O	O	_
+do	10	12	VBP	do	O	O	_
+n't	12	15	RB	not	O	O	_
+understand	16	26	VB	understand	O	O	_
+about	27	32	IN	about	O	O	_
+birthdays	33	42	NNS	birthday	O	O	_
+and	43	46	CC	and	O	O	_
+what	47	51	WP	what	O	O	_
+they	52	56	PRP	they	O	O	_
+never	57	62	RB	never	O	O	_
+tell	63	67	VBP	tell	O	O	_
+you	68	71	PRP	you	O	O	_
+is	72	74	VBZ	be	O	O	_
+that	75	79	IN	that	O	O	_
+when	80	84	WRB	when	O	O	_
+you	85	88	PRP	you	O	O	_
+'re	88	91	VBP	be	O	O	_
+eleven	92	98	NNS	eleven	NUMBER	11.0	_
+,	98	99	,	,	O	O	_
+you	100	103	PRP	you	O	O	_
+'re	103	106	VBP	be	O	O	_
+also	107	111	RB	also	O	O	_
+ten	112	115	CD	ten	NUMBER	10.0	_
+,	115	116	,	,	O	O	_
+and	117	120	CC	and	NUMBER	9.0	_
+nine	121	125	CD	nine	NUMBER	9.0	_
+,	125	126	,	,	O	O	_
+and	127	130	CC	and	O	O	_
+eight	131	136	CD	eight	NUMBER	8.0	_
+,	136	137	,	,	O	O	_
+and	138	141	CC	and	NUMBER	7.0	_
+seven	142	147	CD	seven	NUMBER	7.0	_
+,	147	148	,	,	O	O	_
+and	149	152	CC	and	O	O	_
+six	153	156	CD	six	NUMBER	6.0	_
+,	156	157	,	,	O	O	_
+and	158	161	CC	and	NUMBER	5.0	_
+five	162	166	CD	five	NUMBER	5.0	_
+,	166	167	,	,	O	O	_
+and	168	171	CC	and	O	O	_
+four	172	176	CD	four	NUMBER	4.0	_
+,	176	177	,	,	O	O	_
+and	178	181	CC	and	NUMBER	3.0	_
+three	182	187	CD	three	NUMBER	3.0	_
+,	187	188	,	,	O	O	_
+and	189	192	CC	and	O	O	_
+two	193	196	CD	two	NUMBER	2.0	_
+,	196	197	,	,	O	O	_
+and	198	201	CC	and	NUMBER	1.0	_
+one	202	205	CD	one	NUMBER	1.0	_
+.	205	206	.	.	O	O	_
+D	1	51
+21
+4	0	dobj
+4	1	nsubj
+4	2	aux
+4	3	neg
+4	6	prep_about
+4	11	conj_and
+11	8	dobj
+11	9	nsubj
+11	10	neg
+11	13	ccomp
+13	12	nsubj
+13	18	ccomp
+18	14	mark
+18	15	advmod
+18	16	nsubj
+18	17	cop
+21	4	advcl
+21	11	advcl
+21	20	nsubj
+21	22	advmod
+21	26	advmod
+21	29	advmod
+21	32	advmod
+21	35	advmod
+21	38	advmod
+21	41	advmod
+21	43	advmod
+22	23	pobj
+22	26	conj_and
+22	29	conj_and
+22	32	conj_and
+22	35	conj_and
+22	38	conj_and
+22	41	conj_and
+22	43	conj_and
+43	44	pobj
+43	47	pobj
+43	50	pobj
+44	47	conj_and
+44	50	conj_and
+EOX
+D	0	51
+21
+4	0	dobj
+4	1	nsubj
+4	2	aux
+4	3	neg
+4	5	prep
+4	7	cc
+4	11	conj
+5	6	pobj
+11	8	dobj
+11	9	nsubj
+11	10	neg
+11	13	ccomp
+13	12	nsubj
+13	18	ccomp
+18	14	mark
+18	15	advmod
+18	16	nsubj
+18	17	cop
+21	4	advcl
+21	20	nsubj
+21	22	advmod
+22	23	pobj
+22	25	cc
+22	26	conj
+22	28	cc
+22	29	conj
+22	31	cc
+22	32	conj
+22	34	cc
+22	35	conj
+22	37	cc
+22	38	conj
+22	40	cc
+22	41	conj
+22	43	conj
+43	44	pobj
+44	46	cc
+44	47	conj
+44	49	cc
+44	50	conj
+EOX
+Y	1
+ROOT	0	0	52	1	S	3	0	52	5	SBAR	0	0	19	3	SBAR	1	0	7	2	WHNP	0	0	1	1	WP	0	0	1	1	What	0	0	1	0	S	1	1	7	2	NP	0	1	2	1	PRP	0	1	2	1	they	1	1	2	0	VP	2	2	7	3	VBP	0	2	3	1	do	2	2	3	0	RB	0	3	4	1	n't	3	3	4	0	VP	0	4	7	2	VB	0	4	5	1	understand	4	4	5	0	PP	0	5	7	2	IN	0	5	6	1	about	5	5	6	0	NP	0	6	7	1	NNS	0	6	7	1	birthdays	6	6	7	0	CC	0	7	8	1	and	7	7	8	0	SBAR	1	8	19	2	WHNP	0	8	9	1	WP	0	8	9	1	what	8	8	9	0	S	2	9	19	3	NP	0	9	10	1	PRP	0	9	10	1	they	9	9	10	0	ADVP	0	10	11	1	RB	0	10	11	1	never	10	10	11	0	VP	0	11	19	2	VBP	0	11	12	1	tell	11	11	12	0	SBAR	0	12	19	1	S	1	12	19	2	NP	0	12	13	1	PRP	0	12	13	1	you	12	12	13	0	VP	0	13	19	2	VBZ	0	13	14	1	is	13	13	14	0	SBAR	2	14	19	3	IN	0	14	15	1	that	14	14	15	0	WHADVP	0	15	16	1	WRB	0	15	16	1	when	15	15	16	0	S	1	16	19	2	NP	0	16	17	1	PRP	0	16	17	1	you	16	16	17	0	VP	1	17	19	2	VBP	0	17	18	1	're	17	17	18	0	NP	0	18	19	1	NNS	0	18	19	1	eleven	18	18	19	0	,	0	19	20	1	,	19	19	20	0	NP	0	20	21	1	PRP	0	20	21	1	you	20	20	21	0	VP	0	21	51	2	VBP	0	21	22	1	're	21	21	22	0	UCP	0	22	51	21	ADVP	0	22	24	2	RB	0	22	23	1	also	22	22	23	0	NP	0	23	24	1	CD	0	23	24	1	ten	23	23	24	0	,	0	24	25	1	,	24	24	25	0	CC	0	25	26	1	and	25	25	26	0	NP	0	26	27	1	CD	0	26	27	1	nine	26	26	27	0	,	0	27	28	1	,	27	27	28	0	CC	0	28	29	1	and	28	28	29	0	NP	0	29	30	1	CD	0	29	30	1	eight	29	29	30	0	,	0	30	31	1	,	30	30	31	0	CC	0	31	32	1	and	31	31	32	0	NP	0	32	33	1	CD	0	32	33	1	seven	32	32	33	0	,	0	33	34	1	,	33	33	34	0	CC	0	34	35	1	and	34	34	35	0	NP	0	35	36	1	CD	0	35	36	1	six	35	35	36	0	,	0	36	37	1	,	36	36	37	0	CC	0	37	38	1	and	37	37	38	0	NP	0	38	39	1	CD	0	38	39	1	five	38	38	39	0	,	0	39	40	1	,	39	39	40	0	CC	0	40	41	1	and	40	40	41	0	NP	0	41	42	1	CD	0	41	42	1	four	41	41	42	0	,	0	42	43	1	,	42	42	43	0	PP	0	43	51	2	CC	0	43	44	1	and	43	43	44	0	NP	3	44	51	7	CD	0	44	45	1	three	44	44	45	0	,	0	45	46	1	,	45	45	46	0	CC	0	46	47	1	and	46	46	47	0	CD	0	47	48	1	two	47	47	48	0	,	0	48	49	1	,	48	48	49	0	CC	0	49	50	1	and	49	49	50	0	CD	0	50	51	1	one	50	50	51	0	.	0	51	52	1	.	51	51	52	0
+EOS
+T	20
+And	207	210	CC	and	O	O	_
+when	211	215	WRB	when	O	O	_
+you	216	219	PRP	you	O	O	_
+wake	220	224	VBP	wake	O	O	_
+up	225	227	RP	up	O	O	_
+on	228	230	IN	on	O	O	_
+your	231	235	PRP$	you	O	O	_
+eleventh	236	244	NN	eleventh	ORDINAL	11.0	_
+birthday	245	253	NN	birthday	O	O	_
+you	254	257	PRP	you	O	O	_
+expect	258	264	VBP	expect	O	O	_
+to	265	267	TO	to	O	O	_
+feel	268	272	VB	feel	O	O	_
+eleven	273	279	NNS	eleven	NUMBER	11.0	_
+,	279	280	,	,	O	O	_
+but	281	284	CC	but	O	O	_
+you	285	288	PRP	you	O	O	_
+do	289	291	VBP	do	O	O	_
+n't	291	294	RB	not	O	O	_
+.	294	295	.	.	O	O	_
+D	1	19
+10
+3	1	advmod
+3	2	nsubj
+3	4	prt
+3	8	prep_on
+8	6	poss
+8	7	nn
+10	3	advcl
+10	9	nsubj
+10	12	xcomp
+10	17	conj_but
+12	11	aux
+12	13	dobj
+17	16	nsubj
+17	18	neg
+EOX
+D	0	19
+10
+3	1	advmod
+3	2	nsubj
+3	4	prt
+3	5	prep
+5	8	pobj
+8	6	poss
+8	7	nn
+10	0	cc
+10	3	advcl
+10	9	nsubj
+10	12	xcomp
+10	15	cc
+10	17	conj
+12	11	aux
+12	13	dobj
+17	16	nsubj
+17	18	neg
+EOX
+Y	1
+ROOT	0	0	20	1	S	2	0	20	7	CC	0	0	1	1	And	0	0	1	0	SBAR	1	1	9	2	WHADVP	0	1	2	1	WRB	0	1	2	1	when	1	1	2	0	S	1	2	9	2	NP	0	2	3	1	PRP	0	2	3	1	you	2	2	3	0	VP	0	3	9	3	VBP	0	3	4	1	wake	3	3	4	0	PRT	0	4	5	1	RP	0	4	5	1	up	4	4	5	0	PP	0	5	9	2	IN	0	5	6	1	on	5	5	6	0	NP	2	6	9	3	PRP$	0	6	7	1	your	6	6	7	0	NN	0	7	8	1	eleventh	7	7	8	0	NN	0	8	9	1	birthday	8	8	9	0	S	1	9	14	2	NP	0	9	10	1	PRP	0	9	10	1	you	9	9	10	0	VP	0	10	14	2	VBP	0	10	11	1	expect	10	10	11	0	S	0	11	14	1	VP	1	11	14	2	TO	0	11	12	1	to	11	11	12	0	VP	0	12	14	2	VB	0	12	13	1	feel	12	12	13	0	NP	0	13	14	1	NNS	0	13	14	1	eleven	13	13	14	0	,	0	14	15	1	,	14	14	15	0	CC	0	15	16	1	but	15	15	16	0	S	1	16	19	2	NP	0	16	17	1	PRP	0	16	17	1	you	16	16	17	0	VP	0	17	19	2	VBP	0	17	18	1	do	17	17	18	0	RB	0	18	19	1	n't	18	18	19	0	.	0	19	20	1	.	19	19	20	0
+EOS
+T	16
+You	296	299	PRP	you	O	O	_
+open	300	304	VBP	open	O	O	_
+your	305	309	PRP$	you	O	O	_
+eyes	310	314	NNS	eye	O	O	_
+and	315	318	CC	and	O	O	_
+everything	319	329	NN	everything	O	O	_
+'s	329	331	POS	's	O	O	_
+just	332	336	RB	just	O	O	_
+like	337	341	IN	like	O	O	_
+yesterday	342	351	NN	yesterday	DATE	OFFSET P-1D	_
+,	351	352	,	,	O	O	_
+only	353	357	RB	only	O	O	_
+it	358	360	PRP	it	O	O	_
+'s	360	362	VBZ	be	O	O	_
+today	363	368	NN	today	DATE	THIS P1D	_
+.	368	369	.	.	O	O	_
+D	1	15
+1
+1	0	nsubj
+1	3	dobj
+1	14	conj_and
+3	2	poss
+7	8	prep
+9	5	poss
+9	7	amod
+12	11	advmod
+14	9	tmod
+14	12	nsubj
+14	13	cop
+EOX
+D	0	15
+1
+1	0	nsubj
+1	3	dobj
+1	4	cc
+1	14	conj
+3	2	poss
+5	6	possessive
+7	8	prep
+9	5	poss
+9	7	amod
+12	11	advmod
+14	9	tmod
+14	12	nsubj
+14	13	cop
+EOX
+Y	1
+ROOT	0	0	16	1	S	0	0	16	4	S	1	0	4	2	NP	0	0	1	1	PRP	0	0	1	1	You	0	0	1	0	VP	0	1	4	2	VBP	0	1	2	1	open	1	1	2	0	NP	1	2	4	2	PRP$	0	2	3	1	your	2	2	3	0	NNS	0	3	4	1	eyes	3	3	4	0	CC	0	4	5	1	and	4	4	5	0	S	4	5	15	5	NP	2	5	10	3	NP	0	5	7	2	NN	0	5	6	1	everything	5	5	6	0	POS	0	6	7	1	's	6	6	7	0	ADJP	0	7	9	2	RB	0	7	8	1	just	7	7	8	0	PP	0	8	9	1	IN	0	8	9	1	like	8	8	9	0	NN	0	9	10	1	yesterday	9	9	10	0	,	0	10	11	1	,	10	10	11	0	ADVP	0	11	12	1	RB	0	11	12	1	only	11	11	12	0	NP	0	12	13	1	PRP	0	12	13	1	it	12	12	13	0	VP	1	13	15	2	VBZ	0	13	14	1	's	13	13	14	0	NP	0	14	15	1	NN	0	14	15	1	today	14	14	15	0	.	0	15	16	1	.	15	15	16	0
+EOS
+T	9
+And	370	373	CC	and	O	O	_
+you	374	377	PRP	you	O	O	_
+do	378	380	VBP	do	O	O	_
+n't	380	383	RB	not	O	O	_
+feel	384	388	VB	feel	O	O	_
+eleven	389	395	NNS	eleven	NUMBER	11.0	_
+at	396	398	IN	at	O	O	_
+all	399	402	DT	all	O	O	_
+.	402	403	.	.	O	O	_
+D	1	8
+4
+4	0	cc
+4	1	nsubj
+4	2	aux
+4	3	neg
+4	5	dobj
+4	6	advmod
+6	7	pobj
+EOX
+D	0	8
+4
+4	0	cc
+4	1	nsubj
+4	2	aux
+4	3	neg
+4	5	dobj
+4	6	advmod
+6	7	pobj
+EOX
+Y	1
+ROOT	0	0	9	1	S	2	0	9	4	CC	0	0	1	1	And	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	you	1	1	2	0	VP	2	2	8	3	VBP	0	2	3	1	do	2	2	3	0	RB	0	3	4	1	n't	3	3	4	0	VP	0	4	8	3	VB	0	4	5	1	feel	4	4	5	0	NP	0	5	6	1	NNS	0	5	6	1	eleven	5	5	6	0	ADVP	0	6	8	2	IN	0	6	7	1	at	6	6	7	0	DT	0	7	8	1	all	7	7	8	0	.	0	8	9	1	.	8	8	9	0
+EOS
+T	8
+You	404	407	PRP	you	O	O	_
+feel	408	412	VBP	feel	O	O	_
+like	413	417	IN	like	O	O	_
+you	418	421	PRP	you	O	O	_
+'re	421	424	VBP	be	O	O	_
+still	425	430	RB	still	O	O	_
+ten	431	434	CD	ten	NUMBER	10.0	_
+.	434	435	.	.	O	O	_
+D	1	7
+1
+1	0	nsubj
+1	6	advcl
+6	2	mark
+6	3	nsubj
+6	4	cop
+6	5	advmod
+EOX
+D	0	7
+1
+1	0	nsubj
+1	6	advcl
+6	2	mark
+6	3	nsubj
+6	4	cop
+6	5	advmod
+EOX
+Y	1
+ROOT	0	0	8	1	S	1	0	8	3	NP	0	0	1	1	PRP	0	0	1	1	You	0	0	1	0	VP	0	1	7	2	VBP	0	1	2	1	feel	1	1	2	0	SBAR	1	2	7	2	IN	0	2	3	1	like	2	2	3	0	S	1	3	7	2	NP	0	3	4	1	PRP	0	3	4	1	you	3	3	4	0	VP	2	4	7	3	VBP	0	4	5	1	're	4	4	5	0	ADVP	0	5	6	1	RB	0	5	6	1	still	5	5	6	0	NP	0	6	7	1	CD	0	6	7	1	ten	6	6	7	0	.	0	7	8	1	.	7	7	8	0
+EOS
+T	12
+And	436	439	CC	and	O	O	_
+you	440	443	PRP	you	O	O	_
+are	444	447	VBP	be	O	O	_
+--	448	449	:	--	O	O	_
+underneath	450	460	IN	underneath	O	O	_
+the	461	464	DT	the	DATE	THIS P1Y	_
+year	465	469	NN	year	DATE	THIS P1Y	_
+that	470	474	WDT	that	O	O	_
+makes	475	480	VBZ	make	O	O	_
+you	481	484	PRP	you	O	O	_
+eleven	485	491	NNS	eleven	NUMBER	11.0	_
+.	491	492	.	.	O	O	_
+D	1	11
+2
+2	0	cc
+2	1	nsubj
+2	4	dep
+4	6	pobj
+6	5	det
+6	8	rcmod
+8	7	nsubj
+8	10	xcomp
+10	9	nsubj
+EOX
+D	0	11
+2
+2	0	cc
+2	1	nsubj
+2	4	dep
+4	6	pobj
+6	5	det
+6	8	rcmod
+8	7	nsubj
+8	10	xcomp
+10	9	nsubj
+EOX
+Y	1
+ROOT	0	0	12	1	S	2	0	12	4	CC	0	0	1	1	And	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	you	1	1	2	0	VP	0	2	11	2	VBP	0	2	3	1	are	2	2	3	0	PRN	1	3	11	2	:	0	3	4	1	--	3	3	4	0	PP	0	4	11	2	IN	0	4	5	1	underneath	4	4	5	0	NP	0	5	11	2	NP	1	5	7	2	DT	0	5	6	1	the	5	5	6	0	NN	0	6	7	1	year	6	6	7	0	SBAR	1	7	11	2	WHNP	0	7	8	1	WDT	0	7	8	1	that	7	7	8	0	S	0	8	11	1	VP	0	8	11	2	VBZ	0	8	9	1	makes	8	8	9	0	S	1	9	11	2	NP	0	9	10	1	PRP	0	9	10	1	you	9	9	10	0	NP	0	10	11	1	NNS	0	10	11	1	eleven	10	10	11	0	.	0	11	12	1	.	11	11	12	0
+EOS
+C	36
+1	8	6	9	21
+0	29	29	30	4
+5	1	1	2	35
+4	0	0	1	32
+0	44	43	45	9
+0	47	44	51	18
+0	20	20	21	17
+0	18	18	19	1
+0	9	9	10	12
+0	32	31	33	5
+3	1	1	2	30
+5	9	9	10	37
+2	0	0	1	25
+0	50	49	51	11
+5	10	10	11	1
+1	6	6	7	22
+3	5	5	6	1
+4	6	6	7	2
+1	9	9	10	23
+0	23	23	24	2
+0	38	37	39	7
+1	16	16	17	24
+0	12	12	13	15
+0	16	16	17	16
+2	2	2	3	27
+0	35	35	36	6
+0	1	1	2	12
+1	13	13	14	1
+0	41	41	42	8
+0	26	25	27	3
+2	3	2	4	26
+1	2	2	3	20
+4	3	3	4	33
+5	6	5	11	36
+0	6	6	7	13
+2	12	12	13	21
+R
+elaboration	LeftToRight	-1	-1	0	0	5	11	0	2	2	nil
+joint	None	-1	-1	0	0	1	19	0	3	2	nil
+contrast	RightToLeft	-1	-1	0	0	0	51	0	4	2	nil
+elaboration	LeftToRight	-1	-1	0	0	0	19	0	3	2	nil
+joint	None	-1	-1	0	0	0	13	0	1	2	nil
+nil	None	-1	-1	0	0	0	6	0	0	0	What they do n't understand about birthdays
+nil	None	-1	-1	0	7	0	13	1	1	0	and what they never tell you is
+same-unit	None	-1	-1	0	14	0	19	2	3	2	nil
+nil	None	-1	-1	0	14	0	14	2	2	0	that
+nil	None	-1	-1	0	15	0	19	3	3	0	when you 're eleven ,
+nil	None	-1	-1	0	20	0	51	4	4	0	you 're also ten , and nine , and eight , and seven , and six , and five , and four , and three , and two , and one .
+same-unit	None	-1	-1	1	0	1	19	0	3	2	nil
+nil	None	-1	-1	1	0	1	0	0	0	0	And
+contrast	RightToLeft	-1	-1	1	1	1	19	1	3	2	nil
+temporal	None	-1	-1	1	1	1	14	1	2	2	nil
+nil	None	-1	-1	1	1	1	8	1	1	0	when you wake up on your eleventh birthday
+nil	None	-1	-1	1	9	1	14	2	2	0	you expect to feel eleven ,
+nil	None	-1	-1	1	15	1	19	3	3	0	but you do n't .
+elaboration	LeftToRight	-1	-1	2	0	5	11	0	2	2	nil
+joint	None	-1	-1	2	0	2	15	0	2	2	nil
+nil	None	-1	-1	2	0	2	3	0	0	0	You open your eyes
+contrast	None	-1	-1	2	4	2	15	1	2	2	nil
+nil	None	-1	-1	2	4	2	10	1	1	0	and everything 's just like yesterday ,
+nil	None	-1	-1	2	11	2	15	2	2	0	only it 's today .
+elaboration	LeftToRight	-1	-1	3	0	5	11	0	2	2	nil
+nil	None	-1	-1	3	0	3	8	0	0	0	And you do n't feel eleven at all .
+elaboration	LeftToRight	-1	-1	4	0	5	11	0	2	2	nil
+attribution	RightToLeft	-1	-1	4	0	4	7	0	1	2	nil
+nil	None	-1	-1	4	0	4	1	0	0	0	You feel
+nil	None	-1	-1	4	2	4	7	1	1	0	like you 're still ten .
+attribution	RightToLeft	-1	-1	5	0	5	11	0	2	2	nil
+nil	None	-1	-1	5	0	5	2	0	0	0	And you are
+elaboration	LeftToRight	-1	-1	5	3	5	11	1	2	2	nil
+nil	None	-1	-1	5	3	5	6	1	1	0	-- underneath the year
+nil	None	-1	-1	5	7	5	11	2	2	0	that makes you eleven .
+EOD
+S	2
+T	21
+Like	0	4	IN	like	O	O	_
+some	5	9	DT	some	O	O	_
+days	10	14	NNS	day	DURATION	PXD	_
+you	15	18	PRP	you	O	O	_
+might	19	24	MD	might	O	O	_
+say	25	28	VB	say	O	O	_
+something	29	38	NN	something	O	O	_
+stupid	39	45	JJ	stupid	O	O	_
+,	45	46	,	,	O	O	_
+and	47	50	CC	and	O	O	_
+that	51	55	DT	that	O	O	_
+'s	55	57	VBZ	be	O	O	_
+the	58	61	DT	the	O	O	_
+part	62	66	NN	part	O	O	_
+of	67	69	IN	of	O	O	_
+you	70	73	PRP	you	O	O	_
+that	74	78	DT	that	O	O	_
+'s	78	80	VBZ	be	O	O	_
+still	81	86	RB	still	O	O	_
+ten	87	90	CD	ten	NUMBER	10.0	_
+.	90	91	.	.	O	O	_
+D	1	20
+5
+2	1	det
+5	2	prep_like
+5	3	nsubj
+5	4	aux
+5	7	xcomp
+5	13	conj_and
+7	6	nsubj
+13	10	nsubj
+13	11	cop
+13	12	det
+13	15	prep_of
+13	19	rcmod
+19	16	nsubj
+19	17	cop
+19	18	advmod
+EOX
+D	0	20
+5
+0	2	pobj
+2	1	det
+5	0	prep
+5	3	nsubj
+5	4	aux
+5	7	xcomp
+5	9	cc
+5	13	conj
+7	6	nsubj
+13	10	nsubj
+13	11	cop
+13	12	det
+13	14	prep
+13	19	rcmod
+14	15	pobj
+19	16	nsubj
+19	17	cop
+19	18	advmod
+EOX
+Y	1
+ROOT	0	0	21	1	S	0	0	21	5	S	2	0	8	3	PP	0	0	3	2	IN	0	0	1	1	Like	0	0	1	0	NP	1	1	3	2	DT	0	1	2	1	some	1	1	2	0	NNS	0	2	3	1	days	2	2	3	0	NP	0	3	4	1	PRP	0	3	4	1	you	3	3	4	0	VP	1	4	8	2	MD	0	4	5	1	might	4	4	5	0	VP	0	5	8	2	VB	0	5	6	1	say	5	5	6	0	S	1	6	8	2	NP	0	6	7	1	NN	0	6	7	1	something	6	6	7	0	ADJP	0	7	8	1	JJ	0	7	8	1	stupid	7	7	8	0	,	0	8	9	1	,	8	8	9	0	CC	0	9	10	1	and	9	9	10	0	S	1	10	20	2	NP	0	10	11	1	DT	0	10	11	1	that	10	10	11	0	VP	1	11	20	2	VBZ	0	11	12	1	's	11	11	12	0	NP	0	12	20	3	NP	1	12	14	2	DT	0	12	13	1	the	12	12	13	0	NN	0	13	14	1	part	13	13	14	0	PP	0	14	16	2	IN	0	14	15	1	of	14	14	15	0	NP	0	15	16	1	PRP	0	15	16	1	you	15	15	16	0	SBAR	1	16	20	2	WHNP	0	16	17	1	DT	0	16	17	1	that	16	16	17	0	S	0	17	20	1	VP	2	17	20	3	VBZ	0	17	18	1	's	17	17	18	0	ADVP	0	18	19	1	RB	0	18	19	1	still	18	18	19	0	NP	0	19	20	1	CD	0	19	20	1	ten	19	19	20	0	.	0	20	21	1	.	20	20	21	0
+EOS
+T	30
+Or	92	94	CC	or	O	O	_
+maybe	95	100	RB	maybe	O	O	_
+some	101	105	DT	some	O	O	_
+days	106	110	NNS	day	DURATION	PXD	_
+you	111	114	PRP	you	O	O	_
+might	115	120	MD	might	O	O	_
+need	121	125	VB	need	O	O	_
+to	126	128	TO	to	O	O	_
+sit	129	132	VB	sit	O	O	_
+on	133	135	IN	on	O	O	_
+your	136	140	PRP$	you	O	O	_
+mama	141	145	NN	mama	O	O	_
+'s	145	147	POS	's	O	O	_
+lap	148	151	NN	lap	O	O	_
+because	152	159	IN	because	O	O	_
+you	160	163	PRP	you	O	O	_
+'re	163	166	VBP	be	O	O	_
+scared	167	173	VBN	scare	O	O	_
+,	173	174	,	,	O	O	_
+and	175	178	CC	and	O	O	_
+that	179	183	DT	that	O	O	_
+'s	183	185	VBZ	be	O	O	_
+the	186	189	DT	the	O	O	_
+part	190	194	NN	part	O	O	_
+of	195	197	IN	of	O	O	_
+you	198	201	PRP	you	O	O	_
+that	202	206	DT	that	O	O	_
+'s	206	208	VBZ	be	O	O	_
+five	209	213	CD	five	NUMBER	5.0	_
+.	213	214	.	.	O	O	_
+D	1	29
+6
+3	2	det
+6	1	advmod
+6	3	tmod
+6	4	nsubj
+6	5	aux
+6	8	xcomp
+6	23	conj_and
+8	7	aux
+8	13	prep_on
+8	17	advcl
+11	10	poss
+13	11	poss
+17	14	mark
+17	15	nsubjpass
+17	16	auxpass
+23	20	nsubj
+23	21	cop
+23	22	det
+23	25	prep_of
+23	28	rcmod
+28	26	nsubj
+28	27	cop
+EOX
+D	0	29
+6
+3	2	det
+6	0	cc
+6	1	advmod
+6	3	tmod
+6	4	nsubj
+6	5	aux
+6	8	xcomp
+6	19	cc
+6	23	conj
+8	7	aux
+8	9	prep
+8	17	advcl
+9	13	pobj
+11	10	poss
+11	12	possessive
+13	11	poss
+17	14	mark
+17	15	nsubjpass
+17	16	auxpass
+23	20	nsubj
+23	21	cop
+23	22	det
+23	24	prep
+23	28	rcmod
+24	25	pobj
+28	26	nsubj
+28	27	cop
+EOX
+Y	1
+ROOT	0	0	30	1	S	1	0	30	6	CC	0	0	1	1	Or	0	0	1	0	S	3	1	18	4	ADVP	0	1	2	1	RB	0	1	2	1	maybe	1	1	2	0	NP	1	2	4	2	DT	0	2	3	1	some	2	2	3	0	NNS	0	3	4	1	days	3	3	4	0	NP	0	4	5	1	PRP	0	4	5	1	you	4	4	5	0	VP	1	5	18	2	MD	0	5	6	1	might	5	5	6	0	VP	0	6	18	2	VB	0	6	7	1	need	6	6	7	0	S	0	7	18	1	VP	1	7	18	2	TO	0	7	8	1	to	7	7	8	0	VP	0	8	18	3	VB	0	8	9	1	sit	8	8	9	0	PP	0	9	14	2	IN	0	9	10	1	on	9	9	10	0	NP	1	10	14	2	NP	1	10	13	3	PRP$	0	10	11	1	your	10	10	11	0	NN	0	11	12	1	mama	11	11	12	0	POS	0	12	13	1	's	12	12	13	0	NN	0	13	14	1	lap	13	13	14	0	SBAR	1	14	18	2	IN	0	14	15	1	because	14	14	15	0	S	1	15	18	2	NP	0	15	16	1	PRP	0	15	16	1	you	15	15	16	0	VP	1	16	18	2	VBP	0	16	17	1	're	16	16	17	0	ADJP	0	17	18	1	VBN	0	17	18	1	scared	17	17	18	0	,	0	18	19	1	,	18	18	19	0	CC	0	19	20	1	and	19	19	20	0	S	1	20	29	2	NP	0	20	21	1	DT	0	20	21	1	that	20	20	21	0	VP	1	21	29	2	VBZ	0	21	22	1	's	21	21	22	0	NP	0	22	29	3	NP	1	22	24	2	DT	0	22	23	1	the	22	22	23	0	NN	0	23	24	1	part	23	23	24	0	PP	0	24	26	2	IN	0	24	25	1	of	24	24	25	0	NP	0	25	26	1	PRP	0	25	26	1	you	25	25	26	0	SBAR	1	26	29	2	WHNP	0	26	27	1	DT	0	26	27	1	that	26	26	27	0	S	0	27	29	1	VP	1	27	29	2	VBZ	0	27	28	1	's	27	27	28	0	NP	0	28	29	1	CD	0	28	29	1	five	28	28	29	0	.	0	29	30	1	.	29	29	30	0
+EOS
+C	16
+1	20	20	21	8
+0	2	1	3	2
+0	19	19	20	1
+1	28	28	29	7
+0	10	10	11	2
+0	3	3	4	3
+1	11	10	13	11
+0	15	15	16	6
+1	10	10	11	12
+1	25	25	26	16
+1	4	4	5	9
+0	13	12	20	2
+1	3	2	4	8
+1	15	15	16	13
+1	23	22	29	8
+1	13	10	14	10
+R
+joint	None	-1	-1	0	0	1	29	0	4	2	nil
+joint	None	-1	-1	0	0	0	20	0	2	2	nil
+nil	None	-1	-1	0	0	0	8	0	0	0	Like some days you might say something stupid ,
+attribution	RightToLeft	-1	-1	0	9	0	20	1	2	2	nil
+nil	None	-1	-1	0	9	0	15	1	1	0	and that 's the part of you
+nil	None	-1	-1	0	16	0	20	2	2	0	that 's still ten .
+joint	None	-1	-1	1	0	1	29	0	4	2	nil
+same-unit	None	-1	-1	1	0	1	18	0	2	2	nil
+nil	None	-1	-1	1	0	1	3	0	0	0	Or maybe some days
+explanation	LeftToRight	-1	-1	1	4	1	18	1	2	2	nil
+nil	None	-1	-1	1	4	1	13	1	1	0	you might need to sit on your mama 's lap
+nil	None	-1	-1	1	14	1	18	2	2	0	because you 're scared ,
+attribution	RightToLeft	-1	-1	1	19	1	29	3	4	2	nil
+nil	None	-1	-1	1	19	1	25	3	3	0	and that 's the part of you
+nil	None	-1	-1	1	26	1	29	4	4	0	that 's five .
+EOD
+S	3
+T	27
+And	0	3	CC	and	O	O	_
+maybe	4	9	RB	maybe	O	O	_
+one	10	13	CD	one	DURATION	P1D	_
+day	14	17	NN	day	DURATION	P1D	_
+when	18	22	WRB	when	O	O	_
+you	23	26	PRP	you	O	O	_
+'re	26	29	VBP	be	O	O	_
+all	30	33	DT	all	O	O	_
+grown	34	39	VBN	grow	O	O	_
+up	40	42	IN	up	O	O	_
+maybe	43	48	RB	maybe	O	O	_
+you	49	52	PRP	you	O	O	_
+will	53	57	MD	will	O	O	_
+need	58	62	VB	need	O	O	_
+to	63	65	TO	to	O	O	_
+cry	66	69	VB	cry	O	O	_
+like	70	74	IN	like	O	O	_
+if	75	77	IN	if	O	O	_
+you	78	81	PRP	you	O	O	_
+'re	81	84	VBP	be	O	O	_
+three	85	90	CD	three	NUMBER	3.0	_
+,	90	91	,	,	O	O	_
+and	92	95	CC	and	O	O	_
+that	96	100	DT	that	O	O	_
+'s	100	102	VBZ	be	O	O	_
+okay	103	107	JJ	okay	O	O	_
+.	107	108	.	.	O	O	_
+D	1	26
+13
+1	3	dep
+3	2	num
+8	1	advmod
+8	4	advmod
+8	5	nsubjpass
+8	6	auxpass
+8	7	advmod
+8	9	prt
+8	10	advmod
+13	8	advcl
+13	11	nsubj
+13	12	aux
+13	15	xcomp
+13	25	conj_and
+15	14	aux
+15	20	prepc_like
+20	17	mark
+20	18	nsubj
+20	19	cop
+25	23	nsubj
+25	24	cop
+EOX
+D	0	26
+13
+1	3	dep
+3	2	num
+8	1	advmod
+8	4	advmod
+8	5	nsubjpass
+8	6	auxpass
+8	7	advmod
+8	9	prt
+8	10	advmod
+13	0	cc
+13	8	advcl
+13	11	nsubj
+13	12	aux
+13	15	xcomp
+13	22	cc
+13	25	conj
+15	14	aux
+15	16	prep
+16	20	pcomp
+20	17	mark
+20	18	nsubj
+20	19	cop
+25	23	nsubj
+25	24	cop
+EOX
+Y	1
+ROOT	0	0	27	1	S	2	0	27	7	CC	0	0	1	1	And	0	0	1	0	SBAR	2	1	11	3	ADVP	0	1	4	2	ADVP	0	1	2	1	RB	0	1	2	1	maybe	1	1	2	0	NP	1	2	4	2	CD	0	2	3	1	one	2	2	3	0	NN	0	3	4	1	day	3	3	4	0	WHADVP	0	4	5	1	WRB	0	4	5	1	when	4	4	5	0	S	1	5	11	2	NP	0	5	6	1	PRP	0	5	6	1	you	5	5	6	0	VP	2	6	11	3	VBP	0	6	7	1	're	6	6	7	0	ADVP	0	7	8	1	DT	0	7	8	1	all	7	7	8	0	VP	0	8	11	3	VBN	0	8	9	1	grown	8	8	9	0	PRT	0	9	10	1	IN	0	9	10	1	up	9	9	10	0	ADVP	0	10	11	1	RB	0	10	11	1	maybe	10	10	11	0	S	1	11	21	2	NP	0	11	12	1	PRP	0	11	12	1	you	11	11	12	0	VP	1	12	21	2	MD	0	12	13	1	will	12	12	13	0	VP	0	13	21	2	VB	0	13	14	1	need	13	13	14	0	S	0	14	21	1	VP	1	14	21	2	TO	0	14	15	1	to	14	14	15	0	VP	0	15	21	2	VB	0	15	16	1	cry	15	15	16	0	PP	0	16	21	2	IN	0	16	17	1	like	16	16	17	0	SBAR	1	17	21	2	IN	0	17	18	1	if	17	17	18	0	S	1	18	21	2	NP	0	18	19	1	PRP	0	18	19	1	you	18	18	19	0	VP	1	19	21	2	VBP	0	19	20	1	're	19	19	20	0	NP	0	20	21	1	CD	0	20	21	1	three	20	20	21	0	,	0	21	22	1	,	21	21	22	0	CC	0	22	23	1	and	22	22	23	0	S	1	23	26	2	NP	0	23	24	1	DT	0	23	24	1	that	23	23	24	0	VP	1	24	26	2	VBZ	0	24	25	1	's	24	24	25	0	ADJP	0	25	26	1	JJ	0	25	26	1	okay	25	25	26	0	.	0	26	27	1	.	26	26	27	0
+EOS
+T	15
+That	109	113	DT	that	O	O	_
+'s	113	115	VBZ	be	O	O	_
+what	116	120	WP	what	O	O	_
+I	121	122	PRP	I	O	O	_
+tell	123	127	VBP	tell	O	O	_
+Mama	128	132	NN	mama	O	O	_
+when	133	137	WRB	when	O	O	_
+she	138	141	PRP	she	O	O	_
+'s	141	143	VBZ	be	O	O	_
+sad	144	147	JJ	sad	O	O	_
+and	148	151	CC	and	O	O	_
+needs	152	157	VBZ	need	O	O	_
+to	158	160	TO	to	O	O	_
+cry	161	164	VB	cry	O	O	_
+.	164	165	.	.	O	O	_
+D	1	14
+1
+1	0	nsubj
+1	4	ccomp
+1	11	ccomp
+4	2	dobj
+4	3	nsubj
+4	5	dobj
+4	9	ccomp
+4	11	conj_and
+9	6	advmod
+9	7	nsubj
+9	8	cop
+11	3	nsubj
+11	13	xcomp
+13	12	aux
+EOX
+D	0	14
+1
+1	0	nsubj
+1	4	ccomp
+4	2	dobj
+4	3	nsubj
+4	5	dobj
+4	9	ccomp
+4	10	cc
+4	11	conj
+9	6	advmod
+9	7	nsubj
+9	8	cop
+11	13	xcomp
+13	12	aux
+EOX
+Y	1
+ROOT	0	0	15	1	S	1	0	15	3	NP	0	0	1	1	DT	0	0	1	1	That	0	0	1	0	VP	0	1	14	2	VBZ	0	1	2	1	's	1	1	2	0	SBAR	1	2	14	2	WHNP	0	2	3	1	WP	0	2	3	1	what	2	2	3	0	S	1	3	14	2	NP	0	3	4	1	PRP	0	3	4	1	I	3	3	4	0	VP	0	4	14	3	VP	0	4	10	3	VBP	0	4	5	1	tell	4	4	5	0	NP	0	5	6	1	NN	0	5	6	1	Mama	5	5	6	0	SBAR	1	6	10	2	WHADVP	0	6	7	1	WRB	0	6	7	1	when	6	6	7	0	S	1	7	10	2	NP	0	7	8	1	PRP	0	7	8	1	she	7	7	8	0	VP	1	8	10	2	VBZ	0	8	9	1	's	8	8	9	0	ADJP	0	9	10	1	JJ	0	9	10	1	sad	9	9	10	0	CC	0	10	11	1	and	10	10	11	0	VP	0	11	14	2	VBZ	0	11	12	1	needs	11	11	12	0	S	0	12	14	1	VP	1	12	14	2	TO	0	12	13	1	to	12	12	13	0	VP	0	13	14	1	VB	0	13	14	1	cry	13	13	14	0	.	0	14	15	1	.	14	14	15	0
+EOS
+T	6
+Maybe	166	171	RB	maybe	O	O	_
+she	172	175	PRP	she	O	O	_
+'s	175	177	VBZ	be	O	O	_
+feeling	178	185	VBG	feel	O	O	_
+three	186	191	CD	three	NUMBER	3.0	_
+.	191	192	.	.	O	O	_
+D	1	5
+3
+3	0	advmod
+3	1	nsubj
+3	2	aux
+3	4	dobj
+EOX
+D	0	5
+3
+3	0	advmod
+3	1	nsubj
+3	2	aux
+3	4	dobj
+EOX
+Y	1
+ROOT	0	0	6	1	S	2	0	6	4	ADVP	0	0	1	1	RB	0	0	1	1	Maybe	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	she	1	1	2	0	VP	1	2	5	2	VBZ	0	2	3	1	's	2	2	3	0	VP	0	3	5	2	VBG	0	3	4	1	feeling	3	3	4	0	NP	0	4	5	1	CD	0	4	5	1	three	4	4	5	0	.	0	5	6	1	.	5	5	6	0
+EOS
+C	11
+0	20	20	21	1
+0	18	18	19	5
+0	3	2	4	2
+0	5	5	6	3
+0	23	23	24	1
+1	3	3	4	8
+2	4	4	5	1
+0	11	11	12	4
+1	7	7	8	9
+2	1	1	2	9
+1	0	0	1	2
+R
+elaboration	LeftToRight	-1	-1	0	0	2	5	0	0	2	nil
+same-unit	None	-1	-1	0	0	0	26	0	2	2	nil
+nil	None	-1	-1	0	0	0	3	0	0	0	And maybe one day
+joint	None	-1	-1	0	4	0	26	1	2	2	nil
+nil	None	-1	-1	0	4	0	21	1	1	0	when you 're all grown up maybe you will need to cry like if you 're three ,
+nil	None	-1	-1	0	22	0	26	2	2	0	and that 's okay .
+evaluation	LeftToRight	-1	-1	1	0	2	5	0	0	2	nil
+attribution	RightToLeft	-1	-1	1	0	1	14	0	3	2	nil
+nil	None	-1	-1	1	0	1	4	0	0	0	That 's what I tell
+background	LeftToRight	-1	-1	1	5	1	14	1	3	2	nil
+nil	None	-1	-1	1	5	1	5	1	1	0	Mama
+joint	None	-1	-1	1	6	1	14	2	3	2	nil
+nil	None	-1	-1	1	6	1	9	2	2	0	when she 's sad
+nil	None	-1	-1	1	10	1	14	3	3	0	and needs to cry .
+nil	None	-1	-1	2	0	2	5	0	0	0	Maybe she 's feeling three .
+EOD
+S	2
+T	40
+Because	0	7	IN	because	O	O	_
+the	8	11	DT	the	O	O	_
+way	12	15	NN	way	O	O	_
+you	16	19	PRP	you	O	O	_
+grow	20	24	VBP	grow	O	O	_
+old	25	28	JJ	old	O	O	_
+is	29	31	VBZ	be	O	O	_
+kind	32	36	NN	kind	O	O	_
+of	37	39	IN	of	O	O	_
+like	40	44	IN	like	O	O	_
+an	45	47	DT	a	O	O	_
+onion	48	53	NN	onion	O	O	_
+or	54	56	CC	or	O	O	_
+like	57	61	IN	like	O	O	_
+the	62	65	DT	the	O	O	_
+rings	66	71	NNS	ring	O	O	_
+inside	72	78	IN	inside	O	O	_
+a	79	80	DT	a	O	O	_
+tree	81	85	NN	tree	O	O	_
+trunk	86	91	NN	trunk	O	O	_
+or	92	94	CC	or	O	O	_
+like	95	99	IN	like	O	O	_
+my	100	102	PRP$	my	O	O	_
+little	103	109	JJ	little	O	O	_
+wooden	110	116	JJ	wooden	O	O	_
+dolls	117	122	NNS	doll	O	O	_
+that	123	127	WDT	that	O	O	_
+fit	128	131	VBP	fit	O	O	_
+one	132	135	CD	one	NUMBER	1.0	_
+inside	136	142	IN	inside	O	O	_
+the	143	146	DT	the	O	O	_
+other	147	152	JJ	other	O	O	_
+,	152	153	,	,	O	O	_
+each	154	158	DT	each	SET	O	_
+year	159	163	NN	year	SET	O	_
+inside	164	170	IN	inside	O	O	_
+the	171	174	DT	the	O	O	_
+next	175	179	JJ	next	O	O	_
+one	180	183	CD	one	NUMBER	1.0	_
+.	183	184	.	.	O	O	_
+D	1	39
+4
+2	1	det
+4	2	prep_because
+4	3	nsubj
+4	5	acomp
+5	7	ccomp
+7	6	cop
+7	8	prep
+7	13	prep
+7	21	prep
+7	27	rcmod
+8	9	pcomp
+8	13	conj_or
+8	21	conj_or
+9	11	pobj
+11	10	det
+13	15	pobj
+15	14	det
+15	19	prep_inside
+19	17	det
+19	18	nn
+21	25	pobj
+25	22	poss
+25	23	amod
+25	24	amod
+27	26	nsubj
+27	28	dobj
+27	31	prep_inside
+31	30	det
+31	34	appos
+34	33	det
+34	38	prep_inside
+38	36	det
+38	37	amod
+EOX
+D	0	39
+4
+0	2	pobj
+2	1	det
+4	0	prep
+4	3	nsubj
+4	5	acomp
+5	7	ccomp
+7	6	cop
+7	8	prep
+7	27	rcmod
+8	9	pcomp
+8	12	cc
+8	13	conj
+8	20	cc
+8	21	conj
+9	11	pobj
+11	10	det
+13	15	pobj
+15	14	det
+15	16	prep
+16	19	pobj
+19	17	det
+19	18	nn
+21	25	pobj
+25	22	poss
+25	23	amod
+25	24	amod
+27	26	nsubj
+27	28	dobj
+27	29	prep
+29	31	pobj
+31	30	det
+31	34	appos
+34	33	det
+34	35	prep
+35	38	pobj
+38	36	det
+38	37	amod
+EOX
+Y	1
+ROOT	0	0	40	1	S	2	0	40	4	PP	0	0	3	2	IN	0	0	1	1	Because	0	0	1	0	NP	1	1	3	2	DT	0	1	2	1	the	1	1	2	0	NN	0	2	3	1	way	2	2	3	0	NP	0	3	4	1	PRP	0	3	4	1	you	3	3	4	0	VP	0	4	39	2	VBP	0	4	5	1	grow	4	4	5	0	ADJP	0	5	39	2	JJ	0	5	6	1	old	5	5	6	0	SBAR	0	6	39	1	S	0	6	39	1	VP	1	6	39	2	VBZ	0	6	7	1	is	6	6	7	0	NP	0	7	39	3	NP	0	7	8	1	NN	0	7	8	1	kind	7	7	8	0	PP	0	8	26	5	PP	0	8	12	2	IN	0	8	9	1	of	8	8	9	0	PP	0	9	12	2	IN	0	9	10	1	like	9	9	10	0	NP	1	10	12	2	DT	0	10	11	1	an	10	10	11	0	NN	0	11	12	1	onion	11	11	12	0	CC	0	12	13	1	or	12	12	13	0	PP	0	13	20	2	IN	0	13	14	1	like	13	13	14	0	NP	0	14	20	2	NP	1	14	16	2	DT	0	14	15	1	the	14	14	15	0	NNS	0	15	16	1	rings	15	15	16	0	PP	0	16	20	2	IN	0	16	17	1	inside	16	16	17	0	NP	2	17	20	3	DT	0	17	18	1	a	17	17	18	0	NN	0	18	19	1	tree	18	18	19	0	NN	0	19	20	1	trunk	19	19	20	0	CC	0	20	21	1	or	20	20	21	0	PP	0	21	26	2	IN	0	21	22	1	like	21	21	22	0	NP	3	22	26	4	PRP$	0	22	23	1	my	22	22	23	0	JJ	0	23	24	1	little	23	23	24	0	JJ	0	24	25	1	wooden	24	24	25	0	NNS	0	25	26	1	dolls	25	25	26	0	SBAR	1	26	39	2	WHNP	0	26	27	1	WDT	0	26	27	1	that	26	26	27	0	S	0	27	39	1	VP	0	27	39	3	VBP	0	27	28	1	fit	27	27	28	0	NP	0	28	29	1	CD	0	28	29	1	one	28	28	29	0	PP	0	29	39	2	IN	0	29	30	1	inside	29	29	30	0	NP	0	30	39	3	NP	1	30	32	2	DT	0	30	31	1	the	30	30	31	0	JJ	0	31	32	1	other	31	31	32	0	,	0	32	33	1	,	32	32	33	0	NP	0	33	39	2	NP	1	33	35	2	DT	0	33	34	1	each	33	33	34	0	NN	0	34	35	1	year	34	34	35	0	PP	0	35	39	2	IN	0	35	36	1	inside	35	35	36	0	NP	2	36	39	3	DT	0	36	37	1	the	36	36	37	0	JJ	0	37	38	1	next	37	37	38	0	CD	0	38	39	1	one	38	38	39	0	.	0	39	40	1	.	39	39	40	0
+EOS
+T	9
+That	185	189	DT	that	O	O	_
+'s	189	191	VBZ	be	O	O	_
+how	192	195	WRB	how	O	O	_
+being	196	201	VBG	be	O	O	_
+eleven	202	208	NNS	eleven	DURATION	P11Y	_
+years	209	214	NNS	year	DURATION	P11Y	_
+old	215	218	JJ	old	DURATION	P11Y	_
+is	219	221	VBZ	be	O	O	_
+.	221	222	.	.	O	O	_
+D	1	8
+1
+1	0	nsubj
+1	7	ccomp
+5	3	cop
+5	4	nn
+5	6	amod
+7	2	advmod
+7	5	csubj
+EOX
+D	0	8
+1
+1	0	nsubj
+1	7	ccomp
+5	3	cop
+5	4	nn
+5	6	amod
+7	2	advmod
+7	5	csubj
+EOX
+Y	1
+ROOT	0	0	9	1	S	1	0	9	3	NP	0	0	1	1	DT	0	0	1	1	That	0	0	1	0	VP	0	1	8	2	VBZ	0	1	2	1	's	1	1	2	0	SBAR	1	2	8	2	WHADVP	0	2	3	1	WRB	0	2	3	1	how	2	2	3	0	S	1	3	8	2	S	0	3	7	1	VP	1	3	7	2	VBG	0	3	4	1	being	3	3	4	0	NP	0	4	7	2	NP	1	4	6	2	NNS	0	4	5	1	eleven	4	4	5	0	NNS	0	5	6	1	years	5	5	6	0	ADJP	0	6	7	1	JJ	0	6	7	1	old	6	6	7	0	VP	0	7	8	1	VBZ	0	7	8	1	is	7	7	8	0	.	0	8	9	1	.	8	8	9	0
+EOS
+C	14
+0	28	28	29	1
+1	5	4	7	15
+0	2	1	3	2
+0	25	22	26	8
+0	19	17	20	7
+0	22	22	23	9
+0	7	7	39	4
+0	3	3	4	3
+0	15	14	20	6
+0	38	36	39	13
+0	11	10	12	5
+0	34	33	39	12
+1	0	0	1	2
+0	31	30	39	10
+R
+elaboration	LeftToRight	-1	-1	0	0	1	8	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	0	39	0	2	2	nil
+nil	None	-1	-1	0	0	0	2	0	0	0	Because the way
+elaboration	LeftToRight	-1	-1	0	3	0	39	1	2	2	nil
+nil	None	-1	-1	0	3	0	25	1	1	0	you grow old is kind of like an onion or like the rings inside a tree trunk or like my little wooden dolls
+nil	None	-1	-1	0	26	0	39	2	2	0	that fit one inside the other , each year inside the next one .
+nil	None	-1	-1	1	0	1	8	0	0	0	That 's how being eleven years old is .
+EOD
+S	5
+T	6
+You	0	3	PRP	you	O	O	_
+do	4	6	VBP	do	O	O	_
+n't	6	9	RB	not	O	O	_
+feel	10	14	VB	feel	O	O	_
+eleven	15	21	NNS	eleven	NUMBER	11.0	_
+.	21	22	.	.	O	O	_
+D	1	5
+3
+3	0	nsubj
+3	1	aux
+3	2	neg
+3	4	dobj
+EOX
+D	0	5
+3
+3	0	nsubj
+3	1	aux
+3	2	neg
+3	4	dobj
+EOX
+Y	1
+ROOT	0	0	6	1	S	1	0	6	3	NP	0	0	1	1	PRP	0	0	1	1	You	0	0	1	0	VP	2	1	5	3	VBP	0	1	2	1	do	1	1	2	0	RB	0	2	3	1	n't	2	2	3	0	VP	0	3	5	2	VB	0	3	4	1	feel	3	3	4	0	NP	0	4	5	1	NNS	0	4	5	1	eleven	4	4	5	0	.	0	5	6	1	.	5	5	6	0
+EOS
+T	4
+Not	23	26	RB	not	O	O	_
+right	27	32	RB	right	O	O	_
+away	33	37	RB	away	O	O	_
+.	37	38	.	.	O	O	_
+D	1	3
+0
+0	2	dep
+2	1	advmod
+EOX
+D	0	3
+0
+0	2	dep
+2	1	advmod
+EOX
+Y	1
+ROOT	0	0	4	1	FRAG	0	0	4	2	RB	0	0	1	1	Not	0	0	1	0	ADVP	1	1	4	3	RB	0	1	2	1	right	1	1	2	0	RB	0	2	3	1	away	2	2	3	0	.	0	3	4	1	.	3	3	4	0
+EOS
+T	21
+It	39	41	PRP	it	O	O	_
+takes	42	47	VBZ	take	O	O	_
+a	48	49	DT	a	DURATION	PXD	_
+few	50	53	JJ	few	DURATION	PXD	_
+days	54	58	NNS	day	DURATION	PXD	_
+,	58	59	,	,	O	O	_
+weeks	60	65	NNS	week	DURATION	PXW	_
+even	66	70	RB	even	O	O	_
+,	70	71	,	,	O	O	_
+sometimes	72	81	RB	sometimes	O	O	_
+even	82	86	RB	even	O	O	_
+months	87	93	NNS	month	DURATION	PXM	_
+before	94	100	IN	before	O	O	_
+you	101	104	PRP	you	O	O	_
+say	105	108	VBP	say	O	O	_
+Eleven	109	115	CD	eleven	NUMBER	11.0	_
+when	116	120	WRB	when	O	O	_
+they	121	125	PRP	they	O	O	_
+ask	126	129	VBP	ask	O	O	_
+you	130	133	PRP	you	O	O	_
+.	133	134	.	.	O	O	_
+D	1	20
+1
+1	0	nsubj
+1	4	tmod
+1	7	xcomp
+1	14	advcl
+3	2	quantmod
+4	3	num
+7	6	nsubj
+11	10	advmod
+14	9	advmod
+14	11	dep
+14	12	mark
+14	13	nsubj
+14	15	dobj
+14	18	advcl
+18	16	advmod
+18	17	nsubj
+18	19	dobj
+EOX
+D	0	20
+1
+1	0	nsubj
+1	4	tmod
+1	7	xcomp
+1	14	advcl
+3	2	quantmod
+4	3	num
+7	6	nsubj
+11	10	advmod
+14	9	advmod
+14	11	dep
+14	12	mark
+14	13	nsubj
+14	15	dobj
+14	18	advcl
+18	16	advmod
+18	17	nsubj
+18	19	dobj
+EOX
+Y	1
+ROOT	0	0	21	1	S	1	0	21	3	NP	0	0	1	1	PRP	0	0	1	1	It	0	0	1	0	VP	0	1	20	7	VBZ	0	1	2	1	takes	1	1	2	0	NP	1	2	5	2	QP	1	2	4	2	DT	0	2	3	1	a	2	2	3	0	JJ	0	3	4	1	few	3	3	4	0	NNS	0	4	5	1	days	4	4	5	0	,	0	5	6	1	,	5	5	6	0	S	1	6	8	2	NP	0	6	7	1	NNS	0	6	7	1	weeks	6	6	7	0	ADJP	0	7	8	1	RB	0	7	8	1	even	7	7	8	0	,	0	8	9	1	,	8	8	9	0	ADVP	0	9	10	1	RB	0	9	10	1	sometimes	9	9	10	0	SBAR	2	10	20	3	NP	1	10	12	2	RB	0	10	11	1	even	10	10	11	0	NNS	0	11	12	1	months	11	11	12	0	IN	0	12	13	1	before	12	12	13	0	S	1	13	20	2	NP	0	13	14	1	PRP	0	13	14	1	you	13	13	14	0	VP	0	14	20	3	VBP	0	14	15	1	say	14	14	15	0	NP	0	15	16	1	CD	0	15	16	1	Eleven	15	15	16	0	SBAR	1	16	20	2	WHADVP	0	16	17	1	WRB	0	16	17	1	when	16	16	17	0	S	1	17	20	2	NP	0	17	18	1	PRP	0	17	18	1	they	17	17	18	0	VP	0	18	20	2	VBP	0	18	19	1	ask	18	18	19	0	NP	0	19	20	1	PRP	0	19	20	1	you	19	19	20	0	.	0	20	21	1	.	20	20	21	0
+EOS
+T	15
+And	135	138	CC	and	O	O	_
+you	139	142	PRP	you	O	O	_
+do	143	145	VBP	do	O	O	_
+n't	145	148	RB	not	O	O	_
+feel	149	153	VB	feel	O	O	_
+smart	154	159	JJ	smart	O	O	_
+eleven	160	166	NNS	eleven	NUMBER	11.0	_
+,	166	167	,	,	O	O	_
+not	168	171	RB	not	O	O	_
+until	172	177	IN	until	O	O	_
+you	178	181	PRP	you	O	O	_
+'re	181	184	VBP	be	O	O	_
+almost	185	191	RB	almost	O	O	_
+twelve	192	198	CD	twelve	NUMBER	~12.0	_
+.	198	199	.	.	O	O	_
+D	1	14
+4
+4	0	cc
+4	1	nsubj
+4	2	aux
+4	3	neg
+4	6	dobj
+4	11	advcl
+6	5	amod
+11	8	dep
+11	9	mark
+11	10	nsubj
+11	12	advmod
+12	13	pobj
+EOX
+D	0	14
+4
+4	0	cc
+4	1	nsubj
+4	2	aux
+4	3	neg
+4	6	dobj
+4	11	advcl
+6	5	amod
+11	8	dep
+11	9	mark
+11	10	nsubj
+11	12	advmod
+12	13	pobj
+EOX
+Y	1
+ROOT	0	0	15	1	S	2	0	15	4	CC	0	0	1	1	And	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	you	1	1	2	0	VP	2	2	14	3	VBP	0	2	3	1	do	2	2	3	0	RB	0	3	4	1	n't	3	3	4	0	VP	0	4	14	4	VB	0	4	5	1	feel	4	4	5	0	NP	1	5	7	2	JJ	0	5	6	1	smart	5	5	6	0	NNS	0	6	7	1	eleven	6	6	7	0	,	0	7	8	1	,	7	7	8	0	SBAR	2	8	14	3	RB	0	8	9	1	not	8	8	9	0	IN	0	9	10	1	until	9	9	10	0	S	1	10	14	2	NP	0	10	11	1	PRP	0	10	11	1	you	10	10	11	0	VP	0	11	14	2	VBP	0	11	12	1	're	11	11	12	0	ADVP	0	12	14	2	RB	0	12	13	1	almost	12	12	13	0	NP	0	13	14	1	CD	0	13	14	1	twelve	13	13	14	0	.	0	14	15	1	.	14	14	15	0
+EOS
+T	7
+That	200	204	DT	that	O	O	_
+'s	204	206	VBZ	be	O	O	_
+the	207	210	DT	the	O	O	_
+way	211	214	NN	way	O	O	_
+it	215	217	PRP	it	O	O	_
+is	218	220	VBZ	be	O	O	_
+.	220	221	.	.	O	O	_
+D	1	6
+3
+3	0	nsubj
+3	1	cop
+3	2	det
+3	5	rcmod
+5	4	nsubj
+EOX
+D	0	6
+3
+3	0	nsubj
+3	1	cop
+3	2	det
+3	5	rcmod
+5	4	nsubj
+EOX
+Y	1
+ROOT	0	0	7	1	S	1	0	7	3	NP	0	0	1	1	DT	0	0	1	1	That	0	0	1	0	VP	1	1	6	2	VBZ	0	1	2	1	's	1	1	2	0	NP	0	2	6	2	NP	1	2	4	2	DT	0	2	3	1	the	2	2	3	0	NN	0	3	4	1	way	3	3	4	0	SBAR	0	4	6	1	S	1	4	6	2	NP	0	4	5	1	PRP	0	4	5	1	it	4	4	5	0	VP	0	5	6	1	VBZ	0	5	6	1	is	5	5	6	0	.	0	6	7	1	.	6	6	7	0
+EOS
+C	17
+2	17	17	18	9
+0	0	0	1	2
+3	10	10	11	15
+2	19	19	20	10
+4	0	0	1	1
+3	1	1	2	13
+3	13	13	14	12
+2	0	0	1	1
+2	13	13	14	8
+4	4	4	5	1
+3	6	5	7	14
+2	15	15	16	1
+2	6	6	7	6
+0	4	4	5	1
+2	4	2	5	5
+2	11	10	12	7
+4	3	2	6	1
+R
+elaboration	LeftToRight	-1	-1	0	0	4	6	0	1	2	nil
+nil	None	-1	-1	0	0	0	5	0	0	0	You do n't feel eleven .
+explanation	LeftToRight	-1	-1	1	0	4	6	0	1	2	nil
+nil	None	-1	-1	1	0	1	3	0	0	0	Not right away .
+elaboration	LeftToRight	-1	-1	2	0	4	6	0	1	2	nil
+temporal	LeftToRight	-1	-1	2	0	2	20	0	2	2	nil
+nil	None	-1	-1	2	0	2	11	0	0	0	It takes a few days , weeks even , sometimes even months
+background	LeftToRight	-1	-1	2	12	2	20	1	2	2	nil
+nil	None	-1	-1	2	12	2	15	1	1	0	before you say Eleven
+nil	None	-1	-1	2	16	2	20	2	2	0	when they ask you .
+elaboration	LeftToRight	-1	-1	3	0	4	6	0	1	2	nil
+explanation	LeftToRight	-1	-1	3	0	3	14	0	1	2	nil
+nil	None	-1	-1	3	0	3	7	0	0	0	And you do n't feel smart eleven ,
+nil	None	-1	-1	3	8	3	14	1	1	0	not until you 're almost twelve .
+elaboration	LeftToRight	-1	-1	4	0	4	6	0	1	2	nil
+nil	None	-1	-1	4	0	4	3	0	0	0	That 's the way
+nil	None	-1	-1	4	4	4	6	1	1	0	it is .
+EOD

@@ -1,0 +1,1854 @@
+S	2
+T	6
+``	0	1	``	``	O	O	_
+Who	1	4	WP	who	O	O	_
+are	5	8	VBP	be	O	O	_
+you	9	12	PRP	you	O	O	_
+?	12	13	.	?	O	O	_
+''	13	14	''	''	O	O	_
+D	1	4
+1
+1	2	cop
+1	3	nsubj
+EOX
+D	0	4
+1
+1	2	cop
+1	3	nsubj
+EOX
+Y	1
+ROOT	0	0	6	1	SBARQ	2	0	6	5	``	0	0	1	1	``	0	0	1	0	WHNP	0	1	2	1	WP	0	1	2	1	Who	1	1	2	0	SQ	0	2	4	2	VBP	0	2	3	1	are	2	2	3	0	NP	0	3	4	1	PRP	0	3	4	1	you	3	3	4	0	.	0	4	5	1	?	4	4	5	0	''	0	5	6	1	''	5	5	6	0
+EOS
+T	7
+the	15	18	DT	the	O	O	_
+lion	19	23	NN	lion	O	O	_
+yelled	24	30	VBD	yell	O	O	_
+at	31	33	IN	at	O	O	_
+my	34	36	PRP$	my	O	O	_
+father	37	43	NN	father	O	O	_
+.	43	44	.	.	O	O	_
+D	1	6
+2
+1	0	det
+2	1	nsubj
+2	5	prep_at
+5	4	poss
+EOX
+D	0	6
+2
+1	0	det
+2	1	nsubj
+2	3	prep
+3	5	pobj
+5	4	poss
+EOX
+Y	1
+ROOT	0	0	7	1	S	1	0	7	3	NP	1	0	2	2	DT	0	0	1	1	the	0	0	1	0	NN	0	1	2	1	lion	1	1	2	0	VP	0	2	6	2	VBD	0	2	3	1	yelled	2	2	3	0	PP	0	3	6	2	IN	0	3	4	1	at	3	3	4	0	NP	1	4	6	2	PRP$	0	4	5	1	my	4	4	5	0	NN	0	5	6	1	father	5	5	6	0	.	0	6	7	1	.	6	6	7	0
+EOS
+C	4
+1	5	4	6	3
+1	1	0	2	2
+0	3	3	4	1
+1	4	4	5	1
+R
+elaboration	LeftToRight	-1	-1	0	0	1	6	0	0	2	nil
+nil	None	-1	-1	0	0	0	5	0	0	0	`` Who are you ? ''
+nil	None	-1	-1	1	0	1	6	0	0	0	the lion yelled at my father .
+EOD
+S	1
+T	8
+``	0	1	``	``	O	O	_
+My	1	3	PRP$	my	O	O	_
+name	4	8	NN	name	O	O	_
+is	9	11	VBZ	be	O	O	_
+Elmer	12	17	NNP	Elmer	PERSON	O	_
+Elevator	18	26	NNP	Elevator	PERSON	O	_
+.	26	27	.	.	O	O	_
+''	27	28	''	''	O	O	_
+D	1	6
+5
+2	1	poss
+5	2	nsubj
+5	3	cop
+5	4	nn
+EOX
+D	0	6
+5
+2	1	poss
+5	2	nsubj
+5	3	cop
+5	4	nn
+EOX
+Y	1
+ROOT	0	0	8	1	S	2	0	8	5	``	0	0	1	1	``	0	0	1	0	NP	1	1	3	2	PRP$	0	1	2	1	My	1	1	2	0	NN	0	2	3	1	name	2	2	3	0	VP	1	3	6	2	VBZ	0	3	4	1	is	3	3	4	0	NP	1	4	6	2	NNP	0	4	5	1	Elmer	4	4	5	0	NNP	0	5	6	1	Elevator	5	5	6	0	.	0	6	7	1	.	6	6	7	0	''	0	7	8	1	''	7	7	8	0
+EOS
+C	3
+0	2	1	3	2
+0	1	1	2	3
+0	5	4	6	1
+R
+nil	None	-1	-1	0	0	0	7	0	0	0	`` My name is Elmer Elevator . ''
+EOD
+S	1
+T	10
+``	0	1	``	``	O	O	_
+Where	1	6	WRB	where	O	O	_
+do	7	9	VBP	do	O	O	_
+you	10	13	PRP	you	O	O	_
+think	14	19	VB	think	O	O	_
+you	20	23	PRP	you	O	O	_
+are	24	27	VBP	be	O	O	_
+going	28	33	VBG	go	O	O	_
+?	33	34	.	?	O	O	_
+''	34	35	''	''	O	O	_
+D	1	8
+4
+4	1	advmod
+4	2	aux
+4	3	nsubj
+4	7	ccomp
+7	5	nsubj
+7	6	aux
+EOX
+D	0	8
+4
+4	1	advmod
+4	2	aux
+4	3	nsubj
+4	7	ccomp
+7	5	nsubj
+7	6	aux
+EOX
+Y	1
+ROOT	0	0	10	1	SBARQ	2	0	10	5	``	0	0	1	1	``	0	0	1	0	WHADVP	0	1	2	1	WRB	0	1	2	1	Where	1	1	2	0	SQ	2	2	8	3	VBP	0	2	3	1	do	2	2	3	0	NP	0	3	4	1	PRP	0	3	4	1	you	3	3	4	0	VP	0	4	8	2	VB	0	4	5	1	think	4	4	5	0	SBAR	0	5	8	1	S	1	5	8	2	NP	0	5	6	1	PRP	0	5	6	1	you	5	5	6	0	VP	1	6	8	2	VBP	0	6	7	1	are	6	6	7	0	VP	0	7	8	1	VBG	0	7	8	1	going	7	7	8	0	.	0	8	9	1	?	8	8	9	0	''	0	9	10	1	''	9	9	10	0
+EOS
+C	2
+0	3	3	4	1
+0	5	5	6	1
+R
+attribution	RightToLeft	-1	-1	0	0	0	9	0	1	2	nil
+nil	None	-1	-1	0	0	0	4	0	0	0	`` Where do you think
+nil	None	-1	-1	0	5	0	9	1	1	0	you are going ? ''
+EOD
+S	1
+T	11
+``	0	1	``	``	O	O	_
+I	1	2	PRP	I	O	O	_
+'m	2	4	VBP	be	O	O	_
+going	5	10	VBG	go	O	O	_
+home	11	15	RB	home	O	O	_
+,	15	16	,	,	O	O	_
+''	16	17	''	''	O	O	_
+said	18	22	VBD	say	O	O	_
+my	23	25	PRP$	my	O	O	_
+father	26	32	NN	father	O	O	_
+.	32	33	.	.	O	O	_
+D	1	10
+7
+3	1	nsubj
+3	2	aux
+3	4	advmod
+7	3	ccomp
+7	9	nsubj
+9	8	poss
+EOX
+D	0	10
+7
+3	1	nsubj
+3	2	aux
+3	4	advmod
+7	3	ccomp
+7	9	nsubj
+9	8	poss
+EOX
+Y	1
+ROOT	0	0	11	1	SINV	4	0	11	7	``	0	0	1	1	``	0	0	1	0	S	1	1	5	2	NP	0	1	2	1	PRP	0	1	2	1	I	1	1	2	0	VP	1	2	5	2	VBP	0	2	3	1	'm	2	2	3	0	VP	0	3	5	2	VBG	0	3	4	1	going	3	3	4	0	ADVP	0	4	5	1	RB	0	4	5	1	home	4	4	5	0	,	0	5	6	1	,	5	5	6	0	''	0	6	7	1	''	6	6	7	0	VP	0	7	8	1	VBD	0	7	8	1	said	7	7	8	0	NP	1	8	10	2	PRP$	0	8	9	1	my	8	8	9	0	NN	0	9	10	1	father	9	9	10	0	.	0	10	11	1	.	10	10	11	0
+EOS
+C	3
+0	9	8	10	1
+0	8	8	9	3
+0	1	1	2	1
+R
+attribution	LeftToRight	-1	-1	0	0	0	10	0	1	2	nil
+nil	None	-1	-1	0	0	0	6	0	0	0	`` I 'm going home , ''
+nil	None	-1	-1	0	7	0	10	1	1	0	said my father .
+EOD
+S	4
+T	8
+``	0	1	``	``	O	O	_
+That	1	5	DT	that	O	O	_
+'s	5	7	VBZ	be	O	O	_
+what	8	12	WP	what	O	O	_
+you	13	16	PRP	you	O	O	_
+think	17	22	VBP	think	O	O	_
+!	22	23	.	!	O	O	_
+''	23	24	''	''	O	O	_
+D	1	6
+2
+2	1	nsubj
+2	5	ccomp
+5	3	dobj
+5	4	nsubj
+EOX
+D	0	6
+2
+2	1	nsubj
+2	5	ccomp
+5	3	dobj
+5	4	nsubj
+EOX
+Y	1
+ROOT	0	0	8	1	S	2	0	8	5	``	0	0	1	1	``	0	0	1	0	NP	0	1	2	1	DT	0	1	2	1	That	1	1	2	0	VP	0	2	6	2	VBZ	0	2	3	1	's	2	2	3	0	SBAR	1	3	6	2	WHNP	0	3	4	1	WP	0	3	4	1	what	3	3	4	0	S	1	4	6	2	NP	0	4	5	1	PRP	0	4	5	1	you	4	4	5	0	VP	0	5	6	1	VBP	0	5	6	1	think	5	5	6	0	.	0	6	7	1	!	6	6	7	0	''	0	7	8	1	''	7	7	8	0
+EOS
+T	4
+said	25	29	VBD	say	O	O	_
+the	30	33	DT	the	O	O	_
+lion	34	38	NN	lion	O	O	_
+.	38	39	.	.	O	O	_
+D	1	3
+0
+0	2	dobj
+2	1	det
+EOX
+D	0	3
+0
+0	2	dobj
+2	1	det
+EOX
+Y	1
+ROOT	0	0	4	1	S	0	0	4	2	VP	0	0	3	2	VBD	0	0	1	1	said	0	0	1	0	NP	1	1	3	2	DT	0	1	2	1	the	1	1	2	0	NN	0	2	3	1	lion	2	2	3	0	.	0	3	4	1	.	3	3	4	0
+EOS
+T	27
+``	40	41	``	``	O	O	_
+Ordinarily	41	51	RB	ordinarily	O	O	_
+I	52	53	PRP	I	O	O	_
+'d	53	55	MD	would	O	O	_
+save	56	60	VB	save	O	O	_
+you	61	64	PRP	you	O	O	_
+for	65	68	IN	for	O	O	_
+afternoon	69	78	NN	afternoon	TIME	TAF	_
+tea	79	82	NN	tea	O	O	_
+,	82	83	,	,	O	O	_
+but	84	87	CC	but	O	O	_
+I	88	89	PRP	I	O	O	_
+happen	90	96	VB	happen	O	O	_
+to	97	99	TO	to	O	O	_
+be	100	102	VB	be	O	O	_
+upset	103	108	VBN	upset	O	O	_
+enough	109	115	RB	enough	O	O	_
+and	116	119	CC	and	O	O	_
+hungry	120	126	JJ	hungry	O	O	_
+enough	127	133	JJ	enough	O	O	_
+to	134	136	TO	to	O	O	_
+eat	137	140	VB	eat	O	O	_
+you	141	144	PRP	you	O	O	_
+right	145	150	RB	right	DATE	PRESENT_REF	_
+now	151	154	RB	now	DATE	PRESENT_REF	_
+.	154	155	.	.	O	O	_
+''	155	156	''	''	O	O	_
+D	1	25
+4
+4	1	advmod
+4	2	nsubj
+4	3	aux
+4	5	dobj
+4	8	prep_for
+4	12	conj_but
+8	7	nn
+12	11	nsubj
+12	15	xcomp
+15	13	aux
+15	14	auxpass
+15	16	acomp
+15	19	acomp
+15	21	xcomp
+16	19	conj_and
+19	18	amod
+21	20	aux
+21	22	dobj
+21	24	advmod
+24	23	advmod
+EOX
+D	0	25
+4
+4	1	advmod
+4	2	nsubj
+4	3	aux
+4	5	dobj
+4	6	prep
+4	10	cc
+4	12	conj
+6	8	pobj
+8	7	nn
+12	11	nsubj
+12	15	xcomp
+15	13	aux
+15	14	auxpass
+15	16	acomp
+15	21	xcomp
+16	17	cc
+16	19	conj
+19	18	amod
+21	20	aux
+21	22	dobj
+21	24	advmod
+24	23	advmod
+EOX
+Y	1
+ROOT	0	0	27	1	S	1	0	27	7	``	0	0	1	1	``	0	0	1	0	S	2	1	9	3	ADVP	0	1	2	1	RB	0	1	2	1	Ordinarily	1	1	2	0	NP	0	2	3	1	PRP	0	2	3	1	I	2	2	3	0	VP	1	3	9	2	MD	0	3	4	1	'd	3	3	4	0	VP	0	4	9	3	VB	0	4	5	1	save	4	4	5	0	NP	0	5	6	1	PRP	0	5	6	1	you	5	5	6	0	PP	0	6	9	2	IN	0	6	7	1	for	6	6	7	0	NP	1	7	9	2	NN	0	7	8	1	afternoon	7	7	8	0	NN	0	8	9	1	tea	8	8	9	0	,	0	9	10	1	,	9	9	10	0	CC	0	10	11	1	but	10	10	11	0	S	1	11	25	2	NP	0	11	12	1	PRP	0	11	12	1	I	11	11	12	0	VP	0	12	25	2	VB	0	12	13	1	happen	12	12	13	0	S	0	13	25	1	VP	1	13	25	2	TO	0	13	14	1	to	13	13	14	0	VP	1	14	25	2	VB	0	14	15	1	be	14	14	15	0	VP	0	15	25	3	VBN	0	15	16	1	upset	15	15	16	0	ADJP	0	16	20	3	ADJP	0	16	17	1	RB	0	16	17	1	enough	16	16	17	0	CC	0	17	18	1	and	17	17	18	0	ADJP	1	18	20	2	JJ	0	18	19	1	hungry	18	18	19	0	JJ	0	19	20	1	enough	19	19	20	0	S	0	20	25	1	VP	1	20	25	2	TO	0	20	21	1	to	20	20	21	0	VP	0	21	25	3	VB	0	21	22	1	eat	21	21	22	0	NP	0	22	23	1	PRP	0	22	23	1	you	22	22	23	0	ADVP	1	23	25	2	RB	0	23	24	1	right	23	23	24	0	RB	0	24	25	1	now	24	24	25	0	.	0	25	26	1	.	25	25	26	0	''	0	26	27	1	''	26	26	27	0
+EOS
+T	17
+And	157	160	CC	and	O	O	_
+he	161	163	PRP	he	O	O	_
+picked	164	170	VBD	pick	O	O	_
+up	171	173	RP	up	O	O	_
+my	174	176	PRP$	my	O	O	_
+father	177	183	NN	father	O	O	_
+in	184	186	IN	in	O	O	_
+his	187	190	PRP$	he	O	O	_
+front	191	196	JJ	front	O	O	_
+paws	197	201	NNS	paw	O	O	_
+to	202	204	TO	to	O	O	_
+feel	205	209	VB	feel	O	O	_
+how	210	213	WRB	how	O	O	_
+fat	214	217	JJ	fat	O	O	_
+he	218	220	PRP	he	O	O	_
+was	221	224	VBD	be	O	O	_
+.	224	225	.	.	O	O	_
+D	1	16
+2
+2	0	cc
+2	1	nsubj
+2	3	prt
+2	5	dobj
+2	11	vmod
+5	4	poss
+5	9	prep_in
+9	7	poss
+9	8	amod
+11	10	aux
+11	15	ccomp
+12	13	dep
+15	12	advmod
+15	14	nsubj
+EOX
+D	0	16
+2
+2	0	cc
+2	1	nsubj
+2	3	prt
+2	5	dobj
+2	11	vmod
+5	4	poss
+5	6	prep
+6	9	pobj
+9	7	poss
+9	8	amod
+11	10	aux
+11	15	ccomp
+12	13	dep
+15	12	advmod
+15	14	nsubj
+EOX
+Y	1
+ROOT	0	0	17	1	S	2	0	17	4	CC	0	0	1	1	And	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	he	1	1	2	0	VP	0	2	16	4	VBD	0	2	3	1	picked	2	2	3	0	PRT	0	3	4	1	RP	0	3	4	1	up	3	3	4	0	NP	0	4	10	2	NP	1	4	6	2	PRP$	0	4	5	1	my	4	4	5	0	NN	0	5	6	1	father	5	5	6	0	PP	0	6	10	2	IN	0	6	7	1	in	6	6	7	0	NP	2	7	10	3	PRP$	0	7	8	1	his	7	7	8	0	JJ	0	8	9	1	front	8	8	9	0	NNS	0	9	10	1	paws	9	9	10	0	S	0	10	16	1	VP	1	10	16	2	TO	0	10	11	1	to	10	10	11	0	VP	0	11	16	2	VB	0	11	12	1	feel	11	11	12	0	SBAR	1	12	16	2	WHADVP	0	12	14	2	WRB	0	12	13	1	how	12	12	13	0	ADJP	0	13	14	1	JJ	0	13	14	1	fat	13	13	14	0	S	1	14	16	2	NP	0	14	15	1	PRP	0	14	15	1	he	14	14	15	0	VP	0	15	16	1	VBD	0	15	16	1	was	15	15	16	0	.	0	16	17	1	.	16	16	17	0
+EOS
+C	14
+2	5	5	6	5
+3	9	7	10	12
+3	4	4	5	1
+3	1	1	2	5
+2	8	7	9	6
+3	5	4	10	10
+0	4	4	5	2
+2	2	2	3	1
+3	7	7	8	5
+0	1	1	2	1
+2	22	22	23	5
+2	11	11	12	1
+1	2	1	3	3
+3	14	14	15	5
+R
+elaboration	LeftToRight	-1	-1	0	0	3	16	0	2	2	nil
+elaboration	LeftToRight	-1	-1	0	0	2	26	0	1	2	nil
+elaboration	LeftToRight	-1	-1	0	0	1	3	0	0	2	nil
+nil	None	-1	-1	0	0	0	7	0	0	0	`` That 's what you think ! ''
+nil	None	-1	-1	1	0	1	3	0	0	0	said the lion .
+contrast	RightToLeft	-1	-1	2	0	2	26	0	1	2	nil
+nil	None	-1	-1	2	0	2	9	0	0	0	`` Ordinarily I 'd save you for afternoon tea ,
+nil	None	-1	-1	2	10	2	26	1	1	0	but I happen to be upset enough and hungry enough to eat you right now . ''
+enablement	LeftToRight	-1	-1	3	0	3	16	0	2	2	nil
+nil	None	-1	-1	3	0	3	9	0	0	0	And he picked up my father in his front paws
+attribution	RightToLeft	-1	-1	3	10	3	16	1	2	2	nil
+nil	None	-1	-1	3	10	3	11	1	1	0	to feel
+nil	None	-1	-1	3	12	3	16	2	2	0	how fat he was .
+EOD
+S	1
+T	27
+My	0	2	PRP$	my	O	O	_
+father	3	9	NN	father	O	O	_
+said	10	14	VBD	say	O	O	_
+,	14	15	,	,	O	O	_
+``	16	17	``	``	O	O	_
+Oh	17	19	UH	oh	O	O	_
+,	19	20	,	,	O	O	_
+please	21	27	VB	please	O	O	_
+,	27	28	,	,	O	O	_
+Lion	29	33	NNP	Lion	O	O	_
+,	33	34	,	,	O	O	_
+before	35	41	IN	before	O	O	_
+you	42	45	PRP	you	O	O	_
+eat	46	49	VBP	eat	O	O	_
+me	50	52	PRP	I	O	O	_
+,	52	53	,	,	O	O	_
+tell	54	58	VB	tell	O	O	_
+me	59	61	PRP	I	O	O	_
+why	62	65	WRB	why	O	O	_
+you	66	69	PRP	you	O	O	_
+are	70	73	VBP	be	O	O	_
+so	74	76	RB	so	O	O	_
+particularly	77	89	RB	particularly	O	O	_
+upset	90	95	JJ	upset	O	O	_
+today	96	101	NN	today	DATE	THIS P1D	_
+.	101	102	.	.	O	O	_
+''	102	103	''	''	O	O	_
+D	1	25
+7
+1	0	poss
+2	1	nsubj
+2	5	discourse
+7	2	ccomp
+7	9	dep
+7	13	advcl
+13	11	mark
+13	12	nsubj
+13	16	ccomp
+16	14	nsubj
+16	17	dobj
+16	23	ccomp
+23	18	advmod
+23	19	nsubj
+23	20	cop
+23	21	advmod
+23	22	advmod
+23	24	tmod
+EOX
+D	0	25
+7
+1	0	poss
+2	1	nsubj
+2	5	discourse
+7	2	ccomp
+7	9	dep
+7	13	advcl
+13	11	mark
+13	12	nsubj
+13	16	ccomp
+16	14	nsubj
+16	17	dobj
+16	23	ccomp
+23	18	advmod
+23	19	nsubj
+23	20	cop
+23	21	advmod
+23	22	advmod
+23	24	tmod
+EOX
+Y	1
+ROOT	0	0	27	1	S	2	0	27	5	S	1	0	6	2	NP	1	0	2	2	PRP$	0	0	1	1	My	0	0	1	0	NN	0	1	2	1	father	1	1	2	0	VP	0	2	6	4	VBD	0	2	3	1	said	2	2	3	0	,	0	3	4	1	,	3	3	4	0	``	0	4	5	1	``	4	4	5	0	INTJ	0	5	6	1	UH	0	5	6	1	Oh	5	5	6	0	,	0	6	7	1	,	6	6	7	0	VP	0	7	25	3	VB	0	7	8	1	please	7	7	8	0	PRN	1	8	11	3	,	0	8	9	1	,	8	8	9	0	NP	0	9	10	1	NNP	0	9	10	1	Lion	9	9	10	0	,	0	10	11	1	,	10	10	11	0	SBAR	1	11	25	2	IN	0	11	12	1	before	11	11	12	0	S	1	12	25	2	NP	0	12	13	1	PRP	0	12	13	1	you	12	12	13	0	VP	0	13	25	2	VBP	0	13	14	1	eat	13	13	14	0	S	2	14	25	3	NP	0	14	15	1	PRP	0	14	15	1	me	14	14	15	0	,	0	15	16	1	,	15	15	16	0	VP	0	16	25	3	VB	0	16	17	1	tell	16	16	17	0	NP	0	17	18	1	PRP	0	17	18	1	me	17	17	18	0	SBAR	1	18	25	2	WHADVP	0	18	19	1	WRB	0	18	19	1	why	18	18	19	0	S	1	19	25	2	NP	0	19	20	1	PRP	0	19	20	1	you	19	19	20	0	VP	1	20	25	3	VBP	0	20	21	1	are	20	20	21	0	ADJP	2	21	24	3	RB	0	21	22	1	so	21	21	22	0	RB	0	22	23	1	particularly	22	22	23	0	JJ	0	23	24	1	upset	23	23	24	0	NP	0	24	25	1	NN	0	24	25	1	today	24	24	25	0	.	0	25	26	1	.	25	25	26	0	''	0	26	27	1	''	26	26	27	0
+EOS
+C	7
+0	17	17	18	1
+0	0	0	1	2
+0	19	19	20	4
+0	9	9	10	3
+0	14	14	15	1
+0	12	12	13	4
+0	1	0	2	1
+R
+attribution	RightToLeft	-1	-1	0	0	0	26	0	3	2	nil
+nil	None	-1	-1	0	0	0	3	0	0	0	My father said ,
+temporal	LeftToRight	-1	-1	0	4	0	26	1	3	2	nil
+nil	None	-1	-1	0	4	0	10	1	1	0	`` Oh , please , Lion ,
+attribution	RightToLeft	-1	-1	0	11	0	26	2	3	2	nil
+nil	None	-1	-1	0	11	0	17	2	2	0	before you eat me , tell me
+nil	None	-1	-1	0	18	0	26	3	3	0	why you are so particularly upset today . ''
+EOD
+S	5
+T	25
+``	0	1	``	``	O	O	_
+It	1	3	PRP	it	O	O	_
+'s	3	5	VBZ	be	O	O	_
+my	6	8	PRP$	my	O	O	_
+mane	9	13	NN	mane	O	O	_
+,	13	14	,	,	O	O	_
+''	14	15	''	''	O	O	_
+said	16	20	VBD	say	O	O	_
+the	21	24	DT	the	O	O	_
+lion	25	29	NN	lion	O	O	_
+,	29	30	,	,	O	O	_
+as	31	33	IN	as	O	O	_
+he	34	36	PRP	he	O	O	_
+was	37	40	VBD	be	O	O	_
+figuring	41	49	VBG	figure	O	O	_
+out	50	53	RP	out	O	O	_
+how	54	57	WRB	how	O	O	_
+many	58	62	JJ	many	O	O	_
+bites	63	68	VBZ	bite	O	O	_
+a	69	70	DT	a	O	O	_
+little	71	77	JJ	little	O	O	_
+boy	78	81	NN	boy	O	O	_
+would	82	87	MD	would	O	O	_
+make	88	92	VB	make	O	O	_
+.	92	93	.	.	O	O	_
+D	1	24
+7
+4	1	nsubj
+4	2	cop
+4	3	poss
+7	4	ccomp
+7	9	nsubj
+9	8	det
+9	14	rcmod
+14	11	mark
+14	12	nsubj
+14	13	aux
+14	15	prt
+14	18	ccomp
+17	16	advmod
+18	17	advmod
+18	23	ccomp
+21	19	det
+21	20	amod
+23	21	nsubj
+23	22	aux
+EOX
+D	0	24
+7
+4	1	nsubj
+4	2	cop
+4	3	poss
+7	4	ccomp
+7	9	nsubj
+9	8	det
+9	14	rcmod
+14	11	mark
+14	12	nsubj
+14	13	aux
+14	15	prt
+14	18	ccomp
+17	16	advmod
+18	17	advmod
+18	23	ccomp
+21	19	det
+21	20	amod
+23	21	nsubj
+23	22	aux
+EOX
+Y	1
+ROOT	0	0	25	1	SINV	4	0	25	7	``	0	0	1	1	``	0	0	1	0	S	1	1	5	2	NP	0	1	2	1	PRP	0	1	2	1	It	1	1	2	0	VP	1	2	5	2	VBZ	0	2	3	1	's	2	2	3	0	NP	1	3	5	2	PRP$	0	3	4	1	my	3	3	4	0	NN	0	4	5	1	mane	4	4	5	0	,	0	5	6	1	,	5	5	6	0	''	0	6	7	1	''	6	6	7	0	VP	0	7	8	1	VBD	0	7	8	1	said	7	7	8	0	NP	0	8	24	3	NP	1	8	10	2	DT	0	8	9	1	the	8	8	9	0	NN	0	9	10	1	lion	9	9	10	0	,	0	10	11	1	,	10	10	11	0	SBAR	1	11	24	2	IN	0	11	12	1	as	11	11	12	0	S	1	12	24	2	NP	0	12	13	1	PRP	0	12	13	1	he	12	12	13	0	VP	1	13	24	2	VBD	0	13	14	1	was	13	13	14	0	VP	0	14	24	3	VBG	0	14	15	1	figuring	14	14	15	0	PRT	0	15	16	1	RP	0	15	16	1	out	15	15	16	0	SBAR	1	16	24	2	WHNP	1	16	18	2	WRB	0	16	17	1	how	16	16	17	0	JJ	0	17	18	1	many	17	17	18	0	S	0	18	24	1	VP	0	18	24	2	VBZ	0	18	19	1	bites	18	18	19	0	SBAR	0	19	24	1	S	1	19	24	2	NP	2	19	22	3	DT	0	19	20	1	a	19	19	20	0	JJ	0	20	21	1	little	20	20	21	0	NN	0	21	22	1	boy	21	21	22	0	VP	1	22	24	2	MD	0	22	23	1	would	22	22	23	0	VP	0	23	24	1	VB	0	23	24	1	make	23	23	24	0	.	0	24	25	1	.	24	24	25	0
+EOS
+T	24
+``	94	95	``	``	O	O	_
+You	95	98	PRP	you	O	O	_
+see	99	102	VBP	see	O	O	_
+what	103	107	WP	what	O	O	_
+a	108	109	DT	a	O	O	_
+dreadful	110	118	JJ	dreadful	O	O	_
+mess	119	123	NN	mess	O	O	_
+it	124	126	PRP	it	O	O	_
+is	127	129	VBZ	be	O	O	_
+,	129	130	,	,	O	O	_
+and	131	134	CC	and	O	O	_
+I	135	136	PRP	I	O	O	_
+do	137	139	VBP	do	O	O	_
+n't	139	142	RB	not	O	O	_
+seem	143	147	VB	seem	O	O	_
+to	148	150	TO	to	O	O	_
+be	151	153	VB	be	O	O	_
+able	154	158	JJ	able	O	O	_
+to	159	161	TO	to	O	O	_
+do	162	164	VB	do	O	O	_
+anything	165	173	NN	anything	O	O	_
+about	174	179	IN	about	O	O	_
+it	180	182	PRP	it	O	O	_
+.	182	183	.	.	O	O	_
+D	1	23
+2
+2	1	nsubj
+2	8	ccomp
+2	14	conj_and
+6	4	det
+6	5	amod
+6	7	dep
+8	3	dobj
+8	6	nsubj
+14	11	nsubj
+14	12	aux
+14	13	neg
+14	17	xcomp
+17	15	aux
+17	16	cop
+17	19	xcomp
+19	18	aux
+19	20	dobj
+19	22	prep_about
+EOX
+D	0	23
+2
+2	1	nsubj
+2	8	ccomp
+2	10	cc
+2	14	conj
+6	4	det
+6	5	amod
+6	7	dep
+8	3	dobj
+8	6	nsubj
+14	11	nsubj
+14	12	aux
+14	13	neg
+14	17	xcomp
+17	15	aux
+17	16	cop
+17	19	xcomp
+19	18	aux
+19	20	dobj
+19	21	prep
+21	22	pobj
+EOX
+Y	1
+ROOT	0	0	24	1	S	1	0	24	6	``	0	0	1	1	``	0	0	1	0	S	1	1	9	2	NP	0	1	2	1	PRP	0	1	2	1	You	1	1	2	0	VP	0	2	9	2	VBP	0	2	3	1	see	2	2	3	0	SBAR	1	3	9	2	WHNP	0	3	4	1	WP	0	3	4	1	what	3	3	4	0	S	1	4	9	2	NP	0	4	8	2	NP	2	4	7	3	DT	0	4	5	1	a	4	4	5	0	JJ	0	5	6	1	dreadful	5	5	6	0	NN	0	6	7	1	mess	6	6	7	0	NP	0	7	8	1	PRP	0	7	8	1	it	7	7	8	0	VP	0	8	9	1	VBZ	0	8	9	1	is	8	8	9	0	,	0	9	10	1	,	9	9	10	0	CC	0	10	11	1	and	10	10	11	0	S	1	11	23	2	NP	0	11	12	1	PRP	0	11	12	1	I	11	11	12	0	VP	2	12	23	3	VBP	0	12	13	1	do	12	12	13	0	RB	0	13	14	1	n't	13	13	14	0	VP	0	14	23	2	VB	0	14	15	1	seem	14	14	15	0	S	0	15	23	1	VP	1	15	23	2	TO	0	15	16	1	to	15	15	16	0	VP	1	16	23	2	VB	0	16	17	1	be	16	16	17	0	ADJP	0	17	23	2	JJ	0	17	18	1	able	17	17	18	0	S	0	18	23	1	VP	1	18	23	2	TO	0	18	19	1	to	18	18	19	0	VP	0	19	23	3	VB	0	19	20	1	do	19	19	20	0	NP	0	20	21	1	NN	0	20	21	1	anything	20	20	21	0	PP	0	21	23	2	IN	0	21	22	1	about	21	21	22	0	NP	0	22	23	1	PRP	0	22	23	1	it	22	22	23	0	.	0	23	24	1	.	23	23	24	0
+EOS
+T	27
+My	184	186	PRP$	my	O	O	_
+mother	187	193	NN	mother	O	O	_
+is	194	196	VBZ	be	O	O	_
+coming	197	203	VBG	come	O	O	_
+over	204	208	RP	over	O	O	_
+on	209	211	IN	on	O	O	_
+the	212	215	DT	the	O	O	_
+dragon	216	222	NN	dragon	O	O	_
+this	223	227	DT	this	TIME	THIS AF	_
+afternoon	228	237	NN	afternoon	TIME	THIS AF	_
+,	237	238	,	,	O	O	_
+and	239	242	CC	and	O	O	_
+if	243	245	IN	if	O	O	_
+she	246	249	PRP	she	O	O	_
+sees	250	254	VBZ	see	O	O	_
+me	255	257	PRP	I	O	O	_
+this	258	262	DT	this	O	O	_
+way	263	266	NN	way	O	O	_
+I	267	268	PRP	I	O	O	_
+'m	268	270	VBP	be	O	O	_
+afraid	271	277	JJ	afraid	O	O	_
+she	278	281	PRP	she	O	O	_
+'ll	281	284	MD	'll	O	O	_
+stop	285	289	VB	stop	O	O	_
+my	290	292	PRP$	my	O	O	_
+allowance	293	302	NN	allowance	O	O	_
+.	302	303	.	.	O	O	_
+D	1	26
+3
+1	0	poss
+3	1	nsubj
+3	2	aux
+3	4	prt
+3	7	prep_on
+3	20	conj_and
+7	6	det
+7	9	dep
+9	8	det
+14	12	mark
+14	13	nsubj
+14	17	xcomp
+17	15	nsubj
+17	16	det
+20	14	advcl
+20	18	nsubj
+20	19	cop
+20	23	ccomp
+23	21	nsubj
+23	22	aux
+23	25	dobj
+25	24	poss
+EOX
+D	0	26
+3
+1	0	poss
+3	1	nsubj
+3	2	aux
+3	4	prt
+3	5	prep
+3	11	cc
+3	20	conj
+5	7	pobj
+7	6	det
+7	9	dep
+9	8	det
+14	12	mark
+14	13	nsubj
+14	17	xcomp
+17	15	nsubj
+17	16	det
+20	14	advcl
+20	18	nsubj
+20	19	cop
+20	23	ccomp
+23	21	nsubj
+23	22	aux
+23	25	dobj
+25	24	poss
+EOX
+Y	1
+ROOT	0	0	27	1	S	0	0	27	5	S	1	0	10	2	NP	1	0	2	2	PRP$	0	0	1	1	My	0	0	1	0	NN	0	1	2	1	mother	1	1	2	0	VP	1	2	10	2	VBZ	0	2	3	1	is	2	2	3	0	VP	0	3	10	3	VBG	0	3	4	1	coming	3	3	4	0	PRT	0	4	5	1	RP	0	4	5	1	over	4	4	5	0	PP	0	5	10	2	IN	0	5	6	1	on	5	5	6	0	NP	0	6	10	2	NP	1	6	8	2	DT	0	6	7	1	the	6	6	7	0	NN	0	7	8	1	dragon	7	7	8	0	NP	1	8	10	2	DT	0	8	9	1	this	8	8	9	0	NN	0	9	10	1	afternoon	9	9	10	0	,	0	10	11	1	,	10	10	11	0	CC	0	11	12	1	and	11	11	12	0	S	2	12	26	3	SBAR	1	12	18	2	IN	0	12	13	1	if	12	12	13	0	S	1	13	18	2	NP	0	13	14	1	PRP	0	13	14	1	she	13	13	14	0	VP	0	14	18	2	VBZ	0	14	15	1	sees	14	14	15	0	S	1	15	18	2	NP	0	15	16	1	PRP	0	15	16	1	me	15	15	16	0	NP	1	16	18	2	DT	0	16	17	1	this	16	16	17	0	NN	0	17	18	1	way	17	17	18	0	NP	0	18	19	1	PRP	0	18	19	1	I	18	18	19	0	VP	1	19	26	2	VBP	0	19	20	1	'm	19	19	20	0	ADJP	0	20	26	2	JJ	0	20	21	1	afraid	20	20	21	0	SBAR	0	21	26	1	S	1	21	26	2	NP	0	21	22	1	PRP	0	21	22	1	she	21	21	22	0	VP	1	22	26	2	MD	0	22	23	1	'll	22	22	23	0	VP	0	23	26	2	VB	0	23	24	1	stop	23	23	24	0	NP	1	24	26	2	PRP$	0	24	25	1	my	24	24	25	0	NN	0	25	26	1	allowance	25	25	26	0	.	0	26	27	1	.	26	26	27	0
+EOS
+T	7
+She	304	307	PRP	she	O	O	_
+ca	308	310	MD	can	O	O	_
+n't	310	313	RB	not	O	O	_
+stand	314	319	VB	stand	O	O	_
+messy	320	325	JJ	messy	O	O	_
+manes	326	331	NNS	mane	O	O	_
+!	331	332	.	!	O	O	_
+D	1	6
+3
+3	0	nsubj
+3	1	aux
+3	2	neg
+3	5	dobj
+5	4	amod
+EOX
+D	0	6
+3
+3	0	nsubj
+3	1	aux
+3	2	neg
+3	5	dobj
+5	4	amod
+EOX
+Y	1
+ROOT	0	0	7	1	S	1	0	7	3	NP	0	0	1	1	PRP	0	0	1	1	She	0	0	1	0	VP	2	1	6	3	MD	0	1	2	1	ca	1	1	2	0	RB	0	2	3	1	n't	2	2	3	0	VP	0	3	6	2	VB	0	3	4	1	stand	3	3	4	0	NP	1	4	6	2	JJ	0	4	5	1	messy	4	4	5	0	NNS	0	5	6	1	manes	5	5	6	0	.	0	6	7	1	!	6	6	7	0
+EOS
+T	20
+But	333	336	CC	but	O	O	_
+I	337	338	PRP	I	O	O	_
+'m	338	340	VBP	be	O	O	_
+going	341	346	VBG	go	O	O	_
+to	347	349	TO	to	O	O	_
+eat	350	353	VB	eat	O	O	_
+you	354	357	PRP	you	O	O	_
+now	358	361	RB	now	DATE	PRESENT_REF	_
+,	361	362	,	,	O	O	_
+so	363	365	IN	so	O	O	_
+it	366	368	PRP	it	O	O	_
+wo	369	371	MD	will	O	O	_
+n't	371	374	RB	not	O	O	_
+make	375	379	VB	make	O	O	_
+any	380	383	DT	any	O	O	_
+difference	384	394	NN	difference	O	O	_
+to	395	397	TO	to	O	O	_
+you	398	401	PRP	you	O	O	_
+.	401	402	.	.	O	O	_
+''	402	403	''	''	O	O	_
+D	1	18
+3
+3	0	cc
+3	1	nsubj
+3	2	aux
+3	5	xcomp
+5	4	aux
+5	6	dobj
+5	7	advmod
+5	13	advcl
+13	9	mark
+13	10	nsubj
+13	11	aux
+13	12	neg
+13	15	dobj
+13	17	prep_to
+15	14	det
+EOX
+D	0	18
+3
+3	0	cc
+3	1	nsubj
+3	2	aux
+3	5	xcomp
+5	4	aux
+5	6	dobj
+5	7	advmod
+5	13	advcl
+13	9	mark
+13	10	nsubj
+13	11	aux
+13	12	neg
+13	15	dobj
+13	16	prep
+15	14	det
+16	17	pobj
+EOX
+Y	1
+ROOT	0	0	20	1	S	2	0	20	5	CC	0	0	1	1	But	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	I	1	1	2	0	VP	1	2	18	2	VBP	0	2	3	1	'm	2	2	3	0	VP	0	3	18	2	VBG	0	3	4	1	going	3	3	4	0	S	0	4	18	1	VP	1	4	18	2	TO	0	4	5	1	to	4	4	5	0	VP	0	5	18	5	VB	0	5	6	1	eat	5	5	6	0	NP	0	6	7	1	PRP	0	6	7	1	you	6	6	7	0	ADVP	0	7	8	1	RB	0	7	8	1	now	7	7	8	0	,	0	8	9	1	,	8	8	9	0	SBAR	1	9	18	2	IN	0	9	10	1	so	9	9	10	0	S	1	10	18	2	NP	0	10	11	1	PRP	0	10	11	1	it	10	10	11	0	VP	2	11	18	3	MD	0	11	12	1	wo	11	11	12	0	RB	0	12	13	1	n't	12	12	13	0	VP	0	13	18	3	VB	0	13	14	1	make	13	13	14	0	NP	1	14	16	2	DT	0	14	15	1	any	14	14	15	0	NN	0	15	16	1	difference	15	15	16	0	PP	0	16	18	2	TO	0	16	17	1	to	16	16	17	0	NP	0	17	18	1	PRP	0	17	18	1	you	17	17	18	0	.	0	18	19	1	.	18	18	19	0	''	0	19	20	1	''	19	19	20	0
+EOS
+C	28
+2	17	16	18	19
+4	10	10	11	15
+4	17	17	18	8
+2	24	24	25	3
+0	9	8	24	4
+4	1	1	2	3
+2	0	0	1	3
+2	13	13	14	13
+0	3	3	4	3
+3	0	0	1	13
+1	6	4	8	9
+1	11	11	12	3
+1	1	1	2	8
+3	5	4	6	25
+4	6	6	7	8
+2	15	15	16	3
+0	4	3	5	2
+2	9	8	10	16
+0	12	12	13	3
+2	21	21	22	13
+2	7	6	10	15
+1	22	22	23	9
+0	1	1	2	1
+0	21	19	22	7
+1	7	7	8	1
+2	1	0	2	13
+2	25	24	26	22
+2	18	18	19	3
+R
+explanation	LeftToRight	-1	-1	0	0	4	19	0	1	2	nil
+attribution	LeftToRight	-1	-1	0	0	0	24	0	2	2	nil
+nil	None	-1	-1	0	0	0	6	0	0	0	`` It 's my mane , ''
+elaboration	LeftToRight	-1	-1	0	7	0	24	1	2	2	nil
+nil	None	-1	-1	0	7	0	10	1	1	0	said the lion ,
+nil	None	-1	-1	0	11	0	24	2	2	0	as he was figuring out how many bites a little boy would make .
+elaboration	LeftToRight	-1	-1	1	0	4	19	0	1	2	nil
+elaboration	LeftToRight	-1	-1	1	0	2	26	0	4	2	nil
+joint	None	-1	-1	1	0	1	23	0	1	2	nil
+nil	None	-1	-1	1	0	1	9	0	0	0	`` You see what a dreadful mess it is ,
+nil	None	-1	-1	1	10	1	23	1	1	0	and I do n't seem to be able to do anything about it .
+joint	None	-1	-1	2	0	2	26	0	4	2	nil
+nil	None	-1	-1	2	0	2	10	0	0	0	My mother is coming over on the dragon this afternoon ,
+same-unit	None	-1	-1	2	11	2	26	1	4	2	nil
+nil	None	-1	-1	2	11	2	11	1	1	0	and
+elaboration	LeftToRight	-1	-1	2	12	2	26	2	4	2	nil
+nil	None	-1	-1	2	12	2	17	2	2	0	if she sees me this way
+attribution	RightToLeft	-1	-1	2	18	2	26	3	4	2	nil
+nil	None	-1	-1	2	18	2	20	3	3	0	I 'm afraid
+nil	None	-1	-1	2	21	2	26	4	4	0	she 'll stop my allowance .
+contrast	RightToLeft	-1	-1	3	0	4	19	0	1	2	nil
+nil	None	-1	-1	3	0	3	6	0	0	0	She ca n't stand messy manes !
+enablement	LeftToRight	-1	-1	4	0	4	19	0	1	2	nil
+nil	None	-1	-1	4	0	4	8	0	0	0	But I 'm going to eat you now ,
+nil	None	-1	-1	4	9	4	19	1	1	0	so it wo n't make any difference to you . ''
+EOD
+S	2
+T	32
+``	0	1	``	``	O	O	_
+Oh	1	3	UH	oh	O	O	_
+,	3	4	,	,	O	O	_
+wait	5	9	VB	wait	O	O	_
+a	10	11	DT	a	DURATION	PT1M	_
+minute	12	18	NN	minute	DURATION	PT1M	_
+,	18	19	,	,	O	O	_
+''	19	20	''	''	O	O	_
+said	21	25	VBD	say	O	O	_
+my	26	28	PRP$	my	O	O	_
+father	29	35	NN	father	O	O	_
+,	35	36	,	,	O	O	_
+``	37	38	``	``	O	O	_
+and	38	41	CC	and	O	O	_
+I	42	43	PRP	I	O	O	_
+'ll	43	46	MD	'll	O	O	_
+give	47	51	VB	give	O	O	_
+you	52	55	PRP	you	O	O	_
+just	56	60	RB	just	O	O	_
+the	61	64	DT	the	O	O	_
+things	65	71	NNS	thing	O	O	_
+you	72	75	PRP	you	O	O	_
+need	76	80	VBP	need	O	O	_
+to	81	83	TO	to	O	O	_
+make	84	88	VB	make	O	O	_
+your	89	93	PRP$	you	O	O	_
+mane	94	98	NN	mane	O	O	_
+a	99	100	DT	a	O	O	_
+tidy	101	105	JJ	tidy	O	O	_
+and	106	109	CC	and	O	O	_
+beautiful	110	119	JJ	beautiful	O	O	_
+.	119	120	.	.	O	O	_
+D	1	31
+8
+3	1	discourse
+3	5	dobj
+5	4	det
+8	3	ccomp
+8	10	dobj
+8	16	dep
+8	28	dep
+8	30	dep
+10	9	poss
+16	13	cc
+16	14	nsubj
+16	15	aux
+16	17	iobj
+16	20	dobj
+20	18	advmod
+20	19	det
+20	22	rcmod
+22	21	nsubj
+22	24	xcomp
+24	23	aux
+24	26	dobj
+26	25	poss
+28	27	dep
+28	30	conj_and
+EOX
+D	0	31
+8
+3	1	discourse
+3	5	dobj
+5	4	det
+8	3	ccomp
+8	10	dobj
+8	16	dep
+8	28	dep
+10	9	poss
+16	13	cc
+16	14	nsubj
+16	15	aux
+16	17	iobj
+16	20	dobj
+20	18	advmod
+20	19	det
+20	22	rcmod
+22	21	nsubj
+22	24	xcomp
+24	23	aux
+24	26	dobj
+26	25	poss
+28	27	dep
+28	29	cc
+28	30	conj
+EOX
+Y	1
+ROOT	0	0	32	1	S	4	0	32	7	``	0	0	1	1	``	0	0	1	0	S	2	1	6	3	INTJ	0	1	2	1	UH	0	1	2	1	Oh	1	1	2	0	,	0	2	3	1	,	2	2	3	0	VP	0	3	6	2	VB	0	3	4	1	wait	3	3	4	0	NP	1	4	6	2	DT	0	4	5	1	a	4	4	5	0	NN	0	5	6	1	minute	5	5	6	0	,	0	6	7	1	,	6	6	7	0	''	0	7	8	1	''	7	7	8	0	VP	0	8	27	4	VBD	0	8	9	1	said	8	8	9	0	NP	1	9	11	2	PRP$	0	9	10	1	my	9	9	10	0	NN	0	10	11	1	father	10	10	11	0	,	0	11	12	1	,	11	11	12	0	S	1	12	27	2	``	0	12	13	1	``	12	12	13	0	S	2	13	27	3	CC	0	13	14	1	and	13	13	14	0	NP	0	14	15	1	PRP	0	14	15	1	I	14	14	15	0	VP	1	15	27	2	MD	0	15	16	1	'll	15	15	16	0	VP	0	16	27	3	VB	0	16	17	1	give	16	16	17	0	NP	0	17	18	1	PRP	0	17	18	1	you	17	17	18	0	NP	0	18	27	2	NP	2	18	21	3	RB	0	18	19	1	just	18	18	19	0	DT	0	19	20	1	the	19	19	20	0	NNS	0	20	21	1	things	20	20	21	0	SBAR	0	21	27	1	S	1	21	27	2	NP	0	21	22	1	PRP	0	21	22	1	you	21	21	22	0	VP	0	22	27	2	VBP	0	22	23	1	need	22	22	23	0	S	0	23	27	1	VP	1	23	27	2	TO	0	23	24	1	to	23	23	24	0	VP	0	24	27	2	VB	0	24	25	1	make	24	24	25	0	NP	1	25	27	2	PRP$	0	25	26	1	your	25	25	26	0	NN	0	26	27	1	mane	26	26	27	0	NP	1	27	31	4	DT	0	27	28	1	a	27	27	28	0	JJ	0	28	29	1	tidy	28	28	29	0	CC	0	29	30	1	and	29	29	30	0	JJ	0	30	31	1	beautiful	30	30	31	0	.	0	31	32	1	.	31	31	32	0
+EOS
+T	9
+I	121	122	PRP	I	O	O	_
+have	123	127	VBP	have	O	O	_
+them	128	132	PRP	they	O	O	_
+here	133	137	RB	here	O	O	_
+in	138	140	IN	in	O	O	_
+my	141	143	PRP$	my	O	O	_
+pack	144	148	NN	pack	O	O	_
+.	148	149	.	.	O	O	_
+''	149	150	''	''	O	O	_
+D	1	7
+1
+1	0	nsubj
+1	2	dobj
+1	3	advmod
+1	6	prep_in
+6	5	poss
+EOX
+D	0	7
+1
+1	0	nsubj
+1	2	dobj
+1	3	advmod
+1	4	prep
+4	6	pobj
+6	5	poss
+EOX
+Y	1
+ROOT	0	0	9	1	S	1	0	9	4	NP	0	0	1	1	PRP	0	0	1	1	I	0	0	1	0	VP	0	1	7	4	VBP	0	1	2	1	have	1	1	2	0	NP	0	2	3	1	PRP	0	2	3	1	them	2	2	3	0	ADVP	0	3	4	1	RB	0	3	4	1	here	3	3	4	0	PP	0	4	7	2	IN	0	4	5	1	in	4	4	5	0	NP	1	5	7	2	PRP$	0	5	6	1	my	5	5	6	0	NN	0	6	7	1	pack	6	6	7	0	.	0	7	8	1	.	7	7	8	0	''	0	8	9	1	''	8	8	9	0
+EOS
+C	14
+0	28	27	31	10
+1	5	5	6	2
+0	17	17	18	5
+0	25	25	26	5
+0	10	9	11	2
+0	20	18	27	6
+0	9	9	10	3
+0	14	14	15	2
+1	6	5	7	13
+0	5	4	6	1
+0	21	21	22	5
+0	26	25	27	8
+1	2	2	3	12
+1	0	0	1	2
+R
+elaboration	LeftToRight	-1	-1	0	0	1	8	0	0	2	nil
+attribution	LeftToRight	-1	-1	0	0	0	11	0	1	2	nil
+nil	None	-1	-1	0	0	0	7	0	0	0	`` Oh , wait a minute , ''
+nil	None	-1	-1	0	8	0	11	1	1	0	said my father ,
+elaboration	LeftToRight	-1	-1	0	12	1	8	2	0	2	nil
+elaboration	LeftToRight	-1	-1	0	12	0	31	2	3	2	nil
+nil	None	-1	-1	0	12	0	20	2	2	0	`` and I 'll give you just the things
+nil	None	-1	-1	0	21	0	31	3	3	0	you need to make your mane a tidy and beautiful .
+nil	None	-1	-1	1	0	1	8	0	0	0	I have them here in my pack . ''
+EOD
+S	2
+T	5
+``	0	1	``	``	O	O	_
+You	1	4	PRP	you	O	O	_
+do	5	7	VBP	do	O	O	_
+?	7	8	.	?	O	O	_
+''	8	9	''	''	O	O	_
+D	1	3
+2
+2	1	nsubj
+EOX
+D	0	3
+2
+2	1	nsubj
+EOX
+Y	1
+ROOT	0	0	5	1	S	2	0	5	5	``	0	0	1	1	``	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	You	1	1	2	0	VP	0	2	3	1	VBP	0	2	3	1	do	2	2	3	0	.	0	3	4	1	?	3	3	4	0	''	0	4	5	1	''	4	4	5	0
+EOS
+T	36
+said	10	14	VBD	say	O	O	_
+the	15	18	DT	the	O	O	_
+lion	19	23	NN	lion	O	O	_
+,	23	24	,	,	O	O	_
+``	25	26	``	``	O	O	_
+Well	26	30	UH	well	O	O	_
+,	30	31	,	,	O	O	_
+give	32	36	VB	give	O	O	_
+them	37	41	PRP	they	O	O	_
+to	42	44	TO	to	O	O	_
+me	45	47	PRP	I	O	O	_
+,	47	48	,	,	O	O	_
+and	49	52	CC	and	O	O	_
+perhaps	53	60	RB	perhaps	O	O	_
+I	61	62	PRP	I	O	O	_
+'ll	62	65	MD	'll	O	O	_
+save	66	70	VB	save	O	O	_
+you	71	74	PRP	you	O	O	_
+for	75	78	IN	for	O	O	_
+afternoon	79	88	NN	afternoon	TIME	TAF	_
+tea	89	92	NN	tea	O	O	_
+after	93	98	IN	after	O	O	_
+all	99	102	DT	all	O	O	_
+,	102	103	,	,	O	O	_
+''	103	104	''	''	O	O	_
+and	105	108	CC	and	O	O	_
+he	109	111	PRP	he	O	O	_
+put	112	115	VBD	put	O	O	_
+my	116	118	PRP$	my	O	O	_
+father	119	125	NN	father	O	O	_
+down	126	130	RP	down	O	O	_
+on	131	133	IN	on	O	O	_
+the	134	137	DT	the	O	O	_
+ground	138	144	NN	ground	O	O	_
+.	144	145	.	.	O	O	_
+''	145	146	''	''	O	O	_
+D	1	34
+0
+0	2	dobj
+0	7	dep
+0	16	conj_and
+0	27	conj_and
+2	1	det
+7	5	discourse
+7	8	dobj
+7	10	prep_to
+16	13	advmod
+16	14	nsubj
+16	15	aux
+16	17	dobj
+16	20	prep_for
+16	22	prep_after
+16	27	conj_and
+20	19	nn
+27	26	nsubj
+27	29	dobj
+27	30	prt
+27	33	prep_on
+29	28	poss
+33	32	det
+EOX
+D	0	34
+0
+0	2	dobj
+0	7	dep
+0	12	cc
+0	16	conj
+2	1	det
+7	5	discourse
+7	8	dobj
+7	9	prep
+9	10	pobj
+16	13	advmod
+16	14	nsubj
+16	15	aux
+16	17	dobj
+16	18	prep
+16	21	prep
+16	25	cc
+16	27	conj
+18	20	pobj
+20	19	nn
+21	22	pobj
+27	26	nsubj
+27	29	dobj
+27	30	prt
+27	31	prep
+29	28	poss
+31	33	pobj
+33	32	det
+EOX
+Y	1
+ROOT	0	0	36	1	S	0	0	36	6	S	0	0	11	1	VP	0	0	11	5	VBD	0	0	1	1	said	0	0	1	0	NP	1	1	3	2	DT	0	1	2	1	the	1	1	2	0	NN	0	2	3	1	lion	2	2	3	0	,	0	3	4	1	,	3	3	4	0	``	0	4	5	1	``	4	4	5	0	S	2	5	11	3	INTJ	0	5	6	1	UH	0	5	6	1	Well	5	5	6	0	,	0	6	7	1	,	6	6	7	0	VP	0	7	11	3	VB	0	7	8	1	give	7	7	8	0	NP	0	8	9	1	PRP	0	8	9	1	them	8	8	9	0	PP	0	9	11	2	TO	0	9	10	1	to	9	9	10	0	NP	0	10	11	1	PRP	0	10	11	1	me	10	10	11	0	,	0	11	12	1	,	11	11	12	0	CC	0	12	13	1	and	12	12	13	0	S	0	13	34	5	S	2	13	23	3	ADVP	0	13	14	1	RB	0	13	14	1	perhaps	13	13	14	0	NP	0	14	15	1	PRP	0	14	15	1	I	14	14	15	0	VP	1	15	23	2	MD	0	15	16	1	'll	15	15	16	0	VP	0	16	23	4	VB	0	16	17	1	save	16	16	17	0	NP	0	17	18	1	PRP	0	17	18	1	you	17	17	18	0	PP	0	18	21	2	IN	0	18	19	1	for	18	18	19	0	NP	1	19	21	2	NN	0	19	20	1	afternoon	19	19	20	0	NN	0	20	21	1	tea	20	20	21	0	PP	0	21	23	2	IN	0	21	22	1	after	21	21	22	0	NP	0	22	23	1	DT	0	22	23	1	all	22	22	23	0	,	0	23	24	1	,	23	23	24	0	''	0	24	25	1	''	24	24	25	0	CC	0	25	26	1	and	25	25	26	0	S	1	26	34	2	NP	0	26	27	1	PRP	0	26	27	1	he	26	26	27	0	VP	0	27	34	4	VBD	0	27	28	1	put	27	27	28	0	NP	1	28	30	2	PRP$	0	28	29	1	my	28	28	29	0	NN	0	29	30	1	father	29	29	30	0	PRT	0	30	31	1	RP	0	30	31	1	down	30	30	31	0	PP	0	31	34	2	IN	0	31	32	1	on	31	31	32	0	NP	1	32	34	2	DT	0	32	33	1	the	32	32	33	0	NN	0	33	34	1	ground	33	33	34	0	.	0	34	35	1	.	34	34	35	0	''	0	35	36	1	''	35	35	36	0
+EOS
+C	11
+1	20	19	21	7
+1	8	8	9	1
+1	28	28	29	6
+1	29	28	30	9
+1	10	10	11	4
+1	14	14	15	4
+1	26	26	27	4
+0	1	1	2	1
+1	17	17	18	6
+1	2	1	3	2
+1	33	32	34	11
+R
+elaboration	LeftToRight	-1	-1	0	0	1	35	0	3	2	nil
+nil	None	-1	-1	0	0	0	4	0	0	0	`` You do ? ''
+attribution	RightToLeft	-1	-1	1	0	1	35	0	3	2	nil
+nil	None	-1	-1	1	0	1	3	0	0	0	said the lion ,
+joint	None	-1	-1	1	4	1	35	1	3	2	nil
+joint	None	-1	-1	1	4	1	24	1	2	2	nil
+nil	None	-1	-1	1	4	1	11	1	1	0	`` Well , give them to me ,
+nil	None	-1	-1	1	12	1	24	2	2	0	and perhaps I 'll save you for afternoon tea after all , ''
+nil	None	-1	-1	1	25	1	35	3	3	0	and he put my father down on the ground . ''
+EOD
+S	4
+T	22
+My	0	2	PRP$	my	O	O	_
+father	3	9	NN	father	O	O	_
+opened	10	16	VBD	open	O	O	_
+the	17	20	DT	the	O	O	_
+pack	21	25	NN	pack	O	O	_
+and	26	29	CC	and	O	O	_
+took	30	34	VBD	take	O	O	_
+out	35	38	RP	out	O	O	_
+the	39	42	DT	the	O	O	_
+comb	43	47	NN	comb	O	O	_
+and	48	51	CC	and	O	O	_
+the	52	55	DT	the	O	O	_
+brush	56	61	NN	brush	O	O	_
+and	62	65	CC	and	O	O	_
+the	66	69	DT	the	O	O	_
+seven	70	75	CD	seven	NUMBER	7.0	_
+hair	76	80	NN	hair	O	O	_
+ribbons	81	88	NNS	ribbon	O	O	_
+of	89	91	IN	of	O	O	_
+different	92	101	JJ	different	O	O	_
+colors	102	108	NNS	color	O	O	_
+.	108	109	.	.	O	O	_
+D	1	21
+2
+1	0	poss
+2	1	nsubj
+2	4	dobj
+2	6	conj_and
+4	3	det
+6	1	nsubj
+6	7	prt
+6	9	dobj
+6	12	dobj
+6	17	dobj
+9	8	det
+9	12	conj_and
+9	17	conj_and
+12	11	det
+17	14	det
+17	15	num
+17	16	nn
+17	20	prep_of
+20	19	amod
+EOX
+D	0	21
+2
+1	0	poss
+2	1	nsubj
+2	4	dobj
+2	5	cc
+2	6	conj
+4	3	det
+6	7	prt
+6	9	dobj
+9	8	det
+9	10	cc
+9	12	conj
+9	13	cc
+9	17	conj
+12	11	det
+17	14	det
+17	15	num
+17	16	nn
+17	18	prep
+18	20	pobj
+20	19	amod
+EOX
+Y	1
+ROOT	0	0	22	1	S	1	0	22	3	NP	1	0	2	2	PRP$	0	0	1	1	My	0	0	1	0	NN	0	1	2	1	father	1	1	2	0	VP	0	2	21	3	VP	0	2	5	2	VBD	0	2	3	1	opened	2	2	3	0	NP	1	3	5	2	DT	0	3	4	1	the	3	3	4	0	NN	0	4	5	1	pack	4	4	5	0	CC	0	5	6	1	and	5	5	6	0	VP	0	6	21	3	VBD	0	6	7	1	took	6	6	7	0	PRT	0	7	8	1	RP	0	7	8	1	out	7	7	8	0	NP	0	8	21	3	NP	0	8	13	3	NP	1	8	10	2	DT	0	8	9	1	the	8	8	9	0	NN	0	9	10	1	comb	9	9	10	0	CC	0	10	11	1	and	10	10	11	0	NP	1	11	13	2	DT	0	11	12	1	the	11	11	12	0	NN	0	12	13	1	brush	12	12	13	0	CC	0	13	14	1	and	13	13	14	0	NP	0	14	21	2	NP	3	14	18	4	DT	0	14	15	1	the	14	14	15	0	CD	0	15	16	1	seven	15	15	16	0	NN	0	16	17	1	hair	16	16	17	0	NNS	0	17	18	1	ribbons	17	17	18	0	PP	0	18	21	2	IN	0	18	19	1	of	18	18	19	0	NP	1	19	21	2	JJ	0	19	20	1	different	19	19	20	0	NNS	0	20	21	1	colors	20	20	21	0	.	0	21	22	1	.	21	21	22	0
+EOS
+T	25
+``	110	111	``	``	O	O	_
+Look	111	115	VB	look	O	O	_
+,	115	116	,	,	O	O	_
+''	116	117	''	''	O	O	_
+he	118	120	PRP	he	O	O	_
+said	121	125	VBD	say	O	O	_
+,	125	126	,	,	O	O	_
+``	127	128	``	``	O	O	_
+I	128	129	PRP	I	O	O	_
+'ll	129	132	MD	'll	O	O	_
+show	133	137	VB	show	O	O	_
+you	138	141	PRP	you	O	O	_
+what	142	146	WP	what	O	O	_
+to	147	149	TO	to	O	O	_
+do	150	152	VB	do	O	O	_
+on	153	155	IN	on	O	O	_
+your	156	160	PRP$	you	O	O	_
+forelock	161	169	NN	forelock	O	O	_
+,	169	170	,	,	O	O	_
+where	171	176	WRB	where	O	O	_
+you	177	180	PRP	you	O	O	_
+can	181	184	MD	can	O	O	_
+watch	185	190	VB	watch	O	O	_
+me	191	193	PRP	I	O	O	_
+.	193	194	.	.	O	O	_
+D	1	24
+10
+5	4	nsubj
+10	1	dep
+10	5	parataxis
+10	8	nsubj
+10	9	aux
+10	11	dobj
+10	14	xcomp
+14	12	nsubj
+14	13	aux
+14	17	prep_on
+17	16	poss
+17	22	rcmod
+22	19	advmod
+22	20	nsubj
+22	21	aux
+22	23	dobj
+EOX
+D	0	24
+10
+5	4	nsubj
+10	1	dep
+10	5	parataxis
+10	8	nsubj
+10	9	aux
+10	11	dobj
+10	14	xcomp
+14	12	nsubj
+14	13	aux
+14	15	prep
+15	17	pobj
+17	16	poss
+17	22	rcmod
+22	19	advmod
+22	20	nsubj
+22	21	aux
+22	23	dobj
+EOX
+Y	1
+ROOT	0	0	25	1	S	4	0	25	6	``	0	0	1	1	``	0	0	1	0	S	0	1	2	1	VP	0	1	2	1	VB	0	1	2	1	Look	1	1	2	0	PRN	2	2	8	5	,	0	2	3	1	,	2	2	3	0	''	0	3	4	1	''	3	3	4	0	S	1	4	6	2	NP	0	4	5	1	PRP	0	4	5	1	he	4	4	5	0	VP	0	5	6	1	VBD	0	5	6	1	said	5	5	6	0	,	0	6	7	1	,	6	6	7	0	``	0	7	8	1	``	7	7	8	0	NP	0	8	9	1	PRP	0	8	9	1	I	8	8	9	0	VP	1	9	24	2	MD	0	9	10	1	'll	9	9	10	0	VP	0	10	24	3	VB	0	10	11	1	show	10	10	11	0	NP	0	11	12	1	PRP	0	11	12	1	you	11	11	12	0	SBAR	1	12	24	2	WHNP	0	12	13	1	WP	0	12	13	1	what	12	12	13	0	S	0	13	24	1	VP	1	13	24	2	TO	0	13	14	1	to	13	13	14	0	VP	0	14	24	2	VB	0	14	15	1	do	14	14	15	0	PP	0	15	24	2	IN	0	15	16	1	on	15	15	16	0	NP	0	16	24	3	NP	1	16	18	2	PRP$	0	16	17	1	your	16	16	17	0	NN	0	17	18	1	forelock	17	17	18	0	,	0	18	19	1	,	18	18	19	0	SBAR	1	19	24	2	WHADVP	0	19	20	1	WRB	0	19	20	1	where	19	19	20	0	S	1	20	24	2	NP	0	20	21	1	PRP	0	20	21	1	you	20	20	21	0	VP	1	21	24	2	MD	0	21	22	1	can	21	21	22	0	VP	0	22	24	2	VB	0	22	23	1	watch	22	22	23	0	NP	0	23	24	1	PRP	0	23	24	1	me	23	23	24	0	.	0	24	25	1	.	24	24	25	0
+EOS
+T	25
+First	195	200	NNP	First	ORDINAL	1.0	_
+you	201	204	PRP	you	O	O	_
+brush	205	210	VBP	brush	O	O	_
+a	211	212	DT	a	O	O	_
+while	213	218	NN	while	O	O	_
+,	218	219	,	,	O	O	_
+and	220	223	CC	and	O	O	_
+then	224	228	RB	then	O	O	_
+you	229	232	PRP	you	O	O	_
+comb	233	237	VBP	comb	O	O	_
+,	237	238	,	,	O	O	_
+and	239	242	CC	and	O	O	_
+then	243	247	RB	then	O	O	_
+you	248	251	PRP	you	O	O	_
+brush	252	257	VBP	brush	O	O	_
+again	258	263	RB	again	O	O	_
+until	264	269	IN	until	O	O	_
+all	270	273	PDT	all	O	O	_
+the	274	277	DT	the	O	O	_
+twigs	278	283	NNS	twig	O	O	_
+and	284	287	CC	and	O	O	_
+snarls	288	294	NNS	snarl	O	O	_
+are	295	298	VBP	be	O	O	_
+gone	299	303	VBN	go	O	O	_
+.	303	304	.	.	O	O	_
+D	1	24
+2
+0	1	dep
+2	0	nsubj
+2	4	dobj
+2	9	conj_and
+2	14	conj_and
+4	3	det
+9	7	advmod
+9	8	nsubj
+9	14	conj_and
+14	12	advmod
+14	13	nsubj
+14	15	advmod
+14	23	advcl
+19	17	dep
+19	18	det
+19	21	conj_and
+23	16	mark
+23	19	nsubjpass
+23	21	nsubjpass
+23	22	auxpass
+EOX
+D	0	24
+2
+0	1	dep
+2	0	nsubj
+2	4	dobj
+2	6	cc
+2	9	conj
+4	3	det
+9	7	advmod
+9	8	nsubj
+9	11	cc
+9	14	conj
+14	12	advmod
+14	13	nsubj
+14	15	advmod
+14	23	advcl
+19	17	dep
+19	18	det
+19	20	cc
+19	21	conj
+23	16	mark
+23	19	nsubjpass
+23	22	auxpass
+EOX
+Y	1
+ROOT	0	0	25	1	S	0	0	25	5	S	1	0	5	2	NP	0	0	2	2	NNP	0	0	1	1	First	0	0	1	0	PRP	0	1	2	1	you	1	1	2	0	VP	0	2	5	2	VBP	0	2	3	1	brush	2	2	3	0	NP	1	3	5	2	DT	0	3	4	1	a	3	3	4	0	NN	0	4	5	1	while	4	4	5	0	,	0	5	6	1	,	5	5	6	0	CC	0	6	7	1	and	6	6	7	0	S	0	7	24	5	S	2	7	10	3	ADVP	0	7	8	1	RB	0	7	8	1	then	7	7	8	0	NP	0	8	9	1	PRP	0	8	9	1	you	8	8	9	0	VP	0	9	10	1	VBP	0	9	10	1	comb	9	9	10	0	,	0	10	11	1	,	10	10	11	0	CC	0	11	12	1	and	11	11	12	0	RB	0	12	13	1	then	12	12	13	0	S	1	13	24	2	NP	0	13	14	1	PRP	0	13	14	1	you	13	13	14	0	VP	0	14	24	3	VBP	0	14	15	1	brush	14	14	15	0	ADVP	0	15	16	1	RB	0	15	16	1	again	15	15	16	0	SBAR	1	16	24	2	IN	0	16	17	1	until	16	16	17	0	S	1	17	24	2	NP	2	17	22	5	PDT	0	17	18	1	all	17	17	18	0	DT	0	18	19	1	the	18	18	19	0	NNS	0	19	20	1	twigs	19	19	20	0	CC	0	20	21	1	and	20	20	21	0	NNS	0	21	22	1	snarls	21	21	22	0	VP	1	22	24	2	VBP	0	22	23	1	are	22	22	23	0	VP	0	23	24	1	VBN	0	23	24	1	gone	23	23	24	0	.	0	24	25	1	.	24	24	25	0
+EOS
+T	21
+Then	305	309	RB	then	O	O	_
+you	310	313	PRP	you	O	O	_
+divide	314	320	VBP	divide	O	O	_
+it	321	323	PRP	it	O	O	_
+up	324	326	RP	up	O	O	_
+into	327	331	IN	into	O	O	_
+three	332	337	CD	three	NUMBER	3.0	_
+and	338	341	CC	and	O	O	_
+braid	342	347	VB	braid	O	O	_
+it	348	350	PRP	it	O	O	_
+like	351	355	IN	like	O	O	_
+this	356	360	DT	this	O	O	_
+and	361	364	CC	and	O	O	_
+tie	365	368	VB	tie	O	O	_
+a	369	370	DT	a	O	O	_
+ribbon	371	377	NN	ribbon	O	O	_
+around	378	384	IN	around	O	O	_
+the	385	388	DT	the	O	O	_
+end	389	392	NN	end	O	O	_
+.	392	393	.	.	O	O	_
+''	393	394	''	''	O	O	_
+D	1	19
+2
+2	0	advmod
+2	1	nsubj
+2	3	dobj
+2	4	prep
+2	8	conj_and
+2	13	conj_and
+4	6	prep_into
+8	1	nsubj
+8	9	dobj
+8	11	prep_like
+8	13	conj_and
+13	15	dobj
+13	18	prep_around
+15	14	det
+18	17	det
+EOX
+D	0	19
+2
+2	0	advmod
+2	1	nsubj
+2	3	dobj
+2	4	prep
+2	7	cc
+2	8	conj
+4	5	prep
+5	6	pobj
+8	9	dobj
+8	10	prep
+8	12	cc
+8	13	conj
+10	11	pobj
+13	15	dobj
+13	16	prep
+15	14	det
+16	18	pobj
+18	17	det
+EOX
+Y	1
+ROOT	0	0	21	1	S	2	0	21	5	RB	0	0	1	1	Then	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	you	1	1	2	0	VP	0	2	19	3	VP	0	2	7	3	VBP	0	2	3	1	divide	2	2	3	0	NP	0	3	4	1	PRP	0	3	4	1	it	3	3	4	0	PP	0	4	7	2	RP	0	4	5	1	up	4	4	5	0	PP	0	5	7	2	IN	0	5	6	1	into	5	5	6	0	NP	0	6	7	1	CD	0	6	7	1	three	6	6	7	0	CC	0	7	8	1	and	7	7	8	0	VP	0	8	19	3	VP	0	8	12	3	VB	0	8	9	1	braid	8	8	9	0	NP	0	9	10	1	PRP	0	9	10	1	it	9	9	10	0	PP	0	10	12	2	IN	0	10	11	1	like	10	10	11	0	NP	0	11	12	1	DT	0	11	12	1	this	11	11	12	0	CC	0	12	13	1	and	12	12	13	0	VP	0	13	19	3	VB	0	13	14	1	tie	13	13	14	0	NP	1	14	16	2	DT	0	14	15	1	a	14	14	15	0	NN	0	15	16	1	ribbon	15	15	16	0	PP	0	16	19	2	IN	0	16	17	1	around	16	16	17	0	NP	1	17	19	2	DT	0	17	18	1	the	17	17	18	0	NN	0	18	19	1	end	18	18	19	0	.	0	19	20	1	.	19	19	20	0	''	0	20	21	1	''	20	20	21	0
+EOS
+C	27
+1	20	20	21	3
+1	8	8	9	2
+3	11	11	12	28
+0	17	14	21	9
+3	9	9	10	19
+0	0	0	1	3
+0	20	19	21	10
+0	9	8	21	5
+3	1	1	2	3
+2	0	0	2	19
+2	13	13	14	3
+1	11	11	12	3
+3	6	6	7	24
+2	8	8	9	3
+0	15	15	16	1
+3	18	17	19	30
+1	4	4	5	2
+0	4	3	5	4
+1	16	16	17	3
+0	12	11	13	8
+2	4	3	5	21
+3	15	14	16	29
+0	1	0	2	2
+1	23	23	24	2
+1	17	16	24	14
+3	3	3	4	19
+2	1	1	2	3
+R
+elaboration	LeftToRight	-1	-1	0	0	3	20	0	2	2	nil
+joint	None	-1	-1	0	0	0	21	0	1	2	nil
+nil	None	-1	-1	0	0	0	4	0	0	0	My father opened the pack
+nil	None	-1	-1	0	5	0	21	1	1	0	and took out the comb and the brush and the seven hair ribbons of different colors .
+elaboration	LeftToRight	-1	-1	1	0	3	20	0	2	2	nil
+attribution	RightToLeft	-1	-1	1	0	1	24	0	3	2	nil
+attribution	LeftToRight	-1	-1	1	0	1	6	0	1	2	nil
+nil	None	-1	-1	1	0	1	3	0	0	0	`` Look , ''
+nil	None	-1	-1	1	4	1	6	1	1	0	he said ,
+elaboration	LeftToRight	-1	-1	1	7	1	24	2	3	2	nil
+nil	None	-1	-1	1	7	1	18	2	2	0	`` I 'll show you what to do on your forelock ,
+nil	None	-1	-1	1	19	1	24	3	3	0	where you can watch me .
+joint	None	-1	-1	2	0	3	20	0	2	2	nil
+joint	None	-1	-1	2	0	2	24	0	3	2	nil
+joint	None	-1	-1	2	0	2	10	0	1	2	nil
+nil	None	-1	-1	2	0	2	5	0	0	0	First you brush a while ,
+nil	None	-1	-1	2	6	2	10	1	1	0	and then you comb ,
+background	LeftToRight	-1	-1	2	11	2	24	2	3	2	nil
+nil	None	-1	-1	2	11	2	15	2	2	0	and then you brush again
+nil	None	-1	-1	2	16	2	24	3	3	0	until all the twigs and snarls are gone .
+joint	None	-1	-1	3	0	3	20	0	2	2	nil
+nil	None	-1	-1	3	0	3	6	0	0	0	Then you divide it up into three
+joint	None	-1	-1	3	7	3	20	1	2	2	nil
+nil	None	-1	-1	3	7	3	11	1	1	0	and braid it like this
+nil	None	-1	-1	3	12	3	20	2	2	0	and tie a ribbon around the end . ''
+EOD
+S	7
+T	19
+And	0	3	CC	and	O	O	_
+my	4	6	PRP$	my	O	O	_
+father	7	13	NN	father	O	O	_
+was	14	17	VBD	be	O	O	_
+doing	18	23	VBG	do	O	O	_
+this	24	28	DT	this	O	O	_
+,	28	29	,	,	O	O	_
+the	30	33	DT	the	O	O	_
+lion	34	38	NN	lion	O	O	_
+watched	39	46	VBD	watch	O	O	_
+very	47	51	RB	very	O	O	_
+carefully	52	61	RB	carefully	O	O	_
+and	62	65	CC	and	O	O	_
+began	66	71	VBD	begin	O	O	_
+to	72	74	TO	to	O	O	_
+look	75	79	VB	look	O	O	_
+much	80	84	JJ	much	O	O	_
+happier	85	92	JJR	happier	O	O	_
+.	92	93	.	.	O	O	_
+D	1	18
+9
+2	1	poss
+4	0	cc
+4	2	nsubj
+4	3	aux
+4	5	dobj
+8	7	det
+9	4	ccomp
+9	8	nsubj
+9	11	advmod
+9	13	conj_and
+11	10	advmod
+13	8	nsubj
+13	15	xcomp
+15	14	aux
+15	16	acomp
+16	17	dep
+EOX
+D	0	18
+9
+2	1	poss
+4	0	cc
+4	2	nsubj
+4	3	aux
+4	5	dobj
+8	7	det
+9	4	ccomp
+9	8	nsubj
+9	11	advmod
+9	12	cc
+9	13	conj
+11	10	advmod
+13	15	xcomp
+15	14	aux
+15	16	acomp
+16	17	dep
+EOX
+Y	1
+ROOT	0	0	19	1	S	3	0	19	5	S	2	0	6	3	CC	0	0	1	1	And	0	0	1	0	NP	1	1	3	2	PRP$	0	1	2	1	my	1	1	2	0	NN	0	2	3	1	father	2	2	3	0	VP	1	3	6	2	VBD	0	3	4	1	was	3	3	4	0	VP	0	4	6	2	VBG	0	4	5	1	doing	4	4	5	0	NP	0	5	6	1	DT	0	5	6	1	this	5	5	6	0	,	0	6	7	1	,	6	6	7	0	NP	1	7	9	2	DT	0	7	8	1	the	7	7	8	0	NN	0	8	9	1	lion	8	8	9	0	VP	0	9	18	3	VP	0	9	12	2	VBD	0	9	10	1	watched	9	9	10	0	ADVP	1	10	12	2	RB	0	10	11	1	very	10	10	11	0	RB	0	11	12	1	carefully	11	11	12	0	CC	0	12	13	1	and	12	12	13	0	VP	0	13	18	2	VBD	0	13	14	1	began	13	13	14	0	S	0	14	18	1	VP	1	14	18	2	TO	0	14	15	1	to	14	14	15	0	VP	0	15	18	2	VB	0	15	16	1	look	15	15	16	0	ADJP	0	16	18	2	ADJP	0	16	17	1	JJ	0	16	17	1	much	16	16	17	0	JJR	0	17	18	1	happier	17	17	18	0	.	0	18	19	1	.	18	18	19	0
+EOS
+T	11
+When	94	98	WRB	when	O	O	_
+my	99	101	PRP$	my	O	O	_
+father	102	108	NN	father	O	O	_
+tied	109	113	VBD	tie	O	O	_
+the	114	117	DT	the	O	O	_
+ribbon	118	124	NN	ribbon	O	O	_
+he	125	127	PRP	he	O	O	_
+was	128	131	VBD	be	O	O	_
+all	132	135	DT	all	O	O	_
+smiles	136	142	NNS	smile	O	O	_
+.	142	143	.	.	O	O	_
+D	1	10
+9
+2	1	poss
+3	0	advmod
+3	2	nsubj
+3	5	dobj
+5	4	det
+9	3	advcl
+9	6	nsubj
+9	7	cop
+9	8	det
+EOX
+D	0	10
+9
+2	1	poss
+3	0	advmod
+3	2	nsubj
+3	5	dobj
+5	4	det
+9	3	advcl
+9	6	nsubj
+9	7	cop
+9	8	det
+EOX
+Y	1
+ROOT	0	0	11	1	S	2	0	11	4	SBAR	1	0	6	2	WHADVP	0	0	1	1	WRB	0	0	1	1	When	0	0	1	0	S	1	1	6	2	NP	1	1	3	2	PRP$	0	1	2	1	my	1	1	2	0	NN	0	2	3	1	father	2	2	3	0	VP	0	3	6	2	VBD	0	3	4	1	tied	3	3	4	0	NP	1	4	6	2	DT	0	4	5	1	the	4	4	5	0	NN	0	5	6	1	ribbon	5	5	6	0	NP	0	6	7	1	PRP	0	6	7	1	he	6	6	7	0	VP	1	7	10	2	VBD	0	7	8	1	was	7	7	8	0	NP	1	8	10	2	DT	0	8	9	1	all	8	8	9	0	NNS	0	9	10	1	smiles	9	9	10	0	.	0	10	11	1	.	10	10	11	0
+EOS
+T	11
+``	144	145	``	``	O	O	_
+Oh	145	147	UH	oh	O	O	_
+,	147	148	,	,	O	O	_
+that	149	153	DT	that	O	O	_
+'s	153	155	VBZ	be	O	O	_
+wonderful	156	165	JJ	wonderful	O	O	_
+,	165	166	,	,	O	O	_
+really	167	173	RB	really	O	O	_
+wonderful	174	183	JJ	wonderful	O	O	_
+!	183	184	.	!	O	O	_
+''	184	185	''	''	O	O	_
+D	1	9
+8
+8	1	discourse
+8	3	nsubj
+8	4	cop
+8	5	amod
+8	7	advmod
+EOX
+D	0	9
+8
+8	1	discourse
+8	3	nsubj
+8	4	cop
+8	5	amod
+8	7	advmod
+EOX
+Y	1
+ROOT	0	0	11	1	S	4	0	11	7	``	0	0	1	1	``	0	0	1	0	INTJ	0	1	2	1	UH	0	1	2	1	Oh	1	1	2	0	,	0	2	3	1	,	2	2	3	0	NP	0	3	4	1	DT	0	3	4	1	that	3	3	4	0	VP	1	4	9	2	VBZ	0	4	5	1	's	4	4	5	0	ADJP	0	5	9	4	JJ	0	5	6	1	wonderful	5	5	6	0	,	0	6	7	1	,	6	6	7	0	RB	0	7	8	1	really	7	7	8	0	JJ	0	8	9	1	wonderful	8	8	9	0	.	0	9	10	1	!	9	9	10	0	''	0	10	11	1	''	10	10	11	0
+EOS
+T	4
+said	186	190	VBD	say	O	O	_
+the	191	194	DT	the	O	O	_
+lion	195	199	NN	lion	O	O	_
+.	199	200	.	.	O	O	_
+D	1	3
+0
+0	2	dobj
+2	1	det
+EOX
+D	0	3
+0
+0	2	dobj
+2	1	det
+EOX
+Y	1
+ROOT	0	0	4	1	S	0	0	4	2	VP	0	0	3	2	VBD	0	0	1	1	said	0	0	1	0	NP	1	1	3	2	DT	0	1	2	1	the	1	1	2	0	NN	0	2	3	1	lion	2	2	3	0	.	0	3	4	1	.	3	3	4	0
+EOS
+T	17
+``	201	202	``	``	O	O	_
+Let	202	205	VB	let	O	O	_
+me	206	208	PRP	I	O	O	_
+have	209	213	VB	have	O	O	_
+the	214	217	DT	the	O	O	_
+comb	218	222	NN	comb	O	O	_
+and	223	226	CC	and	O	O	_
+brush	227	232	NN	brush	O	O	_
+and	233	236	CC	and	O	O	_
+see	237	240	VB	see	O	O	_
+if	241	243	IN	if	O	O	_
+I	244	245	PRP	I	O	O	_
+can	246	249	MD	can	O	O	_
+do	250	252	VB	do	O	O	_
+it	253	255	PRP	it	O	O	_
+.	255	256	.	.	O	O	_
+''	256	257	''	''	O	O	_
+D	1	15
+1
+1	3	ccomp
+1	9	ccomp
+3	2	nsubj
+3	5	dobj
+3	7	dobj
+3	9	conj_and
+5	4	det
+5	7	conj_and
+9	2	nsubj
+9	13	advcl
+13	10	mark
+13	11	nsubj
+13	12	aux
+13	14	dobj
+EOX
+D	0	15
+1
+1	3	ccomp
+3	2	nsubj
+3	5	dobj
+3	8	cc
+3	9	conj
+5	4	det
+5	6	cc
+5	7	conj
+9	13	advcl
+13	10	mark
+13	11	nsubj
+13	12	aux
+13	14	dobj
+EOX
+Y	1
+ROOT	0	0	17	1	S	1	0	17	4	``	0	0	1	1	``	0	0	1	0	VP	0	1	15	2	VB	0	1	2	1	Let	1	1	2	0	S	1	2	15	2	NP	0	2	3	1	PRP	0	2	3	1	me	2	2	3	0	VP	0	3	15	3	VP	0	3	8	2	VB	0	3	4	1	have	3	3	4	0	NP	1	4	8	4	DT	0	4	5	1	the	4	4	5	0	NN	0	5	6	1	comb	5	5	6	0	CC	0	6	7	1	and	6	6	7	0	NN	0	7	8	1	brush	7	7	8	0	CC	0	8	9	1	and	8	8	9	0	VP	0	9	15	2	VB	0	9	10	1	see	9	9	10	0	SBAR	1	10	15	2	IN	0	10	11	1	if	10	10	11	0	S	1	11	15	2	NP	0	11	12	1	PRP	0	11	12	1	I	11	11	12	0	VP	1	12	15	2	MD	0	12	13	1	can	12	12	13	0	VP	0	13	15	2	VB	0	13	14	1	do	13	13	14	0	NP	0	14	15	1	PRP	0	14	15	1	it	14	14	15	0	.	0	15	16	1	.	15	15	16	0	''	0	16	17	1	''	16	16	17	0
+EOS
+T	18
+So	258	260	IN	so	O	O	_
+my	261	263	PRP$	my	O	O	_
+father	264	270	NN	father	O	O	_
+gave	271	275	VBD	give	O	O	_
+him	276	279	PRP	he	O	O	_
+the	280	283	DT	the	O	O	_
+comb	284	288	NN	comb	O	O	_
+and	289	292	CC	and	O	O	_
+brush	293	298	NN	brush	O	O	_
+and	299	302	CC	and	O	O	_
+the	303	306	DT	the	O	O	_
+lion	307	311	NN	lion	O	O	_
+began	312	317	VBD	begin	O	O	_
+busily	318	324	RB	busily	O	O	_
+grooming	325	333	VBG	groom	O	O	_
+his	334	337	PRP$	he	O	O	_
+mane	338	342	NN	mane	O	O	_
+.	342	343	.	.	O	O	_
+D	1	17
+3
+2	1	poss
+3	0	dep
+3	2	nsubj
+3	4	iobj
+3	6	dobj
+3	8	dobj
+3	11	dobj
+6	5	det
+6	8	conj_and
+6	11	conj_and
+11	10	det
+11	12	rcmod
+12	14	xcomp
+14	13	advmod
+14	16	dobj
+16	15	poss
+EOX
+D	0	17
+3
+2	1	poss
+3	0	dep
+3	2	nsubj
+3	4	iobj
+3	6	dobj
+6	5	det
+6	7	cc
+6	8	conj
+6	9	cc
+6	11	conj
+11	10	det
+11	12	rcmod
+12	14	xcomp
+14	13	advmod
+14	16	dobj
+16	15	poss
+EOX
+Y	1
+ROOT	0	0	18	1	S	2	0	18	4	IN	0	0	1	1	So	0	0	1	0	NP	1	1	3	2	PRP$	0	1	2	1	my	1	1	2	0	NN	0	2	3	1	father	2	2	3	0	VP	0	3	17	3	VBD	0	3	4	1	gave	3	3	4	0	NP	0	4	5	1	PRP	0	4	5	1	him	4	4	5	0	NP	0	5	17	3	NP	1	5	9	4	DT	0	5	6	1	the	5	5	6	0	NN	0	6	7	1	comb	6	6	7	0	CC	0	7	8	1	and	7	7	8	0	NN	0	8	9	1	brush	8	8	9	0	CC	0	9	10	1	and	9	9	10	0	NP	0	10	17	2	NP	1	10	12	2	DT	0	10	11	1	the	10	10	11	0	NN	0	11	12	1	lion	11	11	12	0	SBAR	0	12	17	1	S	0	12	17	1	VP	0	12	17	2	VBD	0	12	13	1	began	12	12	13	0	S	1	13	17	2	ADVP	0	13	14	1	RB	0	13	14	1	busily	13	13	14	0	VP	0	14	17	2	VBG	0	14	15	1	grooming	14	14	15	0	NP	1	15	17	2	PRP$	0	15	16	1	his	15	15	16	0	NN	0	16	17	1	mane	16	16	17	0	.	0	17	18	1	.	17	17	18	0
+EOS
+T	21
+As	344	346	IN	as	O	O	_
+a	347	348	DT	a	O	O	_
+matter	349	355	NN	matter	O	O	_
+of	356	358	IN	of	O	O	_
+fact	359	363	NN	fact	O	O	_
+,	363	364	,	,	O	O	_
+he	365	367	PRP	he	O	O	_
+was	368	371	VBD	be	O	O	_
+so	372	374	RB	so	O	O	_
+busy	375	379	JJ	busy	O	O	_
+that	380	384	IN	that	O	O	_
+he	385	387	PRP	he	O	O	_
+did	388	391	VBD	do	O	O	_
+n't	391	394	RB	not	O	O	_
+even	395	399	RB	even	O	O	_
+know	400	404	VB	know	O	O	_
+when	405	409	WRB	when	O	O	_
+my	410	412	PRP$	my	O	O	_
+father	413	419	NN	father	O	O	_
+left	420	424	VBD	leave	O	O	_
+.	424	425	.	.	O	O	_
+D	1	20
+9
+2	1	det
+2	4	prep_of
+9	2	prep_as
+9	6	nsubj
+9	7	cop
+9	8	advmod
+9	15	ccomp
+15	10	mark
+15	11	nsubj
+15	12	aux
+15	13	neg
+15	14	advmod
+15	19	ccomp
+18	17	poss
+19	16	advmod
+19	18	nsubj
+EOX
+D	0	20
+9
+0	2	pobj
+2	1	det
+2	3	prep
+3	4	pobj
+9	0	prep
+9	6	nsubj
+9	7	cop
+9	8	advmod
+9	15	ccomp
+15	10	mark
+15	11	nsubj
+15	12	aux
+15	13	neg
+15	14	advmod
+15	19	ccomp
+18	17	poss
+19	16	advmod
+19	18	nsubj
+EOX
+Y	1
+ROOT	0	0	21	1	S	3	0	21	5	PP	0	0	5	2	IN	0	0	1	1	As	0	0	1	0	NP	0	1	5	2	NP	1	1	3	2	DT	0	1	2	1	a	1	1	2	0	NN	0	2	3	1	matter	2	2	3	0	PP	0	3	5	2	IN	0	3	4	1	of	3	3	4	0	NP	0	4	5	1	NN	0	4	5	1	fact	4	4	5	0	,	0	5	6	1	,	5	5	6	0	NP	0	6	7	1	PRP	0	6	7	1	he	6	6	7	0	VP	1	7	20	3	VBD	0	7	8	1	was	7	7	8	0	ADJP	1	8	10	2	RB	0	8	9	1	so	8	8	9	0	JJ	0	9	10	1	busy	9	9	10	0	SBAR	1	10	20	2	IN	0	10	11	1	that	10	10	11	0	S	1	11	20	2	NP	0	11	12	1	PRP	0	11	12	1	he	11	11	12	0	VP	3	12	20	4	VBD	0	12	13	1	did	12	12	13	0	RB	0	13	14	1	n't	13	13	14	0	ADVP	0	14	15	1	RB	0	14	15	1	even	14	14	15	0	VP	0	15	20	2	VB	0	15	16	1	know	15	15	16	0	SBAR	1	16	20	2	WHADVP	0	16	17	1	WRB	0	16	17	1	when	16	16	17	0	S	1	17	20	2	NP	1	17	19	2	PRP$	0	17	18	1	my	17	17	18	0	NN	0	18	19	1	father	18	18	19	0	VP	0	19	20	1	VBD	0	19	20	1	left	19	19	20	0	.	0	20	21	1	.	20	20	21	0
+EOS
+C	26
+1	5	4	6	7
+5	15	15	16	1
+0	2	1	3	1
+5	2	1	3	1
+5	1	1	2	2
+6	6	6	7	1
+5	11	10	17	20
+6	2	1	5	23
+1	6	6	7	1
+0	5	5	6	3
+1	1	1	2	2
+6	11	11	12	1
+4	11	11	12	2
+4	5	4	8	12
+0	8	7	9	4
+5	4	4	5	1
+3	2	1	3	4
+5	16	15	17	21
+4	2	2	3	2
+6	18	17	19	1
+6	17	17	18	2
+0	1	1	2	2
+4	14	14	15	4
+2	3	3	4	2
+1	2	1	3	1
+5	6	5	17	18
+R
+elaboration	LeftToRight	-1	-1	0	0	6	20	0	2	2	nil
+elaboration	LeftToRight	-1	-1	0	0	5	17	0	1	2	nil
+elaboration	LeftToRight	-1	-1	0	0	4	16	0	2	2	nil
+background	RightToLeft	-1	-1	0	0	0	18	0	2	2	nil
+nil	None	-1	-1	0	0	0	6	0	0	0	And my father was doing this ,
+joint	None	-1	-1	0	7	0	18	1	2	2	nil
+nil	None	-1	-1	0	7	0	11	1	1	0	the lion watched very carefully
+nil	None	-1	-1	0	12	0	18	2	2	0	and began to look much happier .
+elaboration	LeftToRight	-1	-1	1	0	4	16	0	2	2	nil
+background	RightToLeft	-1	-1	1	0	1	10	0	1	2	nil
+nil	None	-1	-1	1	0	1	5	0	0	0	When my father tied the ribbon
+nil	None	-1	-1	1	6	1	10	1	1	0	he was all smiles .
+elaboration	LeftToRight	-1	-1	2	0	4	16	0	2	2	nil
+nil	None	-1	-1	2	0	2	10	0	0	0	`` Oh , that 's wonderful , really wonderful ! ''
+elaboration	LeftToRight	-1	-1	3	0	4	16	0	2	2	nil
+nil	None	-1	-1	3	0	3	3	0	0	0	said the lion .
+joint	None	-1	-1	4	0	4	16	0	2	2	nil
+nil	None	-1	-1	4	0	4	7	0	0	0	`` Let me have the comb and brush
+attribution	RightToLeft	-1	-1	4	8	4	16	1	2	2	nil
+nil	None	-1	-1	4	8	4	9	1	1	0	and see
+nil	None	-1	-1	4	10	4	16	2	2	0	if I can do it . ''
+elaboration	LeftToRight	-1	-1	5	0	5	17	0	1	2	nil
+nil	None	-1	-1	5	0	5	11	0	0	0	So my father gave him the comb and brush and the lion
+nil	None	-1	-1	5	12	5	17	1	1	0	began busily grooming his mane .
+attribution	RightToLeft	-1	-1	6	0	6	20	0	2	2	nil
+nil	None	-1	-1	6	0	6	9	0	0	0	As a matter of fact , he was so busy
+attribution	RightToLeft	-1	-1	6	10	6	20	1	2	2	nil
+nil	None	-1	-1	6	10	6	15	1	1	0	that he did n't even know
+nil	None	-1	-1	6	16	6	20	2	2	0	when my father left .
+EOD

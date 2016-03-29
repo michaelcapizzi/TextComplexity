@@ -1,0 +1,1897 @@
+S	4
+T	8
+A	0	1	DT	a	O	O	_
+hideous	2	9	JJ	hideous	O	O	_
+giant	10	15	NN	giant	O	O	_
+lumbered	16	24	VBD	lumber	O	O	_
+into	25	29	IN	into	O	O	_
+the	30	33	DT	the	O	O	_
+clearing	34	42	NN	clearing	O	O	_
+.	42	43	.	.	O	O	_
+D	1	7
+3
+2	0	det
+2	1	amod
+3	2	nsubj
+3	6	prep_into
+6	5	det
+EOX
+D	0	7
+3
+2	0	det
+2	1	amod
+3	2	nsubj
+3	4	prep
+4	6	pobj
+6	5	det
+EOX
+Y	1
+ROOT	0	0	8	1	S	1	0	8	3	NP	2	0	3	3	DT	0	0	1	1	A	0	0	1	0	ADJP	0	1	2	1	JJ	0	1	2	1	hideous	1	1	2	0	NN	0	2	3	1	giant	2	2	3	0	VP	0	3	7	2	VBD	0	3	4	1	lumbered	3	3	4	0	PP	0	4	7	2	IN	0	4	5	1	into	4	4	5	0	NP	1	5	7	2	DT	0	5	6	1	the	5	5	6	0	NN	0	6	7	1	clearing	6	6	7	0	.	0	7	8	1	.	7	7	8	0
+EOS
+T	14
+He	44	46	PRP	he	O	O	_
+carried	47	54	VBD	carry	O	O	_
+nearly	55	61	RB	nearly	O	O	_
+half	62	66	PDT	half	O	O	_
+a	67	68	DT	a	O	O	_
+forest	69	75	NN	forest	O	O	_
+'s	75	77	POS	's	O	O	_
+worth	78	83	NN	worth	O	O	_
+of	84	86	IN	of	O	O	_
+wood	87	91	NN	wood	O	O	_
+on	92	94	IN	on	O	O	_
+his	95	98	PRP$	he	O	O	_
+back	99	103	NN	back	O	O	_
+.	103	104	.	.	O	O	_
+D	1	13
+1
+1	0	nsubj
+1	7	dobj
+1	12	prep_on
+3	2	quantmod
+5	4	det
+7	3	num
+7	5	poss
+7	9	prep_of
+12	11	poss
+EOX
+D	0	13
+1
+1	0	nsubj
+1	7	dobj
+1	10	prep
+3	2	quantmod
+5	4	det
+5	6	possessive
+7	3	num
+7	5	poss
+7	8	prep
+8	9	pobj
+10	12	pobj
+12	11	poss
+EOX
+Y	1
+ROOT	0	0	14	1	S	1	0	14	3	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	0	1	13	3	VBD	0	1	2	1	carried	1	1	2	0	NP	0	2	10	2	NP	2	2	8	3	QP	1	2	4	2	RB	0	2	3	1	nearly	2	2	3	0	PDT	0	3	4	1	half	3	3	4	0	NP	1	4	7	3	DT	0	4	5	1	a	4	4	5	0	NN	0	5	6	1	forest	5	5	6	0	POS	0	6	7	1	's	6	6	7	0	NN	0	7	8	1	worth	7	7	8	0	PP	0	8	10	2	IN	0	8	9	1	of	8	8	9	0	NP	0	9	10	1	NN	0	9	10	1	wood	9	9	10	0	PP	0	10	13	2	IN	0	10	11	1	on	10	10	11	0	NP	1	11	13	2	PRP$	0	11	12	1	his	11	11	12	0	NN	0	12	13	1	back	12	12	13	0	.	0	13	14	1	.	13	13	14	0
+EOS
+T	13
+His	105	108	PRP$	he	O	O	_
+monstrous	109	118	JJ	monstrous	O	O	_
+head	119	123	NN	head	O	O	_
+jutted	124	130	VBN	jut	O	O	_
+from	131	135	IN	from	O	O	_
+his	136	139	PRP$	he	O	O	_
+body	140	144	NN	body	O	O	_
+like	145	149	IN	like	O	O	_
+a	150	151	DT	a	O	O	_
+shaggy	152	158	JJ	shaggy	O	O	_
+mountain	159	167	NN	mountain	O	O	_
+peak	168	172	NN	peak	O	O	_
+.	172	173	.	.	O	O	_
+D	1	12
+3
+2	0	poss
+2	1	amod
+3	2	nsubj
+3	6	prep_from
+6	5	poss
+6	11	prep_like
+11	8	det
+11	9	amod
+11	10	nn
+EOX
+D	0	12
+3
+2	0	poss
+2	1	amod
+3	2	nsubj
+3	4	prep
+4	6	pobj
+6	5	poss
+6	7	prep
+7	11	pobj
+11	8	det
+11	9	amod
+11	10	nn
+EOX
+Y	1
+ROOT	0	0	13	1	S	1	0	13	3	NP	2	0	3	3	PRP$	0	0	1	1	His	0	0	1	0	JJ	0	1	2	1	monstrous	1	1	2	0	NN	0	2	3	1	head	2	2	3	0	VP	0	3	12	2	VBN	0	3	4	1	jutted	3	3	4	0	PP	0	4	12	2	IN	0	4	5	1	from	4	4	5	0	NP	0	5	12	2	NP	1	5	7	2	PRP$	0	5	6	1	his	5	5	6	0	NN	0	6	7	1	body	6	6	7	0	PP	0	7	12	2	IN	0	7	8	1	like	7	7	8	0	NP	3	8	12	4	DT	0	8	9	1	a	8	8	9	0	JJ	0	9	10	1	shaggy	9	9	10	0	NN	0	10	11	1	mountain	10	10	11	0	NN	0	11	12	1	peak	11	11	12	0	.	0	12	13	1	.	12	12	13	0
+EOS
+T	11
+A	174	175	DT	a	O	O	_
+single	176	182	JJ	single	O	O	_
+eye	183	186	NN	eye	O	O	_
+bulged	187	193	VBD	bulge	O	O	_
+in	194	196	IN	in	O	O	_
+the	197	200	DT	the	O	O	_
+center	201	207	NN	center	O	O	_
+of	208	210	IN	of	O	O	_
+his	211	214	PRP$	he	O	O	_
+forehead	215	223	NN	forehead	O	O	_
+.	223	224	.	.	O	O	_
+D	1	10
+3
+2	0	det
+2	1	amod
+3	2	nsubj
+3	6	prep_in
+6	5	det
+6	9	prep_of
+9	8	poss
+EOX
+D	0	10
+3
+2	0	det
+2	1	amod
+3	2	nsubj
+3	4	prep
+4	6	pobj
+6	5	det
+6	7	prep
+7	9	pobj
+9	8	poss
+EOX
+Y	1
+ROOT	0	0	11	1	S	1	0	11	3	NP	2	0	3	3	DT	0	0	1	1	A	0	0	1	0	JJ	0	1	2	1	single	1	1	2	0	NN	0	2	3	1	eye	2	2	3	0	VP	0	3	10	2	VBD	0	3	4	1	bulged	3	3	4	0	PP	0	4	10	2	IN	0	4	5	1	in	4	4	5	0	NP	0	5	10	2	NP	1	5	7	2	DT	0	5	6	1	the	5	5	6	0	NN	0	6	7	1	center	6	6	7	0	PP	0	7	10	2	IN	0	7	8	1	of	7	7	8	0	NP	1	8	10	2	PRP$	0	8	9	1	his	8	8	9	0	NN	0	9	10	1	forehead	9	9	10	0	.	0	10	11	1	.	10	10	11	0
+EOS
+C	16
+2	5	5	6	3
+1	5	4	7	5
+3	9	8	10	15
+0	2	0	3	1
+2	0	0	1	3
+1	11	11	12	3
+3	6	5	10	14
+1	12	11	13	6
+2	6	5	12	10
+3	2	0	3	13
+2	2	0	3	8
+2	11	8	12	12
+1	7	2	10	4
+1	0	0	1	3
+3	8	8	9	3
+0	6	5	7	2
+R
+elaboration	LeftToRight	-1	-1	0	0	3	10	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	2	12	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	1	13	0	0	2	nil
+nil	None	-1	-1	0	0	0	7	0	0	0	A hideous giant lumbered into the clearing .
+nil	None	-1	-1	1	0	1	13	0	0	0	He carried nearly half a forest 's worth of wood on his back .
+nil	None	-1	-1	2	0	2	12	0	0	0	His monstrous head jutted from his body like a shaggy mountain peak .
+nil	None	-1	-1	3	0	3	10	0	0	0	A single eye bulged in the center of his forehead .
+EOD
+S	3
+T	5
+The	0	3	DT	the	O	O	_
+monster	4	11	NN	monster	O	O	_
+was	12	15	VBD	be	O	O	_
+Polyphemus	16	26	NNP	Polyphemus	O	O	_
+.	26	27	.	.	O	O	_
+D	1	4
+3
+1	0	det
+3	1	nsubj
+3	2	cop
+EOX
+D	0	4
+3
+1	0	det
+3	1	nsubj
+3	2	cop
+EOX
+Y	1
+ROOT	0	0	5	1	S	1	0	5	3	NP	1	0	2	2	DT	0	0	1	1	The	0	0	1	0	NN	0	1	2	1	monster	1	1	2	0	VP	1	2	4	2	VBD	0	2	3	1	was	2	2	3	0	NP	0	3	4	1	NNP	0	3	4	1	Polyphemus	3	3	4	0	.	0	4	5	1	.	4	4	5	0
+EOS
+T	23
+He	28	30	PRP	he	O	O	_
+was	31	34	VBD	be	O	O	_
+the	35	38	DT	the	O	O	_
+most	39	43	RBS	most	O	O	_
+savage	44	50	JJ	savage	O	O	_
+of	51	53	IN	of	O	O	_
+all	54	57	PDT	all	O	O	_
+the	58	61	DT	the	O	O	_
+Cyclopes	62	70	NNPS	Cyclopes	O	O	_
+,	70	71	,	,	O	O	_
+a	72	73	DT	a	O	O	_
+race	74	78	NN	race	O	O	_
+of	79	81	IN	of	O	O	_
+fierce	82	88	JJ	fierce	O	O	_
+one-eyed	89	97	JJ	one-eyed	O	O	_
+giants	98	104	NNS	giant	O	O	_
+who	105	108	WP	who	O	O	_
+lived	109	114	VBD	live	O	O	_
+without	115	122	IN	without	O	O	_
+laws	123	127	NNS	law	O	O	_
+or	128	130	CC	or	O	O	_
+leader	131	137	NN	leader	O	O	_
+.	137	138	.	.	O	O	_
+D	1	22
+4
+4	0	nsubj
+4	1	cop
+4	2	det
+4	3	advmod
+4	8	prep_of
+4	11	appos
+8	6	predet
+8	7	det
+11	10	det
+11	15	prep_of
+11	17	rcmod
+15	13	amod
+15	14	amod
+17	16	nsubj
+17	19	prep_without
+17	21	prep_without
+19	21	conj_or
+EOX
+D	0	22
+4
+4	0	nsubj
+4	1	cop
+4	2	det
+4	3	advmod
+4	5	prep
+4	11	appos
+5	8	pobj
+8	6	predet
+8	7	det
+11	10	det
+11	12	prep
+11	17	rcmod
+12	15	pobj
+15	13	amod
+15	14	amod
+17	16	nsubj
+17	18	prep
+18	19	pobj
+19	20	cc
+19	21	conj
+EOX
+Y	1
+ROOT	0	0	23	1	S	1	0	23	3	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	1	1	22	2	VBD	0	1	2	1	was	1	1	2	0	NP	0	2	22	3	NP	0	2	9	2	NP	2	2	5	3	DT	0	2	3	1	the	2	2	3	0	RBS	0	3	4	1	most	3	3	4	0	JJ	0	4	5	1	savage	4	4	5	0	PP	0	5	9	2	IN	0	5	6	1	of	5	5	6	0	NP	2	6	9	3	PDT	0	6	7	1	all	6	6	7	0	DT	0	7	8	1	the	7	7	8	0	NNPS	0	8	9	1	Cyclopes	8	8	9	0	,	0	9	10	1	,	9	9	10	0	NP	0	10	22	3	NP	1	10	12	2	DT	0	10	11	1	a	10	10	11	0	NN	0	11	12	1	race	11	11	12	0	PP	0	12	16	2	IN	0	12	13	1	of	12	12	13	0	NP	2	13	16	3	JJ	0	13	14	1	fierce	13	13	14	0	JJ	0	14	15	1	one-eyed	14	14	15	0	NNS	0	15	16	1	giants	15	15	16	0	SBAR	1	16	22	2	WHNP	0	16	17	1	WP	0	16	17	1	who	16	16	17	0	S	0	17	22	1	VP	0	17	22	2	VBD	0	17	18	1	lived	17	17	18	0	PP	0	18	22	2	IN	0	18	19	1	without	18	18	19	0	NP	0	19	22	3	NNS	0	19	20	1	laws	19	19	20	0	CC	0	20	21	1	or	20	20	21	0	NN	0	21	22	1	leader	21	21	22	0	.	0	22	23	1	.	22	22	23	0
+EOS
+T	20
+The	139	142	DT	the	O	O	_
+Cyclopes	143	151	NNPS	Cyclopes	MISC	O	_
+were	152	156	VBD	be	O	O	_
+ruthless	157	165	JJ	ruthless	O	O	_
+creatures	166	175	NNS	creature	O	O	_
+who	176	179	WP	who	O	O	_
+were	180	184	VBD	be	O	O	_
+known	185	190	VBN	know	O	O	_
+to	191	193	TO	to	O	O	_
+capture	194	201	VB	capture	O	O	_
+and	202	205	CC	and	O	O	_
+devour	206	212	VB	devour	O	O	_
+any	213	216	DT	any	O	O	_
+sailors	217	224	NNS	sailor	O	O	_
+who	225	228	WP	who	O	O	_
+happened	229	237	VBD	happen	O	O	_
+near	238	242	IN	near	O	O	_
+their	243	248	PRP$	they	O	O	_
+shores	249	255	NNS	shore	O	O	_
+.	255	256	.	.	O	O	_
+D	1	19
+3
+1	0	det
+3	1	nsubj
+3	2	cop
+3	4	dep
+4	7	rcmod
+7	5	nsubjpass
+7	6	auxpass
+7	9	xcomp
+7	11	xcomp
+9	8	aux
+9	11	conj_and
+9	13	dobj
+13	12	det
+13	15	rcmod
+15	14	nsubj
+15	18	prep_near
+18	17	poss
+EOX
+D	0	19
+3
+1	0	det
+3	1	nsubj
+3	2	cop
+3	4	dep
+4	7	rcmod
+7	5	nsubjpass
+7	6	auxpass
+7	9	xcomp
+9	8	aux
+9	10	cc
+9	11	conj
+9	13	dobj
+13	12	det
+13	15	rcmod
+15	14	nsubj
+15	16	prep
+16	18	pobj
+18	17	poss
+EOX
+Y	1
+ROOT	0	0	20	1	S	1	0	20	3	NP	1	0	2	2	DT	0	0	1	1	The	0	0	1	0	NNPS	0	1	2	1	Cyclopes	1	1	2	0	VP	1	2	19	3	VBD	0	2	3	1	were	2	2	3	0	ADJP	0	3	4	1	JJ	0	3	4	1	ruthless	3	3	4	0	NP	0	4	19	2	NP	0	4	5	1	NNS	0	4	5	1	creatures	4	4	5	0	SBAR	1	5	19	2	WHNP	0	5	6	1	WP	0	5	6	1	who	5	5	6	0	S	0	6	19	1	VP	1	6	19	2	VBD	0	6	7	1	were	6	6	7	0	VP	0	7	19	2	VBN	0	7	8	1	known	7	7	8	0	S	0	8	19	1	VP	1	8	19	2	TO	0	8	9	1	to	8	8	9	0	VP	0	9	19	4	VB	0	9	10	1	capture	9	9	10	0	CC	0	10	11	1	and	10	10	11	0	VB	0	11	12	1	devour	11	11	12	0	NP	0	12	19	2	NP	1	12	14	2	DT	0	12	13	1	any	12	12	13	0	NNS	0	13	14	1	sailors	13	13	14	0	SBAR	1	14	19	2	WHNP	0	14	15	1	WP	0	14	15	1	who	14	14	15	0	S	0	15	19	1	VP	0	15	19	2	VBD	0	15	16	1	happened	15	15	16	0	PP	0	16	19	2	IN	0	16	17	1	near	16	16	17	0	NP	1	17	19	2	PRP$	0	17	18	1	their	17	17	18	0	NNS	0	18	19	1	shores	18	18	19	0	.	0	19	20	1	.	19	19	20	0
+EOS
+C	11
+2	17	17	18	7
+0	3	3	4	1
+1	11	10	22	6
+1	19	19	22	8
+1	4	2	22	3
+1	15	13	16	7
+2	4	4	19	10
+0	1	0	2	1
+2	1	0	2	9
+1	0	0	1	3
+2	18	17	19	11
+R
+elaboration	LeftToRight	-1	-1	0	0	2	19	0	3	2	nil
+nil	None	-1	-1	0	0	0	4	0	0	0	The monster was Polyphemus .
+elaboration	LeftToRight	-1	-1	1	0	2	19	0	3	2	nil
+elaboration	LeftToRight	-1	-1	1	0	1	22	0	2	2	nil
+nil	None	-1	-1	1	0	1	15	0	0	0	He was the most savage of all the Cyclopes , a race of fierce one-eyed giants
+background	LeftToRight	-1	-1	1	16	1	22	1	2	2	nil
+nil	None	-1	-1	1	16	1	17	1	1	0	who lived
+nil	None	-1	-1	1	18	1	22	2	2	0	without laws or leader .
+elaboration	LeftToRight	-1	-1	2	0	2	19	0	3	2	nil
+nil	None	-1	-1	2	0	2	4	0	0	0	The Cyclopes were ruthless creatures
+enablement	LeftToRight	-1	-1	2	5	2	19	1	3	2	nil
+nil	None	-1	-1	2	5	2	7	1	1	0	who were known
+elaboration	LeftToRight	-1	-1	2	8	2	19	2	3	2	nil
+nil	None	-1	-1	2	8	2	13	2	2	0	to capture and devour any sailors
+nil	None	-1	-1	2	14	2	19	3	3	0	who happened near their shores .
+EOD
+S	2
+T	8
+Polyphemus	0	10	NN	polyphemus	O	O	_
+threw	11	16	VBD	throw	O	O	_
+down	17	21	RP	down	O	O	_
+his	22	25	PRP$	he	O	O	_
+pile	26	30	NN	pile	O	O	_
+of	31	33	IN	of	O	O	_
+wood	34	38	NN	wood	O	O	_
+.	38	39	.	.	O	O	_
+D	1	7
+1
+1	0	nsubj
+1	2	prt
+1	4	dobj
+4	3	poss
+4	6	prep_of
+EOX
+D	0	7
+1
+1	0	nsubj
+1	2	prt
+1	4	dobj
+4	3	poss
+4	5	prep
+5	6	pobj
+EOX
+Y	1
+ROOT	0	0	8	1	S	1	0	8	3	NP	0	0	1	1	NN	0	0	1	1	Polyphemus	0	0	1	0	VP	0	1	7	3	VBD	0	1	2	1	threw	1	1	2	0	PRT	0	2	3	1	RP	0	2	3	1	down	2	2	3	0	NP	0	3	7	2	NP	1	3	5	2	PRP$	0	3	4	1	his	3	3	4	0	NN	0	4	5	1	pile	4	4	5	0	PP	0	5	7	2	IN	0	5	6	1	of	5	5	6	0	NP	0	6	7	1	NN	0	6	7	1	wood	6	6	7	0	.	0	7	8	1	.	7	7	8	0
+EOS
+T	20
+As	40	42	IN	as	O	O	_
+it	43	45	PRP	it	O	O	_
+crashed	46	53	VBD	crash	O	O	_
+to	54	56	TO	to	O	O	_
+the	57	60	DT	the	O	O	_
+ground	61	67	NN	ground	O	O	_
+,	67	68	,	,	O	O	_
+Odysseus	69	77	NNP	Odysseus	PERSON	O	_
+and	78	81	CC	and	O	O	_
+his	82	85	PRP$	he	O	O	_
+men	86	89	NNS	man	O	O	_
+fled	90	94	VBD	flee	O	O	_
+to	95	97	TO	to	O	O	_
+the	98	101	DT	the	O	O	_
+darkest	102	109	JJS	darkest	O	O	_
+corners	110	117	NNS	corner	O	O	_
+of	118	120	IN	of	O	O	_
+the	121	124	DT	the	O	O	_
+cave	125	129	NN	cave	O	O	_
+.	129	130	.	.	O	O	_
+D	1	19
+11
+2	0	mark
+2	1	nsubj
+2	5	prep_to
+5	4	det
+7	10	conj_and
+10	9	poss
+11	2	advcl
+11	7	nsubj
+11	10	nsubj
+11	15	prep_to
+15	13	det
+15	14	amod
+15	18	prep_of
+18	17	det
+EOX
+D	0	19
+11
+2	0	mark
+2	1	nsubj
+2	3	prep
+3	5	pobj
+5	4	det
+7	8	cc
+7	10	conj
+10	9	poss
+11	2	advcl
+11	7	nsubj
+11	12	prep
+12	15	pobj
+15	13	det
+15	14	amod
+15	16	prep
+16	18	pobj
+18	17	det
+EOX
+Y	1
+ROOT	0	0	20	1	S	3	0	20	5	SBAR	1	0	6	2	IN	0	0	1	1	As	0	0	1	0	S	1	1	6	2	NP	0	1	2	1	PRP	0	1	2	1	it	1	1	2	0	VP	0	2	6	2	VBD	0	2	3	1	crashed	2	2	3	0	PP	0	3	6	2	TO	0	3	4	1	to	3	3	4	0	NP	1	4	6	2	DT	0	4	5	1	the	4	4	5	0	NN	0	5	6	1	ground	5	5	6	0	,	0	6	7	1	,	6	6	7	0	NP	0	7	11	3	NP	0	7	8	1	NNP	0	7	8	1	Odysseus	7	7	8	0	CC	0	8	9	1	and	8	8	9	0	NP	1	9	11	2	PRP$	0	9	10	1	his	9	9	10	0	NNS	0	10	11	1	men	10	10	11	0	VP	0	11	19	2	VBD	0	11	12	1	fled	11	11	12	0	PP	0	12	19	2	TO	0	12	13	1	to	12	12	13	0	NP	0	13	19	2	NP	2	13	16	3	DT	0	13	14	1	the	13	13	14	0	JJS	0	14	15	1	darkest	14	14	15	0	NNS	0	15	16	1	corners	15	15	16	0	PP	0	16	19	2	IN	0	16	17	1	of	16	16	17	0	NP	1	17	19	2	DT	0	17	18	1	the	17	17	18	0	NN	0	18	19	1	cave	18	18	19	0	.	0	19	20	1	.	19	19	20	0
+EOS
+C	9
+1	5	4	6	5
+1	18	17	19	10
+0	3	3	4	2
+1	1	1	2	1
+1	10	9	11	7
+1	9	9	10	3
+0	4	3	7	1
+1	15	13	19	9
+1	7	7	11	6
+R
+elaboration	LeftToRight	-1	-1	0	0	1	19	0	1	2	nil
+nil	None	-1	-1	0	0	0	7	0	0	0	Polyphemus threw down his pile of wood .
+background	RightToLeft	-1	-1	1	0	1	19	0	1	2	nil
+nil	None	-1	-1	1	0	1	6	0	0	0	As it crashed to the ground ,
+nil	None	-1	-1	1	7	1	19	1	1	0	Odysseus and his men fled to the darkest corners of the cave .
+EOD
+S	2
+T	16
+Unaware	0	7	JJ	unaware	O	O	_
+that	8	12	IN	that	O	O	_
+the	13	16	DT	the	O	O	_
+Greeks	17	23	NNPS	Greeks	MISC	O	_
+were	24	28	VBD	be	O	O	_
+hiding	29	35	VBG	hide	O	O	_
+inside	36	42	RB	inside	O	O	_
+,	42	43	,	,	O	O	_
+Polyphemus	44	54	NN	polyphemus	O	O	_
+drove	55	60	VBD	drive	O	O	_
+his	61	64	PRP$	he	O	O	_
+animals	65	72	NNS	animal	O	O	_
+into	73	77	IN	into	O	O	_
+the	78	81	DT	the	O	O	_
+cave	82	86	NN	cave	O	O	_
+.	86	87	.	.	O	O	_
+D	1	15
+9
+0	5	ccomp
+3	2	det
+5	1	mark
+5	3	nsubj
+5	4	aux
+5	6	advmod
+9	0	ccomp
+9	8	nsubj
+9	11	dobj
+9	14	prep_into
+11	10	poss
+14	13	det
+EOX
+D	0	15
+9
+0	5	ccomp
+3	2	det
+5	1	mark
+5	3	nsubj
+5	4	aux
+5	6	advmod
+9	0	ccomp
+9	8	nsubj
+9	11	dobj
+9	12	prep
+11	10	poss
+12	14	pobj
+14	13	det
+EOX
+Y	1
+ROOT	0	0	16	1	S	3	0	16	5	S	0	0	7	1	ADJP	0	0	7	2	JJ	0	0	1	1	Unaware	0	0	1	0	SBAR	1	1	7	2	IN	0	1	2	1	that	1	1	2	0	S	1	2	7	2	NP	1	2	4	2	DT	0	2	3	1	the	2	2	3	0	NNPS	0	3	4	1	Greeks	3	3	4	0	VP	1	4	7	2	VBD	0	4	5	1	were	4	4	5	0	VP	0	5	7	2	VBG	0	5	6	1	hiding	5	5	6	0	ADVP	0	6	7	1	RB	0	6	7	1	inside	6	6	7	0	,	0	7	8	1	,	7	7	8	0	NP	0	8	9	1	NN	0	8	9	1	Polyphemus	8	8	9	0	VP	0	9	15	3	VBD	0	9	10	1	drove	9	9	10	0	NP	1	10	12	2	PRP$	0	10	11	1	his	10	10	11	0	NNS	0	11	12	1	animals	11	11	12	0	PP	0	12	15	2	IN	0	12	13	1	into	12	12	13	0	NP	1	13	15	2	DT	0	13	14	1	the	13	13	14	0	NN	0	14	15	1	cave	14	14	15	0	.	0	15	16	1	.	15	15	16	0
+EOS
+T	22
+Then	88	92	RB	then	O	O	_
+he	93	95	PRP	he	O	O	_
+rolled	96	102	VBD	roll	O	O	_
+a	103	104	DT	a	O	O	_
+huge	105	109	JJ	huge	O	O	_
+boulder	110	117	NN	boulder	O	O	_
+over	118	122	IN	over	O	O	_
+its	123	126	PRP$	its	O	O	_
+mouth	127	132	NN	mouth	O	O	_
+to	133	135	TO	to	O	O	_
+block	136	141	VB	block	O	O	_
+out	142	145	RP	out	O	O	_
+the	146	149	DT	the	O	O	_
+light	150	155	NN	light	O	O	_
+of	156	158	IN	of	O	O	_
+day	159	162	NN	day	DURATION	P1D	_
+and	163	166	CC	and	O	O	_
+imprison	167	175	VB	imprison	O	O	_
+his	176	179	PRP$	he	O	O	_
+flock	180	185	NN	flock	O	O	_
+inside	186	192	IN	inside	O	O	_
+.	192	193	.	.	O	O	_
+D	1	21
+2
+2	0	advmod
+2	1	nsubj
+2	5	dobj
+2	8	prep_over
+5	3	det
+5	4	amod
+8	7	poss
+8	10	vmod
+8	17	vmod
+10	9	aux
+10	11	prt
+10	13	dobj
+10	17	conj_and
+13	12	det
+13	15	prep_of
+17	19	dobj
+17	20	prep
+19	18	poss
+EOX
+D	0	21
+2
+2	0	advmod
+2	1	nsubj
+2	5	dobj
+2	6	prep
+5	3	det
+5	4	amod
+6	8	pobj
+8	7	poss
+8	10	vmod
+10	9	aux
+10	11	prt
+10	13	dobj
+10	16	cc
+10	17	conj
+13	12	det
+13	14	prep
+14	15	pobj
+17	19	dobj
+17	20	prep
+19	18	poss
+EOX
+Y	1
+ROOT	0	0	22	1	S	2	0	22	4	RB	0	0	1	1	Then	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	he	1	1	2	0	VP	0	2	21	3	VBD	0	2	3	1	rolled	2	2	3	0	NP	2	3	6	3	DT	0	3	4	1	a	3	3	4	0	JJ	0	4	5	1	huge	4	4	5	0	NN	0	5	6	1	boulder	5	5	6	0	PP	0	6	21	2	IN	0	6	7	1	over	6	6	7	0	NP	1	7	21	3	PRP$	0	7	8	1	its	7	7	8	0	NN	0	8	9	1	mouth	8	8	9	0	S	0	9	21	1	VP	1	9	21	2	TO	0	9	10	1	to	9	9	10	0	VP	0	10	21	3	VP	0	10	16	3	VB	0	10	11	1	block	10	10	11	0	PRT	0	11	12	1	RP	0	11	12	1	out	11	11	12	0	NP	0	12	16	2	NP	1	12	14	2	DT	0	12	13	1	the	12	12	13	0	NN	0	13	14	1	light	13	13	14	0	PP	0	14	16	2	IN	0	14	15	1	of	14	14	15	0	NP	0	15	16	1	NN	0	15	16	1	day	15	15	16	0	CC	0	16	17	1	and	16	16	17	0	VP	0	17	21	3	VB	0	17	18	1	imprison	17	17	18	0	NP	1	18	20	2	PRP$	0	18	19	1	his	18	18	19	0	NN	0	19	20	1	flock	19	19	20	0	PP	0	20	21	1	IN	0	20	21	1	inside	20	20	21	0	.	0	21	22	1	.	21	21	22	0
+EOS
+C	12
+1	8	7	21	7
+1	5	3	6	6
+0	10	10	11	1
+1	18	18	19	1
+0	3	2	4	1
+0	14	13	15	4
+1	19	18	20	11
+1	1	1	2	1
+1	15	15	16	10
+0	11	10	12	2
+1	13	12	16	9
+1	7	7	8	6
+R
+temporal	None	-1	-1	0	0	1	21	0	2	2	nil
+attribution	LeftToRight	-1	-1	0	0	0	15	0	1	2	nil
+nil	None	-1	-1	0	0	0	7	0	0	0	Unaware that the Greeks were hiding inside ,
+nil	None	-1	-1	0	8	0	15	1	1	0	Polyphemus drove his animals into the cave .
+enablement	LeftToRight	-1	-1	1	0	1	21	0	2	2	nil
+nil	None	-1	-1	1	0	1	8	0	0	0	Then he rolled a huge boulder over its mouth
+joint	None	-1	-1	1	9	1	21	1	2	2	nil
+nil	None	-1	-1	1	9	1	15	1	1	0	to block out the light of day
+nil	None	-1	-1	1	16	1	21	2	2	0	and imprison his flock inside .
+EOD
+S	2
+T	13
+Twenty-four	0	11	CD	twenty-four	NUMBER	24.0	_
+wagons	12	18	NNS	wagon	O	O	_
+could	19	24	MD	could	O	O	_
+not	25	28	RB	not	O	O	_
+haul	29	33	VB	haul	O	O	_
+that	34	38	DT	that	O	O	_
+rock	39	43	NN	rock	O	O	_
+away	44	48	RB	away	O	O	_
+,	48	49	,	,	O	O	_
+Odysseus	50	58	NNP	Odysseus	PERSON	O	_
+thought	59	66	VBD	think	O	O	_
+desperately	67	78	RB	desperately	O	O	_
+.	78	79	.	.	O	O	_
+D	1	12
+10
+1	0	num
+4	1	nsubj
+4	2	aux
+4	3	neg
+4	6	dobj
+4	7	advmod
+6	5	det
+10	4	ccomp
+10	9	nsubj
+10	11	advmod
+EOX
+D	0	12
+10
+1	0	num
+4	1	nsubj
+4	2	aux
+4	3	neg
+4	6	dobj
+4	7	advmod
+6	5	det
+10	4	ccomp
+10	9	nsubj
+10	11	advmod
+EOX
+Y	1
+ROOT	0	0	13	1	S	3	0	13	5	S	1	0	8	2	NP	1	0	2	2	CD	0	0	1	1	Twenty-four	0	0	1	0	NNS	0	1	2	1	wagons	1	1	2	0	VP	2	2	8	3	MD	0	2	3	1	could	2	2	3	0	RB	0	3	4	1	not	3	3	4	0	VP	0	4	8	3	VB	0	4	5	1	haul	4	4	5	0	NP	1	5	7	2	DT	0	5	6	1	that	5	5	6	0	NN	0	6	7	1	rock	6	6	7	0	ADVP	0	7	8	1	RB	0	7	8	1	away	7	7	8	0	,	0	8	9	1	,	8	8	9	0	NP	0	9	10	1	NNP	0	9	10	1	Odysseus	9	9	10	0	VP	0	10	12	2	VBD	0	10	11	1	thought	10	10	11	0	ADVP	0	11	12	1	RB	0	11	12	1	desperately	11	11	12	0	.	0	12	13	1	.	12	12	13	0
+EOS
+T	7
+How	80	83	WRB	how	O	O	_
+will	84	88	MD	will	O	O	_
+we	89	91	PRP	we	O	O	_
+escape	92	98	VB	escape	O	O	_
+this	99	103	DT	this	O	O	_
+monster	104	111	NN	monster	O	O	_
+?	111	112	.	?	O	O	_
+D	1	6
+3
+3	0	advmod
+3	1	aux
+3	2	nsubj
+3	5	dobj
+5	4	det
+EOX
+D	0	6
+3
+3	0	advmod
+3	1	aux
+3	2	nsubj
+3	5	dobj
+5	4	det
+EOX
+Y	1
+ROOT	0	0	7	1	SBARQ	1	0	7	3	WHADVP	0	0	1	1	WRB	0	0	1	1	How	0	0	1	0	SQ	2	1	6	3	MD	0	1	2	1	will	1	1	2	0	NP	0	2	3	1	PRP	0	2	3	1	we	2	2	3	0	VP	0	3	6	2	VB	0	3	4	1	escape	3	3	4	0	NP	1	4	6	2	DT	0	4	5	1	this	4	4	5	0	NN	0	5	6	1	monster	5	5	6	0	.	0	6	7	1	?	6	6	7	0
+EOS
+C	6
+1	5	4	6	6
+0	0	0	1	1
+0	9	9	10	2
+0	1	0	2	3
+1	2	2	3	5
+0	6	5	7	4
+R
+elaboration	LeftToRight	-1	-1	0	0	1	6	0	0	2	nil
+attribution	LeftToRight	-1	-1	0	0	0	12	0	1	2	nil
+nil	None	-1	-1	0	0	0	8	0	0	0	Twenty-four wagons could not haul that rock away ,
+nil	None	-1	-1	0	9	0	12	1	1	0	Odysseus thought desperately .
+nil	None	-1	-1	1	0	1	6	0	0	0	How will we escape this monster ?
+EOD
+S	3
+T	22
+Odysseus	0	8	NNP	Odysseus	PERSON	O	_
+'	8	9	POS	'	O	O	_
+men	10	13	NNS	man	O	O	_
+trembled	14	22	VBD	tremble	O	O	_
+with	23	27	IN	with	O	O	_
+terror	28	34	NN	terror	O	O	_
+as	35	37	IN	as	O	O	_
+the	38	41	DT	the	O	O	_
+giant	42	47	NN	giant	O	O	_
+made	48	52	VBD	make	O	O	_
+a	53	54	DT	a	O	O	_
+small	55	60	JJ	small	O	O	_
+fire	61	65	NN	fire	O	O	_
+and	66	69	CC	and	O	O	_
+milked	70	76	VBD	milk	O	O	_
+his	77	80	PRP$	he	O	O	_
+goats	81	86	NNS	goat	O	O	_
+in	87	89	IN	in	O	O	_
+the	90	93	DT	the	O	O	_
+shadowy	94	101	JJ	shadowy	O	O	_
+light	102	107	NN	light	O	O	_
+.	107	108	.	.	O	O	_
+D	1	21
+3
+2	0	poss
+3	2	nsubj
+3	5	prep_with
+3	9	advcl
+3	14	advcl
+8	7	det
+9	6	mark
+9	8	nsubj
+9	12	dobj
+9	14	conj_and
+12	10	det
+12	11	amod
+14	8	nsubj
+14	16	dobj
+14	20	prep_in
+16	15	poss
+20	18	det
+20	19	amod
+EOX
+D	0	21
+3
+2	0	poss
+3	2	nsubj
+3	4	prep
+3	9	advcl
+4	5	pobj
+8	7	det
+9	6	mark
+9	8	nsubj
+9	12	dobj
+9	13	cc
+9	14	conj
+12	10	det
+12	11	amod
+14	16	dobj
+14	17	prep
+16	15	poss
+17	20	pobj
+20	18	det
+20	19	amod
+EOX
+Y	1
+ROOT	0	0	22	1	S	1	0	22	3	NP	1	0	3	2	NP	0	0	2	2	NNP	0	0	1	1	Odysseus	0	0	1	0	POS	0	1	2	1	'	1	1	2	0	NNS	0	2	3	1	men	2	2	3	0	VP	0	3	21	3	VBD	0	3	4	1	trembled	3	3	4	0	PP	0	4	6	2	IN	0	4	5	1	with	4	4	5	0	NP	0	5	6	1	NN	0	5	6	1	terror	5	5	6	0	SBAR	1	6	21	2	IN	0	6	7	1	as	6	6	7	0	S	1	7	21	2	NP	1	7	9	2	DT	0	7	8	1	the	7	7	8	0	NN	0	8	9	1	giant	8	8	9	0	VP	0	9	21	3	VP	0	9	13	2	VBD	0	9	10	1	made	9	9	10	0	NP	2	10	13	3	DT	0	10	11	1	a	10	10	11	0	JJ	0	11	12	1	small	11	11	12	0	NN	0	12	13	1	fire	12	12	13	0	CC	0	13	14	1	and	13	13	14	0	VP	0	14	21	3	VBD	0	14	15	1	milked	14	14	15	0	NP	1	15	17	2	PRP$	0	15	16	1	his	15	15	16	0	NNS	0	16	17	1	goats	16	16	17	0	PP	0	17	21	2	IN	0	17	18	1	in	17	17	18	0	NP	2	18	21	3	DT	0	18	19	1	the	18	18	19	0	JJ	0	19	20	1	shadowy	19	19	20	0	NN	0	20	21	1	light	20	20	21	0	.	0	21	22	1	.	21	21	22	0
+EOS
+T	12
+His	109	112	PRP$	he	O	O	_
+milking	113	120	NN	milking	O	O	_
+done	121	125	VBN	do	O	O	_
+,	125	126	,	,	O	O	_
+he	127	129	PRP	he	O	O	_
+threw	130	135	VBD	throw	O	O	_
+more	136	140	RBR	more	O	O	_
+wood	141	145	NN	wood	O	O	_
+on	146	148	IN	on	O	O	_
+his	149	152	PRP$	he	O	O	_
+fire	153	157	NN	fire	O	O	_
+.	157	158	.	.	O	O	_
+D	1	11
+5
+1	0	poss
+2	1	nsubj
+5	2	vmod
+5	4	nsubj
+5	6	advmod
+5	7	dobj
+7	10	prep_on
+10	9	poss
+EOX
+D	0	11
+5
+1	0	poss
+2	1	nsubj
+5	2	vmod
+5	4	nsubj
+5	6	advmod
+5	7	dobj
+7	8	prep
+8	10	pobj
+10	9	poss
+EOX
+Y	1
+ROOT	0	0	12	1	S	3	0	12	5	S	1	0	3	2	NP	1	0	2	2	PRP$	0	0	1	1	His	0	0	1	0	NN	0	1	2	1	milking	1	1	2	0	VP	0	2	3	1	VBN	0	2	3	1	done	2	2	3	0	,	0	3	4	1	,	3	3	4	0	NP	0	4	5	1	PRP	0	4	5	1	he	4	4	5	0	VP	0	5	11	3	VBD	0	5	6	1	threw	5	5	6	0	ADVP	0	6	7	1	RBR	0	6	7	1	more	6	6	7	0	NP	0	7	11	2	NP	0	7	8	1	NN	0	7	8	1	wood	7	7	8	0	PP	0	8	11	2	IN	0	8	9	1	on	8	8	9	0	NP	1	9	11	2	PRP$	0	9	10	1	his	9	9	10	0	NN	0	10	11	1	fire	10	10	11	0	.	0	11	12	1	.	11	11	12	0
+EOS
+T	20
+The	159	162	DT	the	O	O	_
+flame	163	168	NN	flame	O	O	_
+blazed	169	175	VBD	blaze	O	O	_
+brightly	176	184	RB	brightly	O	O	_
+,	184	185	,	,	O	O	_
+lighting	186	194	VBG	light	O	O	_
+up	195	197	RP	up	O	O	_
+the	198	201	DT	the	O	O	_
+corners	202	209	NNS	corner	O	O	_
+of	210	212	IN	of	O	O	_
+the	213	216	DT	the	O	O	_
+cave	217	221	NN	cave	O	O	_
+where	222	227	WRB	where	O	O	_
+Odysseus	228	236	NNP	Odysseus	PERSON	O	_
+and	237	240	CC	and	O	O	_
+his	241	244	PRP$	he	O	O	_
+men	245	248	NNS	man	O	O	_
+were	249	253	VBD	be	O	O	_
+hiding	254	260	VBG	hide	O	O	_
+.	260	261	.	.	O	O	_
+D	1	19
+2
+1	0	det
+2	1	nsubj
+2	3	advmod
+2	5	xcomp
+5	6	prt
+5	8	dobj
+5	18	advcl
+8	7	det
+8	11	prep_of
+11	10	det
+13	16	conj_and
+16	15	poss
+18	12	advmod
+18	13	nsubj
+18	16	nsubj
+18	17	aux
+EOX
+D	0	19
+2
+1	0	det
+2	1	nsubj
+2	3	advmod
+2	5	xcomp
+5	6	prt
+5	8	dobj
+5	18	advcl
+8	7	det
+8	9	prep
+9	11	pobj
+11	10	det
+13	14	cc
+13	16	conj
+16	15	poss
+18	12	advmod
+18	13	nsubj
+18	17	aux
+EOX
+Y	1
+ROOT	0	0	20	1	S	1	0	20	3	NP	1	0	2	2	DT	0	0	1	1	The	0	0	1	0	NN	0	1	2	1	flame	1	1	2	0	VP	0	2	19	4	VBD	0	2	3	1	blazed	2	2	3	0	ADVP	0	3	4	1	RB	0	3	4	1	brightly	3	3	4	0	,	0	4	5	1	,	4	4	5	0	S	0	5	19	1	VP	0	5	19	4	VBG	0	5	6	1	lighting	5	5	6	0	PRT	0	6	7	1	RP	0	6	7	1	up	6	6	7	0	NP	0	7	12	2	NP	1	7	9	2	DT	0	7	8	1	the	7	7	8	0	NNS	0	8	9	1	corners	8	8	9	0	PP	0	9	12	2	IN	0	9	10	1	of	9	9	10	0	NP	1	10	12	2	DT	0	10	11	1	the	10	10	11	0	NN	0	11	12	1	cave	11	11	12	0	SBAR	1	12	19	2	WHADVP	0	12	13	1	WRB	0	12	13	1	where	12	12	13	0	S	1	13	19	2	NP	0	13	17	3	NP	0	13	14	1	NNP	0	13	14	1	Odysseus	13	13	14	0	CC	0	14	15	1	and	14	14	15	0	NP	1	15	17	2	PRP$	0	15	16	1	his	15	15	16	0	NNS	0	16	17	1	men	16	16	17	0	VP	1	17	19	2	VBD	0	17	18	1	were	17	17	18	0	VP	0	18	19	1	VBG	0	18	19	1	hiding	18	18	19	0	.	0	19	20	1	.	19	19	20	0
+EOS
+C	19
+0	2	0	3	1
+0	0	0	2	2
+0	20	18	21	7
+2	13	13	17	18
+2	8	7	12	16
+1	1	0	2	8
+0	15	15	16	2
+1	10	9	11	4
+1	9	9	10	2
+2	15	15	16	2
+1	4	4	5	2
+0	8	7	9	3
+0	12	10	13	4
+0	16	15	17	5
+2	11	10	12	17
+2	16	15	17	1
+1	7	7	11	11
+2	1	0	2	15
+1	0	0	1	2
+R
+elaboration	LeftToRight	-1	-1	0	0	2	19	0	2	2	nil
+elaboration	LeftToRight	-1	-1	0	0	1	11	0	1	2	nil
+background	LeftToRight	-1	-1	0	0	0	21	0	2	2	nil
+nil	None	-1	-1	0	0	0	5	0	0	0	Odysseus ' men trembled with terror
+joint	None	-1	-1	0	6	0	21	1	2	2	nil
+nil	None	-1	-1	0	6	0	12	1	1	0	as the giant made a small fire
+nil	None	-1	-1	0	13	0	21	2	2	0	and milked his goats in the shadowy light .
+attribution	LeftToRight	-1	-1	1	0	1	11	0	1	2	nil
+nil	None	-1	-1	1	0	1	3	0	0	0	His milking done ,
+nil	None	-1	-1	1	4	1	11	1	1	0	he threw more wood on his fire .
+elaboration	LeftToRight	-1	-1	2	0	2	19	0	2	2	nil
+nil	None	-1	-1	2	0	2	4	0	0	0	The flame blazed brightly ,
+elaboration	LeftToRight	-1	-1	2	5	2	19	1	2	2	nil
+nil	None	-1	-1	2	5	2	11	1	1	0	lighting up the corners of the cave
+nil	None	-1	-1	2	12	2	19	2	2	0	where Odysseus and his men were hiding .
+EOD
+S	6
+T	5
+``	0	1	``	``	O	O	_
+What	1	5	WP	what	O	O	_
+'s	5	7	VBZ	be	O	O	_
+this	8	12	DT	this	O	O	_
+?	12	13	.	?	O	O	_
+D	1	4
+1
+1	2	cop
+1	3	nsubj
+EOX
+D	0	4
+1
+1	2	cop
+1	3	nsubj
+EOX
+Y	1
+ROOT	0	0	5	1	SBARQ	2	0	5	4	``	0	0	1	1	``	0	0	1	0	WHNP	0	1	2	1	WP	0	1	2	1	What	1	1	2	0	SQ	0	2	4	2	VBZ	0	2	3	1	's	2	2	3	0	NP	0	3	4	1	DT	0	3	4	1	this	3	3	4	0	.	0	4	5	1	?	4	4	5	0
+EOS
+T	4
+Who	14	17	WP	who	O	O	_
+are	18	21	VBP	be	O	O	_
+you	22	25	PRP	you	O	O	_
+?	25	26	.	?	O	O	_
+D	1	3
+0
+0	1	cop
+0	2	nsubj
+EOX
+D	0	3
+0
+0	1	cop
+0	2	nsubj
+EOX
+Y	1
+ROOT	0	0	4	1	SBARQ	1	0	4	3	WHNP	0	0	1	1	WP	0	0	1	1	Who	0	0	1	0	SQ	0	1	3	2	VBP	0	1	2	1	are	1	1	2	0	NP	0	2	3	1	PRP	0	2	3	1	you	2	2	3	0	.	0	3	4	1	?	3	3	4	0
+EOS
+T	7
+From	27	31	IN	from	O	O	_
+where	32	37	WRB	where	O	O	_
+do	38	40	VBP	do	O	O	_
+you	41	44	PRP	you	O	O	_
+come	45	49	VB	come	O	O	_
+?	49	50	.	?	O	O	_
+''	50	51	''	''	O	O	_
+D	1	5
+0
+0	2	pcomp
+2	1	advmod
+2	3	dep
+3	4	dep
+EOX
+D	0	5
+0
+0	2	pcomp
+2	1	advmod
+2	3	dep
+3	4	dep
+EOX
+Y	1
+ROOT	0	0	7	1	PP	0	0	7	2	IN	0	0	1	1	From	0	0	1	0	SBAR	1	1	7	2	WHADVP	0	1	2	1	WRB	0	1	2	1	where	1	1	2	0	S	0	2	7	1	VP	0	2	7	2	VBP	0	2	3	1	do	2	2	3	0	FRAG	0	3	7	4	NP	0	3	4	1	PRP	0	3	4	1	you	3	3	4	0	S	0	4	5	1	VP	0	4	5	1	VB	0	4	5	1	come	4	4	5	0	.	0	5	6	1	?	5	5	6	0	''	0	6	7	1	''	6	6	7	0
+EOS
+T	4
+the	52	55	DT	the	O	O	_
+giant	56	61	JJ	giant	O	O	_
+boomed	62	68	VBN	boom	O	O	_
+.	68	69	.	.	O	O	_
+D	1	3
+2
+1	0	det
+2	1	nsubj
+EOX
+D	0	3
+2
+1	0	det
+2	1	nsubj
+EOX
+Y	1
+ROOT	0	0	4	1	S	1	0	4	3	NP	1	0	2	2	DT	0	0	1	1	the	0	0	1	0	JJ	0	1	2	1	giant	1	1	2	0	VP	0	2	3	1	VBN	0	2	3	1	boomed	2	2	3	0	.	0	3	4	1	.	3	3	4	0
+EOS
+T	10
+He	70	72	PRP	he	O	O	_
+glared	73	79	VBD	glare	O	O	_
+at	80	82	IN	at	O	O	_
+the	83	86	DT	the	O	O	_
+Greeks	87	93	NNPS	Greeks	MISC	O	_
+with	94	98	IN	with	O	O	_
+his	99	102	PRP$	he	O	O	_
+single	103	109	JJ	single	O	O	_
+eye	110	113	NN	eye	O	O	_
+.	113	114	.	.	O	O	_
+D	1	9
+1
+1	0	nsubj
+1	4	prep_at
+1	8	prep_with
+4	3	det
+8	6	poss
+8	7	amod
+EOX
+D	0	9
+1
+1	0	nsubj
+1	2	prep
+1	5	prep
+2	4	pobj
+4	3	det
+5	8	pobj
+8	6	poss
+8	7	amod
+EOX
+Y	1
+ROOT	0	0	10	1	S	1	0	10	3	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	0	1	9	3	VBD	0	1	2	1	glared	1	1	2	0	PP	0	2	5	2	IN	0	2	3	1	at	2	2	3	0	NP	1	3	5	2	DT	0	3	4	1	the	3	3	4	0	NNPS	0	4	5	1	Greeks	4	4	5	0	PP	0	5	9	2	IN	0	5	6	1	with	5	5	6	0	NP	2	6	9	3	PRP$	0	6	7	1	his	6	6	7	0	JJ	0	7	8	1	single	7	7	8	0	NN	0	8	9	1	eye	8	8	9	0	.	0	9	10	1	.	9	9	10	0
+EOS
+T	12
+``	115	116	``	``	O	O	_
+Are	116	119	VBP	be	O	O	_
+you	120	123	PRP	you	O	O	_
+pirates	124	131	NNS	pirate	O	O	_
+who	132	135	WP	who	O	O	_
+steal	136	141	VBP	steal	O	O	_
+the	142	145	DT	the	O	O	_
+treasure	146	154	NN	treasure	O	O	_
+of	155	157	IN	of	O	O	_
+others	158	164	NNS	other	O	O	_
+?	164	165	.	?	O	O	_
+''	165	166	''	''	O	O	_
+D	1	10
+5
+2	1	cop
+2	3	dep
+5	2	dep
+5	4	nsubj
+5	7	dobj
+7	6	det
+7	9	prep_of
+EOX
+D	0	10
+5
+2	1	cop
+2	3	dep
+5	2	dep
+5	4	nsubj
+5	7	dobj
+7	6	det
+7	8	prep
+8	9	pobj
+EOX
+Y	1
+ROOT	0	0	12	1	SBARQ	2	0	12	5	SBAR	1	0	4	2	``	0	0	1	1	``	0	0	1	0	S	0	1	4	2	VP	1	1	3	2	VBP	0	1	2	1	Are	1	1	2	0	NP	0	2	3	1	PRP	0	2	3	1	you	2	2	3	0	NP	0	3	4	1	NNS	0	3	4	1	pirates	3	3	4	0	WHNP	0	4	5	1	WP	0	4	5	1	who	4	4	5	0	SQ	0	5	10	1	VP	0	5	10	2	VBP	0	5	6	1	steal	5	5	6	0	NP	0	6	10	2	NP	1	6	8	2	DT	0	6	7	1	the	6	6	7	0	NN	0	7	8	1	treasure	7	7	8	0	PP	0	8	10	2	IN	0	8	9	1	of	8	8	9	0	NP	0	9	10	1	NNS	0	9	10	1	others	9	9	10	0	.	0	10	11	1	?	10	10	11	0	''	0	11	12	1	''	11	11	12	0
+EOS
+C	12
+5	2	2	3	9
+4	0	0	1	2
+3	1	0	2	4
+5	9	9	10	12
+0	3	3	4	1
+4	4	3	5	6
+4	6	6	7	2
+5	7	6	10	11
+4	8	6	9	7
+5	3	3	4	10
+2	3	3	4	2
+1	2	2	3	2
+R
+elaboration	LeftToRight	-1	-1	0	0	5	11	0	1	2	nil
+elaboration	LeftToRight	-1	-1	0	0	2	6	0	0	2	nil
+nil	None	-1	-1	0	0	0	4	0	0	0	`` What 's this ?
+elaboration	LeftToRight	-1	-1	1	0	2	6	0	0	2	nil
+nil	None	-1	-1	1	0	1	3	0	0	0	Who are you ?
+nil	None	-1	-1	2	0	2	6	0	0	0	From where do you come ? ''
+elaboration	LeftToRight	-1	-1	3	0	5	11	0	1	2	nil
+nil	None	-1	-1	3	0	3	3	0	0	0	the giant boomed .
+elaboration	LeftToRight	-1	-1	4	0	5	11	0	1	2	nil
+nil	None	-1	-1	4	0	4	9	0	0	0	He glared at the Greeks with his single eye .
+elaboration	LeftToRight	-1	-1	5	0	5	11	0	1	2	nil
+nil	None	-1	-1	5	0	5	3	0	0	0	`` Are you pirates
+nil	None	-1	-1	5	4	5	11	1	1	0	who steal the treasure of others ? ''
+EOD
+S	2
+T	8
+Odysseus	0	8	NNP	Odysseus	PERSON	O	_
+'	8	9	POS	'	O	O	_
+men	10	13	NNS	man	O	O	_
+were	14	18	VBD	be	O	O	_
+frozen	19	25	VBN	freeze	O	O	_
+with	26	30	IN	with	O	O	_
+terror	31	37	NN	terror	O	O	_
+.	37	38	.	.	O	O	_
+D	1	7
+4
+2	0	poss
+4	2	nsubjpass
+4	3	auxpass
+4	6	prep_with
+EOX
+D	0	7
+4
+2	0	poss
+4	2	nsubjpass
+4	3	auxpass
+4	5	prep
+5	6	pobj
+EOX
+Y	1
+ROOT	0	0	8	1	S	1	0	8	3	NP	1	0	3	2	NP	0	0	2	2	NNP	0	0	1	1	Odysseus	0	0	1	0	POS	0	1	2	1	'	1	1	2	0	NNS	0	2	3	1	men	2	2	3	0	VP	1	3	7	2	VBD	0	3	4	1	were	3	3	4	0	VP	0	4	7	2	VBN	0	4	5	1	frozen	4	4	5	0	PP	0	5	7	2	IN	0	5	6	1	with	5	5	6	0	NP	0	6	7	1	NN	0	6	7	1	terror	6	6	7	0	.	0	7	8	1	.	7	7	8	0
+EOS
+T	12
+But	39	42	CC	but	O	O	_
+Odysseus	43	51	NNP	Odysseus	PERSON	O	_
+hid	52	55	VBD	hide	O	O	_
+his	56	59	PRP$	he	O	O	_
+own	60	63	JJ	own	O	O	_
+fear	64	68	NN	fear	O	O	_
+and	69	72	CC	and	O	O	_
+stepped	73	80	VBD	step	O	O	_
+toward	81	87	IN	toward	O	O	_
+the	88	91	DT	the	O	O	_
+monster	92	99	NN	monster	O	O	_
+.	99	100	.	.	O	O	_
+D	1	11
+2
+2	1	nsubj
+2	5	dobj
+2	7	conj_and
+5	3	poss
+5	4	amod
+7	1	nsubj
+7	10	prep_toward
+10	9	det
+EOX
+D	0	11
+2
+2	0	cc
+2	1	nsubj
+2	5	dobj
+2	6	cc
+2	7	conj
+5	3	poss
+5	4	amod
+7	8	prep
+8	10	pobj
+10	9	det
+EOX
+Y	1
+ROOT	0	0	12	1	S	2	0	12	4	CC	0	0	1	1	But	0	0	1	0	NP	0	1	2	1	NNP	0	1	2	1	Odysseus	1	1	2	0	VP	0	2	11	3	VP	0	2	6	2	VBD	0	2	3	1	hid	2	2	3	0	NP	2	3	6	3	PRP$	0	3	4	1	his	3	3	4	0	JJ	0	4	5	1	own	4	4	5	0	NN	0	5	6	1	fear	5	5	6	0	CC	0	6	7	1	and	6	6	7	0	VP	0	7	11	2	VBD	0	7	8	1	stepped	7	7	8	0	PP	0	8	11	2	IN	0	8	9	1	toward	8	8	9	0	NP	1	9	11	2	DT	0	9	10	1	the	9	9	10	0	NN	0	10	11	1	monster	10	10	11	0	.	0	11	12	1	.	11	11	12	0
+EOS
+C	6
+1	5	3	6	4
+0	2	0	3	1
+0	0	0	2	2
+1	1	1	2	2
+1	10	9	11	6
+1	3	3	4	2
+R
+joint	None	-1	-1	0	0	1	11	0	1	2	nil
+nil	None	-1	-1	0	0	0	7	0	0	0	Odysseus ' men were frozen with terror .
+joint	None	-1	-1	1	0	1	11	0	1	2	nil
+nil	None	-1	-1	1	0	1	5	0	0	0	But Odysseus hid his own fear
+nil	None	-1	-1	1	6	1	11	1	1	0	and stepped toward the monster .
+EOD
+S	4
+T	21
+``	0	1	``	``	O	O	_
+We	1	3	PRP	we	O	O	_
+are	4	7	VBP	be	O	O	_
+not	8	11	RB	not	O	O	_
+pirates	12	19	NNS	pirate	O	O	_
+,	19	20	,	,	O	O	_
+''	20	21	''	''	O	O	_
+he	22	24	PRP	he	O	O	_
+said	25	29	VBD	say	O	O	_
+,	29	30	,	,	O	O	_
+``	31	32	``	``	O	O	_
+We	32	34	PRP	we	O	O	_
+are	35	38	VBP	be	O	O	_
+Greeks	39	45	NNPS	Greeks	MISC	O	_
+blown	46	51	VBN	blow	O	O	_
+off	52	55	RP	off	O	O	_
+course	56	62	NN	course	O	O	_
+by	63	65	IN	by	O	O	_
+storm	66	71	NN	storm	O	O	_
+winds	72	77	NNS	wind	O	O	_
+.	77	78	.	.	O	O	_
+D	1	20
+8
+4	1	nsubj
+4	2	cop
+4	3	neg
+8	4	ccomp
+8	7	nsubj
+8	13	ccomp
+13	11	nsubj
+13	12	cop
+13	14	vmod
+14	15	prt
+14	16	dobj
+14	19	agent
+19	18	nn
+EOX
+D	0	20
+8
+4	1	nsubj
+4	2	cop
+4	3	neg
+8	4	ccomp
+8	7	nsubj
+8	13	ccomp
+13	11	nsubj
+13	12	cop
+13	14	vmod
+14	15	prt
+14	16	dobj
+14	17	prep
+17	19	pobj
+19	18	nn
+EOX
+Y	1
+ROOT	0	0	21	1	S	5	0	21	7	``	0	0	1	1	``	0	0	1	0	S	1	1	5	2	NP	0	1	2	1	PRP	0	1	2	1	We	1	1	2	0	VP	2	2	5	3	VBP	0	2	3	1	are	2	2	3	0	RB	0	3	4	1	not	3	3	4	0	NP	0	4	5	1	NNS	0	4	5	1	pirates	4	4	5	0	,	0	5	6	1	,	5	5	6	0	''	0	6	7	1	''	6	6	7	0	NP	0	7	8	1	PRP	0	7	8	1	he	7	7	8	0	VP	0	8	20	4	VBD	0	8	9	1	said	8	8	9	0	,	0	9	10	1	,	9	9	10	0	``	0	10	11	1	``	10	10	11	0	S	1	11	20	2	NP	0	11	12	1	PRP	0	11	12	1	We	11	11	12	0	VP	1	12	20	2	VBP	0	12	13	1	are	12	12	13	0	NP	0	13	20	2	NP	0	13	14	1	NNPS	0	13	14	1	Greeks	13	13	14	0	VP	0	14	20	4	VBN	0	14	15	1	blown	14	14	15	0	PRT	0	15	16	1	RP	0	15	16	1	off	15	15	16	0	NP	0	16	17	1	NN	0	16	17	1	course	16	16	17	0	PP	0	17	20	2	IN	0	17	18	1	by	17	17	18	0	NP	1	18	20	2	NN	0	18	19	1	storm	18	18	19	0	NNS	0	19	20	1	winds	19	19	20	0	.	0	20	21	1	.	20	20	21	0
+EOS
+T	13
+Will	79	83	MD	will	O	O	_
+you	84	87	PRP	you	O	O	_
+offer	88	93	VB	offer	O	O	_
+us	94	96	PRP	we	O	O	_
+the	97	100	DT	the	O	O	_
+gift	101	105	NN	gift	O	O	_
+of	106	108	IN	of	O	O	_
+hospitality	109	120	NN	hospitality	O	O	_
+like	121	125	IN	like	O	O	_
+a	126	127	DT	a	O	O	_
+good	128	132	JJ	good	O	O	_
+host	133	137	NN	host	O	O	_
+?	137	138	.	?	O	O	_
+D	1	12
+2
+2	0	aux
+2	1	nsubj
+2	3	iobj
+2	5	dobj
+5	4	det
+5	7	prep_of
+7	11	prep_like
+11	9	det
+11	10	amod
+EOX
+D	0	12
+2
+2	0	aux
+2	1	nsubj
+2	3	iobj
+2	5	dobj
+5	4	det
+5	6	prep
+6	7	pobj
+7	8	prep
+8	11	pobj
+11	9	det
+11	10	amod
+EOX
+Y	1
+ROOT	0	0	13	1	SQ	2	0	13	4	MD	0	0	1	1	Will	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	you	1	1	2	0	VP	0	2	12	3	VB	0	2	3	1	offer	2	2	3	0	NP	0	3	4	1	PRP	0	3	4	1	us	3	3	4	0	NP	0	4	12	2	NP	1	4	6	2	DT	0	4	5	1	the	4	4	5	0	NN	0	5	6	1	gift	5	5	6	0	PP	0	6	12	2	IN	0	6	7	1	of	6	6	7	0	NP	0	7	12	2	NP	0	7	8	1	NN	0	7	8	1	hospitality	7	7	8	0	PP	0	8	12	2	IN	0	8	9	1	like	8	8	9	0	NP	2	9	12	3	DT	0	9	10	1	a	9	9	10	0	JJ	0	10	11	1	good	10	10	11	0	NN	0	11	12	1	host	11	11	12	0	.	0	12	13	1	?	12	12	13	0
+EOS
+T	16
+If	139	141	IN	if	O	O	_
+you	142	145	PRP	you	O	O	_
+do	146	148	VBP	do	O	O	_
+,	148	149	,	,	O	O	_
+mighty	150	156	JJ	mighty	O	O	_
+Zeus	157	161	NNP	Zeus	O	O	_
+,	161	162	,	,	O	O	_
+king	163	167	NN	king	O	O	_
+of	168	170	IN	of	O	O	_
+the	171	174	DT	the	O	O	_
+gods	175	179	NNS	god	O	O	_
+,	179	180	,	,	O	O	_
+will	181	185	MD	will	O	O	_
+be	186	188	VB	be	O	O	_
+pleased	189	196	VBN	please	O	O	_
+.	196	197	.	.	O	O	_
+D	1	15
+14
+2	0	mark
+2	1	nsubj
+5	4	amod
+5	7	appos
+7	10	prep_of
+10	9	det
+14	2	advcl
+14	5	nsubjpass
+14	12	aux
+14	13	auxpass
+EOX
+D	0	15
+14
+2	0	mark
+2	1	nsubj
+5	4	amod
+5	7	appos
+7	8	prep
+8	10	pobj
+10	9	det
+14	2	advcl
+14	5	nsubjpass
+14	12	aux
+14	13	auxpass
+EOX
+Y	1
+ROOT	0	0	16	1	S	3	0	16	5	SBAR	1	0	3	2	IN	0	0	1	1	If	0	0	1	0	S	1	1	3	2	NP	0	1	2	1	PRP	0	1	2	1	you	1	1	2	0	VP	0	2	3	1	VBP	0	2	3	1	do	2	2	3	0	,	0	3	4	1	,	3	3	4	0	NP	0	4	12	4	NP	1	4	6	2	JJ	0	4	5	1	mighty	4	4	5	0	NNP	0	5	6	1	Zeus	5	5	6	0	,	0	6	7	1	,	6	6	7	0	NP	0	7	11	2	NP	0	7	8	1	NN	0	7	8	1	king	7	7	8	0	PP	0	8	11	2	IN	0	8	9	1	of	8	8	9	0	NP	1	9	11	2	DT	0	9	10	1	the	9	9	10	0	NNS	0	10	11	1	gods	10	10	11	0	,	0	11	12	1	,	11	11	12	0	VP	1	12	15	2	MD	0	12	13	1	will	12	12	13	0	VP	1	13	15	2	VB	0	13	14	1	be	13	13	14	0	VP	0	14	15	1	VBN	0	14	15	1	pleased	14	14	15	0	.	0	15	16	1	.	15	15	16	0
+EOS
+T	9
+Zeus	198	202	NNP	Zeus	O	O	_
+is	203	205	VBZ	be	O	O	_
+the	206	209	DT	the	O	O	_
+guardian	210	218	NN	guardian	O	O	_
+of	219	221	IN	of	O	O	_
+all	222	225	DT	all	O	O	_
+strangers	226	235	NNS	stranger	O	O	_
+.	235	236	.	.	O	O	_
+''	236	237	''	''	O	O	_
+D	1	7
+3
+3	0	nsubj
+3	1	cop
+3	2	det
+3	6	prep_of
+6	5	det
+EOX
+D	0	7
+3
+3	0	nsubj
+3	1	cop
+3	2	det
+3	4	prep
+4	6	pobj
+6	5	det
+EOX
+Y	1
+ROOT	0	0	9	1	S	1	0	9	4	NP	0	0	1	1	NNP	0	0	1	1	Zeus	0	0	1	0	VP	1	1	7	2	VBZ	0	1	2	1	is	1	1	2	0	NP	0	2	7	2	NP	1	2	4	2	DT	0	2	3	1	the	2	2	3	0	NN	0	3	4	1	guardian	3	3	4	0	PP	0	4	7	2	IN	0	4	5	1	of	4	4	5	0	NP	1	5	7	2	DT	0	5	6	1	all	5	5	6	0	NNS	0	6	7	1	strangers	6	6	7	0	.	0	7	8	1	.	7	7	8	0	''	0	8	9	1	''	8	8	9	0
+EOS
+C	17
+2	5	4	11	13
+1	5	4	12	9
+0	19	18	20	6
+2	10	9	11	16
+0	7	7	8	3
+3	0	0	1	14
+1	11	9	12	11
+1	1	1	2	7
+0	4	4	5	1
+0	13	13	20	5
+1	3	3	4	4
+2	7	7	11	14
+0	11	11	12	4
+0	1	1	2	1
+3	3	2	7	14
+1	7	7	12	10
+2	1	1	2	7
+R
+elaboration	LeftToRight	-1	-1	0	0	3	8	0	0	2	nil
+attribution	RightToLeft	-1	-1	0	0	0	20	0	3	2	nil
+attribution	LeftToRight	-1	-1	0	0	0	9	0	1	2	nil
+nil	None	-1	-1	0	0	0	6	0	0	0	`` We are not pirates , ''
+nil	None	-1	-1	0	7	0	9	1	1	0	he said ,
+elaboration	LeftToRight	-1	-1	0	10	0	20	2	3	2	nil
+nil	None	-1	-1	0	10	0	13	2	2	0	`` We are Greeks
+nil	None	-1	-1	0	14	0	20	3	3	0	blown off course by storm winds .
+elaboration	LeftToRight	-1	-1	1	0	3	8	0	0	2	nil
+topic-comment	None	-1	-1	1	0	2	15	0	2	2	nil
+nil	None	-1	-1	1	0	1	12	0	0	0	Will you offer us the gift of hospitality like a good host ?
+condition	RightToLeft	-1	-1	2	0	2	15	0	2	2	nil
+nil	None	-1	-1	2	0	2	3	0	0	0	If you do ,
+same-unit	None	-1	-1	2	4	2	15	1	2	2	nil
+nil	None	-1	-1	2	4	2	11	1	1	0	mighty Zeus , king of the gods ,
+nil	None	-1	-1	2	12	2	15	2	2	0	will be pleased .
+nil	None	-1	-1	3	0	3	8	0	0	0	Zeus is the guardian of all strangers . ''
+EOD
+S	5
+T	4
+``	0	1	``	``	O	O	_
+Fool	1	5	NN	fool	O	O	_
+!	5	6	.	!	O	O	_
+''	6	7	''	''	O	O	_
+D	1	0
+1
+EOX
+D	0	0
+1
+EOX
+Y	1
+ROOT	0	0	4	1	INTJ	1	0	4	4	``	0	0	1	1	``	0	0	1	0	NN	0	1	2	1	Fool	1	1	2	0	.	0	2	3	1	!	2	2	3	0	''	0	3	4	1	''	3	3	4	0
+EOS
+T	4
+the	8	11	DT	the	O	O	_
+giant	12	17	JJ	giant	O	O	_
+growled	18	25	VBN	growl	O	O	_
+.	25	26	.	.	O	O	_
+D	1	3
+2
+1	0	det
+2	1	nsubj
+EOX
+D	0	3
+2
+1	0	det
+2	1	nsubj
+EOX
+Y	1
+ROOT	0	0	4	1	S	1	0	4	3	NP	1	0	2	2	DT	0	0	1	1	the	0	0	1	0	JJ	0	1	2	1	giant	1	1	2	0	VP	0	2	3	1	VBN	0	2	3	1	growled	2	2	3	0	.	0	3	4	1	.	3	3	4	0
+EOS
+T	11
+``	27	28	``	``	O	O	_
+Who	28	31	WP	who	O	O	_
+are	32	35	VBP	be	O	O	_
+you	36	39	PRP	you	O	O	_
+to	40	42	TO	to	O	O	_
+tell	43	47	VB	tell	O	O	_
+me	48	50	PRP	I	O	O	_
+to	51	53	TO	to	O	O	_
+please	54	60	VB	please	O	O	_
+Zeus	61	65	NNP	Zeus	O	O	_
+?	65	66	.	?	O	O	_
+D	1	10
+1
+1	2	cop
+1	3	nsubj
+1	5	vmod
+5	4	aux
+5	6	dobj
+5	8	xcomp
+8	7	aux
+8	9	dobj
+EOX
+D	0	10
+1
+1	2	cop
+1	3	nsubj
+1	5	vmod
+5	4	aux
+5	6	dobj
+5	8	xcomp
+8	7	aux
+8	9	dobj
+EOX
+Y	1
+ROOT	0	0	11	1	SBARQ	2	0	11	4	``	0	0	1	1	``	0	0	1	0	WHNP	0	1	2	1	WP	0	1	2	1	Who	1	1	2	0	SQ	0	2	10	3	VBP	0	2	3	1	are	2	2	3	0	NP	0	3	4	1	PRP	0	3	4	1	you	3	3	4	0	S	0	4	10	1	VP	1	4	10	2	TO	0	4	5	1	to	4	4	5	0	VP	0	5	10	2	VB	0	5	6	1	tell	5	5	6	0	S	1	6	10	2	NP	0	6	7	1	PRP	0	6	7	1	me	6	6	7	0	VP	1	7	10	2	TO	0	7	8	1	to	7	7	8	0	VP	0	8	10	2	VB	0	8	9	1	please	8	8	9	0	NP	0	9	10	1	NNP	0	9	10	1	Zeus	9	9	10	0	.	0	10	11	1	?	10	10	11	0
+EOS
+T	12
+I	67	68	PRP	I	O	O	_
+am	69	71	VBP	be	O	O	_
+a	72	73	DT	a	O	O	_
+son	74	77	NN	son	O	O	_
+of	78	80	IN	of	O	O	_
+Poseidon	81	89	NNP	Poseidon	O	O	_
+,	89	90	,	,	O	O	_
+god	91	94	NN	god	O	O	_
+of	95	97	IN	of	O	O	_
+the	98	101	DT	the	O	O	_
+seas	102	106	NNS	sea	O	O	_
+!	106	107	.	!	O	O	_
+D	1	11
+3
+3	0	nsubj
+3	1	cop
+3	2	det
+3	5	prep_of
+5	7	appos
+7	10	prep_of
+10	9	det
+EOX
+D	0	11
+3
+3	0	nsubj
+3	1	cop
+3	2	det
+3	4	prep
+4	5	pobj
+5	7	appos
+7	8	prep
+8	10	pobj
+10	9	det
+EOX
+Y	1
+ROOT	0	0	12	1	S	1	0	12	3	NP	0	0	1	1	PRP	0	0	1	1	I	0	0	1	0	VP	1	1	11	2	VBP	0	1	2	1	am	1	1	2	0	NP	0	2	11	2	NP	1	2	4	2	DT	0	2	3	1	a	2	2	3	0	NN	0	3	4	1	son	3	3	4	0	PP	0	4	11	2	IN	0	4	5	1	of	4	4	5	0	NP	0	5	11	3	NP	0	5	6	1	NNP	0	5	6	1	Poseidon	5	5	6	0	,	0	6	7	1	,	6	6	7	0	NP	0	7	11	2	NP	0	7	8	1	NN	0	7	8	1	god	7	7	8	0	PP	0	8	11	2	IN	0	8	9	1	of	8	8	9	0	NP	1	9	11	2	DT	0	9	10	1	the	9	9	10	0	NNS	0	10	11	1	seas	10	10	11	0	.	0	11	12	1	!	11	11	12	0
+EOS
+T	8
+I	108	109	PRP	I	O	O	_
+am	110	112	VBP	be	O	O	_
+not	113	116	RB	not	O	O	_
+afraid	117	123	JJ	afraid	O	O	_
+of	124	126	IN	of	O	O	_
+Zeus	127	131	NNP	Zeus	O	O	_
+!	131	132	.	!	O	O	_
+''	132	133	''	''	O	O	_
+D	1	6
+3
+3	0	nsubj
+3	1	cop
+3	2	neg
+3	5	prep_of
+EOX
+D	0	6
+3
+3	0	nsubj
+3	1	cop
+3	2	neg
+3	4	prep
+4	5	pobj
+EOX
+Y	1
+ROOT	0	0	8	1	S	1	0	8	4	NP	0	0	1	1	PRP	0	0	1	1	I	0	0	1	0	VP	2	1	6	3	VBP	0	1	2	1	am	1	1	2	0	RB	0	2	3	1	not	2	2	3	0	ADJP	0	3	6	2	JJ	0	3	4	1	afraid	3	3	4	0	PP	0	4	6	2	IN	0	4	5	1	of	4	4	5	0	NP	0	5	6	1	NNP	0	5	6	1	Zeus	5	5	6	0	.	0	6	7	1	!	6	6	7	0	''	0	7	8	1	''	7	7	8	0
+EOS
+C	11
+3	10	9	11	10
+4	0	0	1	3
+3	0	0	1	3
+1	1	0	2	1
+3	5	5	11	7
+4	5	5	6	4
+2	6	6	7	3
+2	9	9	10	4
+3	7	7	11	9
+3	3	2	11	3
+2	3	3	4	2
+R
+elaboration	LeftToRight	-1	-1	0	0	4	7	0	0	2	nil
+nil	None	-1	-1	0	0	0	3	0	0	0	`` Fool ! ''
+explanation	LeftToRight	-1	-1	1	0	4	7	0	0	2	nil
+nil	None	-1	-1	1	0	1	3	0	0	0	the giant growled .
+joint	None	-1	-1	2	0	4	7	0	0	2	nil
+nil	None	-1	-1	2	0	2	10	0	0	0	`` Who are you to tell me to please Zeus ?
+elaboration	LeftToRight	-1	-1	3	0	4	7	0	0	2	nil
+nil	None	-1	-1	3	0	3	11	0	0	0	I am a son of Poseidon , god of the seas !
+nil	None	-1	-1	4	0	4	7	0	0	0	I am not afraid of Zeus ! ''
+EOD
+S	1
+T	6
+Odysseus	0	8	NNP	Odysseus	ORGANIZATION	O	_
+men	9	12	NNS	man	O	O	_
+cowered	13	20	VBD	cower	O	O	_
+in	21	23	IN	in	O	O	_
+fear	24	28	NN	fear	O	O	_
+.	28	29	.	.	O	O	_
+D	1	5
+2
+1	0	nn
+2	1	nsubj
+2	4	prep_in
+EOX
+D	0	5
+2
+1	0	nn
+2	1	nsubj
+2	3	prep
+3	4	pobj
+EOX
+Y	1
+ROOT	0	0	6	1	S	1	0	6	3	NP	1	0	2	2	NNP	0	0	1	1	Odysseus	0	0	1	0	NNS	0	1	2	1	men	1	1	2	0	VP	0	2	5	2	VBD	0	2	3	1	cowered	2	2	3	0	PP	0	3	5	2	IN	0	3	4	1	in	3	3	4	0	NP	0	4	5	1	NN	0	4	5	1	fear	4	4	5	0	.	0	5	6	1	.	5	5	6	0
+EOS
+C	2
+0	1	0	2	2
+0	0	0	1	1
+R
+nil	None	-1	-1	0	0	0	5	0	0	0	Odysseus men cowered in fear .
+EOD
+S	4
+T	6
+Polyphemus	0	10	NN	polyphemus	O	O	_
+moved	11	16	VBD	move	O	O	_
+closer	17	23	RBR	closer	O	O	_
+to	24	26	TO	to	O	O	_
+Odysseus	27	35	NNP	Odysseus	PERSON	O	_
+.	35	36	.	.	O	O	_
+D	1	5
+1
+1	0	nsubj
+1	2	advmod
+1	4	prep_to
+EOX
+D	0	5
+1
+1	0	nsubj
+1	2	advmod
+1	3	prep
+3	4	pobj
+EOX
+Y	1
+ROOT	0	0	6	1	S	1	0	6	3	NP	0	0	1	1	NN	0	0	1	1	Polyphemus	0	0	1	0	VP	0	1	5	3	VBD	0	1	2	1	moved	1	1	2	0	ADVP	0	2	3	1	RBR	0	2	3	1	closer	2	2	3	0	PP	0	3	5	2	TO	0	3	4	1	to	3	3	4	0	NP	0	4	5	1	NNP	0	4	5	1	Odysseus	4	4	5	0	.	0	5	6	1	.	5	5	6	0
+EOS
+T	9
+He	37	39	PRP	he	O	O	_
+spoke	40	45	VBD	speak	O	O	_
+in	46	48	IN	in	O	O	_
+a	49	50	DT	a	O	O	_
+soft	51	55	JJ	soft	O	O	_
+,	55	56	,	,	O	O	_
+terrible	57	65	JJ	terrible	O	O	_
+voice	66	71	NN	voice	O	O	_
+.	71	72	.	.	O	O	_
+D	1	8
+1
+1	0	nsubj
+1	7	prep_in
+7	3	det
+7	4	amod
+7	6	amod
+EOX
+D	0	8
+1
+1	0	nsubj
+1	2	prep
+2	7	pobj
+7	3	det
+7	4	amod
+7	6	amod
+EOX
+Y	1
+ROOT	0	0	9	1	S	1	0	9	3	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	0	1	8	2	VBD	0	1	2	1	spoke	1	1	2	0	PP	0	2	8	2	IN	0	2	3	1	in	2	2	3	0	NP	4	3	8	5	DT	0	3	4	1	a	3	3	4	0	JJ	0	4	5	1	soft	4	4	5	0	,	0	5	6	1	,	5	5	6	0	JJ	0	6	7	1	terrible	6	6	7	0	NN	0	7	8	1	voice	7	7	8	0	.	0	8	9	1	.	8	8	9	0
+EOS
+T	12
+``	73	74	``	``	O	O	_
+But	74	77	CC	but	O	O	_
+tell	78	82	VB	tell	O	O	_
+me	83	85	PRP	I	O	O	_
+,	85	86	,	,	O	O	_
+stranger	87	95	NN	stranger	O	O	_
+,	95	96	,	,	O	O	_
+where	97	102	WRB	where	O	O	_
+is	103	105	VBZ	be	O	O	_
+your	106	110	PRP$	you	O	O	_
+ship	111	115	NN	ship	O	O	_
+?	115	116	.	?	O	O	_
+D	1	11
+2
+2	1	advmod
+2	3	dobj
+2	10	ccomp
+3	5	appos
+10	7	advmod
+10	8	cop
+10	9	poss
+EOX
+D	0	11
+2
+2	1	advmod
+2	3	dobj
+2	10	ccomp
+3	5	appos
+10	7	advmod
+10	8	cop
+10	9	poss
+EOX
+Y	1
+ROOT	0	0	12	1	SQ	0	0	12	2	VP	2	0	11	5	``	0	0	1	1	``	0	0	1	0	ADVP	0	1	2	1	CC	0	1	2	1	But	1	1	2	0	VB	0	2	3	1	tell	2	2	3	0	NP	0	3	7	4	NP	0	3	4	1	PRP	0	3	4	1	me	3	3	4	0	,	0	4	5	1	,	4	4	5	0	NP	0	5	6	1	NN	0	5	6	1	stranger	5	5	6	0	,	0	6	7	1	,	6	6	7	0	SBAR	1	7	11	2	WHADVP	0	7	8	1	WRB	0	7	8	1	where	7	7	8	0	S	0	8	11	1	VP	1	8	11	2	VBZ	0	8	9	1	is	8	8	9	0	NP	1	9	11	2	PRP$	0	9	10	1	your	9	9	10	0	NN	0	10	11	1	ship	10	10	11	0	.	0	11	12	1	?	11	11	12	0
+EOS
+T	7
+Near	117	121	IN	near	O	O	_
+or	122	124	CC	or	O	O	_
+far	125	128	RB	far	O	O	_
+from	129	133	IN	from	O	O	_
+shore	134	139	NN	shore	O	O	_
+?	139	140	.	?	O	O	_
+''	140	141	''	''	O	O	_
+D	1	5
+0
+0	1	cc
+0	4	prep_far_from
+EOX
+D	0	5
+0
+0	2	advmod
+0	3	prep
+2	1	cc
+3	4	pobj
+EOX
+Y	1
+ROOT	0	0	7	1	NP	0	0	7	4	NP	0	0	3	2	ADJP	0	0	1	1	IN	0	0	1	1	Near	0	0	1	0	ADVP	1	1	3	2	CC	0	1	2	1	or	1	1	2	0	RB	0	2	3	1	far	2	2	3	0	PP	0	3	5	2	IN	0	3	4	1	from	3	3	4	0	NP	0	4	5	1	NN	0	4	5	1	shore	4	4	5	0	.	0	5	6	1	?	5	5	6	0	''	0	6	7	1	''	6	6	7	0
+EOS
+C	7
+2	10	9	11	6
+3	0	0	7	8
+0	4	4	5	1
+2	9	9	10	7
+1	7	3	8	3
+2	3	3	6	1
+1	0	0	1	1
+R
+elaboration	LeftToRight	-1	-1	0	0	3	6	0	0	2	nil
+nil	None	-1	-1	0	0	0	5	0	0	0	Polyphemus moved closer to Odysseus .
+explanation	LeftToRight	-1	-1	1	0	3	6	0	0	2	nil
+nil	None	-1	-1	1	0	1	8	0	0	0	He spoke in a soft , terrible voice .
+elaboration	LeftToRight	-1	-1	2	0	3	6	0	0	2	nil
+elaboration	LeftToRight	-1	-1	2	0	2	11	0	1	2	nil
+nil	None	-1	-1	2	0	2	6	0	0	0	`` But tell me , stranger ,
+nil	None	-1	-1	2	7	2	11	1	1	0	where is your ship ?
+nil	None	-1	-1	3	0	3	6	0	0	0	Near or far from shore ? ''
+EOD
+S	4
+T	9
+Odysseus	0	8	NNP	Odysseus	PERSON	O	_
+knew	9	13	VBD	know	O	O	_
+Polyphemus	14	24	NN	polyphemus	O	O	_
+was	25	28	VBD	be	O	O	_
+trying	29	35	VBG	try	O	O	_
+to	36	38	TO	to	O	O	_
+trap	39	43	NN	trap	O	O	_
+him	44	47	PRP	he	O	O	_
+.	47	48	.	.	O	O	_
+D	1	8
+1
+1	0	nsubj
+1	4	ccomp
+4	2	nsubj
+4	3	aux
+4	6	xcomp
+6	5	aux
+6	7	dobj
+EOX
+D	0	8
+1
+1	0	nsubj
+1	4	ccomp
+4	2	nsubj
+4	3	aux
+4	6	xcomp
+6	5	aux
+6	7	dobj
+EOX
+Y	1
+ROOT	0	0	9	1	S	1	0	9	3	NP	0	0	1	1	NNP	0	0	1	1	Odysseus	0	0	1	0	VP	0	1	8	2	VBD	0	1	2	1	knew	1	1	2	0	SBAR	0	2	8	1	S	1	2	8	2	NP	0	2	3	1	NN	0	2	3	1	Polyphemus	2	2	3	0	VP	1	3	8	2	VBD	0	3	4	1	was	3	3	4	0	VP	0	4	8	2	VBG	0	4	5	1	trying	4	4	5	0	S	0	5	8	1	VP	1	5	8	2	TO	0	5	6	1	to	5	5	6	0	VP	0	6	8	2	NN	0	6	7	1	trap	6	6	7	0	NP	0	7	8	1	PRP	0	7	8	1	him	7	7	8	0	.	0	8	9	1	.	8	8	9	0
+EOS
+T	13
+``	49	50	``	``	O	O	_
+Our	50	53	PRP$	we	O	O	_
+ship	54	58	NN	ship	O	O	_
+was	59	62	VBD	be	O	O	_
+destroyed	63	72	VBN	destroy	O	O	_
+in	73	75	IN	in	O	O	_
+the	76	79	DT	the	O	O	_
+storm	80	85	NN	storm	O	O	_
+,	85	86	,	,	O	O	_
+''	86	87	''	''	O	O	_
+he	88	90	PRP	he	O	O	_
+lied	91	95	VBD	lie	O	O	_
+.	95	96	.	.	O	O	_
+D	1	12
+11
+2	1	poss
+4	2	nsubjpass
+4	3	auxpass
+4	7	prep_in
+7	6	det
+11	4	ccomp
+11	10	nsubj
+EOX
+D	0	12
+11
+2	1	poss
+4	2	nsubjpass
+4	3	auxpass
+4	5	prep
+5	7	pobj
+7	6	det
+11	4	ccomp
+11	10	nsubj
+EOX
+Y	1
+ROOT	0	0	13	1	S	5	0	13	7	``	0	0	1	1	``	0	0	1	0	S	1	1	8	2	NP	1	1	3	2	PRP$	0	1	2	1	Our	1	1	2	0	NN	0	2	3	1	ship	2	2	3	0	VP	1	3	8	2	VBD	0	3	4	1	was	3	3	4	0	VP	0	4	8	2	VBN	0	4	5	1	destroyed	4	4	5	0	PP	0	5	8	2	IN	0	5	6	1	in	5	5	6	0	NP	1	6	8	2	DT	0	6	7	1	the	6	6	7	0	NN	0	7	8	1	storm	7	7	8	0	,	0	8	9	1	,	8	8	9	0	''	0	9	10	1	''	9	9	10	0	NP	0	10	11	1	PRP	0	10	11	1	he	10	10	11	0	VP	0	11	12	1	VBD	0	11	12	1	lied	11	11	12	0	.	0	12	13	1	.	12	12	13	0
+EOS
+T	8
+``	97	98	``	``	O	O	_
+It	98	100	PRP	it	O	O	_
+was	101	104	VBD	be	O	O	_
+dashed	105	111	VBN	dash	O	O	_
+against	112	119	IN	against	O	O	_
+the	120	123	DT	the	O	O	_
+rocks	124	129	NNS	rock	O	O	_
+.	129	130	.	.	O	O	_
+D	1	7
+3
+3	1	nsubjpass
+3	2	auxpass
+3	6	prep_against
+6	5	det
+EOX
+D	0	7
+3
+3	1	nsubjpass
+3	2	auxpass
+3	4	prep
+4	6	pobj
+6	5	det
+EOX
+Y	1
+ROOT	0	0	8	1	S	2	0	8	4	``	0	0	1	1	``	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	It	1	1	2	0	VP	1	2	7	2	VBD	0	2	3	1	was	2	2	3	0	VP	0	3	7	2	VBN	0	3	4	1	dashed	3	3	4	0	PP	0	4	7	2	IN	0	4	5	1	against	4	4	5	0	NP	1	5	7	2	DT	0	5	6	1	the	5	5	6	0	NNS	0	6	7	1	rocks	6	6	7	0	.	0	7	8	1	.	7	7	8	0
+EOS
+T	18
+With	131	135	IN	with	O	O	_
+these	136	141	DT	these	O	O	_
+good	142	146	JJ	good	O	O	_
+men	147	150	NNS	man	O	O	_
+I	151	152	PRP	I	O	O	_
+escaped	153	160	VBD	escape	O	O	_
+,	160	161	,	,	O	O	_
+I	162	163	PRP	I	O	O	_
+ask	164	167	VBP	ask	O	O	_
+you	168	171	PRP	you	O	O	_
+again	172	177	RB	again	O	O	_
+,	177	178	,	,	O	O	_
+will	179	183	MD	will	O	O	_
+you	184	187	PRP	you	O	O	_
+welcome	188	195	VB	welcome	O	O	_
+us	196	198	PRP	we	O	O	_
+?	198	199	.	?	O	O	_
+''	199	200	''	''	O	O	_
+D	1	16
+5
+3	1	det
+3	2	amod
+5	3	prep_with
+5	4	nsubj
+5	8	parataxis
+5	14	dep
+8	7	nsubj
+8	9	dobj
+8	10	advmod
+14	12	aux
+14	13	nsubj
+14	15	dobj
+EOX
+D	0	16
+5
+0	3	pobj
+3	1	det
+3	2	amod
+5	0	prep
+5	4	nsubj
+5	8	parataxis
+5	14	dep
+8	7	nsubj
+8	9	dobj
+8	10	advmod
+14	12	aux
+14	13	nsubj
+14	15	dobj
+EOX
+Y	1
+ROOT	0	0	18	1	S	0	0	18	7	S	2	0	6	3	PP	0	0	4	2	IN	0	0	1	1	With	0	0	1	0	NP	2	1	4	3	DT	0	1	2	1	these	1	1	2	0	JJ	0	2	3	1	good	2	2	3	0	NNS	0	3	4	1	men	3	3	4	0	NP	0	4	5	1	PRP	0	4	5	1	I	4	4	5	0	VP	0	5	6	1	VBD	0	5	6	1	escaped	5	5	6	0	,	0	6	7	1	,	6	6	7	0	S	1	7	11	2	NP	0	7	8	1	PRP	0	7	8	1	I	7	7	8	0	VP	0	8	11	3	VBP	0	8	9	1	ask	8	8	9	0	NP	0	9	10	1	PRP	0	9	10	1	you	9	9	10	0	ADVP	0	10	11	1	RB	0	10	11	1	again	10	10	11	0	,	0	11	12	1	,	11	11	12	0	SBAR	0	12	16	1	SINV	2	12	16	3	MD	0	12	13	1	will	12	12	13	0	NP	0	13	14	1	PRP	0	13	14	1	you	13	13	14	0	VP	0	14	16	2	VB	0	14	15	1	welcome	14	14	15	0	NP	0	15	16	1	PRP	0	15	16	1	us	15	15	16	0	.	0	16	17	1	?	16	16	17	0	''	0	17	18	1	''	17	17	18	0
+EOS
+C	14
+3	9	9	10	12
+0	0	0	1	1
+3	4	4	5	1
+3	13	13	14	12
+0	7	7	8	1
+1	1	1	2	4
+1	10	10	11	1
+2	6	5	7	8
+3	7	7	8	1
+3	15	15	16	4
+3	3	1	4	9
+1	7	6	8	5
+1	2	1	3	3
+2	1	1	2	3
+R
+elaboration	LeftToRight	-1	-1	0	0	3	17	0	3	2	nil
+evaluation	LeftToRight	-1	-1	0	0	1	12	0	1	2	nil
+nil	None	-1	-1	0	0	0	8	0	0	0	Odysseus knew Polyphemus was trying to trap him .
+attribution	LeftToRight	-1	-1	1	0	1	12	0	1	2	nil
+nil	None	-1	-1	1	0	1	9	0	0	0	`` Our ship was destroyed in the storm , ''
+nil	None	-1	-1	1	10	1	12	1	1	0	he lied .
+elaboration	LeftToRight	-1	-1	2	0	3	17	0	3	2	nil
+nil	None	-1	-1	2	0	2	7	0	0	0	`` It was dashed against the rocks .
+cause	LeftToRight	-1	-1	3	0	3	17	0	3	2	nil
+elaboration	LeftToRight	-1	-1	3	0	3	6	0	1	2	nil
+nil	None	-1	-1	3	0	3	3	0	0	0	With these good men
+nil	None	-1	-1	3	4	3	6	1	1	0	I escaped ,
+attribution	LeftToRight	-1	-1	3	7	3	17	2	3	2	nil
+nil	None	-1	-1	3	7	3	11	2	2	0	I ask you again ,
+nil	None	-1	-1	3	12	3	17	3	3	0	will you welcome us ? ''
+EOD

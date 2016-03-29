@@ -1,0 +1,804 @@
+S	14
+T	23
+The	0	3	DT	the	O	O	_
+snow	4	8	NN	snow	O	O	_
+fell	9	13	VBD	fall	O	O	_
+for	14	17	IN	for	O	O	_
+three	18	23	CD	three	DURATION	P3D	_
+days	24	28	NNS	day	DURATION	P3D	_
+,	28	29	,	,	O	O	_
+though	30	36	IN	though	O	O	_
+after	37	42	IN	after	O	O	_
+the	43	46	DT	the	DURATION	PXD	_
+first	47	52	JJ	first	DURATION	PXD	_
+day	53	56	NN	day	DURATION	PXD	_
+it	57	59	PRP	it	O	O	_
+was	60	63	VBD	be	O	O	_
+not	64	67	RB	not	O	O	_
+as	68	70	IN	as	O	O	_
+thick	71	76	JJ	thick	O	O	_
+and	77	80	CC	and	O	O	_
+the	81	84	DT	the	O	O	_
+wind	85	89	NN	wind	O	O	_
+quieted	90	97	VBD	quiet	O	O	_
+down	98	102	RP	down	O	O	_
+.	102	103	.	.	O	O	_
+D	1	22
+2
+1	0	det
+2	1	nsubj
+2	5	prep_for
+2	16	advcl
+2	20	advcl
+5	4	num
+11	9	det
+11	10	amod
+16	7	mark
+16	11	prep_after
+16	12	nsubj
+16	13	cop
+16	14	neg
+16	15	dep
+16	20	conj_and
+19	18	det
+20	19	nsubj
+20	21	prt
+EOX
+D	0	22
+2
+1	0	det
+2	1	nsubj
+2	3	prep
+2	16	advcl
+3	5	pobj
+5	4	num
+8	11	pobj
+11	9	det
+11	10	amod
+16	7	mark
+16	8	prep
+16	12	nsubj
+16	13	cop
+16	14	neg
+16	15	dep
+16	17	cc
+16	20	conj
+19	18	det
+20	19	nsubj
+20	21	prt
+EOX
+Y	1
+ROOT	0	0	23	1	S	1	0	23	3	NP	1	0	2	2	DT	0	0	1	1	The	0	0	1	0	NN	0	1	2	1	snow	1	1	2	0	VP	0	2	22	4	VBD	0	2	3	1	fell	2	2	3	0	PP	0	3	6	2	IN	0	3	4	1	for	3	3	4	0	NP	1	4	6	2	CD	0	4	5	1	three	4	4	5	0	NNS	0	5	6	1	days	5	5	6	0	,	0	6	7	1	,	6	6	7	0	SBAR	1	7	22	2	IN	0	7	8	1	though	7	7	8	0	S	0	8	22	3	S	2	8	17	3	PP	0	8	12	2	IN	0	8	9	1	after	8	8	9	0	NP	2	9	12	3	DT	0	9	10	1	the	9	9	10	0	JJ	0	10	11	1	first	10	10	11	0	NN	0	11	12	1	day	11	11	12	0	NP	0	12	13	1	PRP	0	12	13	1	it	12	12	13	0	VP	2	13	17	3	VBD	0	13	14	1	was	13	13	14	0	RB	0	14	15	1	not	14	14	15	0	ADJP	1	15	17	2	IN	0	15	16	1	as	15	15	16	0	JJ	0	16	17	1	thick	16	16	17	0	CC	0	17	18	1	and	17	17	18	0	S	1	18	22	2	NP	1	18	20	2	DT	0	18	19	1	the	18	18	19	0	NN	0	19	20	1	wind	19	19	20	0	VP	0	20	22	2	VBD	0	20	21	1	quieted	20	20	21	0	PRT	0	21	22	1	RP	0	21	22	1	down	21	21	22	0	.	0	22	23	1	.	22	22	23	0
+EOS
+T	25
+Sometimes	104	113	RB	sometimes	O	O	_
+Aaron	114	119	NNP	Aaron	PERSON	O	_
+felt	120	124	VBD	feel	O	O	_
+that	125	129	IN	that	O	O	_
+there	130	135	EX	there	O	O	_
+could	136	141	MD	could	O	O	_
+never	142	147	RB	never	O	O	_
+have	148	152	VB	have	O	O	_
+been	153	157	VBN	be	O	O	_
+a	158	159	DT	a	O	O	_
+summer	160	166	NN	summer	DATE	XXXX-SU	_
+,	166	167	,	,	O	O	_
+that	168	172	IN	that	O	O	_
+the	173	176	DT	the	O	O	_
+snow	177	181	NN	snow	O	O	_
+had	182	185	VBD	have	O	O	_
+always	186	192	RB	always	O	O	_
+fallen	193	199	VBN	fall	O	O	_
+,	199	200	,	,	O	O	_
+ever	201	205	RB	ever	O	O	_
+since	206	211	IN	since	O	O	_
+he	212	214	PRP	he	O	O	_
+could	215	220	MD	could	O	O	_
+remember	221	229	VB	remember	O	O	_
+.	229	230	.	.	O	O	_
+D	1	24
+2
+2	0	advmod
+2	1	nsubj
+2	10	ccomp
+10	3	mark
+10	4	expl
+10	5	aux
+10	6	neg
+10	7	aux
+10	8	cop
+10	9	det
+10	17	dep
+14	13	det
+17	12	mark
+17	14	nsubj
+17	15	aux
+17	16	advmod
+17	23	advcl
+23	19	advmod
+23	20	mark
+23	21	nsubj
+23	22	aux
+EOX
+D	0	24
+2
+2	0	advmod
+2	1	nsubj
+2	10	ccomp
+10	3	mark
+10	4	expl
+10	5	aux
+10	6	neg
+10	7	aux
+10	8	cop
+10	9	det
+10	17	dep
+14	13	det
+17	12	mark
+17	14	nsubj
+17	15	aux
+17	16	advmod
+17	23	advcl
+23	19	advmod
+23	20	mark
+23	21	nsubj
+23	22	aux
+EOX
+Y	1
+ROOT	0	0	25	1	S	2	0	25	4	ADVP	0	0	1	1	RB	0	0	1	1	Sometimes	0	0	1	0	NP	0	1	2	1	NNP	0	1	2	1	Aaron	1	1	2	0	VP	0	2	24	2	VBD	0	2	3	1	felt	2	2	3	0	SBAR	1	3	24	2	IN	0	3	4	1	that	3	3	4	0	S	1	4	24	2	NP	0	4	5	1	EX	0	4	5	1	there	4	4	5	0	VP	2	5	24	3	MD	0	5	6	1	could	5	5	6	0	ADVP	0	6	7	1	RB	0	6	7	1	never	6	6	7	0	VP	1	7	24	2	VB	0	7	8	1	have	7	7	8	0	VP	1	8	24	2	VBN	0	8	9	1	been	8	8	9	0	NP	0	9	24	3	NP	1	9	11	2	DT	0	9	10	1	a	9	9	10	0	NN	0	10	11	1	summer	10	10	11	0	,	0	11	12	1	,	11	11	12	0	SBAR	1	12	24	2	IN	0	12	13	1	that	12	12	13	0	S	1	13	24	2	NP	1	13	15	2	DT	0	13	14	1	the	13	13	14	0	NN	0	14	15	1	snow	14	14	15	0	VP	1	15	24	2	VBD	0	15	16	1	had	15	15	16	0	VP	1	16	24	4	ADVP	0	16	17	1	RB	0	16	17	1	always	16	16	17	0	VBN	0	17	18	1	fallen	17	17	18	0	,	0	18	19	1	,	18	18	19	0	SBAR	2	19	24	3	RB	0	19	20	1	ever	19	19	20	0	IN	0	20	21	1	since	20	20	21	0	S	1	21	24	2	NP	0	21	22	1	PRP	0	21	22	1	he	21	21	22	0	VP	1	22	24	2	MD	0	22	23	1	could	22	22	23	0	VP	0	23	24	1	VB	0	23	24	1	remember	23	23	24	0	.	0	24	25	1	.	24	24	25	0
+EOS
+T	13
+He	231	233	PRP	he	O	O	_
+,	233	234	,	,	O	O	_
+Aaron	235	240	NNP	Aaron	PERSON	O	_
+,	240	241	,	,	O	O	_
+never	242	247	RB	never	O	O	_
+had	248	251	VBD	have	O	O	_
+a	252	253	DT	a	O	O	_
+father	254	260	NN	father	O	O	_
+or	261	263	CC	or	O	O	_
+mother	264	270	NN	mother	O	O	_
+or	271	273	CC	or	O	O	_
+sisters	274	281	NNS	sister	O	O	_
+.	281	282	.	.	O	O	_
+D	1	12
+5
+0	2	appos
+5	0	nsubj
+5	4	neg
+5	7	dobj
+5	9	dobj
+5	11	dobj
+7	6	det
+7	9	conj_or
+7	11	conj_or
+EOX
+D	0	12
+5
+0	2	appos
+5	0	nsubj
+5	4	neg
+5	7	dobj
+7	6	det
+7	8	cc
+7	9	conj
+7	10	cc
+7	11	conj
+EOX
+Y	1
+ROOT	0	0	13	1	S	2	0	13	4	NP	0	0	4	4	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	,	0	1	2	1	,	1	1	2	0	NP	0	2	3	1	NNP	0	2	3	1	Aaron	2	2	3	0	,	0	3	4	1	,	3	3	4	0	ADVP	0	4	5	1	RB	0	4	5	1	never	4	4	5	0	VP	0	5	12	2	VBD	0	5	6	1	had	5	5	6	0	NP	0	6	12	3	NP	1	6	10	4	DT	0	6	7	1	a	6	6	7	0	NN	0	7	8	1	father	7	7	8	0	CC	0	8	9	1	or	8	8	9	0	NN	0	9	10	1	mother	9	9	10	0	CC	0	10	11	1	or	10	10	11	0	NP	0	11	12	1	NNS	0	11	12	1	sisters	11	11	12	0	.	0	12	13	1	.	12	12	13	0
+EOS
+T	16
+He	283	285	PRP	he	O	O	_
+was	286	289	VBD	be	O	O	_
+a	290	291	DT	a	O	O	_
+snow	292	296	NN	snow	O	O	_
+child	297	302	NN	child	O	O	_
+,	302	303	,	,	O	O	_
+born	304	308	VBN	bear	O	O	_
+of	309	311	IN	of	O	O	_
+the	312	315	DT	the	O	O	_
+snow	316	320	NN	snow	O	O	_
+,	320	321	,	,	O	O	_
+and	322	325	CC	and	O	O	_
+so	326	328	RB	so	O	O	_
+was	329	332	VBD	be	O	O	_
+Zlateh	333	339	NNP	Zlateh	O	O	_
+.	339	340	.	.	O	O	_
+D	1	15
+4
+4	0	nsubj
+4	1	cop
+4	2	det
+4	3	nn
+4	6	vmod
+4	14	conj_and
+6	9	prep_of
+9	8	det
+14	12	advmod
+14	13	dep
+EOX
+D	0	15
+4
+4	0	nsubj
+4	1	cop
+4	2	det
+4	3	nn
+4	6	vmod
+4	11	cc
+4	14	conj
+6	7	prep
+7	9	pobj
+9	8	det
+14	12	advmod
+14	13	dep
+EOX
+Y	1
+ROOT	0	0	16	1	S	0	0	16	5	S	1	0	10	2	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	1	1	10	2	VBD	0	1	2	1	was	1	1	2	0	NP	0	2	10	3	NP	2	2	5	3	DT	0	2	3	1	a	2	2	3	0	NN	0	3	4	1	snow	3	3	4	0	NN	0	4	5	1	child	4	4	5	0	,	0	5	6	1	,	5	5	6	0	VP	0	6	10	2	VBN	0	6	7	1	born	6	6	7	0	PP	0	7	10	2	IN	0	7	8	1	of	7	7	8	0	NP	1	8	10	2	DT	0	8	9	1	the	8	8	9	0	NN	0	9	10	1	snow	9	9	10	0	,	0	10	11	1	,	10	10	11	0	CC	0	11	12	1	and	11	11	12	0	SINV	2	12	15	3	ADVP	0	12	13	1	RB	0	12	13	1	so	12	12	13	0	VBD	0	13	14	1	was	13	13	14	0	NP	0	14	15	1	NNP	0	14	15	1	Zlateh	14	14	15	0	.	0	15	16	1	.	15	15	16	0
+EOS
+T	15
+It	341	343	PRP	it	O	O	_
+was	344	347	VBD	be	O	O	_
+so	348	350	RB	so	O	O	_
+quiet	351	356	JJ	quiet	O	O	_
+in	357	359	IN	in	O	O	_
+the	360	363	DT	the	O	O	_
+hay	364	367	NN	hay	O	O	_
+that	368	372	IN	that	O	O	_
+his	373	376	PRP$	he	O	O	_
+ears	377	381	NNS	ear	O	O	_
+rang	382	386	VBD	ring	O	O	_
+in	387	389	IN	in	O	O	_
+the	390	393	DT	the	O	O	_
+stillness	394	403	NN	stillness	O	O	_
+.	403	404	.	.	O	O	_
+D	1	14
+3
+3	0	nsubj
+3	1	cop
+3	2	advmod
+3	6	prep_in
+3	10	ccomp
+6	5	det
+9	8	poss
+10	7	mark
+10	9	nsubj
+10	13	prep_in
+13	12	det
+EOX
+D	0	14
+3
+3	0	nsubj
+3	1	cop
+3	2	advmod
+3	4	prep
+3	10	ccomp
+4	6	pobj
+6	5	det
+9	8	poss
+10	7	mark
+10	9	nsubj
+10	11	prep
+11	13	pobj
+13	12	det
+EOX
+Y	1
+ROOT	0	0	15	1	S	1	0	15	3	NP	0	0	1	1	PRP	0	0	1	1	It	0	0	1	0	VP	1	1	14	3	VBD	0	1	2	1	was	1	1	2	0	ADJP	1	2	7	3	RB	0	2	3	1	so	2	2	3	0	JJ	0	3	4	1	quiet	3	3	4	0	PP	0	4	7	2	IN	0	4	5	1	in	4	4	5	0	NP	1	5	7	2	DT	0	5	6	1	the	5	5	6	0	NN	0	6	7	1	hay	6	6	7	0	SBAR	1	7	14	2	IN	0	7	8	1	that	7	7	8	0	S	1	8	14	2	NP	1	8	10	2	PRP$	0	8	9	1	his	8	8	9	0	NNS	0	9	10	1	ears	9	9	10	0	VP	0	10	14	2	VBD	0	10	11	1	rang	10	10	11	0	PP	0	11	14	2	IN	0	11	12	1	in	11	11	12	0	NP	1	12	14	2	DT	0	12	13	1	the	12	12	13	0	NN	0	13	14	1	stillness	13	13	14	0	.	0	14	15	1	.	14	14	15	0
+EOS
+T	14
+Aaron	405	410	NNP	Aaron	PERSON	O	_
+and	411	414	CC	and	O	O	_
+Zlateh	415	421	NNP	Zlateh	PERSON	O	_
+slept	422	427	VBD	sleep	O	O	_
+all	428	431	DT	all	O	O	_
+night	432	437	NN	night	TIME	TNI	_
+and	438	441	CC	and	O	O	_
+a	442	443	DT	a	O	O	_
+good	444	448	JJ	good	O	O	_
+part	449	453	NN	part	O	O	_
+of	454	456	IN	of	O	O	_
+the	457	460	DT	the	DATE	THIS P1D	_
+day	461	464	NN	day	DATE	THIS P1D	_
+.	464	465	.	.	O	O	_
+D	1	13
+3
+0	2	conj_and
+3	0	nsubj
+3	2	nsubj
+3	5	dobj
+3	9	dobj
+5	4	det
+5	9	conj_and
+9	7	det
+9	8	amod
+9	12	prep_of
+12	11	det
+EOX
+D	0	13
+3
+0	1	cc
+0	2	conj
+3	0	nsubj
+3	5	dobj
+5	4	det
+5	6	cc
+5	9	conj
+9	7	det
+9	8	amod
+9	10	prep
+10	12	pobj
+12	11	det
+EOX
+Y	1
+ROOT	0	0	14	1	S	1	0	14	3	NP	0	0	3	3	NNP	0	0	1	1	Aaron	0	0	1	0	CC	0	1	2	1	and	1	1	2	0	NNP	0	2	3	1	Zlateh	2	2	3	0	VP	0	3	13	2	VBD	0	3	4	1	slept	3	3	4	0	NP	0	4	13	3	NP	1	4	6	2	DT	0	4	5	1	all	4	4	5	0	NN	0	5	6	1	night	5	5	6	0	CC	0	6	7	1	and	6	6	7	0	NP	0	7	13	2	NP	2	7	10	3	DT	0	7	8	1	a	7	7	8	0	JJ	0	8	9	1	good	8	8	9	0	NN	0	9	10	1	part	9	9	10	0	PP	0	10	13	2	IN	0	10	11	1	of	10	10	11	0	NP	1	11	13	2	DT	0	11	12	1	the	11	11	12	0	NN	0	12	13	1	day	12	12	13	0	.	0	13	14	1	.	13	13	14	0
+EOS
+T	13
+As	466	468	IN	as	O	O	_
+for	469	472	IN	for	O	O	_
+Aaron	473	478	NNP	Aaron	PERSON	O	_
+'s	478	480	POS	's	O	O	_
+dreams	481	487	NNS	dream	O	O	_
+,	487	488	,	,	O	O	_
+they	489	493	PRP	they	O	O	_
+were	494	498	VBD	be	O	O	_
+all	499	502	DT	all	O	O	_
+about	503	508	IN	about	O	O	_
+warm	509	513	JJ	warm	O	O	_
+weather	514	521	NN	weather	O	O	_
+.	521	522	.	.	O	O	_
+D	1	12
+8
+4	2	poss
+8	1	prepc_as_for
+8	4	pobj
+8	6	nsubj
+8	7	cop
+8	11	prep_about
+11	10	amod
+EOX
+D	0	12
+8
+0	1	pcomp
+1	4	pobj
+2	3	possessive
+4	2	poss
+8	0	prep
+8	6	nsubj
+8	7	cop
+8	9	prep
+9	11	pobj
+11	10	amod
+EOX
+Y	1
+ROOT	0	0	13	1	S	3	0	13	5	PP	0	0	5	2	IN	0	0	1	1	As	0	0	1	0	PP	0	1	5	2	IN	0	1	2	1	for	1	1	2	0	NP	1	2	5	2	NP	0	2	4	2	NNP	0	2	3	1	Aaron	2	2	3	0	POS	0	3	4	1	's	3	3	4	0	NNS	0	4	5	1	dreams	4	4	5	0	,	0	5	6	1	,	5	5	6	0	NP	0	6	7	1	PRP	0	6	7	1	they	6	6	7	0	VP	1	7	12	2	VBD	0	7	8	1	were	7	7	8	0	NP	0	8	12	2	NP	0	8	9	1	DT	0	8	9	1	all	8	8	9	0	PP	0	9	12	2	IN	0	9	10	1	about	9	9	10	0	NP	1	10	12	2	JJ	0	10	11	1	warm	10	10	11	0	NN	0	11	12	1	weather	11	11	12	0	.	0	12	13	1	.	12	12	13	0
+EOS
+T	18
+He	523	525	PRP	he	O	O	_
+dreamed	526	533	VBD	dream	O	O	_
+of	534	536	IN	of	O	O	_
+green	537	542	JJ	green	O	O	_
+fields	543	549	NNS	field	O	O	_
+,	549	550	,	,	O	O	_
+trees	551	556	NNS	tree	O	O	_
+covered	557	564	VBN	cover	O	O	_
+with	565	569	IN	with	O	O	_
+blossoms	570	578	NNS	blossom	O	O	_
+,	578	579	,	,	O	O	_
+clear	580	585	JJ	clear	O	O	_
+brooks	586	592	NNS	brook	O	O	_
+,	592	593	,	,	O	O	_
+and	594	597	CC	and	O	O	_
+singing	598	605	NN	singing	O	O	_
+birds	606	611	NNS	bird	O	O	_
+.	611	612	.	.	O	O	_
+D	1	17
+1
+1	0	nsubj
+1	4	prep_of
+4	3	amod
+4	6	appos
+6	7	vmod
+7	9	prep_with
+7	12	prep_with
+7	16	prep_with
+9	12	conj_and
+9	16	conj_and
+12	11	amod
+16	15	nn
+EOX
+D	0	17
+1
+1	0	nsubj
+1	2	prep
+2	4	pobj
+4	3	amod
+4	6	appos
+6	7	vmod
+7	8	prep
+8	9	pobj
+9	12	conj
+9	14	cc
+9	16	conj
+12	11	amod
+16	15	nn
+EOX
+Y	1
+ROOT	0	0	18	1	S	1	0	18	3	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	0	1	17	2	VBD	0	1	2	1	dreamed	1	1	2	0	PP	0	2	17	2	IN	0	2	3	1	of	2	2	3	0	NP	0	3	17	3	NP	1	3	5	2	JJ	0	3	4	1	green	3	3	4	0	NNS	0	4	5	1	fields	4	4	5	0	,	0	5	6	1	,	5	5	6	0	NP	0	6	17	2	NP	0	6	7	1	NNS	0	6	7	1	trees	6	6	7	0	VP	0	7	17	2	VBN	0	7	8	1	covered	7	7	8	0	PP	0	8	17	2	IN	0	8	9	1	with	8	8	9	0	NP	0	9	17	6	NP	0	9	10	1	NNS	0	9	10	1	blossoms	9	9	10	0	,	0	10	11	1	,	10	10	11	0	NP	1	11	13	2	JJ	0	11	12	1	clear	11	11	12	0	NNS	0	12	13	1	brooks	12	12	13	0	,	0	13	14	1	,	13	13	14	0	CC	0	14	15	1	and	14	14	15	0	NP	1	15	17	2	NN	0	15	16	1	singing	15	15	16	0	NNS	0	16	17	1	birds	16	16	17	0	.	0	17	18	1	.	17	17	18	0
+EOS
+T	23
+By	613	615	IN	by	O	O	_
+the	616	619	DT	the	O	O	_
+third	620	625	JJ	third	TIME	O	_
+night	626	631	NN	night	TIME	TNI	_
+the	632	635	DT	the	O	O	_
+snow	636	640	NN	snow	O	O	_
+had	641	644	VBD	have	O	O	_
+stopped	645	652	VBN	stop	O	O	_
+,	652	653	,	,	O	O	_
+but	654	657	CC	but	O	O	_
+Aaron	658	663	NNP	Aaron	PERSON	O	_
+did	664	667	VBD	do	O	O	_
+not	668	671	RB	not	O	O	_
+dare	672	676	VB	dare	O	O	_
+to	677	679	TO	to	O	O	_
+find	680	684	VB	find	O	O	_
+his	685	688	PRP$	he	O	O	_
+way	689	692	NN	way	O	O	_
+home	693	697	NN	home	O	O	_
+in	698	700	IN	in	O	O	_
+the	701	704	DT	the	O	O	_
+darkness	705	713	NN	darkness	O	O	_
+.	713	714	.	.	O	O	_
+D	1	22
+7
+3	1	det
+3	2	amod
+5	4	det
+7	3	prep_by
+7	5	nsubj
+7	6	aux
+7	13	conj_but
+13	10	nsubj
+13	11	aux
+13	12	neg
+13	15	xcomp
+15	14	aux
+15	18	dobj
+15	21	prep_in
+18	16	poss
+18	17	nn
+21	20	det
+EOX
+D	0	22
+7
+0	3	pobj
+3	1	det
+3	2	amod
+5	4	det
+7	0	prep
+7	5	nsubj
+7	6	aux
+7	9	cc
+7	13	conj
+13	10	nsubj
+13	11	aux
+13	12	neg
+13	15	xcomp
+15	14	aux
+15	18	dobj
+15	19	prep
+18	16	poss
+18	17	nn
+19	21	pobj
+21	20	det
+EOX
+Y	1
+ROOT	0	0	23	1	S	0	0	23	5	S	2	0	8	3	PP	0	0	4	2	IN	0	0	1	1	By	0	0	1	0	NP	2	1	4	3	DT	0	1	2	1	the	1	1	2	0	JJ	0	2	3	1	third	2	2	3	0	NN	0	3	4	1	night	3	3	4	0	NP	1	4	6	2	DT	0	4	5	1	the	4	4	5	0	NN	0	5	6	1	snow	5	5	6	0	VP	1	6	8	2	VBD	0	6	7	1	had	6	6	7	0	VP	0	7	8	1	VBN	0	7	8	1	stopped	7	7	8	0	,	0	8	9	1	,	8	8	9	0	CC	0	9	10	1	but	9	9	10	0	S	1	10	22	2	NP	0	10	11	1	NNP	0	10	11	1	Aaron	10	10	11	0	VP	2	11	22	3	VBD	0	11	12	1	did	11	11	12	0	RB	0	12	13	1	not	12	12	13	0	VP	0	13	22	2	VB	0	13	14	1	dare	13	13	14	0	S	0	14	22	1	VP	1	14	22	2	TO	0	14	15	1	to	14	14	15	0	VP	0	15	22	3	VB	0	15	16	1	find	15	15	16	0	NP	2	16	19	3	PRP$	0	16	17	1	his	16	16	17	0	NN	0	17	18	1	way	17	17	18	0	NN	0	18	19	1	home	18	18	19	0	PP	0	19	22	2	IN	0	19	20	1	in	19	19	20	0	NP	1	20	22	2	DT	0	20	21	1	the	20	20	21	0	NN	0	21	22	1	darkness	21	21	22	0	.	0	22	23	1	.	22	22	23	0
+EOS
+T	16
+The	715	718	DT	the	O	O	_
+sky	719	722	NN	sky	O	O	_
+became	723	729	VBD	become	O	O	_
+clear	730	735	JJ	clear	O	O	_
+and	736	739	CC	and	O	O	_
+the	740	743	DT	the	O	O	_
+moon	744	748	NN	moon	O	O	_
+shone	749	754	NN	shone	O	O	_
+,	754	755	,	,	O	O	_
+casting	756	763	VBG	cast	O	O	_
+silvery	764	771	JJ	silvery	O	O	_
+nets	772	776	NNS	net	O	O	_
+on	777	779	IN	on	O	O	_
+the	780	783	DT	the	O	O	_
+snow	784	788	NN	snow	O	O	_
+.	788	789	.	.	O	O	_
+D	1	15
+2
+1	0	det
+2	1	nsubj
+2	3	xcomp
+2	7	xcomp
+2	9	vmod
+3	7	conj_and
+7	5	det
+7	6	nn
+9	11	dobj
+9	14	prep_on
+11	10	amod
+14	13	det
+EOX
+D	0	15
+2
+1	0	det
+2	1	nsubj
+2	3	xcomp
+2	9	vmod
+3	4	cc
+3	7	conj
+7	5	det
+7	6	nn
+9	11	dobj
+9	12	prep
+11	10	amod
+12	14	pobj
+14	13	det
+EOX
+Y	1
+ROOT	0	0	16	1	S	1	0	16	3	NP	1	0	2	2	DT	0	0	1	1	The	0	0	1	0	NN	0	1	2	1	sky	1	1	2	0	VP	0	2	15	4	VBD	0	2	3	1	became	2	2	3	0	NP	0	3	8	3	NP	0	3	4	1	JJ	0	3	4	1	clear	3	3	4	0	CC	0	4	5	1	and	4	4	5	0	NP	2	5	8	3	DT	0	5	6	1	the	5	5	6	0	NN	0	6	7	1	moon	6	6	7	0	NN	0	7	8	1	shone	7	7	8	0	,	0	8	9	1	,	8	8	9	0	S	0	9	15	1	VP	0	9	15	3	VBG	0	9	10	1	casting	9	9	10	0	NP	1	10	12	2	JJ	0	10	11	1	silvery	10	10	11	0	NNS	0	11	12	1	nets	11	11	12	0	PP	0	12	15	2	IN	0	12	13	1	on	12	12	13	0	NP	1	13	15	2	DT	0	13	14	1	the	13	13	14	0	NN	0	14	15	1	snow	14	14	15	0	.	0	15	16	1	.	15	15	16	0
+EOS
+T	11
+Aaron	790	795	NNP	Aaron	PERSON	O	_
+dug	796	799	VBD	dig	O	O	_
+his	800	803	PRP$	he	O	O	_
+way	804	807	NN	way	O	O	_
+out	808	811	IN	out	O	O	_
+and	812	815	CC	and	O	O	_
+looked	816	822	VBD	look	O	O	_
+at	823	825	IN	at	O	O	_
+the	826	829	DT	the	O	O	_
+world	830	835	NN	world	O	O	_
+.	835	836	.	.	O	O	_
+D	1	10
+1
+1	0	nsubj
+1	3	dobj
+1	4	advmod
+1	6	conj_and
+3	2	poss
+6	0	nsubj
+6	9	prep_at
+9	8	det
+EOX
+D	0	10
+1
+1	0	nsubj
+1	3	dobj
+1	4	advmod
+1	5	cc
+1	6	conj
+3	2	poss
+6	7	prep
+7	9	pobj
+9	8	det
+EOX
+Y	1
+ROOT	0	0	11	1	S	1	0	11	3	NP	0	0	1	1	NNP	0	0	1	1	Aaron	0	0	1	0	VP	0	1	10	3	VP	0	1	5	3	VBD	0	1	2	1	dug	1	1	2	0	NP	1	2	4	2	PRP$	0	2	3	1	his	2	2	3	0	NN	0	3	4	1	way	3	3	4	0	ADVP	0	4	5	1	IN	0	4	5	1	out	4	4	5	0	CC	0	5	6	1	and	5	5	6	0	VP	0	6	10	2	VBD	0	6	7	1	looked	6	6	7	0	PP	0	7	10	2	IN	0	7	8	1	at	7	7	8	0	NP	1	8	10	2	DT	0	8	9	1	the	8	8	9	0	NN	0	9	10	1	world	9	9	10	0	.	0	10	11	1	.	10	10	11	0
+EOS
+T	13
+It	837	839	PRP	it	O	O	_
+was	840	843	VBD	be	O	O	_
+all	844	847	DT	all	O	O	_
+white	848	853	JJ	white	O	O	_
+,	853	854	,	,	O	O	_
+quiet	855	860	JJ	quiet	O	O	_
+,	860	861	,	,	O	O	_
+dreaming	862	870	VBG	dream	O	O	_
+dreams	871	877	NNS	dream	O	O	_
+of	878	880	IN	of	O	O	_
+heavenly	881	889	JJ	heavenly	O	O	_
+splendor	890	898	NN	splendor	O	O	_
+.	898	899	.	.	O	O	_
+D	1	12
+3
+3	0	nsubj
+3	1	cop
+3	2	dep
+3	5	dep
+3	7	xcomp
+7	8	dobj
+8	11	prep_of
+11	10	amod
+EOX
+D	0	12
+3
+3	0	nsubj
+3	1	cop
+3	2	dep
+3	5	dep
+3	7	xcomp
+7	8	dobj
+8	9	prep
+9	11	pobj
+11	10	amod
+EOX
+Y	1
+ROOT	0	0	13	1	S	1	0	13	3	NP	0	0	1	1	PRP	0	0	1	1	It	0	0	1	0	VP	1	1	12	4	VBD	0	1	2	1	was	1	1	2	0	ADJP	1	2	6	4	DT	0	2	3	1	all	2	2	3	0	ADJP	0	3	4	1	JJ	0	3	4	1	white	3	3	4	0	,	0	4	5	1	,	4	4	5	0	ADJP	0	5	6	1	JJ	0	5	6	1	quiet	5	5	6	0	,	0	6	7	1	,	6	6	7	0	S	0	7	12	1	VP	0	7	12	2	VBG	0	7	8	1	dreaming	7	7	8	0	NP	0	8	12	2	NP	0	8	9	1	NNS	0	8	9	1	dreams	8	8	9	0	PP	0	9	12	2	IN	0	9	10	1	of	9	9	10	0	NP	1	10	12	2	JJ	0	10	11	1	heavenly	10	10	11	0	NN	0	11	12	1	splendor	11	11	12	0	.	0	12	13	1	.	12	12	13	0
+EOS
+T	7
+The	900	903	DT	the	O	O	_
+stars	904	909	NNS	star	O	O	_
+were	910	914	VBD	be	O	O	_
+large	915	920	JJ	large	O	O	_
+and	921	924	CC	and	O	O	_
+close	925	930	JJ	close	O	O	_
+.	930	931	.	.	O	O	_
+D	1	6
+3
+1	0	det
+3	1	nsubj
+3	2	cop
+3	5	conj_and
+5	1	nsubj
+EOX
+D	0	6
+3
+1	0	det
+3	1	nsubj
+3	2	cop
+3	4	cc
+3	5	conj
+EOX
+Y	1
+ROOT	0	0	7	1	S	1	0	7	3	NP	1	0	2	2	DT	0	0	1	1	The	0	0	1	0	NNS	0	1	2	1	stars	1	1	2	0	VP	1	2	6	2	VBD	0	2	3	1	were	2	2	3	0	ADJP	0	3	6	3	JJ	0	3	4	1	large	3	3	4	0	CC	0	4	5	1	and	4	4	5	0	JJ	0	5	6	1	close	5	5	6	0	.	0	6	7	1	.	6	6	7	0
+EOS
+T	11
+The	932	935	DT	the	O	O	_
+moon	936	940	NN	moon	O	O	_
+swam	941	945	NN	swam	O	O	_
+in	946	948	IN	in	O	O	_
+the	949	952	DT	the	O	O	_
+sky	953	956	NN	sky	O	O	_
+as	957	959	IN	as	O	O	_
+in	960	962	IN	in	O	O	_
+a	963	964	DT	a	O	O	_
+sea	965	968	NN	sea	O	O	_
+.	968	969	.	.	O	O	_
+D	1	10
+2
+2	0	det
+2	1	nn
+2	5	prep_in
+2	9	prep_in
+5	4	det
+5	6	amod
+9	8	det
+EOX
+D	0	10
+2
+2	0	det
+2	1	nn
+2	3	prep
+2	7	prep
+3	5	pobj
+5	4	det
+5	6	amod
+7	9	pobj
+9	8	det
+EOX
+Y	1
+ROOT	0	0	11	1	NP	0	0	11	4	NP	2	0	3	3	DT	0	0	1	1	The	0	0	1	0	NN	0	1	2	1	moon	1	1	2	0	NN	0	2	3	1	swam	2	2	3	0	PP	0	3	7	2	IN	0	3	4	1	in	3	3	4	0	NP	1	4	7	3	DT	0	4	5	1	the	4	4	5	0	NN	0	5	6	1	sky	5	5	6	0	IN	0	6	7	1	as	6	6	7	0	PP	0	7	10	2	IN	0	7	8	1	in	7	7	8	0	NP	1	8	10	2	DT	0	8	9	1	a	8	8	9	0	NN	0	9	10	1	sea	9	9	10	0	.	0	10	11	1	.	10	10	11	0
+EOS
+C	54
+7	6	6	17	36
+10	3	2	4	55
+7	12	11	13	40
+7	9	9	17	38
+5	0	0	3	28
+8	10	10	11	6
+3	9	8	10	1
+1	21	21	22	6
+5	2	2	3	21
+13	5	4	7	48
+0	19	18	20	5
+7	4	3	17	35
+12	1	0	2	59
+3	4	2	10	6
+6	4	2	5	32
+6	6	6	7	28
+8	18	16	19	45
+9	1	0	2	48
+5	9	7	13	29
+13	2	0	11	60
+7	16	15	17	41
+6	2	2	4	6
+2	0	0	3	6
+3	0	0	1	6
+0	5	4	6	2
+13	9	8	10	62
+1	1	1	2	6
+1	10	9	24	7
+4	6	5	7	22
+8	3	1	4	43
+4	13	12	14	25
+11	8	8	12	58
+10	2	2	3	6
+4	9	8	10	23
+5	12	11	13	3
+9	7	5	8	51
+8	16	16	17	6
+0	12	12	13	3
+2	2	2	3	6
+4	8	8	9	6
+2	7	6	12	14
+9	14	13	15	1
+1	14	13	15	1
+0	11	9	12	3
+8	21	20	22	47
+10	9	8	10	57
+0	1	0	2	1
+2	11	11	12	16
+10	0	0	1	6
+3	14	14	15	21
+8	5	4	6	1
+9	3	3	8	49
+7	0	0	1	6
+9	11	10	12	52
+R
+elaboration	LeftToRight	-1	-1	0	0	13	10	0	0	2	nil
+elaboration	LeftToRight	-1	-1	0	0	3	15	0	2	2	nil
+joint	None	-1	-1	0	0	0	22	0	3	2	nil
+nil	None	-1	-1	0	0	0	6	0	0	0	The snow fell for three days ,
+joint	None	-1	-1	0	7	0	22	1	3	2	nil
+elaboration	LeftToRight	-1	-1	0	7	0	16	1	2	2	nil
+nil	None	-1	-1	0	7	0	11	1	1	0	though after the first day
+nil	None	-1	-1	0	12	0	16	2	2	0	it was not as thick
+nil	None	-1	-1	0	17	0	22	3	3	0	and the wind quieted down .
+elaboration	LeftToRight	-1	-1	1	0	3	15	0	2	2	nil
+elaboration	LeftToRight	-1	-1	1	0	2	12	0	0	2	nil
+attribution	RightToLeft	-1	-1	1	0	1	24	0	3	2	nil
+nil	None	-1	-1	1	0	1	2	0	0	0	Sometimes Aaron felt
+elaboration	LeftToRight	-1	-1	1	3	1	24	1	3	2	nil
+nil	None	-1	-1	1	3	1	11	1	1	0	that there could never have been a summer ,
+contrast	LeftToRight	-1	-1	1	12	1	24	2	3	2	nil
+nil	None	-1	-1	1	12	1	18	2	2	0	that the snow had always fallen ,
+nil	None	-1	-1	1	19	1	24	3	3	0	ever since he could remember .
+nil	None	-1	-1	2	0	2	12	0	0	0	He , Aaron , never had a father or mother or sisters .
+elaboration	LeftToRight	-1	-1	3	0	3	15	0	2	2	nil
+nil	None	-1	-1	3	0	3	5	0	0	0	He was a snow child ,
+joint	None	-1	-1	3	6	3	15	1	2	2	nil
+nil	None	-1	-1	3	6	3	10	1	1	0	born of the snow ,
+nil	None	-1	-1	3	11	3	15	2	2	0	and so was Zlateh .
+elaboration	LeftToRight	-1	-1	4	0	13	10	0	0	2	nil
+elaboration	LeftToRight	-1	-1	4	0	4	14	0	1	2	nil
+nil	None	-1	-1	4	0	4	6	0	0	0	It was so quiet in the hay
+nil	None	-1	-1	4	7	4	14	1	1	0	that his ears rang in the stillness .
+elaboration	LeftToRight	-1	-1	5	0	13	10	0	0	2	nil
+elaboration	LeftToRight	-1	-1	5	0	12	6	0	0	2	nil
+elaboration	LeftToRight	-1	-1	5	0	11	12	0	1	2	nil
+elaboration	LeftToRight	-1	-1	5	0	10	10	0	1	2	nil
+explanation	LeftToRight	-1	-1	5	0	7	17	0	1	2	nil
+nil	None	-1	-1	5	0	5	13	0	0	0	Aaron and Zlateh slept all night and a good part of the day .
+elaboration	LeftToRight	-1	-1	6	0	7	17	0	1	2	nil
+background	RightToLeft	-1	-1	6	0	6	12	0	1	2	nil
+nil	None	-1	-1	6	0	6	5	0	0	0	As for Aaron 's dreams ,
+nil	None	-1	-1	6	6	6	12	1	1	0	they were all about warm weather .
+elaboration	LeftToRight	-1	-1	7	0	7	17	0	1	2	nil
+nil	None	-1	-1	7	0	7	6	0	0	0	He dreamed of green fields , trees
+nil	None	-1	-1	7	7	7	17	1	1	0	covered with blossoms , clear brooks , and singing birds .
+elaboration	LeftToRight	-1	-1	8	0	10	10	0	1	2	nil
+contrast	None	-1	-1	8	0	8	22	0	1	2	nil
+nil	None	-1	-1	8	0	8	8	0	0	0	By the third night the snow had stopped ,
+nil	None	-1	-1	8	9	8	22	1	1	0	but Aaron did not dare to find his way home in the darkness .
+joint	None	-1	-1	9	0	10	10	0	1	2	nil
+elaboration	LeftToRight	-1	-1	9	0	9	15	0	1	2	nil
+nil	None	-1	-1	9	0	9	8	0	0	0	The sky became clear and the moon shone ,
+nil	None	-1	-1	9	9	9	15	1	1	0	casting silvery nets on the snow .
+joint	None	-1	-1	10	0	10	10	0	1	2	nil
+nil	None	-1	-1	10	0	10	4	0	0	0	Aaron dug his way out
+nil	None	-1	-1	10	5	10	10	1	1	0	and looked at the world .
+elaboration	LeftToRight	-1	-1	11	0	11	12	0	1	2	nil
+nil	None	-1	-1	11	0	11	6	0	0	0	It was all white , quiet ,
+nil	None	-1	-1	11	7	11	12	1	1	0	dreaming dreams of heavenly splendor .
+nil	None	-1	-1	12	0	12	6	0	0	0	The stars were large and close .
+nil	None	-1	-1	13	0	13	10	0	0	0	The moon swam in the sky as in a sea .
+EOD

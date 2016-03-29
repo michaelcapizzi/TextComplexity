@@ -1,0 +1,1313 @@
+S	3
+T	22
+Long	0	4	NNP	Long	O	O	_
+ago	5	8	RB	ago	O	O	_
+and	9	12	CC	and	O	O	_
+far	13	16	RB	far	O	O	_
+away	17	21	RB	away	O	O	_
+in	22	24	IN	in	O	O	_
+the	25	28	DT	the	O	O	_
+Land	29	33	NN	land	O	O	_
+of	34	36	IN	of	O	O	_
+the	37	40	DT	the	O	O	_
+Rising	41	47	VBG	rise	O	O	_
+Sun	48	51	NNP	Sun	O	O	_
+,	51	52	,	,	O	O	_
+there	53	58	EX	there	O	O	_
+lived	59	64	VBN	live	O	O	_
+together	65	73	RB	together	O	O	_
+a	74	75	DT	a	O	O	_
+pair	76	80	NN	pair	O	O	_
+of	81	83	IN	of	O	O	_
+mandarin	84	92	JJ	mandarin	O	O	_
+ducks	93	98	NNS	duck	O	O	_
+.	98	99	.	.	O	O	_
+D	1	21
+14
+0	1	advmod
+0	3	advmod
+1	3	conj_and
+4	0	npadvmod
+7	6	det
+7	11	prep_of
+11	9	det
+11	10	amod
+14	4	advmod
+14	7	prep_in
+14	13	expl
+14	15	prt
+14	17	dobj
+17	16	det
+17	20	prep_of
+20	19	amod
+EOX
+D	0	21
+14
+0	1	advmod
+1	2	cc
+1	3	conj
+4	0	npadvmod
+5	4	advmod
+5	7	pobj
+7	6	det
+7	8	prep
+8	11	pobj
+11	9	det
+11	10	amod
+14	5	prep
+14	13	expl
+14	15	prt
+14	17	dobj
+17	16	det
+17	18	prep
+18	20	pobj
+20	19	amod
+EOX
+Y	1
+ROOT	0	0	22	1	S	3	0	22	5	PP	1	0	12	3	ADVP	1	0	5	2	NP	0	0	4	2	NP	0	0	1	1	NNP	0	0	1	1	Long	0	0	1	0	ADVP	0	1	4	3	RB	0	1	2	1	ago	1	1	2	0	CC	0	2	3	1	and	2	2	3	0	RB	0	3	4	1	far	3	3	4	0	RB	0	4	5	1	away	4	4	5	0	IN	0	5	6	1	in	5	5	6	0	NP	0	6	12	2	NP	1	6	8	2	DT	0	6	7	1	the	6	6	7	0	NN	0	7	8	1	Land	7	7	8	0	PP	0	8	12	2	IN	0	8	9	1	of	8	8	9	0	NP	2	9	12	3	DT	0	9	10	1	the	9	9	10	0	VBG	0	10	11	1	Rising	10	10	11	0	NNP	0	11	12	1	Sun	11	11	12	0	,	0	12	13	1	,	12	12	13	0	NP	0	13	14	1	EX	0	13	14	1	there	13	13	14	0	VP	0	14	21	3	VBN	0	14	15	1	lived	14	14	15	0	PRT	0	15	16	1	RB	0	15	16	1	together	15	15	16	0	NP	0	16	21	2	NP	1	16	18	2	DT	0	16	17	1	a	16	16	17	0	NN	0	17	18	1	pair	17	17	18	0	PP	0	18	21	2	IN	0	18	19	1	of	18	18	19	0	NP	1	19	21	2	JJ	0	19	20	1	mandarin	19	19	20	0	NNS	0	20	21	1	ducks	20	20	21	0	.	0	21	22	1	.	21	21	22	0
+EOS
+T	23
+Now	100	103	RB	now	DATE	PRESENT_REF	_
+,	103	104	,	,	O	O	_
+the	105	108	DT	the	O	O	_
+drake	109	114	NN	drake	O	O	_
+was	115	118	VBD	be	O	O	_
+a	119	120	DT	a	O	O	_
+magnificent	121	132	JJ	magnificent	O	O	_
+bird	133	137	NN	bird	O	O	_
+with	138	142	IN	with	O	O	_
+plumage	143	150	NN	plumage	O	O	_
+of	151	153	IN	of	O	O	_
+colors	154	160	NNS	color	O	O	_
+so	161	163	RB	so	O	O	_
+rich	164	168	JJ	rich	O	O	_
+that	169	173	IN	that	O	O	_
+the	174	177	DT	the	O	O	_
+emperor	178	185	NN	emperor	O	O	_
+himself	186	193	PRP	himself	O	O	_
+would	194	199	MD	would	O	O	_
+have	200	204	VB	have	O	O	_
+envied	205	211	VBN	envy	O	O	_
+it	212	214	PRP	it	O	O	_
+.	214	215	.	.	O	O	_
+D	1	22
+7
+3	2	det
+7	0	advmod
+7	3	nsubj
+7	4	cop
+7	5	det
+7	6	amod
+7	9	prep_with
+9	11	prep_of
+11	13	amod
+13	12	advmod
+13	16	dep
+16	14	mark
+16	15	det
+16	20	ccomp
+20	17	nsubj
+20	18	aux
+20	19	aux
+20	21	dobj
+EOX
+D	0	22
+7
+3	2	det
+7	0	advmod
+7	3	nsubj
+7	4	cop
+7	5	det
+7	6	amod
+7	8	prep
+8	9	pobj
+9	10	prep
+10	11	pobj
+11	13	amod
+13	12	advmod
+13	16	dep
+16	14	mark
+16	15	det
+16	20	ccomp
+20	17	nsubj
+20	18	aux
+20	19	aux
+20	21	dobj
+EOX
+Y	1
+ROOT	0	0	23	1	S	3	0	23	5	ADVP	0	0	1	1	RB	0	0	1	1	Now	0	0	1	0	,	0	1	2	1	,	1	1	2	0	NP	1	2	4	2	DT	0	2	3	1	the	2	2	3	0	NN	0	3	4	1	drake	3	3	4	0	VP	1	4	22	2	VBD	0	4	5	1	was	4	4	5	0	NP	0	5	22	2	NP	2	5	8	3	DT	0	5	6	1	a	5	5	6	0	JJ	0	6	7	1	magnificent	6	6	7	0	NN	0	7	8	1	bird	7	7	8	0	PP	0	8	22	2	IN	0	8	9	1	with	8	8	9	0	NP	0	9	22	2	NP	0	9	10	1	NN	0	9	10	1	plumage	9	9	10	0	PP	0	10	22	2	IN	0	10	11	1	of	10	10	11	0	NP	0	11	22	2	NP	0	11	12	1	NNS	0	11	12	1	colors	11	11	12	0	ADJP	0	12	22	2	ADJP	1	12	14	2	RB	0	12	13	1	so	12	12	13	0	JJ	0	13	14	1	rich	13	13	14	0	SBAR	1	14	22	2	IN	0	14	15	1	that	14	14	15	0	FRAG	0	15	22	1	NP	1	15	22	3	DT	0	15	16	1	the	15	15	16	0	NN	0	16	17	1	emperor	16	16	17	0	SBAR	0	17	22	1	S	1	17	22	2	NP	0	17	18	1	PRP	0	17	18	1	himself	17	17	18	0	VP	1	18	22	2	MD	0	18	19	1	would	18	18	19	0	VP	1	19	22	2	VB	0	19	20	1	have	19	19	20	0	VP	0	20	22	2	VBN	0	20	21	1	envied	20	20	21	0	NP	0	21	22	1	PRP	0	21	22	1	it	21	21	22	0	.	0	22	23	1	.	22	22	23	0
+EOS
+T	31
+But	216	219	CC	but	O	O	_
+his	220	223	PRP$	he	O	O	_
+mate	224	228	NN	mate	O	O	_
+,	228	229	,	,	O	O	_
+the	230	233	DT	the	O	O	_
+duck	234	238	NN	duck	O	O	_
+,	238	239	,	,	O	O	_
+wore	240	244	VBD	wear	O	O	_
+the	245	248	DT	the	O	O	_
+quiet	249	254	JJ	quiet	O	O	_
+tones	255	260	NNS	tone	O	O	_
+of	261	263	IN	of	O	O	_
+the	264	267	DT	the	O	O	_
+wood	268	272	NN	wood	O	O	_
+,	272	273	,	,	O	O	_
+blending	274	282	VBG	blend	O	O	_
+exactly	283	290	RB	exactly	O	O	_
+with	291	295	IN	with	O	O	_
+the	296	299	DT	the	O	O	_
+hole	300	304	NN	hole	O	O	_
+in	305	307	IN	in	O	O	_
+the	308	311	DT	the	O	O	_
+tree	312	316	NN	tree	O	O	_
+where	317	322	WRB	where	O	O	_
+the	323	326	DT	the	O	O	_
+two	327	330	CD	two	NUMBER	2.0	_
+had	331	334	VBD	have	O	O	_
+made	335	339	VBN	make	O	O	_
+their	340	345	PRP$	they	O	O	_
+nest	346	350	NN	nest	O	O	_
+.	350	351	.	.	O	O	_
+D	1	30
+7
+2	1	poss
+2	5	appos
+5	4	det
+7	0	cc
+7	2	nsubj
+7	10	dobj
+7	15	vmod
+10	8	det
+10	9	amod
+10	13	prep_of
+13	12	det
+15	16	advmod
+15	19	prep_with
+15	27	advcl
+19	18	det
+19	22	prep_in
+22	21	det
+25	24	det
+27	23	advmod
+27	25	nsubj
+27	26	aux
+27	29	dobj
+29	28	poss
+EOX
+D	0	30
+7
+2	1	poss
+2	5	appos
+5	4	det
+7	0	cc
+7	2	nsubj
+7	10	dobj
+7	15	vmod
+10	8	det
+10	9	amod
+10	11	prep
+11	13	pobj
+13	12	det
+15	16	advmod
+15	17	prep
+15	27	advcl
+17	19	pobj
+19	18	det
+19	20	prep
+20	22	pobj
+22	21	det
+25	24	det
+27	23	advmod
+27	25	nsubj
+27	26	aux
+27	29	dobj
+29	28	poss
+EOX
+Y	1
+ROOT	0	0	31	1	S	2	0	31	4	CC	0	0	1	1	But	0	0	1	0	NP	0	1	7	4	NP	1	1	3	2	PRP$	0	1	2	1	his	1	1	2	0	NN	0	2	3	1	mate	2	2	3	0	,	0	3	4	1	,	3	3	4	0	NP	1	4	6	2	DT	0	4	5	1	the	4	4	5	0	NN	0	5	6	1	duck	5	5	6	0	,	0	6	7	1	,	6	6	7	0	VP	0	7	30	4	VBD	0	7	8	1	wore	7	7	8	0	NP	0	8	14	2	NP	2	8	11	3	DT	0	8	9	1	the	8	8	9	0	JJ	0	9	10	1	quiet	9	9	10	0	NNS	0	10	11	1	tones	10	10	11	0	PP	0	11	14	2	IN	0	11	12	1	of	11	11	12	0	NP	1	12	14	2	DT	0	12	13	1	the	12	12	13	0	NN	0	13	14	1	wood	13	13	14	0	,	0	14	15	1	,	14	14	15	0	S	0	15	30	1	VP	0	15	30	4	VBG	0	15	16	1	blending	15	15	16	0	ADVP	0	16	17	1	RB	0	16	17	1	exactly	16	16	17	0	PP	0	17	23	2	IN	0	17	18	1	with	17	17	18	0	NP	0	18	23	2	NP	1	18	20	2	DT	0	18	19	1	the	18	18	19	0	NN	0	19	20	1	hole	19	19	20	0	PP	0	20	23	2	IN	0	20	21	1	in	20	20	21	0	NP	1	21	23	2	DT	0	21	22	1	the	21	21	22	0	NN	0	22	23	1	tree	22	22	23	0	SBAR	1	23	30	2	WHADVP	0	23	24	1	WRB	0	23	24	1	where	23	23	24	0	S	1	24	30	2	NP	1	24	26	2	DT	0	24	25	1	the	24	24	25	0	CD	0	25	26	1	two	25	25	26	0	VP	1	26	30	2	VBD	0	26	27	1	had	26	26	27	0	VP	0	27	30	2	VBN	0	27	28	1	made	27	27	28	0	NP	1	28	30	2	PRP$	0	28	29	1	their	28	28	29	0	NN	0	29	30	1	nest	29	29	30	0	.	0	30	31	1	.	30	30	31	0
+EOS
+C	22
+2	5	4	6	16
+2	28	28	29	23
+0	17	16	21	4
+1	21	21	22	2
+0	0	0	4	1
+2	19	18	23	19
+2	10	8	14	17
+0	20	19	21	5
+0	7	6	12	2
+2	13	12	14	18
+1	11	11	22	9
+1	9	9	22	8
+2	29	28	30	22
+1	16	15	22	10
+1	3	2	4	6
+2	2	1	6	13
+0	11	9	12	3
+2	22	21	23	20
+1	17	17	18	6
+1	7	5	22	7
+2	1	1	2	6
+2	25	24	26	21
+R
+contrast	RightToLeft	-1	-1	0	0	2	30	0	2	2	nil
+contrast	None	-1	-1	0	0	1	22	0	0	2	nil
+nil	None	-1	-1	0	0	0	21	0	0	0	Long ago and far away in the Land of the Rising Sun , there lived together a pair of mandarin ducks .
+nil	None	-1	-1	1	0	1	22	0	0	0	Now , the drake was a magnificent bird with plumage of colors so rich that the emperor himself would have envied it .
+elaboration	LeftToRight	-1	-1	2	0	2	30	0	2	2	nil
+nil	None	-1	-1	2	0	2	14	0	0	0	But his mate , the duck , wore the quiet tones of the wood ,
+elaboration	LeftToRight	-1	-1	2	15	2	30	1	2	2	nil
+nil	None	-1	-1	2	15	2	22	1	1	0	blending exactly with the hole in the tree
+nil	None	-1	-1	2	23	2	30	2	2	0	where the two had made their nest .
+EOD
+S	5
+T	24
+One	0	3	CD	one	DURATION	P1D	_
+day	4	7	NN	day	DURATION	P1D	_
+while	8	13	IN	while	O	O	_
+the	14	17	DT	the	O	O	_
+duck	18	22	NN	duck	O	O	_
+was	23	26	VBD	be	O	O	_
+sitting	27	34	VBG	sit	O	O	_
+on	35	37	IN	on	O	O	_
+her	38	41	PRP$	she	O	O	_
+eggs	42	46	NNS	egg	O	O	_
+,	46	47	,	,	O	O	_
+the	48	51	DT	the	O	O	_
+drake	52	57	NN	drake	O	O	_
+flew	58	62	VBD	fly	O	O	_
+down	63	67	RB	down	O	O	_
+to	68	70	TO	to	O	O	_
+a	71	72	DT	a	O	O	_
+nearby	73	79	JJ	nearby	O	O	_
+pond	80	84	NN	pond	O	O	_
+to	85	87	TO	to	O	O	_
+search	88	94	VB	search	O	O	_
+for	95	98	IN	for	O	O	_
+food	99	103	NN	food	O	O	_
+.	103	104	.	.	O	O	_
+D	1	23
+13
+1	0	num
+4	3	det
+6	2	mark
+6	4	nsubj
+6	5	aux
+6	9	prep_on
+9	8	poss
+12	11	det
+13	1	tmod
+13	6	advcl
+13	12	nsubj
+13	14	advmod
+13	20	xcomp
+14	18	prep_to
+18	16	det
+18	17	amod
+20	19	aux
+20	22	prep_for
+EOX
+D	0	23
+13
+1	0	num
+4	3	det
+6	2	mark
+6	4	nsubj
+6	5	aux
+6	7	prep
+7	9	pobj
+9	8	poss
+12	11	det
+13	1	tmod
+13	6	advcl
+13	12	nsubj
+13	14	advmod
+13	20	xcomp
+14	15	prep
+15	18	pobj
+18	16	det
+18	17	amod
+20	19	aux
+20	21	prep
+21	22	pobj
+EOX
+Y	1
+ROOT	0	0	24	1	S	4	0	24	6	NP	1	0	2	2	CD	0	0	1	1	One	0	0	1	0	NN	0	1	2	1	day	1	1	2	0	SBAR	1	2	10	2	IN	0	2	3	1	while	2	2	3	0	S	1	3	10	2	NP	1	3	5	2	DT	0	3	4	1	the	3	3	4	0	NN	0	4	5	1	duck	4	4	5	0	VP	1	5	10	2	VBD	0	5	6	1	was	5	5	6	0	VP	0	6	10	2	VBG	0	6	7	1	sitting	6	6	7	0	PP	0	7	10	2	IN	0	7	8	1	on	7	7	8	0	NP	1	8	10	2	PRP$	0	8	9	1	her	8	8	9	0	NNS	0	9	10	1	eggs	9	9	10	0	,	0	10	11	1	,	10	10	11	0	NP	1	11	13	2	DT	0	11	12	1	the	11	11	12	0	NN	0	12	13	1	drake	12	12	13	0	VP	0	13	23	3	VBD	0	13	14	1	flew	13	13	14	0	ADVP	0	14	19	2	RB	0	14	15	1	down	14	14	15	0	PP	0	15	19	2	TO	0	15	16	1	to	15	15	16	0	NP	2	16	19	3	DT	0	16	17	1	a	16	16	17	0	JJ	0	17	18	1	nearby	17	17	18	0	NN	0	18	19	1	pond	18	18	19	0	S	0	19	23	1	VP	1	19	23	2	TO	0	19	20	1	to	19	19	20	0	VP	0	20	23	2	VB	0	20	21	1	search	20	20	21	0	PP	0	21	23	2	IN	0	21	22	1	for	21	21	22	0	NP	0	22	23	1	NN	0	22	23	1	food	22	22	23	0	.	0	23	24	1	.	23	23	24	0
+EOS
+T	12
+While	105	110	IN	while	O	O	_
+he	111	113	PRP	he	O	O	_
+was	114	117	VBD	be	O	O	_
+there	118	123	RB	there	O	O	_
+,	123	124	,	,	O	O	_
+a	125	126	DT	a	O	O	_
+hunting	127	134	NN	hunting	O	O	_
+party	135	140	NN	party	O	O	_
+entered	141	148	VBD	enter	O	O	_
+the	149	152	DT	the	O	O	_
+woods	153	158	NNS	wood	O	O	_
+.	158	159	.	.	O	O	_
+D	1	11
+8
+2	0	mark
+2	1	nsubj
+2	3	advmod
+7	5	det
+7	6	nn
+8	2	advcl
+8	7	nsubj
+8	10	dobj
+10	9	det
+EOX
+D	0	11
+8
+2	0	mark
+2	1	nsubj
+2	3	advmod
+7	5	det
+7	6	nn
+8	2	advcl
+8	7	nsubj
+8	10	dobj
+10	9	det
+EOX
+Y	1
+ROOT	0	0	12	1	S	3	0	12	5	SBAR	1	0	4	2	IN	0	0	1	1	While	0	0	1	0	S	1	1	4	2	NP	0	1	2	1	PRP	0	1	2	1	he	1	1	2	0	VP	0	2	4	2	VBD	0	2	3	1	was	2	2	3	0	ADVP	0	3	4	1	RB	0	3	4	1	there	3	3	4	0	,	0	4	5	1	,	4	4	5	0	NP	2	5	8	3	DT	0	5	6	1	a	5	5	6	0	NN	0	6	7	1	hunting	6	6	7	0	NN	0	7	8	1	party	7	7	8	0	VP	0	8	11	2	VBD	0	8	9	1	entered	8	8	9	0	NP	1	9	11	2	DT	0	9	10	1	the	9	9	10	0	NNS	0	10	11	1	woods	10	10	11	0	.	0	11	12	1	.	11	11	12	0
+EOS
+T	33
+The	160	163	DT	the	O	O	_
+hunters	164	171	NNS	hunter	O	O	_
+were	172	176	VBD	be	O	O	_
+led	177	180	VBN	lead	O	O	_
+by	181	183	IN	by	O	O	_
+the	184	187	DT	the	O	O	_
+lord	188	192	NN	lord	O	O	_
+of	193	195	IN	of	O	O	_
+the	196	199	DT	the	O	O	_
+district	200	208	NN	district	O	O	_
+,	208	209	,	,	O	O	_
+a	210	211	DT	a	O	O	_
+proud	212	217	JJ	proud	O	O	_
+and	218	221	CC	and	O	O	_
+cruel	222	227	JJ	cruel	O	O	_
+man	228	231	NN	man	O	O	_
+who	232	235	WP	who	O	O	_
+believed	236	244	VBD	believe	O	O	_
+that	245	249	IN	that	O	O	_
+everything	250	260	NN	everything	O	O	_
+in	261	263	IN	in	O	O	_
+the	264	267	DT	the	O	O	_
+district	268	276	NN	district	O	O	_
+belonged	277	285	VBD	belong	O	O	_
+to	286	288	TO	to	O	O	_
+him	289	292	PRP	he	O	O	_
+to	293	295	TO	to	O	O	_
+do	296	298	VB	do	O	O	_
+with	299	303	IN	with	O	O	_
+as	304	306	IN	as	O	O	_
+he	307	309	PRP	he	O	O	_
+chose	310	315	VBD	choose	O	O	_
+.	315	316	.	.	O	O	_
+D	1	32
+3
+1	0	det
+3	1	nsubjpass
+3	2	auxpass
+3	6	agent
+6	5	det
+6	9	prep_of
+9	8	det
+9	15	appos
+12	14	conj_and
+15	11	det
+15	12	amod
+15	14	amod
+15	17	rcmod
+17	16	nsubj
+17	23	ccomp
+19	22	prep_in
+22	21	det
+23	18	mark
+23	19	nsubj
+23	25	prep_to
+23	27	xcomp
+27	26	aux
+27	31	prepc_with
+31	29	mark
+31	30	nsubj
+EOX
+D	0	32
+3
+1	0	det
+3	1	nsubjpass
+3	2	auxpass
+3	4	prep
+4	6	pobj
+6	5	det
+6	7	prep
+7	9	pobj
+9	8	det
+9	15	appos
+12	13	cc
+12	14	conj
+15	11	det
+15	12	amod
+15	17	rcmod
+17	16	nsubj
+17	23	ccomp
+19	20	prep
+20	22	pobj
+22	21	det
+23	18	mark
+23	19	nsubj
+23	24	prep
+23	27	xcomp
+24	25	pobj
+27	26	aux
+27	28	prep
+28	31	pcomp
+31	29	mark
+31	30	nsubj
+EOX
+Y	1
+ROOT	0	0	33	1	S	1	0	33	3	NP	1	0	2	2	DT	0	0	1	1	The	0	0	1	0	NNS	0	1	2	1	hunters	1	1	2	0	VP	1	2	32	2	VBD	0	2	3	1	were	2	2	3	0	VP	0	3	32	2	VBN	0	3	4	1	led	3	3	4	0	PP	0	4	32	2	IN	0	4	5	1	by	4	4	5	0	NP	0	5	32	2	NP	1	5	7	2	DT	0	5	6	1	the	5	5	6	0	NN	0	6	7	1	lord	6	6	7	0	PP	0	7	32	2	IN	0	7	8	1	of	7	7	8	0	NP	0	8	32	3	NP	1	8	10	2	DT	0	8	9	1	the	8	8	9	0	NN	0	9	10	1	district	9	9	10	0	,	0	10	11	1	,	10	10	11	0	NP	0	11	32	2	NP	2	11	16	3	DT	0	11	12	1	a	11	11	12	0	ADJP	0	12	15	3	JJ	0	12	13	1	proud	12	12	13	0	CC	0	13	14	1	and	13	13	14	0	JJ	0	14	15	1	cruel	14	14	15	0	NN	0	15	16	1	man	15	15	16	0	SBAR	1	16	32	2	WHNP	0	16	17	1	WP	0	16	17	1	who	16	16	17	0	S	0	17	32	1	VP	0	17	32	2	VBD	0	17	18	1	believed	17	17	18	0	SBAR	1	18	32	2	IN	0	18	19	1	that	18	18	19	0	S	1	19	32	2	NP	0	19	23	2	NP	0	19	20	1	NN	0	19	20	1	everything	19	19	20	0	PP	0	20	23	2	IN	0	20	21	1	in	20	20	21	0	NP	1	21	23	2	DT	0	21	22	1	the	21	21	22	0	NN	0	22	23	1	district	22	22	23	0	VP	0	23	32	3	VBD	0	23	24	1	belonged	23	23	24	0	PP	0	24	26	2	TO	0	24	25	1	to	24	24	25	0	NP	0	25	26	1	PRP	0	25	26	1	him	25	25	26	0	S	0	26	32	1	VP	1	26	32	2	TO	0	26	27	1	to	26	26	27	0	VP	0	27	32	2	VB	0	27	28	1	do	27	27	28	0	PP	0	28	32	2	IN	0	28	29	1	with	28	28	29	0	SBAR	1	29	32	2	IN	0	29	30	1	as	29	29	30	0	S	1	30	32	2	NP	0	30	31	1	PRP	0	30	31	1	he	30	30	31	0	VP	0	31	32	1	VBD	0	31	32	1	chose	31	31	32	0	.	0	32	33	1	.	32	32	33	0
+EOS
+T	16
+The	317	320	DT	the	O	O	_
+lord	321	325	NN	lord	O	O	_
+was	326	329	VBD	be	O	O	_
+always	330	336	RB	always	O	O	_
+looking	337	344	VBG	look	O	O	_
+for	345	348	IN	for	O	O	_
+beautiful	349	358	JJ	beautiful	O	O	_
+things	359	365	NNS	thing	O	O	_
+to	366	368	TO	to	O	O	_
+adorn	369	374	VB	adorn	O	O	_
+his	375	378	PRP$	he	O	O	_
+manor	379	384	NN	manor	O	O	_
+house	385	390	NN	house	O	O	_
+and	391	394	CC	and	O	O	_
+garden	395	401	NN	garden	O	O	_
+.	401	402	.	.	O	O	_
+D	1	15
+4
+1	0	det
+4	1	nsubj
+4	2	aux
+4	3	advmod
+4	7	prep_for
+4	9	xcomp
+7	6	amod
+9	8	aux
+9	12	dobj
+9	14	dobj
+12	10	poss
+12	11	nn
+12	14	conj_and
+EOX
+D	0	15
+4
+1	0	det
+4	1	nsubj
+4	2	aux
+4	3	advmod
+4	5	prep
+4	9	xcomp
+5	7	pobj
+7	6	amod
+9	8	aux
+9	12	dobj
+12	10	poss
+12	11	nn
+12	13	cc
+12	14	conj
+EOX
+Y	1
+ROOT	0	0	16	1	S	1	0	16	3	NP	1	0	2	2	DT	0	0	1	1	The	0	0	1	0	NN	0	1	2	1	lord	1	1	2	0	VP	2	2	15	3	VBD	0	2	3	1	was	2	2	3	0	ADVP	0	3	4	1	RB	0	3	4	1	always	3	3	4	0	VP	0	4	15	3	VBG	0	4	5	1	looking	4	4	5	0	PP	0	5	8	2	IN	0	5	6	1	for	5	5	6	0	NP	1	6	8	2	JJ	0	6	7	1	beautiful	6	6	7	0	NNS	0	7	8	1	things	7	7	8	0	S	0	8	15	1	VP	1	8	15	2	TO	0	8	9	1	to	8	8	9	0	VP	0	9	15	2	VB	0	9	10	1	adorn	9	9	10	0	NP	2	10	15	5	PRP$	0	10	11	1	his	10	10	11	0	NN	0	11	12	1	manor	11	11	12	0	NN	0	12	13	1	house	12	12	13	0	CC	0	13	14	1	and	13	13	14	0	NN	0	14	15	1	garden	14	14	15	0	.	0	15	16	1	.	15	15	16	0
+EOS
+T	21
+And	403	406	CC	and	O	O	_
+when	407	411	WRB	when	O	O	_
+he	412	414	PRP	he	O	O	_
+saw	415	418	VBD	see	O	O	_
+the	419	422	DT	the	O	O	_
+drake	423	428	NN	drake	O	O	_
+swimming	429	437	NN	swimming	O	O	_
+gracefully	438	448	RB	gracefully	O	O	_
+on	449	451	IN	on	O	O	_
+the	452	455	DT	the	O	O	_
+surface	456	463	NN	surface	O	O	_
+of	464	466	IN	of	O	O	_
+the	467	470	DT	the	O	O	_
+pond	471	475	NN	pond	O	O	_
+,	475	476	,	,	O	O	_
+he	477	479	PRP	he	O	O	_
+determined	480	490	VBD	determine	O	O	_
+to	491	493	TO	to	O	O	_
+capture	494	501	VB	capture	O	O	_
+him	502	505	PRP	he	O	O	_
+.	505	506	.	.	O	O	_
+D	1	20
+16
+3	1	advmod
+3	2	nsubj
+3	6	dobj
+3	7	advmod
+3	10	prep_on
+6	4	det
+6	5	nn
+10	9	det
+10	13	prep_of
+13	12	det
+16	0	cc
+16	3	advcl
+16	15	nsubj
+16	18	xcomp
+18	17	aux
+18	19	dobj
+EOX
+D	0	20
+16
+3	1	advmod
+3	2	nsubj
+3	6	dobj
+3	7	advmod
+3	8	prep
+6	4	det
+6	5	nn
+8	10	pobj
+10	9	det
+10	11	prep
+11	13	pobj
+13	12	det
+16	0	cc
+16	3	advcl
+16	15	nsubj
+16	18	xcomp
+18	17	aux
+18	19	dobj
+EOX
+Y	1
+ROOT	0	0	21	1	S	4	0	21	6	CC	0	0	1	1	And	0	0	1	0	SBAR	1	1	14	2	WHADVP	0	1	2	1	WRB	0	1	2	1	when	1	1	2	0	S	1	2	14	2	NP	0	2	3	1	PRP	0	2	3	1	he	2	2	3	0	VP	0	3	14	4	VBD	0	3	4	1	saw	3	3	4	0	NP	2	4	7	3	DT	0	4	5	1	the	4	4	5	0	NN	0	5	6	1	drake	5	5	6	0	NN	0	6	7	1	swimming	6	6	7	0	ADVP	0	7	8	1	RB	0	7	8	1	gracefully	7	7	8	0	PP	0	8	14	2	IN	0	8	9	1	on	8	8	9	0	NP	0	9	14	2	NP	1	9	11	2	DT	0	9	10	1	the	9	9	10	0	NN	0	10	11	1	surface	10	10	11	0	PP	0	11	14	2	IN	0	11	12	1	of	11	11	12	0	NP	1	12	14	2	DT	0	12	13	1	the	12	12	13	0	NN	0	13	14	1	pond	13	13	14	0	,	0	14	15	1	,	14	14	15	0	NP	0	15	16	1	PRP	0	15	16	1	he	15	15	16	0	VP	0	16	20	2	VBD	0	16	17	1	determined	16	16	17	0	S	0	17	20	1	VP	1	17	20	2	TO	0	17	18	1	to	17	17	18	0	VP	0	18	20	2	VB	0	18	19	1	capture	18	18	19	0	NP	0	19	20	1	PRP	0	19	20	1	him	19	19	20	0	.	0	20	21	1	.	20	20	21	0
+EOS
+C	26
+3	10	10	11	11
+4	10	9	14	24
+0	18	16	19	6
+0	9	8	10	3
+3	1	0	2	11
+1	1	1	2	5
+1	10	9	11	9
+4	6	4	7	23
+3	12	10	15	20
+4	13	12	14	6
+2	15	11	32	14
+2	6	5	32	11
+0	8	8	9	4
+0	4	3	5	2
+2	9	8	32	12
+0	12	11	13	5
+4	2	2	3	11
+3	7	6	8	19
+0	1	0	2	1
+2	22	21	23	13
+4	15	15	16	11
+1	7	5	8	8
+2	1	0	2	10
+2	30	30	31	5
+4	19	19	20	11
+2	25	25	26	5
+R
+joint	None	-1	-1	0	0	4	20	0	2	2	nil
+elaboration	LeftToRight	-1	-1	0	0	1	11	0	1	2	nil
+same-unit	None	-1	-1	0	0	0	23	0	3	2	nil
+nil	None	-1	-1	0	0	0	1	0	0	0	One day
+contrast	RightToLeft	-1	-1	0	2	0	23	1	3	2	nil
+nil	None	-1	-1	0	2	0	10	1	1	0	while the duck was sitting on her eggs ,
+enablement	LeftToRight	-1	-1	0	11	0	23	2	3	2	nil
+nil	None	-1	-1	0	11	0	18	2	2	0	the drake flew down to a nearby pond
+nil	None	-1	-1	0	19	0	23	3	3	0	to search for food .
+contrast	RightToLeft	-1	-1	1	0	1	11	0	1	2	nil
+nil	None	-1	-1	1	0	1	4	0	0	0	While he was there ,
+nil	None	-1	-1	1	5	1	11	1	1	0	a hunting party entered the woods .
+joint	None	-1	-1	2	0	4	20	0	2	2	nil
+elaboration	LeftToRight	-1	-1	2	0	3	15	0	0	2	nil
+elaboration	LeftToRight	-1	-1	2	0	2	32	0	2	2	nil
+nil	None	-1	-1	2	0	2	15	0	0	0	The hunters were led by the lord of the district , a proud and cruel man
+attribution	RightToLeft	-1	-1	2	16	2	32	1	2	2	nil
+nil	None	-1	-1	2	16	2	17	1	1	0	who believed
+nil	None	-1	-1	2	18	2	32	2	2	0	that everything in the district belonged to him to do with as he chose .
+nil	None	-1	-1	3	0	3	15	0	0	0	The lord was always looking for beautiful things to adorn his manor house and garden .
+same-unit	None	-1	-1	4	0	4	20	0	2	2	nil
+nil	None	-1	-1	4	0	4	0	0	0	0	And
+background	RightToLeft	-1	-1	4	1	4	20	1	2	2	nil
+nil	None	-1	-1	4	1	4	14	1	1	0	when he saw the drake swimming gracefully on the surface of the pond ,
+nil	None	-1	-1	4	15	4	20	2	2	0	he determined to capture him .
+EOD
+S	5
+T	17
+The	0	3	DT	the	O	O	_
+lord	4	8	NN	lord	O	O	_
+'s	8	10	POS	's	O	O	_
+chief	11	16	NN	chief	O	O	_
+steward	17	24	NN	steward	O	O	_
+,	24	25	,	,	O	O	_
+a	26	27	DT	a	O	O	_
+man	28	31	NN	man	O	O	_
+named	32	37	VBN	name	O	O	_
+Shozo	38	43	NNP	Shozo	PERSON	O	_
+,	43	44	,	,	O	O	_
+tried	45	50	VBD	try	O	O	_
+to	51	53	TO	to	O	O	_
+discourage	54	64	VB	discourage	O	O	_
+his	65	68	PRP$	he	O	O	_
+master	69	75	NN	master	O	O	_
+.	75	76	.	.	O	O	_
+D	1	16
+11
+1	0	det
+4	1	poss
+4	3	nn
+4	7	appos
+7	6	det
+7	8	vmod
+8	9	dobj
+11	4	nsubj
+11	13	xcomp
+13	12	aux
+13	15	dobj
+15	14	poss
+EOX
+D	0	16
+11
+1	0	det
+1	2	possessive
+4	1	poss
+4	3	nn
+4	7	appos
+7	6	det
+7	8	vmod
+8	9	dobj
+11	4	nsubj
+11	13	xcomp
+13	12	aux
+13	15	dobj
+15	14	poss
+EOX
+Y	1
+ROOT	0	0	17	1	S	1	0	17	3	NP	0	0	11	4	NP	2	0	5	3	NP	1	0	3	3	DT	0	0	1	1	The	0	0	1	0	NN	0	1	2	1	lord	1	1	2	0	POS	0	2	3	1	's	2	2	3	0	NN	0	3	4	1	chief	3	3	4	0	NN	0	4	5	1	steward	4	4	5	0	,	0	5	6	1	,	5	5	6	0	NP	0	6	10	2	NP	1	6	8	2	DT	0	6	7	1	a	6	6	7	0	NN	0	7	8	1	man	7	7	8	0	VP	0	8	10	2	VBN	0	8	9	1	named	8	8	9	0	NP	0	9	10	1	NNP	0	9	10	1	Shozo	9	9	10	0	,	0	10	11	1	,	10	10	11	0	VP	0	11	16	2	VBD	0	11	12	1	tried	11	11	12	0	S	0	12	16	1	VP	1	12	16	2	TO	0	12	13	1	to	12	12	13	0	VP	0	13	16	2	VB	0	13	14	1	discourage	13	13	14	0	NP	1	14	16	2	PRP$	0	14	15	1	his	14	14	15	0	NN	0	15	16	1	master	15	15	16	0	.	0	16	17	1	.	16	16	17	0
+EOS
+T	15
+``	77	78	``	``	O	O	_
+The	78	81	DT	the	O	O	_
+drake	82	87	NN	drake	O	O	_
+is	88	90	VBZ	be	O	O	_
+a	91	92	DT	a	O	O	_
+wild	93	97	JJ	wild	O	O	_
+spirit	98	104	NN	spirit	O	O	_
+,	104	105	,	,	O	O	_
+my	106	108	PRP$	my	O	O	_
+lord	109	113	NN	lord	O	O	_
+,	113	114	,	,	O	O	_
+''	114	115	''	''	O	O	_
+he	116	118	PRP	he	O	O	_
+said	119	123	VBD	say	O	O	_
+.	123	124	.	.	O	O	_
+D	1	14
+13
+2	1	det
+6	2	nsubj
+6	3	cop
+6	4	det
+6	5	amod
+6	9	appos
+9	8	poss
+13	6	ccomp
+13	12	nsubj
+EOX
+D	0	14
+13
+2	1	det
+6	2	nsubj
+6	3	cop
+6	4	det
+6	5	amod
+6	9	appos
+9	8	poss
+13	6	ccomp
+13	12	nsubj
+EOX
+Y	1
+ROOT	0	0	15	1	S	5	0	15	7	``	0	0	1	1	``	0	0	1	0	S	1	1	10	2	NP	1	1	3	2	DT	0	1	2	1	The	1	1	2	0	NN	0	2	3	1	drake	2	2	3	0	VP	1	3	10	2	VBZ	0	3	4	1	is	3	3	4	0	NP	0	4	10	3	NP	2	4	7	3	DT	0	4	5	1	a	4	4	5	0	JJ	0	5	6	1	wild	5	5	6	0	NN	0	6	7	1	spirit	6	6	7	0	,	0	7	8	1	,	7	7	8	0	NP	1	8	10	2	PRP$	0	8	9	1	my	8	8	9	0	NN	0	9	10	1	lord	9	9	10	0	,	0	10	11	1	,	10	10	11	0	''	0	11	12	1	''	11	11	12	0	NP	0	12	13	1	PRP	0	12	13	1	he	12	12	13	0	VP	0	13	14	1	VBD	0	13	14	1	said	13	13	14	0	.	0	14	15	1	.	14	14	15	0
+EOS
+T	9
+``	125	126	``	``	O	O	_
+Surely	126	132	RB	surely	O	O	_
+he	133	135	PRP	he	O	O	_
+will	136	140	MD	will	O	O	_
+die	141	144	VB	die	O	O	_
+in	145	147	IN	in	O	O	_
+captivity	148	157	NN	captivity	O	O	_
+.	157	158	.	.	O	O	_
+''	158	159	''	''	O	O	_
+D	1	7
+4
+4	1	advmod
+4	2	nsubj
+4	3	aux
+4	6	prep_in
+EOX
+D	0	7
+4
+4	1	advmod
+4	2	nsubj
+4	3	aux
+4	5	prep
+5	6	pobj
+EOX
+Y	1
+ROOT	0	0	9	1	S	3	0	9	6	``	0	0	1	1	``	0	0	1	0	ADVP	0	1	2	1	RB	0	1	2	1	Surely	1	1	2	0	NP	0	2	3	1	PRP	0	2	3	1	he	2	2	3	0	VP	1	3	7	2	MD	0	3	4	1	will	3	3	4	0	VP	0	4	7	2	VB	0	4	5	1	die	4	4	5	0	PP	0	5	7	2	IN	0	5	6	1	in	5	5	6	0	NP	0	6	7	1	NN	0	6	7	1	captivity	6	6	7	0	.	0	7	8	1	.	7	7	8	0	''	0	8	9	1	''	8	8	9	0
+EOS
+T	9
+But	160	163	CC	but	O	O	_
+the	164	167	DT	the	O	O	_
+lord	168	172	NN	lord	O	O	_
+pretended	173	182	VBD	pretend	O	O	_
+not	183	186	RB	not	O	O	_
+to	187	189	TO	to	O	O	_
+hear	190	194	VB	hear	O	O	_
+Shozo	195	200	NNP	Shozo	PERSON	O	_
+.	200	201	.	.	O	O	_
+D	1	8
+3
+2	1	det
+3	0	cc
+3	2	nsubj
+3	6	xcomp
+6	4	neg
+6	5	aux
+6	7	dobj
+EOX
+D	0	8
+3
+2	1	det
+3	0	cc
+3	2	nsubj
+3	6	xcomp
+6	4	neg
+6	5	aux
+6	7	dobj
+EOX
+Y	1
+ROOT	0	0	9	1	S	2	0	9	4	CC	0	0	1	1	But	0	0	1	0	NP	1	1	3	2	DT	0	1	2	1	the	1	1	2	0	NN	0	2	3	1	lord	2	2	3	0	VP	0	3	8	2	VBD	0	3	4	1	pretended	3	3	4	0	S	1	4	8	2	RB	0	4	5	1	not	4	4	5	0	VP	1	5	8	2	TO	0	5	6	1	to	5	5	6	0	VP	0	6	8	2	VB	0	6	7	1	hear	6	6	7	0	NP	0	7	8	1	NNP	0	7	8	1	Shozo	7	7	8	0	.	0	8	9	1	.	8	8	9	0
+EOS
+T	32
+Secretly	202	210	RB	secretly	O	O	_
+he	211	213	PRP	he	O	O	_
+despised	214	222	VBD	despise	O	O	_
+Shozo	223	228	NNP	Shozo	PERSON	O	_
+,	228	229	,	,	O	O	_
+because	230	237	IN	because	O	O	_
+although	238	246	IN	although	O	O	_
+Shozo	247	252	NNP	Shozo	PERSON	O	_
+had	253	256	VBD	have	O	O	_
+once	257	261	RB	once	DATE	PAST_REF	_
+been	262	266	VBN	be	O	O	_
+his	267	270	PRP$	he	O	O	_
+mightiest	271	280	JJS	mightiest	O	O	_
+samurai	281	288	NN	samurai	O	O	_
+,	288	289	,	,	O	O	_
+the	290	293	DT	the	O	O	_
+warrior	294	301	NN	warrior	O	O	_
+had	302	305	VBD	have	O	O	_
+lost	306	310	VBN	lose	O	O	_
+an	311	313	DT	a	O	O	_
+eye	314	317	NN	eye	O	O	_
+in	318	320	IN	in	O	O	_
+battle	321	327	NN	battle	O	O	_
+and	328	331	CC	and	O	O	_
+was	332	335	VBD	be	O	O	_
+no	336	338	RB	no	O	O	_
+longer	339	345	RB	longer	O	O	_
+handsome	346	354	JJ	handsome	O	O	_
+to	355	357	TO	to	O	O	_
+look	358	362	VB	look	O	O	_
+upon	363	367	IN	upon	O	O	_
+.	367	368	.	.	O	O	_
+D	1	31
+2
+2	0	advmod
+2	1	nsubj
+2	3	dobj
+2	18	advcl
+2	27	advcl
+13	6	mark
+13	7	nsubj
+13	8	aux
+13	9	advmod
+13	10	cop
+13	11	poss
+13	12	amod
+16	15	det
+18	5	mark
+18	13	advcl
+18	16	nsubj
+18	17	aux
+18	20	dobj
+18	27	conj_and
+20	19	det
+20	22	prep_in
+26	25	neg
+27	16	nsubj
+27	24	cop
+27	26	advmod
+27	29	xcomp
+29	28	aux
+29	30	prep
+EOX
+D	0	31
+2
+2	0	advmod
+2	1	nsubj
+2	3	dobj
+2	18	advcl
+13	6	mark
+13	7	nsubj
+13	8	aux
+13	9	advmod
+13	10	cop
+13	11	poss
+13	12	amod
+16	15	det
+18	5	mark
+18	13	advcl
+18	16	nsubj
+18	17	aux
+18	20	dobj
+18	23	cc
+18	27	conj
+20	19	det
+20	21	prep
+21	22	pobj
+26	25	neg
+27	24	cop
+27	26	advmod
+27	29	xcomp
+29	28	aux
+29	30	prep
+EOX
+Y	1
+ROOT	0	0	32	1	S	2	0	32	4	ADVP	0	0	1	1	RB	0	0	1	1	Secretly	0	0	1	0	NP	0	1	2	1	PRP	0	1	2	1	he	1	1	2	0	VP	0	2	31	4	VBD	0	2	3	1	despised	2	2	3	0	NP	0	3	4	1	NNP	0	3	4	1	Shozo	3	3	4	0	,	0	4	5	1	,	4	4	5	0	SBAR	1	5	31	2	IN	0	5	6	1	because	5	5	6	0	S	3	6	31	4	SBAR	1	6	14	2	IN	0	6	7	1	although	6	6	7	0	S	1	7	14	2	NP	0	7	8	1	NNP	0	7	8	1	Shozo	7	7	8	0	VP	2	8	14	3	VBD	0	8	9	1	had	8	8	9	0	ADVP	0	9	10	1	RB	0	9	10	1	once	9	9	10	0	VP	1	10	14	2	VBN	0	10	11	1	been	10	10	11	0	NP	2	11	14	3	PRP$	0	11	12	1	his	11	11	12	0	JJS	0	12	13	1	mightiest	12	12	13	0	NN	0	13	14	1	samurai	13	13	14	0	,	0	14	15	1	,	14	14	15	0	NP	1	15	17	2	DT	0	15	16	1	the	15	15	16	0	NN	0	16	17	1	warrior	16	16	17	0	VP	0	17	31	3	VP	1	17	23	2	VBD	0	17	18	1	had	17	17	18	0	VP	0	18	23	2	VBN	0	18	19	1	lost	18	18	19	0	NP	0	19	23	2	NP	1	19	21	2	DT	0	19	20	1	an	19	19	20	0	NN	0	20	21	1	eye	20	20	21	0	PP	0	21	23	2	IN	0	21	22	1	in	21	21	22	0	NP	0	22	23	1	NN	0	22	23	1	battle	22	22	23	0	CC	0	23	24	1	and	23	23	24	0	VP	1	24	31	2	VBD	0	24	25	1	was	24	24	25	0	ADJP	1	25	31	3	ADVP	1	25	27	2	RB	0	25	26	1	no	25	25	26	0	RB	0	26	27	1	longer	26	26	27	0	JJ	0	27	28	1	handsome	27	27	28	0	S	0	28	31	1	VP	1	28	31	2	TO	0	28	29	1	to	28	28	29	0	VP	0	29	31	2	VB	0	29	30	1	look	29	29	30	0	PP	0	30	31	1	IN	0	30	31	1	upon	30	30	31	0	.	0	31	32	1	.	31	31	32	0
+EOS
+C	21
+1	8	8	9	3
+4	7	7	8	1
+0	9	9	10	1
+4	1	1	2	4
+0	7	6	10	3
+0	14	14	15	3
+1	6	4	10	9
+1	12	12	13	3
+0	15	14	16	6
+4	20	19	23	23
+4	11	11	12	1
+1	9	8	10	4
+4	13	11	14	1
+0	4	0	10	2
+3	2	1	3	4
+2	2	2	3	8
+3	7	7	8	1
+0	1	0	3	4
+1	2	1	3	8
+4	3	3	4	1
+4	16	15	17	22
+R
+contrast	None	-1	-1	0	0	4	31	0	3	2	nil
+elaboration	LeftToRight	-1	-1	0	0	2	8	0	0	2	nil
+same-unit	None	-1	-1	0	0	0	16	0	2	2	nil
+elaboration	LeftToRight	-1	-1	0	0	0	10	0	1	2	nil
+nil	None	-1	-1	0	0	0	7	0	0	0	The lord 's chief steward , a man
+nil	None	-1	-1	0	8	0	10	1	1	0	named Shozo ,
+nil	None	-1	-1	0	11	0	16	2	2	0	tried to discourage his master .
+elaboration	LeftToRight	-1	-1	1	0	2	8	0	0	2	nil
+attribution	LeftToRight	-1	-1	1	0	1	14	0	1	2	nil
+nil	None	-1	-1	1	0	1	11	0	0	0	`` The drake is a wild spirit , my lord , ''
+nil	None	-1	-1	1	12	1	14	1	1	0	he said .
+nil	None	-1	-1	2	0	2	8	0	0	0	`` Surely he will die in captivity . ''
+elaboration	LeftToRight	-1	-1	3	0	4	31	0	3	2	nil
+nil	None	-1	-1	3	0	3	8	0	0	0	But the lord pretended not to hear Shozo .
+explanation	LeftToRight	-1	-1	4	0	4	31	0	3	2	nil
+nil	None	-1	-1	4	0	4	4	0	0	0	Secretly he despised Shozo ,
+same-unit	None	-1	-1	4	5	4	31	1	3	2	nil
+nil	None	-1	-1	4	5	4	14	1	1	0	because although Shozo had once been his mightiest samurai ,
+joint	None	-1	-1	4	15	4	31	2	3	2	nil
+nil	None	-1	-1	4	15	4	22	2	2	0	the warrior had lost an eye in battle
+nil	None	-1	-1	4	23	4	31	3	3	0	and was no longer handsome to look upon .
+EOD
+S	4
+T	20
+The	0	3	DT	the	O	O	_
+lord	4	8	NN	lord	O	O	_
+ordered	9	16	VBD	order	O	O	_
+his	17	20	PRP$	he	O	O	_
+servants	21	29	NNS	servant	O	O	_
+to	30	32	TO	to	O	O	_
+clear	33	38	VB	clear	O	O	_
+a	39	40	DT	a	O	O	_
+narrow	41	47	JJ	narrow	O	O	_
+way	48	51	NN	way	O	O	_
+through	52	59	IN	through	O	O	_
+the	60	63	DT	the	O	O	_
+undergrowth	64	75	NN	undergrowth	O	O	_
+and	76	79	CC	and	O	O	_
+place	80	85	NN	place	O	O	_
+acorns	86	92	NNS	acorn	O	O	_
+along	93	98	IN	along	O	O	_
+the	99	102	DT	the	O	O	_
+path	103	107	NN	path	O	O	_
+.	107	108	.	.	O	O	_
+D	1	19
+2
+1	0	det
+2	1	nsubj
+2	4	dobj
+2	6	xcomp
+4	3	poss
+6	5	aux
+6	9	dobj
+6	15	prep_through
+9	7	det
+9	8	amod
+12	14	conj_and
+15	11	det
+15	12	nn
+15	14	nn
+15	18	prep_along
+18	17	det
+EOX
+D	0	19
+2
+1	0	det
+2	1	nsubj
+2	4	dobj
+2	6	xcomp
+4	3	poss
+6	5	aux
+6	9	dobj
+6	10	prep
+9	7	det
+9	8	amod
+10	15	pobj
+12	13	cc
+12	14	conj
+15	11	det
+15	12	nn
+15	16	prep
+16	18	pobj
+18	17	det
+EOX
+Y	1
+ROOT	0	0	20	1	S	1	0	20	3	NP	1	0	2	2	DT	0	0	1	1	The	0	0	1	0	NN	0	1	2	1	lord	1	1	2	0	VP	0	2	19	3	VBD	0	2	3	1	ordered	2	2	3	0	NP	1	3	5	2	PRP$	0	3	4	1	his	3	3	4	0	NNS	0	4	5	1	servants	4	4	5	0	S	0	5	19	1	VP	1	5	19	2	TO	0	5	6	1	to	5	5	6	0	VP	0	6	19	3	VB	0	6	7	1	clear	6	6	7	0	NP	2	7	10	3	DT	0	7	8	1	a	7	7	8	0	JJ	0	8	9	1	narrow	8	8	9	0	NN	0	9	10	1	way	9	9	10	0	PP	0	10	19	2	IN	0	10	11	1	through	10	10	11	0	NP	0	11	19	2	NP	4	11	16	5	DT	0	11	12	1	the	11	11	12	0	NN	0	12	13	1	undergrowth	12	12	13	0	CC	0	13	14	1	and	13	13	14	0	NN	0	14	15	1	place	14	14	15	0	NNS	0	15	16	1	acorns	15	15	16	0	PP	0	16	19	2	IN	0	16	17	1	along	16	16	17	0	NP	1	17	19	2	DT	0	17	18	1	the	17	17	18	0	NN	0	18	19	1	path	18	18	19	0	.	0	19	20	1	.	19	19	20	0
+EOS
+T	13
+When	109	113	WRB	when	O	O	_
+the	114	117	DT	the	O	O	_
+drake	118	123	NN	drake	O	O	_
+came	124	128	VBD	come	O	O	_
+out	129	132	IN	out	O	O	_
+of	133	135	IN	of	O	O	_
+the	136	139	DT	the	O	O	_
+water	140	145	NN	water	O	O	_
+he	146	148	PRP	he	O	O	_
+saw	149	152	VBD	see	O	O	_
+the	153	156	DT	the	O	O	_
+acorns	157	163	NNS	acorn	O	O	_
+.	163	164	.	.	O	O	_
+D	1	12
+9
+2	1	det
+3	0	advmod
+3	2	nsubj
+3	7	prep_out_of
+7	6	det
+9	3	advcl
+9	8	nsubj
+9	11	dobj
+11	10	det
+EOX
+D	0	12
+9
+2	1	det
+3	0	advmod
+3	2	nsubj
+3	4	prt
+3	5	prep
+5	7	pobj
+7	6	det
+9	3	advcl
+9	8	nsubj
+9	11	dobj
+11	10	det
+EOX
+Y	1
+ROOT	0	0	13	1	S	2	0	13	4	SBAR	1	0	8	2	WHADVP	0	0	1	1	WRB	0	0	1	1	When	0	0	1	0	S	1	1	8	2	NP	1	1	3	2	DT	0	1	2	1	the	1	1	2	0	NN	0	2	3	1	drake	2	2	3	0	VP	0	3	8	3	VBD	0	3	4	1	came	3	3	4	0	PRT	0	4	5	1	IN	0	4	5	1	out	4	4	5	0	PP	0	5	8	2	IN	0	5	6	1	of	5	5	6	0	NP	1	6	8	2	DT	0	6	7	1	the	6	6	7	0	NN	0	7	8	1	water	7	7	8	0	NP	0	8	9	1	PRP	0	8	9	1	he	8	8	9	0	VP	0	9	12	2	VBD	0	9	10	1	saw	9	9	10	0	NP	1	10	12	2	DT	0	10	11	1	the	10	10	11	0	NNS	0	11	12	1	acorns	11	11	12	0	.	0	12	13	1	.	12	12	13	0
+EOS
+T	5
+How	165	168	WRB	how	O	O	_
+pleased	169	176	JJ	pleased	O	O	_
+he	177	179	PRP	he	O	O	_
+was	180	183	VBD	be	O	O	_
+!	183	184	.	!	O	O	_
+D	1	4
+3
+1	0	advmod
+3	1	dep
+3	2	nsubj
+EOX
+D	0	4
+3
+1	0	advmod
+3	1	dep
+3	2	nsubj
+EOX
+Y	1
+ROOT	0	0	5	1	S	2	0	5	4	ADJP	1	0	2	2	WRB	0	0	1	1	How	0	0	1	0	JJ	0	1	2	1	pleased	1	1	2	0	NP	0	2	3	1	PRP	0	2	3	1	he	2	2	3	0	VP	0	3	4	1	VBD	0	3	4	1	was	3	3	4	0	.	0	4	5	1	!	4	4	5	0
+EOS
+T	22
+He	185	187	PRP	he	O	O	_
+forgot	188	194	VBD	forget	O	O	_
+to	195	197	TO	to	O	O	_
+be	198	200	VB	be	O	O	_
+cautious	201	209	JJ	cautious	O	O	_
+,	209	210	,	,	O	O	_
+thinking	211	219	VBG	think	O	O	_
+only	220	224	RB	only	O	O	_
+of	225	227	IN	of	O	O	_
+what	228	232	WP	what	O	O	_
+a	233	234	DT	a	O	O	_
+feast	235	240	NN	feast	O	O	_
+they	241	245	PRP	they	O	O	_
+would	246	251	MD	would	O	O	_
+be	252	254	VB	be	O	O	_
+to	255	257	TO	to	O	O	_
+take	258	262	VB	take	O	O	_
+home	263	267	NN	home	O	O	_
+to	268	270	TO	to	O	O	_
+his	271	274	PRP$	he	O	O	_
+mate	275	279	NN	mate	O	O	_
+.	279	280	.	.	O	O	_
+D	1	21
+1
+1	0	nsubj
+1	4	xcomp
+1	6	xcomp
+4	2	aux
+4	3	cop
+6	7	advmod
+6	14	ccomp
+9	11	dep
+11	10	det
+14	9	prep_of
+14	12	nsubj
+14	13	aux
+14	16	xcomp
+16	15	aux
+16	17	dobj
+16	20	prep_to
+20	19	poss
+EOX
+D	0	21
+1
+1	0	nsubj
+1	4	xcomp
+1	6	xcomp
+4	2	aux
+4	3	cop
+6	7	advmod
+6	14	ccomp
+8	9	pobj
+9	11	dep
+11	10	det
+14	8	prep
+14	12	nsubj
+14	13	aux
+14	16	xcomp
+16	15	aux
+16	17	dobj
+16	18	prep
+18	20	pobj
+20	19	poss
+EOX
+Y	1
+ROOT	0	0	22	1	S	1	0	22	3	NP	0	0	1	1	PRP	0	0	1	1	He	0	0	1	0	VP	0	1	21	4	VBD	0	1	2	1	forgot	1	1	2	0	S	0	2	5	1	VP	1	2	5	2	TO	0	2	3	1	to	2	2	3	0	VP	1	3	5	2	VB	0	3	4	1	be	3	3	4	0	ADJP	0	4	5	1	JJ	0	4	5	1	cautious	4	4	5	0	,	0	5	6	1	,	5	5	6	0	S	0	6	21	1	VP	0	6	21	3	VBG	0	6	7	1	thinking	6	6	7	0	ADVP	0	7	8	1	RB	0	7	8	1	only	7	7	8	0	SBAR	1	8	21	2	WHPP	0	8	12	2	IN	0	8	9	1	of	8	8	9	0	WHNP	0	9	12	2	WP	0	9	10	1	what	9	9	10	0	NP	1	10	12	2	DT	0	10	11	1	a	10	10	11	0	NN	0	11	12	1	feast	11	11	12	0	S	1	12	21	2	NP	0	12	13	1	PRP	0	12	13	1	they	12	12	13	0	VP	1	13	21	2	MD	0	13	14	1	would	13	13	14	0	VP	0	14	21	2	VB	0	14	15	1	be	14	14	15	0	S	0	15	21	1	VP	1	15	21	2	TO	0	15	16	1	to	15	15	16	0	VP	0	16	21	3	VB	0	16	17	1	take	16	16	17	0	NP	0	17	18	1	NN	0	17	18	1	home	17	17	18	0	PP	0	18	21	2	TO	0	18	19	1	to	18	18	19	0	NP	1	19	21	2	PRP$	0	19	20	1	his	19	19	20	0	NN	0	20	21	1	mate	20	20	21	0	.	0	21	22	1	.	21	21	22	0
+EOS
+C	16
+1	8	8	9	7
+3	11	10	12	13
+0	18	17	19	6
+0	9	7	10	4
+0	3	3	4	1
+3	0	0	1	7
+1	11	10	12	5
+0	15	11	19	5
+3	12	12	13	2
+0	4	3	5	2
+2	2	2	3	7
+0	1	0	2	1
+1	7	6	8	8
+3	19	19	20	7
+1	2	1	3	7
+3	20	19	21	15
+R
+elaboration	LeftToRight	-1	-1	0	0	3	21	0	1	2	nil
+nil	None	-1	-1	0	0	0	19	0	0	0	The lord ordered his servants to clear a narrow way through the undergrowth and place acorns along the path .
+elaboration	LeftToRight	-1	-1	1	0	3	21	0	1	2	nil
+background	RightToLeft	-1	-1	1	0	1	12	0	1	2	nil
+nil	None	-1	-1	1	0	1	7	0	0	0	When the drake came out of the water
+nil	None	-1	-1	1	8	1	12	1	1	0	he saw the acorns .
+elaboration	LeftToRight	-1	-1	2	0	3	21	0	1	2	nil
+nil	None	-1	-1	2	0	2	4	0	0	0	How pleased he was !
+elaboration	LeftToRight	-1	-1	3	0	3	21	0	1	2	nil
+nil	None	-1	-1	3	0	3	5	0	0	0	He forgot to be cautious ,
+nil	None	-1	-1	3	6	3	21	1	1	0	thinking only of what a feast they would be to take home to his mate .
+EOD
+S	1
+T	41
+Just	0	4	RB	just	O	O	_
+as	5	7	IN	as	O	O	_
+he	8	10	PRP	he	O	O	_
+was	11	14	VBD	be	O	O	_
+bending	15	22	VBG	bend	O	O	_
+to	23	25	TO	to	O	O	_
+pick	26	30	VB	pick	O	O	_
+up	31	33	RP	up	O	O	_
+an	34	36	DT	a	O	O	_
+acorn	37	42	NN	acorn	O	O	_
+in	43	45	IN	in	O	O	_
+his	46	49	PRP$	he	O	O	_
+scarlet	50	57	JJ	scarlet	O	O	_
+beak	58	62	NN	beak	O	O	_
+,	62	63	,	,	O	O	_
+a	64	65	DT	a	O	O	_
+net	66	69	NN	net	O	O	_
+fell	70	74	VBD	fall	O	O	_
+over	75	79	IN	over	O	O	_
+him	80	83	PRP	he	O	O	_
+,	83	84	,	,	O	O	_
+and	85	88	CC	and	O	O	_
+the	89	92	DT	the	O	O	_
+frightened	93	103	JJ	frightened	O	O	_
+bird	104	108	NN	bird	O	O	_
+was	109	112	VBD	be	O	O	_
+carried	113	120	VBN	carry	O	O	_
+back	121	125	RB	back	O	O	_
+to	126	128	TO	to	O	O	_
+the	129	132	DT	the	O	O	_
+lord	133	137	NN	lord	O	O	_
+'s	137	139	POS	's	O	O	_
+manor	140	145	NN	manor	O	O	_
+and	146	149	CC	and	O	O	_
+placed	150	156	VBN	place	O	O	_
+in	157	159	IN	in	O	O	_
+a	160	161	DT	a	O	O	_
+small	162	167	JJ	small	O	O	_
+bamboo	168	174	JJ	bamboo	O	O	_
+cage	175	179	NN	cage	O	O	_
+.	179	180	.	.	O	O	_
+D	1	40
+17
+4	0	advmod
+4	1	mark
+4	2	nsubj
+4	3	aux
+4	6	xcomp
+6	5	aux
+6	7	prt
+6	9	dobj
+9	8	det
+9	13	prep_in
+13	11	poss
+13	12	amod
+16	15	det
+17	4	advcl
+17	16	nsubj
+17	19	prep_over
+17	26	conj_and
+17	34	conj_and
+24	22	det
+24	23	amod
+26	24	nsubjpass
+26	25	auxpass
+26	27	advmod
+26	32	prep_to
+26	34	conj_and
+30	29	det
+32	30	poss
+34	24	nsubjpass
+34	39	prep_in
+39	36	det
+39	37	amod
+39	38	amod
+EOX
+D	0	40
+17
+4	0	advmod
+4	1	mark
+4	2	nsubj
+4	3	aux
+4	6	xcomp
+6	5	aux
+6	7	prt
+6	9	dobj
+9	8	det
+9	10	prep
+10	13	pobj
+13	11	poss
+13	12	amod
+16	15	det
+17	4	advcl
+17	16	nsubj
+17	18	prep
+17	21	cc
+17	26	conj
+18	19	pobj
+24	22	det
+24	23	amod
+26	24	nsubjpass
+26	25	auxpass
+26	27	advmod
+26	28	prep
+26	33	cc
+26	34	conj
+28	32	pobj
+30	29	det
+30	31	possessive
+32	30	poss
+34	35	prep
+35	39	pobj
+39	36	det
+39	37	amod
+39	38	amod
+EOX
+Y	1
+ROOT	0	0	41	1	S	0	0	41	5	S	3	0	20	4	SBAR	2	0	14	3	RB	0	0	1	1	Just	0	0	1	0	IN	0	1	2	1	as	1	1	2	0	S	1	2	14	2	NP	0	2	3	1	PRP	0	2	3	1	he	2	2	3	0	VP	1	3	14	2	VBD	0	3	4	1	was	3	3	4	0	VP	0	4	14	2	VBG	0	4	5	1	bending	4	4	5	0	S	0	5	14	1	VP	1	5	14	2	TO	0	5	6	1	to	5	5	6	0	VP	0	6	14	3	VB	0	6	7	1	pick	6	6	7	0	PRT	0	7	8	1	RP	0	7	8	1	up	7	7	8	0	NP	0	8	14	2	NP	1	8	10	2	DT	0	8	9	1	an	8	8	9	0	NN	0	9	10	1	acorn	9	9	10	0	PP	0	10	14	2	IN	0	10	11	1	in	10	10	11	0	NP	2	11	14	3	PRP$	0	11	12	1	his	11	11	12	0	JJ	0	12	13	1	scarlet	12	12	13	0	NN	0	13	14	1	beak	13	13	14	0	,	0	14	15	1	,	14	14	15	0	NP	1	15	17	2	DT	0	15	16	1	a	15	15	16	0	NN	0	16	17	1	net	16	16	17	0	VP	0	17	20	2	VBD	0	17	18	1	fell	17	17	18	0	PP	0	18	20	2	IN	0	18	19	1	over	18	18	19	0	NP	0	19	20	1	PRP	0	19	20	1	him	19	19	20	0	,	0	20	21	1	,	20	20	21	0	CC	0	21	22	1	and	21	21	22	0	S	1	22	40	2	NP	2	22	25	3	DT	0	22	23	1	the	22	22	23	0	ADJP	0	23	24	1	JJ	0	23	24	1	frightened	23	23	24	0	NN	0	24	25	1	bird	24	24	25	0	VP	1	25	40	2	VBD	0	25	26	1	was	25	25	26	0	VP	0	26	40	3	VP	0	26	33	3	VBN	0	26	27	1	carried	26	26	27	0	ADVP	0	27	28	1	RB	0	27	28	1	back	27	27	28	0	PP	0	28	33	2	TO	0	28	29	1	to	28	28	29	0	NP	1	29	33	2	NP	1	29	32	3	DT	0	29	30	1	the	29	29	30	0	NN	0	30	31	1	lord	30	30	31	0	POS	0	31	32	1	's	31	31	32	0	NN	0	32	33	1	manor	32	32	33	0	CC	0	33	34	1	and	33	33	34	0	VP	0	34	40	2	VBN	0	34	35	1	placed	34	34	35	0	PP	0	35	40	2	IN	0	35	36	1	in	35	35	36	0	NP	3	36	40	4	DT	0	36	37	1	a	36	36	37	0	JJ	0	37	38	1	small	37	37	38	0	JJ	0	38	39	1	bamboo	38	38	39	0	NN	0	39	40	1	cage	39	39	40	0	.	0	40	41	1	.	40	40	41	0
+EOS
+C	10
+0	30	29	32	9
+0	39	36	40	10
+0	2	2	3	1
+0	19	19	20	1
+0	9	8	14	2
+0	32	29	33	8
+0	16	15	17	5
+0	13	11	14	3
+0	11	11	12	1
+0	24	22	25	7
+R
+joint	None	-1	-1	0	0	0	40	0	2	2	nil
+nil	None	-1	-1	0	0	0	20	0	0	0	Just as he was bending to pick up an acorn in his scarlet beak , a net fell over him ,
+joint	None	-1	-1	0	21	0	40	1	2	2	nil
+nil	None	-1	-1	0	21	0	32	1	1	0	and the frightened bird was carried back to the lord 's manor
+nil	None	-1	-1	0	33	0	40	2	2	0	and placed in a small bamboo cage .
+EOD
