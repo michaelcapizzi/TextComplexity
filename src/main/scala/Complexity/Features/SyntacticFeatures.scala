@@ -12,6 +12,7 @@ import scala.collection.JavaConverters._
 
 /**
  * Class of syntactic features contributing to ultimate feature selection.
+  *
   * @param td a TextDocument
  */
 class SyntacticFeatures(val td: TextDocument) {
@@ -234,10 +235,6 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  /*
-
-
-
 
   //Tregex patterns
   //modified from http://personal.psu.edu/xxl13/papers/Lu_inpress_ijcl.pdf
@@ -255,8 +252,11 @@ class SyntacticFeatures(val td: TextDocument) {
   //matches any S node that is a clause that IS dominated by an SBAR
 
 
+
+  //total number of clauses
   def getClauseCounts: Vector[Double] = {
-    for (tree <- this.getParseTrees) yield {
+    val allTrees = td.coreNLPParseTrees.flatten
+    for (tree <- allTrees) yield {
       var counter = 0
       val clauseMatcher = clause.matcher(tree)
       while (clauseMatcher.find) {
@@ -266,21 +266,17 @@ class SyntacticFeatures(val td: TextDocument) {
     }
   }
 
-  //TODO build method -- see PitchVantage code?
-  def getClauseLengths = {
-    //how to do?
-    //use loop through and extract + tree.size
-  }
 
   //# of clauses / # of sentences
   def getSentenceComplexityScore: Double = {
-    this.getClauseCounts.sum / textDocument.sentenceSize
+    this.getClauseCounts.sum / td.totalSentences
   }
 
+
   //return sentences grouped by structure
-  def getClauseTypeCounts: Vector[((String, Int), (String, Int))] = {
-    val trees = this.getParseTrees
-    for (tree <- trees) yield {
+  def getClauseTypeCounts: Vector[Map[String, Int]] = {
+    val allTrees = td.coreNLPParseTrees.flatten
+    for (tree <- allTrees) yield {
       var indCounter = 0
       var depCounter = 0
       val independentMatcher = independentClause.matcher(tree)
@@ -290,19 +286,41 @@ class SyntacticFeatures(val td: TextDocument) {
         if (independentMatcher.find) indCounter += 1
         else if (dependentMatcher.find) depCounter += 1
       }
-      ("independent clauses" -> indCounter, "dependent clauses" -> depCounter)
+      //information for each sentence
+      Map(
+        "independent" -> indCounter,
+        "dependent" -> depCounter
+      )
     }
   }
 
+
+  //identify the type of sentence
   def getSentenceStructureTypes: Vector[String] = {
-    this.getClauseTypeCounts.map(sentence =>
-      if (sentence._1._2 == 1 && sentence._2._2 == 0) "simple"
-      else if (sentence._1._2 == 1 && sentence._2._2 >= 1) "complex"
-      else if (sentence._1._2 >= 2 && sentence._2._2 == 0) "compound"
-      else if (sentence._1._2 >= 2 && sentence._2._2 >= 1) "compound-complex"
+    for (sentence <- this.getClauseTypeCounts) yield {
+      val indCount = sentence("independent")
+      val depCount = sentence("dependent")
+      //      if (sentence._1._2 == 1 && sentence._2._2 == 0) "simple"
+      if (indCount == 1 && depCount == 0) "simple"
+      else if (indCount == 1 && depCount >= 1) "complex"
+      else if (indCount >= 2 && depCount == 0) "compound"
+      else if (indCount >= 2 && depCount >= 1) "compound-complex"
       else "fragment"
-    )
+    }
   }
+
+  /*
+  //TODO build method -- see PitchVantage code?
+  def getClauseLengths = {
+    //how to do?
+    //use loop through and extract + tree.size
+  }
+
+
+
+
+
+
 
   def sentenceStructureTypeStats: Map[String, Double] = {
     val freq = new Frequency()

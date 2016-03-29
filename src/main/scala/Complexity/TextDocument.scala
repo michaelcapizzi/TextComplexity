@@ -199,6 +199,12 @@ class TextDocument (
   }
 
 
+  //total number of sentences
+  def totalSentences: Double = {
+    this.rawSentences.flatten.length.toDouble
+  }
+
+
 }
 
 /**

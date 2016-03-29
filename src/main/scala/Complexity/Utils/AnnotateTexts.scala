@@ -20,26 +20,38 @@ object AnnotateTexts {
     //get list of files to annotate
     val allFiles = new File(args(0)).listFiles
 
+    //get list of finished annotations
+    val finishedFiles = new File(getClass.getResource("/annotatedText/").getPath).listFiles
+    //get list of finished names
+    val finishedNames = finishedFiles.map(_.getName).toSet
+
     //iterate through files
-    for (f <- allFiles) {
+    for (f <- allFiles.filterNot(_.getName.endsWith("0608MT_TomSawyer.txt"))) {             //TODO fix Tom_Sawyer bug
 
       //variables for naming
       val fullName = f.getName
       val annotatedName = fullName.dropRight(4) + ".annotated"
 
-      println("annotating " + fullName)
+      if (finishedNames.contains(annotatedName)) {
 
-      //make processed paragraphs
-      val procPars = makeProcParsFromText(fullName)
+        println("already annotated" + fullName)
 
-      //annotate all paragraphs
-      procPars.foreach(_.annotate)
+      } else {
 
-      //extract SISTA documents
-      val docs = procPars.map(_.doc)
+        println("annotating " + fullName)
 
-      //serialize
-      serializeAnnotation(docs, annotatedName)
+        //make processed paragraphs
+        val procPars = makeProcParsFromText(fullName)
+
+        //annotate all paragraphs
+        procPars.foreach(_.annotate)
+
+        //extract SISTA documents
+        val docs = procPars.map(_.doc)
+
+        //serialize
+        serializeAnnotation(docs, annotatedName)
+      }
     }
   }
 
