@@ -1,3 +1,7 @@
+import com.typesafe.sbt.GitPlugin.autoImport._
+import com.typesafe.sbt.SbtGhPages.ghpages
+import com.typesafe.sbt.SbtSite.site
+
 name := "TextComplexity"
 
 version := "1.0"
@@ -24,3 +28,13 @@ libraryDependencies ++= Seq(
   "org.scalactic" %% "scalactic" % "2.2.6",                               //for unit tests
   "org.scalatest" %% "scalatest" % "2.2.6" % "test"
 )
+
+// settings for building project website
+
+site.settings
+// include documentation
+site.includeScaladoc()
+
+ghpages.settings
+
+git.remoteRepo := "git@github.com:michaelcapizzi/TextComplexity.git"

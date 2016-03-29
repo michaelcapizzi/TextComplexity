@@ -7,17 +7,18 @@ import java._
 
 /**
   * Class to house all the NLP elements needed for feature selection later.
-  * It is intended to be used for EACH paragraph of the text
-  * (because of the computational cost of the Discourse Parser).
-  * Will be fed to TextDocument class in a list (Vector)
-  * @param text if not loading from annotation, the plain text
-  * @param annotatedDoc if loading from annotation, the annotated doc
-  * @param processor a CoreNLPProcessor(withDiscourse=true, maxSentenceLength = 450)
-  * @param title optional title of document of which this paragraph is a part
-  * @param author optional author of document of which this paragraph is a part
-  * @param paragraphNumber optional paragraph index in larger document
-  * @param chapter optional chapter of document of which this paragraph is a part
-  * @param gradeLevel optional grade level of the document of which this paragraph is a part
+  * It is intended to be used for '''each''' paragraph of the text
+  * (because of the computational cost of `edu.arizona.sista.discourse.rstparser` DiscourseParser.
+  * Will be fed to [[TextDocument]] as a Vector of paragraphs
+  * @constructor Will represent the paragraph in terms of NLP pipeline
+  * @param text If not loading from annotation, the plain text
+  * @param annotatedDoc If loading from annotation, the annotated doc
+  * @param processor Instance of `edu.arizona.sista.processors.corenlp.CoreNLPProcessor` with the following settings: `(withDiscourse=true, maxSentenceLength = 450)`
+  * @param title Optional title of document of which this paragraph is a part
+  * @param author Optional author of document of which this paragraph is a part
+  * @param paragraphNumber Optional paragraph index in larger document
+  * @param chapter Optional chapter of document of which this paragraph is a part
+  * @param gradeLevel Optional grade level of the document of which this paragraph is a part
   */
 class ProcessedParagraph(
                       val text: Option[String],
@@ -30,14 +31,18 @@ class ProcessedParagraph(
                       val gradeLevel: Option[String] = None
                     ) {
 
-  //processors Document
+  /**
+    * `edu.arizona.sista.processors.Document` housing all annotation information
+     */
   val doc = if (text.nonEmpty) {
               this.processor.mkDocument(this.text.get)
             } else {
               this.annotatedDoc.get
             }
 
-  //annotate document
+  /**
+    * Annotates the document and then clears from memory
+    */
   def annotate: Unit = {
     this.processor.annotate(this.doc)
     this.doc.clear()                      //clear from memory immediately after annotating
@@ -47,12 +52,19 @@ class ProcessedParagraph(
 
   /////////////////////NLP units//////////////////////
 
-  //raw sentences
+  /**
+     * @return Vector of `edu.arizona.sista.processors.Sentences`
+    */
   def rawSentences: Vector[edu.arizona.sista.processors.Sentence] = {
     this.doc.sentences.toVector
   }
 
-  //words
+  /**
+    *
+     * @param withPunctuation Use of `true` will include punctuation as tokens; `false` will remove all punctuation from tokens
+    * @return First `Vector` breaks at sentences <br>
+    *           Second `Vector` breaks at words.
+    */
   def words(withPunctuation: Boolean): Vector[Vector[String]] = {
     if (withPunctuation) {
       this.doc.sentences.map(_.
@@ -67,7 +79,11 @@ class ProcessedParagraph(
     }
   }
 
-  //lemmas
+  /**
+     * @param withPunctuation Use of `true` will include punctuation as tokens; `false` will remove all punctuation from tokens
+    * @return First `Vector` breaks at sentences <br>
+    *           Second `Vector` breaks at lemmas.
+    */
   def lemmas(withPunctuation: Boolean): Vector[Vector[String]] = {
     if (withPunctuation) {
       this.doc.sentences.map(_.
@@ -82,7 +98,11 @@ class ProcessedParagraph(
     }
   }
 
-  //tags
+  /**
+    * @param withPunctuation Use of `true` will include punctuation as tokens; `false` will remove all punctuation from tokens
+    * @return First `Vector` breaks at sentences <br>
+    *           Second `Vector` breaks at tags.
+    */
   def tags(withPunctuation: Boolean): Vector[Vector[String]] = {
     if (withPunctuation) {
       this.doc.sentences.map(_.
@@ -97,7 +117,11 @@ class ProcessedParagraph(
     }
   }
 
-  //entities
+  /**
+     * @param withPunctuation Use of `true` will include punctuation as tokens; `false` will remove all punctuation from tokens
+    * @return First `Vector` breaks at sentences <br>
+    *         Second `Vector` breaks at tags.
+    */
   def entities(withPunctuation: Boolean): Vector[Vector[String]] = {
     if (withPunctuation) {
       this.doc.sentences.map(_.
@@ -124,9 +148,16 @@ class ProcessedParagraph(
     }
   }
 
-  //lexical tuple
-    //separated into sentences
-    //(word, (lemma, tag, entity label)
+  /**
+    * Generates a tuple of `(word, (lemma, tag, named entity))`
+    * @param withPunctuation Use of `true` will include punctuation as tokens; `false` will remove all punctuation from tokens
+    * @return First `Vector` breaks at sentences <br>
+    *           Second `Vector` breaks at token. <br>
+    *         - `._1` = word <br>
+    *         - `._2._1` = lemma <br>
+    *         - `._2._2` = tag <br>
+    *         - `._2._3` = named entity (`O` for none) <br>
+    */
   def lexicalTuple(withPunctuation: Boolean): Vector[Vector[(String, (String, String, String))]] = {
   val tuples = for (sentence <- rawSentences) yield {
       sentence.words.toVector zip
@@ -160,42 +191,83 @@ class ProcessedParagraph(
       distinct                            //eliminate duplicates
   }*/
 
-  //parse trees = SISTA
+  /**
+    * SISTA `processors`-generated trees
+     * @return Vector of `edu.arizona.sista.struct.Tree`s
+    */
   def sistaParseTree: Vector[edu.arizona.sista.struct.Tree] = {
     this.rawSentences.map(sentence =>
       sentence.syntacticTree.get
     )
   }
 
-  //parse trees = CoreNLP
+  /**
+    * CoreNLP-generated `Tree`s
+     * @return Vector of `edu.stanford.nlp.trees.Tree`s
+    *  @see [[http://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/trees/Tree.html]]
+    */
   def coreNLPParseTree: Vector[edu.stanford.nlp.trees.Tree] = {
     for (tree <- this.sistaParseTree) yield {
       edu.stanford.nlp.trees.Tree.valueOf(tree.toString)    //convert tree to string and then use Stanford method, valueOf
     }
   }
 
-  //constituents
+  /**
+    * CoreNLP-generated `Constituent`s
+     * @return `Vector` of `java.util.Set`s of `edu.stanford.nlp.trees.Constituent`s
+    *  @see [[http://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/trees/Constituent.html]]
+    */
   def rawConstituents: Vector[util.Set[edu.stanford.nlp.trees.Constituent]] = {
     this.coreNLPParseTree.map(_.
       constituents)
   }
 
-  //dependencies
+  /** Dependency parse represented in a `pretty print` form of a `directed graph`
+    * @example "Frog was in his garden" <br>
+    *
+    *          ```
+    *          edu.arizona.sista.struct.DirectedGraph[String] = <br>
+    *          roots: 1 <br>
+    *          outgoing: <br>
+    *          &nbsp;&nbsp;&nbsp; 0: <br>
+    *          &nbsp;&nbsp;&nbsp; 1: (0,nsubj) (4,prep_in) <br>
+    *          &nbsp;&nbsp;&nbsp; 2: <br>
+    *          &nbsp;&nbsp;&nbsp; 3: <br>
+    *          &nbsp;&nbsp;&nbsp; 4: (3,poss) <br>
+    *          incoming: <br>
+    *          &nbsp;&nbsp;&nbsp; 0: (1,nsubj) <br>
+    *          &nbsp;&nbsp;&nbsp; 1: <br>
+    *          &nbsp;&nbsp;&nbsp; 2: <br>
+    *          &nbsp;&nbsp;&nbsp; 3: (4,poss) <br>
+    *          &nbsp;&nbsp;&nbsp; 4: (1,prep_in) <br>
+    *          ```
+    * @return `Vector` of dependencies represented as a directed graph
+    */
   def rawDependencies: Vector[edu.arizona.sista.struct.DirectedGraph[String]] = {
     this.rawSentences.map(_.
       dependencies.get)
   }
 
-  //discourse parse
+  /**
+    * @example "Frog was in his garden. Toad came walking by." <br>
+    *            ```
+    *             edu.arizona.sista.discourse.rstparser.DiscourseTree = <br>
+    *               &nbsp;&nbsp;&nbsp; elaboration (LeftToRight) <br>
+    *               &nbsp;&nbsp;&nbsp; TEXT:Frog was in his garden . <br>
+    *               &nbsp;&nbsp;&nbsp; TEXT:Toad came walking by .
+    *            ```
+    */
   def rawDiscourseParse: edu.arizona.sista.discourse.rstparser.DiscourseTree = {
     this.doc.discourseTree.get
   }
 
   ///////////////////stats////////////////////
 
-  //iterate through sentences one time and build all counters for efficiency
-    //returns tuple of Map of counters of differnet types
-      //(Counter[String]s, Counter[(String, String)]s)
+  /**
+    * Builds all `sista.edu.struct.Counter`s in one iteration of the tokens
+    * @return `Counter[String]` = `tokens`, `lemmas`, `tags`, `proper nouns` <br>
+    *          `Counter[(String, String)]` = `tokens-tags`, `lemmas-tags`
+    */
     //TODO did them all in one iteration, but needed tuple output to handle differnet Type
   def buildCounters: (Map[String, Counter[String]], Map[String, Counter[(String, String)]]) = {
     val tokenCounter = new Counter[String]()
