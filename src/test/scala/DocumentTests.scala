@@ -1,3 +1,5 @@
+import Complexity.TextDocument._
+
 /**
   * sbt "testOnly *MyTestSuiteName"
   */
@@ -75,7 +77,15 @@ class SyntacticTests extends GeneralTest {
   }
 
 
+  "Ratios of sentence structures" should "be a probability distribution" in {
+    val sum = foldApply[Double](
+                syn.sentenceStructureTypeStats.toVector.par.map(_._2),
+                0d,
+                (a: Double, b: Double) => a + b
+              )
 
+    assert(sum == 1d)
+  }
 
 }
 
