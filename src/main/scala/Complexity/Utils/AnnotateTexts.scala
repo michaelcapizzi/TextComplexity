@@ -5,16 +5,12 @@ import Complexity.Utils.Testing._
 import Complexity.Utils.IO._
 
 
-/**
-  * Created by mcapizzi on 3/27/16.
-  */
 object AnnotateTexts {
 
   /**
     * Generates serialized annotations for all files in a directory and saves to resources
-    * args(0) = directory containing all plain text files
+    * @param args (0) directory containing all plain text files
     */
-
   def main(args: Array[String]) = {
 
     //get list of files to annotate

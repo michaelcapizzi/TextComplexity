@@ -157,7 +157,7 @@ class TextDocument (
 
   /**
     *
-     * @param withPunctuation Use of `true` will include punctuation as tokens; `false` will remove all punctuation from tokens
+     * @param withPunctuation Use of `true` will include punctuation as tokens <br> `false` will remove all punctuation from tokens
     * @return `Vector` of outputs from [[ProcessedParagraph.words]]
     */
   def words(withPunctuation: Boolean): Vector[Vector[Vector[String]]] = {
@@ -166,7 +166,7 @@ class TextDocument (
 
   /**
     *
-     * @param withPunctuation Use of `true` will include punctuation as tokens; `false` will remove all punctuation from tokens
+     * @param withPunctuation Use of `true` will include punctuation as tokens <br> `false` will remove all punctuation from tokens
     * @return `Vector` of outputs from [[ProcessedParagraph.lemmas]]
     */
   def lemmas(withPunctuation: Boolean): Vector[Vector[Vector[String]]] = {
@@ -175,7 +175,7 @@ class TextDocument (
 
   /**
     *
-    * @param withPunctuation Use of `true` will include punctuation as tokens; `false` will remove all punctuation from tokens
+    * @param withPunctuation Use of `true` will include punctuation as tokens <br> `false` will remove all punctuation from tokens
     * @return `Vector` of outputs from [[ProcessedParagraph.tags]]
     */
   def tags(withPunctuation: Boolean): Vector[Vector[Vector[String]]] = {
@@ -184,7 +184,7 @@ class TextDocument (
 
   /**
     *
-    * @param withPunctuation Use of `true` will include punctuation as tokens; `false` will remove all punctuation from tokens
+    * @param withPunctuation Use of `true` will include punctuation as tokens <br> `false` will remove all punctuation from tokens
     * @return `Vector` of outputs from [[ProcessedParagraph.entities]]
     */  def entities(withPunctuation: Boolean): Vector[Vector[Vector[String]]] = {
     this.paragraphs.map(_.entities(withPunctuation))
@@ -192,7 +192,7 @@ class TextDocument (
 
   /**
     * Generates a tuple of `(word, (lemma, tag, named entity))`
-    * @param withPunctuation Use of `true` will include punctuation as tokens; `false` will remove all punctuation from tokens
+    * @param withPunctuation Use of `true` will include punctuation as tokens <br> `false` will remove all punctuation from tokens
     * @return `Vector` of outputs from [[ProcessedParagraph.lexicalTuple]]
     *         - `._1` = word <br>
     *         - `._2._1` = lemma <br>
@@ -312,13 +312,13 @@ object TextDocument {
     * @tparam T Can be any type as long as it is consistent throughout method
     * @return Result of `foldLeft` applied to the initial sequence
     * @example Sums all `Counter`s in the sequence
-    *          ```
-    *          val tokensCounter = foldApply[Counter[String]]( <br>
-    *          &nbsp;&nbsp;&nbsp; stringCounters.map(_("tokens")), <br>
-    *          &nbsp;&nbsp;&nbsp; new Counter[String](), <br>
-    *          &nbsp;&nbsp;&nbsp; (a: Counter[String], b: Counter[String]) => a + b <br>
+    *          {{{
+    *          val tokensCounter = foldApply[Counter[String]](
+    *                               stringCounters.map(_("tokens")),
+    *                               new Counter[String](),
+    *                               (a: Counter[String], b: Counter[String]) => a + b
     *          )
-    *          ```
+    *          }}}
     */
   //TODO use of Typing
   def foldApply[T](list: scala.collection.parallel.ParSeq[T], startingItem: T, function: (T, T) => T): T = {

@@ -61,7 +61,7 @@ class ProcessedParagraph(
 
   /**
     *
-     * @param withPunctuation Use of `true` will include punctuation as tokens; `false` will remove all punctuation from tokens
+     * @param withPunctuation Use of `true` will include punctuation as tokens <br> `false` will remove all punctuation from tokens
     * @return First `Vector` breaks at sentences <br>
     *           Second `Vector` breaks at words.
     */
@@ -80,7 +80,7 @@ class ProcessedParagraph(
   }
 
   /**
-     * @param withPunctuation Use of `true` will include punctuation as tokens; `false` will remove all punctuation from tokens
+     * @param withPunctuation Use of `true` will include punctuation as tokens <br> `false` will remove all punctuation from tokens
     * @return First `Vector` breaks at sentences <br>
     *           Second `Vector` breaks at lemmas.
     */
@@ -99,7 +99,7 @@ class ProcessedParagraph(
   }
 
   /**
-    * @param withPunctuation Use of `true` will include punctuation as tokens; `false` will remove all punctuation from tokens
+    * @param withPunctuation Use of `true` will include punctuation as tokens <br> `false` will remove all punctuation from tokens
     * @return First `Vector` breaks at sentences <br>
     *           Second `Vector` breaks at tags.
     */
@@ -118,7 +118,7 @@ class ProcessedParagraph(
   }
 
   /**
-     * @param withPunctuation Use of `true` will include punctuation as tokens; `false` will remove all punctuation from tokens
+     * @param withPunctuation Use of `true` will include punctuation as tokens <br> `false` will remove all punctuation from tokens
     * @return First `Vector` breaks at sentences <br>
     *         Second `Vector` breaks at tags.
     */
@@ -150,7 +150,7 @@ class ProcessedParagraph(
 
   /**
     * Generates a tuple of `(word, (lemma, tag, named entity))`
-    * @param withPunctuation Use of `true` will include punctuation as tokens; `false` will remove all punctuation from tokens
+    * @param withPunctuation Use of `true` will include punctuation as tokens <br> `false` will remove all punctuation from tokens
     * @return First `Vector` breaks at sentences <br>
     *           Second `Vector` breaks at token. <br>
     *         - `._1` = word <br>
@@ -225,22 +225,22 @@ class ProcessedParagraph(
   /** Dependency parse represented in a `pretty print` form of a `directed graph`
     * @example "Frog was in his garden" <br>
     *
-    *          ```
-    *          edu.arizona.sista.struct.DirectedGraph[String] = <br>
-    *          roots: 1 <br>
-    *          outgoing: <br>
-    *          &nbsp;&nbsp;&nbsp; 0: <br>
-    *          &nbsp;&nbsp;&nbsp; 1: (0,nsubj) (4,prep_in) <br>
-    *          &nbsp;&nbsp;&nbsp; 2: <br>
-    *          &nbsp;&nbsp;&nbsp; 3: <br>
-    *          &nbsp;&nbsp;&nbsp; 4: (3,poss) <br>
-    *          incoming: <br>
-    *          &nbsp;&nbsp;&nbsp; 0: (1,nsubj) <br>
-    *          &nbsp;&nbsp;&nbsp; 1: <br>
-    *          &nbsp;&nbsp;&nbsp; 2: <br>
-    *          &nbsp;&nbsp;&nbsp; 3: (4,poss) <br>
-    *          &nbsp;&nbsp;&nbsp; 4: (1,prep_in) <br>
-    *          ```
+    *          {{{
+    *          edu.arizona.sista.struct.DirectedGraph[String] =
+    *          roots: 1
+    *          outgoing:
+    *             0:
+    *             1: (0,nsubj) (4,prep_in)
+    *             2:
+    *             3:
+    *             4: (3,poss) <
+    *          incoming:
+    *             0: (1,nsubj)
+    *             1:
+    *             2:
+    *             3: (4,poss)
+    *             4: (1,prep_in)
+    *          }}}
     * @return `Vector` of dependencies represented as a directed graph
     */
   def rawDependencies: Vector[edu.arizona.sista.struct.DirectedGraph[String]] = {
@@ -250,12 +250,12 @@ class ProcessedParagraph(
 
   /**
     * @example "Frog was in his garden. Toad came walking by." <br>
-    *            ```
-    *             edu.arizona.sista.discourse.rstparser.DiscourseTree = <br>
-    *               &nbsp;&nbsp;&nbsp; elaboration (LeftToRight) <br>
-    *               &nbsp;&nbsp;&nbsp; TEXT:Frog was in his garden . <br>
-    *               &nbsp;&nbsp;&nbsp; TEXT:Toad came walking by .
-    *            ```
+    *            {{{
+    *             edu.arizona.sista.discourse.rstparser.DiscourseTree =
+    *                 elaboration (LeftToRight)
+    *                 TEXT:Frog was in his garden .
+    *                 TEXT:Toad came walking by .
+    *            }}}
     */
   def rawDiscourseParse: edu.arizona.sista.discourse.rstparser.DiscourseTree = {
     this.doc.discourseTree.get

@@ -12,14 +12,15 @@ import scala.collection.JavaConverters._
 
 
 /**
- * Class of syntactic features contributing to ultimate feature selection.
-  *
-  * @param td a TextDocument
+ * Generates features syntactic in nature (at the sentence level)
+  * @param td  [[TextDocument]] for the document to be analyzed
  */
 class SyntacticFeatures(val td: TextDocument) {
 
-  //sentence lengths
-    //not including punctuation
+  /**
+    * Calculates sentence lengths '''not including punctuation'''
+    * @return `Vector` of sentence lengths
+    */
   def getSentenceLengths: Vector[Double] = {
     val allSentences = this.td.words(withPunctuation = false).flatten  //remove paragraphs
 
@@ -27,7 +28,21 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  //sentence length stats
+  /**
+    * Generates basic distribution of sentences lengths
+     * @return Values representing distribution of sentence lengths
+    *
+    *         {{{
+    *           Map(
+    *             "sentence length minimum" -> ?,
+    *             "25th %ile sentence length" -> ?,
+    *             "sentence length mean" -> ?,
+    *             "sentence length median" -> ?,
+    *             "75th %ile sentence length" -> ?,
+    *             "sentence length maximum" -> ?
+    *           )
+    *         }}}
+    */
   def sentenceLengthStats: Map[String, Double] = {
     //call descriptive stats
     val stat = new DescriptiveStatistics()
@@ -45,7 +60,10 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  //get punctuation
+  /**
+    * Finds all punctuation in each sentence
+     * @return `Vector` of only punctuation
+    */
   def getPunctuation: Vector[Vector[String]] = {
     val sentences = td.words(withPunctuation = true).flatten    //remove paragraphs
 
@@ -57,8 +75,22 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  //punctuation stats
-    //"surplus" punctuation = anything more than an end-of-sentence marker
+  /**
+    * Generates basic distribution of surplus punctuation <br>
+    *   "surplus punctuation" = anything more than an end-of-sentence marker
+     * @return Values representing distribution of surplus punctuation
+    *
+    *         {{{
+    *           Map(
+    *             "25th %ile surplus punctuation size" -> ?,
+    *             "mean surplus punctuation size" -> ?,
+    *             "median surplus punctuation size" -> ?,
+    *             "75th %ile surplus punctuation size" -> ?,
+    *             "maximum surplus punctuation size" -> ?
+    *           )
+    *         }}}
+    */
+  //"surplus" punctuation = anything more than an end-of-sentence marker
   def punctuationStats: Map[String, Double] = {
     //call descriptive stats
     val stat = new DescriptiveStatistics()
@@ -86,7 +118,11 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  //parse tree sizes
+  /**
+    * Finds size of each parse tree
+    * "size" of parse tree = total number of nodes
+     * @return `Vector` of parse tree sizes
+    */
   def getTreeSizes: Vector[Double] = {
     td.coreNLPParseTrees.
       flatten.              //remove paragraphs
@@ -94,7 +130,21 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  //parse tree size stats
+  /**
+    * Generates basic distribution of parse tree sizes
+     * @return Values representing distribution of parse tree sizes
+    *
+    *         {{{
+    *           Map(
+    *             "minimum tree size" -> ?,
+    *             "25th %ile tree size" -> ?,
+    *             "mean tree size" -> ?,
+    *             "median tree size" -> ?,
+    *             "75th %ile tree size" -> ?,
+    *             "maximum tree size" -> ?
+    *           )
+    *         }}}
+    */
   def treeSizeStats: Map[String, Double] = {
     //call descriptive stats
     val stat = new DescriptiveStatistics()
@@ -112,14 +162,34 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  //parse tree depths
+  /**
+    * Finds the depth of each parse tree <br>
+    * "depth" of parse tree = number of layers in tree
+     * @return `Vector` of parse tree depths
+    */
   def getTreeDepths: Vector[Double] = {
     td.coreNLPParseTrees.
       flatten.                //remove paragraphs
       map(_.depth.toDouble)
   }
 
-  //parse tree depth stats
+
+  /**
+    * Generates basic distribution of parse tree depths
+     * @return Values representing distribution of parse tree depths
+    *
+    *         {{{
+    *           Map(
+    *             "minimum tree depth" -> ?,
+    *             "25th %ile tree depth" -> ?,
+    *             "mean tree depth" -> ?,
+    *             "median tree depth" -> ?,
+    *             "75th %ile tree depth" -> ?,
+    *             "maximum tree depth" -> ?
+    *           )
+    *         }}}
+    *
+    */
   def treeDepthStats: Map[String, Double] = {
     //call descriptive stats
     val stat = new DescriptiveStatistics()
@@ -137,9 +207,13 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
+  /**
+    * Finds the distance to main verb for each sentence
+    * "distance to verb" calculated as the index of the root of the parse tree as identified by `edu.stanford.nlp.trees.CollinsHeadFinder`
+    * @see [[http://nlp.stanford.edu/nlp/javadoc/javanlp-3.5.0/edu/stanford/nlp/trees/CollinsHeadFinder.html]]
+    * @return `Vector` of distances to verb
+    */
 
-  //get distances to verb
-    //uses CollinsHeadFinder to identify the root of sentence (presumably the verb) and uses its index
   def getDistanceToVerb: Vector[Double] = {
     //initiate head finder
     val cHF = new CollinsHeadFinder()
@@ -154,7 +228,21 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  //distance to verb stats
+  /**
+    * Generates basic distribution of distances to verbs
+     * @return Values representing distribution of distances to verb
+    *
+    *         {{{
+    *           Map(
+    *             "minimum distance to verb" -> ?,
+    *             "25th %ile distance to verb" -> ?,
+    *             "mean distance to verb" -> ?,
+    *             "median distance to verb" -> ?,
+    *             "75th %ile distance to verb" -> ?,
+    *             "maximum distance to verb" -> ?
+    *           )
+    *         }}}
+    */
   def distanceToVerbStats: Map[String, Double] = {
     //call descriptive stats
     val stat = new DescriptiveStatistics()
@@ -172,8 +260,10 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  //constituent counts
-    //number of constituents per sentence
+  /**
+    * Finds the number of constituents for each sentence
+    * @return `Vector` of count of constituents
+    */
   def getConstituentCounts: Vector[Double] = {
     td.rawConstituents.
       flatten.            //remove paragraphs
@@ -182,7 +272,21 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  //constituent count stats
+  /**
+    * Generates basic distribution of constituent counts
+     * @return Values representing distibution of constituent counts
+    *
+    *         {{{
+    *           Map(
+    *             "minimum number of constituents in a sentence" -> ?,
+    *             "25th %ile number of constituents in a sentence" -> ?,
+    *             "mean number of constituents in a sentence" -> ?,
+    *             "median number of constituents in a sentence" -> ?,
+    *             "75th %ile number of constituents in a sentence" -> ?,
+    *             "maximum number of constituents in a sentence" -> ?
+    *           )
+    *         }}}
+    */
   def constituentCountStats: Map[String, Double] = {
     //call descriptive stats
     val stat = new DescriptiveStatistics()
@@ -200,8 +304,10 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  //get constituent sizes
-    //number of tokens per constituent
+  /**
+    * Finds the number of words in each constituent
+    * @return `Vector` of number of constituent sizes
+    */
   def getConstituentSizes: Vector[Double] = {
     //convert constituents to Scala vectors
     val consScala = td.rawConstituents.
@@ -215,7 +321,15 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  //constituent size stats
+  /**
+    * Generates as basic distribution of consituent sizes
+     * @return Values representing distribution of constituent sizes
+    *
+    *         {{{
+    *           Map(
+    *           )
+    *         }}}
+    */
   def constituentSizeStats: Map[String, Double] = {
     //call descriptive stats
     val stat = new DescriptiveStatistics()

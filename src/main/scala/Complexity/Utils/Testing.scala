@@ -5,7 +5,7 @@ import Complexity.Utils.IO._
 import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
 
 /**
-  * Created by mcapizzi on 3/25/16.
+  * Object containing methods and variables to be used in internal testing
   */
 object Testing {
 
