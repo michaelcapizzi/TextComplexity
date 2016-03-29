@@ -26,7 +26,11 @@ object AnnotateTexts {
     val finishedNames = finishedFiles.map(_.getName).toSet
 
     //iterate through files
-    for (f <- allFiles.filterNot(_.getName.endsWith("0608MT_TomSawyer.txt"))) {             //TODO fix Tom_Sawyer bug
+    for (f <- allFiles.filterNot(z =>
+      z.getName.endsWith("0608MT_TomSawyer.txt") &&
+      z.getName.endsWith("1112CB_JaneEyre.txt")
+      )
+    ) {             //TODO fix Tom_Sawyer and Jane_Eyre bug
 
       //variables for naming
       val fullName = f.getName
