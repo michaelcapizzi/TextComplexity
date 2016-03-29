@@ -353,10 +353,6 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-
-  //Tregex patterns for clauses
-  //modified from http://personal.psu.edu/xxl13/papers/Lu_inpress_ijcl.pdf
-
   /**
     * pattern generated for detecting clauses using `edu.stanford.nlp.trees.tregex`
     * @see [[http://nlp.stanford.edu/manning/courses/ling289/Tregex.html]]
@@ -421,9 +417,9 @@ class SyntacticFeatures(val td: TextDocument) {
 
 
   /**
-    * Finds size of each clause's parse tree
+    * Finds size and depth of each clause's parse tree
     * @ see [[getTreeSizes]]
-    * @return `Vector` of clause parse tree sizes
+    * @return `Vector` of clause parse tree sizes and depths
     */
   //the (size, depth) of all clauses
   def getClauseSizesDepths: Vector[Map[String, Double]] = {
@@ -478,8 +474,21 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  //clause depth stats
-  def clauseDepthStats: Map[String, Double] = {
+  /**
+    * Generates basic distribution of clause parse tree depths
+    * @return Values representing distribution of clause parse tree depths
+    *
+    *         {{{
+    *           Map(
+    *             "minimum clause depth" -> ?,
+    *             "25th %ile clause depth" -> ?,
+    *             "mean clause depth" -> ?,
+    *             "median clause depth" -> ?,
+    *             "75th %ile clause depth" -> ?,
+    *             "maximum clause depth" -> ?
+    *           )
+    *         }}}
+    */  def clauseDepthStats: Map[String, Double] = {
     //call descriptive stats
     val stat = new DescriptiveStatistics()
     //add to stats
@@ -496,6 +505,10 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
+  /**
+    * Finds the total number of independent and dependent clauses
+    * @return Counts of independent and dependent clauses in document
+    */
   //return sentences grouped by structure
   def getClauseTypeCounts: Vector[Map[String, Double]] = {
     val allTrees = td.coreNLPParseTrees.flatten
@@ -518,7 +531,10 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  //ratios of clause types
+  /**
+    * Calculates the ratio of independent and dependent clauses to total number of clauses
+    * @return Percentage of clauses that are independent and percent that are dependent
+    */
   def totalClauseTypeRatios: Map[String, Double] = {
     //total number of clauses
     val allClauses = this.getClauseCounts.sum
@@ -534,6 +550,15 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
+  /**
+    * Determines the type of sentence based counts of independent and dependent clauses <br>
+    *     `simple` = only 1 independent clause; 0 dependent clauses <br>
+    *     `compound` = 2 or more independent clauses; 0 dependent clauses <br>
+    *     `complex` = only 1 independent clause; 1 or more dependent clauses <br>
+    *     `compound-complex` = 2 or more independent clauses; 0 dependent clauses <br>
+    *     `fragment` = none of the above
+    * @return `Vector` of sentence types
+    */
   //identify the type of sentence
   def getSentenceStructureTypes: Vector[String] = {
     for (sentence <- this.getClauseTypeCounts) yield {
@@ -549,7 +574,20 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  //sentence structure type stats
+  /**
+    * Calculates percentages of each type of sentence
+     * @return Percentages of each sentence type
+    *
+    *         {{{
+    *           Map(
+    *             "% of simple sentences" -> ?,
+    *             "% of complex sentences" -> ?,
+    *             "% of compound sentences" -> ?,
+    *             "% of compound-complex sentences" -> ?,
+    *             "% of fragments" -> ?
+    *           )
+    *         }}}
+    */
   def sentenceStructureTypeStats: Map[String, Double] = {
     //call frequency
     val freq = new Frequency()
@@ -566,21 +604,35 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  //Tregex patterns for conjunction use
-
+  /**
+    * pattern generated for detecting coordinate conjunctions using `edu.stanford.nlp.trees.tregex`
+    * @see [[http://nlp.stanford.edu/manning/courses/ling289/Tregex.html]]
+    */
   val coordinateConjunction = TregexPattern.compile("/(for|and|nor|but|or|yet|so)/=matchedCC [> (CC > @S) | > (IN > /S(BAR)?/)]")
 
-  //removes caught "for" and "yet" and "so" from CC's instead of coordinateConjunction rule
+
+  /**
+    * pattern generated for detecting subordinate conjunctions using `edu.stanford.nlp.trees.tregex`
+    * @see [[http://nlp.stanford.edu/manning/courses/ling289/Tregex.html]]
+    */
   val subordinateConjunction = TregexPattern.compile("!/(so|for|yet)/=matchedSC [> WDT | > (IN > /S(BAR)?/) | > (WRB > (/WHADVP/ !, CC . /NP/ .. /VP/ > /S(BAR)?/))]")
   //matches any subordinate conjunction that is immediately dominated by an SBAR
 
 
-  //just catching things that should be subordinate conjunctions
+  /**
+    * pattern generated for detecting conjunctive adverbs using `edu.stanford.nlp.trees.tregex`
+    * @see [[http://nlp.stanford.edu/manning/courses/ling289/Tregex.html]]
+    * @todo Current pattern simply catches things that are techincally subordinate conjunctions
+    */
   val conjunctiveAdverb = TregexPattern.compile("__=matchedCA > (/RB/ > ( /.*ADVP/ !, CC . /NP/ .. /VP/ > /S(BAR)?/))")
   //matches when an adverb is used to begin the SBAR or S
 
 
-  //find all conjunctions using the rules above
+  /**
+    * Find matching conjunctions
+    * @param rule [[coordinateConjunction]], [[subordinateConjunction]], or [[conjunctiveAdverb]]
+    * @return `Vector` of matching conjunctions and node name (label given to node in `Tregex`
+    */
   def getMatchingConjunctions(rule: edu.stanford.nlp.trees.tregex.TregexPattern): Vector[Vector[(String, String)]] = {
 
     //extracts the nodeName from the rule
@@ -619,6 +671,11 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
+  /**
+    * Gets counts for each conjunction used by type
+    * @return `Vector` of `Counter` for each sentence containing all conjunctions <br>
+    *          `Map` of `Counter`s, one for each conjunction type
+    */
   //get counts for each conjunction used and total conjunctions per sentence
   def getConjunctionCounts: (Vector[Counter[String]], Map[String, Counter[String]]) = {
     //initialize counters for total of types
@@ -673,7 +730,25 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  //conjunction use stats
+  /**
+    * Generates basic distribution of conjunction use
+     * @return Values representing distribution of conjunction use
+    *
+    *         {{{
+    *           Map(
+    *             "mean conjunctions per sentence" -> ?,
+    *             "median conjunctions per sentence" -> ?,
+    *             "maximum conjunctions per sentence" -> ?,
+    *             //remaining values normalized over word count
+    *             "total coordinate used" -> ?,
+    *             "max coordinate used" -> ?,
+    *             "total subordinate used" -> ?,
+    *             "max subordinate used" -> ?,
+    *             "total conjunctive used" -> ?,
+    *             "max conjunctive used" -> ?
+    *           )
+    *         }}}
+    */
   def conjunctionStats: Map[String, Double] = {
 
     //call previous method
