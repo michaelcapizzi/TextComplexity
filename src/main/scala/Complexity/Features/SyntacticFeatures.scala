@@ -799,17 +799,21 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  //Tregex pattern for detecting all verb phrases
-  val allVPs = TregexPattern.compile("VP < /(VB$)|(VB[^G])/ !< VP")
+  /**
+    * pattern generated for detecting all verb phrases using `edu.stanford.nlp.trees.tregex`
+    * @see [[http://nlp.stanford.edu/manning/courses/ling289/Tregex.html]]
+    */  val allVPs = TregexPattern.compile("VP < /(VB$)|(VB[^G])/ !< VP")
 
-  //Tregex pattern for detecting passive voice
-  val passive = TregexPattern.compile("!been=vbn > (VBN [>> (VP $-- (/VB/ < /('s)|(is)|(are)|(was)|(were)|(be)/=vb)) ?$.. (/PP/ <+ (IN) by <` /NP/=agent)])")
+  /**
+    * pattern generated for detecting instances of passive voice using `edu.stanford.nlp.trees.tregex`
+    * @see [[http://nlp.stanford.edu/manning/courses/ling289/Tregex.html]]
+    */  val passive = TregexPattern.compile("!been=vbn > (VBN [>> (VP $-- (/VB/ < /('s)|(is)|(are)|(was)|(were)|(be)/=vb)) ?$.. (/PP/ <+ (IN) by <` /NP/=agent)])")
 
 
-  //captures the tree for each VP (active and passive)
-    //for each sentence
-      //for each VP
-        //get the tree
+  /**
+    * Finds the parse tree of all verb phrases for each sentence
+    * @return `Vector` of `edu.stanford.nlp.trees.Tree`s
+    */
   def getAllVPsParse: Vector[Vector[Option[edu.stanford.nlp.trees.Tree]]] = {
 
     val allTrees = td.coreNLPParseTrees.flatten
@@ -840,7 +844,13 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  //captures the tree for each instance of passive voice
+  /**
+    * Finds the parse tree of any verb phrase that is passive
+     * @return `Vector` of matching pieces of passive voice construction <br>
+    *          `._1` = `VB` <br>
+    *          `._2` = `VBN` <br>
+    *          `._3` = `AGENT`
+    */
   def getPassiveVoiceParse: Vector[Vector[(String, String, String)]] = {
 
     val allTrees = td.coreNLPParseTrees.flatten
@@ -885,6 +895,10 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
+  /**
+    * Generates percentage of verb phrases that are passive
+    * @return Percentage of passive voice usage
+    */
   //gets percentage of passive voice used
   def voiceStatsParse: Double = {
     //all VPs
@@ -902,8 +916,12 @@ class SyntacticFeatures(val td: TextDocument) {
 
   //TODO add coherence
     //TODO requires W2V
-  
 
+
+  /**
+    * Generates `Vector` of all features for [[TextDocument]] <br>
+    *   First two items in `Vector` are `title` and `grade level`
+    */
   def makeSyntacticFeatureVector: Vector[(String, Double)] = {
     Vector(
       td.title.getOrElse("") -> 0.0,
