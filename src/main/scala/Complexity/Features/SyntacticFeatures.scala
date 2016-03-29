@@ -294,7 +294,7 @@ class SyntacticFeatures(val td: TextDocument) {
 
 
   //clause size stats
-  def clauseSizeStats(filterOut: Boolean): Map[String, Double] = {
+  def clauseSizeStats: Map[String, Double] = {
     //call descriptive stats
     val stat = new DescriptiveStatistics()
     //add to stats
@@ -312,7 +312,7 @@ class SyntacticFeatures(val td: TextDocument) {
 
 
   //clause depth stats
-  def clauseDepthStats(filterOut: Boolean): Map[String, Double] = {
+  def clauseDepthStats: Map[String, Double] = {
     //call descriptive stats
     val stat = new DescriptiveStatistics()
     //add to stats
@@ -390,11 +390,11 @@ class SyntacticFeatures(val td: TextDocument) {
     this.getSentenceStructureTypes.foreach(freq.addValue)
 
     Map(
-      "ratio of simple sentences" -> freq.getPct("simple"),
-      "ratio of complex sentences" -> freq.getPct("complex"),
-      "ratio of compound sentences" -> freq.getPct("compound"),
-      "ratio of compound-complex sentences" -> freq.getPct("compound-complex"),
-      "ratio of fragments" -> freq.getPct("fragment")
+      "% of simple sentences" -> freq.getPct("simple"),
+      "% of complex sentences" -> freq.getPct("complex"),
+      "% of compound sentences" -> freq.getPct("compound"),
+      "% of compound-complex sentences" -> freq.getPct("compound-complex"),
+      "% of fragments" -> freq.getPct("fragment")
     )
   }
 
@@ -542,88 +542,217 @@ class SyntacticFeatures(val td: TextDocument) {
       totalCa.argMax._2
     }
 
+    //normalized over total word count
     Map(
       "mean conjunctions per sentence" -> stat.getMean,
       "median conjunctions per sentence" -> stat.getPercentile(50),
       "maximum conjunctions per sentence" -> stat.getMax,
-      "total coordinate used" -> totalCo.values.sum,
-      "max coordinate used" -> maxCo,
-      "total subordinate used" -> totalSub.values.sum,
-      "max subordinate used" -> maxSub,
-      "total conjunctive used" -> totalCa.values.sum,
-      "max conjunctive used" -> maxCa
+      "total coordinate used" -> totalCo.values.sum / td.totalCount("word"),  
+      "max coordinate used" -> maxCo / td.totalCount("word"),
+      "total subordinate used" -> totalSub.values.sum / td.totalCount("word"),
+      "max subordinate used" -> maxSub / td.totalCount("word"),
+      "total conjunctive used" -> totalCa.values.sum / td.totalCount("word"),
+      "max conjunctive used" -> maxCa / td.totalCount("word")
     )
   }
 
 
-  //coherence
-    //measured as the coherence between two neighboring sentences
+  //Tregex pattern for detecting all verb phrases
+  val allVPs = TregexPattern.compile("VP < /(VB$)|(VB[^G])/ !< VP")
+
+  //Tregex pattern for detecting passive voice
+  val passive = TregexPattern.compile("!been=vbn > (VBN [>> (VP $-- (/VB/ < /('s)|(is)|(are)|(was)|(were)|(be)/=vb)) ?$.. (/PP/ <+ (IN) by <` /NP/=agent)])")
 
 
+  //captures the tree for each VP (active and passive)
+    //for each sentence
+      //for each VP
+        //get the tree
+  def getAllVPsParse: Vector[Vector[Option[edu.stanford.nlp.trees.Tree]]] = {
 
-  //use of passive voice
+    val allTrees = td.coreNLPParseTrees.flatten
 
+    //initialize buffer for capturing all VP trees
+    val vpBuffer = collection.mutable.Buffer[Vector[Option[edu.stanford.nlp.trees.Tree]]]()
 
+    //iterate through all trees
+    for (tree <- allTrees) yield {
 
+      //find matching tree (or subtree)
+      val matched = this.allVPs.matcher(tree)
 
+      //initialize buffer to hold matchers
+      val matchingBuffer = collection.mutable.Buffer[Option[edu.stanford.nlp.trees.Tree]]()
 
+      //iterate through matching tree
+      while (matched.findNextMatchingNode) {
+        matchingBuffer += Option[edu.stanford.nlp.trees.Tree](matched.getMatch)
+      }
 
-
-
-
-
-  /*
-
-    def makeSyntacticFeatureVector: Vector[(String, Double)] = {
-      Vector(
-        (textDocument.title, 0.0),
-        (textDocument.gradeLevel, 0.0),
-        ("average number of conjunctions used per sentence", this.conjunctionFrequency),
-        ("minimum sentence length", this.sentenceLengthStats("sentence length minimum")),
-        ("25th %ile sentence length", this.sentenceLengthStats("25th %ile sentence length")),
-        ("mean sentence length", this.sentenceLengthStats("sentence length mean")),
-        ("median sentence length", this.sentenceLengthStats("sentence length median")),
-        ("75th %ile sentence length", this.sentenceLengthStats("75th %ile sentence length")),
-        ("maximum sentence length", this.sentenceLengthStats("sentence length maximum")),
-        ("minimum tree size", this.treeSizeStats("minimum tree size")),
-        ("25th %ile tree size", this.treeSizeStats("25th %ile tree size")),
-        ("mean tree size", this.treeSizeStats("mean tree size")),
-        ("median tree size", this.treeSizeStats("median tree size")),
-        ("75th %ile tree size", this.treeSizeStats("75th %ile tree size")),
-        ("maximum tree size", this.treeSizeStats("maximum tree size")),
-        ("minimum tree depth", this.treeDepthStats("minimum tree depth")),
-        ("25th %ile tree depth", this.treeDepthStats("25th %ile tree depth")),
-        ("mean tree depth", this.treeDepthStats("mean tree depth")),
-        ("median tree depth", this.treeDepthStats("median tree depth")),
-        ("75th %ile tree depth", this.treeDepthStats("75th %ile tree depth")),
-        ("maximum tree depth", this.treeDepthStats("maximum tree depth")),
-        ("minimum distance to verb", this.distanceToVerbStats("minimum distance to verb")),
-        ("25th %ile distance to verb", this.distanceToVerbStats("25th %ile distance to verb")),
-        ("mean distance to verb", this.distanceToVerbStats("mean distance to verb")),
-        ("median distance to verb", this.distanceToVerbStats("median distance to verb")),
-        ("75th %ile distance to verb", this.distanceToVerbStats("75th %ile distance to verb")),
-        ("maximum distance to verb", this.distanceToVerbStats("maximum distance to verb")),
-        ("minimum number of constituents in a sentence", this.constituentCountStats("minimum number of constituents in a sentence")),
-        ("25th %ile number of constituents in a sentence", this.constituentCountStats("25th %ile number of constituents in a sentence")),
-        ("mean number of constituents in a sentence", this.constituentCountStats("mean number of constituents in a sentence")),
-        ("median number of constituents in a sentence", this.constituentCountStats("median number of constituents in a sentence")),
-        ("75th %ile number of constituents in a sentence", this.constituentCountStats("75th %ile number of constituents in a sentence")),
-        ("maximum number of constituents in a sentence", this.constituentCountStats("maximum number of constituents in a sentence")),
-        ("minimum constituent length", this.constituentLengthStats("constituent length minimum")),
-        ("25th %ile constituent length", this.constituentLengthStats("25th %ile constituent length")),
-        ("mean constituent length", this.constituentLengthStats("constituent length mean")),
-        ("median constituent length", this.constituentLengthStats("constituent length median")),
-        ("75th %ile constituent length", this.constituentLengthStats("75th %ile constituent length")),
-        ("maximum constituent length", this.constituentLengthStats("constituent length maximum")),
-        ("average number of clauses per sentence", this.getSentenceComplexityScore),
-        ("% of simple sentences", this.sentenceStructureTypeStats("ratio of simple sentences")),
-        ("% of complex sentences", this.sentenceStructureTypeStats("ratio of complex sentences")),
-        ("% of compound sentences", this.sentenceStructureTypeStats("ratio of compound sentences")),
-        ("% of compound-complex sentences", this.sentenceStructureTypeStats("ratio of compound-complex sentences")),
-        ("% of fragments", this.sentenceStructureTypeStats("ratio of fragments"))
-      )
+      //add all matches to VP buffer
+      vpBuffer += matchingBuffer.toVector
     }
 
-    */
+    //return matching VPs
+    vpBuffer.toVector
+  }
+
+
+  //captures the tree for each instance of passive voice
+  def getPassiveVoiceParse: Vector[Vector[(String, String, String)]] = {
+
+    val allTrees = td.coreNLPParseTrees.flatten
+
+    //node names
+    val nodeVBN = "vbn"
+    val nodeVB = "vb"
+    val nodeAgent = "agent"
+
+    //iterate through trees
+    for (tree <- allTrees) yield {
+
+      //find matching tree (or subtree)
+      val matched = this.passive.matcher(tree)
+
+      //initialize buffer to hold matchers
+      val matchBuffer = collection.mutable.Buffer[
+        (Option[edu.stanford.nlp.trees.Tree],       //vb
+          Option[edu.stanford.nlp.trees.Tree],      //vbn
+          Option[edu.stanford.nlp.trees.Tree])      //agent
+      ]()
+
+      //iterate through matches
+      while (matched.findNextMatchingNode) {
+        val vbn = Option[edu.stanford.nlp.trees.Tree](matched.getNode("vbn"))
+        val vb = Option[edu.stanford.nlp.trees.Tree](matched.getNode("vb"))
+        val agent = Option[edu.stanford.nlp.trees.Tree](matched.getNode("agent"))
+
+        //add matches to buffer
+        matchBuffer += ((vb, vbn, agent))
+      }
+
+      //normalize the outputs for vb, vbn, and agent
+      for (m <- matchBuffer.toVector) yield {
+        (
+          if (m._1.isDefined) m._1.get.toString.toLowerCase else "",
+          if (m._2.isDefined) m._2.get.toString.toLowerCase else "",
+          if (m._3.isDefined) "by " + m._3.get.toString else ""
+          )
+      }
+    }
+  }
+
+
+  //gets percentage of passive voice used
+  def voiceStatsParse: Double = {
+    //all VPs
+    val all = this.getAllVPsParse.
+      flatten.          //removes sentence boundaries and empty entries
+      length.toDouble
+    //passive VPs
+    val passive = this.getPassiveVoiceParse.
+      flatten.          //removes sentence boundaries and empty entries
+      length.toDouble
+    
+    passive / all
+  }
+
+
+  //TODO add coherence
+    //TODO requires W2V
+  
+
+  def makeSyntacticFeatureVector: Vector[(String, Double)] = {
+    Vector(
+      td.title.getOrElse("") -> 0.0,
+      td.gradeLevel.getOrElse("") -> 0.0,
+      //sentence length
+      "minimum sentence length" -> this.sentenceLengthStats("sentence length minimum"),
+      "25th %ile sentence length" -> this.sentenceLengthStats("25th %ile sentence length"),
+      "mean sentence length" -> this.sentenceLengthStats("sentence length mean"),
+      "median sentence length" -> this.sentenceLengthStats("sentence length median"),
+      "75th %ile sentence length" -> this.sentenceLengthStats("75th %ile sentence length"),
+      "maximum sentence length" -> this.sentenceLengthStats("sentence length maximum"),
+      //surplus punctuation
+      "percent of sentences with surplus punctuation" -> this.punctuationStats("percent of sentences with surplus punctuation"),
+      "25th %ile surplus punctuation size" -> this.punctuationStats("25th %ile surplus punctuation size"),
+      "mean surplus punctuation size" -> this.punctuationStats("mean surplus punctuation size"),
+      "median surplus punctuation size" -> this.punctuationStats("median surplus punctuation size"),
+      "75th %ile surplus punctuation size" -> this.punctuationStats("75th %ile surplus punctuation size"),
+      "maximum surplus punctuation size" -> this.punctuationStats("maximum surplus punctuation size"),
+      //tree size
+      "minimum tree size" -> this.treeSizeStats("minimum tree size"),
+      "25th %ile tree size" -> this.treeSizeStats("25th %ile tree size"),
+      "mean tree size" -> this.treeSizeStats("mean tree size"),
+      "median tree size" -> this.treeSizeStats("median tree size"),
+      "75th %ile tree size" -> this.treeSizeStats("75th %ile tree size"),
+      "maximum tree size" -> this.treeSizeStats("maximum tree size"),
+      //tree depth
+      "minimum tree depth" -> this.treeDepthStats("minimum tree depth"),
+      "25th %ile tree depth" -> this.treeDepthStats("25th %ile tree depth"),
+      "mean tree depth" -> this.treeDepthStats("mean tree depth"),
+      "median tree depth" -> this.treeDepthStats("median tree depth"),
+      "75th %ile tree depth" -> this.treeDepthStats("75th %ile tree depth"),
+      "maximum tree depth" -> this.treeDepthStats("maximum tree depth"),
+      //distance to verb      
+      "minimum distance to verb" -> this.distanceToVerbStats("minimum distance to verb"),
+      "25th %ile distance to verb" -> this.distanceToVerbStats("25th %ile distance to verb"),
+      "mean distance to verb" -> this.distanceToVerbStats("mean distance to verb"),
+      "median distance to verb" -> this.distanceToVerbStats("median distance to verb"),
+      "75th %ile distance to verb" -> this.distanceToVerbStats("75th %ile distance to verb"),
+      "maximum distance to verb" -> this.distanceToVerbStats("maximum distance to verb"),
+      //number of constituents
+      "minimum number of constituents in a sentence" -> this.constituentCountStats("minimum number of constituents in a sentence"),
+      "25th %ile number of constituents in a sentence" -> this.constituentCountStats("25th %ile number of constituents in a sentence"),
+      "mean number of constituents in a sentence" -> this.constituentCountStats("mean number of constituents in a sentence"),
+      "median number of constituents in a sentence" -> this.constituentCountStats("median number of constituents in a sentence"),
+      "75th %ile number of constituents in a sentence" -> this.constituentCountStats("75th %ile number of constituents in a sentence"),
+      "maximum number of constituents in a sentence" -> this.constituentCountStats("maximum number of constituents in a sentence"),
+      //constituent lengths
+      "minimum constituent length" -> this.constituentSizeStats("constituent length minimum"),
+      "25th %ile constituent length" -> this.constituentSizeStats("25th %ile constituent length"),
+      "mean constituent length" -> this.constituentSizeStats("constituent length mean"),
+      "median constituent length" -> this.constituentSizeStats("constituent length median"),
+      "75th %ile constituent length" -> this.constituentSizeStats("75th %ile constituent length"),
+      "maximum constituent length" -> this.constituentSizeStats("constituent length maximum"),
+      //average number of clauses per sentence
+      "average number of clauses per sentence" -> this.getSentenceComplexityScore,
+      //clause size
+      "minimum clause size" -> this.clauseSizeStats("minimum clause size"),
+      "25th %ile clause size" -> this.clauseSizeStats("25th %ile clause size"),
+      "mean clause size" -> this.clauseSizeStats("mean clause size"),
+      "median clause size" -> this.clauseSizeStats("median clause size"),
+      "75th %ile clause size" -> this.clauseSizeStats("75th %ile clause size"),
+      "maximum clause size" -> this.clauseSizeStats("maximum clause size"),
+      //clause depth
+      "minimum clause depth" -> this.clauseDepthStats("minimum clause depth"),
+      "25th %ile clause depth" -> this.clauseDepthStats("25th %ile clause depth"),
+      "mean clause depth" -> this.clauseDepthStats("mean clause depth"),
+      "median clause depth" -> this.clauseDepthStats("median clause depth"),
+      "75th %ile clause depth" -> this.clauseDepthStats("75th %ile clause depth"),
+      "maximum clause depth" -> this.clauseDepthStats("maximum clause depth"),
+      //ratio of clause types
+      "% of independent clauses" -> this.totalClauseTypeRatios("% of independent clauses"),
+      "% of dependent clauses" -> this.totalClauseTypeRatios("% of dependent clauses"),
+      //ratio of sentence types
+      "% of simple sentences" -> this.sentenceStructureTypeStats("% of simple sentences"),
+      "% of complex sentences" -> this.sentenceStructureTypeStats("% of complex sentences"),
+      "% of compound sentences" -> this.sentenceStructureTypeStats("% of compound sentences"),
+      "% of compound-complex sentences" -> this.sentenceStructureTypeStats("% of compound-complex sentences"),
+      "% of fragments" -> this.sentenceStructureTypeStats("% of fragments"),
+      //conjunction use
+      "mean conjunctions per sentence" -> conjunctionStats("mean conjunctions per sentence"),
+      "median conjunctions per sentence" -> conjunctionStats("median conjunctions per sentence"),
+      "maximum conjunctions per sentence" -> conjunctionStats("maximum conjunctions per sentence"),
+      "total coordinate conjunctions used" -> conjunctionStats("total coordinate used"),
+      "max coordinate used" -> conjunctionStats("max coordinate used"),
+      "total subordinate used" -> conjunctionStats("total subordinate used"),
+      "max subordinate used" -> conjunctionStats("max subordinate used"),
+      "total conjunctive used" -> conjunctionStats("total conjunctive used"),
+      "max conjunctive used" -> conjunctionStats("max conjunctive used")
+    )
+  }
+
+
 }
 

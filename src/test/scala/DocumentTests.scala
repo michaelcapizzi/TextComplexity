@@ -58,6 +58,11 @@ class DocumentTests extends GeneralTest {
   */
 class LexicalTests extends GeneralTest {
 
+  "Lexical feature vector" should "compile" in {
+    assert(lex.makeLexicalFeatureVector.nonEmpty)
+  }
+
+
   "Lexical feature vector" should "have normalized values less than one" in {
     val features = lex.makeLexicalFeatureVector
 
@@ -69,8 +74,11 @@ class LexicalTests extends GeneralTest {
 /**
   * Tests for SyntacticFeatures class
   */
-
 class SyntacticTests extends GeneralTest {
+
+  "Syntactic feature vector" should "compile" in {
+    assert(syn.makeSyntacticFeatureVector.nonEmpty)
+  }
 
   "Syntactic method capturing only punctuation" should "not have any alpha-numeric tokens remaining" in {
     assert(syn.getPunctuation.flatten.filter(_.matches("[A-z0-9]+")) == Vector())

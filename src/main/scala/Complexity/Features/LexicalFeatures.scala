@@ -127,20 +127,24 @@ class LexicalFeatures (val td: TextDocument) {
     Vector(
       td.title.getOrElse("") -> 0d,
       td.gradeLevel.getOrElse("") -> 0d,
+      //word/lemma ratios
       "distinct word ratio" -> td.countRatio("word"),
       "distinct lemma ratio" -> td.countRatio("lemma"),
+      //ratio of distinct parts of speech
       "% of distinct nouns in all words" -> this.getDistinctRatios("word")("nouns") / td.totalCount("word"),
       "% of distinct verbs in all words" -> this.getDistinctRatios("word")("verbs") / td.totalCount("word"),
       "% of distinct adjectives in all words" -> this.getDistinctRatios("word")("adjectives") / td.totalCount("word"),
       "% of distinct nouns in all lemmas" -> this.getDistinctRatios("lemma")("nouns") / td.totalCount("lemma"),
       "% of distinct verbs in all lemmas" -> this.getDistinctRatios("lemma")("verbs") / td.totalCount("lemma"),
       "% of distinct adjectives in all lemmas" -> this.getDistinctRatios("lemma")("adjectives") / td.totalCount("lemma"),
+      //word length
       "minimum word length" -> this.wordLengthStats(false)("minimum word length"),
       "25th %ile word length" -> this.wordLengthStats(false)("25th %ile word length"),
       "mean word length" -> this.wordLengthStats(false)("mean word length"),
       "median word length" -> this.wordLengthStats(false)("median word length"),
       "75th %ile word length" -> this.wordLengthStats(false)("75th %ile word length"),
       "maximum word length" -> this.wordLengthStats(false)("maximum word length"),
+      //concreteness
       "% of tokens not present in concreteness" -> this.wordConcretenessStats("number of tokens not present in database normalized over non-proper noun word count"),
       "minimum concreteness score present in text" -> this.wordConcretenessStats("minimum concreteness score present in text"),
       "25th %ile concreteness score present in text" -> this.wordConcretenessStats("25th %ile concreteness score present in text"),
