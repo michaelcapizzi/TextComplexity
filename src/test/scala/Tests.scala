@@ -1,4 +1,5 @@
 import Complexity.TextDocument._
+import Complexity.Utils.IO._
 
 //use sbt "testOnly *MyTestSuiteName"
 
@@ -6,6 +7,12 @@ import Complexity.TextDocument._
   * Tests for ProcessedParagraph and TextDocument classes
   */
 class DocumentTests extends GeneralTest {
+
+  "Importing large text files" should "complete without error of too many open files" in {
+    val procPars = makeProcParsFromText("0608MT_TomSawyer.txt")
+
+    assert(procPars.nonEmpty)
+  }
 
   "Imported annotation and annotated imported text" should "be the same" in {
     assert(procParsFromAnnotation.map(_.words(false)) == procParsFromText.map(_.words(false)))

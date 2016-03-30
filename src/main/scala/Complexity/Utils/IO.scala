@@ -4,6 +4,7 @@ import java.io.{FileReader, BufferedReader, PrintWriter, File}
 import Complexity.{ProcessedParagraph, TextDocument}
 import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
 import edu.arizona.sista.processors.{Document, DocumentSerializer}
+import Testing._
 
 /**
   * Contains functions needed to import files and serialize (both `save` and `load`) annotations
@@ -89,6 +90,46 @@ object IO {
     gradeLevelRegex.replaceFirstIn(fileName, """$1""")
   }
 
+
+  /**
+    * Generates [[ProcessedParagraph]]s from imported plain text
+     * @param file Filename of `.txt` located in [[https://github.com/michaelcapizzi/TextComplexity/tree/master/src/main/resources/rawText]]
+    * @return   `Vector` of [[ProcessedParagraph]]s, one for each paragraph of original text
+    */
+  def makeProcParsFromText(file: String): Vector[ProcessedParagraph] = {
+    val text = importText(file)
+
+    for (paragraph <- text) yield {
+      new ProcessedParagraph(
+        text = Some(paragraph),
+        annotatedDoc = None,
+        processor = p,
+        title = Some(getTitle(file)),
+        author = Some(getAuthor(file)),
+        gradeLevel = Some(getGradeLevel(file))
+      )
+    }
+  }
+
+  /**
+    * Generates [[ProcessedParagraph]]s from serialized `.annotated` file
+    * @param annotatedFileName Filename of `.annotated` located in [[https://github.com/michaelcapizzi/TextComplexity/tree/master/src/main/resources/annotatedText]]
+    * @return  `Vector` of [[ProcessedParagraph]]s, one for each paragraph of original text
+    */
+  def makeProcParsFromAnnotation(originalTextFileName: String, annotatedFileName: String): Vector[ProcessedParagraph] = {
+    val paragraphs = importSerial(annotatedFileName)
+
+    for (par <- paragraphs) yield {
+      new ProcessedParagraph(
+        text = None,
+        annotatedDoc = Some(par),
+        processor = p,
+        title = Some(getTitle(originalTextFileName)),
+        author = Some(getAuthor(originalTextFileName)),
+        gradeLevel = Some(getGradeLevel(originalTextFileName))
+      )
+    }
+  }
 
   /**
     * Use built-in serialize function in `edu.arizona.sista.processors` to save annotations
