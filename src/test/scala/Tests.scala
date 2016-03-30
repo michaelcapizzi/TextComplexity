@@ -1,8 +1,6 @@
 import Complexity.TextDocument._
 
-/**
-  * sbt "testOnly *MyTestSuiteName"
-  */
+//use sbt "testOnly *MyTestSuiteName"
 
 /**
   * Tests for ProcessedParagraph and TextDocument classes

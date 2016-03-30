@@ -47,10 +47,15 @@ object IO {
     */
   def getAuthor(fileName: String): String = {
     val authorRegex = """%(.*)""".r
-    val line = scala.io.Source.fromInputStream(getClass.getResourceAsStream("/rawText/" + fileName)).
-                getLines.
+
+    val is = scala.io.Source.fromInputStream(getClass.getResourceAsStream("/rawText/" + fileName))
+
+    val line = is.getLines.
                 take(1).
                 next
+
+    is.close()
+
     authorRegex.replaceFirstIn(line, """$1""")
   }
 
@@ -61,10 +66,14 @@ object IO {
     */
   def getTitle(fileName: String): String = {
     val titleRegex = """%%(.*)""".r
-    val line = scala.io.Source.fromInputStream(getClass.getResourceAsStream("/rawText/" + fileName)).
-      getLines.
-      slice(1,2).
-      next
+
+    val is = scala.io.Source.fromInputStream(getClass.getResourceAsStream("/rawText/" + fileName))
+
+    val line = is.
+                getLines.
+                slice(1,2).
+                next
+
     titleRegex.replaceFirstIn(line, """$1""")
   }
 

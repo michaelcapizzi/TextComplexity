@@ -2,7 +2,7 @@ package Complexity.SupportMethods
 
 
 /**
- * Created by mcapizzi on 8/17/15.
+ * Support variables and methods
  */
 object Concreteness {
 

@@ -4,7 +4,7 @@ import scala.collection.mutable
 import scala.io.Source
 
 /**
- * Created by mcapizzi on 8/17/15.
+ * Old method for importing `.txt` into paragraphs
  */
 object Importing {
 

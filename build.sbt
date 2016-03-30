@@ -30,11 +30,13 @@ libraryDependencies ++= Seq(
 )
 
 // settings for building project website
-
+// https://github.com/sbt/sbt-site
 site.settings
+
 // include documentation
 site.includeScaladoc()
 
+// https://github.com/sbt/sbt-ghpages
 ghpages.settings
 
 git.remoteRepo := "git@github.com:michaelcapizzi/TextComplexity.git"

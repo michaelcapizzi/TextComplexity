@@ -947,7 +947,7 @@ class SyntacticFeatures(val td: TextDocument) {
       "median tree size" -> this.treeSizeStats("median tree size"),
       "75th %ile tree size" -> this.treeSizeStats("75th %ile tree size"),
       "maximum tree size" -> this.treeSizeStats("maximum tree size"),
-      //tree depth
+      //tree depthc
       "minimum tree depth" -> this.treeDepthStats("minimum tree depth"),
       "25th %ile tree depth" -> this.treeDepthStats("25th %ile tree depth"),
       "mean tree depth" -> this.treeDepthStats("mean tree depth"),

@@ -6,7 +6,7 @@ import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
 import org.scalatest._
 
 /**
-  * Created by mcapizzi on 3/25/16.
+  * Abstract class from which all other test classes will extend
   */
 
 abstract class GeneralTest extends FlatSpec with Matchers with
