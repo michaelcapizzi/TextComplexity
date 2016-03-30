@@ -15,11 +15,14 @@ object IO {
     * Imports text from a `.txt` file where '''paragraphs are separated by `\n`'''
     * @param fileName Filename of `.txt` located in [[https://github.com/michaelcapizzi/TextComplexity/tree/master/src/main/resources/rawText]]
     * @return `Vector` of paragraphs in `plain text`
+    * @todo Exclude lines between commented out sections
     */
   //TODO fromInputStream to allow from inside .jar
   def importText(fileName: String): Vector[String] = {
     //import file
-    val allLines = scala.io.Source.fromInputStream(getClass.getResourceAsStream("/rawText/" + fileName)).getLines
+    val is = scala.io.Source.fromInputStream(getClass.getResourceAsStream("/rawText/" + fileName))
+    //get lines
+    val allLines = is.getLines
     //buffer to hold paragraphs
     val finalBuffer = collection.mutable.Buffer[String]()
     //intermediate buffer
@@ -35,6 +38,9 @@ object IO {
         }
       }
     }
+
+    is.close()
+
     finalBuffer += insideBuffer.mkString(" ")           //why do I have to do this one more time here?
 
     finalBuffer.toVector.                 //convert to vector

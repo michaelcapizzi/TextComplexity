@@ -22,14 +22,7 @@ object AnnotateTexts {
     val finishedNames = finishedFiles.map(_.getName).toSet
 
     //iterate through files
-    for (f <- allFiles.filterNot(z =>
-      z.getName.endsWith("0608MT_TomSawyer.txt") ||
-      z.getName.endsWith("1112CB_JaneEyre.txt") ||
-      z.getName.endsWith("1112JA_PridePrejudice.txt") ||
-      z.getName.endsWith("1112MC_DonQuixote.txt") ||
-      z.getName.endsWith("1112NH_ScarletLetter.txt")
-      )
-    ) {                                                   //TODO fix bug of too many files open for large texts
+    for (f <- allFiles) {
 
       //variables for naming
       val fullName = f.getName

@@ -1,7 +1,6 @@
 package Complexity.Features
 
-import edu.arizona.sista.discourse.rstparser.DiscourseTree
-import edu.stanford.nlp.semgraph.SemanticGraph
+import Complexity.TextDocument
 import org.apache.commons.math3.stat.Frequency
 import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics
 
@@ -9,14 +8,38 @@ import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics
  * Created by mcapizzi on 8/18/15.
  */
 
-/*
-class ParagraphFeatures(val textDocument: TextDocument) {
+/**
+  * Generates features relating to units larger than a sentence
+ * @param td [[TextDocument]] for the document to be analyzed
+  */
+class ParagraphFeatures(val td: TextDocument) {
 
   //paragraph size stats
+  /**
+    * Gets lengths (number of sentences) of each paragraph in document
+    * @return `Vector` of paragraph lengths
+    */
   def getParagraphLengths: Vector[Double] = {
-    this.textDocument.textDoc.map(_.sentences.length.toDouble)
+    for (paragraph <- td.paragraphs) yield {
+      paragraph.rawSentences.length.toDouble
+    }
   }
 
+  /**
+    * Generates basic distribution of paragraph lengths
+    * @return Values representing distribution of paragraph lengths
+    *
+    *         {{{
+    *           Map(
+    *             "minimum paragraph length" -> ?,
+    *             "25th %ile paragraph length" -> ?,
+    *             "mean paragraph length" -> ?,
+    *             "median paragraph length" -> ?,
+    *             75th%ile paragraph length" -> ?,
+    *             maximum paragraph length" -> ?
+    *           )
+    *         }}}
+    */
   def paragraphLengthStats: Map[String, Double] = {
     val stat = new DescriptiveStatistics()
     this.getParagraphLengths.foreach(stat.addValue)
@@ -30,48 +53,117 @@ class ParagraphFeatures(val textDocument: TextDocument) {
     )
   }
 
-  //discourse trees
-  def getDiscourseTrees: Vector[DiscourseTree] = {
-    this.textDocument.textDoc.map(_.discourseTree).map(_.get)
+  /**
+    * Extracts relation information from [[TextDocument.rawDiscourseParses]]
+    * @return `Vector` of `(relation, direction)` where `direction` includes `()` in the string
+    */
+  def getDiscourseRelations: Vector[Array[(String, String)]] = {
+    val allTrees = td.rawDiscourseParses
+
+    //clean discourse parse
+    val finalTuple = for (tree <- allTrees) yield {
+      val split = tree.toString.split("\n")     //split at "\n"
+      val trimmed = for (line <- split) yield {
+                      line.trim                   //trim whitespace
+                    }
+      val filtered = trimmed.filterNot(each =>
+                      each.startsWith("TEXT")       //remove text lines
+                      )
+      val filteredSplit = for (line <- filtered) yield {
+        line.split(" ")                               //split relation from direction
+      }
+      for (item <- filteredSplit) yield {
+        (                                               //build output tuple
+          item.head,
+          if (item.length == 1) "n/a" else item(1)
+        )
+      }
+    }
+    finalTuple
   }
 
-  //extract relation types from discourse trees
-  def getDiscourseRelations = {
-    this.getDiscourseTrees.map(_.                     //get discourse trees
-      toString.split("\n").map(_.trim)).map(_.        //to String and split at new lines, trim whitespace
-      filterNot(_.startsWith("TEXT")).map(_.          //remove simple text lines (e.g. no relations)
-      split(" ")).map(item =>                         //split relation from direction
-      (                                               //make tuple
-        item.head,
-        if (item.length == 1) "n/a" else item(1)      //for relations with no tuple, put "n/a"
-      )
-      ))
-  }
 
-  //TODO count empty Arrays? --> indicates no relations
-  def discourseRelationsStats = {
+  /**
+    * Generates percentage of each type of discourse relation
+    * @return Values representing distibution amoung discoure relations
+    *         
+    *         {{{
+    *           Map(
+    *             "minimum number of relations per paragraph" -> ?,
+    *             "25th %ile number of relations per paragraph" -> ?,
+    *             "mean number of relations per paragraph" -> ?,
+    *             "median number of relations per paragraph" -> ?,
+    *             "75th %ile number of relations per paragraph" -> ?,
+    *             "maximum number of relations per paragraph" -> ?,
+    *             "percent of L->R relations in text" -> ?,
+    *             "percent of R->L relations in text" -> ?,
+    *             "percent of directionless relations in text" -> ?,
+    *             "percent of 'span' relations in text" -> ?,
+    *             "percent of 'comparison' relations in text" -> ?,
+    *             "percent of 'background' relations in text" -> ?,
+    *             "percent of 'textual-organization' relations in text" -> ?,
+    *             "percent of 'joint' relations in text" -> ?,
+    *             "percent of 'attribution' relations in text" -> ?,
+    *             "percent of 'enablement' relations in text" -> ?,
+    *             "percent of 'condition' relations in text" -> ?,
+    *             "percent of 'temporal' relations in text" -> ?,
+    *             "percent of 'explanation' relations in text" -> ?,
+    *             "percent of 'cause' relations in text" -> ?,
+    *             "percent of 'contrast' relations in text" -> ?,
+    *             "percent of 'evaluation' relations in text" -> ?,
+    *             "percent of 'topic-change' relations in text" -> ?,
+    *             "percent of 'same-unit' relations in text" -> ?,
+    *             "percent of 'manner-means' relations in text" -> ?,
+    *             "percent of 'summary' relations in text" -> ?,
+    *             "percent of 'topic-comment' relations in text" -> ?,
+    *             "percent of 'elaboration' relations in text" -> ?
+    *           )
+    *         }}}
+    * @todo Count empty `Array`s which would indicate no relation found
+    */
+  def discourseRelationsStats: Map[String, Double] = {
+    //get paragraph lengths - for normalization
     val paragraphLengths = this.getParagraphLengths
+
+    //extract just a list of relations
     val relations = this.getDiscourseRelations.map(_.map(_._1))
+    //extract just a list of directions for relations
     val directions = this.getDiscourseRelations.map(_.map(_._2))
+
+    //build tuples of (paragraph length, list of relations, list of directions)
     val tuple = (paragraphLengths, relations, directions).zipped.toVector
 
+    //call descriptive stats for distribution of relation types
     val relationCountStats = new DescriptiveStatistics()
-    val relationCount = tuple.map(paragraph =>                              //number of relations per paragraph normalized over paragraph size
-      paragraph._2.length.toDouble / paragraph._1.toDouble)
+
+    //number of relations / number of sentences in paragraph
+    val relationCount = for (paragraph <- tuple) yield {
+      paragraph._2.length.toDouble / paragraph._1.toDouble
+    }
+
+    //add to stats
     relationCount.foreach(relationCountStats.addValue)
 
+    //call frequency for directions
     val directionFreq = new Frequency()
-    tuple.flatMap(_._3).foreach(directionFreq.addValue)                         //count directions
+    //add directions to frequency
+    tuple.flatMap(_._3).foreach(directionFreq.addValue)
+
+
+    //call frequency for relations types
     val relationFreq = new Frequency()
-    tuple.flatMap(_._2).foreach(relationFreq.addValue)                          //count relations
+    //add relations to frequency
+    tuple.flatMap(_._2).foreach(relationFreq.addValue)
 
-    val directionRatio = tuple.flatMap(_._3).map(direction =>                   //ratio of each direction (including n/a)
-      direction -> directionFreq.getPct(direction)
-    ).distinct.toMap                                                            //make map
+    //calculate ratio of each direction (including "n/a")
+    val directionRatio = tuple.flatMap(_._3).map(direction =>
+                            direction -> directionFreq.getPct(direction)
+                          ).distinct.toMap                                        //make map
 
-    val relationTypes = tuple.flatMap(_._2).map(relation =>                     //count of each relation
-      relation -> relationFreq.getCount(relation) / tuple.flatMap(_._2).length.toDouble   //percent of each relation type
-    ).distinct.toMap
+    //calculate count for each relation type (normalized by length of paragraph)
+    val relationTypes = tuple.flatMap(_._2).map(relation =>
+                            relation -> relationFreq.getCount(relation) / tuple.flatMap(_._2).length.toDouble
+                        ).distinct.toMap
 
     Map(
       "minimum number of relations per paragraph" -> relationCountStats.getMin,
@@ -105,52 +197,57 @@ class ParagraphFeatures(val textDocument: TextDocument) {
     )
   }
 
-  //TODO - experiment with CoreNLP Semantic Graph
-
-
+  
+  /**
+    * Generates `Vector` of all features for [[TextDocument]] <br>
+    *   First two items in `Vector` are `title` and `grade level`
+    */
   def makeParagraphFeatureVector: Vector[(String, Double)] = {
     Vector(
-      (textDocument.title, 0.0),
-      (textDocument.gradeLevel, 0.0),
-      ("minimum paragraph length", this.paragraphLengthStats("minimum paragraph length")),
-      ("25th %ile paragraph length", this.paragraphLengthStats("25th %ile paragraph length")),
-      ("mean paragraph length", this.paragraphLengthStats("mean paragraph length")),
-      ("median paragraph length", this.paragraphLengthStats("median paragraph length")),
-      ("75th %ile paragraph length", this.paragraphLengthStats("75th %ile paragraph length")),
-      ("maximum paragraph length", this.paragraphLengthStats("maximum paragraph length")),
-      ("minimum number of relations per paragraph", this.discourseRelationsStats("minimum number of relations per paragraph")),
-      ("25th %ile number of relations per paragraph", this.discourseRelationsStats("25th %ile number of relations per paragraph")),
-      ("mean number of relations per paragraph", this.discourseRelationsStats("mean number of relations per paragraph")),
-      ("median number of relations per paragraph", this.discourseRelationsStats("median number of relations per paragraph")),
-      ("75th %ile number of relations per paragraph", this.discourseRelationsStats("75th %ile number of relations per paragraph")),
-      ("maximum number of relations per paragraph", this.discourseRelationsStats("maximum number of relations per paragraph")),
-      ("percent of L->R relations in text", this.discourseRelationsStats("percent of L->R relations in text")),
-      ("percent of R->L relations in text", this.discourseRelationsStats("percent of R->L relations in text")),
-      ("percent of directionless relations in text", this.discourseRelationsStats("percent of directionless relations in text")),
-      ("percent of 'span' relations in text", this.discourseRelationsStats("percent of 'span' relations in text")),
-      ("percent of 'comparison' relations in text", this.discourseRelationsStats("percent of 'comparison' relations in text")),
-      ("percent of 'background' relations in text", this.discourseRelationsStats("percent of 'background' relations in text")),
-      ("percent of 'textual-organization' relations in text", this.discourseRelationsStats("percent of 'textual-organization' relations in text")),
-      ("percent of 'joint' relations in text", this.discourseRelationsStats("percent of 'joint' relations in text")),
-      ("percent of 'attribution' relations in text", this.discourseRelationsStats("percent of 'attribution' relations in text")),
-      ("percent of 'enablement' relations in text", this.discourseRelationsStats("percent of 'enablement' relations in text")),
-      ("percent of 'condition' relations in text", this.discourseRelationsStats("percent of 'condition' relations in text")),
-      ("percent of 'temporal' relations in text", this.discourseRelationsStats("percent of 'temporal' relations in text")),
-      ("percent of 'explanation' relations in text", this.discourseRelationsStats("percent of 'explanation' relations in text")),
-      ("percent of 'cause' relations in text", this.discourseRelationsStats("percent of 'cause' relations in text")),
-      ("percent of 'contrast' relations in text", this.discourseRelationsStats("percent of 'contrast' relations in text")),
-      ("percent of 'evaluation' relations in text", this.discourseRelationsStats("percent of 'evaluation' relations in text")),
-      ("percent of 'topic-change' relations in text", this.discourseRelationsStats("percent of 'topic-change' relations in text")),
-      ("percent of 'same-unit' relations in text", this.discourseRelationsStats("percent of 'same-unit' relations in text")),
-      ("percent of 'manner-means' relations in text", this.discourseRelationsStats("percent of 'manner-means' relations in text")),
-      ("percent of 'summary' relations in text", this.discourseRelationsStats("percent of 'summary' relations in text")),
-      ("percent of 'topic-comment' relations in text", this.discourseRelationsStats("percent of 'topic-comment' relations in text")),
-      ("percent of 'elaboration' relations in text", this.discourseRelationsStats("percent of 'elaboration' relations in text"))
+      td.title.getOrElse("") -> 0.0,
+      td.gradeLevel.getOrElse("") -> 0.0,
+      //paragraph length
+      "minimum paragraph length" -> this.paragraphLengthStats("minimum paragraph length"),
+      "25th %ile paragraph length" -> this.paragraphLengthStats("25th %ile paragraph length"),
+      "mean paragraph length" -> this.paragraphLengthStats("mean paragraph length"),
+      "median paragraph length" -> this.paragraphLengthStats("median paragraph length"),
+      "75th %ile paragraph length" -> this.paragraphLengthStats("75th %ile paragraph length"),
+      "maximum paragraph length" -> this.paragraphLengthStats("maximum paragraph length"),
+      //distribution of relations per paragraph
+      "minimum number of relations per paragraph" -> this.discourseRelationsStats("minimum number of relations per paragraph"),
+      "25th %ile number of relations per paragraph" -> this.discourseRelationsStats("25th %ile number of relations per paragraph"),
+      "mean number of relations per paragraph" -> this.discourseRelationsStats("mean number of relations per paragraph"),
+      "median number of relations per paragraph" -> this.discourseRelationsStats("median number of relations per paragraph"),
+      "75th %ile number of relations per paragraph" -> this.discourseRelationsStats("75th %ile number of relations per paragraph"),
+      "maximum number of relations per paragraph" -> this.discourseRelationsStats("maximum number of relations per paragraph"),
+      //percentage of directions
+      "percent of L->R relations in text" -> this.discourseRelationsStats("percent of L->R relations in text"),
+      "percent of R->L relations in text" -> this.discourseRelationsStats("percent of R->L relations in text"),
+      "percent of directionless relations in text" -> this.discourseRelationsStats("percent of directionless relations in text"),
+      //percentage of relations
+      "percent of 'span' relations in text" -> this.discourseRelationsStats("percent of 'span' relations in text"),
+      "percent of 'comparison' relations in text" -> this.discourseRelationsStats("percent of 'comparison' relations in text"),
+      "percent of 'background' relations in text" -> this.discourseRelationsStats("percent of 'background' relations in text"),
+      "percent of 'textual-organization' relations in text" -> this.discourseRelationsStats("percent of 'textual-organization' relations in text"),
+      "percent of 'joint' relations in text" -> this.discourseRelationsStats("percent of 'joint' relations in text"),
+      "percent of 'attribution' relations in text" -> this.discourseRelationsStats("percent of 'attribution' relations in text"),
+      "percent of 'enablement' relations in text" -> this.discourseRelationsStats("percent of 'enablement' relations in text"),
+      "percent of 'condition' relations in text" -> this.discourseRelationsStats("percent of 'condition' relations in text"),
+      "percent of 'temporal' relations in text" -> this.discourseRelationsStats("percent of 'temporal' relations in text"),
+      "percent of 'explanation' relations in text" -> this.discourseRelationsStats("percent of 'explanation' relations in text"),
+      "percent of 'cause' relations in text" -> this.discourseRelationsStats("percent of 'cause' relations in text"),
+      "percent of 'contrast' relations in text" -> this.discourseRelationsStats("percent of 'contrast' relations in text"),
+      "percent of 'evaluation' relations in text" -> this.discourseRelationsStats("percent of 'evaluation' relations in text"),
+      "percent of 'topic-change' relations in text" -> this.discourseRelationsStats("percent of 'topic-change' relations in text"),
+      "percent of 'same-unit' relations in text" -> this.discourseRelationsStats("percent of 'same-unit' relations in text"),
+      "percent of 'manner-means' relations in text" -> this.discourseRelationsStats("percent of 'manner-means' relations in text"),
+      "percent of 'summary' relations in text" -> this.discourseRelationsStats("percent of 'summary' relations in text"),
+      "percent of 'topic-comment' relations in text" -> this.discourseRelationsStats("percent of 'topic-comment' relations in text"),
+      "percent of 'elaboration' relations in text" -> this.discourseRelationsStats("percent of 'elaboration' relations in text")
     )
   }
 
 
-
 }
 
-*/
+
