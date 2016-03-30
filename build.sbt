@@ -19,8 +19,10 @@ libraryDependencies ++= Seq(
   "org.apache.commons" % "commons-compress" % "1.9",
 //  "org.apache.commons" % "commons-io" % "1.3.2",
   "com.quantifind" % "wisp_2.11" % "0.0.4",
-  //"org.scalanlp" % "breeze-natives_2.10" % "0.11.2",
-  "org.scalanlp" % "breeze_2.10" % "0.11.2",
+  "org.scalanlp" % "breeze-natives_2.11" % "0.11.2",
+  //  "org.scalanlp" % "breeze_2.11" % "0.11.2",
+  "org.scalanlp" %% "breeze-viz" % "0.11.2",
+  "org.scalanlp" % "nak_2.11" % "1.3",
 //  "edu.stanford.nlp" % "stanford-corenlp" % "3.5.2",                        //had a bug with MWE in Grapes of Wrath
 //  "edu.stanford.nlp" % "stanford-corenlp" % "3.5.2" classifier "models",    //had a bug with MWE in Grapes of Wrath
   "edu.stanford.nlp" % "stanford-corenlp" % "3.5.1",

@@ -60,6 +60,14 @@ class TextDocument (
                       )
 
   /**
+    * List of distinct, lemmatized tokens all lowercase for use in [[Complexity.Features.Word2Vec]]
+    */
+  def forW2V: Vector[String] = {
+    this.lemmasCounter.keySet.map(_.toLowerCase).toVector
+  }
+
+
+  /**
     * Uses [[TextDocument.foldApply]] to collapse each [[ProcessedParagraph]]'s `Counter` into one counter
     */
   val tagsCounter = foldApply[Counter[String]](
