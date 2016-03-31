@@ -41,6 +41,22 @@ object BuildFeatureMatrices {
     var datums = Array[edu.arizona.sista.learning.RVFDatum[Int, String]]()
 
 
+    /**
+      * Feature list being used for feature development
+       */
+    val featureList = args.slice(2, args.length)
+
+    /**
+      * w2vMap loaded one time (or None if not using SyntacticFeatures)
+       */
+    val w2vMap = if (featureList.contains("syntactic") || featureList.contains("all")) {
+                      Some(makeMutableMapDense(
+                            w2vPath = "/word2vec_SISTA.txt.gz",
+                            take = 500000
+                            ))
+                } else {
+                  None
+                }
 
     /**
       * Variable to capture the lexicon (needed for [[exportToSVM]]
@@ -56,8 +72,7 @@ object BuildFeatureMatrices {
       //make TextDocument
       val td = makeDocumentFromSerial(doc.getName, p)
 
-      //extract feature list from args
-      val featureList = args.slice(2, args.length)
+      println(doc.getName + "-" + td.gradeLevel.getOrElse("NotGiven") + ", converted to class #" + convertLabel(td.gradeLevel.getOrElse("NotGiven"), args(0).toInt) + " out of " + args(0) + " classes including (class #0)")
 
       //initialize empty feature variables
       var lex: Option[LexicalFeatures] = None
@@ -71,16 +86,11 @@ object BuildFeatureMatrices {
       }
 
       if (featureList.contains("syntactic") || featureList.contains("all")) {
-        //syntactic class requires Word2Vec class
-        val w2vMap = makeMutableMapDense(
-                                        w2vPath = "/word2vec_SISTA.txt.gz",
-                                        take = 500000
-                                        )
 
         val w2v = new Word2Vec(
                                 w2vFilePath = null,
                                 vocabulary = td.forW2V,
-                                w2vMasterMap = Some(w2vMap)
+                                w2vMasterMap = Some(w2vMap.get)
                               )
 
         syn = Some(new SyntacticFeatures(td, Some(w2v)))

@@ -17,6 +17,7 @@ import Complexity.SupportMethods.Similarity._
   *
   * @param td  [[TextDocument]] for the document to be analyzed
   * @param w2vClass Optional [[Word2Vec]] class to be used in coherence metrics
+  * @todo Paramaterize the coherence statistics to use or not use Word2Vec.  This would require adding a paramater to the class itself.
  */
 class SyntacticFeatures(
                          val td: TextDocument,
