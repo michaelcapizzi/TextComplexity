@@ -3,8 +3,8 @@ package Complexity.MachineLearning
 import Complexity.Features.{ParagraphFeatures, SyntacticFeatures, LexicalFeatures}
 import Complexity.TextDocument
 import edu.arizona.sista.learning.RVFDatum
-import edu.arizona.sista.struct.Counter
-import Utils._
+import edu.arizona.sista.struct.{Lexicon, Counter}
+import MLutils._
 
 /**
   * Accumulates features from all of the feature classes
@@ -71,38 +71,53 @@ class FeatureExtractor(
         parFeatureVector
       ).toVector.flatten
 
-  /**
-    * Tuple of data to be used in building dataset <br>
-    *   `(title, Datum)`
-    */
-  val mlDatumTuple = (
-                      this.finalFeatureVector.head._1,      //title
-                      makeMLDatum                           //datum
-                      )
 
   /**
-    * Builds a `edu.arizona.sista.learning.RVFDatum` that will contribute the training dataset <br>
-    *   A `datum` consists of a label and a `edu.arizona.sista.struct.Counter` of feature values
-    * @return label and the `Counter` holding the feature values
+    * Title of document
     */
-  def makeMLDatum: RVFDatum[String, String] = {
+  val title = this.finalFeatureVector.head._1
+
+
+  /**
+    * Output of the `Datum` and `Lexicon` in same pass
+    */
+  val (mlDatum, mlLexicon) = makeDatumAndLexicon
+
+
+  /**
+    * Generates a `Datum` and `Lexicon` in same pass of features <br>
+    *   `Datum` will be added to the `Dataset` <br>
+    *     `Lexicon` will be made available in case `Dataset` is written to file in [Utils.toSVM]
+    * @return Tuple of `(Datum, Lexicon)`
+    */
+  def makeDatumAndLexicon: (RVFDatum[Int, String], Lexicon[String]) = {
     //implement a Counter
-    val counter = new Counter[String]
+    val counter = new Counter[String]()
+
+    //implement a Lexicon
+    val lexicon = new Lexicon[String]()
 
     //iterate through feature vector
     for (f <- this.finalFeatureVector.slice(2, this.finalFeatureVector.length)) {
+
+      //add to lexicon
+      lexicon.add(f._1)
+
       //set the counter to (feature name, feature value)
       counter.setCount(
-        convertLabel(f._1, this.numClasses),
-        f._2
-      )
+                        f._1,
+                        f._2
+                      )
     }
 
-    //return the datum
-    new RVFDatum[String, String](
-          this.td.gradeLevel.getOrElse("LabelNotProvided"),
+    //return the datum and lexicon
+    (
+      new RVFDatum[Int, String](
+          convertLabel(this.td.gradeLevel.getOrElse("NoLabelGiven"), this.numClasses),
           counter
+          ),
+      lexicon
     )
-
   }
+
 }

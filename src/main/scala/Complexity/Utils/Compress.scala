@@ -1,31 +1,44 @@
-package Utils
+package Complexity.Utils
 
 import java.io._
 import java.util.zip.{ZipEntry, ZipOutputStream, GZIPInputStream}
 
 /**
- * Created by mcapizzi on 9/9/15.
+ * Supporting methods for handling compressed files
  */
 object Compress {
 
-  //uncompresses file into Stream
+  /**
+    * Uncompresses file into `InputStream`
+    * @param fileName File to be uncompressed
+    */
   def unGZ(fileName: String): InputStream = {
     new GZIPInputStream(new BufferedInputStream(new FileInputStream(fileName)))
   }
 
-  //uncompresses InputStream
+  /**
+    * Uncompresses an `InputStream`
+    * @param stream `InputStream` to be uncompressed
+    */
   def unGZ(stream: InputStream): InputStream = {
     new GZIPInputStream(stream)
   }
 
-  //method specifically for opening EOS model
-  def unGZEOSModel(fileName: String): InputStreamReader = {
+  /**
+    * Method for specifically opening a compressed, trained classifier for use in [[Complexity.MachineLearning.Model]]
+    * @param fileName File housing saved model
+    */
+  def unGZmlModel(fileName: String): InputStreamReader = {
 //    new InputStreamReader(new GZIPInputStream(new BufferedInputStream(new FileInputStream(fileName))))
 //    new InputStreamReader(new GZIPInputStream(new BufferedInputStream(getClass.getResourceAsStream(fileName))))
     new InputStreamReader(new GZIPInputStream(getClass.getResourceAsStream(fileName)))
   }
 
-  //compress files into .gz
+  /**
+    * Compresses a given file into `.gz`
+    * @param zipOutput Location of output `.gz` file
+    * @param listOfFiles List of files to be compressed
+    */
   def GZ(zipOutput: String, listOfFiles: Vector[File]): Unit = {
     val zip = new ZipOutputStream(new FileOutputStream(zipOutput))
 

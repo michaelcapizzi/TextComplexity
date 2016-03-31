@@ -2,9 +2,14 @@ package Complexity.MachineLearning
 
 import edu.arizona.sista.learning._
 import edu.arizona.sista.struct.Counter
+import MLutils._
+import Complexity.Utils.Compress._
+
 
 /**
+  * Generates the model and datasets for training and testing
   *
+  * @param dataset Can be initiated as empty and built using `makeDataset`, or can be included at instantiation
   * @param classifierType `randomForest`, `perceptron`, `logisticRegression`, or `svm`; defaults to `randomForest`
   * @param RFnumTrees For `randomForest`: Number of trees
   * @param RFfeatureSampleRatio For `randomForest`: Sample ratio
@@ -15,6 +20,7 @@ import edu.arizona.sista.struct.Counter
   * @param bias For `logisticRegression` and `svm`: Include bias?
   */
 class Model(
+            var dataset: RVFDataset[Int, String] = new RVFDataset[Int, String](),
             val classifierType: String,
             val RFnumTrees: Option[Int] = None,
             val RFfeatureSampleRatio: Option[Double] = None,
@@ -30,23 +36,23 @@ class Model(
     */
   var classifier = this.classifierType match {
 
-    case "randomForest" => new RandomForestClassifier[String, String](
+    case "randomForest" => new RandomForestClassifier[Int, String](
                             numTrees = RFnumTrees.getOrElse(1000),
                             featureSampleRatio = RFfeatureSampleRatio.getOrElse(1.0),
                             maxTreeDepth = RFmaxTreeDepth.getOrElse(5),
                             numThreads = RFnumThreads.getOrElse(3)
                         )
-    case "perceptron" => new PerceptronClassifier[String, String](
+    case "perceptron" => new PerceptronClassifier[Int, String](
                             epochs = Pepochs.getOrElse(20),
                             burnInIterations = PburnIn.getOrElse(1)
                         )
-    case "logisticRegression" => new LogisticRegressionClassifier[String, String](
+    case "logisticRegression" => new LogisticRegressionClassifier[Int, String](
                             bias = bias.getOrElse(true)
                         )
-    case "svm" => new LinearSVMClassifier[String, String](
+    case "svm" => new LinearSVMClassifier[Int, String](
                             bias = bias.getOrElse(true)
                         )
-    case _ => new RandomForestClassifier[String, String](
+    case _ => new RandomForestClassifier[Int, String](
                             numTrees = RFnumTrees.getOrElse(1000),
                             featureSampleRatio = RFfeatureSampleRatio.getOrElse(1.0),
                             maxTreeDepth = RFmaxTreeDepth.getOrElse(5),
@@ -54,18 +60,39 @@ class Model(
                         )
   }
 
+
   /**
-    * Variable to contain the dataset
+    * Save trained model to file
+    *
+    * @param fileName Location for trained model
     */
-  var dataset = new RVFDataset[String, String]()
+  def saveModel(fileName: String): Unit = {
+    this.classifier.saveTo(fileName)
+  }
 
 
   /**
-    * Builds a dataset from given list of Datums
+    * Load trained model from file <br>
+    *   Only `randomForest` and `perceptron` can be loaded from a saved state
+    *   Model can be compressed with `.gz` for `perceptron` and then requires use of [[Complexity.Utils.Compress]]
+    *
+    * @param fileName uncompressed or compressed file location written from [[resources/]]
+    */
+  def loadModel(fileName: String): Unit = {
+    this.classifierType match {
+      case "randomForest" => this.classifier = RandomForestClassifier.loadFrom(fileName)
+      case "perceptron" => this.classifier = PerceptronClassifier.loadFrom(unGZmlModel(fileName))
+//      case "logisticRegression" => this.classifier = LogisticRegressionClassifier.loadFrom(unGZmlModel(fileName))
+//      case "svm" => this.classifier = LinearSVMClassifier.loadFrom(unGZmlModel(filName))
+    }
+  }
+
+  /**
+    * Builds a dataset (if none was given at class instantiation) from list of Datums
     *
     * @param datumSeq List of Datums
     */
-  def makeDataset(datumSeq: Vector[RVFDatum[String, String]]): Unit = {
+  def makeDataset(datumSeq: Vector[RVFDatum[Int, String]]): Unit = {
     datumSeq.foreach(this.dataset.+=(_))
   }
 
@@ -80,31 +107,33 @@ class Model(
 
   /**
     * Produces predictions for a given test set
+    *
     * @param titles `Vector` of titles to be tested
     * @param datumSeq `Vector` of `Datum`s to be tested
     * @return `Vector` of tuples of `(title, predictedScore, actualScore)`
     */
-  def test(titles: Vector[String], datumSeq: Vector[RVFDatum[String, String]]): Vector[(String, String, String)] = {
+  def test(titles: Vector[String], datumSeq: Vector[RVFDatum[Int, String]], numClasses: Int): Vector[(String, String, String)] = {
     (
       titles,                                             //title
-      datumSeq.map(d => this.classifier.classOf(d)),      //predicted (mL) score
-      datumSeq.map(d => d.label)                          //actual score
+      datumSeq.map(d => revertLabel(this.classifier.classOf(d), numClasses)),      //predicted (mL) score (reverted to string)
+      datumSeq.map(d => revertLabel(d.label, numClasses))                          //actual score (reverted to string)
     ).zipped.toVector
   }
 
 
   /**
     * Produces predictions for a given test set
+    *
     * @param titles `Vector` of titles to be tested
     * @param datumSeq `Vector` of `Datum`s to be tested
-    * @return `Vector` of tuples of `(title, predictedScore, actualScore)` with a `Counter` of confidences
+    * @return `Vector` of tuples of `(title, predictedScore, actualScore)` with a `Counter` of confidences (still in converted Integer format)
     */
-  def testWithConfidence(titles: Vector[String], datumSeq: Vector[RVFDatum[String, String]]): Vector[((String, String, String), Counter[String])] = {
-    this.test(titles, datumSeq).zip(                                //results from test method
-                                    datumSeq.map(d =>
-                                      this.classifier.scoresOf(d)   //confidence values
-                                      )
-                                    )
+  def testWithConfidence(titles: Vector[String], datumSeq: Vector[RVFDatum[Int, String]], numClasses: Int): Vector[((String, String, String), Counter[Int])] = {
+    this.test(titles, datumSeq, numClasses).zip(                                //results from test method
+                                                datumSeq.map(d =>
+                                                        this.classifier.scoresOf(d)   //confidence values
+                                                )
+                                            )
   }
 
 
