@@ -10,9 +10,9 @@ import MLutils._
   * Accumulates features from all of the feature classes
   *
   * @param td [[TextDocument]] of interest
-  * @param lexFeatures [[LexicalFeatures]] for [[TextDocument]]
-  * @param synFeatures [[SyntacticFeatures]] for [[TextDocument]]
-  * @param parFeatures [[ParagraphFeatures]] for [[TextDocument]]
+  * @param lexFeatures [[Complexity.Features.LexicalFeatures]] for [[TextDocument]]
+  * @param synFeatures [[Complexity.Features.SyntacticFeatures]] for [[TextDocument]]
+  * @param parFeatures [[Complexity.Features.ParagraphFeatures]] for [[TextDocument]]
   * @param numClasses Number of classes for classification
   */
 class FeatureExtractor(
@@ -35,7 +35,7 @@ class FeatureExtractor(
                 )
 
   /**
-    * `Vector` of features from [[LexicalFeatures]]
+    * `Vector` of features from [[Complexity.Features.LexicalFeatures]]
     */
 //  val lexFeatureVector = if (lexFeatures != null) lexFeatures.makeLexicalFeatureVector else null
   val lexFeatureVector = Option[Vector[(String, Double)]](
@@ -44,7 +44,7 @@ class FeatureExtractor(
                           )
 
   /**
-    * `Vector` of features from [[SyntacticFeatures]]
+    * `Vector` of features from [[Complexity.Features.SyntacticFeatures]]
     */
 //  val synFeatureVector = if (synFeatures != null) synFeatures.makeSyntacticFeatureVector else null
   val synFeatureVector = Option[Vector[(String, Double)]](
@@ -53,7 +53,7 @@ class FeatureExtractor(
                           )
 
   /**
-    * `Vector` of features from [[ParagraphFeatures]]
+    * `Vector` of features from [[Complexity.Features.ParagraphFeatures]]
     */
 //  val parFeatureVector = if (parFeatures != null) parFeatures.makeParagraphFeatureVector else null
   val parFeatureVector = Option[Vector[(String, Double)]](
@@ -79,15 +79,15 @@ class FeatureExtractor(
 
 
   /**
-    * Output of the `Datum` and `Lexicon` in same pass
+    * Output of [[edu.arizona.sista.learning.RVFDatum]] and [[edu.arizona.sista.struct.Lexicon]] in same pass
     */
   val (mlDatum, mlLexicon) = makeDatumAndLexicon
 
 
   /**
-    * Generates a `Datum` and `Lexicon` in same pass of features <br>
-    *   `Datum` will be added to the `Dataset` <br>
-    *     `Lexicon` will be made available in case `Dataset` is written to file in [Utils.toSVM]
+    * Generates a [[edu.arizona.sista.learning.RVFDatum]] and [[edu.arizona.sista.struct.Lexicon]] in same pass of features <br>
+    *   `Datum` will be added to the [[edu.arizona.sista.learning.RVFDataset]] <br>
+    *     `Lexicon` will be made available in case [[edu.arizona.sista.learning.RVFDataset]] is written to file in [[Complexity.MachineLearning.MLutils.exportToSVM()]]
     * @return Tuple of `(Datum, Lexicon)`
     */
   def makeDatumAndLexicon: (RVFDatum[Int, String], Lexicon[String]) = {

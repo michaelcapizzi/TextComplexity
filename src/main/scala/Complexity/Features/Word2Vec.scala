@@ -5,10 +5,8 @@ import Complexity.SupportMethods.Similarity._
 import nak.cluster._
 import scala.collection.parallel.immutable.ParMap
 import scala.collection.parallel.mutable.ParArray
-import Utils.Compress._
-import org.json4s._
-import org.json4s.native.Serialization._
-import org.json4s.native.Serialization
+import Complexity.Utils.Compress._
+
 
 import scala.util.control.Breaks._
 

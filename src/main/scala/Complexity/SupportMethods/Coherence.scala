@@ -7,9 +7,12 @@ object Coherence {
 
   //TODO consider building alternative method (not including set intersection) that will handle pronouns and w2v more easily
 
-  //finds intersection of a sequence of sets
-  //used for plain noun matching
-  //TODO fix: capturing pronouns as determiners when they appear in two consecutive sentences EVEN IF they aren't coreferent
+  /**
+    * Finds intersection of a sequence of sets <br>
+    *   Used for plain noun matching in [[Complexity.Features.SyntacticFeatures.coherenceChain]]
+    * @param listOfSets List of sets to calculate intersection
+    * @return `Set` of intersections
+    */
   def multiIntersect(listOfSets: Vector[Set[String]]): Set[String] = {
 
     def loop(listOfSets: Vector[Set[String]], runningIntersection: Set[String]): Set[String] = {
@@ -25,6 +28,11 @@ object Coherence {
     loop(listOfSets, listOfSets.head)
   }
 
+  /**
+    * Finds pronouns in `nsubj` position to add to [[Complexity.Features.SyntacticFeatures.coherenceGrid]]
+    * @param listOfSets List of setse to calculate intersection
+    * @return `Set` of intersections
+    */
   //finds pronouns in nsubj position to add to coherenceGrid
   def findPronouns(listOfSets: Vector[Set[(String, String)]]): Set[String] = {
     val pronounRegex = """(this)|(that)|(he)|(she)|(they)|(it)"""

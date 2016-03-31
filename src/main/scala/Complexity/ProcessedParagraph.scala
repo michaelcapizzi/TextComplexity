@@ -8,12 +8,12 @@ import java._
 /**
   * Class to house all the NLP elements needed for feature selection later.
   * It is intended to be used for '''each''' paragraph of the text
-  * (because of the computational cost of `edu.arizona.sista.discourse.rstparser` DiscourseParser.
+  * (because of the computational cost of [[edu.arizona.sista.discourse.rstparser.DiscourseTree]]
   * Will be fed to [[TextDocument]] as a Vector of paragraphs
   * @constructor Will represent the paragraph in terms of NLP pipeline
   * @param text If not loading from annotation, the plain text
   * @param annotatedDoc If loading from annotation, the annotated doc
-  * @param processor Instance of `edu.arizona.sista.processors.corenlp.CoreNLPProcessor` with the following settings: `(withDiscourse=true, maxSentenceLength = 450)`
+  * @param processor Instance of [[CoreNLPProcessor]] with the following settings: `(withDiscourse=true, maxSentenceLength = 450)`
   * @param title Optional title of document of which this paragraph is a part
   * @param author Optional author of document of which this paragraph is a part
   * @param paragraphNumber Optional paragraph index in larger document
@@ -32,7 +32,7 @@ class ProcessedParagraph(
                     ) {
 
   /**
-    * `edu.arizona.sista.processors.Document` housing all annotation information
+    * [[edu.arizona.sista.processors.Document]] housing all annotation information
      */
   val doc = if (text.nonEmpty) {
               this.processor.mkDocument(this.text.get)
@@ -53,7 +53,7 @@ class ProcessedParagraph(
   /////////////////////NLP units//////////////////////
 
   /**
-     * @return Vector of `edu.arizona.sista.processors.Sentences`
+     * @return Vector of [[edu.arizona.sista.processors.Sentence]]s
     */
   def rawSentences: Vector[edu.arizona.sista.processors.Sentence] = {
     this.doc.sentences.toVector
@@ -193,7 +193,7 @@ class ProcessedParagraph(
 
   /**
     * SISTA `processors`-generated trees
-     * @return Vector of `edu.arizona.sista.struct.Tree`s
+     * @return Vector of [[edu.arizona.sista.struct.Tree]]s
     */
   def sistaParseTree: Vector[edu.arizona.sista.struct.Tree] = {
     this.rawSentences.map(sentence =>
@@ -203,7 +203,7 @@ class ProcessedParagraph(
 
   /**
     * CoreNLP-generated `Tree`s
-     * @return Vector of `edu.stanford.nlp.trees.Tree`s
+     * @return Vector of [[edu.stanford.nlp.trees.Trees]]
     *  @see [[http://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/trees/Tree.html]]
     */
   def coreNLPParseTree: Vector[edu.stanford.nlp.trees.Tree] = {
@@ -214,7 +214,7 @@ class ProcessedParagraph(
 
   /**
     * CoreNLP-generated `Constituent`s
-     * @return `Vector` of `java.util.Set`s of `edu.stanford.nlp.trees.Constituent`s
+     * @return `Vector` of `java.util.Set`s of [[edu.stanford.nlp.trees.Constituent]]
     *  @see [[http://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/trees/Constituent.html]]
     */
   def rawConstituents: Vector[util.Set[edu.stanford.nlp.trees.Constituent]] = {
