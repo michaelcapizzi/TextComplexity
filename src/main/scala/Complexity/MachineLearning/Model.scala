@@ -136,8 +136,8 @@ class Model(
     * Produces predictions for a given test set
     *
     * @param titles `Vector` of titles to be tested
-    * @param datumSeq `Vector` of `Datum`s to be tested
-    * @return `Vector` of tuples of `(title, predictedScore, actualScore)` with a `Counter` of confidences (still in converted Integer format)
+    * @param datumSeq `Vector` of [[edu.arizona.sista.learning.Datum]]s to be tested
+    * @return `Vector` of tuples of `(title, predictedScore, actualScore)` with a [[edu.arizona.sista.struct.Counter]] of confidences (still in converted Integer format)
     */
   def testWithConfidence(titles: Vector[String], datumSeq: Vector[RVFDatum[Int, String]], numClasses: Int): Vector[((String, String, String), Counter[Int])] = {
     this.test(titles, datumSeq, numClasses).zip(                                //results from test method
@@ -145,6 +145,40 @@ class Model(
                                                         this.classifier.scoresOf(d)   //confidence values
                                                 )
                                             )
+  }
+
+
+  /**
+    * Make prediction for a single datum
+    * @param datum The [[edu.arizona.sista.learning.Datum]] to be predicted
+    * @param numClasses `3` or `6`
+    * @return Tuple `(prediction, Counter[confidences], Counter[feature values])`
+    */
+  def predict(datum: RVFDatum[Int, String], numClasses: Int): (String, Counter[String], Counter[String]) = {
+
+    //new counter (to house reverted labels)
+    val updatedConfidences = new Counter[String]()
+    //original confidences
+    val originalConfidences = this.classifier.scoresOf(datum)
+    //update new counter with reverted labels
+    for (k <- originalConfidences.keySet) {
+                        updatedConfidences.setCount(
+                                  revertLabel(k, numClasses),       //reverted label
+                                  originalConfidences.getCount(k)   //original confidence value
+                        )
+    }
+
+    //get prediction
+    val prediction = revertLabel(this.classifier.classOf(datum), numClasses)
+
+    //get feature counter
+    val features = datum.featuresCounter
+
+    (
+      prediction,
+      updatedConfidences,
+      features
+    )
   }
 
 
