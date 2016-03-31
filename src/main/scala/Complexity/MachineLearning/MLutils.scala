@@ -81,7 +81,7 @@ object MLutils {
   /**
     * Imports a dataset from SVMlight format
     * @param fileName Location of file to be imported
-    * @return Dataset for use in [[Model]]
+    * @return Dataset for use in [[MLmodel]]
     */
   def importFromSVM(fileName: String): RVFDataset[Int, String] = {
     RVFDataset.mkDatasetFromSvmLightFormat(fileName)

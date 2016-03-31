@@ -19,7 +19,7 @@ import Complexity.Utils.Compress._
   * @param PburnIn For `perceptron`: Burn-in epochs
   * @param bias For `logisticRegression` and `svm`: Include bias?
   */
-class Model(
+class MLmodel(
             var dataset: RVFDataset[Int, String] = new RVFDataset[Int, String](),
             val classifierType: String,
             val RFnumTrees: Option[Int] = None,

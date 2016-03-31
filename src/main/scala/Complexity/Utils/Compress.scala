@@ -25,7 +25,7 @@ object Compress {
   }
 
   /**
-    * Method for specifically opening a compressed, trained classifier for use in [[Complexity.MachineLearning.Model]]
+    * Method for specifically opening a compressed, trained classifier for use in [[Complexity.MachineLearning.MLmodel]]
     * @param fileName File housing saved model
     */
   def unGZmlModel(fileName: String): InputStreamReader = {

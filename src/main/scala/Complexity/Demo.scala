@@ -3,7 +3,8 @@ package Complexity
 import java.io.File
 import Complexity.Features.{Word2Vec, ParagraphFeatures, SyntacticFeatures, LexicalFeatures}
 import Complexity.Features.Word2Vec._
-import Complexity.MachineLearning.{FeatureExtractor, Model}
+import Complexity.MachineLearning.FeatureExtractor
+import Complexity.MachineLearning.MLmodel
 import Complexity.Utils.IO._
 import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
 
@@ -47,7 +48,7 @@ object Demo {
           featureList.contains("paragraph") || featureList.contains("all")  //if using paragraph features
         )
       ){
-      println("Either this document is only one paragraph in length, or paragraphs have not been delimited by a blank line.  Processing time may significantly increase because of the Discourse Parser.  This can possibly be shortened by delimiting paragraphs with a blank line.")
+      println("Either this document is only one paragraph in length, or paragraphs have not been delimited by a blank line.  Processing time may significantly increase because of the need to run the Discourse Parser over large amounts of continuous text.  This can possibly be shortened by delimiting paragraphs with a blank line.")
     }
 
 
@@ -55,12 +56,13 @@ object Demo {
       * w2vMap loaded only if using SyntacticFeatures
       */
     val w2vMap = if (featureList.contains("syntactic") || featureList.contains("all")) {
+                    println("Loading Word2Vec data")
                     Some(makeMutableMapDense(
                         w2vPath = "/word2vec_SISTA.txt.gz",
                         take = 500000
                     ))
                 } else {
-                  None
+                    None
                 }
 
 
@@ -133,18 +135,22 @@ object Demo {
                                   lexFeatures = lex,
                                   synFeatures = syn,
                                   parFeatures = par,
-                                  numClasses = args(0).toInt
+                                  numClasses = args(1).toInt
                                   )
 
     /**
       * Model to be used for prediction
       * @todo Why isn't the class being found?
       */
-    val m = Model(classifierType = "randomForest")
+    val m = MLmodel(classifierType = "randomForest")
 
 
     //load saved model
-    m.loadModel(getClass.getResource("PUT PATH HERE").getPath)
+    if (args(1) == 3) {
+      m.loadModel(getClass.getResource("PUT PATH OF 3 CLASS HERE").getPath)
+    } else {
+      m.loadModel(getClass.getResource("PUT PATH OF 6 CLASS HERE").getPath)
+    }
 
 
     /**
