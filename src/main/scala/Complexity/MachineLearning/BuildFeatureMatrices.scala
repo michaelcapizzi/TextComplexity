@@ -74,10 +74,22 @@ object BuildFeatureMatrices {
 
       println(doc.getName + "-" + td.gradeLevel.getOrElse("NotGiven") + ", converted to class #" + convertLabel(td.gradeLevel.getOrElse("NotGiven"), args(0).toInt) + " out of " + args(0) + " classes including (class #0)")
 
-      //initialize empty feature variables
+
+      /**
+        * Initialized variable for [[LexicalFeatures]]
+        */
       var lex: Option[LexicalFeatures] = None
+      /**
+        * Initialized variable for [[SyntacticFeatures]]
+        */
       var syn: Option[SyntacticFeatures] = None
+      /**
+        * Initialized variable for [[ParagraphFeatures]]
+        */
       var par: Option[ParagraphFeatures] = None
+      /**
+        * Initialized variable for [[Word2Vec]]
+        */
       var w2v: Option[Word2Vec] = None
 
       //populate appropriate feature classes
@@ -100,7 +112,10 @@ object BuildFeatureMatrices {
         par = Some(new ParagraphFeatures(td))
       }
 
-      //generate feature vector
+
+      /**
+        * variable containing the [[FeatureExtractor]] class used to accumulate all features
+         */
       val fe = new FeatureExtractor(
                                     td = td,
                                     lexFeatures = lex,
