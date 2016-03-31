@@ -92,7 +92,7 @@ object IO {
     *
     */
   def getGradeLevel(fileName: String): String = {
-    val gradeLevelRegex = """.*\/([0-9]+)[A-Z]+_.*""".r
+    val gradeLevelRegex = """^([0-9]+)[A-Z]+_.*""".r
     gradeLevelRegex.replaceFirstIn(fileName, """$1""")
   }
 

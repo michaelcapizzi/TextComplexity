@@ -165,16 +165,19 @@ class LexicalFeatures (val td: TextDocument) {
   def wordConcretenessStats: Map[String, Double] = {
     //concreteness list
     val concretenessList = this.getWordConcreteness
-    //concreteness map
-    val concretenessMap = concretenessList.toMap
 
+    //call descriptive stats
     val stat = new DescriptiveStatistics()
     //items not in database
     val removed = concretenessList.filter(item => item._2 == 99d)
+    //items in database
+    val in = concretenessList.filterNot(item => item._2 == 99d)
+    //concreteness map with not present items removed
+    val concretenessMap = in.toMap
     //number of items removed
     val removedNumber = concretenessList.length.toDouble - removed.length.toDouble
     //count items
-    removed.foreach(tuple => stat.addValue(tuple._2))
+    in.foreach(tuple => stat.addValue(tuple._2))
 
     //normalized when necessary of non-proper noun word count
     Map(

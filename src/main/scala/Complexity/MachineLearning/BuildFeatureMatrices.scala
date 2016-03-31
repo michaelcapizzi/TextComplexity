@@ -99,27 +99,31 @@ object BuildFeatureMatrices {
                                     numClasses = args(0).toInt
                                     )
 
-      /*println(doc.getName + "-label: " + fe.mlDatum.label.toString)
+      println(doc.getName + "-label: " + fe.mlDatum.label.toString)
       for (feature <- fe.mlDatum.featuresCounter.keySet) {
         println(doc.getName + "-" + feature + ": " + fe.mlDatum.featuresCounter.getCount(feature))
-      }*/
+      }
+
 
       //add datum to list of datums
       datums = datums :+ fe.mlDatum
+
 
       //update lexicon
       lexicon = fe.mlLexicon
 
     }
 
+
     println("exporting to SVM")
 
-    for (d <- datums) {
+    /*for (d <- datums) {
       println("label: " + d.label.toString)
       for (f <- d.featuresCounter.keySet) {
         println(f + ": " + d.featuresCounter.getCount(f))
       }
-    }
+    }*/
+
     //export to SVM
     exportToSVM(
                   datumSeq = datums.toVector,
