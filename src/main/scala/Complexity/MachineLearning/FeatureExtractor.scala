@@ -4,10 +4,7 @@ import Complexity.Features.{ParagraphFeatures, SyntacticFeatures, LexicalFeature
 import Complexity.TextDocument
 import edu.arizona.sista.learning.RVFDatum
 import edu.arizona.sista.struct.Counter
-
-/**
- * Created by mcapizzi on 8/30/15.
- */
+import Utils._
 
 /**
   * Accumulates features from all of the feature classes
@@ -16,17 +13,16 @@ import edu.arizona.sista.struct.Counter
   * @param lexFeatures [[LexicalFeatures]] for [[TextDocument]]
   * @param synFeatures [[SyntacticFeatures]] for [[TextDocument]]
   * @param parFeatures [[ParagraphFeatures]] for [[TextDocument]]
+  * @param numClasses Number of classes for classification
   */
 class FeatureExtractor(
-                        td: TextDocument,
+                        val td: TextDocument,
                         val lexFeatures: LexicalFeatures,
                         val synFeatures: SyntacticFeatures,
-                        val parFeatures: ParagraphFeatures
+                        val parFeatures: ParagraphFeatures,
+                        val numClasses: Int
                       ) {
 
-  //TODO redo to match how its done in PitchVantage
-
-  //TODO scale!!!!!
 
   /**
     * Metadata for [[TextDocument]] including `title` and `grade level`
@@ -75,7 +71,14 @@ class FeatureExtractor(
         parFeatureVector
       ).toVector.flatten
 
-  val mlDatum = makeMLDatum
+  /**
+    * Tuple of data to be used in building dataset <br>
+    *   `(title, Datum)`
+    */
+  val mlDatumTuple = (
+                      this.finalFeatureVector.head._1,      //title
+                      makeMLDatum                           //datum
+                      )
 
   /**
     * Builds a `edu.arizona.sista.learning.RVFDatum` that will contribute the training dataset <br>
@@ -89,12 +92,16 @@ class FeatureExtractor(
     //iterate through feature vector
     for (f <- this.finalFeatureVector.slice(2, this.finalFeatureVector.length)) {
       //set the counter to (feature name, feature value)
-      counter.setCount(f._1, f._2)
+      counter.setCount(
+        convertLabel(f._1, this.numClasses),
+        f._2
+      )
     }
+
     //return the datum
     new RVFDatum[String, String](
-      this.td.gradeLevel.getOrElse("LabelNotProvided"),
-      counter
+          this.td.gradeLevel.getOrElse("LabelNotProvided"),
+          counter
     )
 
   }
