@@ -17,9 +17,9 @@ import MLutils._
   */
 class FeatureExtractor(
                         val td: TextDocument,
-                        val lexFeatures: LexicalFeatures,
-                        val synFeatures: SyntacticFeatures,
-                        val parFeatures: ParagraphFeatures,
+                        val lexFeatures: Option[LexicalFeatures] = None,
+                        val synFeatures: Option[SyntacticFeatures] = None,
+                        val parFeatures: Option[ParagraphFeatures] = None,
                         val numClasses: Int
                       ) {
 
@@ -37,29 +37,38 @@ class FeatureExtractor(
   /**
     * `Vector` of features from [[Complexity.Features.LexicalFeatures]]
     */
-//  val lexFeatureVector = if (lexFeatures != null) lexFeatures.makeLexicalFeatureVector else null
-  val lexFeatureVector = Option[Vector[(String, Double)]](
-                          lexFeatures.makeLexicalFeatureVector.
-                            drop(1)                               //drop metadata from vector
-                          )
+  val lexFeatureVector = if (lexFeatures.nonEmpty) {
+                            Option[Vector[(String, Double)]](
+                                lexFeatures.get.makeLexicalFeatureVector.
+                                drop(1)                               //drop metadata from vector
+                            )
+                          } else {
+                            None
+                          }
 
   /**
     * `Vector` of features from [[Complexity.Features.SyntacticFeatures]]
     */
-//  val synFeatureVector = if (synFeatures != null) synFeatures.makeSyntacticFeatureVector else null
-  val synFeatureVector = Option[Vector[(String, Double)]](
-                          synFeatures.makeSyntacticFeatureVector.
-                            drop(1)                               //drop metadata from vector
-                          )
+  val synFeatureVector = if (synFeatures.nonEmpty) {
+                            Option[Vector[(String, Double)]](
+                              synFeatures.get.makeSyntacticFeatureVector.
+                              drop(1)                               //drop metadata from vector
+                            )
+                          } else {
+                            None
+                          }
 
   /**
     * `Vector` of features from [[Complexity.Features.ParagraphFeatures]]
     */
-//  val parFeatureVector = if (parFeatures != null) parFeatures.makeParagraphFeatureVector else null
-  val parFeatureVector = Option[Vector[(String, Double)]](
-                          parFeatures.makeParagraphFeatureVector.
-                            drop(1)                               //drop metadata from vector
-  )
+  val parFeatureVector = if (parFeatures.nonEmpty) {
+                            Option[Vector[(String, Double)]](
+                              parFeatures.get.makeParagraphFeatureVector.
+                              drop(1)                               //drop metadata from vector
+                            )
+                          } else {
+                            None
+                          }
 
   /**
     * Accumulated feature vector of all features

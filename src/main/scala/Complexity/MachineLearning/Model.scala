@@ -99,11 +99,22 @@ class Model(
 
   /**
     * Trains the dataset
+    * @todo Because of the different options for classifier in [[classifier]], must use `asInstanceOf...` before running training.  Find alternative fix
     */
   def train: Unit = {
-    this.classifier.train(this.dataset)
-  }
+    //set correct instance of variable
+    this.classifierType match {
+      case "randomForest" => this.classifier = this.classifier.asInstanceOf[RandomForestClassifier[Int, String]]
+      case "perceptron" => this.classifier = this.classifier.asInstanceOf[PerceptronClassifier[Int, String]]
+      case "logisticRegression" => this.classifier = this.classifier.asInstanceOf[LogisticRegressionClassifier[Int, String]]
+      case "svm" => this.classifier = this.classifier.asInstanceOf[LinearSVMClassifier[Int, String]]
+      case _ => this.classifier = this.classifier.asInstanceOf[RandomForestClassifier[Int, String]]
+    }
 
+    //run training
+    this.classifier.train(this.dataset)
+
+  }
 
   /**
     * Produces predictions for a given test set

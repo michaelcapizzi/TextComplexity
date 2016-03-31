@@ -1238,13 +1238,13 @@ class SyntacticFeatures(
       "total conjunctive used" -> this.conjunctionStats("total conjunctive used"),
       "max conjunctive used" -> this.conjunctionStats("max conjunctive used"),
       //coherence
-      "coherence percentage" -> this.coherenceStats()("coherence percentage"),
-      "coherence minimum" -> this.coherenceStats()("coherence minimum"),
-      "coherence 25th %ile" -> this.coherenceStats()("coherence 25th %ile"),
-      "coherence mean" -> this.coherenceStats()("coherence mean"),
-      "coherence median" -> this.coherenceStats()("coherence median"),
-      "coherence 75th %ile" -> this.coherenceStats()("coherence 75th %ile"),
-      "coherence maximum" -> this.coherenceStats()("coherence maximum")
+      "coherence percentage" -> this.coherenceStats(w2v = true)("coherence percentage"),
+      "coherence minimum" -> this.coherenceStats(w2v = true)("coherence minimum"),
+      "coherence 25th %ile" -> this.coherenceStats(w2v = true)("coherence 25th %ile"),
+      "coherence mean" -> this.coherenceStats(w2v = true)("coherence mean"),
+      "coherence median" -> this.coherenceStats(w2v = true)("coherence median"),
+      "coherence 75th %ile" -> this.coherenceStats(w2v = true)("coherence 75th %ile"),
+      "coherence maximum" -> this.coherenceStats(w2v = true)("coherence maximum")
     )
   }
 
