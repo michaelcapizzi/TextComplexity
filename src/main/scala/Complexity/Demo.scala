@@ -152,7 +152,7 @@ object Demo {
     if (args(1) == "3") {
       m.loadModel(getClass.getResource("/savedModels/rf-lex-3.model").getPath)
     } else {
-      m.loadModel(getClass.getResource("PUT PATH OF 6 CLASS HERE").getPath)
+      m.loadModel(getClass.getResource("/savedModels/rf-lex-6.model").getPath)
     }
 
 
