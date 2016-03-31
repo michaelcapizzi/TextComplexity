@@ -81,7 +81,8 @@ class MLmodel(
   def loadModel(fileName: String): Unit = {
     this.classifierType match {
       case "randomForest" => this.classifier = RandomForestClassifier.loadFrom(fileName)
-      case "perceptron" => this.classifier = PerceptronClassifier.loadFrom(unGZmlModel(fileName))
+//      case "perceptron" => this.classifier = PerceptronClassifier.loadFrom(unGZmlModel(fileName))
+      case "perceptron" => this.classifier = PerceptronClassifier.loadFrom(fileName)
 //      case "logisticRegression" => this.classifier = LogisticRegressionClassifier.loadFrom(unGZmlModel(fileName))
 //      case "svm" => this.classifier = LinearSVMClassifier.loadFrom(unGZmlModel(filName))
     }

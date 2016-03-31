@@ -8,16 +8,14 @@ import Complexity.MachineLearning.MLmodel
 import Complexity.Utils.IO._
 import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
 
-/**
-  * Created by mcapizzi on 3/31/16.
-  */
+
 object Demo {
 
   /**
     * @param args <br>
     *               args(0) = plain text file to be analyzed and classified
     *               args(1) = number of classes to use: `3` or `6`
-    *               args(2+) = List of feature types to include
+    *               args(2+) = List of feature types to include: `lexical`, `syntactic`, `paragraph`, or `all`
     */
   def main(args: Array[String]) = {
 
@@ -30,9 +28,13 @@ object Demo {
 
 
     /**
-      * Instance of [[edu.arizona.sista.processors.corenlp.CoreNLPProcessor]]
+      * Instance of [[edu.arizona.sista.processors.corenlp.CoreNLPProcessor]] with or without Discourse as needed
       */
-    val p = new CoreNLPProcessor(withDiscourse = true, maxSentenceLength = 450)
+    val p = if (featureList.contains("paragraph") || featureList.contains("all")) {
+                new CoreNLPProcessor(withDiscourse = true, maxSentenceLength = 450)
+              } else {
+                new CoreNLPProcessor(withDiscourse = false, maxSentenceLength = 450)
+              }
 
 
     /**
@@ -142,12 +144,13 @@ object Demo {
       * Model to be used for prediction
       * @todo Why isn't the class being found?
       */
-    val m = MLmodel(classifierType = "randomForest")
+    val m = new MLmodel(classifierType = "randomForest")
 
 
     //load saved model
-    if (args(1) == 3) {
-      m.loadModel(getClass.getResource("PUT PATH OF 3 CLASS HERE").getPath)
+    //TODO add best model paths
+    if (args(1) == "3") {
+      m.loadModel(getClass.getResource("/savedModels/rf-lex-3.model").getPath)
     } else {
       m.loadModel(getClass.getResource("PUT PATH OF 6 CLASS HERE").getPath)
     }
@@ -156,13 +159,17 @@ object Demo {
     /**
       * Variable to house prediction results
       */
-    val prediction = m.predict(fe.mlDatum, args(1))
+    val prediction = m.predict(
+                          datum = fe.mlDatum,
+                          numClasses = args(1).toInt
+                      )
 
 
     //print results
+    println("Here are the feature values:")
+    prediction._3.keySet.foreach(f => println(f + ": " + prediction._3.getCount(f)))
+    println()
     println("This text is predicted to be of class " + prediction._1 + " with a confidence of " + prediction._2.getCount(prediction._1) + ".")
     println()
-    println("Below are the feature values:")
-    prediction._3.keySet.foreach(f => println(f + ": " + prediction._3.getCount(f)))
   }
 }
