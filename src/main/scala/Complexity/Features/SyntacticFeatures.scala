@@ -1,6 +1,5 @@
 package Complexity.Features
 
-import java.util
 import Complexity.TextDocument
 import edu.arizona.sista.struct.Counter
 import edu.stanford.nlp.trees.tregex.TregexPattern
@@ -8,17 +7,25 @@ import edu.stanford.nlp.trees.CollinsHeadFinder
 import org.apache.commons.math3.stat.Frequency
 import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics
 import scala.collection.JavaConverters._
+import Complexity.SupportMethods.Coherence._
+import Complexity.SupportMethods.Similarity._
 
 
 
 /**
  * Generates features syntactic in nature (at the sentence level)
+  *
   * @param td  [[TextDocument]] for the document to be analyzed
+  * @param w2vClass Optional [[Word2Vec]] class to be used in coherence metrics
  */
-class SyntacticFeatures(val td: TextDocument) {
+class SyntacticFeatures(
+                         val td: TextDocument,
+                         val w2vClass: Option[Word2Vec]
+                       ) {
 
   /**
     * Calculates sentence lengths '''not including punctuation'''
+    *
     * @return `Vector` of sentence lengths
     */
   def getSentenceLengths: Vector[Double] = {
@@ -30,7 +37,8 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * Generates basic distribution of sentences lengths
-     * @return Values representing distribution of sentence lengths
+    *
+    * @return Values representing distribution of sentence lengths
     *
     *         {{{
     *           Map(
@@ -62,7 +70,8 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * Finds all punctuation in each sentence
-     * @return `Vector` of only punctuation
+    *
+    * @return `Vector` of only punctuation
     */
   def getPunctuation: Vector[Vector[String]] = {
     val sentences = td.words(withPunctuation = true).flatten    //remove paragraphs
@@ -78,7 +87,8 @@ class SyntacticFeatures(val td: TextDocument) {
   /**
     * Generates basic distribution of surplus punctuation <br>
     *   "surplus punctuation" = anything more than an end-of-sentence marker
-     * @return Values representing distribution of surplus punctuation
+    *
+    * @return Values representing distribution of surplus punctuation
     *
     *         {{{
     *           Map(
@@ -121,7 +131,8 @@ class SyntacticFeatures(val td: TextDocument) {
   /**
     * Finds size of each parse tree
     * "size" of parse tree = total number of nodes
-     * @return `Vector` of parse tree sizes
+    *
+    * @return `Vector` of parse tree sizes
     */
   def getTreeSizes: Vector[Double] = {
     td.coreNLPParseTrees.
@@ -132,7 +143,8 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * Generates basic distribution of parse tree sizes
-     * @return Values representing distribution of parse tree sizes
+    *
+    * @return Values representing distribution of parse tree sizes
     *
     *         {{{
     *           Map(
@@ -165,7 +177,8 @@ class SyntacticFeatures(val td: TextDocument) {
   /**
     * Finds the depth of each parse tree <br>
     * "depth" of parse tree = number of layers in tree
-     * @return `Vector` of parse tree depths
+    *
+    * @return `Vector` of parse tree depths
     */
   def getTreeDepths: Vector[Double] = {
     td.coreNLPParseTrees.
@@ -176,7 +189,8 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * Generates basic distribution of parse tree depths
-     * @return Values representing distribution of parse tree depths
+    *
+    * @return Values representing distribution of parse tree depths
     *
     *         {{{
     *           Map(
@@ -210,6 +224,7 @@ class SyntacticFeatures(val td: TextDocument) {
   /**
     * Finds the distance to main verb for each sentence
     * "distance to verb" calculated as the index of the root of the parse tree as identified by `edu.stanford.nlp.trees.CollinsHeadFinder`
+    *
     * @see [[http://nlp.stanford.edu/nlp/javadoc/javanlp-3.5.0/edu/stanford/nlp/trees/CollinsHeadFinder.html]]
     * @return `Vector` of distances to verb
     */
@@ -230,7 +245,8 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * Generates basic distribution of distances to verbs
-     * @return Values representing distribution of distances to verb
+    *
+    * @return Values representing distribution of distances to verb
     *
     *         {{{
     *           Map(
@@ -262,6 +278,7 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * Finds the number of constituents for each sentence
+    *
     * @return `Vector` of count of constituents
     */
   def getConstituentCounts: Vector[Double] = {
@@ -274,7 +291,8 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * Generates basic distribution of constituent counts
-     * @return Values representing distibution of constituent counts
+    *
+    * @return Values representing distibution of constituent counts
     *
     *         {{{
     *           Map(
@@ -306,6 +324,7 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * Finds the number of words in each constituent
+    *
     * @return `Vector` of number of constituent sizes
     */
   def getConstituentSizes: Vector[Double] = {
@@ -323,7 +342,8 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * Generates as basic distribution of consituent sizes
-     * @return Values representing distribution of constituent sizes
+    *
+    * @return Values representing distribution of constituent sizes
     *
     *         {{{
     *           Map(
@@ -355,6 +375,7 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * pattern generated for detecting clauses using `edu.stanford.nlp.trees.tregex`
+    *
     * @see [[http://nlp.stanford.edu/manning/courses/ling289/Tregex.html]]
     * @see [[http://personal.psu.edu/xxl13/papers/Lu_inpress_ijcl.pdf]]
     */
@@ -363,6 +384,7 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * pattern generated for detecting fragments using `edu.stanford.nlp.trees.tregex`
+    *
     * @see [[http://nlp.stanford.edu/manning/courses/ling289/Tregex.html]]
     * @see [[http://personal.psu.edu/xxl13/papers/Lu_inpress_ijcl.pdf]]
     */
@@ -371,6 +393,7 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * pattern generated for detecting independent clauses using `edu.stanford.nlp.trees.tregex`
+    *
     * @see [[http://nlp.stanford.edu/manning/courses/ling289/Tregex.html]]
     * @see [[http://personal.psu.edu/xxl13/papers/Lu_inpress_ijcl.pdf]]
     */
@@ -379,6 +402,7 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * pattern generated for detecting dependent clauses using `edu.stanford.nlp.trees.tregex`
+    *
     * @see [[http://nlp.stanford.edu/manning/courses/ling289/Tregex.html]]
     * @see [[http://personal.psu.edu/xxl13/papers/Lu_inpress_ijcl.pdf]]
     */
@@ -388,7 +412,8 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * Finds total number of clauses per sentence
-     * @return `Vector` of number of clauses
+    *
+    * @return `Vector` of number of clauses
     */
   def getClauseCounts: Vector[Double] = {
     val allTrees = td.coreNLPParseTrees.flatten
@@ -407,6 +432,7 @@ class SyntacticFeatures(val td: TextDocument) {
   /**
     * Generates feature representing sentence complexity <br>
     *   sentence complexity = total number of clauses / total number of sentences <br>
+    *
     * @example A document with all simple sentences would have a `sentence complexity` of 1.
     * @return Value representing sentence complexity
     */
@@ -419,6 +445,7 @@ class SyntacticFeatures(val td: TextDocument) {
   /**
     * Finds size and depth of each clause's parse tree
     * @ see [[getTreeSizes]]
+    *
     * @return `Vector` of clause parse tree sizes and depths
     */
   //the (size, depth) of all clauses
@@ -444,7 +471,8 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * Generates basic distribution of clause parse tree sizes
-     * @return Values representing distribution of clause parse tree sizes
+    *
+    * @return Values representing distribution of clause parse tree sizes
     *
     *         {{{
     *           Map(
@@ -476,6 +504,7 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * Generates basic distribution of clause parse tree depths
+    *
     * @return Values representing distribution of clause parse tree depths
     *
     *         {{{
@@ -507,6 +536,7 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * Finds the total number of independent and dependent clauses
+    *
     * @return Counts of independent and dependent clauses in document
     */
   //return sentences grouped by structure
@@ -533,6 +563,7 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * Calculates the ratio of independent and dependent clauses to total number of clauses
+    *
     * @return Percentage of clauses that are independent and percent that are dependent
     */
   def totalClauseTypeRatios: Map[String, Double] = {
@@ -557,6 +588,7 @@ class SyntacticFeatures(val td: TextDocument) {
     *     `complex` = only 1 independent clause; 1 or more dependent clauses <br>
     *     `compound-complex` = 2 or more independent clauses; 0 dependent clauses <br>
     *     `fragment` = none of the above
+    *
     * @return `Vector` of sentence types
     */
   //identify the type of sentence
@@ -576,7 +608,8 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * Calculates percentages of each type of sentence
-     * @return Percentages of each sentence type
+    *
+    * @return Percentages of each sentence type
     *
     *         {{{
     *           Map(
@@ -606,6 +639,7 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * pattern generated for detecting coordinate conjunctions using `edu.stanford.nlp.trees.tregex`
+    *
     * @see [[http://nlp.stanford.edu/manning/courses/ling289/Tregex.html]]
     */
   val coordinateConjunction = TregexPattern.compile("/(for|and|nor|but|or|yet|so)/=matchedCC [> (CC > @S) | > (IN > /S(BAR)?/)]")
@@ -613,6 +647,7 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * pattern generated for detecting subordinate conjunctions using `edu.stanford.nlp.trees.tregex`
+    *
     * @see [[http://nlp.stanford.edu/manning/courses/ling289/Tregex.html]]
     */
   val subordinateConjunction = TregexPattern.compile("!/(so|for|yet)/=matchedSC [> WDT | > (IN > /S(BAR)?/) | > (WRB > (/WHADVP/ !, CC . /NP/ .. /VP/ > /S(BAR)?/))]")
@@ -621,6 +656,7 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * pattern generated for detecting conjunctive adverbs using `edu.stanford.nlp.trees.tregex`
+    *
     * @see [[http://nlp.stanford.edu/manning/courses/ling289/Tregex.html]]
     * @todo Current pattern simply catches things that are techincally subordinate conjunctions
     */
@@ -630,6 +666,7 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * Find matching conjunctions
+    *
     * @param rule [[coordinateConjunction]], [[subordinateConjunction]], or [[conjunctiveAdverb]]
     * @return `Vector` of matching conjunctions and node name (label given to node in `Tregex`
     */
@@ -673,6 +710,7 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * Gets counts for each conjunction used by type
+    *
     * @return `Vector` of `Counter` for each sentence containing all conjunctions <br>
     *          `Map` of `Counter`s, one for each conjunction type
     */
@@ -732,7 +770,8 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * Generates basic distribution of conjunction use
-     * @return Values representing distribution of conjunction use
+    *
+    * @return Values representing distribution of conjunction use
     *
     *         {{{
     *           Map(
@@ -801,17 +840,20 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * pattern generated for detecting all verb phrases using `edu.stanford.nlp.trees.tregex`
+    *
     * @see [[http://nlp.stanford.edu/manning/courses/ling289/Tregex.html]]
     */  val allVPs = TregexPattern.compile("VP < /(VB$)|(VB[^G])/ !< VP")
 
   /**
     * pattern generated for detecting instances of passive voice using `edu.stanford.nlp.trees.tregex`
+    *
     * @see [[http://nlp.stanford.edu/manning/courses/ling289/Tregex.html]]
     */  val passive = TregexPattern.compile("!been=vbn > (VBN [>> (VP $-- (/VB/ < /('s)|(is)|(are)|(was)|(were)|(be)/=vb)) ?$.. (/PP/ <+ (IN) by <` /NP/=agent)])")
 
 
   /**
     * Finds the parse tree of all verb phrases for each sentence
+    *
     * @return `Vector` of `edu.stanford.nlp.trees.Tree`s
     */
   def getAllVPsParse: Vector[Vector[Option[edu.stanford.nlp.trees.Tree]]] = {
@@ -846,7 +888,8 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * Finds the parse tree of any verb phrase that is passive
-     * @return `Vector` of matching pieces of passive voice construction <br>
+    *
+    * @return `Vector` of matching pieces of passive voice construction <br>
     *          `._1` = `VB` <br>
     *          `._2` = `VBN` <br>
     *          `._3` = `AGENT`
@@ -897,6 +940,7 @@ class SyntacticFeatures(val td: TextDocument) {
 
   /**
     * Generates percentage of verb phrases that are passive
+    *
     * @return Percentage of passive voice usage
     */
   //gets percentage of passive voice used
@@ -914,8 +958,191 @@ class SyntacticFeatures(val td: TextDocument) {
   }
 
 
-  //TODO add coherence
-    //TODO requires W2V
+
+  /**
+    * Builds a coherence grid of words for possible co-reference <br>
+    *   Captures all nouns and some pronouns
+    *
+    * @return For each sentence a `Set` of words and their dependency relation labels
+    */
+  def coherenceGrid: Vector[Set[(String, String)]] = {
+
+    val posRegex = """(PRP.*)|(NN.*)|(JJ.*)|(DT)"""
+    val unwantedProRegex = """(I)|(me)|(my)|(mine)|(myself)|(we)|(us)|(our)|(ours)|(ourselves)|(you)|(your)|(yours)|(yourself)|(the)|(a)|(an)|(all)|(some)|(most)|(few)|(each)|(another)"""
+
+    //all depdendencies
+    val allDependencies = this.td.showDependencies("lemma").flatten
+    //all lexical tuples
+    val allLexicalTuples = this.td.lexicalTuples(withPunctuation = false).flatten
+
+    //get all nouns and pronouns from lexical tuple
+    val entitySet = for (sentence <- allLexicalTuples) yield {
+      sentence.filter(z =>
+        z._2._2.matches(posRegex) &&                  //filters out non-nouns and non-pronouns and non-determiners
+          !z._2._1.matches(unwantedProRegex)).          //filters out specific unwanted tokens
+        map(_._2._1).                                 //get just the lemma
+        toSet                                         //turn to set
+    }
+
+    //look up dependency value (when word is second in tuple) - capture third item in tuple
+    val entityPlusDep = for (i <- entitySet.indices) yield {
+
+      val sentenceDependencies = allDependencies(i)
+
+      //iterate through each entity set
+      (for (word <- entitySet(i)) yield {
+
+        //find the matching dependency
+        val found = sentenceDependencies.find(z => z._2 == word)
+
+        //get the relation information if it exists
+        if (found.isDefined) {
+          found.get._2 -> found.get._3
+        } else {
+          "" -> ""
+        }
+
+      }).filterNot(_ == ("",""))      //filter out empty
+    }
+
+    entityPlusDep.toVector
+
+  }
+
+
+  /**
+    * Identifies sets of words that are considered coherent from one sentence to the next
+    *
+    * @param transLength Number of consecutive sentences to consider for coherence; currently only capable of handling window of 2
+    * @param w2v Use of `true` will include considerations of words that are similar as coherent
+    * @param cosSimThreshold The minimum threshold for cosine similarity to use when considering coherence
+    * @return Set of words considered coherent
+    * @todo Generalize to handle `transLength` of any size
+    * @todo Add option to compare cosine similarity of all words in the two consecutive sentences as a form of backoff
+    */
+  def coherenceChain(transLength: Int = 2, w2v: Boolean = false, cosSimThreshold: Double = 0.50): Vector[Set[String]] = {
+
+    //val grid = this.coherenceGrid
+    val grid = this.coherenceGrid.sliding(transLength).toVector //take just the words and create windows of sliding length transLength
+
+    //simple case == without w2v
+    if (w2v == false) {
+
+      for (window <- grid) yield {
+
+        //get set list for plain noun search
+        val justWordsWindow = window.map(_.map(_._1))
+        //get set list for pronoun search
+        val withDepWindow = window
+        //find matching plain nouns
+        val plainNounSet = multiIntersect(justWordsWindow)
+        //find matching pronouns
+        val pronounSet = findPronouns(withDepWindow)
+        //return union of two matches
+        plainNounSet.union(pronounSet)                        
+      }
+
+    //with w2v
+    } else {
+      for (window <- grid) yield {
+        val justWordsWindow = window.map(_.map(_._1))     //get set list for plain noun search
+        val withDepWindow = window                        //get set list for pronoun search
+
+        //find matching w2v
+        val buffer = collection.mutable.Buffer[String]()  //buffer to hold matches via cosSim
+
+        //counter with stop words filtered out
+        val filteredTokenList = this.td.filterStopWords("word").keySet.map(_._1)    //keep just the word
+
+        //for every word in the first sentence
+        for (word1 <- justWordsWindow.head.filter(w =>
+          w2vClass.get.w2vFlatMapNoCentroids.keySet.contains(w.toLowerCase) &&    //makes sure word is in W2V map
+            filteredTokenList.contains(w)                                           //and not a stop word
+          )
+        ) yield {
+          //for every word in second sentence
+          for (word2 <- justWordsWindow(1).filter(w =>
+            w2vClass.get.w2vFlatMapNoCentroids.keySet.contains(w.toLowerCase) &&    //makes sure word is in W2V map
+              filteredTokenList.contains(w)
+            )
+          ) yield {
+            //cosine similarity score of the two words
+            val cosSimValue = cosSim(
+              this.w2vClass.get.getVector(word1.toLowerCase),
+              this.w2vClass.get.getVector(word2.toLowerCase)
+            )
+
+            //if cosine similarity is greater than threshold
+            if (cosSimValue >= cosSimThreshold) {
+              buffer += word2                     //keep word2 
+            }
+          }
+        }
+
+        //Union resulting sets
+        val plainNounSet = multiIntersect(justWordsWindow)  //find matching plain nouns
+        val pronounSet = findPronouns(withDepWindow)        //find matching pronouns
+        val w2vSet = buffer.toSet
+        plainNounSet.union(pronounSet).union(w2vSet)        //return union of three matches
+      }
+    }
+  }
+
+  /**
+    * Generates two metrics surrounding coherence <br>
+    *   `percentage` = percentage of pairs of sentences with at least one shared coherent word
+    *   `coherence value` = Generalized distribution of the number of coherent values shared between sentences
+    *
+    * @param transLength Number of consecutive sentences to consider for coherence; currently only capable of handling window of 2
+    * @param w2v Use of `true` will include considerations of words that are similar as coherent
+    * @param cosSimThreshold The minimum threshold for cosine similarity to use when considering coherence
+    * @return Values representing coherence
+    *         
+    *         {{{
+    *           Map(
+    *              "coherence percentage" -> ?,
+    *              "coherence minimum" -> ?,
+    *              "coherence 25th %ile" -> ?,
+    *              "coherence mean" -> ?,
+    *              "coherence median" -> ?,
+    *              "coherence 75th %ile" -> ?,
+    *              "coherence maximum" -> ?
+    *           )
+    *         }}}
+    * @todo Find better default value for `cosSimThreshold`
+    */
+  def coherenceStats(transLength: Int = 2, w2v: Boolean = false, cosSimThreshold: Double = 0.50): Map[String, Double] = {
+
+    val chain = if (w2v == false) {
+                  this.coherenceChain(transLength)
+                } else {
+                  this.coherenceChain(transLength, w2v=true, cosSimThreshold)
+                }
+
+    //coherence percentage
+    val emptySetCount = chain.count(_ == Set()).toDouble                          //number of chains without a coherent noun
+    val numberOfChains = chain.length.toDouble                                    //number of chains in speech
+    val coherencePercentage = (numberOfChains - emptySetCount) / numberOfChains   //number of populated chains / total chains = % of coherence
+
+    //amount of coherence
+    val coherenceCounts = chain.map(_.size)                                       //size of each chain (e.g. number of coherent nouns inside)
+
+    //call descriptive stats
+    val coherenceStats = new DescriptiveStatistics()
+    //add to descriptives stats
+    coherenceCounts.foreach(coherenceStats.addValue(_))
+
+    Map(
+      "coherence percentage" -> coherencePercentage,
+      "coherence minimum" -> coherenceStats.getMin,
+      "coherence 25th %ile" -> coherenceStats.getPercentile(25),
+      "coherence mean" -> coherenceStats.getMean,
+      "coherence median" -> coherenceStats.getPercentile(50),
+      "coherence 75th %ile" -> coherenceStats.getPercentile(75),
+      "coherence maximum" -> coherenceStats.getMax
+    )
+  }
+
 
 
   /**
@@ -1001,15 +1228,23 @@ class SyntacticFeatures(val td: TextDocument) {
       "% of compound-complex sentences" -> this.sentenceStructureTypeStats("% of compound-complex sentences"),
       "% of fragments" -> this.sentenceStructureTypeStats("% of fragments"),
       //conjunction use
-      "mean conjunctions per sentence" -> conjunctionStats("mean conjunctions per sentence"),
-      "median conjunctions per sentence" -> conjunctionStats("median conjunctions per sentence"),
-      "maximum conjunctions per sentence" -> conjunctionStats("maximum conjunctions per sentence"),
-      "total coordinate conjunctions used" -> conjunctionStats("total coordinate used"),
-      "max coordinate used" -> conjunctionStats("max coordinate used"),
-      "total subordinate used" -> conjunctionStats("total subordinate used"),
-      "max subordinate used" -> conjunctionStats("max subordinate used"),
-      "total conjunctive used" -> conjunctionStats("total conjunctive used"),
-      "max conjunctive used" -> conjunctionStats("max conjunctive used")
+      "mean conjunctions per sentence" -> this.conjunctionStats("mean conjunctions per sentence"),
+      "median conjunctions per sentence" -> this.conjunctionStats("median conjunctions per sentence"),
+      "maximum conjunctions per sentence" -> this.conjunctionStats("maximum conjunctions per sentence"),
+      "total coordinate conjunctions used" -> this.conjunctionStats("total coordinate used"),
+      "max coordinate used" -> this.conjunctionStats("max coordinate used"),
+      "total subordinate used" -> this.conjunctionStats("total subordinate used"),
+      "max subordinate used" -> this.conjunctionStats("max subordinate used"),
+      "total conjunctive used" -> this.conjunctionStats("total conjunctive used"),
+      "max conjunctive used" -> this.conjunctionStats("max conjunctive used"),
+      //coherence
+      "coherence percentage" -> this.coherenceStats()("coherence percentage"),
+      "coherence minimum" -> this.coherenceStats()("coherence minimum"),
+      "coherence 25th %ile" -> this.coherenceStats()("coherence 25th %ile"),
+      "coherence mean" -> this.coherenceStats()("coherence mean"),
+      "coherence median" -> this.coherenceStats()("coherence median"),
+      "coherence 75th %ile" -> this.coherenceStats()("coherence 75th %ile"),
+      "coherence maximum" -> this.coherenceStats()("coherence maximum")
     )
   }
 

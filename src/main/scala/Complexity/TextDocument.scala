@@ -1,9 +1,11 @@
 package Complexity
 
+import Complexity.SupportMethods.Dependencies._
 import edu.arizona.sista.struct.Counter
 import java.util
 import TextDocument._
 
+import scala.collection.immutable.IndexedSeq
 import scala.collection.parallel.ParSeq
 
 
@@ -11,6 +13,7 @@ import scala.collection.parallel.ParSeq
   * Class to house all the NLP elements for an entire document.
   * Consists of [[ProcessedParagraph]]s for each paragraph of the document.
   * Will be fed to individual Feature classes.
+  *
   * @param paragraphs `Vector` of '''annotated''' [[ProcessedParagraph]]s
   * @param title Optional title of document
   * @param author Optional author of document
@@ -134,6 +137,7 @@ class TextDocument (
   /**
     * Filters our stop words based on `tag` value <br>
     *   Keeps only `noun`s, `adjective`s, `verb`s, and `adverb`s
+    *
     * @param gram `word` or `lemma`
     * @return `._1` = the `word` or `lemma` <br>
     *         `._2` = the `tag`
@@ -200,6 +204,7 @@ class TextDocument (
 
   /**
     * Generates a tuple of `(word, (lemma, tag, named entity))`
+    *
     * @param withPunctuation Use of `true` will include punctuation as tokens <br> `false` will remove all punctuation from tokens
     * @return `Vector` of outputs from [[ProcessedParagraph.lexicalTuple]]
     *         - `._1` = word <br>
@@ -212,7 +217,8 @@ class TextDocument (
 
   /**
     * SISTA `processors`-generated trees
-     * @return `Vector` of outputs from [[ProcessedParagraph.sistaParseTree]]
+    *
+    * @return `Vector` of outputs from [[ProcessedParagraph.sistaParseTree]]
     */
   def sistaParseTrees: Vector[Vector[edu.arizona.sista.struct.Tree]] = {
     this.paragraphs.map(_.sistaParseTree)
@@ -220,6 +226,7 @@ class TextDocument (
 
   /**
     * CoreNLP-generated `Tree`s
+    *
     * @return `Vector` of outputs from [[ProcessedParagraph.coreNLPParseTree]]
     *  @see [[http://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/trees/Tree.html]]
     */  def coreNLPParseTrees: Vector[Vector[edu.stanford.nlp.trees.Tree]] = {
@@ -228,6 +235,7 @@ class TextDocument (
 
   /**
     * CoreNLP-generated `Constituent`s
+    *
     * @return `Vector` of outputs from [[ProcessedParagraph.rawConstituents]]
     *  @see [[http://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/trees/Constituent.html]]
     */  def rawConstituents: Vector[Vector[util.Set[edu.stanford.nlp.trees.Constituent]]] = {
@@ -236,10 +244,91 @@ class TextDocument (
 
   /**
     * Dependency parse represented in `pretty print` form of a `directed graph`
-     * @return `Vector` of outputs from [[ProcessedParagraph.rawDependencies]]
+    *
+    * @return `Vector` of outputs from [[ProcessedParagraph.rawDependencies]]
     */
-  def dependencies: Vector[Vector[edu.arizona.sista.struct.DirectedGraph[String]]] = {
+  def rawDependencies: Vector[Vector[edu.arizona.sista.struct.DirectedGraph[String]]] = {
     this.paragraphs.map(_.rawDependencies)
+  }
+
+  /**
+    * Produces dependencies in tuple form
+    *
+    * @return For each paragraph, for each sentence: `(word index, relation index, dependency)`
+    */
+  def cleanDependencies: Vector[Vector[Vector[(Int, Int, String)]]] = {
+    for (paragraph <- this.rawDependencies) yield {
+      cleanDep(paragraph.toArray)
+    }
+  }
+
+  /**
+    * Presents dependencies with words or lemmas in place of indices
+    *
+    * @param gram `word` or `lemma`, defaults to `indices` in String format
+    * @return Sequence of `String` tuples
+    */
+  //TODO fix bug ==> cleanDependencies is filtered but lexical tuple isn't ==> causing problems with indexing
+  //returns tuple (incoming, outgoing, relation)
+  def showDependencies(gram: String): IndexedSeq[Vector[Vector[(String, String, String)]]] = {
+
+    //all dependencies in tuple form
+    val dependencies = this.cleanDependencies
+
+    //indices for paragraphs
+    val paragraphIndices = dependencies.indices
+
+    if (gram == "word") {
+      for (i <- paragraphIndices) yield {
+        //indices of sentences
+        val sentenceIndices = dependencies.indices.toVector
+        //for every sentence
+        for (j <- sentenceIndices) yield {
+          //for every dependency tuple
+          for (dep <- dependencies(i)(j)) yield {
+            val lexicalTupleEntry = this.lexicalTuples(withPunctuation = false)(i)(j)
+            (
+              lexicalTupleEntry(dep._1)._1,
+              lexicalTupleEntry(dep._2)._1,
+              dep._3
+            )
+          }
+        }
+      }
+    } else if (gram == "lemma") {
+      for (i <- paragraphIndices) yield {
+        //indices of sentences
+        val sentenceIndices = dependencies.indices.toVector
+        //for every sentence
+        for (j <- sentenceIndices) yield {
+          //for every dependency tuple
+          for (dep <- dependencies(i)(j)) yield {
+            val lexicalTupleEntry = this.lexicalTuples(withPunctuation = false)(i)(j)
+            (
+              lexicalTupleEntry(dep._1)._2._1,
+              lexicalTupleEntry(dep._2)._2._1,
+              dep._3
+              )
+          }
+        }
+      }
+    } else {                                                //keeps indices but converts ints to string
+      for (i <- paragraphIndices) yield {
+        //indices of sentences
+        val sentenceIndices = dependencies.indices.toVector
+        //for every sentence
+        for (j <- sentenceIndices) yield {
+          //for every dependency tuple
+          for (dep <- dependencies(i)(j)) yield {
+            (
+              dep._1.toString,
+              dep._2.toString,
+              dep._3
+              )
+          }
+        }
+      }
+    }
   }
 
   /**
@@ -254,6 +343,7 @@ class TextDocument (
 
   /**
     * Normalization term
+    *
     * @param gram `word` or `lemma`
     * @return Number of total `words` or `lemmas` in [[TextDocument]]
     */
@@ -267,7 +357,8 @@ class TextDocument (
 
   /**
     * Normalization term
-     * @return Number of total `words` in [[TextDocument]] with proper nouns from [[properNounsCounter]] removed
+    *
+    * @return Number of total `words` in [[TextDocument]] with proper nouns from [[properNounsCounter]] removed
     */
   def totalCountMinusProper: Double = {
     (this.tokensCounter - this.properNounsCounter).values.sum
@@ -275,6 +366,7 @@ class TextDocument (
 
   /**
     * Normalization term
+    *
     * @param gram `word` or `lemma`
     * @return Number of distinct `word` or `lemmas` (types) in [[TextDocument]]
     */
@@ -288,7 +380,8 @@ class TextDocument (
 
   /**
     * Ratio of distinct tokens (types) to all tokens
-     * @param gram `word` or `lemma`
+    *
+    * @param gram `word` or `lemma`
     * @return Percentage of all tokens in [[TextDocument]] that is distinct
     */
   def countRatio(gram: String): Double = {
@@ -298,7 +391,8 @@ class TextDocument (
 
   /**
     * Normalization term
-     * @return Number of sentences in [[TextDocument]]
+    *
+    * @return Number of sentences in [[TextDocument]]
     */
   def totalSentences: Double = {
     this.rawSentences.flatten.length.toDouble
@@ -314,6 +408,7 @@ object TextDocument {
 
   /**
     * Wrapper function to easily apply `foldLeft`
+    *
     * @param list Parallelized sequence (use [[TextDocument.parParagraphs]]) to be applied to `foldLeft`
     * @param startingItem The initial value of the function to be applied to `foldLeft`
     * @param function The function to be applied to `foldLeft`

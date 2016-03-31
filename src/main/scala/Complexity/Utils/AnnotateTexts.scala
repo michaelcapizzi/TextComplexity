@@ -22,7 +22,7 @@ object AnnotateTexts {
     val finishedNames = finishedFiles.map(_.getName).toSet
 
     //iterate through files
-    for (f <- allFiles) {
+    for (f <- allFiles.filterNot(_.getName.endsWith("Quixote.txt"))) {
 
       //variables for naming
       val fullName = f.getName
