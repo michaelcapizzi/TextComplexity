@@ -3,7 +3,7 @@ package Complexity.MachineLearning
 /**
   * Where experiments are run
   */
-object RunExperimentsMain {
+object RunExperiments {
 
   /**
     * @param args <br>
