@@ -155,7 +155,8 @@ object Predict {
       m.loadModel(getClass.getResource("/savedModels/rf-lex-6.model").getPath)
     }
 
-    //TODO add scaling!!!
+    //scale training data
+
 
 
     /**

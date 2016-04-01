@@ -3,6 +3,7 @@ package Complexity.MachineLearning
 import edu.arizona.sista.learning._
 import edu.arizona.sista.struct.Counter
 import MLutils._
+import Scaling._
 import Complexity.Utils.Compress._
 
 
@@ -73,7 +74,13 @@ class MLmodel(
   }
 
 
-  //TODO add scaling!!!!!!!!!!!!!!!!!!!!!!!!!
+  /**
+    * Normalizes all feature values between 0 and 1 using [[edu.arizona.sista.learning.Datasets.svmScaleDataset]]
+    * @return Range to be used as input to [[Complexity.MachineLearning.Scaling.normalizeDatum]]
+    */
+  def normalizeDataset: ScaleRange[String] = {
+    normalizeData(this.dataset)
+  }
 
 
   /**

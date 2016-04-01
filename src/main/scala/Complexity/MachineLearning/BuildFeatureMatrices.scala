@@ -18,7 +18,7 @@ object BuildFeatureMatrices {
     *
     * @param args <br>
     *               args(0) = number of classes to use: `3` or `6`
-    *               args(1) = name for exported dataset `.svmLight`
+    *               args(1) = full path to file for exported dataset `.svmLight`
     *               args(2+) = List of feature types to include: `lexical`, `syntactic`, `paragraph`, or `all`
     */
   def main(args: Array[String]) = {

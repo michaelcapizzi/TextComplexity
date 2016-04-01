@@ -13,22 +13,27 @@ object Scaling {
   /**
     * Scales all datums in a dataset
      * @param dataSet Dataset of datums to be scaled
-    * @return `Seq` of feature values, now scaled
+    * @return ([[edu.arizona.sista.learning.ScaleRange[String]], `Seq` of feature values, now scaled)
     */
-  def normalizeData(dataSet: RVFDataset[Int, String]): IndexedSeq[Counter[String]] = {
+  def normalizeData(dataSet: RVFDataset[Int, String]): ScaleRange[String]/*(ScaleRange[String], IndexedSeq[Counter[String]])*/ = {
 
     //set the scale range
     val normalizedScaleRange = Datasets.svmScaleRVFDataset(dataSet, 0, 1)
 
-    //iterate through dataset
-    for (i <- 0 to dataSet.size - 1) yield {
-      Datasets.svmScaleDatum(
-                            dataSet.mkDatum(i).featuresCounter,
-                            normalizedScaleRange,
-                            0,
-                            1
-      )
-    }
+    /*//iterate through dataset
+    val scaledData = for (i <- 0 to dataSet.size - 1) yield {
+                            Datasets.svmScaleDatum(
+                              dataSet.mkDatum(i).featuresCounter,
+                              normalizedScaleRange,
+                              0,
+                              1
+                          )
+                      }
+
+    (normalizedScaleRange, scaledData)*/
+
+    normalizedScaleRange
+
   }
 
   /**
