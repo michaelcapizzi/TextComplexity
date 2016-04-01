@@ -6,6 +6,8 @@ import Complexity.Features.Word2Vec._
 import Complexity.MachineLearning.FeatureExtractor
 import Complexity.MachineLearning.MLmodel
 import Complexity.Utils.IO._
+import Complexity.MachineLearning.MLutils._
+import Complexity.MachineLearning.Scaling._
 import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
 
 
@@ -15,8 +17,8 @@ object Predict {
     * @param args <br>
     *               args(0) = plain text file to be analyzed and classified
     *               args(1) = number of classes to use: `3` or `6`
-    *               @todo Insert dataset to args(2) so that scaling can occur
-    *               args(2+) = List of feature types to include: `lexical`, `syntactic`, `paragraph`, or `all`
+    *               args(2) = full path to dataset used in training model (needed for scaling of prediction datum)
+    *               args(3+) = List of feature types to include: `lexical`, `syntactic`, `paragraph`, or `all`
     */
   def main(args: Array[String]) = {
 
@@ -25,7 +27,13 @@ object Predict {
     /**
       * Feature list being used for feature development
       */
-    val featureList = args.slice(2, args.length)
+    val featureList = args.slice(3, args.length)
+
+
+    /**
+      * Dataset present only to get [[edu.arizona.sista.learning.ScaleRange]]
+      */
+    val dataset = importFromSVM(args(2))
 
 
     /**
@@ -144,7 +152,10 @@ object Predict {
     /**
       * Model to be used for prediction
       */
-    val m = new MLmodel(classifierType = "randomForest")
+    val m = new MLmodel(
+                        dataset = dataset,
+                        classifierType = "randomForest"
+                        )
 
 
     //load saved model
@@ -155,15 +166,26 @@ object Predict {
       m.loadModel(getClass.getResource("/savedModels/rf-lex-6.model").getPath)
     }
 
-    //scale training data
+    /**
+      * Needed for properly scaling prediction datum
+       */
+    val scaleRange = m.normalizeDataset
 
+
+    /**
+      * Scaled version of original datum
+      */
+    val scaledDatum = normalizeDatum(
+                                    datum = fe.mlDatum,
+                                    range = scaleRange
+                                    )
 
 
     /**
       * Variable to house prediction results
       */
     val prediction = m.predict(
-                          datum = fe.mlDatum,
+                          datum = scaledDatum,
                           numClasses = args(1).toInt
                       )
 

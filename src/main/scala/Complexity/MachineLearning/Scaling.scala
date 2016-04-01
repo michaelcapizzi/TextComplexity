@@ -1,6 +1,6 @@
 package Complexity.MachineLearning
 
-import edu.arizona.sista.learning.{ScaleRange, Datum, Datasets, RVFDataset}
+import edu.arizona.sista.learning._
 import edu.arizona.sista.struct.Counter
 
 /**
@@ -12,7 +12,8 @@ object Scaling {
 
   /**
     * Scales all datums in a dataset
-     * @param dataSet Dataset of datums to be scaled
+    *
+    * @param dataSet Dataset of datums to be scaled
     * @return ([[edu.arizona.sista.learning.ScaleRange[String]], `Seq` of feature values, now scaled)
     */
   def normalizeData(dataSet: RVFDataset[Int, String]): ScaleRange[String]/*(ScaleRange[String], IndexedSeq[Counter[String]])*/ = {
@@ -38,12 +39,16 @@ object Scaling {
 
   /**
     * Scales one individual datum
+    *
     * @param datum Datum to be scaled
     * @param range Normalized range [[edu.arizona.sista.learning.Datasets.svmScaleRVFDataset]]([dataset], 0, 1)
-    * @return Feature values, now scaled
+    * @return Rebuilt datum with same label and scaled [[edu.arizona.sista.learning.RVFDatum.featuresCounter]]
     */
-  def normalizeDatum(datum: Datum[Int, String], range: ScaleRange[String]): Counter[String] = {
-    Datasets.svmScaleDatum(datum.featuresCounter, range, 0, 1)
+  def normalizeDatum(datum: Datum[Int, String], range: ScaleRange[String]): RVFDatum[Int, String] = {
+    new RVFDatum[Int, String](
+                              datum.label,
+                              Datasets.svmScaleDatum(datum.featuresCounter, range, 0, 1)
+    )
   }
 
 
