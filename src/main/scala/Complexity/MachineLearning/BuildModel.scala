@@ -22,6 +22,9 @@ object BuildModel {
                           dataset = importFromSVM(args(1))
                         )
 
+    //TODO add scaling!!!
+
+
     println("Training model")
 
     m.train

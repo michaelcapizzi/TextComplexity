@@ -565,7 +565,7 @@ class SyntacticFeatures(
   /**
     * Calculates the ratio of independent and dependent clauses to total number of clauses
     *
-    * @return Percentage of clauses that are independent and percent that are dependent
+    * @return minimum of clauses that are independent and percent that are dependent
     */
   def totalClauseTypeRatios: Map[String, Double] = {
     //total number of clauses
@@ -608,9 +608,9 @@ class SyntacticFeatures(
 
 
   /**
-    * Calculates percentages of each type of sentence
+    * Calculates minimums of each type of sentence
     *
-    * @return Percentages of each sentence type
+    * @return minimums of each sentence type
     *
     *         {{{
     *           Map(
@@ -940,11 +940,11 @@ class SyntacticFeatures(
 
 
   /**
-    * Generates percentage of verb phrases that are passive
+    * Generates minimum of verb phrases that are passive
     *
-    * @return Percentage of passive voice usage
+    * @return minimum of passive voice usage
     */
-  //gets percentage of passive voice used
+  //gets minimum of passive voice used
   def voiceStatsParse: Double = {
     //all VPs
     val all = this.getAllVPsParse.
@@ -1091,7 +1091,7 @@ class SyntacticFeatures(
 
   /**
     * Generates two metrics surrounding coherence <br>
-    *   `percentage` = percentage of pairs of sentences with at least one shared coherent word
+    *   `minimum` = minimum of pairs of sentences with at least one shared coherent word
     *   `coherence value` = Generalized distribution of the number of coherent values shared between sentences
     *
     * @param transLength Number of consecutive sentences to consider for coherence; currently only capable of handling window of 2
@@ -1101,7 +1101,7 @@ class SyntacticFeatures(
     *         
     *         {{{
     *           Map(
-    *              "coherence percentage" -> ?,
+    *              "coherence minimum" -> ?,
     *              "coherence minimum" -> ?,
     *              "coherence 25th %ile" -> ?,
     *              "coherence mean" -> ?,
@@ -1120,10 +1120,10 @@ class SyntacticFeatures(
                   this.coherenceChain(transLength, w2v=true, cosSimThreshold)
                 }
 
-    //coherence percentage
+    //coherence minimum
     val emptySetCount = chain.count(_ == Set()).toDouble                          //number of chains without a coherent noun
     val numberOfChains = chain.length.toDouble                                    //number of chains in speech
-    val coherencePercentage = (numberOfChains - emptySetCount) / numberOfChains   //number of populated chains / total chains = % of coherence
+    val coherenceminimum = (numberOfChains - emptySetCount) / numberOfChains   //number of populated chains / total chains = % of coherence
 
     //amount of coherence
     val coherenceCounts = chain.map(_.size)                                       //size of each chain (e.g. number of coherent nouns inside)
@@ -1134,7 +1134,7 @@ class SyntacticFeatures(
     coherenceCounts.foreach(coherenceStats.addValue(_))
 
     Map(
-      "coherence percentage" -> coherencePercentage,
+      "coherence minimum" -> coherenceminimum,
       "coherence minimum" -> coherenceStats.getMin,
       "coherence 25th %ile" -> coherenceStats.getPercentile(25),
       "coherence mean" -> coherenceStats.getMean,
@@ -1238,14 +1238,14 @@ class SyntacticFeatures(
       "max subordinate used" -> this.conjunctionStats("max subordinate used"),
       "total conjunctive used" -> this.conjunctionStats("total conjunctive used"),
       "max conjunctive used" -> this.conjunctionStats("max conjunctive used"),
-      //coherence
-      "coherence percentage" -> this.coherenceStats(w2v = true)("coherence percentage"),
-      "coherence minimum" -> this.coherenceStats(w2v = true)("coherence minimum"),
-      "coherence 25th %ile" -> this.coherenceStats(w2v = true)("coherence 25th %ile"),
-      "coherence mean" -> this.coherenceStats(w2v = true)("coherence mean"),
-      "coherence median" -> this.coherenceStats(w2v = true)("coherence median"),
-      "coherence 75th %ile" -> this.coherenceStats(w2v = true)("coherence 75th %ile"),
-      "coherence maximum" -> this.coherenceStats(w2v = true)("coherence maximum")
+      //coherence -> use of W2V determined by Option[Word2Vec]
+      ("coherence minimum",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence minimum") else this.coherenceStats(w2v = false)("coherence minimum")),
+      ("coherence minimum",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence minimum") else this.coherenceStats(w2v = false)("coherence minimum")),
+      ("coherence 25th %ile",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence 25th %ile") else this.coherenceStats(w2v = false)("coherence 25th %ile")),
+      ("coherence mean",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence mean") else this.coherenceStats(w2v = false)("coherence mean")),
+      ("coherence median",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence median") else this.coherenceStats(w2v = false)("coherence median")),
+      ("coherence 75th %ile",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence 75th %ile") else this.coherenceStats(w2v = false)("coherence 75th %ile")),
+      ("coherence maximum",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence maximum") else this.coherenceStats(w2v = false)("coherence maximum"))
     )
   }
 

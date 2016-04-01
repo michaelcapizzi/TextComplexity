@@ -34,7 +34,7 @@ object Scaling {
   /**
     * Scales one individual datum
     * @param datum Datum to be scaled
-    * @param range Normalized range `Dataset.svmScaleRVFDataset([dataset], 0, 1)`
+    * @param range Normalized range [[edu.arizona.sista.learning.Datasets.svmScaleRVFDataset]]([dataset], 0, 1)
     * @return Feature values, now scaled
     */
   def normalizeDatum(datum: Datum[Int, String], range: ScaleRange[String]): Counter[String] = {

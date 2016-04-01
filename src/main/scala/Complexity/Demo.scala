@@ -16,6 +16,7 @@ object Demo {
                   Array[String](
                                   args(0),
                                   "3",
+                                  //TODO add best dataset (so that scaling can occur)
                                   "lexical"
                   )
     )

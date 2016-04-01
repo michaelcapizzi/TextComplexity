@@ -281,12 +281,12 @@ class TextDocument (
     if (gram == "word") {
       for (i <- paragraphIndices) yield {
         //indices of sentences
-        val sentenceIndices = dependencies.indices.toVector
+        val sentenceIndices = dependencies(i).indices.toVector
         //for every sentence
         for (j <- sentenceIndices) yield {
           //for every dependency tuple
           for (dep <- dependencies(i)(j)) yield {
-            val lexicalTupleEntry = this.lexicalTuples(withPunctuation = false)(i)(j)
+            val lexicalTupleEntry = this.lexicalTuples(withPunctuation = true)(i)(j)
             (
               lexicalTupleEntry(dep._1)._1,
               lexicalTupleEntry(dep._2)._1,
@@ -298,12 +298,12 @@ class TextDocument (
     } else if (gram == "lemma") {
       for (i <- paragraphIndices) yield {
         //indices of sentences
-        val sentenceIndices = dependencies.indices.toVector
+        val sentenceIndices = dependencies(i).indices.toVector
         //for every sentence
         for (j <- sentenceIndices) yield {
           //for every dependency tuple
           for (dep <- dependencies(i)(j)) yield {
-            val lexicalTupleEntry = this.lexicalTuples(withPunctuation = false)(i)(j)
+            val lexicalTupleEntry = this.lexicalTuples(withPunctuation = true)(i)(j)
             (
               lexicalTupleEntry(dep._1)._2._1,
               lexicalTupleEntry(dep._2)._2._1,

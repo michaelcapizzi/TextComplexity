@@ -14,7 +14,7 @@ import scala.util.control.Breaks._
 /**
   * Builds a class to efficiently handle lookup of Word2Vec vectors. <br>
   *   Builds a specific `Map` of words used in the [[Complexity.TextDocument]] and clusters them for faster lookup
-  * @param w2vFilePath Path to Word2Vec file found in [[resources/]]
+  * @param w2vFilePath Path to Word2Vec file found in [[resources/]]; currently uses Word2Vec embeddings generated from 500k most frequent tokens in Gigaword with any tokens longer than 16 words filtered out
   * @param vocabulary List of distinct lemmatized tokens, all lowercase to be added to Word2Vec dictionary, use [[Complexity.TextDocument.forW2V]]
   * @param w2vMasterMap Optional pre-loaded `Map` of the files generated from the `.txt` file located at [[w2vFilePath]]
   */

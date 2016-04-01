@@ -61,33 +61,7 @@ class MLmodel(
   }
 
 
-  /**
-    * Save trained model to file
-    *
-    * @param fileName Location for trained model
-    */
-  def saveModel(fileName: String): Unit = {
-    this.classifier.saveTo(fileName)
-  }
-
-
-  /**
-    * Load trained model from file <br>
-    *   Only `randomForest` and `perceptron` can be loaded from a saved state
-    *   Model can be compressed with `.gz` for `perceptron` and then requires use of [[Complexity.Utils.Compress]]
-    *
-    * @param fileName uncompressed or compressed file location written from [[resources/]]
-    */
-  def loadModel(fileName: String): Unit = {
-    this.classifierType match {
-      case "randomForest" => this.classifier = RandomForestClassifier.loadFrom(fileName)
-//      case "perceptron" => this.classifier = PerceptronClassifier.loadFrom(unGZmlModel(fileName))
-      case "perceptron" => this.classifier = PerceptronClassifier.loadFrom(fileName)
-//      case "logisticRegression" => this.classifier = LogisticRegressionClassifier.loadFrom(unGZmlModel(fileName))
-//      case "svm" => this.classifier = LinearSVMClassifier.loadFrom(unGZmlModel(filName))
-    }
-  }
-
+  //TODO add scaling!!!!!!!!!!!!!!!!!!!!!!!!!
 
   /**
     * Builds a dataset (if none was given at class instantiation) from list of Datums
@@ -97,6 +71,9 @@ class MLmodel(
   def makeDataset(datumSeq: Vector[RVFDatum[Int, String]]): Unit = {
     datumSeq.foreach(this.dataset.+=(_))
   }
+
+
+  //TODO add scaling!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
   /**
@@ -183,5 +160,32 @@ class MLmodel(
     )
   }
 
+
+  /**
+    * Save trained model to file
+    *
+    * @param fileName Location for trained model
+    */
+  def saveModel(fileName: String): Unit = {
+    this.classifier.saveTo(fileName)
+  }
+
+
+  /**
+    * Load trained model from file <br>
+    *   Only `randomForest` and `perceptron` can be loaded from a saved state
+    *   Model can be compressed with `.gz` for `perceptron` and then requires use of [[Complexity.Utils.Compress]]
+    *
+    * @param fileName uncompressed or compressed file location written from [[resources/]]
+    */
+  def loadModel(fileName: String): Unit = {
+    this.classifierType match {
+      case "randomForest" => this.classifier = RandomForestClassifier.loadFrom(fileName)
+      //      case "perceptron" => this.classifier = PerceptronClassifier.loadFrom(unGZmlModel(fileName))
+      case "perceptron" => this.classifier = PerceptronClassifier.loadFrom(fileName)
+      //      case "logisticRegression" => this.classifier = LogisticRegressionClassifier.loadFrom(unGZmlModel(fileName))
+      //      case "svm" => this.classifier = LinearSVMClassifier.loadFrom(unGZmlModel(filName))
+    }
+  }
 
 }

@@ -15,6 +15,7 @@ object Predict {
     * @param args <br>
     *               args(0) = plain text file to be analyzed and classified
     *               args(1) = number of classes to use: `3` or `6`
+    *               @todo Insert dataset to args(2) so that scaling can occur
     *               args(2+) = List of feature types to include: `lexical`, `syntactic`, `paragraph`, or `all`
     */
   def main(args: Array[String]) = {
@@ -142,7 +143,6 @@ object Predict {
 
     /**
       * Model to be used for prediction
-      * @todo Why isn't the class being found?
       */
     val m = new MLmodel(classifierType = "randomForest")
 
@@ -154,6 +154,8 @@ object Predict {
     } else {
       m.loadModel(getClass.getResource("/savedModels/rf-lex-6.model").getPath)
     }
+
+    //TODO add scaling!!!
 
 
     /**
