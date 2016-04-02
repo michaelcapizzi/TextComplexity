@@ -33,7 +33,7 @@ class Word2Vec(
   /**
     * Minimum vocabulary size to trigger clustering.  Any document with less distinct words than the threshold will skip clustering
     */
-  var minVocabSizeForClustering = 500
+  var minVocabSizeForClustering = 1000
 
 
   /////////////maps and streams/////////////////
