@@ -22,9 +22,10 @@ object BuildModel {
                           dataset = importFromSVM(args(1))
                         )
 
+
     println("scaling dataset")
 
-    m.normalizeDataset
+//    m.normalizeDataset
 
 
     println("Training model")

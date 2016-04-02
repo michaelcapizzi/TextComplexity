@@ -161,10 +161,17 @@ object Predict {
     //load saved model
     //TODO add best model paths
     if (args(1) == "3") {
-      m.loadModel(getClass.getResource("/savedModels/rf-lex-3.model").getPath)
+      m.loadModel(getClass.getResource("/savedModels/rf-lex-3-unscaled.model").getPath)
     } else {
-      m.loadModel(getClass.getResource("/savedModels/rf-lex-6.model").getPath)
+      m.loadModel(getClass.getResource("/savedModels/rf-lex-6-unscaled.model").getPath)
     }
+
+
+    /**
+      * Feature counter before scaling datum
+      */
+    val testFeatures = fe.mlDatum.featuresCounter
+
 
     /**
       * Needed for properly scaling prediction datum
@@ -175,17 +182,18 @@ object Predict {
     /**
       * Scaled version of original datum
       */
-    val scaledDatum = normalizeDatum(
+/*    val scaledDatum = normalizeDatum(
                                     datum = fe.mlDatum,
                                     range = scaleRange
-                                    )
+                                    )*/
 
 
     /**
       * Variable to house prediction results
       */
     val prediction = m.predict(
-                                datum = scaledDatum,
+//                                datum = scaledDatum,
+                                datum = fe.mlDatum,
                                 numClasses = args(1).toInt
                               )
 
@@ -193,6 +201,8 @@ object Predict {
     //print results
     println("Here are the feature values:")
     prediction._3.keySet.foreach(f => println(f + ": " + prediction._3.getCount(f)))
+    println("Here are the feature values:")
+    testFeatures.keySet.foreach(f => println(f + ":" + testFeatures.getCount(f)))
     println()
     println("This text is predicted to be of class " + prediction._1 + " with a confidence of " + prediction._2.getCount(prediction._1) + ".")
     println("Here are the confidences for the other classes:")

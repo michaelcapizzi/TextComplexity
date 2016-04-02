@@ -1,6 +1,8 @@
 import com.typesafe.sbt.GitPlugin.autoImport._
 import com.typesafe.sbt.SbtGhPages.ghpages
 import com.typesafe.sbt.SbtSite.site
+import sbtassembly.AssemblyPlugin.autoImport._
+import sbtassembly.MergeStrategy
 
 name := "TextComplexity"
 
@@ -9,6 +11,19 @@ version := "1.0"
 scalaVersion := "2.11.7"
 
 ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) }      //this overrides competing scala versions?  ???
+
+assemblyJarName in assembly := "Demo.jar"
+
+//test in assembly := {}
+
+//mainClass in assembly := Some("ContentAnalysis.PipelineNoTransMain")
+//mainClass in assembly := Some("ContentAnalysis.Testing.AssemblyMain")
+mainClass in assembly := Some("Complexity.Demo")
+
+assemblyExcludedJars in assembly := {
+  val cp = (fullClasspath in assembly).value
+  cp filter {_.data.getName == "java-cup-0.11a.jar"}
+}
 
 libraryDependencies ++= Seq(
   "edu.arizona.sista" % "processors_2.11" % "5.5",                          //required exclude java-cup-0.11a.jar

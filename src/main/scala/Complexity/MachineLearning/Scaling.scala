@@ -19,20 +19,9 @@ object Scaling {
   def normalizeData(dataSet: RVFDataset[Int, String]): ScaleRange[String]/*(ScaleRange[String], IndexedSeq[Counter[String]])*/ = {
 
     //set the scale range
-    val normalizedScaleRange = Datasets.svmScaleRVFDataset(dataSet, 0, 1)
+    val normalizedScaleRange = Datasets.svmScaleRVFDataset(dataSet, -1, 1)
 
-    /*//iterate through dataset
-    val scaledData = for (i <- 0 to dataSet.size - 1) yield {
-                            Datasets.svmScaleDatum(
-                              dataSet.mkDatum(i).featuresCounter,
-                              normalizedScaleRange,
-                              0,
-                              1
-                          )
-                      }
-
-    (normalizedScaleRange, scaledData)*/
-
+    //return the range
     normalizedScaleRange
 
   }
@@ -47,7 +36,8 @@ object Scaling {
   def normalizeDatum(datum: Datum[Int, String], range: ScaleRange[String]): RVFDatum[Int, String] = {
     new RVFDatum[Int, String](
                               datum.label,
-                              Datasets.svmScaleDatum(datum.featuresCounter, range, 0, 1)
+                              Datasets.svmScaleDatum(datum.featuresCounter, range, -1, 1)
+//                              Datasets.svmScaleDatum(datum.featuresCounter, range)
     )
   }
 
