@@ -106,6 +106,7 @@ object BuildFeatureMatrices {
                               )
 
         syn = Some(new SyntacticFeatures(td, Some(w2v)))
+//        syn = Some(new SyntacticFeatures(td, None))
       }
 
       if (featureList.contains("paragraph") || featureList.contains("all")) {
