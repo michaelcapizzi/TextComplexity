@@ -1,8 +1,9 @@
 package Complexity.MachineLearning
 
 /**
- * Contains methods for evaluation
- */
+  * Contains methods for evaluation in terms of `precision`, `recall`, and `f1`
+  * @param scoreList `Vector` of `Tuples` of `(title, predicted label, gold label)`
+  */
 class EvaluationMetrics(
                          scoreList: Vector[(String, String, String)]     //(title, mlScore, actualScore)
                          ) {
