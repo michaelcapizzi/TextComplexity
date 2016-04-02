@@ -6,8 +6,8 @@ I designed this to be my interview because I wanted to highlight how much my cod
 ##Main Advancements
 
 I will highlight some of the main improvements that I was able to make to this system.  
-**Note:** While I have many ideas of how to improve the *performance* of the classifier itself, most of my improvement were more related to the engineering of the system than the features themselves, with one exception that is explained below.
-**Note:** I will not go into much detail here about the features used, but I'm more than happy to discuss that in more detail, along with the multitude of further improvements I have in mind for this system.
+**Note:** While I have many ideas of how to improve the *performance* of the classifier itself (whether it be added features or more testing of classifier hyper-parameters), most of my improvements were related to the engineering of the system than the features themselves, with one exception that is explained below.
+**Note:** I will not go into much detail here about the features used, but I'm more than happy to discuss that, along with the multitude of further improvements I have in mind for this system, at some other time.
 
 
 ###Added Feature
