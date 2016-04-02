@@ -112,8 +112,6 @@ class TextDocument (
     * @return `._1` = the `word` or `lemma` <br>
     *         `._2` = the `tag`
     */
-  //TODO took wrote regex and then only had to do counter steps once
-  //TODO initialize variable outside of loop
   def filterCounterByPOS(POS: String, gram: String): Counter[(String, String)] = {
     //initiate regex
     var regex = ""
@@ -268,7 +266,6 @@ class TextDocument (
     * @param gram `word` or `lemma`, defaults to `indices` in String format
     * @return Sequence of `String` tuples
     */
-  //TODO fix bug ==> cleanDependencies is filtered but lexical tuple isn't ==> causing problems with indexing
   //returns tuple (incoming, outgoing, relation)
   def showDependencies(gram: String): IndexedSeq[Vector[Vector[(String, String, String)]]] = {
 
@@ -423,7 +420,6 @@ object TextDocument {
     *          )
     *          }}}
     */
-  //TODO use of Typing
   def foldApply[T](list: scala.collection.parallel.ParSeq[T], startingItem: T, function: (T, T) => T): T = {
     list.foldLeft(startingItem)(function)
   }

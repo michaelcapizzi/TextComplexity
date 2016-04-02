@@ -35,6 +35,7 @@ class Word2Vec(
     */
   var minVocabSizeForClustering = 500
 
+
   /////////////maps and streams/////////////////
 
   //initial process for reading in values from file

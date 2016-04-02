@@ -268,7 +268,6 @@ class ProcessedParagraph(
     * @return `Counter[String]` = `tokens`, `lemmas`, `tags`, `proper nouns` <br>
     *          `Counter[(String, String)]` = `tokens-tags`, `lemmas-tags`
     */
-    //TODO did them all in one iteration, but needed tuple output to handle differnet Type
   def buildCounters: (Map[String, Counter[String]], Map[String, Counter[(String, String)]]) = {
     val tokenCounter = new Counter[String]()
     val lemmaCounter = new Counter[String]()

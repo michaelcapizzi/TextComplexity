@@ -109,8 +109,6 @@ class LexicalFeatures (val td: TextDocument) {
     * @param gram `word` or `lemma`
     * @return `(token, count of that token)`
     */
-  //TODO made .filterCounterByPOS to be used in the following two methods
-  //TODO compare to original
   def getMostFrequent(POS: String, gram: String): (String, Double) = {
 
     val filteredCounter = td.filterCounterByPOS(POS, gram)

@@ -18,7 +18,6 @@ object IO {
     * @return `Vector` of paragraphs in `plain text`
     * @todo Exclude lines between commented out sections
     */
-  //TODO fromInputStream to allow from inside .jar
   def importTextFromResources(fileName: String): Vector[String] = {
     //import file
     val is = scala.io.Source.fromInputStream(getClass.getResourceAsStream("/rawText/" + fileName))
@@ -56,7 +55,6 @@ object IO {
     * @return `Vector` of paragraphs in `plain text`
     * @todo Exclude lines between commented out sections
     */
-  //TODO fromInputStream to allow from inside .jar
   def importText(fileName: String): Vector[String] = {
     //getLines
     val allLines = scala.io.Source.fromFile(fileName).getLines

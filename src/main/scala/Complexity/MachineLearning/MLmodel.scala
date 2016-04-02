@@ -62,8 +62,6 @@ class MLmodel(
   }
 
 
-  //TODO add scaling!!!!!!!!!!!!!!!!!!!!!!!!!
-
   /**
     * Builds a dataset (if none was given at class instantiation) from list of Datums
     *

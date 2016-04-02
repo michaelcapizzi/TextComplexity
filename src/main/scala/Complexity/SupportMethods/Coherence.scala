@@ -5,8 +5,6 @@ package Complexity.SupportMethods
   */
 object Coherence {
 
-  //TODO consider building alternative method (not including set intersection) that will handle pronouns and w2v more easily
-
   /**
     * Finds intersection of a sequence of sets <br>
     *   Used for plain noun matching in [[Complexity.Features.SyntacticFeatures.coherenceChain]]
