@@ -10,7 +10,7 @@ object BuildModel {
     *               args(0) = classifier type: `randomForest`, `perceptron`, `logisticRegression`, or `svm`; defaults to `randomForest`
     *               args(1) = full path to saved feature matrix to load
     *               args(2) = full path for location for saved model
-    *               args(2) = number of classes: `3` or `6`
+    *               args(3) = number of classes: `3` or `6`
     * @todo Add capacity to change model hyperparameters from here
     */
   def main(args: Array[String]) = {
@@ -22,7 +22,9 @@ object BuildModel {
                           dataset = importFromSVM(args(1))
                         )
 
-    //TODO add scaling!!!
+    println("scaling dataset")
+
+    m.normalizeDataset
 
 
     println("Training model")
