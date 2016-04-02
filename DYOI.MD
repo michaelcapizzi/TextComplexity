@@ -27,7 +27,7 @@ I designed three different types of reference:
 ![alt tag](https://raw.githubusercontent.com/michaelcapizzi/TextComplexity/master/src/main/resources/Coherence%20visual.JPG)
 
 
-This feature comes with some high costs; however.  The word vectors I use are trained on all of Gigaword, and the compressed version of that file is still almost 1G in size.  I've pruned it with what I hope is minimal impact on robustness, but it's still a large file.  And importing that file into memory takes time as well.  See [Efficiency](#efficiency)
+This feature comes with some high costs; however.  The word vectors I use are trained on all of Gigaword, and the compressed version of that file is still almost 1G in size.  I've pruned it with what I hope is minimal impact on robustness, but it's still a large file.  And importing that file into memory takes time as well.  See my discussion on [efficiency](#efficiency) for how I handle this.
 
 
 ###Clarity
@@ -137,7 +137,7 @@ So my simple approach was to use k-means clustering to group the vectors (If the
   
 **Note**: While in theory this is efficient, I must admit that as I am writing this, my system has been running for nearly 24 hours (in parallel) to try to cluster the word vectors for the vocabularies of all 54 documents in my dataset.  I'd obviously rather have computational costs like this on the training side of the process, but I can't help but wonder a few things:
 
-1. Is the inclusion of word embeddings to my coherence metric (explained [here](#added_feature)) really that important?  How much would my classification accuracy decrease if I only use the other two means of measuring coherence, considering this is only one of many syntactic features?
+1. Is the inclusion of word embeddings to my coherence metric (explained [here](#added-feature)) really that important?  How much would my classification accuracy decrease if I only use the other two means of measuring coherence, considering this is only one of many syntactic features?
 1. Would the computational costs of calculating cosine similarity of all the words in the vocabulary (when there are no clusters) be that much higher than the time it takes to cluster a document in the first place?
 
 The answers to these questions require more testing, but I think, in the long run, word embeddings will provide the opportunity for many more informative features (how would a neural network or LSTM language model that uses word embeddings as input perform?  Either as a stand alone classifier or as an added feature?), and so it's worth the computational cost that comes with them.
