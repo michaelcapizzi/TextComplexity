@@ -38,10 +38,10 @@ class MLmodel(
   var classifier = this.classifierType match {
 
     case "randomForest" => new RandomForestClassifier[Int, String](
-                            numTrees = RFnumTrees.getOrElse(1000),
+                            numTrees = RFnumTrees.getOrElse(100),
                             featureSampleRatio = RFfeatureSampleRatio.getOrElse(1.0),
                             maxTreeDepth = RFmaxTreeDepth.getOrElse(5),
-                            numThreads = RFnumThreads.getOrElse(3)
+                            numThreads = RFnumThreads.getOrElse(0)
                         )
     case "perceptron" => new PerceptronClassifier[Int, String](
                             epochs = Pepochs.getOrElse(20),
@@ -57,7 +57,7 @@ class MLmodel(
                             numTrees = RFnumTrees.getOrElse(1000),
                             featureSampleRatio = RFfeatureSampleRatio.getOrElse(1.0),
                             maxTreeDepth = RFmaxTreeDepth.getOrElse(5),
-                            numThreads = RFnumThreads.getOrElse(3)
+                            numThreads = RFnumThreads.getOrElse(0)
                         )
   }
 

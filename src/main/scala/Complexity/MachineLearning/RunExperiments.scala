@@ -115,7 +115,7 @@ object RunExperiments {
     }
 
     if (modelsToUse.contains("svm") || modelsToUse.contains("all")) {
-      svmModel = Some(new MLmodel(dataset, "svm"))
+      svmModel = Some(new MLmodel(dataset, "svm", bias = Some(false)))
       svmClassifier = Some(svmModel.get.classifier.asInstanceOf[LinearSVMClassifier[Int, String]])
       svmResults = Some(Datasets.crossValidate[Int, String](
                                                             dataset,

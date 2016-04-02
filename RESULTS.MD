@@ -40,12 +40,12 @@ concreteness score of most-used adjective in text | % of simple sentences |
  | sentence coherence |
  
 
-Models Used
----------------
+Results for 6-class classification
+--------------
 
 **RandomForest**: 
 - number of trees= 1000
-- maximum tree depth = 5
+- maximum tree depth = 10
 - features used for each tree = 20%
 - number of threads = 3
 
@@ -54,21 +54,20 @@ Models Used
 - features used for each iteration = 100%
     
 **LogisticRegression**: 
-- bias = true
+- bias = false
 
 **Linear SVM**: 
--bias = true
- 
- 
-Results for 6-class classification
---------------
+-bias = false
 
 K-1 | 2-3 | 4-5 | 6-8 | 9-10 | 11-12
 ---|---|---|---|---|---
 
+**The "features used" label is on the row of the model with the best F1 performance for that feature set.**
+**The best scores across all feature sets and all models are in bold**
+
  Features Used | Model Used | Accuracy | Precision | Recall | F1
  ---|---|---|---|---|---
- | Random Forest | 55.6% | .46 | .46 | .46
+ | Random Forest | 55.6% | .48 | .47 | .47
  | Perceptron | 14.8% | .13 | .17 | .15
  | Logistic Regression | 55.6% | .37 | .38 | .38
 Lexical | Linear SVM | 63% | .51 | .50 | .50
@@ -88,7 +87,7 @@ Syntactic | Logistic Regression | xx% | xx | xx | xx
  Lex + Syn | Logistic Regression | xx% | xx | xx | xx
  | Linear SVM | xx% | xx | xx | xx
  | | | | |
- Lex + Par | Random Forest | 57.4% | .44 | .44 | .44
+ Lex + Par | Random Forest | 57.4% | .46 | .45 | .46
  | Perceptron | 16.7% | .30 | .17 | .22
  | Logistic Regression | 55.6% | .35 | .41 | .37
  | Linear SVM | 55.6% | .40 | .41 | .41
@@ -107,6 +106,22 @@ Syntactic | Logistic Regression | xx% | xx | xx | xx
 Results for 3-class classification
 -------------------------------------
  
+ **RandomForest**: 
+ - number of trees= 1000
+ - maximum tree depth = 5
+ - features used for each tree = 20%
+ - number of threads = 3
+ 
+ **Perceptron**: 
+ - epochs = 20
+ - features used for each iteration = 100%
+     
+ **LogisticRegression**: 
+ - bias = false
+ 
+ **Linear SVM**: 
+ -bias = false
+ 
  K-5 | 6-8 | 9-12
  ---|---|---
  
@@ -114,7 +129,7 @@ Results for 3-class classification
   ---|---|---|---|---|---
   | Random Forest | 63% | .58 | .50 | .54
  Lexical | Perceptron | 64.8% | .62 | .65 | .63
-  | Logistic Regression | 68.5% | .48 | .52 | .48
+  | Logistic Regression | 68.5% | .45 | .52 | .48
   | Linear SVM | 68.5% | .59 | .57 | .58
   | | | | |
   | Random Forest | xx% | xx | xx | xx
