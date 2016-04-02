@@ -1,7 +1,7 @@
 package Complexity.MachineLearning
 
 import java.io.{PrintWriter, File}
-import edu.arizona.sista.learning.{RVFDatum, RVFDataset}
+import edu.arizona.sista.learning.{Datasets, RVFDatum, RVFDataset}
 import edu.arizona.sista.struct.Lexicon
 
 /**
@@ -64,6 +64,17 @@ object MLutils {
         case 99 => "NoLabelGiven"
       }
     }
+  }
+
+
+  /**
+    * Generates indices for leave-one-out cross validation
+    * @param datasetSize Size of dataset
+    * @return `.testFold` = index of dataset to test on <br>
+    *          `.trainFolds` = list of indices of dataset to train on
+    */
+  def leaveOneOutIndices(datasetSize: Int): Vector[edu.arizona.sista.learning.DatasetFold] = {
+    Datasets.mkFolds(datasetSize, datasetSize).toVector
   }
 
 
