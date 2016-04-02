@@ -2,24 +2,23 @@ package Complexity.MachineLearning
 
 /**
   * Contains methods for evaluation in terms of `precision`, `recall`, and `f1`
-  * @param scoreList `Vector` of `Tuples` of `(title, predicted label, gold label)`
+  * @param mlScoreList `Vector` of `Tuples` of `(title, predicted label, gold label)`
   */
 class EvaluationMetrics(
-                         scoreList: Vector[(String, String, String)]     //(title, mlScore, actualScore)
+                         mlScoreList: Vector[(String, String, String)]     //(title, mlScore, actualScore)
                          ) {
 
   /**
     * Makes a list of the possible labels
     */
-  val possibleLabels = scoreList.map(_._3).distinct
+  val possibleLabels = this.mlScoreList.map(_._3).distinct
 
 
   /**
     * Measure of accuracy (correct / total)
-    * @param mlScoreList `Vector` of `Tuples` of `(title, predicted label, gold label)`
     * @return Percent correct
     */
-  def accuracy(mlScoreList: Vector[(String, String, String)]): Double = {
+  def accuracy: Double = {
     //helper function for determining correct score
     def isAccurate(mlScore: String, actualScore: String): Int = {
       if (mlScore == actualScore) 1 else 0
@@ -27,10 +26,10 @@ class EvaluationMetrics(
 
 
     (
-      mlScoreList.map(item =>
+      this.mlScoreList.map(item =>
         isAccurate(item._2, item._3)
     ).sum.toDouble /                                //sum of all correct items
-        mlScoreList.length.toDouble) * 100          //divided by total number of items then multiplied by 100
+        this.mlScoreList.length.toDouble) * 100          //divided by total number of items then multiplied by 100
   }
 
 
@@ -39,15 +38,15 @@ class EvaluationMetrics(
 
 
   //TODO build method for accuracy label histogram
-  /*def distanceAccuracyLabelHistogram(mlScoreList: Vector[(String, String, String)]) = {
-    val distanceAccuracyHistogram = this.distanceAccuracyHistogram(mlScoreList: Vector[(String, String, String)])
+  /*def distanceAccuracyLabelHistogram = {
+    val distanceAccuracyHistogram = this.distanceAccuracyHistogram(this.mlScoreList: Vector[(String, String, String)])
 
   }*/
 
 
   //TODO build method for accuracy total histogram
-  /*def distanceAccuracyTotalHistogram(mlScoreList: Vector[(String, String, String)], numberOfClasses: Int) = {
-    val distanceAccuracyScores = if (numberOfClasses == 6) this.distanceAccuracy6(mlScoreList) else this.distanceAccuracy3(mlScoreList)
+  /*def distanceAccuracyTotalHistogram(numberOfClasses: Int) = {
+    val distanceAccuracyScores = if (numberOfClasses == 6) this.distanceAccuracy6(this.mlScoreList) else this.distanceAccuracy3(this.mlScoreList)
 
     for (distance <- distanceAccuracyScores.map(_._2).distinct.sorted) yield {
       distance -> distanceAccuracyScores.count(_._2 == distance)
@@ -57,9 +56,8 @@ class EvaluationMetrics(
 
   /**
     * Generates a label of `true positive`, `true negative`, `false positive`, and `false positive`
-    * @param mlScoreList `Vector` of `Tuples` of `(title, predicted label, gold label)`
     */
-  def relevanceLabels(mlScoreList: Vector[(String, String, String)]): Map[String, Vector[String]] = {
+  def relevanceLabels: Map[String, Vector[String]] = {
     //helper function to determine label
     def determineRelevanceLabels(relevantClass: String, mlScore: String, actualScore: String): String = {
       if (relevantClass == actualScore & relevantClass == mlScore) "truePositive"           //it was relevant, and it was correctly scored as relevant
@@ -70,17 +68,16 @@ class EvaluationMetrics(
 
     //iterate through data points
     (for (label <- this.possibleLabels) yield {
-      label -> mlScoreList.map(score => determineRelevanceLabels(label, score._2, score._3))      //generate relevance tags for each item
+      label -> this.mlScoreList.map(score => determineRelevanceLabels(label, score._2, score._3))      //generate relevance tags for each item
     }).toMap                                                                                        //convert to a Map
   }
 
 
   /**
     * Recall - how many actual instances were predicted correctly
-    * @param mlScoreList `Vector` of `Tuples` of `(title, predicted label, gold label)`
     * @return `Map` of `(type, recall score)`
     */
-  def recall(mlScoreList: Vector[(String, String, String)]): Map[String, Double] = {
+  def recall: Map[String, Double] = {
     //helper function for calculating recall
     def calculateRecall(truePositive:Double, falseNegative: Double): Double = {
       if ((truePositive + falseNegative) == 0) 0                                            //in case denominator is 0
@@ -88,7 +85,7 @@ class EvaluationMetrics(
     }
 
     //get relevance label map
-    val relevanceLabelsMap = relevanceLabels(mlScoreList)
+    val relevanceLabelsMap = relevanceLabels
 
     //iterate through data points
     (for (relevance <- relevanceLabelsMap.keySet.toList) yield {
@@ -105,10 +102,9 @@ class EvaluationMetrics(
 
   /**
     * Precision - how many predicted instances were correct
-    * @param mlScoreList `Vector` of `Tuples` of `(title, predicted label, gold label)`
     * @return `Map` of `(type, precision score)`
     */
-  def precision(mlScoreList: Vector[(String, String, String)]): Map[String, Double] = {
+  def precision: Map[String, Double] = {
     //helper function for calculating precision
     def calculatePrecision(truePositive: Double, falsePositive: Double): Double = {
       if ((truePositive + falsePositive) == 0) 0 //in case denominator is 0
@@ -116,7 +112,7 @@ class EvaluationMetrics(
     }
 
     //get relevance label map
-    val relevanceLabelsMap = relevanceLabels(mlScoreList)
+    val relevanceLabelsMap = relevanceLabels
 
     //iterate through data points
     (for (relevance <- relevanceLabelsMap.keySet.toList) yield {
@@ -143,14 +139,13 @@ class EvaluationMetrics(
 
   /**
     * Generates F1 score for each type
-    * @param mlScoreList `Vector` of `Tuples` of `(title, predicted label, gold label)`
     * @return `Map` of `(type, f1 score)`
     */
-  def f1(mlScoreList: Vector[(String, String, String)]): Map[String, Double] = {
-    val relevanceLabelsMap = relevanceLabels(mlScoreList)
+  def f1: Map[String, Double] = {
+    val relevanceLabelsMap = relevanceLabels
     (for (relevance <- relevanceLabelsMap.keySet.toList) yield {
-      val precisionScore = precision(mlScoreList)(relevance)
-      val recallScore = recall(mlScoreList)(relevance)
+      val precisionScore = precision(relevance)
+      val recallScore = recall(relevance)
       relevance -> calculateF1(precisionScore, recallScore)
     }).toMap
   }
@@ -159,12 +154,11 @@ class EvaluationMetrics(
   /**
     * Calculates macro scores for `precision`, `recall`, and `f1` <br>
     *   Calculated as the average of score for each type
-    * @param mlScoreList `Vector` of `Tuples` of `(title, predicted label, gold label)`
     * @return `Map` of `(type, f1 score)`
     */
-  def macroScores(mlScoreList: Vector[(String, String, String)]): Map[String, Double] = {
-    val macroPrecision = precision(mlScoreList: Vector[(String, String, String)]).values.toList.sum / possibleLabels.length
-    val macroRecall = recall(mlScoreList: Vector[(String, String, String)]).values.toList.sum / possibleLabels.length
+  def macroScores: Map[String, Double] = {
+    val macroPrecision = precision.values.toList.sum / possibleLabels.length
+    val macroRecall = recall.values.toList.sum / possibleLabels.length
     Map(
       "macroPrecision" -> macroPrecision,
       "macroRecall" -> macroRecall,
