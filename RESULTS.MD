@@ -44,10 +44,10 @@ Models Used
 ---------------
 
 **RandomForest**: 
-    - number of trees= 1000
-    - maximum tree depth = 5
-    - features used for each tree = 20%
-    - number of threads = 3
+- number of trees= 1000
+- maximum tree depth = 5
+- features used for each tree = 20%
+- number of threads = 3
 
 **Perceptron**: 
     - epochs = 20
