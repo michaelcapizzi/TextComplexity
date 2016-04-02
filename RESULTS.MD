@@ -50,14 +50,14 @@ Models Used
 - number of threads = 3
 
 **Perceptron**: 
-    - epochs = 20
-    - features used for each iteration = 100%
+- epochs = 20
+- features used for each iteration = 100%
     
 **LogisticRegression**: 
-    - bias = true
+- bias = true
 
 **Linear SVM**: 
-    -bias = true
+-bias = true
  
  
 Results for 6-class classification
