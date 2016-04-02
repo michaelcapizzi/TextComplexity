@@ -185,9 +185,9 @@ object Predict {
       * Variable to house prediction results
       */
     val prediction = m.predict(
-                          datum = scaledDatum,
-                          numClasses = args(1).toInt
-                      )
+                                datum = scaledDatum,
+                                numClasses = args(1).toInt
+                              )
 
 
     //print results
