@@ -8,6 +8,7 @@ import Complexity.MachineLearning.MLmodel
 import Complexity.Utils.IO._
 import Complexity.MachineLearning.MLutils._
 import Complexity.MachineLearning.Scaling._
+import edu.arizona.sista.learning.RVFDatum
 import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
 
 //TODO predicting the exact same label and confidences for every text file --> the features are being gathered correctly.  It's happening in the test stage
@@ -151,6 +152,9 @@ object Predict {
                                   numClasses = args(1).toInt
                                   )
 
+
+    exportToSVM(Vector(fe.mlDatum),fe.mlLexicon, "/home/mcapizzi/Desktop/out.datum")
+
     /**
       * Feature counter before scaling datum
       */
@@ -185,12 +189,15 @@ object Predict {
                                     )*/
 
 
+    val in = importFromSVM("/home/mcapizzi/Desktop/out.datum")
+
     /**
       * Variable to house prediction results
       */
     val prediction = m.predict(
 //                              datum = scaledDatum,
-                              datum = fe.mlDatum,
+//                              datum = fe.mlDatum,
+                              datum = in.mkDatum(0).asInstanceOf[RVFDatum[Int,String]],
                               numClasses = args(1).toInt
                               )
 
