@@ -1,8 +1,8 @@
 package Complexity.MachineLearning
 
 import java.io.{PrintWriter, File}
-import edu.arizona.sista.learning.{Datasets, RVFDatum, RVFDataset}
-import edu.arizona.sista.struct.Lexicon
+import edu.arizona.sista.learning.{Datum, Datasets, RVFDatum, RVFDataset}
+import edu.arizona.sista.struct.{Counter, Lexicon}
 
 /**
   * Supporting methods to accompany machine learning process
@@ -96,6 +96,22 @@ object MLutils {
     */
   def importFromSVM(fileName: String): RVFDataset[Int, String] = {
     RVFDataset.mkDatasetFromSvmLightFormat(fileName)
+  }
+
+
+  def reformatDatum(d: RVFDatum[Int, String], l: Lexicon[String]): RVFDatum[Int, String] = {
+    val newCounter = new Counter[String]()
+    for (k <- d.featuresCounter.keySet) {
+      newCounter.setCount(
+                            (l.get(k).get + 1).toString,
+                            d.featuresCounter.getCount(k)
+      )
+    }
+
+    new RVFDatum[Int, String](
+                                99,
+                                newCounter
+                              )
   }
 
 

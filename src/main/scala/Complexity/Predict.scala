@@ -153,7 +153,7 @@ object Predict {
                                   )
 
 
-    exportToSVM(Vector(fe.mlDatum),fe.mlLexicon, "/home/mcapizzi/Desktop/out.datum")
+//    exportToSVM(Vector(fe.mlDatum),fe.mlLexicon, "/home/mcapizzi/Desktop/out.datum")
 
     /**
       * Feature counter before scaling datum
@@ -189,7 +189,12 @@ object Predict {
                                     )*/
 
 
-    val in = importFromSVM("/home/mcapizzi/Desktop/out.datum")
+//    val in = importFromSVM("/home/mcapizzi/Desktop/out.datum")
+    /**
+      * Converted datum (so that indices match the indices of imported dataset
+      */
+    val matchingDatum = reformatDatum(fe.mlDatum, fe.mlLexicon)
+
 
     /**
       * Variable to house prediction results
@@ -197,7 +202,8 @@ object Predict {
     val prediction = m.predict(
 //                              datum = scaledDatum,
 //                              datum = fe.mlDatum,
-                              datum = in.mkDatum(0).asInstanceOf[RVFDatum[Int,String]],
+//                              datum = in.mkDatum(0).asInstanceOf[RVFDatum[Int,String]],
+                              datum = matchingDatum,
                               numClasses = args(1).toInt
                               )
 
@@ -214,7 +220,5 @@ object Predict {
                                                                       println(each + ": " + prediction._2.getCount(each))
                                                               )
     println()
-
-
   }
 }
