@@ -40,7 +40,7 @@ class FeatureExtractor(
   val lexFeatureVector = if (lexFeatures.nonEmpty) {
                             Option[Vector[(String, Double)]](
                                 lexFeatures.get.makeLexicalFeatureVector.
-                                drop(1)                               //drop metadata from vector
+                                drop(2)                               //drop metadata from vector
                             )
                           } else {
                             None
@@ -52,7 +52,7 @@ class FeatureExtractor(
   val synFeatureVector = if (synFeatures.nonEmpty) {
                             Option[Vector[(String, Double)]](
                               synFeatures.get.makeSyntacticFeatureVector.
-                              drop(1)                               //drop metadata from vector
+                              drop(2)                               //drop metadata from vector
                             )
                           } else {
                             None
@@ -64,7 +64,7 @@ class FeatureExtractor(
   val parFeatureVector = if (parFeatures.nonEmpty) {
                             Option[Vector[(String, Double)]](
                               parFeatures.get.makeParagraphFeatureVector.
-                              drop(1)                               //drop metadata from vector
+                              drop(2)                               //drop metadata from vector
                             )
                           } else {
                             None
