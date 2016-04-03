@@ -986,7 +986,7 @@ class SyntacticFeatures(
     }
 
     //look up dependency value (when word is second in tuple) - capture third item in tuple
-    val entityPlusDep = for (i <- entitySet.indices) yield {
+    val entityPlusDep = for (i <- entitySet.toVector.indices) yield {
 
       val sentenceDependencies = allDependencies(i)
 
@@ -1029,7 +1029,7 @@ class SyntacticFeatures(
     //simple case == without w2v
     if (w2v == false) {
 
-      for (window <- grid.par) yield {
+      (for (window <- grid.par) yield {
 
         //get set list for plain noun search
         val justWordsWindow = window.map(_.map(_._1))
@@ -1041,11 +1041,11 @@ class SyntacticFeatures(
         val pronounSet = findPronouns(withDepWindow)
         //return union of two matches
         plainNounSet.union(pronounSet)                        
-      }
+      }).toVector
 
     //with w2v
     } else {
-      for (window <- grid.par) yield {
+      (for (window <- grid.par) yield {
         val justWordsWindow = window.map(_.map(_._1))     //get set list for plain noun search
         val withDepWindow = window                        //get set list for pronoun search
 
@@ -1085,7 +1085,7 @@ class SyntacticFeatures(
         val pronounSet = findPronouns(withDepWindow)        //find matching pronouns
         val w2vSet = buffer.toSet
         plainNounSet.union(pronounSet).union(w2vSet)        //return union of three matches
-      }
+      }).toVector
     }
   }
 
