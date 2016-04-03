@@ -207,10 +207,10 @@ object Predict {
     println("Here are the original feature values:")
     testFeatures.keySet.foreach(f => println(f + ":" + testFeatures.getCount(f)))
     println()
-    println("This text is predicted to be of class " + prediction._1 + " with a confidence of " + prediction._2.getCount(prediction._1) + ".")
+    println("This text is predicted to be of class " + prediction._1 + " with a confidence of " + prediction._2.getCount(prediction._1).toString.take(5) + ".")
     println("Here are the confidences for the other classes:")
     prediction._2.keySet.filterNot(_ == prediction._1).foreach(each =>
-                                                                      println(each + ": " + prediction._2.getCount(each))
+                                                                      println(each + ": " + prediction._2.getCount(each).toString.take(5))
                                                               )
     println()
   }

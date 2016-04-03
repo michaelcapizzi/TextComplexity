@@ -14,12 +14,15 @@ object Demo {
     */
   def main(args: Array[String]) = {
 
+    //TODO update with best models!!!!!!!!
+
     if (args(1) == "3") {
       //calls Predict Main class but uses best parameters
       Predict.main(
         Array[String](
           args(0),
           args(1),
+          "randomForest",
           getClass.getResource("/savedFeatureMatrices/lex-3.svmLight").getPath,
           "lexical"
         )
@@ -30,6 +33,7 @@ object Demo {
         Array[String](
           args(0),
           args(1),
+          "randomForest",
           getClass.getResource("/savedFeatureMatrices/lex-6.svmLight").getPath,
           "lexical"
         )
