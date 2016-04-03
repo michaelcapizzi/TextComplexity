@@ -134,37 +134,37 @@ Results for 3-class classification
  
   Features Used | Model Used | Accuracy | Precision | Recall | F1
   ---|---|---|---|---|---
-  | Random Forest | 61.1% | .52 | .49 | .50
- Lexical | Perceptron | 64.8% | .52 | .52 | .52
+   | Random Forest | 61.1% | .52 | .49 | .50
+Lexical | Perceptron | 64.8% | .52 | .52 | .52
   | Logistic Regression | 68.5% | .46 | .51 | .49
   | Linear SVM | 64.8% | .52 | .51 | .51
   | | | | |
   | Random Forest | 70.4% | .46 | .52 | .49
- Syntactic | Perceptron | 61.1% | .61 | .59 | .60
+Syntactic | Perceptron | 61.1% | .61 | .59 | .60
   | Logistic Regression | 61.1% | .57 | .52 | .54
   | Linear SVM | 57% | .50 | .48 | .49
   | | | | |
   | Random Forest | 64.8% | .64 | .54 | .59
   | Perceptron | 53.7% | .47 | .45 | .46
- Paragraph | Logistic Regression | 66.7% | .77 | .53 | .63
+Paragraph | Logistic Regression | 66.7% | .77 | .53 | .63
   | Linear SVM | 50% | .49 | .51 | .59
   | | | | |
-  Lex + Syn | Random Forest | 68.5% | .47 | .51 | .49
+Lex + Syn | Random Forest | 68.5% | .47 | .51 | .49
   | Perceptron | 61.1% | .55 | .54 | .54
   | Logistic Regression | 61.1% | .50 | .49 | .49
   | Linear SVM | 64.8% | .55 | .55 | .55
   | | | | |
   | Random Forest | 68.5% | .63 | .59 | .61
   | Perceptron | 68.5% | .65 | **.65** | .65
-  Lex + Par | Logistic Regression | 70.4% | .62 | .60 | .61
+Lex + Par | Logistic Regression | 70.4% | .62 | .60 | .61
   | Linear SVM | **72.2%** | .63 | .62 | **.62**
   | | | | |
- Syn + Par | Random Forest | 72.2% | .65 | .57 | .61
+Syn + Par | Random Forest | 72.2% | .65 | .57 | .61
   | Perceptron | 38.9% | .49 | .42 | .45
   | Logistic Regression | 59.3% | .55 | .47 | .51
   | Linear SVM | 55.6% | .53 | .49 | .51
   | | | | |
-  Lex + Syn + Par | Random Forest | 68.5% | **.78** | .55 | .65
+Lex + Syn + Par | Random Forest | 68.5% | **.78** | .55 | .65
   | Perceptron | 59.2% | .61 | .63 | .62
   | Logistic Regression | 66.7% | .61 | .56 | .58
   | Linear SVM | 64.8% | .57 | .54 | .56
