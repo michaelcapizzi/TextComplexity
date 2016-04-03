@@ -4,7 +4,6 @@ import java.io.{FileReader, BufferedReader, PrintWriter, File}
 import Complexity.{ProcessedParagraph, TextDocument}
 import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
 import edu.arizona.sista.processors.{Document, DocumentSerializer}
-import Testing._
 
 /**
   * Contains functions needed to import files and serialize (both `save` and `load`) annotations
@@ -144,6 +143,8 @@ object IO {
   def makeProcParsFromText(file: String): Vector[ProcessedParagraph] = {
     val text = importTextFromResources(file)
 
+    val p = new CoreNLPProcessor(withDiscourse = true, maxSentenceLength = 450)
+
     for (paragraph <- text) yield {
       new ProcessedParagraph(
         text = Some(paragraph),
@@ -164,6 +165,8 @@ object IO {
     */
   def makeProcParsFromAnnotation(originalTextFileName: String, annotatedFileName: String): Vector[ProcessedParagraph] = {
     val paragraphs = importSerial(annotatedFileName)
+
+    val p = new CoreNLPProcessor(withDiscourse = true, maxSentenceLength = 450)
 
     for (par <- paragraphs) yield {
       new ProcessedParagraph(

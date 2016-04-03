@@ -1,7 +1,6 @@
 import Complexity.Features.{SyntacticFeatures, LexicalFeatures}
 import Complexity.TextDocument
 import Complexity.Utils.IO._
-import Complexity.Utils.Testing._
 import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
 import org.scalatest._
 
