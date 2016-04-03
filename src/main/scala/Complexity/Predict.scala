@@ -153,8 +153,6 @@ object Predict {
                                   )
 
 
-//    exportToSVM(Vector(fe.mlDatum),fe.mlLexicon, "/home/mcapizzi/Desktop/out.datum")
-
     /**
       * Feature counter before scaling datum
       */
@@ -173,7 +171,7 @@ object Predict {
     /**
       * Needed for properly scaling prediction datum
       */
-//    val scaleRange = m.normalizeDataset
+    val scaleRange = m.normalizeDataset
 
 
     //train the model
@@ -181,36 +179,31 @@ object Predict {
 
 
     /**
-      * Scaled version of original datum
-      */
-    /*val scaledDatum = normalizeDatum(
-                                    datum = fe.mlDatum,
-                                    range = scaleRange
-                                    )*/
-
-
-//    val in = importFromSVM("/home/mcapizzi/Desktop/out.datum")
-    /**
       * Converted datum (so that indices match the indices of imported dataset
       */
     val matchingDatum = reformatDatum(fe.mlDatum, fe.mlLexicon)
 
 
     /**
+      * Scaled version of original datum
+      */
+    val scaledDatum = normalizeDatum(
+                                      datum = matchingDatum,
+                                      range = scaleRange
+                                    )
+
+
+    /**
       * Variable to house prediction results
       */
     val prediction = m.predict(
-//                              datum = scaledDatum,
-//                              datum = fe.mlDatum,
-//                              datum = in.mkDatum(0).asInstanceOf[RVFDatum[Int,String]],
-                              datum = matchingDatum,
+//                              datum = matchingDatum,
+                              datum = scaledDatum,
                               numClasses = args(1).toInt
                               )
 
 
     //print results
-    println("Here are the scaled feature values:")
-    prediction._3.keySet.foreach(f => println(f + ": " + prediction._3.getCount(f)))
     println("Here are the original feature values:")
     testFeatures.keySet.foreach(f => println(f + ":" + testFeatures.getCount(f)))
     println()
