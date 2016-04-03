@@ -134,7 +134,7 @@ Results for 3-class classification
  
   Features Used | Model Used | Accuracy | Precision | Recall | F1
   ---|---|---|---|---|---
-   | Random Forest | 61.1% | .52 | .49 | .50
+  | Random Forest | 61.1% | .52 | .49 | .50
  Lexical | Perceptron | 64.8% | .52 | .52 | .52
   | Logistic Regression | 68.5% | .46 | .51 | .49
   | Linear SVM | 64.8% | .52 | .51 | .51
