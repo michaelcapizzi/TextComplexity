@@ -49,14 +49,14 @@ object BuildFeatureMatrices {
     /**
       * w2vMap loaded one time (or None if not using SyntacticFeatures)
        */
-    val w2vMap = if (featureList.contains("syntactic") || featureList.contains("all")) {
+    /*val w2vMap = if (featureList.contains("syntactic") || featureList.contains("all")) {
                       Some(makeMutableMapDense(
                             w2vPath = "/word2vec_SISTA.txt.gz",
                             take = 500000
                             ))
                 } else {
                   None
-                }
+                }*/
 
     /**
       * Variable to capture the lexicon (needed for [[exportToSVM]]
@@ -99,14 +99,14 @@ object BuildFeatureMatrices {
 
       if (featureList.contains("syntactic") || featureList.contains("all")) {
 
-        val w2v = new Word2Vec(
+        /*val w2v = new Word2Vec(
                                 w2vFilePath = null,
                                 vocabulary = td.forW2V,
                                 w2vMasterMap = Some(w2vMap.get)
-                              )
+                              )*/
 
-        syn = Some(new SyntacticFeatures(td, Some(w2v)))
-//        syn = Some(new SyntacticFeatures(td, None))
+//        syn = Some(new SyntacticFeatures(td, Some(w2v)))
+        syn = Some(new SyntacticFeatures(td, None))
       }
 
       if (featureList.contains("paragraph") || featureList.contains("all")) {
@@ -124,6 +124,7 @@ object BuildFeatureMatrices {
                                     parFeatures = par,
                                     numClasses = args(0).toInt
                                     )
+
 
       println(doc.getName + "-label: " + fe.mlDatum.label.toString)
       for (feature <- fe.mlDatum.featuresCounter.keySet) {
@@ -143,12 +144,6 @@ object BuildFeatureMatrices {
 
     println("exporting to SVM")
 
-    /*for (d <- datums) {
-      println("label: " + d.label.toString)
-      for (f <- d.featuresCounter.keySet) {
-        println(f + ": " + d.featuresCounter.getCount(f))
-      }
-    }*/
 
     //export to SVM
     exportToSVM(
