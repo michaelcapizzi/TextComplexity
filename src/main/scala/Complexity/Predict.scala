@@ -11,8 +11,6 @@ import Complexity.MachineLearning.Scaling._
 import edu.arizona.sista.learning.RVFDatum
 import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
 
-//TODO predicting the exact same label and confidences for every text file --> the features are being gathered correctly.  It's happening in the test stage
-
 object Predict {
 
   /**

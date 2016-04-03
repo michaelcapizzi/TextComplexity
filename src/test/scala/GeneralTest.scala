@@ -35,7 +35,7 @@ abstract class GeneralTest extends FlatSpec with Matchers with
 
   //features
   val lex = new LexicalFeatures(tdFromText)
-  val syn = new SyntacticFeatures(tdFromText)
+  val syn = new SyntacticFeatures(tdFromText, None)
 
 }
 

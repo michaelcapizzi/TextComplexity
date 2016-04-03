@@ -3,7 +3,7 @@ package Complexity
 import MachineLearning.MLutils._
 
 /**
-  * Uses best model
+  * Uses best model configuration for each class structure
   */
 object Demo {
 
