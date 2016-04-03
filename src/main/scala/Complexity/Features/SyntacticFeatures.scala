@@ -1237,7 +1237,7 @@ class SyntacticFeatures(
       "total subordinate used" -> this.conjunctionStats("total subordinate used"),
       "max subordinate used" -> this.conjunctionStats("max subordinate used"),
       "total conjunctive used" -> this.conjunctionStats("total conjunctive used"),
-      "max conjunctive used" -> this.conjunctionStats("max conjunctive used"),
+      "max conjunctive used" -> this.conjunctionStats("max conjunctive used")/*,
       //coherence -> use of W2V determined by Option[Word2Vec]
       ("coherence minimum",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence minimum") else this.coherenceStats(w2v = false)("coherence minimum")),
       ("coherence minimum",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence minimum") else this.coherenceStats(w2v = false)("coherence minimum")),
@@ -1245,7 +1245,7 @@ class SyntacticFeatures(
       ("coherence mean",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence mean") else this.coherenceStats(w2v = false)("coherence mean")),
       ("coherence median",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence median") else this.coherenceStats(w2v = false)("coherence median")),
       ("coherence 75th %ile",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence 75th %ile") else this.coherenceStats(w2v = false)("coherence 75th %ile")),
-      ("coherence maximum",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence maximum") else this.coherenceStats(w2v = false)("coherence maximum"))
+      ("coherence maximum",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence maximum") else this.coherenceStats(w2v = false)("coherence maximum"))*/
     )
   }
 
