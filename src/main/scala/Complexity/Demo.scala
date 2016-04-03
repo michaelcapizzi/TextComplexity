@@ -14,25 +14,24 @@ object Demo {
     */
   def main(args: Array[String]) = {
 
-    //TODO update with best models!!!!!!!!
-
     if (args(1) == "3") {
-      //calls Predict Main class but uses best parameters
+      //calls Predict Main class but uses best parameters: svm, lexical and paragraph features
       Predict.main(
         Array[String](
           args(0),
-          args(1),
-          "randomForest",
-          getClass.getResource("/savedFeatureMatrices/lex-3.svmLight").getPath,
-          "lexical"
+          "3",
+          "svm",
+          getClass.getResource("/savedFeatureMatrices/lex_par-3.svmLight").getPath,
+          "lexical",
+          "paragraph"
         )
       )
     } else if (args(1) == "6") {
-      //calls Predict Main class but uses best parameters
+      //calls Predict Main class but uses best parameters: random forest, lexical features
       Predict.main(
         Array[String](
           args(0),
-          args(1),
+          "6",
           "randomForest",
           getClass.getResource("/savedFeatureMatrices/lex-6.svmLight").getPath,
           "lexical"

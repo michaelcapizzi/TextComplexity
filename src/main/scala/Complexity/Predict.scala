@@ -62,7 +62,10 @@ object Predict {
           featureList.contains("paragraph") || featureList.contains("all")  //if using paragraph features
         )
       ){
+      println()
       println("Either this document is only one paragraph in length, or paragraphs have not been delimited by a blank line.  Processing time may significantly increase because of the need to run the Discourse Parser over large amounts of continuous text.  This can possibly be shortened by delimiting paragraphs with a blank line.")
+      println()
+      println()
     }
 
 
