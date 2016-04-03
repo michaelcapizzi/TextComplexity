@@ -75,7 +75,7 @@ Lexile officially presents a score-band for each grade level with significant ov
  ---|---|---|---|---|---
   | *Lexile* | *24.1%* | *.32* | *.36* | *.34*
   | | | | |
- Lexical | Random Forest | **40.7%** | **.39** | **.38** | **.38**
+ **Lexical** | **Random Forest** | **40.7%** | **.39** | **.38** | **.38**
  | Perceptron | 31.5% | .11 | .20 | .14
  | Logistic Regression | 3.3% | .27 | .25 | .26
  | Linear SVM | 33.3% | .28 | .28 | .28
@@ -156,8 +156,8 @@ Lex + Syn | Random Forest | 68.5% | .47 | .51 | .49
   | | | | |
   | Random Forest | 68.5% | .63 | .59 | .61
   | Perceptron | 68.5% | .65 | **.65** | .65
-Lex + Par | Logistic Regression | 70.4% | .62 | .60 | .61
-  | Linear SVM | **72.2%** | .63 | .62 | **.62**
+**Lex + Par** | Logistic Regression | 70.4% | .62 | .60 | .61
+  | **Linear SVM** | **72.2%** | .63 | .62 | **.62**
   | | | | |
 Syn + Par | Random Forest | 72.2% | .65 | .57 | .61
   | Perceptron | 38.9% | .49 | .42 | .45
