@@ -7,7 +7,6 @@ import MachineLearning.MLutils._
   */
 object Demo {
 
-  //TODO figure out how to load model!
   /**
     *
     * @param args args(0) = file to test

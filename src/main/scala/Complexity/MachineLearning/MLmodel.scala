@@ -140,6 +140,14 @@ class MLmodel(
     */
   def predict(datum: RVFDatum[Int, String], numClasses: Int): (String, Counter[String], Counter[String]) = {
 
+    /*this.classifierType match {
+      case "randomForest" => this.classifier = this.classifier.asInstanceOf[RandomForestClassifier[Int, String]]
+      case "perceptron" => this.classifier = this.classifier.asInstanceOf[PerceptronClassifier[Int, String]]
+      case "logisticRegression" => this.classifier = this.classifier.asInstanceOf[LogisticRegressionClassifier[Int, String]]
+      case "svm" => this.classifier = this.classifier.asInstanceOf[LinearSVMClassifier[Int, String]]
+      case _ => this.classifier = this.classifier.asInstanceOf[RandomForestClassifier[Int, String]]
+    }*/
+
     //new counter (to house reverted labels)
     val updatedConfidences = new Counter[String]()
     //original confidences

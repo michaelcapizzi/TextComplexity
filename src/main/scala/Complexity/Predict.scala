@@ -10,6 +10,7 @@ import Complexity.MachineLearning.MLutils._
 import Complexity.MachineLearning.Scaling._
 import edu.arizona.sista.processors.corenlp.CoreNLPProcessor
 
+//TODO predicting the exact same label and confidences for every text file --> the features are being gathered correctly.  It's happening in the test stage
 
 object Predict {
 
@@ -17,8 +18,9 @@ object Predict {
     * @param args <br>
     *               args(0) = plain text file to be analyzed and classified
     *               args(1) = number of classes to use: `3` or `6`
-    *               args(2) = full path to dataset used in training model (needed for scaling of prediction datum)
-    *               args(3+) = List of feature types to include: `lexical`, `syntactic`, `paragraph`, or `all`
+    *               args(2) = model to use
+    *               args(3) = full path to dataset used in training model
+    *               args(4+) = List of feature types to include: `lexical`, `syntactic`, `paragraph`, or `all`
     */
   def main(args: Array[String]) = {
 
@@ -27,13 +29,13 @@ object Predict {
     /**
       * Feature list being used for feature development
       */
-    val featureList = args.slice(3, args.length)
+    val featureList = args.slice(4, args.length)
 
 
     /**
       * Dataset present only to get [[edu.arizona.sista.learning.ScaleRange]]
       */
-    val dataset = importFromSVM(args(2))
+    val dataset = importFromSVM(args(3))
 
 
     /**
@@ -150,39 +152,34 @@ object Predict {
                                   )
 
     /**
-      * Model to be used for prediction
-      */
-    val m = new MLmodel(
-                        dataset = dataset,
-                        classifierType = "randomForest"
-                        )
-
-
-    //load saved model
-    //TODO add best model paths
-    if (args(1) == "3") {
-      m.loadModel(getClass.getResource("/savedModels/rf-lex-3-unscaled.model").getPath)
-    } else {
-      m.loadModel(getClass.getResource("/savedModels/rf-lex-6-unscaled.model").getPath)
-    }
-
-
-    /**
       * Feature counter before scaling datum
       */
     val testFeatures = fe.mlDatum.featuresCounter
 
 
     /**
+      * model to use
+      */
+    val m = new MLmodel(
+                        dataset = dataset,
+                        classifierType = args(2)
+                        )
+
+
+    /**
       * Needed for properly scaling prediction datum
-       */
-    val scaleRange = m.normalizeDataset
+      */
+//    val scaleRange = m.normalizeDataset
+
+
+    //train the model
+    m.train
 
 
     /**
       * Scaled version of original datum
       */
-/*    val scaledDatum = normalizeDatum(
+    /*val scaledDatum = normalizeDatum(
                                     datum = fe.mlDatum,
                                     range = scaleRange
                                     )*/
@@ -192,23 +189,25 @@ object Predict {
       * Variable to house prediction results
       */
     val prediction = m.predict(
-//                                datum = scaledDatum,
-                                datum = fe.mlDatum,
-                                numClasses = args(1).toInt
+//                              datum = scaledDatum,
+                              datum = fe.mlDatum,
+                              numClasses = args(1).toInt
                               )
 
 
     //print results
-    println("Here are the feature values:")
+    println("Here are the scaled feature values:")
     prediction._3.keySet.foreach(f => println(f + ": " + prediction._3.getCount(f)))
-    println("Here are the feature values:")
+    println("Here are the original feature values:")
     testFeatures.keySet.foreach(f => println(f + ":" + testFeatures.getCount(f)))
     println()
     println("This text is predicted to be of class " + prediction._1 + " with a confidence of " + prediction._2.getCount(prediction._1) + ".")
     println("Here are the confidences for the other classes:")
     prediction._2.keySet.filterNot(_ == prediction._1).foreach(each =>
-                                                                        println(each + ": " + prediction._2.getCount(each))
-    )
+                                                                      println(each + ": " + prediction._2.getCount(each))
+                                                              )
     println()
+
+
   }
 }
