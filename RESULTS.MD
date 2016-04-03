@@ -100,10 +100,10 @@ Syntactic | Logistic Regression | 35.2% | .28 | .30 | .29
  Lex + Par | Logistic Regression | 37% | .30 | .29 | .30
  | Linear SVM | 29.7% | .25 | .24 | .24
  | | | | |
- | Random Forest | xx% | xx | xx | xx
- | Perceptron | xx% | xx | xx | xx
- Syn + Par | Logistic Regression | xx% | xx | xx | xx
- | Linear SVM | xx% | xx | xx | xx
+ | Random Forest | 27.7% | .24 | .22 | .23
+ | Perceptron | 24.1% | .13 | .18 | .15
+ Syn + Par | Logistic Regression | 33.3% | .28 | .28 | .28
+ | Linear SVM | 27.7% | .28 | .27 | .27
  | | | | |
  | Random Forest | 33.3% | .28 | .28 | .28
  | Perceptron | 22.2% | .22 | .16 | .18

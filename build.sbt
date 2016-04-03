@@ -12,12 +12,10 @@ scalaVersion := "2.11.7"
 
 ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) }      //this overrides competing scala versions?  ???
 
-assemblyJarName in assembly := "Demo.jar"
+assemblyJarName in assembly := "TextComplexityDemo.jar"
 
 //test in assembly := {}
 
-//mainClass in assembly := Some("ContentAnalysis.PipelineNoTransMain")
-//mainClass in assembly := Some("ContentAnalysis.Testing.AssemblyMain")
 mainClass in assembly := Some("Complexity.Demo")
 
 assemblyExcludedJars in assembly := {
