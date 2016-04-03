@@ -4,6 +4,7 @@ import java.io.File
 
 /**
   * Runs all experiments on all datasets
+  * @todo How to suppress logger to capture scores
   */
 object RunAllExperiments {
 
@@ -18,16 +19,18 @@ object RunAllExperiments {
 
     for (f <- allDatasets) {
       //extract number of classes from dataset file
-      val numClasses = regex.findFirstIn(f.getName)
+      val numClasses = f.getName match {
+                                        case regex(n) => n
+                                        }
 
-      println(f.getName)
+
       RunExperiments.main(Array(
                                 f.getPath,
-                                numClasses.get,
+                                numClasses,
                                 "all"
                                 )
       )
-
+      println(f.getName)
     }
   }
 }
