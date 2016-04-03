@@ -73,6 +73,8 @@ Lexile officially presents a score-band for each grade level with significant ov
 
  Features Used | Model Used | Accuracy | Precision | Recall | F1
  ---|---|---|---|---|---
+ - | *Lexile* | *24.1%* | *.32* | *.36* | *.34*
+  | | | | |
  Lexical | Random Forest | **40.7%** | **.39** | **.38** | **.38**
  | Perceptron | 31.5% | .11 | .20 | .14
  | Logistic Regression | 3.3% | .27 | .25 | .26
@@ -107,7 +109,6 @@ Syntactic | Logistic Regression | 35.2% | .28 | .30 | .29
  | Perceptron | 22.2% | .22 | .16 | .18
  Lex + Syn + Par | Logistic Regression | **40.7%** | .32 | .32 | .32
  | Linear SVM | 33.3% | .28 | .26 | .27
-- | _Lexile_ | 24.1% | .32 | .36 | .34
  
 Results for 3-class classification
 -------------------------------------
