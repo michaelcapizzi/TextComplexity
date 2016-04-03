@@ -977,7 +977,7 @@ class SyntacticFeatures(
     val allLexicalTuples = this.td.lexicalTuples(withPunctuation = false).flatten
 
     //get all nouns and pronouns from lexical tuple
-    val entitySet = for (sentence <- allLexicalTuples) yield {
+    val entitySet = for (sentence <- allLexicalTuples.par) yield {
       sentence.filter(z =>
         z._2._2.matches(posRegex) &&                  //filters out non-nouns and non-pronouns and non-determiners
           !z._2._1.matches(unwantedProRegex)).          //filters out specific unwanted tokens
@@ -986,7 +986,7 @@ class SyntacticFeatures(
     }
 
     //look up dependency value (when word is second in tuple) - capture third item in tuple
-    val entityPlusDep = for (i <- entitySet.indices) yield {
+    val entityPlusDep = for (i <- entitySet.toVector.indices) yield {
 
       val sentenceDependencies = allDependencies(i)
 
@@ -1029,7 +1029,7 @@ class SyntacticFeatures(
     //simple case == without w2v
     if (w2v == false) {
 
-      for (window <- grid) yield {
+      (for (window <- grid.par) yield {
 
         //get set list for plain noun search
         val justWordsWindow = window.map(_.map(_._1))
@@ -1041,11 +1041,11 @@ class SyntacticFeatures(
         val pronounSet = findPronouns(withDepWindow)
         //return union of two matches
         plainNounSet.union(pronounSet)                        
-      }
+      }).toVector
 
     //with w2v
     } else {
-      for (window <- grid) yield {
+      (for (window <- grid.par) yield {
         val justWordsWindow = window.map(_.map(_._1))     //get set list for plain noun search
         val withDepWindow = window                        //get set list for pronoun search
 
@@ -1085,7 +1085,7 @@ class SyntacticFeatures(
         val pronounSet = findPronouns(withDepWindow)        //find matching pronouns
         val w2vSet = buffer.toSet
         plainNounSet.union(pronounSet).union(w2vSet)        //return union of three matches
-      }
+      }).toVector
     }
   }
 
@@ -1237,7 +1237,7 @@ class SyntacticFeatures(
       "total subordinate used" -> this.conjunctionStats("total subordinate used"),
       "max subordinate used" -> this.conjunctionStats("max subordinate used"),
       "total conjunctive used" -> this.conjunctionStats("total conjunctive used"),
-      "max conjunctive used" -> this.conjunctionStats("max conjunctive used"),
+      "max conjunctive used" -> this.conjunctionStats("max conjunctive used")/*,
       //coherence -> use of W2V determined by Option[Word2Vec]
       ("coherence minimum",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence minimum") else this.coherenceStats(w2v = false)("coherence minimum")),
       ("coherence minimum",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence minimum") else this.coherenceStats(w2v = false)("coherence minimum")),
@@ -1245,7 +1245,7 @@ class SyntacticFeatures(
       ("coherence mean",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence mean") else this.coherenceStats(w2v = false)("coherence mean")),
       ("coherence median",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence median") else this.coherenceStats(w2v = false)("coherence median")),
       ("coherence 75th %ile",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence 75th %ile") else this.coherenceStats(w2v = false)("coherence 75th %ile")),
-      ("coherence maximum",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence maximum") else this.coherenceStats(w2v = false)("coherence maximum"))
+      ("coherence maximum",if (this.w2vClass.nonEmpty) this.coherenceStats(w2v = true)("coherence maximum") else this.coherenceStats(w2v = false)("coherence maximum"))*/
     )
   }
 
