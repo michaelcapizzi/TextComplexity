@@ -4,7 +4,7 @@ import java.io.File
 
 /**
   * Runs all experiments on all datasets
-  * @todo How to suppress logger to capture scores
+  * @todo How to suppress logger to eliminate training output from clogging up the output?
   */
 object RunAllExperiments {
 
