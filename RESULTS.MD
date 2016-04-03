@@ -132,8 +132,8 @@ Results for 3-class classification
  K-5 | 6-8 | 9-12
  ---|---|---
  
-  Features Used | Model Used | Accuracy | Precision | Recall | F1
-  ---|---|---|---|---|---
+Features Used | Model Used | Accuracy | Precision | Recall | F1
+---|---|---|---|---|---
    | Random Forest | 61.1% | .52 | .49 | .50
 Lexical | Perceptron | 64.8% | .52 | .52 | .52
   | Logistic Regression | 68.5% | .46 | .51 | .49
