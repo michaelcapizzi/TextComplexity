@@ -977,7 +977,7 @@ class SyntacticFeatures(
     val allLexicalTuples = this.td.lexicalTuples(withPunctuation = false).flatten
 
     //get all nouns and pronouns from lexical tuple
-    val entitySet = for (sentence <- allLexicalTuples) yield {
+    val entitySet = for (sentence <- allLexicalTuples.par) yield {
       sentence.filter(z =>
         z._2._2.matches(posRegex) &&                  //filters out non-nouns and non-pronouns and non-determiners
           !z._2._1.matches(unwantedProRegex)).          //filters out specific unwanted tokens
@@ -1029,7 +1029,7 @@ class SyntacticFeatures(
     //simple case == without w2v
     if (w2v == false) {
 
-      for (window <- grid) yield {
+      for (window <- grid.par) yield {
 
         //get set list for plain noun search
         val justWordsWindow = window.map(_.map(_._1))
@@ -1045,7 +1045,7 @@ class SyntacticFeatures(
 
     //with w2v
     } else {
-      for (window <- grid) yield {
+      for (window <- grid.par) yield {
         val justWordsWindow = window.map(_.map(_._1))     //get set list for plain noun search
         val withDepWindow = window                        //get set list for pronoun search
 
