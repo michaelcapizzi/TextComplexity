@@ -14,7 +14,7 @@ ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) }      //th
 
 assemblyJarName in assembly := "TextComplexityDemo.jar"
 
-//test in assembly := {}
+test in assembly := {}
 
 mainClass in assembly := Some("Complexity.Demo")
 
