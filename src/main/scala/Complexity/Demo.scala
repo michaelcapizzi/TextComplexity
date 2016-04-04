@@ -40,8 +40,6 @@ object Demo {
         )
       )
 
-      localFile.delete()
-
     } else if (args(1) == "6") {
 
       val buffered = scala.io.Source.fromInputStream(getClass.getResourceAsStream("/savedFeatureMatrices/lex-6.svmLight")).getLines
@@ -61,8 +59,6 @@ object Demo {
           "lexical"
         )
       )
-
-      localFile.delete()
 
     } else {
       println("Your second argument must be '3' or '6'")
