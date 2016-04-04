@@ -21,12 +21,11 @@ object Demo {
 
       //get the matrix file
       val buffered = scala.io.Source.fromInputStream(getClass.getResourceAsStream("/savedFeatureMatrices/lex_par-3.svmLight")).getLines
-      //write it to local file
-      val localFile = new File("./matrix.svmLight")
+      //write it to temp file
+      val localFile = File.createTempFile("matrix", "svmLight")
       val pw = new PrintWriter(localFile.getCanonicalPath)
       buffered.foreach(pw.println)
       pw.close()
-
 
       //calls Predict Main class but uses best parameters: svm, lexical and paragraph features
       Predict.main(
@@ -42,9 +41,9 @@ object Demo {
 
     } else if (args(1) == "6") {
 
-      val buffered = scala.io.Source.fromInputStream(getClass.getResourceAsStream("/savedFeatureMatrices/lex-6.svmLight")).getLines
-      //write it to local file
-      val localFile = new File("./matrix.svmLight")
+      val buffered = scala.io.Source.fromInputStream(getClass.getResourceAsStream("/savedFeatureMatrices/lex_par-3.svmLight")).getLines
+      //write it to temp file
+      val localFile = File.createTempFile("matrix", "svmLight")
       val pw = new PrintWriter(localFile.getCanonicalPath)
       buffered.foreach(pw.println)
       pw.close()

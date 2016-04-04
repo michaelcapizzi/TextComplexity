@@ -37,8 +37,7 @@ object Predict {
     val dataset = importFromSVM(args(3))
 
     //delete dataset file
-    new File(args(3)).delete()
-
+    new File(args(3)).deleteOnExit()
 
     /**
       * Instance of [[edu.arizona.sista.processors.corenlp.CoreNLPProcessor]] with or without Discourse as needed
