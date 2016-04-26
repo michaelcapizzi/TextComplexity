@@ -3,6 +3,7 @@ package Complexity.SupportMethods
 
 /**
  * Support variables and methods for use in [[Complexity.Features.LexicalFeatures.getWordConcreteness]]
+  * @see [http://link.springer.com/article/10.3758%2Fs13428-013-0403-5]
  */
 object Concreteness {
 
