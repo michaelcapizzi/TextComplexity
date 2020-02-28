@@ -80,35 +80,35 @@ Lexile officially presents a score-band for each grade level with significant ov
  || Logistic Regression | 3.3% | .27 | .25 | .26
  || Linear SVM | 33.3% | .28 | .28 | .28
  | | | | |
- | Random Forest | 24.1% | .17 | .18 | .17
- | Perceptron | 24.1% | .15 | .17 | .16
+ || Random Forest | 24.1% | .17 | .18 | .17
+ || Perceptron | 24.1% | .15 | .17 | .16
 Syntactic | Logistic Regression | 35.2% | .28 | .30 | .29
- | Linear SVM | 25.9% | .22 | .22 | .22
+ || Linear SVM | 25.9% | .22 | .22 | .22
  | | | | |
- | Random Forest | 22.2% | .17 | .16 | .16
- | Perceptron | 18.5% | .03 | .13 | .05
+ || Random Forest | 22.2% | .17 | .16 | .16
+ || Perceptron | 18.5% | .03 | .13 | .05
  Paragraph | Logistic Regression | 24.1% | .30 | .19 | .23
- | Linear SVM | 12% | .13 | .12 | .12
+ || Linear SVM | 12% | .13 | .12 | .12
  | | | | |
- | Random Forest | 31.5% | .25 | .25 | .25
- | Perceptron | 29.6% | .14 | .23 | .18
+ || Random Forest | 31.5% | .25 | .25 | .25
+ || Perceptron | 29.6% | .14 | .23 | .18
  Lex + Syn | Logistic Regression | 42.6% | .36 | .35 | .35
- | Linear SVM | 38.9% | .34 | .32 | .33
+ || Linear SVM | 38.9% | .34 | .32 | .33
  | | | | |
- | Random Forest | 31.5% | .24 | .25 | .25
- | Perceptron | 22.2% | .08 | .15 | .11
+ || Random Forest | 31.5% | .24 | .25 | .25
+ || Perceptron | 22.2% | .08 | .15 | .11
  Lex + Par | Logistic Regression | 37% | .30 | .29 | .30
- | Linear SVM | 29.7% | .25 | .24 | .24
+ || Linear SVM | 29.7% | .25 | .24 | .24
  | | | | |
- | Random Forest | 27.7% | .24 | .22 | .23
- | Perceptron | 24.1% | .13 | .18 | .15
+ || Random Forest | 27.7% | .24 | .22 | .23
+ || Perceptron | 24.1% | .13 | .18 | .15
  Syn + Par | Logistic Regression | 33.3% | .28 | .28 | .28
- | Linear SVM | 27.7% | .28 | .27 | .27
- | | | | |
- | Random Forest | 33.3% | .28 | .28 | .28
- | Perceptron | 22.2% | .22 | .16 | .18
+ || Linear SVM | 27.7% | .28 | .27 | .27
+ || | | | |
+ || Random Forest | 33.3% | .28 | .28 | .28
+ || Perceptron | 22.2% | .22 | .16 | .18
  Lex + Syn + Par | Logistic Regression | **40.7%** | .32 | .32 | .32
- | Linear SVM | 33.3% | .28 | .26 | .27
+ || Linear SVM | 33.3% | .28 | .26 | .27
  
 Results for 3-class classification
 -------------------------------------
