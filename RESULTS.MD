@@ -73,7 +73,7 @@ Lexile officially presents a score-band for each grade level with significant ov
 
  Features Used | Model Used | Accuracy | Precision | Recall | F1
  ---|---|---|---|---|---
-  | *Lexile* | *24.1%* | *.32* | *.36* | *.34*
+  || *Lexile* | *24.1%* | *.32* | *.36* | *.34*
   | | | | |
  **Lexical** | **Random Forest** | **40.7%** | **.39** | **.38** | **.38**
  || Perceptron | 31.5% | .11 | .20 | .14
